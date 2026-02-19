@@ -182,10 +182,12 @@
   },
   "active": "9ba160efc1f451fb",
   "lastOpenFiles": [
+    "_templates/Box.md",
+    "_posts/2026-02-19-Dynamical-System.md",
+    "_templates/new_post.md",
+    "README.md",
     "Untitled.base",
     "_site/Untitled.base",
-    "README.md",
-    "_posts/2026-02-19-Dynamical-System.md",
     "_posts/2026-02-19-dynamics.md",
     "_tabs/categories.md",
     "_tabs/about.md",
@@ -196,13 +198,11 @@
     "_site/config",
     "config",
     "Untitled",
-    "_templates/new_post.md",
     "_site/categories/dynamics/index.html",
     "_site/categories/dynamics",
     "_site/categories/mathematics/index.html",
     "_site/categories/mathematics",
     "_site/posts/dynamics/index.html",
-    "_site/posts/dynamics",
     "_site/posts/dynamics.md",
     "_site/posts/Dynamical-System.md"
   ]
