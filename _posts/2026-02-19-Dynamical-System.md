@@ -8,7 +8,7 @@ tags: []
 math: true
 ---
 # Definition
-A dynamical system consists of a set of possible states, together with a rule that determines the present state in terms of past states. For example, we have $x_n = 2x_{n-1}$.
+## A dynamical system consists of a set of possible states, together with a rule that determines the present state in terms of past states. For example, we have $x_n = 2x_{n-1}$.
 
 ---
 
