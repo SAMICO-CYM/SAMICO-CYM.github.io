@@ -20,13 +20,10 @@ $\varepsilon > 0$.
 Then $|x| < \varepsilon \iff −\varepsilon < x < \varepsilon$ and $|x| ≤ \varepsilon \iff −\varepsilon ≤ x ≤ \varepsilon.$  
 - **(2)** 
 $x ≤ |x|$
-
 - **(3)** 
 $|xy| = |x||y|$
-
 - **(4)** 
 $|x + y| ≤ |x| + |y|$
-
 - **(5)** 
 $|x| - |y| \leq |x-y|$
 
