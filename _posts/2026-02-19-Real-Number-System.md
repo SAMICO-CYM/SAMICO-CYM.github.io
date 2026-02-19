@@ -20,7 +20,9 @@ The **real numbers** $\mathbb{R}$ is a set of objects satisfying Axioms 1 to 1
 - **(A10)** Multiplicative inverses exist for nonzero real numbers. $\forall x \in \mathbb{R}$ with $x \neq 0$, $\exists y \in \mathbb{R}$ such that $xy = 1 = yx$, ($y$ is denoted $x^{-1}$ or $\frac{1}{x}$ and we define $\frac{x}{y} = x(y^{-1})$ if $y \neq 0$.)  
 - **(A11)** $x(y+z) = xy + yz, (y+z)x = yx + zx, \forall x, y, z \in \mathbb{R}$,  
 - **(A12)** There is a subset $P$ of $\mathbb{R}$ called the positive real numbers satisfying 
+
 (i) $x, y \in P \Longrightarrow x+y, xy \in P$.  
+
 (ii) If $x \in \mathbb{R}$, then exactly one of the following statements is true: $$x \in P \text{ or } x = 0 \text{ or } -x \in P$$
 - **(A13)** A nonempty subset of real numbers which is bounded above has a least upper bound.
 
