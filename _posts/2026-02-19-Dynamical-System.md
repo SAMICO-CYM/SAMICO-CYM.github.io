@@ -54,7 +54,7 @@ Furthermore, we have
 $$\begin{gather*} |f^k(x) - p| \le a^k|x-p|, \forall k \in \mathbb{N}, \forall x \in N_\varepsilon(p). \end{gather*}$$
 
 We have shown the case $k=1$. Suppose that $|f^k(x) - p| \le a^k|x-p|, \forall x \in N_\varepsilon(p)$ holds for some $k > 2$. Since $f^k(x) \in N_\varepsilon(p),$ $\forall x \in N_\varepsilon(p)$, we have 
-
+\
 $$ \begin{gather*} |f(f^k(x)) - p| = |f^{k+1}(x) - p| \le a |f^k(x) - p| \\ \le a \cdot a^k|x-p| = a^{k+1}|x-p|, \forall x \in N_\varepsilon(p). \end{gather*} $$
 
 Thus the induction step is finished.
