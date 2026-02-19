@@ -63,7 +63,6 @@ holds for some $k > 2$. Since $f^k(x) \in N_\varepsilon(p),$ $\forall x \in N_\v
 $$\begin{gather*} |f(f^k(x)) - p| = |f^{k+1}(x) - p| \le a |f^k(x) - p| \\ \le a \cdot a^k|x-p| = a^{k+1}|x-p|, \forall x \in N_\varepsilon(p). \end{gather*}$$
 
 Thus the induction step is finished.
-\
 
 Then it follows that $\forall x \in N_\varepsilon(p),$
 
