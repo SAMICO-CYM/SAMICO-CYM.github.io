@@ -180,9 +180,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "9ba160efc1f451fb",
+  "active": "7de54e063efb4f46",
   "lastOpenFiles": [
+    "_posts/2026-02-19-Absolute-Value.md",
     "_posts/2026-02-19-Dynamical-System.md",
+    "_posts/2026-02-19-.md",
+    "_site/posts/index.html",
+    "_site/posts/Absolute-Value/index.html",
+    "_site/posts/Absolute-Value",
     "_posts/2026-02-19-Real-Number-System.md",
     "_site/categories/real-ananlysis/index.html",
     "_site/categories/real-ananlysis",
@@ -191,10 +196,7 @@
     "_site/categories/real/index.html",
     "_site/categories/real",
     "_site/categories/rea/index.html",
-    "_site/categories/rea",
     "_templates/new_post.md",
-    "_site/posts/Real-Number-System/index.html",
-    "_site/posts/Real-Number-System",
     "_posts/2026-02-19-dynamics.md",
     "_templates/Box.md",
     "README.md",

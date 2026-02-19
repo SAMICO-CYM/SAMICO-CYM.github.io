@@ -115,3 +115,45 @@ Let $x, y, z \in \mathbb{R}$.
 **(2)** Note that $x > y \iff x - y \in P$ and $y > z \iff y - z \in P$ by Definition 4.1. Then $(x - y) + (y - z) = x - z \in P \iff x > z$ by Definition 4.1, A2, and A4. 
 
 **(3)** Note that $x > y \iff x - y \in P$. Then $x - y = x - y + 0 = x - y + (z - z) = x + z - (y + z) \in P \iff x + z > y + z$ by A2, A3, A4, A5, and Definition 4.1. $\blacksquare$
+
+---
+
+## Definition
+Let $X$ be a nonempty subset of $\mathbb{R}$.
+- $X$ is said to be ***bounded above (below)*** if there exists a real number $a$ such that $x ≤ a (x ≥ a)$ for all $x \in X$. The number $a$ is called an ***upper (lower) bound*** for $X$.
+- A number $a$ in $\mathbb{R}$ is said to be a ***least upper bound*** or a ***supremum*** for $X$, denoted by $a = \sup X$, if  
+
+**(i)** $a$ is an upper bound for $X$.  
+
+**(ii)** If $b$ is an upper bound for $X$, then $a ≤ b$.  
+- A number $a$ in $\mathbb{R}$ is said to be a ***greatest lower bound*** or an ***infimum*** for $X$, denoted by $b = \inf X$, if  
+
+**(i)** $a$ is a lower bound for $X$.  
+
+**(ii)** If $b$ is a lower bound for $X$, then $b ≤ a$.
+
+---
+
+## Theorem 4
+- Let $X \subseteq \mathbb{R}$. Then the least upper bound for $X$ is unique.
+
+### Proof
+Let $a$ and $b$ be the least upper bounds for $X$. Then $a \leq b$ because $b$ is an upper bound for $X$ and by definition 5.2. Similarly, $b \leq a$. This means that $a = b$. $\blacksquare$
+
+---
+
+## Theorem 5
+- A nonempty subset of real numbers which is bounded below has a greatest lower bound.
+
+### Proof
+Let $X$ be a nonempty subset of $\mathbb{R}$ which is bounded below. Then there exists $y \in \mathbb{R}$ such that $y \leq x, \forall x \in X$ by definition 5.1. Let $Y$ be the set of lower bounds for $X$. Let $x \in X$. Then $y \leq x, \forall y \in Y$, which means that $Y$ is bounded above and each $x \in X$ is an upper bound for $Y$. 
+\
+By A13, there exists the least upper bound $a$ for $Y$. Then $a \leq x, \forall x \in X$ by definition 5.2, that is, $a$ is a lower bound for $X$. Furthermore, $y \leq a, \forall y \in Y$ because $a$ is an upper bound for $Y$. By definition 5.2, $a$ is the greatest lower bound for $X$. $\blacksquare$
+
+---
+
+## Theorem 6
+- Let $X \subset \mathbb{R}$ and let $a = \sup X$. Let $\varepsilon > 0$. Then there exists $x \in X$ such that $a - \varepsilon < x \leq a$.
+
+### Proof
+Note that $a - \varepsilon < a$ and $a$ is the least upper bound for $X$, so $a - \varepsilon$ is not an upper bound for $X$. Then $\exists x \in X$ such that $a - \varepsilon < x \leq a$ by definition 5.1. $\blacksquare$
