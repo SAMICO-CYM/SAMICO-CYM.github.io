@@ -38,7 +38,7 @@ $$\begin{align*}
 & \lim_{x \to p} \frac{|f(x) - f(p)|}{|x-p|} = |f'(p)|,
 \end{align*}$$
 
-$\exists \varepsilon > 0$ such that $\forall x \in N_\varepsilon(p)$, we have 
+$\exists \varepsilon > 0$ such that $\forall x \in N_\varepsilon(p)$,
 
 $$\begin{align*} 
 & \frac{|f(x) - f(p)|}{|x - p|} - |f'(p)| < a - |f'(p)| \\ 
@@ -51,6 +51,13 @@ so that $f^k(x) \in N_\varepsilon(p), \forall k \in \mathbb{N}.$
 \
 Furthermore, we have 
 
-$$|f^k(x) - p| \le a^k|x-p|, \forall k \in \mathbb{N}.$$ 
+$$|f^k(x) - p| \le a^k|x-p|, \forall k \in \mathbb{N}, \forall x \in N_\varepsilon(p).$$ 
+$(\because)$ We have shown the case $k=1$. Suppose that $|f^k(x) - p| \le a^k|x-p|, \forall x \in N_\varepsilon(p)$ holds for some $k > 2$. Since $f^k(x) \in N_\varepsilon(p), \forall x \in N_\varepsilon(p)$, we have
 
-$(\because)$ 
+$$\begin{gather*}|f(f^k(x)) - p| = |f^{k+1}(x) - p| \le a |f^k(x) - p| \\ \le a \cdot a^k|x-p| = a^{k+1}|x-p|, \forall x \in N_\varepsilon(p). \end{gather*}$$
+
+Then it follows that $\forall x \in N_\varepsilon(p),$
+
+$$\begin{gather*} 0 \le \lim_{k \to \infty} |f^k(x) - p| \le \lim_{k \to \infty} a^k|x-p| = 0 \\ \implies \lim_{k \to \infty} |f^k(x) - p| = 0 \\ \implies \lim_{k \to \infty} f^k(x) = p, \end{gather*}$$
+
+which means that $p$ is a sink. $\blacksquare$
