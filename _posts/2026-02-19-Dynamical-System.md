@@ -64,6 +64,7 @@ $$\begin{gather*} |f(f^k(x)) - p| = |f^{k+1}(x) - p| \le a |f^k(x) - p| \\ \le a
 
 Thus the induction step is finished.
 \
+
 Then it follows that $\forall x \in N_\varepsilon(p),$
 
 $$\begin{gather*} & 0 \le \lim_{k \to \infty} |f^k(x) - p| \le \lim_{k \to \infty} a^k|x-p| = 0 \\ \implies & \lim_{k \to \infty} |f^k(x) - p| = 0 \\ \implies & \lim_{k \to \infty} f^k(x) = p, \end{gather*}$$
