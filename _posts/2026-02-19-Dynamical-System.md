@@ -35,7 +35,12 @@ Lef $f \in C^\infty$ be a map on $\mathbb{R}$, and let $p$ be a fixed point of $
 $$\lim_{x \to p} \frac{|f(x) - f(p)|}{|x-p|} = |f'(p)|,$$ \
 $\exists \varepsilon > 0$ such that $\forall x \in N_\varepsilon(p)$, we have 
 \
-$$\begin{align*} & \frac{|f(x) - f(p)|}{|x - p|} - |f'(p)| < a - |f'(p)| \\ \Longrightarrow &\frac{|f(x) - f(p)|}{|x - p|} < a \\ \Longrightarrow &|f(x) - p| = |f(x) - f(p)| < a |x-p| < \varepsilon \\ \Longrightarrow &f(x) \in N_\varepsilon(p), \end{align*}$$
+$$\begin{align*} 
+& \frac{|f(x) - f(p)|}{|x - p|} - |f'(p)| < a - |f'(p)| \\ 
+\Longrightarrow &\frac{|f(x) - f(p)|}{|x - p|} < a \\ 
+\Longrightarrow &|f(x) - p| = |f(x) - f(p)| < a |x-p| < \varepsilon \\ 
+\Longrightarrow &f(x) \in N_\varepsilon(p), 
+\end{align*}$$
 \
 so that $f^k(x) \in N_\varepsilon(p), \forall k \in \mathbb{N}.$ 
 \
