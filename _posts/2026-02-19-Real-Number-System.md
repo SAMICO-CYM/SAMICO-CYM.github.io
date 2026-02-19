@@ -32,6 +32,7 @@ The **real numbers** $\mathbb{R}$ is a set of objects satisfying Axioms 1 to 1
 
 ### Proof
 Let $x \in \mathbb{R}$, and suppose that $0$ and $0'$ are two additive identities. Then $0 = 0 + 0' = 0'$ by axiom 4, so the additive identity is unique. Suppose that $y$ and $z$ are two additive inverses of $x$. Then 
+
 $$\begin{align*} y & = y + 0 \text{(A4)} \\ &= y + (x + z) \text{(A5)} \\& = (y + x) + z \text{(A2)} \\ &= 0 + z \text{(A5)} \\ &= z. \text{(A4)} \end{align*}$$
 
 Thus the additive inverse is unique. $\blacksquare$
