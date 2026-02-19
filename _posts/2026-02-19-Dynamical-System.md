@@ -26,9 +26,9 @@ Let $f$ be a map on $\mathbb{R}$ and let $p$ be a fixed point of the map $f$.
 ---
 
 ## Theorem
-Lef $f \in C^\infty$ be a map on $\mathbb{R}$, and let $p$ be a fixed point of $f$. Then 
+Lef $f \in C^\infty$ be a map on $\mathbb{R}$, and let $p$ be a fixed point of $f$. Then
 - **(i)** If $|f'(p)| < 1$, then $p$ is a sink.
-- **(ii)** If $|f'(p)| > 1$, then $p$ is a source. 
+- **(ii)** If $|f'(p)| > 1$, then $p$ is a source.
 ### Proof
 - **(i)** Suppose that $|f'(p)| < 1$. Let $a \in (|f'(p)|, 1)$. Since 
 
