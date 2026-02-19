@@ -8,5 +8,7 @@ categories: [Mathematics, Dynamics]
 tags: []
 math: true
 
+---
+
 Definition.
 $x_n = f(x_{n-1}) = 2x_{n-1}$
