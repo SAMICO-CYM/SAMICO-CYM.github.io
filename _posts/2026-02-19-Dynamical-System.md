@@ -43,6 +43,6 @@ $$\begin{gather*} & \frac{|f(x) - f(p)|}{|x - p|} - |f'(p)| < a - |f'(p)| \\ \Lo
 so that $f^k(x) \in N_\varepsilon(p), \forall k \in \mathbb{N}.$ 
 
 Furthermore, we have 
-
+\
 $$|f^k(x) - p| \le a^k|x-p|, \forall k \in \mathbb{N}.$$ \
 $(\because)$ 
