@@ -13,9 +13,7 @@ math: true
 ---
 ## Definition 2
 **(i)** A function $f: X \to X$ whose domain and range are the same is called a ***map***. 
-
 **(ii)** Let $x$ be a point and let $f$ be a map. ***The orbit of $x$ under $f$*** is the set of points $\{x, f(x), f^2(x), ... \}$. The starting point $x$ for the orbit is called the ***initial value*** of the orbit. 
-
 **(iii)** A point $p$ is a ***fixed point*** of the map $f$ if $f(p)=p$.
 
 ---
