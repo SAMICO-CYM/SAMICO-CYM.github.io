@@ -13,7 +13,7 @@ math: true
 ---
 ## Definition 2
 1. A function $f: X \to X$ whose domain and range are the same is called a ***map***. 
-2. Let $x$ be a point and let $f$ be a map. ***The orbit of $x$ under $f$*** is the set of points $\{x, f(x), f^2(x), ... \}$. The starting point $x$ for the orbit is called the ***initial value*** of the orbit. 
+2. Let $x$ be a point and let $f$ be a map. ***The orbit of $x$ under $f$*** is the set of points $\\{x, f(x), f^2(x), ... \\}$. The starting point $x$ for the orbit is called the ***initial value*** of the orbit. 
 3. A point $p$ is a ***fixed point*** of the map $f$ if $f(p)=p$.
 
 ---
@@ -71,5 +71,9 @@ $$\begin{gather*} & 0 \le \lim_{k \to \infty} |f^k(x) - p| \le \lim_{k \to \inft
 which means that $p$ is a sink. 
 \
 The part 2 is similar to 1. $\blacksquare$
+
 도함수 $f'$는 입력값이 그 근방에서 얼마나 변화하는지에 대한 정량적 척도라고 이해할 수 있으므로, 그 값이 $1$보다 작을 때 반복해서 $f$를 취하면 자연스레 값이 $p$에 수렴하리라고 이해할 수 있다. $1$보다 클 때도 마찬가지로 생각할 수 있다. 
 반대로 말하면 $f'(p) = 1$일 때는 함부로 판정할 수 없음을 알 수 있다. 
+
+---
+
