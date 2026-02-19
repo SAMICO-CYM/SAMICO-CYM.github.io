@@ -32,9 +32,7 @@ $|f'(p)| < 1$,
 then $p$ is a sink. 
 2. If $|f'(p)| > 1$, then $p$ is a source.
 ### Proof
-1. Suppose that 
-$|f'(p)| < 1$. 
-Let $a \in (|f'(p)|, 1)$. Since 
+Suppose that $|f'(p)| < 1$. Let $a \in (|f'(p)|, 1)$. Since 
 
 $$\begin{align*} 
 & \lim_{x \to p} \frac{|f(x) - f(p)|}{|x-p|} = |f'(p)|,
