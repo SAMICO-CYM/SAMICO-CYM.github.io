@@ -29,3 +29,4 @@ $$ F(b) = \int_a^b f \, d\alpha $$
 for $b > a$.
 
 </div>
+이상적분은 다음과 같이 정의된다. The improper integarl is defined.
