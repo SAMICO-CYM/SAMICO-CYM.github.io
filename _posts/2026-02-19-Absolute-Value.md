@@ -15,11 +15,20 @@ $$|x| = \begin{cases} x & \text{ if} x \geq 0 \\ -x & \text{ if} x < 0. \end{cas
 
 ## Theorem
 Let $x, y \in \mathbb{R}$.
-- **(1)** Let $\varepsilon > 0$. Then $|x| < \varepsilon \iff −\varepsilon < x < \varepsilon$ and $|x| ≤ \varepsilon \iff −\varepsilon ≤ x ≤ \varepsilon.$  
-- **(2)** $x ≤ |x|$
-- **(3)** $|xy| = |x||y|$
-- **(4)** $|x + y| ≤ |x| + |y|$
-- **(5)** $|x| - |y| \leq |x-y|$
+- **(1)** Let 
+$\varepsilon > 0$. 
+Then $|x| < \varepsilon \iff −\varepsilon < x < \varepsilon$ and $|x| ≤ \varepsilon \iff −\varepsilon ≤ x ≤ \varepsilon.$  
+- **(2)** 
+$x ≤ |x|$
+
+- **(3)** 
+$|xy| = |x||y|$
+
+- **(4)** 
+$|x + y| ≤ |x| + |y|$
+
+- **(5)** 
+$|x| - |y| \leq |x-y|$
 
 ### Proof
 
