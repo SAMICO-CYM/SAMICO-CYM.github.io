@@ -7,9 +7,9 @@ math: true
 ---
 
 ## Absolute Value
-- Let $x \in \mathbb{R}$. We define 
+- Let $x \in \mathbb{R}$. We define the absolute value $|x|$ of $x$ by
 
-$$|x| = \begin{cases} x & \text{ if} x \geq 0 \\ -x & \text{ if} x < 0. \end{cases}$$
+$$|x| = \begin{cases} x & \text{if } x \geq 0 \\ -x & \text{if } x < 0. \end{cases}$$
 
 ---
 
