@@ -29,6 +29,7 @@ The **real numbers** $\mathbb{R}$ is a set of objects satisfying Axioms 1 to 1
 ---
 ## Theorem 1
 - The additive identity of (A4) and the additive inverse of (A5) are unique.
+
 ### Proof
 Let $x \in \mathbb{R}$, and suppose that $0$ and $0'$ are two additive identities. Then $0 = 0 + 0' = 0'$ by axiom 4, so the additive identity is unique. Suppose that $y$ and $z$ are two additive inverses of $x$. Then 
 $$\begin{align*} y & = y + 0 \text{(A4)} \\ &= y + (x + z) \text{(A5)} \\& = (y + x) + z \text{(A2)} \\ &= 0 + z \text{(A5)} \\ &= z. \text{(A4)} \end{align*}$$
@@ -46,6 +47,7 @@ Let $x, y, z \in \mathbb{R}$. Then the followings hold:
 - **(5)** $xy=xz$ and $x \neq 0 \Longrightarrow y = z$,  
 - **(6)** $-(xy) = x(-y) = (-x)y$,  
 - **(7)** $(-1)x = -x$.
+
 ### Proof 
 **(1)** 
 
@@ -105,6 +107,7 @@ Let $x, y, z \in \mathbb{R}$.
 - **(3)** $x > y \Longrightarrow x + z > y + z$,  
 - **(4)** $x > y \wedge z > 0 \Longrightarrow xz > yz,$  
 - **(5)** $x > y \wedge z < 0 \Longrightarrow xz < yz$
+
 ### Proof 
 **(1)** By A12, $1 \in P$ or $1 = 0$ or $-1 \in P$. By A9, $1 \neq 0$. If $-1 \in P$, then $(-1) \cdot (-1) = -(-1) = 1 \in P$ by A12 and Thm 3.4. $\bigotimes$ Thus $1 = 1 - 0 \in P \iff 1 > 0$. 
 
