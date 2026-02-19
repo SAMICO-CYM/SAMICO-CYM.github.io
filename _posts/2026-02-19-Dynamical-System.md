@@ -20,15 +20,15 @@ math: true
 
 ## Definition 3
 Let $f$ be a map on $\mathbb{R}$ and let $p$ be a fixed point of the map $f$. 
--  **(i)** The point $p$ is called a ***sink*** or an ***attracting fixed point*** if $\exists \varepsilon > 0$ such that $$\lim_{k \to \infty} f^k(x) = p, \forall x \in N_\varepsilon(p).$$ 
-- **(ii)** The point $p$ is called a ***source*** or a ***repelling fixed point*** if $\exists \varepsilon > 0$ such that for each $x \in N_{\varepsilon}(p)$ except for $p$, $\exists N \in \mathbb{N}$ such that $f^N(x) \notin N_\varepsilon(p).$ 
+1. The point $p$ is called a ***sink*** or an ***attracting fixed point*** if $\exists \varepsilon > 0$ such that $$\lim_{k \to \infty} f^k(x) = p, \forall x \in N_\varepsilon(p).$$ 
+2. The point $p$ is called a ***source*** or a ***repelling fixed point*** if $\exists \varepsilon > 0$ such that for each $x \in N_{\varepsilon}(p)$ except for $p$, $\exists N \in \mathbb{N}$ such that $f^N(x) \notin N_\varepsilon(p).$ 
 
 ---
 
 ## Theorem
 Lef $f \in C^\infty$ be a map on $\mathbb{R}$, and let $p$ be a fixed point of $f$. Then
-- **(i)** If $|f'(p)| < 1$, then $p$ is a sink.
-- **(ii)** If $|f'(p)| > 1$, then $p$ is a source.
+1. If $|f'(p)| < 1$, then $p$ is a sink.
+2. If $|f'(p)| > 1$, then $p$ is a source.
 ### Proof
 - **(i)** Suppose that $|f'(p)| < 1$. Let $a \in (|f'(p)|, 1)$. Since 
 \
