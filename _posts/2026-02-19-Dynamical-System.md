@@ -57,6 +57,8 @@ $(\because)$ We have shown the case $k=1$. Suppose that $$|f^k(x) - p| \le a^k|x
 
 $$\begin{gather*}|f(f^k(x)) - p| = |f^{k+1}(x) - p| \le a |f^k(x) - p| \\ \le a \cdot a^k|x-p| = a^{k+1}|x-p|, \forall x \in N_\varepsilon(p). \end{gather*}$$
 
+Thus the induction step is finished.
+\
 Then it follows that $\forall x \in N_\varepsilon(p),$
 
 $$\begin{gather*} & 0 \le \lim_{k \to \infty} |f^k(x) - p| \le \lim_{k \to \infty} a^k|x-p| = 0 \\ \implies & \lim_{k \to \infty} |f^k(x) - p| = 0 \\ \implies & \lim_{k \to \infty} f^k(x) = p, \end{gather*}$$
