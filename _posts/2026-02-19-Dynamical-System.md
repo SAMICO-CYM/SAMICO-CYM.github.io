@@ -1,7 +1,4 @@
 ---
-
----
----
 title: Dynamical System
 date: 2026-02-19 15:00:00 +0900
 categories: [Mathematics, Dynamics]
