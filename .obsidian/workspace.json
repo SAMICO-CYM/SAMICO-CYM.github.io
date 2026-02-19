@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6c65ba6a08af091e",
+        "id": "83deefe2af2bfff6",
         "type": "tabs",
         "children": [
           {
-            "id": "d43882a395db8a18",
+            "id": "9ba160efc1f451fb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2026-02-19-dynamics.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026-02-19-dynamics"
+              "title": "New tab"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2026-02-19-dynamics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-02-19-dynamics"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2026-02-19-dynamics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2026-02-19-dynamics"
+              "title": "Outgoing links"
             }
           },
           {
@@ -156,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2026-02-19-dynamics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-02-19-dynamics"
+              "title": "Outline"
             }
           }
         ]
@@ -183,10 +176,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "d43882a395db8a18",
+  "active": "7de54e063efb4f46",
   "lastOpenFiles": [
-    "_posts/2026-02-19-Dynamical-System.md",
+    "_site/config/Welcome.md",
+    "_site/config",
+    "config/Welcome.md",
+    "config",
+    "README.md",
+    "Untitled",
     "_posts/2026-02-19-dynamics.md",
+    "_posts/2026-02-19-Dynamical-System.md",
     "_tabs/tags.md",
     "_templates/new_post.md",
     "_tabs/about.md",
@@ -197,11 +196,7 @@
     "_site/posts/dynamics/index.html",
     "_site/posts/dynamics",
     "_site/posts/Dynamical-System/index.html",
-    "_site/posts/Dynamical-System",
-    "_site/posts/dynamics.md/index.html",
     "_site/posts/dynamics.md",
-    "_site/posts/Dynamical-System.md/index.html",
-    "_site/posts/Dynamical-System.md",
-    "README.md"
+    "_site/posts/Dynamical-System.md"
   ]
 }
