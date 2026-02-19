@@ -45,26 +45,26 @@ $$|f^k(x) - p| \le a^k|x-p|, \forall k \in \mathbb{N}.$$ \
 $(\because)$ 
 
 ### Theorem
-Let $$f \in C^\infty$$ be a map on $$\mathbb{R}$$, and let $$p$$ be a fixed point of $$f$$. Then
-- (i) If \$$|f'(p)| < 1$$, then \$$p$$ is a sink.
-- (ii) If \$$|f'(p)| > 1$$, then \$$p$$ is a source.
+Let $$f \in C^\infty$$be a map on$$\mathbb{R}$$, and let $$p$$be a fixed point of$$f$$. Then
+- (i) If $$|f'(p)| < 1$$, then $$p$$ is a sink.
+- (ii) If $$|f'(p)| > 1$$, then $$p$$ is a source.
 
 ### Proof
-- (i) Suppose that \$$|f'(p)| < 1$$. Let \$$a \in (|f'(p)|, 1)$$. Since 
+- (i) Suppose that $$|f'(p)| < 1$$. Let $$a \in (|f'(p)|, 1)$$. Since 
 
 $$
 \lim_{x \to p} \frac{|f(x) - f(p)|}{|x - p|} = |f'(p)|,
 $$
 
-\$$\exists \varepsilon > 0$$ such that $$\forall x \in N_\varepsilon(p)$$, we have
+$$\exists \varepsilon > 0$$such that$$\forall x \in N_\varepsilon(p)$$, we have
 
 $$
-\begin{align}
+\begin{align*}
 \frac{|f(x) - f(p)|}{|x - p|} - |f'(p)| &< a - |f'(p)| \\
 \implies \frac{|f(x) - f(p)|}{|x - p|} &< a \\
 \implies |f(x) - p| = |f(x) - f(p)| &< a|x - p| < \varepsilon \\
 \implies f(x) &\in N_\varepsilon(p)
-\end{align}
+\end{align*}
 $$
 
 so that $$f^k(x) \in N_\varepsilon(p), \forall k \in \mathbb{N}$$. Furthermore, we have $$|f^k(x) - p| \le a^k|x - p|, \forall k \in \mathbb{N}$$.
