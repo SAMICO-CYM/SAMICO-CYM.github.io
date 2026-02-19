@@ -8,13 +8,13 @@ tags: []
 math: true
 ---
 ## Definition 1
-***A dynamical system*** consists of a set of possible states, together with a rule that determines the present state in terms of past states.
+- ***A dynamical system*** consists of a set of possible states, together with a rule that determines the present state in terms of past states.
 
 ---
 ## Definition 2
-**(i)** A function $f: X \to X$ whose domain and range are the same is called a ***map***. \
-**(ii)** Let $x$ be a point and let $f$ be a map. ***The orbit of $x$ under $f$*** is the set of points $\{x, f(x), f^2(x), ... \}$. The starting point $x$ for the orbit is called the ***initial value*** of the orbit. \
-**(iii)** A point $p$ is a ***fixed point*** of the map $f$ if $f(p)=p$.
+- **(i)** A function $f: X \to X$ whose domain and range are the same is called a ***map***. \
+- **(ii)** Let $x$ be a point and let $f$ be a map. ***The orbit of $x$ under $f$*** is the set of points $\{x, f(x), f^2(x), ... \}$. The starting point $x$ for the orbit is called the ***initial value*** of the orbit. \
+- **(iii)** A point $p$ is a ***fixed point*** of the map $f$ if $f(p)=p$.
 
 ---
 
@@ -37,7 +37,8 @@ $\exists \varepsilon > 0$ such that $\forall x \in N_\varepsilon(p)$, we have
 
 $$\begin{gather*} & \frac{|f(x) - f(p)|}{|x - p|} - |f'(p)| < a - |f'(p)| \\ \Longrightarrow &\frac{|f(x) - f(p)|}{|x - p|} < a \\ \Longrightarrow &|f(x) - p| = |f(x) - f(p)| < a |x-p| < \varepsilon \\ \Longrightarrow &f(x) \in N_\varepsilon(p), \end{gather*}$$
 \
-so that $f^k(x) \in N_\varepsilon(p), \forall k \in \mathbb{N}.$ \ 
+so that $f^k(x) \in N_\varepsilon(p), \forall k \in \mathbb{N}.$ 
+
 Furthermore, we have 
 
 $$|f^k(x) - p| \le a^k|x-p|, \forall k \in \mathbb{N}.$$ \
