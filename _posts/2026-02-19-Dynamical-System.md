@@ -50,7 +50,7 @@ $$\begin{align*}
 so that $f^k(x) \in N_\varepsilon(p), \forall k \in \mathbb{N}.$ 
 \
 Furthermore, we have 
-
+\
 $$|f^k(x) - p| \le a^k|x-p|, \forall k \in \mathbb{N}, \forall x \in N_\varepsilon(p).$$ \
 $(\because)$ We have shown the case $k=1$. Suppose that $|f^k(x) - p| \le a^k|x-p|, \forall x \in N_\varepsilon(p)$ holds for some $k > 2$. Since $f^k(x) \in N_\varepsilon(p), \forall x \in N_\varepsilon(p)$, we have
 
