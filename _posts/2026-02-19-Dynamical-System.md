@@ -34,7 +34,7 @@ then $p$ is a sink.
 $|f'(p)| > 1$, 
 then $p$ is a source.
 
-## Proof
+### Proof
 Suppose that $|f'(p)| < 1$. Let $a \in (|f'(p)|, 1)$. Since 
 
 $$\begin{align*} 
@@ -71,3 +71,5 @@ $$\begin{gather*} & 0 \le \lim_{k \to \infty} |f^k(x) - p| \le \lim_{k \to \inft
 which means that $p$ is a sink. 
 \
 The part 2 is similar to 1. $\blacksquare$
+도함수 $f'$는 입력값이 그 근방에서 얼마나 변화하는지에 대한 정량적 척도라고 이해할 수 있으므로, 그 값이 $1$보다 작을 때 반복해서 $f$를 취하면 자연스레 값이 $p$에 수렴하리라고 이해할 수 있다. $1$보다 클 때도 마찬가지로 생각할 수 있다. 
+반대로 말하면 $f'(p) = 1$일 때는 함부로 판정할 수 없음을 알 수 있다. 
