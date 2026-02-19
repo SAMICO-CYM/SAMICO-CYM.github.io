@@ -1,7 +1,5 @@
 {
   "baseFontSize": 18,
   "baseFontSizeAction": true,
-  "enabledCssSnippets": [
-    "center-math.css"
-  ]
+  "enabledCssSnippets": []
 }
