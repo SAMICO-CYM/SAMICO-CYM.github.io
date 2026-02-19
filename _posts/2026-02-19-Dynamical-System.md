@@ -8,13 +8,13 @@ tags: []
 math: true
 ---
 ## Definition 1
-- ***A dynamical system*** consists of a set of possible states, together with a rule that determines the present state in terms of past states.
+1. ***A dynamical system*** consists of a set of possible states, together with a rule that determines the present state in terms of past states.
 
 ---
 ## Definition 2
-- **(i)** A function $f: X \to X$ whose domain and range are the same is called a ***map***. 
-- **(ii)** Let $x$ be a point and let $f$ be a map. ***The orbit of $x$ under $f$*** is the set of points $\{x, f(x), f^2(x), ... \}$. The starting point $x$ for the orbit is called the ***initial value*** of the orbit. 
-- **(iii)** A point $p$ is a ***fixed point*** of the map $f$ if $f(p)=p$.
+1. A function $f: X \to X$ whose domain and range are the same is called a ***map***. 
+2. Let $x$ be a point and let $f$ be a map. ***The orbit of $x$ under $f$*** is the set of points $\{x, f(x), f^2(x), ... \}$. The starting point $x$ for the orbit is called the ***initial value*** of the orbit. 
+3. A point $p$ is a ***fixed point*** of the map $f$ if $f(p)=p$.
 
 ---
 
@@ -27,10 +27,10 @@ Let $f$ be a map on $\mathbb{R}$ and let $p$ be a fixed point of the map $f$.
 
 ## Theorem
 Lef $f \in C^\infty$ be a map on $\mathbb{R}$, and let $p$ be a fixed point of $f$. Then
-1. If $|f'(p)| < 1$, then $p$ is a sink.
+1. If $|f'(p)| < 1$, then $p$ is a sink. 
 2. If $|f'(p)| > 1$, then $p$ is a source.
 ### Proof
-- **(i)** Suppose that $|f'(p)| < 1$. Let $a \in (|f'(p)|, 1)$. Since 
+1. Suppose that $|f'(p)| < 1$. Let $a \in (|f'(p)|, 1)$. Since 
 \
 $$\lim_{x \to p} \frac{|f(x) - f(p)|}{|x-p|} = |f'(p)|,$$ \
 $\exists \varepsilon > 0$ such that $\forall x \in N_\varepsilon(p)$, we have 
