@@ -52,3 +52,5 @@ Furthermore, we have
 \
 $$|f^k(x) - p| \le a^k|x-p|, \forall k \in \mathbb{N}.$$ \
 $(\because)$ 
+
+$$ \begin{align*} \frac{|f(x) - f(p)|}{|x - p|} - |f'(p)| &< a - |f'(p)| \\ \implies \frac{|f(x) - f(p)|}{|x - p|} &< a \\ \implies |f(x) - p| = |f(x) - f(p)| &< a|x - p| < \varepsilon \\ \implies f(x) &\in N_\varepsilon(p) \end{align*} $$
