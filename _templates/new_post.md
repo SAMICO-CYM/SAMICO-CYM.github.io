@@ -1,9 +1,7 @@
----
-
----
 --- 
 title: 나의 첫 번째 블로그 글
 date: 2026-02-19 15:00:00 +0900
 categories: []
 tags: []
 math: true
+---
