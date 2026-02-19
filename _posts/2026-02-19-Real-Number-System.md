@@ -1,7 +1,7 @@
 --- 
-title: 나의 첫 번째 블로그 글
+title: Real Number System
 date: 2026-02-19 15:00:00 +0900
-categories: []
+categories: [Mathematics, Real Ananlysis]
 tags: []
 math: true
 ---
