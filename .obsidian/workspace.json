@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_templates/new_post.md",
+                "file": "_posts/2026-02-19-Dynamical-System.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "new_post"
+              "title": "2026-02-19-Dynamical-System"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_templates/new_post.md",
+                "file": "_posts/2026-02-19-Dynamical-System.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for new_post"
+              "title": "Backlinks for 2026-02-19-Dynamical-System"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_templates/new_post.md",
+                "file": "_posts/2026-02-19-Dynamical-System.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from new_post"
+              "title": "Outgoing links from 2026-02-19-Dynamical-System"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_templates/new_post.md",
+                "file": "_posts/2026-02-19-Dynamical-System.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of new_post"
+              "title": "Outline of 2026-02-19-Dynamical-System"
             }
           }
         ]
@@ -185,12 +185,12 @@
   },
   "active": "d43882a395db8a18",
   "lastOpenFiles": [
+    "_templates/new_post.md",
     "_site/categories/dynamics/index.html",
     "_site/categories/dynamics",
     "_site/categories/mathematics/index.html",
     "_site/categories/mathematics",
     "_posts/2026-02-19-dynamics.md",
-    "_templates/new_post.md",
     "_site/posts/dynamics/index.html",
     "_site/posts/dynamics",
     "_site/posts/Dynamical-System/index.html",
@@ -200,7 +200,6 @@
     "_site/posts/dynamics.md",
     "_site/posts/Dynamical-System.md/index.html",
     "_site/posts/Dynamical-System.md",
-    "README.md",
-    "_templates"
+    "README.md"
   ]
 }
