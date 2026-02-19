@@ -7,26 +7,17 @@ categories:
 tags: []
 math: true
 ---
+<div style="background-color: #f8f9fa; padding: 1.2rem 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; color: #333333; font-family: '본명조', 'Noto Serif KR', 'Source Han Serif KR', serif; line-height: 1.6;" markdown="1">
 
-<div style="background-color: #f8f9fa; padding: 1.2rem 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; color: #333333;" markdown="1">
-
-**Definition 59.1.** Let $f$ and $\alpha$ be bounded functions defined on the interval $[a, \infty)$.
-Suppose that $f \in \mathscr{R}(\alpha)$ for every $b > a$. The **improper Riemann-Stieltjes integral (of the first kind)** $\int_a^\infty f \, d\alpha$ is the ordered pair $(f, F)$, where
-
-$$ F(b) = \int_a^b f \, d\alpha $$
-
-for $b > a$.
+**Definition.** A dynamical system consists of a set of possible states, together with a rule that determines the present state in terms of past states. For example, we have $x_n = 2x_{n-1}$.
 
 </div>
 
+
+
 <div style="background-color: #f8f9fa; padding: 1.2rem 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; color: #333333; font-family: 'Georgia', 'Nanum Myeongjo', serif; line-height: 1.6;" markdown="1">
 
-**Definition.** Let $f$ and $\alpha$ be bounded functions defined on the interval $[a, \infty)$.
-Suppose that $f \in \mathscr{R}(\alpha)$ for every $b > a$. The **improper Riemann-Stieltjes integral (of the first kind)** $\int_a^\infty f \, d\alpha$ is the ordered pair $(f, F)$, where
-
-$$ F(b) = \int_a^b f \, d\alpha $$
-
-for $b > a$.
+**Definition.** A dynamical system consists of a set of possible states, together with a rule that determines the present state in terms of past states. 
 
 </div>
 이상적분은 다음과 같이 정의된다. The improper integarl is defined.
