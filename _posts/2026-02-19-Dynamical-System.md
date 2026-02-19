@@ -34,7 +34,7 @@ then $p$ is a sink.
 $|f'(p)| > 1$, 
 then $p$ is a source.
 
-### Proof
+## Proof
 Suppose that $|f'(p)| < 1$. Let $a \in (|f'(p)|, 1)$. Since 
 
 $$\begin{align*} 
@@ -68,4 +68,6 @@ Then it follows that $\forall x \in N_\varepsilon(p),$
 
 $$\begin{gather*} & 0 \le \lim_{k \to \infty} |f^k(x) - p| \le \lim_{k \to \infty} a^k|x-p| = 0 \\ \implies & \lim_{k \to \infty} |f^k(x) - p| = 0 \\ \implies & \lim_{k \to \infty} f^k(x) = p, \end{gather*}$$
 
-which means that $p$ is a sink. $\blacksquare$
+which means that $p$ is a sink. 
+\
+The part 2 is similar to 1. $\blacksquare$
