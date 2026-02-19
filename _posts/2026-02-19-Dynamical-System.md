@@ -12,25 +12,25 @@ math: true
 
 ---
 ## Definition 2
-- **(i)** A function $f: X \to X$ whose domain and range are the same is called a ***map***. \
-- **(ii)** Let $x$ be a point and let $f$ be a map. ***The orbit of $x$ under $f$*** is the set of points $\{x, f(x), f^2(x), ... \}$. The starting point $x$ for the orbit is called the ***initial value*** of the orbit. \
+- **(i)** A function $f: X \to X$ whose domain and range are the same is called a ***map***. 
+- **(ii)** Let $x$ be a point and let $f$ be a map. ***The orbit of $x$ under $f$*** is the set of points $\{x, f(x), f^2(x), ... \}$. The starting point $x$ for the orbit is called the ***initial value*** of the orbit. 
 - **(iii)** A point $p$ is a ***fixed point*** of the map $f$ if $f(p)=p$.
 
 ---
 
 ## Definition 3
-Let $f$ be a map on $\mathbb{R}$ and let $p$ be a fixed point of the map $f$. \
-(i) The point $p$ is called a ***sink*** or an ***attracting fixed point*** if $\exists \varepsilon > 0$ such that $$\lim_{k \to \infty} f^k(x) = p, \forall x \in N_\varepsilon(p).$$ \
-(ii) The point $p$ is called a ***source*** or a ***repelling fixed point*** if $\exists \varepsilon > 0$ such that for each $x \in N_{\varepsilon}(p)$ except for $p$, $\exists N \in \mathbb{N}$ such that $f^N(x) \notin N_\varepsilon(p).$ 
+Let $f$ be a map on $\mathbb{R}$ and let $p$ be a fixed point of the map $f$. 
+- **(i)** The point $p$ is called a ***sink*** or an ***attracting fixed point*** if $\exists \varepsilon > 0$ such that $$\lim_{k \to \infty} f^k(x) = p, \forall x \in N_\varepsilon(p).$$ 
+- **(ii)** The point $p$ is called a ***source*** or a ***repelling fixed point*** if $\exists \varepsilon > 0$ such that for each $x \in N_{\varepsilon}(p)$ except for $p$, $\exists N \in \mathbb{N}$ such that $f^N(x) \notin N_\varepsilon(p).$ 
 
 ---
 
 ## Theorem
-Lef $f \in C^\infty$ be a map on $\mathbb{R}$, and let $p$ be a fixed point of $f$. Then \
-(i) If $|f'(p)| < 1$, then $p$ is a sink. \
-(ii) If $|f'(p)| > 1$, then $p$ is a source. 
+Lef $f \in C^\infty$ be a map on $\mathbb{R}$, and let $p$ be a fixed point of $f$. Then 
+- **(i)** If $|f'(p)| < 1$, then $p$ is a sink.
+- **(ii)** If $|f'(p)| > 1$, then $p$ is a source. 
 ### Proof
-(i) Suppose that $|f'(p)| < 1$. Let $a \in (|f'(p)|, 1)$. Since 
+- **(i)** Suppose that $|f'(p)| < 1$. Let $a \in (|f'(p)|, 1)$. Since 
 
 $$\lim_{x \to p} \frac{|f(x) - f(p)|}{|x-p|} = |f'(p)|,$$ \
 $\exists \varepsilon > 0$ such that $\forall x \in N_\varepsilon(p)$, we have 
