@@ -31,7 +31,7 @@ Lef $f \in C^\infty$ be a map on $\mathbb{R}$, and let $p$ be a fixed point of $
 **(i)** If $|f'(p)| < 1$, then $p$ is a sink.
 \
 **(ii)** If $|f'(p)| > 1$, then $p$ is a source.
-\
+
 ### Proof
 **(i)** Suppose that $|f'(p)| < 1$. Let $a \in (|f'(p)|, 1)$. Since 
 
