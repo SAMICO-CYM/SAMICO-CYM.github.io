@@ -33,7 +33,7 @@ Lef $f \in C^\infty$ be a map on $\mathbb{R}$, and let $p$ be a fixed point of $
 **(ii)** If $|f'(p)| > 1$, then $p$ is a source.
 
 ### Proof
-**(i)** Suppose that $|f'(p)| < 1$. Let $a \in (|f'(p)|, 1)$. Since 
+- **(i)** Suppose that $|f'(p)| < 1$. Let $a \in (|f'(p)|, 1)$. Since 
 \
 $$\lim_{x \to p} \frac{|f(x) - f(p)|}{|x-p|} = |f'(p)|,$$ \
 $\exists \varepsilon > 0$ such that $\forall x \in N_\varepsilon(p)$, we have 
