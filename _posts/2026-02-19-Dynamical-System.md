@@ -20,4 +20,11 @@ math: true
 **Definition.** A dynamical system consists of a set of possible states, together with a rule that determines the present state in terms of past states. 
 
 </div>
+
+<div style="background-color: #f8f9fa; padding: 1.2rem 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;" markdown="1">
+
+**Definition.** A dynamical system consists of a set of possible states, together with a rule that determines the present state in terms of past states. 
+
+</div>
+
 이상적분은 다음과 같이 정의된다. The improper integarl is defined.
