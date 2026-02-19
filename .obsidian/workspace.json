@@ -11,10 +11,14 @@
             "id": "9ba160efc1f451fb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2026-02-19-dynamics.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-02-19-dynamics"
             }
           }
         ]
@@ -176,19 +180,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "7de54e063efb4f46",
+  "active": "9ba160efc1f451fb",
   "lastOpenFiles": [
+    "_posts/2026-02-19-Dynamical-System.md",
+    "_posts/2026-02-19-dynamics.md",
+    "_tabs/categories.md",
+    "_tabs/about.md",
+    "_tabs/archives.md",
+    "README.md",
+    "_tabs/tags.md",
+    "config/Welcome.md",
     "_site/config/Welcome.md",
     "_site/config",
-    "config/Welcome.md",
     "config",
-    "README.md",
     "Untitled",
-    "_posts/2026-02-19-dynamics.md",
-    "_posts/2026-02-19-Dynamical-System.md",
-    "_tabs/tags.md",
     "_templates/new_post.md",
-    "_tabs/about.md",
     "_site/categories/dynamics/index.html",
     "_site/categories/dynamics",
     "_site/categories/mathematics/index.html",
