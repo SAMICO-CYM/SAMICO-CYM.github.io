@@ -10,9 +10,13 @@ math: true
 Let 
 $f$
 be a map on $\mathbb{R}$.
-- A point $x_0$ has ***sensitive dependence on initial conditions*** if $\exists d > 0$ such that $\forall \varepsilon > 0$, $\exists x \in N_\varepsilon(x_0)$ such that $|f^k(x) - f^k(x_0)| \ge d$ for some nonnegative integer k. Sometimes we will call such a point $x_0$ a ***sensitive point***.
+- A point 
+$x_0$
+has ***sensitive dependence on initial conditions*** if $\exists d > 0$ such that $\forall \varepsilon > 0$, $\exists x \in N_\varepsilon(x_0)$ such that $|f^k(x) - f^k(x_0)| \ge d$ for some nonnegative integer k. Sometimes we will call such a point $x_0$ a ***sensitive point***.
 
-당연하게도, $x_0$에 가까운 점일수록 더 큰 $k$ 값이 필요할 것이다. 
+당연하게도, 
+$x_0$
+에 가까운 점일수록 더 큰 $k$ 값이 필요할 것이다. 
 
 ---
 
