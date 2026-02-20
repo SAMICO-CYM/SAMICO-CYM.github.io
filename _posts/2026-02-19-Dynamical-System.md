@@ -80,6 +80,8 @@ The part 2 is similar to 1. $\blacksquare$
 Let $f$ be a map on $\mathbb{R}$. 
 - We call $p$ a ***periodic point of period $k$*** of $f$ if $f^k(p) = p$, and if $k$ is the smallest such positive integer. 
 - The orbit with initial point $p$ (which consists of $k$ points) is called a ***periodic orbit of period $k$***. 
+- We call a point $x$ ***eventually periodic*** with period $p$ for the map $f$ if $\exists N \in \mathbb{N}$ such that $f^{n+p}(x) = f^n(x), \forall n \ge N$, and if $p$ is the smallest such positive integer. 
+
 We will often use the abbreviated terms ***period-$k$ point*** and ***period-$k$ orbit***.
 
 예컨대 $f(p_1) = p_2, f(p_2) = p_1$을 만족하는 점 $p_1, p_2$가 존재한다고 해보자. 이때 $g = f^2$라는 맵에 대해서 $g(p_1) = f^2(p_1) = p_1$이고, $g(p_2) = f^2(p_2) = p_2$를 만족하므로 이러한 점들은 $g$의 고정점이라고 할 수 있다. 
