@@ -1,6 +1,6 @@
 --- 
 title: Vector Space
-date: 2026-02-19 15:00:00 +0900
+date: 2026-02-20 20:00:00 +0900
 categories: [Mathematics, Linear Algebra]
 tags: []
 math: true
@@ -8,6 +8,7 @@ math: true
 
 ## Definition
 - ***A vector space $V$ over a field $F$*** consists of a nonempty set on which two binary operations $+: V \times V \to V$ and $\cdot : F \times V \to V$ (called ***addition*** and ***scalar multiplication***, respectively) are defined such that the following conditions hold:
+
 **(1)** $x + y = y + x, \forall x, y \in V$,  
 **(2)** $(x+y)+z=x+(y+z), \forall x, y, z \in V$,  
 **(3)** $\exists \,\mathbf{0} \in V$ such that $x+\mathbf{0}=x, \forall x \in V$,  
