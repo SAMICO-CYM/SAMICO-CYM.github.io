@@ -25,7 +25,7 @@ Let $f$ be a map on $\mathbb{R}$ and let $p$ be a fixed point of the map $f$.
 
 ---
 
-## Theorem
+## Theorem 1
 Lef $f \in C^\infty$ be a map on $\mathbb{R}$, and let $p$ be a fixed point of $f$. Then
 1. If 
 $|f'(p)| < 1$, 
@@ -90,3 +90,27 @@ We will often use the abbreviated terms ***period-$k$ point*** and ***period-$k$
 Let $f$ be a map on $\mathbb{R}$ and assume that $p$ is a period-$k$ point of $f$. 
 - The period-$k$ orbit of $p$ is a ***periodic sink*** if $p$ is a sink for the map $f^k$. 
 - The orbit of $p$ is a ***periodic source*** if $p$ is a source for the map $f^k$.
+
+주기가 $k$인 고정점은 맵 $f^k$의 고정점이므로 Theorem 1을 그대로 적용할 수 있다. 
+
+---
+
+## Theorem 2
+Let $\\{ p_1, ..., p_k \\}$ be a periodic-$k$ orbit of a map $f$. Then
+- $\\{ p_1, ..., p_k \\}$ is a sink if $|f'(p_1) \cdots f'(p_k)| < 1$.
+- $\\{ p_1, ..., p_k \\}$ is a source if $|f'(p_1) \cdots f'(p_k)| > 1$.
+
+### Proof
+By the chain rule, 
+
+$$\begin{align*}
+(f^k)'(p_1) & = (f(f^{k-1}))'(p_1) \\
+& = f'(f^{k-1}(p_1))(f^{k-1})'(p_1) \\
+& = f'(f^{k-1}(p_1))f'(f^{k-2}(p_1)) \cdots f'(p_1) \\
+& = f'(p_k) f'(p_{k-1}) \cdots f'(p_1)
+\end{align*}$$
+
+By Theorem 1, we obtain the desired conclusions. $\blacksquare$
+
+---
+
