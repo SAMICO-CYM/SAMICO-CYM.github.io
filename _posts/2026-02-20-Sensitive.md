@@ -22,5 +22,6 @@ Let $f$ be a map on $\mathbb{R}$.
 
 $$\begin{gather*} LL = \left[ 0, \frac{1}{2} - \frac{\sqrt{2}}{4} \right], LR = \left[ \frac{1}{2} - \frac{\sqrt{2}}{4}, \frac{1}{2} \right], \\ RR = \left[ \frac{1}{2}, \frac{1}{2} + \frac{\sqrt{2}}{4} \right], RL = \left[ \frac{1}{2} + \frac{\sqrt{2}}{4}, 1 \right] \end{gather*}$$
 
-을 얻고, $LLR, RLR$과 같은 집합도 마찬가지로 얻어진다.
+을 얻고, $LLR, RLR$과 같은 집합도 마찬가지로 얻어진다. 
 - 어떤 점의 itinerary의 처음 $k$개 글자에는 총 $2^k$개의 경우의 수가 존재하고, 따라서 총 $2^k$개의 subinterval들이 존재한다. 이 구간들의 길이의 총 합은 $1$이어야 하고, 각 구간의 길이는 $\frac{\pi}{2^{k+1}}$보다 작음이 알려져 있다. 
+- 구간 $S_1 \cdots S_k (S_i = L \text{ or } R)$이 주어졌다고 가정하면 이 구간은 subinterval로 $S_1 \cdots S_kLL, S_1 \cdots S_kLR, S_1 \cdots S_kRR, S_1 \cdots S_kRL$을 가지고 있다. 각 구간에서 하나씩 점들을 뽑는다면 이 점들은 $\frac{\pi}{2^{k+1}}$의 거리 안에 놓여 있다. 이때 $LL$은 $RR, RL$과 $\frac{1}{4}$만큼 떨어져 있고, $LR$ 또한 $RL$과 $\frac{1}{4}$만큼 떨어져 있다. 따라서 임의의 점 $x_0 \in [0, 1]$이 주어진다면 적당한 자연수 $k$에 대해서 맵을 $k$번 취했을 때 $x_0$와 $\frac{1}{4}$만큼의 거리에 떨어지게 되는 점 $x$가 $x_0$로부터 $\frac{\pi}{2^{k+1}}$만큼의 거리에 존재함을 알 수 있다. 이는 정의에 의해 $[0, 1]$의 모든 점이 맵 $G$에 대해서 초기조건의 민감성을 가진다는 뜻이다.
