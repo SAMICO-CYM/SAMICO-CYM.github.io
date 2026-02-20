@@ -97,8 +97,12 @@ Let $f$ be a map on $\mathbb{R}$ and assume that $p$ is a period-$k$ point of $f
 
 ## Theorem 2
 Let $\\{ p_1, ..., p_k \\}$ be a periodic-$k$ orbit of a map $f$. Then
-- $\\{ p_1, ..., p_k \\}$ is a sink if $|f'(p_1) \cdots f'(p_k)| < 1$.
-- $\\{ p_1, ..., p_k \\}$ is a source if $|f'(p_1) \cdots f'(p_k)| > 1$.
+- 
+$\\{ p_1, ..., p_k \\}$
+is a sink if $|f'(p_1) \cdots f'(p_k)| < 1$.
+- 
+$\\{ p_1, ..., p_k \\}$
+is a source if $|f'(p_1) \cdots f'(p_k)| > 1$.
 
 ### Proof
 By the chain rule, 
