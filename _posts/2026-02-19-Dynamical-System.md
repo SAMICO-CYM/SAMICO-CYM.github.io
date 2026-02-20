@@ -117,4 +117,3 @@ $$\begin{align*}
 By Theorem 1, we obtain the desired conclusions. $\blacksquare$
 
 ---
-
