@@ -18,7 +18,7 @@ math: true
 ---
 
 ## Bifurcation Diagram
-![image](Pasted%20image%2020260220163028.png)
+![image](assets/img/Pasted%20image%2020260220163028.png)
 위와 같은 그림을 로지스틱 맵의 ***bifucation diagram***이라고 부른다. 이 다이어그램은 컴퓨터에서 다음과 같은 과정을 반복함으로 그릴 수 있다.
 1. Choose a value of $a$, starting with $a=1$.
 2. Choose $x$ at random in $[0, 1]$.
