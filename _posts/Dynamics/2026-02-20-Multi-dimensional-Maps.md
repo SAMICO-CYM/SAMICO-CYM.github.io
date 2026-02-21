@@ -23,7 +23,7 @@ $\mathbf{0}$
 is a source if $|\lambda_i| > 1, \forall i \in \\{ 1, ..., m \\}$.
 
 ### Proof
-Suppose that $|\lambda_i| < 1, \forall i \in \\{ 1, ..., m \\}$. Let $J$ be the JCF of $A$, and let denote 
+Suppose that $|\lambda_i| < 1, \forall i \in \\{ 1, ..., m \\}$. Let $J$ be the [JCF]({% post_url 2026-02-21-Jordan-Canonical-Form %}#jordan-canonical-form) of $A$, and let denote 
 
 $$Q^{-1}AQ = J = \begin{bmatrix} J_1 & & \mathbf{0} \\ & \ddots & \\ \mathbf{0} & & J_\ell \end{bmatrix}$$
 
