@@ -15,8 +15,12 @@ Let $f$ be a map on $\mathbb{R}^m$, and let $p \in \mathbb{R}^m$ be a fixed poin
 
 ## Theorem 1
 Let $\mathsf{T}_A$ be a linear map on $\mathbb{R}^m$, and let $\lambda_1, ..., \lambda_m$ be the eigenvalues of $A$. Then
-- The origin $\mathbf{0}$ is a sink if $|\lambda_i| < 1, \forall i \in \\{ 1, ..., m \\}$.
-- The origin $\mathbf{0}$ is a source if $|\lambda_i| > 1, \forall i \in \\{ 1, ..., m \\}$.
+- The origin 
+$\mathbf{0}$
+is a sink if $|\lambda_i| < 1, \forall i \in \\{ 1, ..., m \\}$.
+- The origin 
+$\mathbf{0}$
+is a source if $|\lambda_i| > 1, \forall i \in \\{ 1, ..., m \\}$.
 
 ### Proof
 Suppose that $|\lambda_i| < 1, \forall i \in \\{ 1, ..., m \\}$. Let $J$ be the JCF of $A$, and let denote 
@@ -65,7 +69,11 @@ Hence the origin $\mathbf{0}$ is a sink. The second part can be proved by the si
 
 ## Definition 2
 Let $\mathsf{T}_A$ be a linear map on $\mathbb{R}^m$, and let $\lambda_1, ..., \lambda_m$ be the eigenvalues of $A$. 
-- We say $A$ is ***hyperbolic*** if $|\lambda_i| \neq 1, \forall i \in \\{ 1, ..., m \\}$. 
-- If $A$ is hyperbolic and $|\lambda_i| > 1$ or $|\lambda_i| < 1$ for some $i \in \\{ 1, ..., m \\}$, then the origin $\mathbf{0}$ is called a ***saddle***.
+- We say 
+$A$
+is ***hyperbolic*** if $|\lambda_i| \neq 1, \forall i \in \\{ 1, ..., m \\}$. 
+- If 
+$A$
+is hyperbolic and $|\lambda_i| > 1$ or $|\lambda_i| < 1$ for some $i \in \\{ 1, ..., m \\}$, then the origin $\mathbf{0}$ is called a ***saddle***.
 
 ---
