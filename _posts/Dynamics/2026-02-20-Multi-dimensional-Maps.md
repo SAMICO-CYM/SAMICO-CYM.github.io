@@ -7,9 +7,9 @@ math: true
 ---
 
 ## Definition 1
-Let $f$ be a map on $\mathbb{R}^m$, and let $p \in \mathbb{R}^m$ be a [fixed point]({% post_url 2026-02-19-Dynamical-System %}#fixed-point) of $f$. 
-- We call $p$ a ***sink*** or ***attracting fixed point*** if $\exists \varepsilon > 0$ such that $\lim_{k\to\infty} f^k(v) = p, \forall v \in N_\varepsilon(p).$
-- We call $p$ a ***source*** or ***repeller*** if $\exists \varepsilon > 0$ such that for each $v \in N_\varepsilon(p)$ except for $p$, $\exists N \in \mathbb{N}$ such that $f^N(v) \notin N_\varepsilon(p)$.
+Let $f$ be a map on $\mathbb{R}^m$, and let $\mathbf{p} \in \mathbb{R}^m$ be a [fixed point]({% post_url 2026-02-19-Dynamical-System %}#fixed-point) of $f$. 
+- We call $\mathbf{p}$ a ***sink*** or ***attracting fixed point*** if $\exists \varepsilon > 0$ such that $\lim_{k\to\infty} f^k(\mathbf{v}) = p, \forall \mathbf{v} \in N_\varepsilon(\mathbf{p}).$
+- We call $p$ a ***source*** or ***repeller*** if $\exists \varepsilon > 0$ such that for each $\mathbf{v} \in N_\varepsilon(\mathbf{p})$ except for $\mathbf{p}$, $\exists N \in \mathbb{N}$ such that $f^N(\mathbf{v}) \notin N_\varepsilon(\mathbf{p})$.
 
 ---
 
@@ -58,9 +58,9 @@ $$\begin{align*} \lim_{k \to \infty} J_i^k &= \lim_{k \to \infty} \sum_{j=0}^{n-
  
  $$\lim_{k \to \infty} J^k = \mathbf{O}.$$
 
-Take any $\varepsilon > 0$. For any $v \in N_\varepsilon(\mathbf{0})$, we have 
+Take any $\varepsilon > 0$. For any $\mathbf{v} \in N_\varepsilon(\mathbf{0})$, we have 
 
-$$\begin{align*} \lim_{k \to \infty} A^kv &= \lim_{k \to \infty} Q J^k Q^{-1} v \\ &= Q \left( \lim_{k \to \infty} J^k \right)Q^{-1}v \\ &= \mathbf{0}. \end{align*}$$
+$$\begin{align*} \lim_{k \to \infty} A^k\mathbf{v} &= \lim_{k \to \infty} Q J^k Q^{-1} \mathbf{v} \\ &= Q \left( \lim_{k \to \infty} J^k \right)Q^{-1}\mathbf{v} \\ &= \mathbf{0}. \end{align*}$$
 
 Hence the origin $\mathbf{0}$ is a sink. The second part can be proved by the similar way. $\blacksquare$
 

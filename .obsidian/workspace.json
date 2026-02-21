@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Dynamics/2026-02-20-Multi-dimensional-Maps.md",
+                "file": "_posts/Vector Calculus/2026-02-21-The-Derivative.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-20-Multi-dimensional-Maps"
+              "title": "2026-02-21-The-Derivative"
             }
           }
         ]
@@ -182,8 +182,22 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
-    "_posts/Matrix Algebra/2026-02-21-Jordan-Canonical-Form.md",
+    "_site/assets/img/Pasted image 20260221200726.png",
+    "assets/img/Pasted image 20260221200726.png",
+    "_posts/Linear Algebra/2026-02-20-Vector-Space.md",
     "_posts/Dynamics/2026-02-20-Multi-dimensional-Maps.md",
+    "_posts/Vector Calculus/2026-02-21-The-Derivative.md",
+    "_site/categories/vector-calculus/index.html",
+    "_site/categories/vector-calculus",
+    "_site/categories/vector-calc/index.html",
+    "_site/categories/vector-calc",
+    "_site/categories/mathem/index.html",
+    "_site/categories/mathem",
+    "_site/posts/The-Derivative/index.html",
+    "_site/posts/The-Derivative",
+    "_site/posts/The-Derivatives/index.html",
+    "_site/posts/The-Derivatives",
+    "_posts/Matrix Algebra/2026-02-21-Jordan-Canonical-Form.md",
     "_posts/Dynamics/2026-02-19-Dynamical-System.md",
     "_posts/Dynamics/2026-02-20-Sensitive-Dependence.md",
     "_posts/Dynamics/2026-02-20-The-Family-Of-Logistic-Maps.md",
@@ -191,21 +205,10 @@
     "_site/().md",
     "_templates/link.md",
     "_posts/Matrix Algebra/2026-02-21-Generalized-Eigenvectors.md",
-    "_site/categories/matrix-alg/index.html",
-    "_site/categories/matrix-alg",
-    "_site/posts/Generalized-Eigenvectors/index.html",
-    "_site/posts/Generalized-Eigenvectors",
-    "_site/page2/index.html",
-    "_site/page2",
-    "_site/posts/Ge/index.html",
-    "_site/posts/Ge",
-    "_posts/Matrix Algebra",
-    "_site/categories/matrix-algebra/index.html",
     "_posts/Dynamics/2026-02-20-Time-T-Map.md",
     "_posts/Real Analysis/2026-02-19-Absolute-Value.md",
     "_posts/Real Analysis/2026-02-21-Positive-Integers.md",
     "_posts/Real Analysis/2026-02-19-Real-Number-System.md",
-    "_posts/Linear Algebra/2026-02-20-Vector-Space.md",
     "_site/assets/img/Pasted image 20260220174110.png",
     "assets/img/Pasted image 20260220174110.png",
     "_site/assets/img/Pasted image 20260220163028.png",
@@ -215,7 +218,6 @@
     "_site/assets/img/favicons/web-app-manifest-512x512.png",
     "_site/assets/img/favicons/web-app-manifest-192x192.png",
     "_site/assets/img/favicons/favicon-96x96.png",
-    "_site/assets/img/favicons/favicon.svg",
     "_templates/new_post.md",
     "_posts/2026-02-19-dynamics.md",
     "_templates/Box.md",
@@ -225,8 +227,6 @@
     "_tabs/archives.md",
     "_tabs/tags.md",
     "config/Welcome.md",
-    "_site/config/Welcome.md",
-    "_site/posts/dynamics.md",
-    "_site/posts/Dynamical-System.md"
+    "_site/config/Welcome.md"
   ]
 }
