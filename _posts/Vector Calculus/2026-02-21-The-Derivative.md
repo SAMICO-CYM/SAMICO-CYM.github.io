@@ -26,7 +26,7 @@ and we write $\mathbf{f}'(\mathbf{x}) = \mathsf{T}$. If $\mathbf{f}$ is differen
 
 ## Theorem 1
 - Let $E \subset \mathbb{R}^n$ be open, and let $\mathbf{f} : E \to \mathbb{R}^m$. Suppose that $\mathbf{f}$ is differentiable at $\mathbf{x}$ with $\mathsf{T} = \mathsf{T}_1$ and with $\mathsf{T} = \mathsf{T}_2$. Then $\mathsf{T}_1 = \mathsf{T}_2$.
-\mathsf{}
+
 ### Proof
 Let $\mathsf{U} = \mathsf{T}_2 - \mathsf{T}_1$. Then 
 
@@ -35,4 +35,19 @@ $$\begin{gather*} & \| \mathsf{U}(\mathbf{h}) \| \le |\mathbf{f}(\mathbf{x} + \m
 Let $\mathbf{a} = t \mathbf{h}$ for fixed $\mathbf{h} \neq \mathbf{0}$. Then we have 
 
 $$\begin{gather*} & \lim_{\mathbf{a} \to \mathbf{0}} \frac{\|\mathsf{U}(\mathbf{a})\|}{\|\mathbf{a}\|} = \lim_{t \to 0} \frac{\|\mathsf{U}(t\mathbf{h})\|}{\|t\mathbf{h}\|} \\ &= \lim_{t \to 0} \frac{\|\mathsf{U}(\mathbf{h})\|}{\|\mathbf{h}\|} = \frac{\|\mathsf{U}(\mathbf{h})\|}{\|\mathbf{h}\|} = 0 \\ \implies &\mathsf{U}(\mathbf{h}) = \mathbf{0}, \forall \mathbf{h} \in \mathbb{R}^n \\ \implies &\mathsf{T_1} = \mathsf{T}_2. \blacksquare \end{gather*}$$
+
+---
+
+## Theorem 2
+- Let $E \subset \mathbb{R}^n$ be open, and let $\mathbf{f} : E \to \mathbb{R}^m$. Suppose that $\mathbf{f}$ is differentiable at $\mathbf{x}_0 \in E$, $\mathbf{g}$ maps an open set containing $\mathbf{f}(E)$ into $\mathbb{R}^k$, and $\mathbf{g}$ is differentiable at $\mathbf{f}(\mathbf{x}_0)$. Then the mapping $\mathbf{F} : E \to \mathbb{R}^k$ defined by 
+
+$$ \mathbf{F}(\mathbf{x}) = \mathbf{g}(\mathbf{f}(\mathbf{x})) $$
+
+is differentiable at $\mathbf{x}_0$, and 
+
+$$ \mathbf{F}'(\mathbf{x}_0) = \mathbf{g}'(\mathbf{f}(\mathbf{x}_0))\mathbf{f}'(\mathbf{x}_0). $$
+
+### Proof
+
+---
 

@@ -1,5 +1,5 @@
 --- 
-title: Multidimensional Maps
+title: Multidimensional Linear Maps
 date: 2026-02-20 15:00:00 +0900
 categories: [Mathematics, Dynamics]
 tags: []
@@ -75,5 +75,3 @@ is ***hyperbolic*** if $|\lambda_i| \neq 1, \forall i \in \\{ 1, ..., m \\}$.
 - If 
 $A$
 is hyperbolic and $|\lambda_i| > 1$ or $|\lambda_i| < 1$ for some $i \in \\{ 1, ..., m \\}$, then the origin $\mathbf{0}$ is called a ***saddle***.
-
----
