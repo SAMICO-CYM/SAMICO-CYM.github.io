@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "83deefe2af2bfff6",
+        "id": "e1362b21c30066db",
         "type": "tabs",
         "children": [
           {
-            "id": "9ba160efc1f451fb",
+            "id": "207e554a6be8da43",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Real Analysis/2026-02-19-Absolute-Value.md",
+                "file": "_posts/Matrix Algebra/2026-02-21-Jordan-Canonical-Form.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-19-Absolute-Value"
-            }
-          },
-          {
-            "id": "1768aa4123d01e82",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/Real Analysis/2026-02-21-Positive-Integers.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-02-21-Positive-Integers"
+              "title": "2026-02-21-Jordan-Canonical-Form"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -195,25 +180,27 @@
       "bases:Create new base": false
     }
   },
-  "active": "1768aa4123d01e82",
+  "active": "207e554a6be8da43",
   "lastOpenFiles": [
-    "_posts/Real Analysis/2026-02-19-Real-Number-System.md",
-    "_posts/Real Analysis/2026-02-21-Positive-Integers.md",
-    "_site/categories/real-anal/index.html",
-    "_site/categories/real-anal",
-    "_site/posts/Positive-Integers/index.html",
-    "_site/posts/Positive-Integers",
-    "_site/posts/index.html",
-    "_posts/Linear Algebra/2026-02-20-Vector-Space.md",
-    "_posts/Linear Algebra",
-    "_site/posts/Two-Dimensional-Maps/index.html",
-    "_site/posts/Two-Dimensional-Maps",
-    "_site/posts/The-Family-Of-Logistic-Maps/index.html",
-    "_site/posts/The-Family-Of-Logistic-Maps",
-    "_posts/Real Analysis/2026-02-19-Absolute-Value.md",
-    "_posts/Dynamics/2026-02-20-Two-Dimensional-Maps.md",
+    "_posts/Matrix Algebra/2026-02-21-Generalized-Eigenvectors.md",
+    "_posts/Matrix Algebra/2026-02-21-Jordan-Canonical-Form.md",
+    "_site/categories/matrix-alg/index.html",
+    "_site/categories/matrix-alg",
+    "_site/posts/Generalized-Eigenvectors/index.html",
+    "_site/posts/Generalized-Eigenvectors",
+    "_site/page2/index.html",
+    "_site/page2",
+    "_site/posts/Ge/index.html",
+    "_site/posts/Ge",
+    "_posts/Matrix Algebra",
+    "_site/categories/matrix-algebra/index.html",
+    "_posts/Dynamics/2026-02-20-Multi-dimensional-Maps.md",
     "_posts/Dynamics/2026-02-19-Dynamical-System.md",
     "_posts/Dynamics/2026-02-20-Time-T-Map.md",
+    "_posts/Real Analysis/2026-02-19-Absolute-Value.md",
+    "_posts/Real Analysis/2026-02-21-Positive-Integers.md",
+    "_posts/Real Analysis/2026-02-19-Real-Number-System.md",
+    "_posts/Linear Algebra/2026-02-20-Vector-Space.md",
     "_posts/Dynamics/2026-02-20-Sensitive-Dependence.md",
     "_posts/Dynamics/2026-02-20-The-Family-Of-Logistic-Maps.md",
     "_site/assets/img/Pasted image 20260220174110.png",
