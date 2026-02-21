@@ -32,7 +32,7 @@ Since $1$ is in every succerssor set, $1 \in \cap \mathcal{A}$. Let $n \in \cap 
 - $n \in \mathbb{N} \implies n ≥ 1$.
 
 ### Proof
-We will use mathematical induction. Let $S(n)$ be the statement which is $n \geq 1$. Note that $S(1)$ is clearly true. If $S(k)$ is true, then $k \geq 1$. [Note that $k-1 \in P$ or $k = 1$.]({% post_url 2026-02-19-Real-Number-System %}#Inequalities) If $k = 1$, then $k \in P$ by theorem 4.2. If $k - 1 \in P$, $(k - 1) + 1 = k \in P$. Thus $k \in P$, and 
+We will use mathematical induction. Let $S(n)$ be the statement which is $n \geq 1$. Note that $S(1)$ is clearly true. If $S(k)$ is true, then $k \geq 1$. [Note that $k-1 \in P$ or $k = 1$.]({% post_url 2026-02-19-Real-Number-System %}#inequalities) If $k = 1$, then $k \in P$ by theorem 4.2. If $k - 1 \in P$, $(k - 1) + 1 = k \in P$. Thus $k \in P$, and 
 
 $$k = k + 1 - 1 \in P \\ \Longrightarrow k + 1 > 1 \Longrightarrow k + 1 \geq 1.$$
 
