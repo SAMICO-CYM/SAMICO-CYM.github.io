@@ -7,7 +7,7 @@ math: true
 ---
 
 ## Definition 1
-Let $f$ be a map on $\mathbb{R}^m$, and let $p \in \mathbb{R}^m$ be a fixed point of $f$. 
+Let $f$ be a map on $\mathbb{R}^m$, and let $p \in \mathbb{R}^m$ be a [fixed point]({% post_url 2026-02-19-Dynamical-System %}#fixed-point) of $f$. 
 - We call $p$ a ***sink*** or ***attracting fixed point*** if $\exists \varepsilon > 0$ such that $\lim_{k\to\infty} f^k(v) = p, \forall v \in N_\varepsilon(p).$
 - We call $p$ a ***source*** or ***repeller*** if $\exists \varepsilon > 0$ such that for each $v \in N_\varepsilon(p)$ except for $p$, $\exists N \in \mathbb{N}$ such that $f^N(v) \notin N_\varepsilon(p)$.
 
