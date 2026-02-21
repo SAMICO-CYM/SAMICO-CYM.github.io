@@ -26,7 +26,7 @@ $$J = \begin{bmatrix} J_1 & & & \mathbf{0} \\ & J_2 & & \\ & & \
 
 where $s$ is the number of linearly independent eigenvectors of $A$ and each $J_i$ is a Jordan block.
 
-대각화 가능한 행렬은 여러 가지 좋은 성질을 가지는데, 그 중 하나는 행렬의 거듭제곱을 간편하게 계산할 수 있다는 것이다. 행렬의 곱셈 연산이 꽤나 많은 연산량을 수반한다는 점에서 거듭제곱이 간편하다는 건 아주 좋은 성질이다. 그러나 모든 정사각행렬이 대각화 가능하지는 않다. 이런 상황에서 거듭제곱을 보다 더 적은 연산으로 수행할 수 있는 방법은 없을까? 모든 정사각행렬이 대각행렬과 닮을 수는 없지만, Jordan canonical form이라고 불리는 특수한 형태의 행렬과는 항상 닮아있다는 점이 보장되어 있다. JCF의 꼴을 살펴본다면 당연하게도 대각행렬은 JCF의 특수한 경우라고도 이해할 수 있다.
+대각화 가능한 행렬은 여러 가지 좋은 성질을 가지는데, 그 중 하나는 행렬의 거듭제곱을 간편하게 계산할 수 있다는 것이다. 행렬의 곱셈 연산이 꽤나 많은 연산량을 수반한다는 점에서 거듭제곱이 간편하다는 건 아주 좋은 성질이다. 그러나 모든 정사각행렬이 대각화 가능하지는 않다. 이런 상황에서 거듭제곱을 보다 더 적은 연산으로 수행할 수 있는 방법은 없을까? 모든 정사각행렬이 대각행렬과 닮을 수는 없지만, Jordan canonical form이라고 불리는 특수한 형태의 행렬과는 항상 닮아있다는 점이 보장되어 있다.
 
 ---
 
@@ -40,18 +40,6 @@ where $s$ is the number of linearly independent eigenvectors of $A$ and each $J_
 $$\{\operatorname{rank}(J_\lambda-\lambda I)^k\}_{k=0}^\infty = \{n, n-1, n-2, \ldots, 1, 0, 0, \ldots\}.$$
 
 - The number of Jordan blocks belonging to $\lambda$ is equal to the number of linearly independent eigenvectors of $A$ belonging to $\lambda$. (i.e. #$J_\lambda = \dim E(\lambda)$.)
-
-각 Jordan block들의 순서를 고려하지 않는다면 어떤 정사각행렬 A의 JCF는 유일하게 결정된다. 그렇다면 어떤 행렬의 JCF를 어떻게 찾아낼 수 있을까? 그 답은 Jordan block의 형태에 있다. Jordan block $$J_i = \begin{bmatrix}  
-\lambda & 1 & & \mathbf{0} \\   
-& \ddots & \ddots & \\  
-&  & \ddots & 1 \\  
-\mathbf{0} & & & \lambda  
-\end{bmatrix}$$을 고려할 때, 그 제곱, 세제곱은 다음과 같다. $$J_i^2 = \begin{bmatrix}  
-\lambda & 1 & & \mathbf{0} \\   
-& \ddots & \ddots & \\  
-&  & \ddots & 1 \\  
-\mathbf{0} & & & \lambda  
-\end{bmatrix}$$
 
 ---
 

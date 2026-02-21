@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Matrix Algebra/2026-02-21-Jordan-Canonical-Form.md",
+                "file": "_posts/Dynamics/2026-02-20-Multi-dimensional-Maps.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-21-Jordan-Canonical-Form"
+              "title": "2026-02-20-Multi-dimensional-Maps"
             }
           }
         ]
@@ -182,8 +182,11 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
-    "_posts/Matrix Algebra/2026-02-21-Generalized-Eigenvectors.md",
     "_posts/Matrix Algebra/2026-02-21-Jordan-Canonical-Form.md",
+    "_posts/Matrix Algebra/2026-02-21-Generalized-Eigenvectors.md",
+    "_posts/Dynamics/2026-02-20-Multi-dimensional-Maps.md",
+    "_posts/Dynamics/2026-02-20-Sensitive-Dependence.md",
+    "_posts/Dynamics/2026-02-19-Dynamical-System.md",
     "_site/categories/matrix-alg/index.html",
     "_site/categories/matrix-alg",
     "_site/posts/Generalized-Eigenvectors/index.html",
@@ -194,14 +197,11 @@
     "_site/posts/Ge",
     "_posts/Matrix Algebra",
     "_site/categories/matrix-algebra/index.html",
-    "_posts/Dynamics/2026-02-20-Multi-dimensional-Maps.md",
-    "_posts/Dynamics/2026-02-19-Dynamical-System.md",
     "_posts/Dynamics/2026-02-20-Time-T-Map.md",
     "_posts/Real Analysis/2026-02-19-Absolute-Value.md",
     "_posts/Real Analysis/2026-02-21-Positive-Integers.md",
     "_posts/Real Analysis/2026-02-19-Real-Number-System.md",
     "_posts/Linear Algebra/2026-02-20-Vector-Space.md",
-    "_posts/Dynamics/2026-02-20-Sensitive-Dependence.md",
     "_posts/Dynamics/2026-02-20-The-Family-Of-Logistic-Maps.md",
     "_site/assets/img/Pasted image 20260220174110.png",
     "assets/img/Pasted image 20260220174110.png",
