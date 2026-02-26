@@ -1,6 +1,6 @@
 --- 
 title: Period 3 Implies Chaos
-date: 2026-02-26 15:00:00 +0900
+date: 2026-02-26 13:00:00 +0900
 categories: [Mathematics, Dynamics]
 tags: []
 math: true

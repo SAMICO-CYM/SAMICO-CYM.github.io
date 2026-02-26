@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Dynamics/2026-02-26-Peridic-3-System.md",
+                "file": "_posts/Dynamics/2026-02-20-Time-T-Map.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-26-Peridic-3-System"
+              "title": "2026-02-20-Time-T-Map"
             }
           }
         ]
@@ -182,10 +182,15 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
+    "_site/posts/Periodic-3-System/index.html",
+    "_site/posts/Periodic-3-System",
+    "_posts/Dynamics/2026-02-26-Peridic-3-System.md",
+    "_posts/Dynamics/2026-02-26-Periodic-3-System.md",
     "_site/posts/Peridic-3-System/index.html",
     "_site/posts/Peridic-3-System",
+    "_posts/Dynamics/2026-02-20-Time-T-Map.md",
+    "_posts/Dynamics/2026-02-20-The-Family-Of-Logistic-Maps.md",
     "_posts/Dynamics/2026-02-21-Multi-dimensional-Nonlinear-Maps.md",
-    "_posts/Dynamics/2026-02-26-Peridic-3-System.md",
     "_posts/Dynamics/2026-02-20-Multi-dimensional-Linear-Maps.md",
     "_posts/Dynamics/2026-02-19-Dynamical-System.md",
     "_site/posts/Multi-dimensional-Nonlinear-Maps/index.html",
@@ -199,16 +204,12 @@
     "_site/assets/img/Pasted image 20260221200726.png",
     "assets/img/Pasted image 20260221200726.png",
     "_site/categories/vector-calculus/index.html",
-    "_site/categories/vector-calculus",
-    "_site/categories/vector-calc/index.html",
     "_posts/Matrix Algebra/2026-02-21-Jordan-Canonical-Form.md",
     "_posts/Dynamics/2026-02-20-Sensitive-Dependence.md",
-    "_posts/Dynamics/2026-02-20-The-Family-Of-Logistic-Maps.md",
     "().md",
     "_site/().md",
     "_templates/link.md",
     "_posts/Matrix Algebra/2026-02-21-Generalized-Eigenvectors.md",
-    "_posts/Dynamics/2026-02-20-Time-T-Map.md",
     "_posts/Real Analysis/2026-02-19-Absolute-Value.md",
     "_posts/Real Analysis/2026-02-21-Positive-Integers.md",
     "_posts/Real Analysis/2026-02-19-Real-Number-System.md",
@@ -226,7 +227,6 @@
     "README.md",
     "_tabs/categories.md",
     "_tabs/about.md",
-    "_tabs/archives.md",
-    "_tabs/tags.md"
+    "_tabs/archives.md"
   ]
 }
