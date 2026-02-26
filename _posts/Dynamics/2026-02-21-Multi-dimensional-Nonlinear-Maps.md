@@ -7,7 +7,7 @@ math: true
 ---
 
 ## Remark
-
+Let $\mathbf{f}$ be a map on $\mathbb{R}^n$ and let $p \in \mathbb{R}^n$. For a small vector $\mathbf{h}$, the increment in $\mathbf{f}$ due to $\mathbf{h}$ is approximated by the Jacobian $D \mathbf{f}(p)$ times the vector $\mathbf{h}$: $$\mathbf{f}(\mathbf{p} + \mathbf{h}) - \mathbf{f}(\mathbf{p}) \approx D \mathbf{f}(\mathbf{p}) \cdot \mathbf{h}$$ As long as this deviation remains small, the action of the map near $\mathbf{p}$ is essentially the same as the linear map $\mathbf{h} \mapsto A \mathbf{h}$, where $A = D\mathbf{f}(\mathbf{p})$, with fixed point $\mathbf{h} = \mathbf{0}$.
 
 
 ---
