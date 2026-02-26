@@ -7,7 +7,7 @@ math: true
 ---
 
 ## Definition 1
-Let $f$ be a map on $\mathbb{R}^m$, and let $\mathbf{p} \in \mathbb{R}^m$ be a [fixed point]({% post_url 2026-02-19-Dynamical-System %}#fixed-point) of $f$. 
+Let $f$ be a map on $\mathbb{R}^m$, and let $\mathbf{p} \in \mathbb{R}^m$ be a [fixed point]({% post_url Dynamics/2026-02-19-Dynamical-System %}#fixed-point) of $f$. 
 - We call $\mathbf{p}$ a ***sink*** or ***attracting fixed point*** if $\exists \varepsilon > 0$ such that $\lim_{k\to\infty} f^k(\mathbf{v}) = p, \forall \mathbf{v} \in N_\varepsilon(\mathbf{p}).$
 - We call $p$ a ***source*** or ***repeller*** if $\exists \varepsilon > 0$ such that for each $\mathbf{v} \in N_\varepsilon(\mathbf{p})$ except for $\mathbf{p}$, $\exists N \in \mathbb{N}$ such that $f^N(\mathbf{v}) \notin N_\varepsilon(\mathbf{p})$.
 
@@ -23,7 +23,7 @@ $\mathbf{0}$
 is a source if $|\lambda_i| > 1, \forall i \in \\{ 1, ..., m \\}$.
 
 ### Proof
-Suppose that $|\lambda_i| < 1, \forall i \in \\{ 1, ..., m \\}$. Let $J$ be the [JCF]({% post_url 2026-02-21-Jordan-Canonical-Form %}#jordan-canonical-form) of $A$, and let denote 
+Suppose that $|\lambda_i| < 1, \forall i \in \\{ 1, ..., m \\}$. Let $J$ be the [JCF]({% post_url Matrix Algebra/2026-02-21-Jordan-Canonical-Form %}#jordan-canonical-form) of $A$, and let denote 
 
 $$Q^{-1}AQ = J = \begin{bmatrix} J_1 & & \mathbf{0} \\ & \ddots & \\ \mathbf{0} & & J_\ell \end{bmatrix}$$
 
