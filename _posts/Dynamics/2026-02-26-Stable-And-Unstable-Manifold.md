@@ -29,6 +29,8 @@ The fixed point is $\mathbf{0} = (0,0)$. Since $$D \mathbf{f}(\mathbf{0}) = \beg
 
 Clearly $\mathbf{f}^n(\mathbf{0}) = \mathbf{0}$ for all $n \in \mathbb{N}$. Let $\mathbf{v} = (x, y)$. Then we can show that 
 
-$$f^n(\mathbf{v}) = \begin{bmatrix} \frac{x}{2^n} \\ 2^ny - 7 \cdot 2^{n+2} \left( \sum_{k=1}^n 2^{-3k} \right) x^2 \end{bmatrix}.$$ For $\mathbf{v} \in S(\mathbf{0})$, we have $\mathbf{v} = (x, 4x^2)$ for arbitrary $x \in \mathbb{R}$. Thus $S(\mathbf{0}) = \{(x, 4x^2) \mid x \in \mathbb{R}\}$.  
+$$f^n(\mathbf{v}) = \begin{bmatrix} \frac{x}{2^n} \\ 2^ny - 7 \cdot 2^{n+2} \left( \sum_{k=1}^n 2^{-3k} \right) x^2 \end{bmatrix}.$$ 
+
+For $\mathbf{v} \in S(\mathbf{0})$, we have $\mathbf{v} = (x, 4x^2)$ for arbitrary $x \in \mathbb{R}$. Thus $S(\mathbf{0}) = \{(x, 4x^2) \mid x \in \mathbb{R}\}$.  
 
 Similarly, $U(\mathbf{0}) = \{ (0, y) \mid y \in \mathbb{R} \}.$
