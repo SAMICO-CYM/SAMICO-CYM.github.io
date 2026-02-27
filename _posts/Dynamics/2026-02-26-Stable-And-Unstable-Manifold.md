@@ -25,7 +25,7 @@ Consider the map
 
 $$f(x,y) = \begin{bmatrix} \frac{x}{2} \\ 2y - 7x^2 \end{bmatrix}.$$
 
-The fixed point is $\mathbf{0} = (0,0)$. Since $$D \mathbf{f}(\mathbf{0}) = \begin{bmatrix} \frac{1}{2} & 0 \\ 0 & 2 \end{bmatrix}$$ has eigenvalues $\lambda_1 = \frac{1}{2}$ and $\lambda_2 = 2$, the fixed point is a saddle point. 
+The fixed point is $\mathbf{0} = (0,0)$. Since $$D \mathbf{f}(\mathbf{0}) = \begin{bmatrix} \frac{1}{2} & 0 \\ 0 & 2 \end{bmatrix}$$ has eigenvalues $\lambda\_1 = \frac{1}{2}$ and $\lambda\_2 = 2$, the fixed point is a saddle point. 
 
 Clearly $\mathbf{f}^n(\mathbf{0}) = \mathbf{0}$ for all $n \in \mathbb{N}$. Let $\mathbf{v} = (x, y)$. Then we can show that 
 
@@ -40,8 +40,8 @@ Similarly, $U(\mathbf{0}) = \\{ (0, y) \mid y \in \mathbb{R} \\}.$
 - The stable and unstable manifolds of saddles in the plane are always one-dimensional sets: lines or curves.
 
 ## Definition 3
-If $\mathbf{p}$ is a fixed or periodic point, and if $\mathbf{h}_0 \neq \mathbf{p}$ is a point of intersection of the stable and unstable manifold of $\mathbf{p}$, then $\mathbf{h}_0$ is called a ***homoclinic point***. 
+If $\mathbf{p}$ is a fixed or periodic point, and if $\mathbf{h}\_0 \neq \mathbf{p}$ is a point of intersection of the stable and unstable manifold of $\mathbf{p}$, then $\mathbf{h}\_0$ is called a ***homoclinic point***. 
 
 ## Remark
-- An intersection of the stable and unstable manifolds of a single fixed point immediately forces infinitely many such intersections. First notice that a stable manifold, by definition, is an ***invariant set*** under the map $\mathbf{f}$. This means that if $\mathbf{h}_0$ is a point on the stable manifold of a fixed point $\mathbf{p}$, then so are $\mathbf{h}_1 = \mathbf{f}(\mathbf{h}_0)$ and $\mathbf{h}_{-1} = \mathbf{f}^{-1}(\mathbf{h}_0)$. By the same reasoning, the unstable manifold of a fixed point is also invariant. 
-- Once a point like $\mathbf{h}_0$ lies on both the stable and unstable manifolds of a fixed point, then the entire orbit of $\mathbf{h}_0$ must lie on both manifolds, because both manifolds are invariant. Remember that the stable manifold is directed toward the fixed point, and the unstable manifold leads away from it.
+- An intersection of the stable and unstable manifolds of a single fixed point immediately forces infinitely many such intersections. First notice that a stable manifold, by definition, is an ***invariant set*** under the map $\mathbf{f}$. This means that if $\mathbf{h}\_0$ is a point on the stable manifold of a fixed point $\mathbf{p}$, then so are $\mathbf{h}\_1 = \mathbf{f}(\mathbf{h}\_0)$ and $\mathbf{h}\_{-1} = \mathbf{f}^{-1}(\mathbf{h}\_0)$. By the same reasoning, the unstable manifold of a fixed point is also invariant. 
+- Once a point like $\mathbf{h}\_0$ lies on both the stable and unstable manifolds of a fixed point, then the entire orbit of $\mathbf{h}\_0$ must lie on both manifolds, because both manifolds are invariant. Remember that the stable manifold is directed toward the fixed point, and the unstable manifold leads away from it.
