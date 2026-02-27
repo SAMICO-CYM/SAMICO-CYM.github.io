@@ -18,3 +18,15 @@ $$\lim_{n \to \infty} \vert \mathbf{f}^{-n}(\mathbf{v}) - \mathbf{f}^{-n}(\mathb
 
 ## Remark
 A saddle with at least one negative eigenvalue is sometimes called a ***flip saddle***. Otherwise it is a ***regular saddle***. For a flip saddle, successive images flip from one side of the origin to the other along the line. 
+
+## Example
+
+Consider the map 
+
+$$f(x,y) = \begin{bmatrix} \frac{x}{2} \\ 2y - 7x^2 \end{bmatrix}.$$
+
+The fixed point is $\mathbf{0} = (0,0)$. Since $$D \mathbf{f}(\mathbf{0}) = \begin{bmatrix} \frac{1}{2} & 0 \\ 0 & 2 \end{bmatrix}$$ has eigenvalues $\lambda_1 = \frac{1}{2}$ and $\lambda_2 = 2$, the fixed point is a saddle point. 
+
+Clearly $\mathbf{f}^n(\mathbf{0}) = \mathbf{0}$ for all $n \in \mathbb{N}$. Let $\mathbf{v} = (x, y)$. Then we can show that 
+
+$$f^n(\mathbf{v}) = \begin{bmatrix} \frac{x}{2^n} \\ 2^ny - 7 \cdot 2^{n-2} \left( \sum_{k=1}^n 2^{-3k}n \right) x^2 \end{bmatrix}.$$
