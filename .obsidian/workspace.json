@@ -182,8 +182,11 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
-    "_posts/Dynamics/2026-02-20-Time-T-Map.md",
+    "_posts/Dynamics/2026-02-26-Stable-And-Unstable-Manifold.md",
     "_posts/Matrix Algebra/2026-03-02-SVD.md",
+    "_site/posts/SVD/index.html",
+    "_site/posts/SVD",
+    "_posts/Dynamics/2026-02-20-Time-T-Map.md",
     "_site/posts/Periodic-3-System/index.html",
     "_site/posts/Periodic-3-System",
     "_posts/Dynamics/2026-02-26-Peridic-3-System.md",
@@ -198,8 +201,6 @@
     "_site/posts/Multi-dimensional-Nonlinear-Maps",
     "_site/posts/Multi-dimensional-Linear-Maps-1/index.html",
     "_site/posts/Multi-dimensional-Linear-Maps-1",
-    "_site/posts/Multi-dimensional-Linear-Maps/index.html",
-    "_site/posts/Multi-dimensional-Linear-Maps",
     "_posts/Linear Algebra/2026-02-20-Vector-Space.md",
     "_posts/Vector Calculus/2026-02-21-The-Derivative.md",
     "_site/assets/img/Pasted image 20260221200726.png",
@@ -226,7 +227,6 @@
     "_templates/Box.md",
     "README.md",
     "_tabs/categories.md",
-    "_tabs/about.md",
-    "_tabs/archives.md"
+    "_tabs/about.md"
   ]
 }
