@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Matrix Algebra/2026-03-02-SVD.md",
+                "file": "_posts/Dynamics/2026-03-01 Lypunov-Number.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-02-SVD"
+              "title": "2026-03-01 Lypunov-Number"
             }
           }
         ]
@@ -183,6 +183,10 @@
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
     "_posts/Dynamics/2026-02-26-Stable-And-Unstable-Manifold.md",
+    "_posts/Dynamics/2026-03-01 Lypunov-Number.md",
+    "_posts/Dynamics/2026-02-20-Multi-dimensional-Linear-Maps.md",
+    "_posts/Dynamics/2026-02-19-Dynamical-System.md",
+    "_posts/Dynamics/2026-02-21-Multi-dimensional-Nonlinear-Maps.md",
     "_posts/Matrix Algebra/2026-03-02-SVD.md",
     "_site/posts/SVD/index.html",
     "_site/posts/SVD",
@@ -194,9 +198,6 @@
     "_site/posts/Peridic-3-System/index.html",
     "_site/posts/Peridic-3-System",
     "_posts/Dynamics/2026-02-20-The-Family-Of-Logistic-Maps.md",
-    "_posts/Dynamics/2026-02-21-Multi-dimensional-Nonlinear-Maps.md",
-    "_posts/Dynamics/2026-02-20-Multi-dimensional-Linear-Maps.md",
-    "_posts/Dynamics/2026-02-19-Dynamical-System.md",
     "_site/posts/Multi-dimensional-Nonlinear-Maps/index.html",
     "_site/posts/Multi-dimensional-Nonlinear-Maps",
     "_site/posts/Multi-dimensional-Linear-Maps-1/index.html",
@@ -226,7 +227,6 @@
     "_posts/2026-02-19-dynamics.md",
     "_templates/Box.md",
     "README.md",
-    "_tabs/categories.md",
-    "_tabs/about.md"
+    "_tabs/categories.md"
   ]
 }
