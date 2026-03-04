@@ -182,6 +182,8 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
+    "_site/posts/Lypunov-Number/index.html",
+    "_site/posts/Lypunov-Number",
     "_posts/Dynamics/2026-02-26-Stable-And-Unstable-Manifold.md",
     "_posts/Dynamics/2026-03-03-Lypunov-Number.md",
     "_posts/Dynamics/2026-02-20-Multi-dimensional-Linear-Maps.md",
@@ -201,7 +203,6 @@
     "_site/posts/Multi-dimensional-Nonlinear-Maps/index.html",
     "_site/posts/Multi-dimensional-Nonlinear-Maps",
     "_site/posts/Multi-dimensional-Linear-Maps-1/index.html",
-    "_site/posts/Multi-dimensional-Linear-Maps-1",
     "_posts/Linear Algebra/2026-02-20-Vector-Space.md",
     "_posts/Vector Calculus/2026-02-21-The-Derivative.md",
     "_site/assets/img/Pasted image 20260221200726.png",
@@ -226,7 +227,6 @@
     "_templates/new_post.md",
     "_posts/2026-02-19-dynamics.md",
     "_templates/Box.md",
-    "README.md",
-    "_tabs/categories.md"
+    "README.md"
   ]
 }
