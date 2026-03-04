@@ -57,3 +57,12 @@ Thus the Lyapunov exponent of the orbit $\\{ x_m, x_{m+1}, ... \\}$ is $\log L$,
 - If the Lyapunov number of the orbit of $x_1$ under the map $f \in C(\mathbb{R})$ is $L$, then the Lyapunov number of the orbit of $x_1$ under the map $f^k$ is $L^k$.
 
 ### Proof
+Note that 
+
+$$(f^k)'(x_1) = f'(x_1) \cdots f'(x_k).$$
+
+Thus we have 
+
+$$\begin{align*} &\lim_{n \to \infty} \left( \vert (f^k)'(x_1) \vert \cdots \vert (f^k)'(x_n) \vert \right)^{\frac{1}{n}} \\ = &\lim_{n \to \infty} \left[ \left( \vert f'(x_1) \vert \cdots \vert f'(x_k) \vert \right) \cdots \left( \vert f'(x_n) \vert \cdots \vert f'(x_{n+k-1}) \vert \right) \right]^{\frac{1}{n}} \\=& \lim_{n \to \infty} \left( \vert f'(x_1) \vert \cdots \vert f'(x_n) \vert \right)^{\frac{1}{n}} \cdots \left( \vert f'(x_k) \vert \cdots \vert f'(x_{n+k-1}) \vert \right)^{\frac{1}{n}} \\ = & \left( \lim_{n \to \infty} \left( \vert f'(x_1) \vert \cdots \vert f'(x_n) \vert \right)^{\frac{1}{n}} \right) \cdots \left( \lim_{n \to \infty} \left( \vert f'(x_k) \vert \cdots \vert f'(x_{n+k-1}) \vert \right)^{\frac{1}{n}} \right) \\ = & \, L \cdots L = L^k \end{align*}$$
+
+by the above Lemma. Thus the Lyapunov number of the orbit of $x_1$ under the map $f^k$ is $L^k$. $\blacksquare$
