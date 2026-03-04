@@ -6,13 +6,6 @@ tags: []
 math: true
 ---
 
-## Directional Derivative
-Let $A \subset \mathbb{R}^m$ be open, and let $\mathbf{f} : A \to \mathbb{R}^n$. Given $\mathbf{u} \in \mathbb{R}^m$ with $\mathbf{u} \neq 0$, define 
-
-$$\mathbf{f}'(\mathbf{a}; \mathbf{u}) = \lim_{t \to 0} \frac{ \mathbf{f}(\mathbf{a} + t\mathbf{u}) - \mathbf{f}(\mathbf{a})}{t},$$
-
-provided the limit exists. We call this limit the ***directional derivative*** of $\mathbf{f}$ at $\mathbf{a}$ with respect to the vector $\mathbf{u}$. 
-
 ## Definition 1
 Let $E \subset \mathbb{R}^n$ be open, and let $\mathbf{f} : E \to \mathbb{R}^m$. We say that $\mathbf{f}$ is ***differentiable*** at $\mathbf{x}$ if $\exists \mathsf{T} \in \mathcal{L}(\mathbb{R}^n, \mathbb{R}^m)$ such that 
 
