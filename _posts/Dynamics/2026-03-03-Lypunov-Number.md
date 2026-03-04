@@ -34,16 +34,13 @@ $$h(x_1) = \frac{\log \vert f'(x_1) \vert + \cdots + \log \vert f'(x_k) \vert}{k
 ---
 
 ## Lemma
-- Suppose that the Lyapunov number of the orbit $\\{ x_1, x_2, ... \\}$ of $x_1$ under the map $f \in C(\mathbb{R})$ is $L$. For a given positive integer $m$, the Lyapunov number of the orbit $\\{ x_m, x_{m+1}, ... \\}$ of $x_m$ under $f$ is also $L$.
+- Suppose that the Lyapunov number of the orbit $\\{ x_1, x_2, ... \\}$ of $x_1$ under the map $f \in C(\mathbb{R})$ is $L$. For a given positive integer $m$, if $\vert f'(x_i) \vert \neq 0, \forall i \in \\{1, ..., m-1 \\}$, then the Lyapunov number of the orbit $\\{ x_m, x_{m+1}, ... \\}$ of $x_m$ under $f$ is also $L$.
 
 ### Proof
 By definition of the Lyapunov exponent, we have 
 
 $$\log L = \lim_{n \to \infty} \frac{S_n}{n} \quad \text{where} \quad S_n = \sum_{i=1}^n \log \vert f'(x_i) \vert.$$
 
-We distinguish following two cases:
-
-- Case 1: $\vert f'(x_i) \vert \neq 0, \forall i \in \\{1, ..., m-1 \\}.$
 Note that 
 
 $$\begin{align*} \log L & = \lim_{n \to \infty} \frac{S_{n+m-1}}{n+m-1} = \left( \lim_{n \to \infty} \frac{S_{n+m-1}}{n+m-1} \right) \cdot \left( \lim_{n \to \infty} \frac{n+m-1}{n} \right) \\ &= \lim_{n \to \infty} \frac{S_{n+m-1}}{n}. \end{align*}$$
@@ -53,11 +50,7 @@ Then we have
 $$\begin{align*} \lim_{n \to \infty} \frac{\log \vert f'(x_m) \vert + \cdots + \log \vert f'(x_{n+m-1}) \vert}{n} &= \lim_{n \to \infty} \frac{S_{n+m-1} - S_{m-1}}{n} \\ &= \lim_{n \to \infty} \frac{S_{n+m-1}}{n} - \frac{s_{m-1}}{n} \\ & = \log L
 \end{align*}$$
 
-Thus the Lyapunov exponent of the orbit $\\{ x_m, x_{m+1}, ... \\}$ is $\log L$, so that the Lyapunov number is $L$.
-
-- Case 2: $\exists k \in \\{ 1, ..., m-1 \\} : \vert f'(x_k) \vert = 0.$
-
-
+Thus the Lyapunov exponent of the orbit $\\{ x_m, x_{m+1}, ... \\}$ is $\log L$, so that the Lyapunov number is $L$. $\blacksquare$
 
 
 ## Theorem
