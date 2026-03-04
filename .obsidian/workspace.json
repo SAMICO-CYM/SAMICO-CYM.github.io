@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Dynamics/2026-03-03-Lypunov-Number.md",
+                "file": "_posts/Dynamics/2026-02-19-Dynamical-System.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-03-Lypunov-Number"
+              "title": "2026-02-19-Dynamical-System"
             }
           }
         ]
@@ -182,8 +182,8 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
-    "_posts/Dynamics/2026-02-19-Dynamical-System.md",
     "_posts/Dynamics/2026-03-03-Lypunov-Number.md",
+    "_posts/Dynamics/2026-02-19-Dynamical-System.md",
     "_site/posts/Lypunov-Number/index.html",
     "_site/posts/Lypunov-Number",
     "_posts/Dynamics/2026-02-26-Stable-And-Unstable-Manifold.md",

@@ -12,7 +12,7 @@ math: true
 이때 고정점이거나 주기점이 아니라 어떤 점 $x_1$과 그 orbit에 대해서 위 논의를 진행하면, 각 점에 대해서 그 주변의 점에 맵을 반복해서 취했을 때 가까워지고 멀어지는 정도를 정량화 할 수 있다. 이를 ***Lyapunov number***라고 부른다.
 
 ## Definition
-**(i)** Let $f \in C(\mathbb{R})$. The ***Lyapunov number*** $L(x_1)$ of the orbit $\\{ x_1, x_2, ... \\}$ is defined as 
+**(i)** Let $f$ be a smooth map on $\mathbb{R}$. The ***Lyapunov number*** $L(x_1)$ of the orbit $\\{ x_1, x_2, ... \\}$ is defined as 
 
 $$L(x_1) = \lim_{n \to \infty} \left(\vert f'(x_1)  \cdots f'(x_n)\vert \right)^{\frac{1}{n}},$$
 
@@ -34,7 +34,7 @@ $$h(x_1) = \frac{\log \vert f'(x_1) \vert + \cdots + \log \vert f'(x_k) \vert}{k
 ---
 
 ## Theorem 1
-- Suppose that the Lyapunov number of the orbit $\\{ x_1, x_2, ... \\}$ of $x_1$ under the map $f \in C(\mathbb{R})$ is $L$. For a given positive integer $m$, if $\vert f'(x_i) \vert \neq 0, \forall i \in \\{1, ..., m-1 \\}$, then the Lyapunov number of the orbit $\\{ x_m, x_{m+1}, ... \\}$ of $x_m$ under $f$ is also $L$.
+- Suppose that the Lyapunov number of the orbit $\\{ x_1, x_2, ... \\}$ of $x_1$ under the map $f$ on $\mathbb{R}$ is $L$. For a given positive integer $m$, if $\vert f'(x_i) \vert \neq 0, \forall i \in \\{1, ..., m-1 \\}$, then the Lyapunov number of the orbit $\\{ x_m, x_{m+1}, ... \\}$ of $x_m$ under $f$ is also $L$.
 
 ### Proof
 By definition of the Lyapunov exponent, we have 
@@ -54,7 +54,7 @@ Thus the Lyapunov exponent of the orbit $\\{ x_m, x_{m+1}, ... \\}$ is $\log L$,
 
 
 ## Theorem 2
-- If the Lyapunov number of the orbit of $x_1$ under the map $f \in C(\mathbb{R})$ is $L$, then the Lyapunov number of the orbit of $x_1$ under the map $f^k$ is $L^k$.
+- If the Lyapunov number of the orbit of $x_1$ under the smooth map $f$ on $\mathbb{R}$ is $L$, then the Lyapunov number of the orbit of $x_1$ under the map $f^k$ is $L^k$.
 
 ### Proof
 Note that 
