@@ -114,3 +114,5 @@ By Theorem 1, we obtain the desired conclusions. $\blacksquare$
 Let $f \in C(\mathbb{R})$. An orbit $\\{x_1, x_2, \dots x_n, \dots\\}$ is called ***asymptotically periodic*** if there exists a periodic orbit $\\{y_1, y_2, \dots, y_k, y_1, y_2, \dots\\}$ such that 
 
 $$\lim_{n \to \infty} |x_n - y_n| = 0.$$
+
+## Theorem 3
