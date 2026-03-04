@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Vector Calculus/2026-03-04-Gradient.md",
+                "file": "_posts/Dynamics/2026-03-03-Lyapunov-Number.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-04-Gradient"
+              "title": "2026-03-03-Lyapunov-Number"
             }
           }
         ]
@@ -182,8 +182,10 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
-    "_posts/Vector Calculus/2026-02-21-The-Derivative.md",
+    "_site/posts/Lyapunov-Number/index.html",
+    "_site/posts/Lyapunov-Number",
     "_posts/Vector Calculus/2026-03-04-Gradient.md",
+    "_posts/Vector Calculus/2026-02-21-The-Derivative.md",
     "_site/categories/vector-cal/index.html",
     "_site/categories/vector-cal",
     "_site/posts/Gradient/index.html",
@@ -194,9 +196,8 @@
     "_site/posts/Chaotic-Orbits/index.html",
     "_site/posts/Chaotic-Orbits",
     "_posts/Dynamics/2026-02-19-Dynamical-System.md",
-    "_posts/Dynamics/2026-03-03-Lypunov-Number.md",
+    "_posts/Dynamics/2026-03-03-Lyapunov-Number.md",
     "_site/posts/Lypunov-Number/index.html",
-    "_site/posts/Lypunov-Number",
     "_posts/Dynamics/2026-02-26-Stable-And-Unstable-Manifold.md",
     "_posts/Dynamics/2026-02-20-Multi-dimensional-Linear-Maps.md",
     "_posts/Dynamics/2026-02-21-Multi-dimensional-Nonlinear-Maps.md",
