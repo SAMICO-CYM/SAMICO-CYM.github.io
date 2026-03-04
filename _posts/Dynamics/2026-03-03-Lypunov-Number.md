@@ -24,9 +24,43 @@ $$h(x_1) = \lim_{n \to \infty} \frac{\log \vert f'(x_1) \vert + \cdots + \log \v
 
 if this limit exists. 
 
+---
 ## Remark
 - Lyapunov numbers and exponents are undefined for some orbits. In particular, an orbit containing a point $x_i$ with $f'(x_i) = 0$ causes the Lyapunov exponent to be undefined.
 - It follows from the definition that the Lyapunov number of a fixed point $x_1$ for a one-dimensional map $f$ is $\vert f'(x_1) \vert$, or equivalently, the Lyapunov exponent of the orbit is $h = \log \vert f'(x_1) \vert$. If $x_1$ is a periodic point of period $k$, then it follows that the Lyapunov exponent is
 
 $$h(x_1) = \frac{\log \vert f'(x_1) \vert + \cdots + \log \vert f'(x_k) \vert}{k}.$$
 
+---
+
+## Lemma
+- Suppose that the Lyapunov number of the orbit $\\{ x_1, x_2, ... \\}$ of $x_1$ under the map $f \in C(\mathbb{R})$ is $L$. For a given positive integer $m$, the Lyapunov number of the orbit $\\{ x_m, x_{m+1}, ... \\}$ of $x_m$ under $f$ is also $L$.
+
+### Proof
+By definition of the Lyapunov exponent, we have 
+
+$$\log L = \lim_{n \to \infty} \frac{S_n}{n} \quad \text{where} \quad S_n = \sum_{i=1}^n \log \vert f'(x_i) \vert.$$
+
+We distinguish following two cases:
+
+- Case 1: $\vert f'(x_i) \vert \neq 0, \forall i \in \\{1, ..., m-1 \\}.$
+Note that 
+
+$$\begin{align*} \log L & = \lim_{n \to \infty} \frac{S_{n+m-1}}{n+m-1} = \left( \lim_{n \to \infty} \frac{S_{n+m-1}}{n+m-1} \right) \cdot \left( \lim_{n \to \infty} \frac{n+m-1}{n} \right) \\ &= \lim_{n \to \infty} \frac{S_{n+m-1}}{n}. \end{align*}$$
+
+Then we have
+
+$$\begin{align*} \lim_{n \to \infty} \frac{\log \vert f'(x_m) \vert + \cdots + \log \vert f'(x_{n+m-1}) \vert}{n} &= \lim_{n \to \infty} \frac{S_{n+m-1} - S_{m-1}}{n} \\ &= \lim_{n \to \infty} \frac{S_{n+m-1}}{n} - \frac{s_{m-1}}{n} \\ & = \log L
+\end{align*}$$
+
+Thus the Lyapunov exponent of the orbit $\\{ x_m, x_{m+1}, ... \\}$ is $\log L$, so that the Lyapunov number is $L$.
+
+- Case 2: $\exists k \in \\{ 1, ..., m-1 \\} : \vert f'(x_k) \vert = 0.$
+
+
+
+
+## Theorem
+- If the Lyapunov number of the orbit of $x_1$ under the map $f \in C(\mathbb{R})$ is $L$, then the Lyapunov number of the orbit of $x_1$ under the map $f^k$ is $L^k$.
+
+### Proof

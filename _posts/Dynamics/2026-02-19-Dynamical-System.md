@@ -26,13 +26,9 @@ Let $f$ be a map on $\mathbb{R}$ and let $p$ be a fixed point of the map $f$.
 ---
 
 ## Theorem 1
-Lef $f \in C^\infty$ be a map on $\mathbb{R}$, and let $p$ be a fixed point of $f$. Then
-1. If 
-$|f'(p)| < 1$, 
-then $p$ is a sink. 
-2. If 
-$|f'(p)| > 1$, 
-then $p$ is a source.
+Lef $f \in C^\infty(\mathbb{R})$, and let $p$ be a fixed point of $f$. Then
+1. If $\vert f'(p) \vert < 1$, then $p$ is a sink. 
+2. If $\vert f'(p) \vert > 1$, then $p$ is a source.
 
 ### Proof
 Suppose that $|f'(p)| < 1$. Let $a \in (|f'(p)|, 1)$. Since 
@@ -56,9 +52,7 @@ Furthermore, we have
 
 $$\begin{gather*} |f^k(x) - p| \le a^k|x-p|, \forall k \in \mathbb{N}, \forall x \in N_\varepsilon(p). \end{gather*}$$
 
-$(\because)$ We have shown the case $k=1$. Suppose that 
-$|f^k(x) - p| \le a^k|x-p|, \forall x \in N_\varepsilon(p)$ 
-holds for some $k > 2$. Since $f^k(x) \in N_\varepsilon(p),$ $\forall x \in N_\varepsilon(p)$, we have 
+$(\because)$ We have shown the case $k=1$. Suppose that $\vert f^k(x) - p \vert \le a^k \vert x-p \vert, \forall x \in N_\varepsilon(p)$ holds for some $k > 2$. Since $f^k(x) \in N_\varepsilon(p),$ $\forall x \in N_\varepsilon(p)$, we have 
 
 $$\begin{gather*} |f(f^k(x)) - p| = |f^{k+1}(x) - p| \le a |f^k(x) - p| \\ \le a \cdot a^k|x-p| = a^{k+1}|x-p|, \forall x \in N_\varepsilon(p). \end{gather*}$$
 
@@ -99,12 +93,8 @@ Let $f$ be a map on $\mathbb{R}$ and assume that $p$ is a period-$k$ point of $f
 
 ## Theorem 2
 Let $\\{ p_1, ..., p_k \\}$ be a periodic-$k$ orbit of a map $f$. Then
-- 
-$\\{ p_1, ..., p_k \\}$
-is a sink if $|f'(p_1) \cdots f'(p_k)| < 1$.
-- 
-$\\{ p_1, ..., p_k \\}$
-is a source if $|f'(p_1) \cdots f'(p_k)| > 1$.
+- $\\{ p_1, ..., p_k \\}$ is a sink if $\vert f'(p_1) \cdots f'(p_k) \vert < 1$.
+- $\\{ p_1, ..., p_k \\}$ is a source if $\vert f'(p_1) \cdots f'(p_k) \vert > 1$.
 
 ### Proof
 By the chain rule, 
@@ -119,3 +109,8 @@ $$\begin{align*}
 By Theorem 1, we obtain the desired conclusions. $\blacksquare$
 
 ---
+
+## Asymptotically Periodic
+Let $f \in C(\mathbb{R})$. An orbit $\\{x_1, x_2, \dots x_n, \dots\\}$ is called ***asymptotically periodic*** if there exists a periodic orbit $\\{y_1, y_2, \dots, y_k, y_1, y_2, \dots\\}$ such that 
+
+$$\lim_{n \to \infty} |x_n - y_n| = 0.$$
