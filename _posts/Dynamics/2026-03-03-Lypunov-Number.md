@@ -26,9 +26,7 @@ if this limit exists.
 
 ## Remark
 - Lyapunov numbers and exponents are undefined for some orbits. In particular, an orbit containing a point $x_i$ with $f'(x_i) = 0$ causes the Lyapunov exponent to be undefined.
-- It follows from the definition that the Lyapunov number of a fixed point $x_1$ for a one-dimensional map $f$
- is $\vert f'(x_1) \vert$, or equivalently, the Lyapunov exponent of the orbit is 
-$h = \log \vert f'(x_1) \vert$. If $x_1$ is a periodic point of period $k$, then it follows that the Lyapunov exponent is
+- It follows from the definition that the Lyapunov number of a fixed point $x_1$ for a one-dimensional map $f$ is $\vert f'(x_1) \vert$, or equivalently, the Lyapunov exponent of the orbit is $h = \log \vert f'(x_1) \vert$. If $x_1$ is a periodic point of period $k$, then it follows that the Lyapunov exponent is
 
 $$h(x_1) = \frac{\log \vert f'(x_1) \vert + \cdots + \log \vert f'(x_k) \vert}{k}.$$
 
