@@ -51,6 +51,12 @@ $$ \mathbf{F}'(\mathbf{x}_0) = \mathbf{g}'(\mathbf{f}(\mathbf{x}_0))\mathbf{f}'(
 ### Proof
 $\blacksquare$
 
+## Corollary
+Let $E \subset \mathbb{R}^n$ be open, and let $\mathbf{f} : E \to \mathbb{R}^m$. Suppose that $\mathbf{g}$ maps an open set containing $\mathbf{f}(E)$ into $\mathbb{R}^k$. If $\mathbf{f}$ and $\mathbf{g}$ are of class $C^r$, so is $\mathbf{g} \circ \mathbf{f}$.
+
+### Proof
+$\blacksquare$
+
 ---
 
 ## Definition 2
@@ -63,7 +69,11 @@ provided the limit exists. The notation
 
 $$\frac{\partial f_i}{\partial x_j}$$
 
-is often used in place of $D_j f_i$, and $D_j f_i$ is called a ***partial derivative***.
+is often used in place of $D_j f_i$, and $D_j f_i$ is called a ***partial derivative***. 
+\
+We may consider the partial derivatives of $D_jf_i$, which have the form $D_{kj}f_i = D_k(D_j f_i)$. They are called the ***second-order partial derivatives***, denoted by 
+
+$$\frac{\partial}{\partial x_k} \frac{\partial f_i}{\partial x_j} = \frac{\partial^2 f_i}{\partial x_k x_j}.$$
 
 ## Theorem 3
 Let $E \subset \mathbb{R}^n$ be open, and let $\mathbf{f} : E \to \mathbb{R}^m$. Suppose that $\mathbf{f}$ is differentiable at a point $\mathbf{x} \in E$. Then the partial derivatives $(D_j f_i)(\mathbf{x})$ exist, and 
