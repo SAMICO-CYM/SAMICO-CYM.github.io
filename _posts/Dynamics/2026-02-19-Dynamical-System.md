@@ -119,4 +119,5 @@ $$\lim_{n \to \infty} |x_n - y_n| = 0.$$
 Let $f$ be a map on $\mathbb{R}$. If the orbit $\\{x_1, x_2, \dots\\}$ of $f$ satisfies $f'(x_i) \neq 0$ for all $i$ and is asymptotically periodic to the periodic orbit $\\{y_1, y_2, \dots\\}$, then the two orbits have identical Lyapunov exponents, assuming both exist.
 
 ### Proof
+b
 $\blacksquare$

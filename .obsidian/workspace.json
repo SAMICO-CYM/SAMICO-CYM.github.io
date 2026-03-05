@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Dynamics/2026-03-03-Lyapunov-Number.md",
+                "file": "_posts/Vector Calculus/2026-03-05-Continuously-Differentiable.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-03-Lyapunov-Number"
+              "title": "2026-03-05-Continuously-Differentiable"
             }
           }
         ]
@@ -182,31 +182,35 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
+    "_site/page3/index.html",
+    "_site/page3",
+    "_site/categories/lienar-algebra/index.html",
+    "_site/categories/lienar-algebra",
+    "_posts/Real Analysis/2026-03-05-Convexity.md",
+    "_posts/Vector Calculus/2026-03-05-Continuously-Differentiable.md",
+    "_posts/Vector Calculus/2026-02-21-The-Derivative.md",
+    "_posts/Vector Calculus/2026-03-04-Gradient.md",
+    "_posts/Linear Algebra/2026-02-20-Vector-Space.md",
+    "_posts/Matrix Algebra/2026-03-02-SVD.md",
+    "_posts/Matrix Algebra/2026-02-21-Generalized-Eigenvectors.md",
+    "_posts/Linear Algebra/2026-03-05-Norm-Of-Linear-Transformation.md",
+    "_posts/Dynamics/2026-02-19-Dynamical-System.md",
+    "_posts/Dynamics/2026-03-03-Lyapunov-Number.md",
+    "_posts/Dynamics/2026-03-04-Chaotic-Orbits.md",
     "_site/posts/Lyapunov-Number/index.html",
     "_site/posts/Lyapunov-Number",
-    "_posts/Vector Calculus/2026-03-04-Gradient.md",
-    "_posts/Vector Calculus/2026-02-21-The-Derivative.md",
     "_site/categories/vector-cal/index.html",
     "_site/categories/vector-cal",
     "_site/posts/Gradient/index.html",
     "_site/posts/Gradient",
-    "_posts/Dynamics/2026-03-04-Chaotic-Orbits.md",
     "_site/categories/m/index.html",
-    "_site/categories/m",
-    "_site/posts/Chaotic-Orbits/index.html",
-    "_site/posts/Chaotic-Orbits",
-    "_posts/Dynamics/2026-02-19-Dynamical-System.md",
-    "_posts/Dynamics/2026-03-03-Lyapunov-Number.md",
-    "_site/posts/Lypunov-Number/index.html",
     "_posts/Dynamics/2026-02-26-Stable-And-Unstable-Manifold.md",
     "_posts/Dynamics/2026-02-20-Multi-dimensional-Linear-Maps.md",
     "_posts/Dynamics/2026-02-21-Multi-dimensional-Nonlinear-Maps.md",
-    "_posts/Matrix Algebra/2026-03-02-SVD.md",
     "_posts/Dynamics/2026-02-20-Time-T-Map.md",
     "_posts/Dynamics/2026-02-26-Peridic-3-System.md",
     "_posts/Dynamics/2026-02-26-Periodic-3-System.md",
     "_posts/Dynamics/2026-02-20-The-Family-Of-Logistic-Maps.md",
-    "_posts/Linear Algebra/2026-02-20-Vector-Space.md",
     "_site/assets/img/Pasted image 20260221200726.png",
     "assets/img/Pasted image 20260221200726.png",
     "_posts/Matrix Algebra/2026-02-21-Jordan-Canonical-Form.md",
@@ -214,10 +218,8 @@
     "().md",
     "_site/().md",
     "_templates/link.md",
-    "_posts/Matrix Algebra/2026-02-21-Generalized-Eigenvectors.md",
     "_posts/Real Analysis/2026-02-19-Absolute-Value.md",
     "_posts/Real Analysis/2026-02-21-Positive-Integers.md",
-    "_posts/Real Analysis/2026-02-19-Real-Number-System.md",
     "_site/assets/img/Pasted image 20260220174110.png",
     "assets/img/Pasted image 20260220174110.png",
     "_site/assets/img/Pasted image 20260220163028.png",
@@ -225,8 +227,6 @@
     "_site/assets/img/성막.jpg",
     "assets/img/성막.jpg",
     "_site/assets/img/favicons/web-app-manifest-512x512.png",
-    "_site/assets/img/favicons/web-app-manifest-192x192.png",
-    "_templates/new_post.md",
-    "_posts/2026-02-19-dynamics.md"
+    "_site/assets/img/favicons/web-app-manifest-192x192.png"
   ]
 }

@@ -1,6 +1,6 @@
 --- 
 title: Lyapunov Number
-date: 2026-03-03 12:00:00 +0900
+date: 2026-03-03
 categories: [Mathematics, Dynamics]
 tags: []
 math: true

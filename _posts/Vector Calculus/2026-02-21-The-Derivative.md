@@ -35,6 +35,7 @@ $$\begin{gather*} & \lim_{\mathbf{a} \to \mathbf{0}} \frac{\|\mathsf{U}(\mathbf{
 
 ## Remark
 - Let $E \subset \mathbb{R}^n$ be open, and let $\mathbf{f} : E \to \mathbb{R}^m$. If $\mathbf{f}$ is differentiable in $E$, then $\mathbf{f}$ is continuous in $E$. 
+- If $\mathbf{f} = (f_1, ..., f_m)$, then $\mathbf{f}$ is differentiable at $\mathbf{x}$ $\iff$ each $f_i$ is differentiable at $\mathbf{x}$. 
 - If $\mathsf{T} \in \mathcal{L}(\mathbb{R}^n, \mathbb{R}^m)$ and if $\mathbf{x} \in \mathbb{R}^n$, then $\mathsf{T}'(\mathbf{x}) = \mathsf{T}$.  
 
 ---
