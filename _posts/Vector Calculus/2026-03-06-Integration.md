@@ -87,18 +87,21 @@ $$\int_Q f \quad \text{or} \quad \int_{\mathbf{x} \in Q} f(\mathbf{x}),$$
 
 to equal the common value of the upper and lower integrals. 
 
-## Riemann's Condition
+## Theorem 1
 Let $Q$ be a rectangle in $\mathbb{R}^n$, and let $f : Q \to \mathbb{R}$ be a bounded function. Then
 
-$$ \underline{\int}_Q f \le \overline{\int}_Q f; $$
-
-equality holds if and only if given $\epsilon > 0$, there exists a corresponding partition $P$ of $Q$ for which
-$$ U(f, P) - L(f, P) < \epsilon. $$
+$$ \underline{\int_Q} f \le \overline{\int_Q} f; $$
 
 ### Proof
 $\blacksquare$
 
-## Theorem 1
+## Riemann's Condition
+Let $Q$ be a rectangle in $\mathbb{R}^n$, and let $f : Q \to \mathbb{R}$ be a bounded function. Then $f$ is integrable over $Q$ $$\iff$$ given $\epsilon > 0$, there exists a corresponding partition $P$ of $Q$ for which $ U(f, P) - L(f, P) < \epsilon$.
+
+### Proof
+$\blacksquare$
+
+## Theorem 2
 Every constant function $f(\mathbf{x}) = c$ is integrable. Indeed, if $Q$ is a rectangle in $\mathbb{R}^n$ and if $P$ is a partition of $Q$, then
 
 $$ \int_Q c = c \cdot v(Q) = c \sum_R v(R), $$
@@ -112,6 +115,20 @@ $\blacksquare$
 Let $Q$ be a rectangle in $\mathbf{R}^n$, and let $\\{Q_1, \dots, Q_k\\}$ be a finite collection of rectangles that covers $Q$. Then
 
 $$ v(Q) \le \sum_{i=1}^k v(Q_i). $$
+
+### Proof
+$\blacksquare$
+
+## Theorem 3
+Let $Q$ be a rectangle in $\mathbb{R}^n$, and let $f : Q \to \mathbb{R}$ be a bounded function. Then $f$ is integrable over $Q$ $$\iff$$ given $\epsilon > 0$, there is a $\delta > 0$ such that $U(f, P) - L(f, P) < \epsilon$ for every partition $P$ of mesh less than $\delta$.
+
+### Proof
+$\blacksquare$
+
+## Theorem 4
+Let $Q$ be a rectangle in $\mathbb{R}^n$, and let $f : Q \to \mathbb{R}$ be a bounded function. Then $f$ is integrable over $Q$ with $\int_Q f = A$ $\iff$ given $\epsilon > 0$, there is a $\delta > 0$ such that if $P$ is any partition of mesh less than $\delta$, and if, for each subrectangle $R$ determined by $P$, $\mathbf{x}_R$ is a point of $R$, then
+
+$$ |\sum_R f(\mathbf{x}_R)v(R) - A| < \epsilon. $$
 
 ### Proof
 $\blacksquare$
