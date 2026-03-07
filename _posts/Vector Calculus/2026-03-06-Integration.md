@@ -73,17 +73,45 @@ $$L(f,P) \le U(f,P').$$
 $\blacksquare$
 
 ## Definition 3
-Let $Q$ be a rectangle in $\mathbb{R}^n$, and let $f : Q \to \mathbb{R}$ be a bounded function. Define 
+Let $Q$ be a rectangle in $\mathbb{R}^n$, and let $f : Q \to \mathbb{R}$ be a bounded function. 
+
+**(i)** Define 
 
 $$\underline{\int_Q} f = \sup_P \{L(f,P)\} \quad \text{and} \quad \overline{\int_Q} f = \inf_P \{U(f,P)\},$$
 
-where the supremum and infimum are taken over all partitions $P$ of $Q$. 
+where the supremum and infimum are taken over all partitions $P$ of $Q$. These numbers are called the ***lower integral*** and ***upper integral***, respectively, of $f$ over $Q$. 
 
-These numbers are called the ***lower integral*** and ***upper integral***, respectively, of $f$ over $Q$. 
-
-If the upper and lower integrals of $f$ over $Q$ are equal, we say $f$ is ***integrable*** over $Q$, and we define the integral of $f$ over $Q$, denoted by 
+**(ii)** If the upper and lower integrals of $f$ over $Q$ are equal, we say $f$ is ***integrable*** over $Q$, and we define the integral of $f$ over $Q$, denoted by 
 
 $$\int_Q f \quad \text{or} \quad \int_{\mathbf{x} \in Q} f(\mathbf{x}),$$
 
 to equal the common value of the upper and lower integrals. 
 
+## Riemann's Condition
+Let $Q$ be a rectangle in $\mathbb{R}^n$, and let $f : Q \to \mathbb{R}$ be a bounded function. Then
+
+$$ \underline{\int}_Q f \le \overline{\int}_Q f; $$
+
+equality holds if and only if given $\epsilon > 0$, there exists a corresponding partition $P$ of $Q$ for which
+$$ U(f, P) - L(f, P) < \epsilon. $$
+
+### Proof
+$\blacksquare$
+
+## Theorem 1
+Every constant function $f(\mathbf{x}) = c$ is integrable. Indeed, if $Q$ is a rectangle in $\mathbb{R}^n$ and if $P$ is a partition of $Q$, then
+
+$$ \int_Q c = c \cdot v(Q) = c \sum_R v(R), $$
+
+where the summation extends over all subrectangles determined by $P$.
+
+### Proof
+$\blacksquare$
+
+## Corollary
+Let $Q$ be a rectangle in $\mathbf{R}^n$, and let $\\{Q_1, \dots, Q_k\\}$ be a finite collection of rectangles that covers $Q$. Then
+
+$$ v(Q) \le \sum_{i=1}^k v(Q_i). $$
+
+### Proof
+$\blacksquare$
