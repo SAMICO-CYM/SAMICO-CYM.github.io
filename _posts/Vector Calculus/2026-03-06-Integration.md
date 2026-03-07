@@ -120,7 +120,11 @@ $$ v(Q) \le \sum_{i=1}^k v(Q_i). $$
 $\blacksquare$
 
 ## Theorem 3
-Let $Q$ be a rectangle in $\mathbb{R}^n$, and let $f : Q \to \mathbb{R}$ be a bounded function. Then $f$ is integrable over $Q$ $$\iff$$ given $\epsilon > 0$, there is a $\delta > 0$ such that $U(f, P) - L(f, P) < \epsilon$ for every partition $P$ of mesh less than $\delta$.
+Let $Q$ be a rectangle in $\mathbb{R}^n$, and let $f : Q \to \mathbb{R}$ be a bounded function. Then $f$ is integrable over $Q$ $$\iff$$ given $\epsilon > 0$, there is a $\delta > 0$ such that 
+
+$$U(f, P) - L(f, P) < \epsilon$$
+
+for every partition $P$ of mesh less than $\delta$.
 
 ### Proof
 $\blacksquare$
@@ -128,7 +132,7 @@ $\blacksquare$
 ## Theorem 4
 Let $Q$ be a rectangle in $\mathbb{R}^n$, and let $f : Q \to \mathbb{R}$ be a bounded function. Then $f$ is integrable over $Q$ with $\int_Q f = A$ $\iff$ given $\epsilon > 0$, there is a $\delta > 0$ such that if $P$ is any partition of mesh less than $\delta$, and if, for each subrectangle $R$ determined by $P$, $\mathbf{x}_R$ is a point of $R$, then
 
-$$ |\sum_R f(\mathbf{x}_R)v(R) - A| < \epsilon. $$
+$$ \left \vert \sum_R f(\mathbf{x}_R)v(R) - A \right \vert < \epsilon. $$
 
 ### Proof
 $\blacksquare$
