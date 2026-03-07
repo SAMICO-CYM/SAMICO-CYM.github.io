@@ -9,7 +9,9 @@ math: true
 ## Definition 1
 Let 
 
-$$Q = [a_1, b_1] \times \cdots [a_n, b_n] \subset \mathbb{R}^n$$be a rectanlge ($n$-cell) in $\mathbb{R}^n$.
+$$Q = [a_1, b_1] \times \cdots [a_n, b_n] \subset \mathbb{R}^n$$
+
+be a rectanlge ($n$-cell) in $\mathbb{R}^n$.
 
 **(i)** Each of the intervals $[a_i, b_i]$ is called a ***component interval*** of $Q$.
 
