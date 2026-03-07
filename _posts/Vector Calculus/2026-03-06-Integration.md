@@ -77,5 +77,13 @@ Let $Q$ be a rectangle in $\mathbb{R}^n$, and let $f : Q \to \mathbb{R}$ be a bo
 
 $$\underline{\int_Q} f = \sup_P \{L(f,P)\} \quad \text{and} \quad \overline{\int_Q} f = \inf_P \{U(f,P)\},$$
 
-where
-These numbers are called the lower integral and upper integral, respectively, of $f$ over $Q$. They exist because the numbers $L(f,P)$ are bounded above by $U(f,P')$ where $P'$ is any fixed partition of $Q$; and the numbers $U(f,P)$ are bounded below by $L(f,P')$. If the upper and lower integrals of $f$ over $Q$ are equal, we say $f$ is integrable over $Q$, and we define the integral of $f$ over $Q$ to equal the common value of the upper and lower integrals. We denote the integral of $f$ over $Q$ by either of the symbols $$\int_Q f \quad \text{or} \quad \int_{\mathbf{x} \in Q} f(\mathbf{x}).$$
+where the supremum and infimum are taken over all partitions $P$ of $Q$. 
+
+These numbers are called the ***lower integral*** and ***upper integral***, respectively, of $f$ over $Q$. 
+
+If the upper and lower integrals of $f$ over $Q$ are equal, we say $f$ is ***integrable*** over $Q$, and we define the integral of $f$ over $Q$, denoted by 
+
+$$\int_Q f \quad \text{or} \quad \int_{\mathbf{x} \in Q} f(\mathbf{x}),$$
+
+to equal the common value of the upper and lower integrals. 
+
