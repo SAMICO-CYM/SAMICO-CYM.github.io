@@ -135,4 +135,4 @@ Let $Q$ be a rectangle in $\mathbb{R}^n$, and let $f : Q \to \mathbb{R}$ be a bo
 $$ \left \vert \sum_R f(\mathbf{x}_R)v(R) - A \right \vert < \epsilon. $$
 
 ### Proof
-$\blacksquare$
+$\blacksquare$  
