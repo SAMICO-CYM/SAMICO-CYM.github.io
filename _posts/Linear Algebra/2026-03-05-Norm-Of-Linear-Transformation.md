@@ -1,7 +1,7 @@
 --- 
 title: Norm of Linear Transformation
 date: 2026-03-05
-categories: [Mathematics, Lienar Algebra]
+categories: [Mathematics, Linear Algebra]
 tags: []
 math: true
 ---
