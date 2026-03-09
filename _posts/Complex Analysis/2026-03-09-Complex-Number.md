@@ -28,8 +28,10 @@ $$\begin{align*}
 (x_1, y_1)(x_2, y_2) &= (x_1x_2 - y_1y_2, y_1x_2 + x_1y_2)
 \end{align*}$$
 
+
+
 ## Remark
-(i) Note that the operations defined above become the usual operations of addition and multiplication when restricted to the real numbers:
+**(i)** Note that the operations defined above become the usual operations of addition and multiplication when restricted to the real numbers:
 
 $$
 \begin{align*}
@@ -40,7 +42,7 @@ $$
 
 The complex number system is, therefore, a natural extension of the real number system.
 
-(ii) Any complex number $z = (x, y)$ can be written $z = (x, 0) + (0, y)$, and it is
+**(ii)** Any complex number $z = (x, y)$ can be written $z = (x, 0) + (0, y)$, and it is
 easy to see that $(0, 1)(y, 0) = (0, y)$. Hence
 
 $$z = (x, 0) + (0, 1)(y, 0) = (x, 0) + i(y, 0) = (x, y).$$
@@ -49,3 +51,17 @@ If we denote the real numbers$ (x,0)$ by $x$, then we can write $z = x + iy$ for
 
 $$i^2 = (0, 1)(0, 1) = (-1, 0) = -1.$$
 
+Because $(x, y) = x + iy$, the operations become
+
+$$
+\begin{align*}
+(x_1 + iy_1) + (x_2 + iy_2) &= (x_1 + x_2) + i(y_1 + y_2), \\
+(x_1 + iy_1)(x_2 + iy_2) &= (x_1x_2 - y_1y_2) + i(y_1x_2 + x_1y_2).
+\end{align*}
+$$
+
+Observe that the right-hand sides of these equations can be obtained by formally manipulating the terms on the left as if they involved only real numbers and by replacing $i^2$ by $-1$ when it occurs. 
+
+**(iii)** The ***multiplicative inverse*** $z^{-1}$ of $z \in \mathbb{C}$ is the complex number
+
+$$z^{-1} = \left( \frac{x}{x^2 + y^2}, -\frac{y}{x^2 + y^2} \right)$$
