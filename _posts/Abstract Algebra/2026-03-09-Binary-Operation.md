@@ -17,14 +17,18 @@ math: true
 **(ii)** A binary operation $\ast$ on a set $S$ is said to be ***commutative*** if $a \ast b = b \ast a \forall a, b \in S$.
 
 ## Remark
+Let $S = \\{ a, b, c \\}$, and let $\ast$ be a binary operation on $S$ as follows:
 
 $$
-\begin{array}{c|cccc}
-* & a & b & c & d \\
+\begin{array}{c|ccc}
+* & a & b & c \\
 \hline
-a & b &   &   &   \\
-b & d & a &   &   \\
-c & a & c & d &   \\
-d & a & b & b & c
+a & b & c & b \\
+b & a & c & b \\
+c & c & b & a \\
 \end{array}
 $$
+
+Then $\ast$ is not commutative.
+
+We can easily see that a binary operation $\ast$ defined by a table is commutative $\iff$ the table is symmetric.
