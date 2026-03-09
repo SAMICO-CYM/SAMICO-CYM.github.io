@@ -48,8 +48,8 @@ $\blacksquare$
 ## Remark
 Let $f : X \longrightarrow Y$ be a function. Then
 
-**(i)** $f$ is injective $\iff $\vert f^{-1}(y) \vert \le 1, \forall y \in Y$.
+**(i)** $f$ is injective $\iff \vert f^{-1}(y) \vert \le 1, \forall y \in Y$.
 
-**(ii)** $f$ is surjective $\iff $\vert f^{-1}(y) \vert \ge 1, \forall y \in Y$.
+**(ii)** $f$ is surjective $\iff \vert f^{-1}(y) \vert \ge 1, \forall y \in Y$.
 
-**(iii)** $f$ is bijective $\iff $\vert f^{-1}(y) \vert = 1, \forall y \in Y$.
+**(iii)** $f$ is bijective $\iff \vert f^{-1}(y) \vert = 1, \forall y \in Y$.
