@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Vector Calculus/2026-03-05-Continuously-Differentiable.md",
+                "file": "_posts/PDE/2026-03-10-1st-Order-Linear-PDE-Constant-Coefficients.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-05-Continuously-Differentiable"
+              "title": "2026-03-10-1st-Order-Linear-PDE-Constant-Coefficients"
             }
           }
         ]
@@ -182,6 +182,11 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
+    "_posts/Real Analysis/2026-03-05-Convexity.md",
+    "_posts/Real Analysis/2026-02-21-Positive-Integers.md",
+    "_posts/Real Analysis/2026-02-19-Absolute-Value.md",
+    "_posts/Real Analysis/2026-02-19-Real-Number-System.md",
+    "_posts/Vector Calculus/2026-03-05-Class-C1-Functions.md",
     "_posts/Vector Calculus/2026-03-05-Mean-Value-Theorem.md",
     "_site/categories/vector-cal/index.html",
     "_site/categories/vector-cal",
@@ -197,7 +202,6 @@
     "_site/posts/Norm-Of-Linear-Transformation",
     "_site/posts/Convexity/index.html",
     "_site/posts/Convexity",
-    "_posts/Real Analysis/2026-03-05-Convexity.md",
     "_posts/Linear Algebra/2026-02-20-Vector-Space.md",
     "_posts/Matrix Algebra/2026-03-02-SVD.md",
     "_posts/Matrix Algebra/2026-02-21-Generalized-Eigenvectors.md",
@@ -216,9 +220,6 @@
     "_posts/Matrix Algebra/2026-02-21-Jordan-Canonical-Form.md",
     "_posts/Dynamics/2026-02-20-Sensitive-Dependence.md",
     "().md",
-    "_site/().md",
-    "_templates/link.md",
-    "_posts/Real Analysis/2026-02-19-Absolute-Value.md",
     "_site/assets/img/Pasted image 20260220174110.png",
     "assets/img/Pasted image 20260220174110.png",
     "_site/assets/img/Pasted image 20260220163028.png",
