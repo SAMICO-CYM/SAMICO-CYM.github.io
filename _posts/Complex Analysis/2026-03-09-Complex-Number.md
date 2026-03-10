@@ -43,43 +43,23 @@ x \cdot y = (x, 0)(y, 0) = (xy, 0) = xy
 \end{gather*}$$
 
 ## Remark
+위와 같은 정의에 대해 다음이 성립한다.
 
+$$\begin{align*}
+\text{(i)} & \quad (0, 1)(y, 0) = (0, y) \\
+\text{(ii)} & \quad (0, 1)(0, y) = (-y, 0)
+\end{align*}$$
+
+따라서 $(0, 1)(0, 1) = (-1, 0) = -1$을 얻고, $i = (0, 1)$로 정의하면 $i^2 = -1$이 성립함을 알 수 있다. 
 
 ## Definition 2
-The ***imaginary number*** is the complex number $i = (0, 1)$. We also write $z = x + iy$ for $z = (x, y)$. 
+The ***imaginary number*** is the complex number $i = (0, 1)$. 
+
+따라서 모든 복소수 $z = (x, y)$는 다음과 같은 방법으로도 쓸 수 있다. 
+
+$$z = (x, y) = (x, 0) + (0, y) = (x, 0) + (0, 1)(y, 0) = x + iy$$
 
 ## Remark
-**(i)** Note that the operations defined above become the usual operations of addition and multiplication when restricted to the real numbers:
-
-$$
-\begin{align*}
-(x_1, 0) + (x_2, 0) &= (x_1 + x_2, 0) \\
-(x_1, 0)(x_2, 0) &= (x_1x_2, 0)
-\end{align*}
-$$
-
-The complex number system is, therefore, a natural extension of the real number system.
-
-**(ii)** Any complex number $z = (x, y)$ can be written $z = (x, 0) + (0, y)$, and it is
-easy to see that $(0, 1)(y, 0) = (0, y)$. Hence
-
-$$z = (x, 0) + (0, 1)(y, 0) = (x, 0) + i(y, 0) = (x, y).$$
-
-If we denote the real numbers$ (x,0)$ by $x$, then we can write $z = x + iy$ for $z = (x, y)$. Also, with the convention that $z^2 = zz$, $z^3 = z^2z$, etc., we have
-
-$$i^2 = (0, 1)(0, 1) = (-1, 0) = -1.$$
-
-Because $(x, y) = x + iy$, the operations become
-
-$$
-\begin{align*}
-(x_1 + iy_1) + (x_2 + iy_2) &= (x_1 + x_2) + i(y_1 + y_2), \\
-(x_1 + iy_1)(x_2 + iy_2) &= (x_1x_2 - y_1y_2) + i(y_1x_2 + x_1y_2).
-\end{align*}
-$$
-
-Observe that the right-hand sides of these equations can be obtained by formally manipulating the terms on the left as if they involved only real numbers and by replacing $i^2$ by $-1$ when it occurs. 
-
-**(iii)** The ***multiplicative inverse*** $z^{-1}$ of $z \in \mathbb{C}$ is the complex number
+The ***multiplicative inverse*** $z^{-1}$ of $z \in \mathbb{C}$ is the complex number
 
 $$z^{-1} = \left( \frac{x}{x^2 + y^2}, -\frac{y}{x^2 + y^2} \right)$$
