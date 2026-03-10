@@ -6,8 +6,22 @@ tags: []
 math: true
 ---
 
+## Introduction
+복소해석학은 복소 공간 $\mathbb{C}$에서 함수의 미분, 적분과 같은 해석학적 성질을 다루는 과목이다. 실해석학에서 그랬듯이, 미분과 적분에 앞서 연속성이나 극한과 같은 개념이 먼저 정의되어야 하고, 그러한 개념들은 필연적으로 복소수들 사이의 연산이나 크기과 같은 개념들을 요구한다. 따라서 복소해석학은 '복소수'란 체계가 어떤 구조를 가지고 있는지, 그 안에서 연산은 어떻게 정의되는지와 같은 대수적 성질을 다루는 것으로 시작한다.
+
 ## Definition
-**(i)** ***Complex number set*** $\mathbb{C}$ is the set of ordered pairs $(x, y)$ of real numbers that are to be interpreted as points in the ***complex plane***, with rectangular coordinates $x$ and $y$. 
+**(i)** ***Complex number set*** $\mathbb{C}$ is the set $\mathbb{C} = \\{ (x, y) \mid x, y \in \mathbb{R} \\}$ with the two binary operations, addition $+$ and multiplication $\cdot$, defined as follows:
+
+$$
+\text{Let } z_1 = (x_1, y_1) \text{ and } z_2 = (x_2, y_2) \in \mathbb{C}. \text{ Then}
+\begin{align*}
+(x_1, y_1) + (x_2, y_2) &= (x_1 + x_2, y_1 + y_2) \\
+(x_1, y_1)(x_2, y_2) &= (x_1x_2 - y_1y_2, y_1x_2 + x_1y_2)
+\end{align*}
+$$
+
+
+that are to be interpreted as points in the ***complex plane***, with rectangular coordinates $x$ and $y$. 
 
 **(ii)** The ***imaginary number*** is the complex number $i = (0, 1)$. We also write $z = x + iy$ for $z = (x, y)$. 
 
@@ -20,15 +34,6 @@ $$\text{Re}(z) = x, \quad \text{Im}(z) = y$$
 **(v)** The ***imaginary axis*** is the line in the complex plane consisting of points $(0, y)$. The numbers $(0, y)$ in the imaginary axis is also called pure imaginary numbers if $y \neq 0$.
 
 **(vi)** Two complex numbers $z_1 = (x_1, y_1)$ and $z_2 = (x_2, y_2)$ are said to be ***equal*** if $x_1 = x_2$ and $y_1 = y_2$.
-
-**(vii)** The ***sum*** $z_1 + z_2$ and ***product*** $z_1z_2$ of two complex numbers $z_1 = (x_1, y_1)$ and $z_2 = (x_2, y_2)$ are defined as follows:
-
-$$\begin{align*}
-(x_1, y_1) + (x_2, y_2) &= (x_1 + x_2, y_1 + y_2) \\
-(x_1, y_1)(x_2, y_2) &= (x_1x_2 - y_1y_2, y_1x_2 + x_1y_2)
-\end{align*}$$
-
-
 
 ## Remark
 **(i)** Note that the operations defined above become the usual operations of addition and multiplication when restricted to the real numbers:
