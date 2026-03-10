@@ -37,7 +37,8 @@ $$\text{Re}(z) = x, \quad \text{Im}(z) = y$$
 
 $$ \begin{gather*}
 x, y \in \mathbb{R} \\ 
-\implies x + y = (x, 0) + (y, 0) = (x + y, 0) = x + y \quad \text{and} \\ 
+\implies x + y = (x, 0) + (y, 0) = (x + y, 0) = x + y \\
+\text{and} \\ 
 x \cdot y = (x, 0)(y, 0) = (xy, 0) = xy
 \end{gather*}$$
 
