@@ -18,7 +18,7 @@ $$u(x, y) = f(bx - ay)$$
 for some function of one variable.
 
 ### Proof
-1. Geometric Method
+**(i) Geometric Method**
 
 Let $v = (a, b)$. Note that 
 
@@ -28,7 +28,7 @@ Then $u(x, y)$ must be a constant in the direction $v = (a, b).$ Since the lines
 
 $$u(x, y) = f(bx - ay).$$
 
-2. Coordinate Method
+**(ii) Coordinate Method**
 
 Change variables to 
 
