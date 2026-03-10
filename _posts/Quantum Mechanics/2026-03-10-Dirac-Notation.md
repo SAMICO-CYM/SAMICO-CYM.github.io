@@ -22,7 +22,7 @@ $$\langle x \vert y \rangle = \sum_{i=1}^n x^*_iy_i$$
 또한 선형 연산자 $A$에 대해서 다음의 관계가 성립한다.
 
 $$\begin{align*}
-& \text{(i)} \quad \vert Ax \rangle = A \vert x \rangle \\
-& \text{(ii)} \quad \langle Ax \vert = \langle x \vert A^{\dagger} \\
-& \text{(iii)} \quad \langle x \vert Ay \rangle = \langle x \vert A \vert y \rangle = \langle A^{\dagger} x \vert y \rangle 
+\text{(i)} & \quad \vert Ax \rangle = A \vert x \rangle \\
+\text{(ii)} & \quad \langle Ax \vert = \langle x \vert A^{\dagger} \\
+\text{(iii)} & \quad \langle x \vert Ay \rangle = \langle x \vert A \vert y \rangle = \langle A^{\dagger} x \vert y \rangle 
 \end{align*}$$
