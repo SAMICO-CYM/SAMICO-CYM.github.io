@@ -7,7 +7,7 @@ math: true
 ---
 
 ## Theorem 1
-Let $E \subset \mathbb{R}^n$ be a [convex]({% post_url Real Analysis/2026-03-05-Convexity %}#Definition) open set, and let $\mathbf{f} : E \to \mathbb{R}^m$ be a differentiable map in $E$.
+Let $E \subset \mathbb{R}^n$ be a convex open set, and let $\mathbf{f} : E \to \mathbb{R}^m$ be a differentiable map in $E$.
 Suppose that $\exists M \in \mathbb{R}$ such that 
 
 $$\| \mathbf{f}'(\mathbf{x}) \| \le M, \forall \mathbf{x} \in E.$$
