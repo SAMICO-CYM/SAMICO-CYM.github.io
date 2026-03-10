@@ -12,8 +12,9 @@ math: true
 ## Definition
 **(i)** ***Complex number set*** $\mathbb{C}$ is the set $\mathbb{C} = \\{ (x, y) \mid x, y \in \mathbb{R} \\}$ with the two binary operations, addition $+$ and multiplication $\cdot$, defined as follows:
 
+Let $z_1 = (x_1, y_1)$ and $z_2 = (x_2, y_2)$ in $\mathbb{C}$. Then
+
 $$
-\text{Let } z_1 = (x_1, y_1) \text{ and } z_2 = (x_2, y_2) \in \mathbb{C}. \text{ Then}
 \begin{align*}
 (x_1, y_1) + (x_2, y_2) &= (x_1 + x_2, y_1 + y_2) \\
 (x_1, y_1)(x_2, y_2) &= (x_1x_2 - y_1y_2, y_1x_2 + x_1y_2)
