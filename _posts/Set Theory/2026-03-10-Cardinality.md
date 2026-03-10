@@ -6,3 +6,5 @@ tags: []
 math: true
 ---
 
+## Definition
+Cardinality

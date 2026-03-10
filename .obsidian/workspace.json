@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Set Theory/2026-03-10-Cardinality.md",
+                "file": "_posts/Set Theory/2026-03-10-Tuple.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-10-Cardinality"
+              "title": "2026-03-10-Tuple"
             }
           }
         ]
@@ -182,10 +182,10 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
+    "_posts/Set Theory/2026-03-10-Cardinality.md",
     "_site/posts/Cardinality/index.html",
     "_site/posts/Cardinality",
     "_posts/Set Theory/2026-03-10-Tuple.md",
-    "_posts/Set Theory/2026-03-10-Cardinality.md",
     "_site/posts/Tuple/index.html",
     "_site/posts/Tuple",
     "_posts/Set Theory/2026-03-10-Order-Relation.md",
@@ -201,7 +201,6 @@
     "_posts/PDE/2026-03-10-1st-Order-Linear-PDE-Constant-Coefficients.md",
     "_site/categories/index.html",
     "_site/assets/lib/tocbot/tocbot.min.js",
-    "_site/assets/lib/tocbot/tocbot.min.css",
     "_site/assets/lib/fontawesome-free/README.md",
     "_site/assets/lib/README.md",
     "_site/assets/img/Pasted image 20260221200726.png",
