@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Set Theory/2026-03-10-Order-Relation.md",
+                "file": "_posts/Set Theory/2026-03-10-Cardinality.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-10-Order-Relation"
+              "title": "2026-03-10-Cardinality"
             }
           }
         ]
@@ -182,12 +182,18 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
+    "_site/posts/Cardinality/index.html",
+    "_site/posts/Cardinality",
+    "_posts/Set Theory/2026-03-10-Tuple.md",
+    "_posts/Set Theory/2026-03-10-Cardinality.md",
+    "_site/posts/Tuple/index.html",
+    "_site/posts/Tuple",
+    "_posts/Set Theory/2026-03-10-Order-Relation.md",
     "_site/categories/set-the/index.html",
     "_site/categories/set-the",
     "_site/posts/Order-Relation/index.html",
     "_site/posts/Order-Relation",
     "_posts/Set Theory/2026-03-09-Equivalence Relation.md",
-    "_posts/Set Theory/2026-03-10-Order-Relation.md",
     "_posts/Set Theory/2026-03-09-Function.md",
     "_posts/Set Theory/2026-03-09-Image-And-Preimage.md",
     "_posts/Set Theory/2026-03-09-Inverse-Function.md",
@@ -196,10 +202,6 @@
     "_site/categories/index.html",
     "_site/assets/lib/tocbot/tocbot.min.js",
     "_site/assets/lib/tocbot/tocbot.min.css",
-    "_site/assets/lib/tocbot",
-    "_site/assets/lib/simple-jekyll-search/simple-jekyll-search.min.js",
-    "_site/assets/lib/simple-jekyll-search",
-    "_site/assets/lib/mermaid/mermaid.min.js",
     "_site/assets/lib/fontawesome-free/README.md",
     "_site/assets/lib/README.md",
     "_site/assets/img/Pasted image 20260221200726.png",
@@ -222,8 +224,6 @@
     "_posts/Matrix Algebra/2026-03-02-SVD.md",
     "_posts/Matrix Algebra/2026-02-21-Generalized-Eigenvectors.md",
     "_posts/Dynamics/2026-02-19-Dynamical-System.md",
-    "_posts/Dynamics/2026-03-03-Lyapunov-Number.md",
-    "_posts/Dynamics/2026-03-04-Chaotic-Orbits.md",
     "assets/img/Pasted image 20260221200726.png",
     "assets/img/Pasted image 20260220174110.png",
     "assets/img/Pasted image 20260220163028.png",

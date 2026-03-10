@@ -6,7 +6,7 @@ tags: []
 math: true
 ---
 
-## Definition
+## Definition 1
 A relation $R$ on a set $A$ is called an ***order relation*** if it has the following properties:
 
 **(i)** $\forall x, y \in A (x \neq y), xRy \vee yRx$.
