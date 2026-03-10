@@ -19,6 +19,7 @@ for some function of one variable.
 
 ### Proof
 1. Geometric Method
+
 Let $v = (a, b)$. Note that 
 
 $$au_x + bu_y = \nabla u \cdot v = D_vu = 0.$$
@@ -28,6 +29,7 @@ Then $u(x, y)$ must be a constant in the direction $v = (a, b).$ Since the lines
 $$u(x, y) = f(bx - ay).$$
 
 2. Coordinate Method
+
 Change variables to 
 
 $$\begin{align*}
