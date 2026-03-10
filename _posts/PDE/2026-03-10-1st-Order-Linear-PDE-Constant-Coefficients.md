@@ -15,4 +15,10 @@ where $a, b$ are constants, not both zero, is given by
 
 $$u(x, y) = f(bx - ay)$$
 
+for some function of one variable.
+
 ### Proof
+1. Geometric Method
+Let $v = (a, b)$. Note that 
+
+$$au_x + bu_y = \nabla u \cdot v = D_vu = 0.$$
