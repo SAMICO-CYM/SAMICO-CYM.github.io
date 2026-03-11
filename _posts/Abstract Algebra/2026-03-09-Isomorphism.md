@@ -33,4 +33,45 @@ $$\begin{align*}
 &= t,
 \end{align*}$$ 
 
-and similarly $t \ast' \phi(e) = t$. Hence $\phi(e)$ is the identity element of $(T, \ast')$.
+and similarly $t \ast' \phi(e) = t$. Hence $\phi(e)$ is the identity element of $(T, \ast')$. $\blacksquare$
+
+증명 과정을 보면 알겠지만 사실 one-to-one 조건은 필요하지 않다. 즉 $\phi$가 homomorphism이면서 onto이기만 하면 충분하다.
+
+---
+
+## Example
+**(i)** $(\mathbb{R}, +) \cong (\mathbb{R}^+, \cdot)$.
+
+$(\because)$ Define $\phi : (\mathbb{R}, +) \to (\mathbb{R}^+, \cdot)$ by
+
+$$\phi(r) = 2^r, \forall r \in \mathbb{R}$$
+
+Then $\phi$ is clearly bijective. Let $a, b \in \mathbb{R}$. Since
+
+$$ \begin{align*}
+\phi(a + b) &= 2^{a + b} \\
+&= 2^a \cdot 2^b \\
+&= \phi(a) \cdot \phi(b),
+\end{align*}$$
+
+$\phi$ is an isomorphism.
+
+**(ii)** $(\mathbb{Z}, +) \cong (2\mathbb{Z}, +)$.
+
+($\because$) Define $\phi : \mathbb{Z} \to 2\mathbb{Z}$ by
+
+$$\phi(a) = 2a, \forall a \in \mathbb{Z}.$$
+
+Then $\phi$ is clearly bijective. Let $a, b \in \mathbb{Z}$. Since
+
+$$ \begin{align*}
+\phi(a + b) &= 2(a + b) \\
+&= 2a + 2b \\
+&= \phi(a) + \phi(b),
+\end{align*}$$
+
+$\phi$ is an isomorphism.
+
+**(iii)** $(\mathbb{Q}, +) \not\cong (\mathbb{R}, +)$. 
+
+$(\because)$ $\vert \mathbb{Q} \vert = \aleph_0 \lneq 2^{\aleph_0} = \vert \mathbb{R} \vert$.
