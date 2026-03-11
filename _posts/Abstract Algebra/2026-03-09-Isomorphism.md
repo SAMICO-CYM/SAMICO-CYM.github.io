@@ -85,7 +85,9 @@ $$\begin{align*}
 &= \phi \left( \frac{q}{2} \right) + \phi \left( \frac{q}{2} \right) \\
 &= 2 \phi \left( \frac{q}{2} \right) \\
 &= 1.
-\end{align*}$$ Note that $\phi \left( \frac{q}{2} \right) \in \mathbb{Z}$ but there is no $x \in \mathbb{Z}$ such that $2x = 1$. $\bigotimes$ Thus $\phi$ is not an isomorphism.
+\end{align*}$$ 
+
+Note that $\phi \left( \frac{q}{2} \right) \in \mathbb{Z}$ but there is no $x \in \mathbb{Z}$ such that $2x = 1$. $\bigotimes$ Thus $\phi$ is not an isomorphism.
 
 **(v)** $(\mathbb{C}, \cdot) \not\cong (\mathbb{R}, \cdot)$.
 
