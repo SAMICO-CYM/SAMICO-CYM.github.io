@@ -1,6 +1,6 @@
 --- 
 title: Isomorphism
-date: 2026-03-11 00:01:27
+date: 2026-03-11 00:01:30
 categories: [Mathematics, Abstract Algebra]
 tags: []
 math: true
