@@ -1,6 +1,6 @@
 --- 
 title: Binary Operation
-date: 2026-03-09 00:01:30
+date: 2026-03-11 00:01:30
 categories: [Mathematics, Abstract Algebra]
 tags: []
 math: true
