@@ -7,10 +7,12 @@ math: true
 ---
 
 ## Definition
-**(i)** Let $(S, \ast)$ and $(T, \ast')$ be binary algebraic structures. Then an ***homomorphism*** of $S$ with $T$ is a function $\phi : S \to T$ such that 
+Let $(S, \ast)$ and $(T, \ast')$ be binary algebraic structures.
 
-$$\phi(x \ast y) = \phi(x) \ast' \phi(y) \forall x, y \in S$$
+**(i)** A ***homomorphism*** of $S$ with $T$ is a function $\phi : S \to T$ such that 
 
-**(ii)** Let $(S, \ast)$ and $(T, \ast')$ be binary algebraic structures. Then an ***isomorphism*** of $S$ with $T$ is a bijective homomorphism.
+$$\phi(x \ast y) = \phi(x) \ast' \phi(y) \forall x, y \in S.$$
 
-**(iii)** If such a map $\phi$ exists, then $S$ and $T$ are said to be ***isomorphic*** binary structures and we denote by $S \cong T$ (or $S \simeq T$).
+**(ii)** If a homomorphsim $\phi : S \to T$ is bijective, then $\phi$ is called an ***isomorphism*** of $S$ with $T$.
+
+**(iii)** If an isomorphism $\phi : S \to T$ of $S$ with $T$ exists, then $S$ and $T$ are said to be ***isomorphic*** binary structures and we denote by $S \cong T$ (or $S \simeq T$).
