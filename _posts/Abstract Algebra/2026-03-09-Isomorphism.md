@@ -74,4 +74,24 @@ $\phi$ is an isomorphism.
 
 **(iii)** $(\mathbb{Q}, +) \not\cong (\mathbb{R}, +)$. 
 
-$(\because)$ $\vert \mathbb{Q} \vert = \aleph_0 \lneq 2^{\aleph_0} = \vert \mathbb{R} \vert$.
+$(\because)$ Since $\vert \mathbb{Q} \vert = \aleph_0 \lneq 2^{\aleph_0} = \vert \mathbb{R} \vert$, there does not exist a bijection between $\mathbb{Q}$ and $\mathbb{R}$. 
+
+**(iv)** $(\mathbb{Q}, +) \not\cong (\mathbb{Z}, +)$.
+
+($\because$) Suppose that there is an isomorphism $\phi$ of $(\mathbb{Q}, +)$ with $(\mathbb{Z}, +)$. Note that $\phi(q) = 1$ for some $q \in \mathbb{Q}$. Then
+
+$$\begin{align*}
+\phi(q) &= \phi \left( \frac{q}{2} + \frac{q}{2} \right) \\
+&= \phi \left( \frac{q}{2} \right) + \phi \left( \frac{q}{2} \right) \\
+&= 2 \phi \left( \frac{q}{2} \right) \\
+&= 1.
+\end{align*}$$ Note that $\phi \left( \frac{q}{2} \right) \in \mathbb{Z}$ but there is no $x \in \mathbb{Z}$ such that $2x = 1$. $\bigotimes$ Thus $\phi$ is not an isomorphism.
+
+**(v)** $(\mathbb{C}, \cdot) \not\cong (\mathbb{R}, \cdot)$.
+
+($\because$) In $\mathbb{C}$, $x^2 = c$ has a solution for all $c \in \mathbb{C}$,
+but in $\mathbb{R}$, $x^2 = -1$ has no solutions.
+
+**(vi)** $(\mathbb{R}^{2 \times 2}, \cdot) \not\cong (\mathbb{R}, \cdot)$.
+
+($\because$) $\cdot$ is not commutative in $\mathbb{R}^{2 \times 2}$ but $\cdot$ is commutative in $\mathbb{R}$.
