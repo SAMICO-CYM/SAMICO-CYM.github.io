@@ -1,7 +1,7 @@
 --- 
 title: Semigroup
 date: 2026-03-09
-categories: [Mathematics, "Abstract Algebra - Group"]
+categories: [Mathematics, Abstract Algebra]
 tags: []
 math: true
 ---
