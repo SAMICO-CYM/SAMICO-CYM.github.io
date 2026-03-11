@@ -91,9 +91,25 @@ Note that $\phi \left( \frac{q}{2} \right) \in \mathbb{Z}$ but there is no $x \i
 
 **(v)** $(\mathbb{C}, \cdot) \not\cong (\mathbb{R}, \cdot)$.
 
-($\because$) In $\mathbb{C}$, $x^2 = c$ has a solution for all $c \in \mathbb{C}$,
-but in $\mathbb{R}$, $x^2 = -1$ has no solutions.
+($\because$) Suppose that there is an isomorphism $\phi$ of $(\mathbb{C}, \cdot)$ with $(\mathbb{R}, \cdot)$. Note that $\phi(z^2) = -1$ for some $z \in \mathbb{C}$. Then
+
+$$\begin{align*}
+\phi(z^2) &= \phi(z \cdot z) \\
+&= \phi(z) \cdot \phi(z) \\
+&= (\phi(z))^2 \\
+&= -1.
+\end{align*}$$ 
+
+Note that $(\phi(z))^2 = -1$ has no solution in $\mathbb{R}$. $\bigotimes$ Thus $\phi$ is not an isomorphism.
 
 **(vi)** $(\mathbb{R}^{2 \times 2}, \cdot) \not\cong (\mathbb{R}, \cdot)$.
 
-($\because$) $\cdot$ is not commutative in $\mathbb{R}^{2 \times 2}$ but $\cdot$ is commutative in $\mathbb{R}$.
+($\because$) Suppose that there is an isomorphism $\phi$ of $(\mathbb{R}^{2 \times 2}, \cdot)$ with $(\mathbb{R}, \cdot)$. Let $A, B \in \mathbb{R}^{2 \times 2}$. Then
+
+$$\begin{align*}
+\phi(A \cdot B) &= \phi(A) \cdot \phi(B) \\
+&= \phi(B) \cdot \phi(A) \\
+&= \phi(B \cdot A),
+\end{align*}$$
+
+which means that $A \cdot B = B \cdot A$ for all $A, B \in \mathbb{R}^{2 \times 2}$. $\bigotimes$ Thus $\phi$ is not an isomorphism. 
