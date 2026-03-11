@@ -29,6 +29,16 @@ Let $(S, \ast)$ be a binary algebraic structure.
 
 ---
 
+## Theorem
+A binary algebraic structure $(S, \ast)$ has at most one identity element.
+
+### Proof
+If $S$ does not have an identity element, then there is nothing to prove.
+
+Suppose that $e_1$ and $e_2$ are identity elements for $\ast$. Then $e_1 = e_1 \ast e_2 = e_2$. $\blacksquare$
+
+---
+
 ## Remark
 Let $S = \\{ a, b, c \\}$, and let $\ast$ be a binary operation on $S$ as follows:
 
