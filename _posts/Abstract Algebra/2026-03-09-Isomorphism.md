@@ -31,4 +31,6 @@ $$\begin{align*}
 &= \phi(e \ast s) \\
 &= \phi(s) \\
 &= t,
-\end{align*}$$ and similarly $t \ast' \phi(e) = t$. Hence $\phi(e)$ is the identity element of $(T, \ast')$.
+\end{align*}$$ 
+
+and similarly $t \ast' \phi(e) = t$. Hence $\phi(e)$ is the identity element of $(T, \ast')$.
