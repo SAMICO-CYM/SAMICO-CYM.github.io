@@ -11,7 +11,11 @@ The general solution of a follwing PDE
 
 $$u_x + f(x,y)u_y = 0$$ 
 
-is given by solving the following ODE
+is given by
+
+$$u(x, y) = F(c)$$
+
+where $F$ is a solution function to the ODE
 
 $$\frac{dy}{dx} = f(x,y).$$
 
