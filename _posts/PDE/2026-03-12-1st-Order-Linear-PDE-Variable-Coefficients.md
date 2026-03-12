@@ -7,57 +7,59 @@ math: true
 ---
 
 ## Theorem
-The general solution of a follwing PDE
+The general solution of the follwing PDE
 
-$$u_x + f(x,y)u_y = 0$$ 
+$$a(x, y)u_x + b(x,y)u_y = 0$$ 
 
-is given by
+where $a(x, y)$ and $b(x, y)$ are functions of $x$ and $y$, is given by
 
 $$u(x, y) = F(c) = F(h(x, y))$$
 
-where $F$ is an arbitrary function and $c = h(x, y)$ is an implicit solution to the ODE
+where $F$ is an arbitrary function and $c = f(x, y)$ is an implicit solution to the ODE
 
-$$\frac{dy}{dx} = f(x,y).$$
+$$\frac{dy}{dx} = \frac{b(x, y)}{a(x, y)}.$$
 
 The solution of the above ODE is called the ***characteristic curve*** of the PDE.
 
 ### Proof
 Note that 
 
-$$u_x + f(x,y)u_y = \nabla u \cdot \mathbf{v} = D_\mathbf{v}u = 0$$
+$$a(x, y)u_x + b(x,y)u_y = \nabla u \cdot \mathbf{v} = D_\mathbf{v}u = 0$$
 
-where $\mathbf{v} = (1, f(x,y))$. 
+where $\mathbf{v} = (a(x, y), b(x,y))$. 
 
-Then $u(x, y)$ must be a constant along the direction $\mathbf{v} = (1, f(x,y))$ at each point $(x, y)$. Let $C$ be a curve which is tangent to $\mathbf{v}$ at each point $(x, y)$. Then we have 
+Then $u(x, y)$ must be a constant along the direction $\mathbf{v} = (a(x, y), b(x,y))$ at each point $(x, y)$. Let $C$ be a curve which is tangent to $\mathbf{v}$ at each point $(x, y)$. Then we have 
 
-$$\frac{dy}{dx} = f(x,y)$$
+$$\frac{dy}{dx} = \frac{b(x, y)}{a(x, y)}$$
 
-Suppose that the solution of this ODE exists and is implicitly given by $h(x, y) = c$, where $c$ is a constant. Then $u(x, y)$ must be a constant along the curve defined by the equation $h(x, y) = c$, which means that the value of $u$ is determined by the constant $c$. Thus the solution is given by 
+whenever $\mathbf{v} \neq \mathbf{0}$ and $a(x, y) \neq 0$. 
 
-$$u(x, y) = F(c)$$
+Suppose that the solution of this ODE exists and is implicitly given by $f(x, y) = c$, where $c$ is a constant. Then $u(x, y)$ must be a constant along the curve defined by the equation $f(x, y) = c$, which means that the value of $u$ is determined by the constant $c$. Thus the solution is given by 
 
-where $F$ is an arbitrary function. 
+$$u(x, y) = F(c) = F(f(x, y))$$
 
-Now we check the solution $u(x, y) = F(c)$ satisfies the PDE $u_x + f(x,y)u_y = 0$. Note that
+where $F$ is an arbitrary function and whenever $a(x, y) \neq 0$. 
 
-$$\begin{align*} u_x &= F' \cdot \frac{\partial h}{\partial x} \\
-u_y &= F' \cdot \frac{\partial h}{\partial y},\end{align*}$$
+Now we check the solution $u(x, y) = F(c)$ satisfies the PDE $a(x, y)u_x + b(x,y)u_y = 0$. Note that
+
+$$\begin{align*} u_x &= F' \cdot \frac{\partial f}{\partial x} \\
+u_y &= F' \cdot \frac{\partial f}{\partial y},\end{align*}$$
 
 and
 
 $$\begin{align*} 
-\frac{d}{dx} c &= \frac{d}{dx} h(x, y) \\
-&= h_x + h_y \frac{dy}{dx} \\
-&= h_x + h_y f(x,y) \\
+\frac{d}{dx} c &= \frac{d}{dx} f(x, y) \\
+&= f_x + f_y \frac{dy}{dx} \\
+&= f_x + f_y \frac{b(x, y)}{a(x, y)} \\
 &= 0.
 \end{align*}$$
 
 Thus we have 
 
 $$\begin{align*}
-u_x + f(x,y)u_y &= F' \cdot \frac{\partial h}{\partial x} + F' \cdot \frac{\partial h}{\partial y} \cdot f(x,y) \\
-&= F' \cdot (h_x + h_y f(x,y)) \\
+a(x, y)u_x + b(x,y)u_y &= a(x, y)F' \cdot \frac{\partial f}{\partial x} + b(x,y)F' \cdot \frac{\partial f}{\partial y} \\
+&= F' \cdot (a(x, y) \frac{\partial f}{\partial x} + b(x,y) \frac{\partial f}{\partial y}) \\
 &= F' \cdot 0 = 0.
 \end{align*}$$
 
-Hence $u(x, y) = F(c)$ satisfies the PDE $u_x + f(x,y)u_y = 0$. $\blacksquare$
+Hence $u(x, y) = F(c)$ satisfies the PDE $a(x, y)u_x + b(x,y)u_y = 0$. $\blacksquare$
