@@ -15,7 +15,7 @@ is given by
 
 $$u(x, y) = F(c) = F(h(x, y))$$
 
-where $c = h(x, y)$ is an implicit solution to the ODE
+where $F$ is an arbitrary function and $c = h(x, y)$ is an implicit solution to the ODE
 
 $$\frac{dy}{dx} = f(x,y).$$
 
