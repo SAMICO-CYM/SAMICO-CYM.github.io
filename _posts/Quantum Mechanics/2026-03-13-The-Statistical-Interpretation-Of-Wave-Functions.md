@@ -1,7 +1,7 @@
 --- 
 title: The Statistical Interpretation of Wave Functions
 date: 2026-03-13
-categories: [Mathematics, Quamtum Mechanics]
+categories: [Mathematics, Quantum Mechanics]
 tags: []
 math: true
 ---
