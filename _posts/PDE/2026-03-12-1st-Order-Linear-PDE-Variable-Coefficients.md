@@ -32,4 +32,27 @@ Suppose that the solution of this ODE exists and is implicitly given by $h(x, y)
 
 $$u(x, y) = F(c)$$
 
-where $F$ is an arbitrary function. $\blacksquare$
+where $F$ is an arbitrary function. 
+
+Now we check the solution $u(x, y) = F(c)$ satisfies the PDE $u_x + f(x,y)u_y = 0$. Note that
+
+$$\begin{align*} u_x &= F' \cdot \frac{\partial h}{\partial x} \\
+u_y &= F' \cdot \frac{\partial h}{\partial y},\end{align*}$$
+
+and
+
+$$\begin{align*} 
+&\frac{d}{dx} h(x, y) = \frac{d}{dx} c \\
+\implies &h_x + h_y \frac{dy}{dx} = 0 \\
+\implies &h_x + h_y f(x,y) = 0.
+\end{align*}$$
+
+Thus we have 
+
+$$\begin{align*}
+u_x + f(x,y)u_y &= F' \cdot \frac{\partial h}{\partial x} + F' \cdot \frac{\partial h}{\partial y} \cdot f(x,y) \\
+&= F' \cdot (h_x + h_y f(x,y)) \\
+&= F' \cdot 0 = 0.
+\end{align*}$$
+
+Hence $u(x, y) = F(c)$ satisfies the PDE $u_x + f(x,y)u_y = 0$. $\blacksquare$
