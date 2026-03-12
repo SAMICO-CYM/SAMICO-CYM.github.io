@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Complex Analysis/2026-03-09-Modulus.md",
+                "file": "_posts/Quantum Mechanics/2026-03-13-The-Statistical-Interpretation-Of-Wave-Functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-09-Modulus"
+              "title": "2026-03-13-The-Statistical-Interpretation-Of-Wave-Functions"
             }
           }
         ]
@@ -182,20 +182,22 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
-    "_posts/Complex Analysis/2026-03-10-Complex-Plane.md",
+    "_site/categories/quamtum-mechanics/index.html",
+    "_site/categories/quamtum-mechanics",
+    "_site/posts/The-Statistical-Interpretation-Of-Wave-Functions/index.html",
+    "_site/posts/The-Statistical-Interpretation-Of-Wave-Functions",
+    "_site/categories/quamt/index.html",
+    "_site/categories/quamt",
+    "_site/posts/The-Statistical-Interpretation/index.html",
+    "_site/posts/The-Statistical-Interpretation",
     "_posts/Complex Analysis/2026-03-09-Modulus.md",
+    "_posts/Quantum Mechanics/2026-03-13-The-Statistical-Interpretation-Of-Wave-Functions.md",
+    "_posts/Complex Analysis/2026-03-10-Complex-Plane.md",
     "_posts/Complex Analysis/2026-03-09-Complex-Number.md",
     "_posts/Set Theory/2026-03-10-Tuple.md",
     "_site/posts/Topology/index.html",
     "_site/posts/Topology",
     "_site/posts/1st-Order-Linear-PDE-Variable-Coefficients/index.html",
-    "_site/posts/1st-Order-Linear-PDE-Variable-Coefficients",
-    "_site/posts/1D-Transport-Equation/index.html",
-    "_site/posts/1D-Transport-Equation",
-    "_site/posts/Monoid/index.html",
-    "_site/posts/Monoid",
-    "_site/posts/Group/index.html",
-    "_site/posts/Group",
     "_posts/Topology/2026-03-12-Topology.md",
     "_posts/PDE/2026-03-12-1st-Order-Linear-PDE-Variable-Coefficients.md",
     "_posts/PDE/2026-03-12-1D-Transport-Equation.md",
@@ -222,8 +224,6 @@
     "_site/Pasted image 20260220155222.png",
     "_posts/Real Analysis/2026-03-05-Convexity.md",
     "_posts/Real Analysis/2026-02-21-Positive-Integers.md",
-    "_posts/Real Analysis/2026-02-19-Absolute-Value.md",
-    "_posts/Real Analysis/2026-02-19-Real-Number-System.md",
     "assets/img/Pasted image 20260221200726.png",
     "assets/img/Pasted image 20260220174110.png",
     "assets/img/Pasted image 20260220163028.png",
