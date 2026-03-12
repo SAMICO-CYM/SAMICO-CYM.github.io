@@ -13,9 +13,9 @@ $$u_x + f(x,y)u_y = 0$$
 
 is given by
 
-$$u(x, y) = F(c)$$
+$$u(x, y) = F(c) = F(h(x, y))$$
 
-where $F$ is a solution function to the ODE
+where $c = h(x, y)$ is an implicit solution to the ODE
 
 $$\frac{dy}{dx} = f(x,y).$$
 
