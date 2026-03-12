@@ -43,8 +43,7 @@ and
 
 $$\begin{align*} 
 &\frac{d}{dx} h(x, y) = \frac{d}{dx} c \\
-\implies &h_x + h_y \frac{dy}{dx} = 0 \\
-\implies &h_x + h_y f(x,y) = 0.
+\implies &h_x + h_y \frac{dy}{dx} = h_x + h_y f(x,y) = 0.
 \end{align*}$$
 
 Thus we have 
