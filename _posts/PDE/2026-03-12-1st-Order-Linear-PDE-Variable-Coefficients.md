@@ -42,7 +42,7 @@ u_y &= F' \cdot \frac{\partial h}{\partial y},\end{align*}$$
 and
 
 $$\begin{align*} 
-\frac{d}{dx} c = \frac{d}{dx} h(x, y) \\
+\frac{d}{dx} c &= \frac{d}{dx} h(x, y) \\
 &= h_x + h_y \frac{dy}{dx} \\
 &= h_x + h_y f(x,y) = 0.
 \end{align*}$$
