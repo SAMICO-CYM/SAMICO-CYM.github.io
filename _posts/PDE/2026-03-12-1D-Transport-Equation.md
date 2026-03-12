@@ -1,5 +1,5 @@
 ---
-title: Simple Transport Equation
+title: One-Dimensional Transport Equation
 date: 2026-03-12
 categories: [Mathematics, PDE]
 tags: []
