@@ -34,7 +34,7 @@ $$\frac{dy}{dx} = \frac{b(x, y)}{a(x, y)}$$
 
 whenever $\mathbf{v} \neq \mathbf{0}$ and $a(x, y) \neq 0$. 
 
-Suppose that the solution of this ODE exists and is implicitly given by $f(x, y) = c$, where $c$ is a constant. Then $u(x, y)$ must be a constant along the curve defined by the equation $f(x, y) = c$, which means that the value of $u$ is determined by the constant $c$. Thus the solution is given by 
+Suppose that the solution of this ODE exists and is implicitly given by $f(x, y) = c$, where $c$ is a constant. Then $u(x, y)$ must be a constant along this curve $C$, which means that the value of $u$ is determined by the constant $c$. Thus the solution is given by 
 
 $$u(x, y) = F(c) = F(f(x, y))$$
 
