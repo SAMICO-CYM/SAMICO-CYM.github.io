@@ -13,13 +13,13 @@ $$a(x, y)u_x + b(x,y)u_y = 0$$
 
 where $a(x, y)$ and $b(x, y)$ are functions of $x$ and $y$, is given by
 
-$$u(x, y) = F(c) = F(h(x, y))$$
+$$u(x, y) = F(c) = F(f(x, y))$$
 
 where $F$ is an arbitrary function and $c = f(x, y)$ is an implicit solution to the ODE
 
-$$\frac{dy}{dx} = \frac{b(x, y)}{a(x, y)}.$$
+$$\frac{dy}{dx} = \frac{b(x, y)}{a(x, y)}$$
 
-The solution of the above ODE is called the ***characteristic curve*** of the PDE.
+whenever $a(x, y) \neq 0$. The solution of the above ODE is called the ***characteristic curve*** of the PDE.
 
 ### Proof
 Note that 
