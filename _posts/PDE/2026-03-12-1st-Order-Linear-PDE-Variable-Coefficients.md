@@ -58,7 +58,7 @@ Thus we have
 
 $$\begin{align*}
 a(x, y)u_x + b(x,y)u_y &= a(x, y)F' \cdot \frac{\partial f}{\partial x} + b(x,y)F' \cdot \frac{\partial f}{\partial y} \\
-&= F' \cdot (a(x, y) \frac{\partial f}{\partial x} + b(x,y) \frac{\partial f}{\partial y}) \\
+&= F' \cdot \left(a(x, y) \frac{\partial f}{\partial x} + b(x,y) \frac{\partial f}{\partial y}\right) \\
 &= F' \cdot 0 = 0.
 \end{align*}$$
 
