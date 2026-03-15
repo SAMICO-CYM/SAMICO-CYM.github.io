@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Set Theory/2026-03-15-Diagonal-Relation.md",
+                "file": "_posts/Set Theory/2026-03-15-Ordering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-15-Diagonal-Relation"
+              "title": "2026-03-15-Ordering"
             }
           }
         ]
@@ -182,6 +182,7 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
+    "_posts/Set Theory/2026-03-15-Diagonal-Relation.md",
     "_site/posts/Ordering/index.html",
     "_site/posts/Ordering",
     "_posts/Set Theory/2026-03-15-Ordering.md",
@@ -193,7 +194,6 @@
     "_posts/Set Theory/2026-03-09-Function.md",
     "_posts/Set Theory/2026-03-09-Inverse-Function.md",
     "_posts/Set Theory/2026-03-09-Image-And-Preimage.md",
-    "_posts/Set Theory/2026-03-15-Diagonal-Relation.md",
     "_posts/Set Theory/2026-03-10-Tuple.md",
     "_posts/Set Theory/2026-03-10-Order-Relation.md",
     "_posts/Quantum Mechanics/2026-03-13-The-Statistical-Interpretation-Of-Wave-Functions.md",
@@ -203,7 +203,6 @@
     "_site/posts/The-Statistical-Interpretation-Of-Wave-Functions",
     "_site/categories/quamt/index.html",
     "_site/categories/quamt",
-    "_site/posts/The-Statistical-Interpretation/index.html",
     "_posts/Complex Analysis/2026-03-09-Modulus.md",
     "_posts/Complex Analysis/2026-03-10-Complex-Plane.md",
     "_posts/Complex Analysis/2026-03-09-Complex-Number.md",
