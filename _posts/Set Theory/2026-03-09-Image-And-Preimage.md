@@ -13,7 +13,7 @@ Let $f : X \longrightarrow Y$ be a function, and let $A \subseteq X$ and $B \sub
 
 $$f(A) = \{ f(x) \in Y \mid x \in A \}.$$
 
-**(ii)** The ***inverse image*** of $B$ under $f$, which we denote $f^{-1}(B)$, is the set 
+**(ii)** The ***inverse image*** or ***preimage*** of $B$ under $f$, which we denote $f^{-1}(B)$, is the set 
 
 $$f^{-1}(B) = \{ x \in X \mid f(x) \in B \}.$$
 
@@ -38,9 +38,9 @@ Let $f : X \longrightarrow Y$ be a function. Then
 
 **(ii)** $\displaystyle f \left(\bigcap_{\gamma \in \Gamma} A_{\gamma}\right) \subset \bigcap_{\gamma \in \Gamma} f(A_{\gamma})$.
 
-**(iii)** $\displaystyle f^{-1}(\bigcup_{\gamma \in \Gamma} B_{\gamma}) = \bigcup_{\gamma \in \Gamma} f^{-1}(B_{\gamma})$.
+**(iii)** $\displaystyle f^{-1} \left(\bigcup_{\gamma \in \Gamma} B_{\gamma} \right) = \bigcup_{\gamma \in \Gamma} f^{-1}(B_{\gamma})$.
 
-**(iv)** $\displaystyle f^{-1}(\bigcap_{\gamma \in \Gamma} B_{\gamma}) = \bigcap_{\gamma \in \Gamma} f^{-1}(B_{\gamma})$.
+**(iv)** $\displaystyle f^{-1} \left(\bigcap_{\gamma \in \Gamma} B_{\gamma} \right) = \bigcap_{\gamma \in \Gamma} f^{-1}(B_{\gamma})$.
 
 ### Proof
 $\blacksquare$
