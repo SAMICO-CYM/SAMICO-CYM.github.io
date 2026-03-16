@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Set Theory/2026-03-15-Ordering.md",
+                "file": "_posts/Set Theory/2026-03-15-Order.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-15-Ordering"
+              "title": "2026-03-15-Order"
             }
           }
         ]
@@ -183,11 +183,23 @@
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
     "_posts/Set Theory/2026-03-15-Diagonal-Relation.md",
-    "_site/posts/Ordering/index.html",
-    "_site/posts/Ordering",
+    "_site/posts/The-Order-Of-Group/index.html",
+    "_site/posts/The-Order-Of-Group",
+    "_site/posts/Finite-Groups/index.html",
+    "_site/posts/Finite-Groups",
+    "_site/posts/Partition/index.html",
+    "_site/posts/Partition",
+    "_site/posts/Order/index.html",
+    "_site/posts/Order",
+    "_site/posts/Cover/index.html",
+    "_site/posts/Cover",
     "_posts/Set Theory/2026-03-15-Ordering.md",
-    "_site/posts/Diagonal-Relation/index.html",
-    "_site/posts/Diagonal-Relation",
+    "_posts/Topology/2026-03-10-Order-Relation.md",
+    "_posts/Set Theory/2026-03-15-Order.md",
+    "_posts/Set Theory/2026-03-09-Partition.md",
+    "_posts/Set Theory/2026-03-09-Cover.md",
+    "_posts/Abstract Algebra/2026-03-16-The-Order-Of-Group.md",
+    "_posts/Abstract Algebra/2026-03-16-Finite-Groups.md",
     "_posts/Set Theory/2026-03-09-Relation.md",
     "_posts/Set Theory/2026-03-10-Cardinality.md",
     "_posts/Set Theory/2026-03-09-Equivalence Relation.md",
@@ -197,12 +209,6 @@
     "_posts/Set Theory/2026-03-10-Tuple.md",
     "_posts/Set Theory/2026-03-10-Order-Relation.md",
     "_posts/Quantum Mechanics/2026-03-13-The-Statistical-Interpretation-Of-Wave-Functions.md",
-    "_site/categories/quamtum-mechanics/index.html",
-    "_site/categories/quamtum-mechanics",
-    "_site/posts/The-Statistical-Interpretation-Of-Wave-Functions/index.html",
-    "_site/posts/The-Statistical-Interpretation-Of-Wave-Functions",
-    "_site/categories/quamt/index.html",
-    "_site/categories/quamt",
     "_posts/Complex Analysis/2026-03-09-Modulus.md",
     "_posts/Complex Analysis/2026-03-10-Complex-Plane.md",
     "_posts/Complex Analysis/2026-03-09-Complex-Number.md",
@@ -211,12 +217,6 @@
     "_posts/PDE/2026-03-12-1D-Transport-Equation.md",
     "_posts/Abstract Algebra/2026-03-11-Special-Linear-Group.md",
     "_posts/Abstract Algebra/2026-03-11-Monoid.md",
-    "_posts/Abstract Algebra/2026-03-11-Group.md",
-    "_posts/Abstract Algebra/2026-03-11-General-Linear-Group.md",
-    "_posts/Abstract Algebra/2026-03-11-Abelian.md",
-    "_posts/PDE/2026-03-10-1st-Order-Linear-PDE-Constant-Coefficients.md",
-    "_site/assets/lib/fontawesome-free/README.md",
-    "_site/assets/lib/README.md",
     "_site/assets/img/Pasted image 20260221200726.png",
     "_site/assets/img/성막.jpg",
     "_site/assets/img/Pasted image 20260220174110.png",
