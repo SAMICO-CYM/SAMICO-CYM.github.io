@@ -11,9 +11,9 @@ Finite group, 즉 유한군이란 군의 원소의 개수가 유한한 경우를
 
 ## Remark
 
-(i) 군의 정의에 의해 모든 군은 항등원이라는 원소를 반드시 포함하므로 $\vert G \vert \ge 1$이다. 
+**(i)** 군의 정의에 의해 모든 군은 항등원이라는 원소를 반드시 포함하므로 $\vert G \vert \ge 1$이다. 
 
-(ii) 어떤 테이블이 group table이 되기 위해서는 같은 행과 열에 같은 원소가 두 번 이상 나타나지 않아야 한다. 만약 다음과 같은 테이블이 있다고 하자.
+**(ii)** 어떤 테이블이 group table이 되기 위해서는 같은 행과 열에 같은 원소가 두 번 이상 나타나지 않아야 한다. 예컨대 다음과 같은 테이블이 있다고 하자.
 
 $$
 \begin{array}{c|cc}
@@ -25,9 +25,7 @@ a & \cdots & x & \cdots & x & \cdots \\
 \end{array}
 $$
 
-
-
-원소의 개수를 하나씩 늘려가며 케이스별로 살펴보자.
+즉 $a \ast b = x$이고 $a \ast c = x$이다. 이러면 cancellation law에 의해 $b = c$여야 하는데 가정상 $b \neq c$이므로 모순이다. 같은 열에 같은 원소가 두 번 이상 나타난 경우에도 동일하게 모순을 얻을 수 있다. 따라서 어떤 테이블이 group table이 되기 위해서는 같은 행과 열에 같은 원소가 두 번 이상 나타나지 않아야 한다.
 
 ## $\vert G \vert = 1$
 자명하게 원소의 개수가 1개 뿐인 군은 $G = \\{ e \\}$뿐이다. 즉 이 경우
@@ -50,4 +48,92 @@ e & e & a \\
 a & a & e \\
 \end{array}$$
 
-위와 같은 테이블을 얻게 되는데, $a \ast a = a$이면 $a$는 항등원이 되어야 하므로 모순이다. 따라서 $a \ast a = e$여야 한다. 즉
+위와 같은 테이블을 얻게 되고 Remark (ii)에 의해서 $a \ast a = e$이다. 따라서 원소의 개수가 2개 뿐인 군은 이런 구조 밖에 가질 수 없고, $e = 0, a = 1, \ast = +$로 두면 $G \cong \mathbb{Z}_2$임을 알 수 있다.
+
+## $\vert G \vert = 3$
+원소의 개수가 3개인 군을 $G = \{e, a, b \}$로 나타내자. 그러면
+
+$$
+\begin{array}{c|ccc}
+* & e & a & b \\
+\hline
+e & e & a & b \\
+a & a & e & b \\
+b & b & a & e \\
+\end{array}
+$$
+
+위와 같은 테이블을 얻게 되고 동일하게 계산해보면 원소의 개수가 3개 뿐인 군은 위와 같은 테이블을 가지는 구조의 군이 될 수 밖에 없다. 마찬가지로 이런 군은 $\mathbb{Z}_3$과 동형이다. 
+
+## $\vert G \vert = 4$
+원소의 개수가 4개인 군을 $G = \{e, a, b, c \}$로 나타내자. 앞선 경우들은 테이블의 경우가 딱 하나 밖에 나오지 않았지만 원소의 개수가 4개인 군은 서로 다른 두 가지 경우가 나타난다. 테이블로 나타내면 다음과 같다.
+
+$$
+\begin{array}{c|cccc}
+* & e & a & b & c \\
+\hline
+e & e & a & b & c \\
+a & a & e & b & c \\
+b & b & a & e & c \\
+c & c & a & b & e \\
+\end{array}
+
+\quad \text{or} \quad
+
+\begin{array}{c|cccc}
+* & e & a & b & c \\
+\hline
+e & e & a & b & c \\
+a & a & e & c & b \\
+b & b & c & e & a \\
+c & c & b & a & e \\
+\end{array}
+$$
+
+첫 번째 테이블은 앞서 살펴 보았던 경우들과 마찬가지로 $\mathbb{Z}_4$와 동형이다. 반면 두 번째 테이블은 $\mathbb{Z}_4$이 아닌 Klein 4-group과 동형이다. 이 테이블은 같은 원소끼리 연산을 취했을 때 그 결과가 항등원이 나온다는 특징을 가지고 있다. 두 구조는 서로 다르지만 모두 가환군이다.
+
+## $\vert G \vert = 5$
+앞선 경우와 마찬가지로 서로 다른 구조들이 나타날 것 같지만 원소의 개수가 5개인 군은 $\mathbb{Z}_5$와 동형인 구조 밖에 없다.
+
+$$
+\begin{array}{c|ccccc}
+* & e & a & b & c & d \\
+\hline
+e & e & a & b & c & d \\
+a & a & b & c & d & e \\
+b & b & c & d & e & a \\
+c & c & d & e & a & b \\
+d & d & e & a & b & c \\
+\end{array}
+$$
+
+## $\vert G \vert = 6$
+원소의 개수가 6개인 군은 서로 다른 두 가지 구조를 가진다. 하나는 $\mathbb{Z}_6$과 동형인 군이고 다른 하나는 $S_3$과 동형인 군이다. 테이블로 나타내면 다음과 같다.
+
+$$
+\begin{array}{c|cccccc}
+* & e & a & b & c & d & f \\
+\hline
+e & e & a & b & c & d & f \\
+a & a & b & c & d & f & e \\
+b & b & c & d & f & e & a \\
+c & c & d & f & e & a & b \\
+d & d & f & e & a & b & c \\
+f & f & e & a & b & c & d \\
+\end{array}
+
+\quad \text{or} \quad
+
+\begin{array}{c|cccccc}
+* & e & a & b & c & d & f \\
+\hline
+e & e & a & b & c & d & f \\
+a & a & b & c & d & f & e \\
+b & b & c & d & f & e & a \\
+c & c & d & f & e & a & b \\
+d & d & f & e & a & b & c \\
+f & f & e & a & b & c & d \\
+\end{array}
+$$
+
+주의할 점은 $\mathbb{Z}_6$과 동형인 군은 가환군이지만 $S_3$은 가환군이 아니다.
