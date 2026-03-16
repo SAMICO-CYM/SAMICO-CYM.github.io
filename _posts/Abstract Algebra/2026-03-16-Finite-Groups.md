@@ -17,7 +17,7 @@ Finite group, 즉 유한군이란 군의 원소의 개수가 유한한 경우를
 
 $$
 \begin{array}{c|cc}
-* & \cdots & b & \cdots & c & \cdots \\
+* &  & b & \cdots & c & \cdots \\
 \hline
 \vdots & \vdots & \vdots &  & \vdots & \\
 a & \cdots & x & \cdots & x & \cdots \\
