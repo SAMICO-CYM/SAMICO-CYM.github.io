@@ -1,7 +1,7 @@
 --- 
 title: Order Relation
 date: 2026-03-09 00:01:27
-categories: [Mathematics, Set Theory]
+categories: [Mathematics, Topology]
 tags: []
 math: true
 ---
