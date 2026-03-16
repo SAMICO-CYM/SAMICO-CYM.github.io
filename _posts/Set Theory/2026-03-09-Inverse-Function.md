@@ -1,6 +1,6 @@
 ---
 title: Inverse Function
-date: 2026-03-09
+date: 2026-03-09 00:01:24
 categories: [Mathematics, Set Theory]
 tags: []
 math: true

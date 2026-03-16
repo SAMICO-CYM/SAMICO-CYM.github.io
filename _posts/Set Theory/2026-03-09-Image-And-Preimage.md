@@ -1,6 +1,6 @@
 ---
 title: Image and Preimage
-date: 2026-03-09 00:01:29
+date: 2026-03-09 00:01:25
 categories: [Mathematics, Set Theory]
 tags: []
 math: true
