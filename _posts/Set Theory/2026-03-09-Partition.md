@@ -1,6 +1,6 @@
 ---
 title: Partition
-date: 2026-03-16 00:01:27
+date: 2026-03-09 00:01:27
 categories: [Mathematics, Set Theory]
 tags: []
 math: true
