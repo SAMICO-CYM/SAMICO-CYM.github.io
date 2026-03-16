@@ -1,34 +1,42 @@
 ---
 title: Equivalence Relation
-date: 2026-03-09 00:01:29
+date: 2026-03-09 00:01:28
 categories: [Mathematics, Set Theory]
 tags: []
 math: true
 ---
 
 ## Definition
-Let $R$ be a relation in a set $X$. Then we say that 
+Let $R$ be a relation in a set $X$.
 
-**(i)** $R$ is ***reflexive*** $\iff$ $xRx, \forall x \in X$.
+**(i)** $R$ is an ***equivalence relation*** $\iff$ $R$ is reflexive, symmetric, and transitive. 
 
-**(ii)** $R$ is ***symmetric*** $\iff$ $xRy \Longrightarrow yRx, \forall x, y \in X$.
+**(ii)** Let $x \in X$. Then the equivalence class of $x$ is 
 
-**(iii)** $R$ is ***transitive*** $\iff$ $xRy \wedge yRz \Longrightarrow xRz, \forall x, y, z \in X$. 
+$$R[x] = \{ y \in X \mid xRy \}.$$
 
-**(iv)** $R$ is ***antisymmetric*** $\iff$ $xRy \wedge yRx \implies x = y$.
- 
-**(iv)** $R$ is an ***equivalence relation*** $\iff$ $R$ is reflexive, symmetric, and transitive. 
+The set of all equivalence classes of $R$ is called the ***quotient set*** of $X$ by $R$, and denoted by $X/R$.
 
-## Theorem
-Let $R$ be a relation on $X$. 
+## Theorem 1
+Let $R$ be an equivalence relation on a set $X$.
 
-**(i)** $R$ is reflexive $\iff$ $\triangle_X \subset R$
+**(i)** $\forall x \in X, x \in R[x]$.
 
-**(ii)** $R$ is symmetric $\iff$ $R = R^{-1}$
+**(ii)** $\forall x, y \in X, xRy \iff R[x] = R[y]$.
 
-**(iii)** $R$ is antisymmetric $\iff$ $R \cap R^{-1} = \triangle_X$
+**(iii)** $\forall x, y \in X, (x, y) \notin R \iff R[x] \cap R[y] = \emptyset$.
 
-**(iv)** $R$ is transitive $\iff$ $R \circ R = R$
+### Proof
+$\blacksquare$
+
+## Theorem 2
+Let $R$ be an equivalence relation on a set $X$. Then $X/R$ is a partition of $X$.
+
+### Proof
+$\blacksquare$
+
+## Theorem 3
+Let $P$ be a partition of a nonempty set $X$. Then there exists an equivalence relation $R$ on $X$ such that $X/R = P$.
 
 ### Proof
 $\blacksquare$
