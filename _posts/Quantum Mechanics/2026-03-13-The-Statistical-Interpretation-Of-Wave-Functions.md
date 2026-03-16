@@ -30,4 +30,9 @@ $$\int_{-\infty}^\infty \left\vert \frac{1}{\sqrt{C}}\Psi(x, t) \right\vert^2 \,
 Let $\Psi(x, t)$ be a wave function of a particle. If $\Psi(x, t)$ is normalized at $t = 0$, then it stays normalized for any $t > 0$.
 
 ### Proof
+Since $\Psi(x, t)$ is normalized at $t = 0$, we have 
+
+$$\int_{-\infty}^\infty \vert \Psi(x, 0) \vert^2 \, dx = \text{const.}$$
+
+
 $\blacksquare$
