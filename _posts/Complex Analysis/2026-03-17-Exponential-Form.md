@@ -36,20 +36,16 @@ Let $z (\neq 0) \in \mathbb{C}$. Then $z$ can be written in ***exponential form*
 $$z = r e^{i\theta}.$$
 
 ## Remark
-**(i)** Note that $\theta$ can be calculated by the equation
+**(i)** The circle 
 
-$$\tan \theta = \frac{y}{x}.$$
+$$C_R(z_0) = \{ z \in \mathbb{C} \mid \vert z - z_0 \vert = R \}$$
+
+with radius $R$ centered at $z_0$ can be parametrized by 
+
+$$z = z_0 + Re^{i\theta}, \quad \theta \in [0, 2\pi).$$
 
 **(ii)** Note that $\cos \theta$ and $\sin \theta$ are periodic with period $2\pi$. Thus, there exists infinitely many $\theta$ such that $z = r e^{i\theta}$, says 
 
-$$z = re^{i\theta} = r e^{i(\theta + 2n\pi)}, \quad \forall n \in \mathbb{Z}.$$
+$$z = re^{i\theta} = r e^{i(\theta + 2n\pi)}, \quad \forall n \in \mathbb{Z}.$$ Each value of $\theta$ is called the ***argument*** of $z$, and the set of all such values is denoted by $\arg z$. The ***principal value*** of $\arg z$, denoted by $\text{Arg } z$, is the unique value $\Phi$ such that $-\pi < \Phi \le \pi$. Then we have
 
-## Definition 2
-For $z = (x, y) (\neq 0) \in \mathbb{C}$, we define the ***argument*** of $z$ as
-
-$$\arg(z) = \begin{cases}
-\left\{ \theta \mid \tan \theta = \frac{y}{x} \right\} & \text{if } x \neq 0 \\
-\left\{ \frac{\pi}{2} + 2n\pi \mid n \in \mathbb{Z} \right\} & \text{if } x = 0, y > 0 \\
-\left\{ -\frac{\pi}{2} + 2n\pi \mid n \in \mathbb{Z} \right\} & \text{if } x = 0, y < 0 \\
-\left\{ \pi + 2n\pi \mid n \in \mathbb{Z} \right\} & \text{if } x < 0, y = 0
-\end{cases}$$
+$$\arg z = \{\text{Arg } z + 2n\pi \mid n \in \mathbb{Z}\}$$
