@@ -45,4 +45,19 @@ $$\begin{align*}
 
 따라서 운동량 연산자는 다음과 같다.
 
-$$\hat{p} = -i \hbar \frac{\partial}{\partial x}$$
+$$\hat{p} = \begin{cases} 
+-i \hbar \frac{\partial}{\partial x} & \text{ in one-dimension} \\
+-i \hbar \nabla & \text{ in three-dimension} 
+\end{cases}$$
+
+이를 이용하면, 위치와 운동량에 의존하는 임의의 양 $Q(x, p)$의 기댓값을 구할 수 있다.
+
+$$\langle Q(x, p) \rangle = \int_{-\infty}^{\infty} \Psi^\ast Q(x, -i \hbar \nabla) \Psi \, dx$$
+
+예컨대 운동에너지의 기댓값은 다음과 같다.
+
+$$\langle T \rangle = \int_{-\infty}^\infty \Psi^\ast \left( -\frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2} \right) \Psi \, dx$$
+
+위 결과를 정리하면, 임의의 물리적 관측량은 그에 대응되는 연산자로 표현할 수 있음을 알 수 있다. 예컨대 해밀토니안은 다음과 같은 연산자로 표현할 수 있다.
+
+$$\hat{\mathcal{H}} = \hat{T} + \hat{V} = \frac{\hat{p}^2}{2m} + V(x) = -\frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2} + V(x)$$
