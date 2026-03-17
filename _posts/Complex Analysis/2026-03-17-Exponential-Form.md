@@ -36,15 +36,20 @@ Let $z (\neq 0) \in \mathbb{C}$. Then $z$ can be written in ***exponential form*
 $$z = r e^{i\theta}.$$
 
 ## Remark
-(i) Note that $\theta$ can be calculated by the equation
+**(i)** Note that $\theta$ can be calculated by the equation
 
 $$\tan \theta = \frac{y}{x}.$$
 
-(ii) Note that $\cos \theta$ and $\sin \theta$ are periodic with period $2\pi$. Thus, there exists infinitely many $\theta$ such that $z = r e^{i\theta}$, says 
+**(ii)** Note that $\cos \theta$ and $\sin \theta$ are periodic with period $2\pi$. Thus, there exists infinitely many $\theta$ such that $z = r e^{i\theta}$, says 
 
 $$z = re^{i\theta} = r e^{i(\theta + 2n\pi)}, \quad \forall n \in \mathbb{Z}.$$
 
 ## Definition 2
 For $z = (x, y) (\neq 0) \in \mathbb{C}$, we define the ***argument*** of $z$ as
 
-$$\arg(z) =$$
+$$\arg(z) = \begin{cases}
+\left\{ \theta \mid \tan \theta = \frac{y}{x} \right\} & \text{if } x \neq 0 \\
+\left\{ \frac{\pi}{2} + 2n\pi \mid n \in \mathbb{Z} \right\} & \text{if } x = 0, y > 0 \\
+\left\{ -\frac{\pi}{2} + 2n\pi \mid n \in \mathbb{Z} \right\} & \text{if } x = 0, y < 0 \\
+\left\{ \pi + 2n\pi \mid n \in \mathbb{Z} \right\} & \text{if } x < 0, y = 0
+\end{cases}$$
