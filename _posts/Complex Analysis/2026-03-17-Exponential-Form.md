@@ -83,3 +83,48 @@ $$\begin{align*}
 &= \frac{r_1}{r_2} (\cos (\theta_1 - \theta_2) + i \sin (\theta_1 - \theta_2)) \\
 &= \frac{r_1}{r_2} e^{i(\theta_1 - \theta_2)}
 \end{align*}$$
+
+(iii) Note that $z =r e^{i \theta}$ is clear. Suppose that $z^n = r^n e^{in\theta}$ for some $n \in \mathbb{N}$. Then 
+
+$$\begin{align*}
+z^{n+1} &= z^n z \\
+&= r^n e^{in\theta} r e^{i\theta} \\
+&= r^{n+1} e^{i(n+1)\theta}
+\end{align*}$$
+
+Thus, by induction, $z^n = r^n e^{in\theta}$ for any $n \in \mathbb{N}$. 
+
+It also holds when $n = 0$. Note that, by (ii), we have
+
+$$z^{-1} = \frac{1}{z} = \frac{1}{r} e^{-i\theta}.$$
+
+Let $n = -m$ for some $m \in \mathbb{N}$. Then 
+
+$$\begin{align*}
+z^n &= z^{-m} \\
+&= (z^{-1})^m \\
+&= \left[ \frac{1}{r} e^{i(- \theta)} \right]^m \\
+&= \left( \frac{1}{r} \right)^m e^{i(- \theta)m} \\
+&= \left( \frac{1}{r} \right)^{-n} e^{i(- \theta)(-n)} \\
+&= r^n e^{in\theta}
+\end{align*}$$
+
+Thus, $z^n = r^n e^{in\theta}$ for any $n \in \mathbb{Z}$. 
+
+(iv) Let $n = 2m$ be an even positive integer. For $z = e^{i \theta} = \cos \theta + i \sin \theta$, we have 
+
+$$\begin{align*} 
+z^n &= (\cos \theta + i \sin \theta)^n \\
+&= \sum_{k=0}^n \binom{n}{k} \cos^{n-k} \theta (i \sin \theta)^k \\
+&= \sum_{k=0}^{2m} \binom{2m}{k} \cos^{2m-k} \theta (i \sin \theta)^k \\
+&= \sum_{k=0}^m \binom{2m}{2k} \cos^{2m-2k} \theta (i \sin \theta)^{2k} + \sum_{k=0}^m \binom{2m}{2k+1} \cos^{2m-2k-1} \theta (i \sin \theta)^{2k+1} \\
+&= \sum_{k=0}^m (-1)^k \binom{2m}{2k} \cos^{2m-2k} \theta \sin^{2k} \theta + i \sum_{k=0}^m (-1)^k \binom{2m}{2k+1} \cos^{2m-2k-1} \theta \sin^{2k+1} \theta \\
+&= \cos(2m \theta) + i \sin(2m \theta)
+\end{align*}$$
+
+Thus, we have
+
+$$\begin{align*} 
+\cos(2m \theta) &= \sum_{k=0}^m (-1)^k \binom{2m}{2k} \cos^{2m-2k} \theta \sin^{2k} \theta \\
+\sin(2m \theta) &= \sum_{k=0}^m (-1)^k \binom{2m}{2k+1} \cos^{2m-2k-1} \theta \sin^{2k+1} \theta. \blacksquare
+\end{align*}$$
