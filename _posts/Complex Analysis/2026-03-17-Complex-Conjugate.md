@@ -7,29 +7,25 @@ math: true
 ---
 
 ## Definition
-Let $z = (x, y) \in \mathbb{C}$. The ***complex conjugate*** of $z$, denoted by $\bar{z}$, is defined by
+Let $z = (x, y) \in \mathbb{C}$. The ***complex conjugate*** of $z$, denoted by $\overline{z}$, is defined by
 
-$$\bar{z} = (x, -y).$$
+$$\overline{z} = (x, -y).$$
 
 ## Remark
 Let $z_1, z_2 \in \mathbb{C}$. Then
 
-**(i)** $\overline{z_1 + z_2} = \bar{z_1} + \bar{z_2}$
+**(i)** $\overline{z_1 + z_2} = \overline{z_1} + \overline{z_2}$
 
-**(ii)** $\overline{z_1 z_2} = \bar{z_1} \bar{z_2}$
+**(ii)** $\overline{z_1 z_2} = \overline{z_1} \overline{z_2}$
 
-**(iii)** $\overline{z_1 - z_2} = \bar{z_1} - \bar{z_2}$
+**(iii)** $\overline{\left(\frac{z_1}{z_2}\right)} = \frac{\overline{z_1}}{\overline{z_2}}$ ($z_2 \neq 0$)
 
-**(iv)** $\overline{\left(\frac{z_1}{z_2}\right)} = \frac{\bar{z_1}}{\bar{z_2}}$ ($z_2 \neq 0$)
+**(iv)** $\text{Re}(z) = \frac{z + \overline{z}}{2}$ and $\text{Im}(z) = \frac{z - \overline{z}}{2i}$
 
-**(v)** $\text{Re}(z) = \frac{z + \bar{z}}{2}$
+**(v)** $\overline{\bar{z}} = z$
 
-**(vi)** $\text{Im}(z) = \frac{z - \bar{z}}{2i}$
+**(vi)** $\overline{z} = z$ if and only if $z \in \mathbb{R}$
 
-**(vii)** $\overline{\bar{z}} = z$
-
-**(viii)** $\overline{z} = z$ if and only if $z \in \mathbb{R}$
-
-**(ix)** $\vert z \vert^2 = z \bar{z}$
+**(vii)** $\vert z \vert^2 = z \overline{z}$
 
 ### Proof
