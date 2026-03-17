@@ -20,9 +20,9 @@ Let $z_1, z_2 \in \mathbb{C}$. Then
 
 **(iii)** $\displaystyle \overline{\left(\frac{z_1}{z_2}\right)} = \frac{\overline{z_1}}{\overline{z_2}}$ ($z_2 \neq 0$)
 
-**(iv)** $\text{Re}(z) = \frac{z + \overline{z}}{2}$ and $\text{Im}(z) = \frac{z - \overline{z}}{2i}$
+**(iv)** $\text{Re}(z) = \frac{z + \overline{z}}{2}$  and  $\text{Im}(z) = \frac{z - \overline{z}}{2i}$
 
-**(v)** $\overline{\bar{z}} = z$
+**(v)** $\overline{\overline{z}} = z$
 
 **(vi)** $\overline{z} = z$ if and only if $z \in \mathbb{R}$
 
