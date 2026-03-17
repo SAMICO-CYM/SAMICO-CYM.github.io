@@ -48,6 +48,19 @@ $$z = z_0 + Re^{i\theta}, \quad \theta \in [0, 2\pi).$$
 
 $$z = re^{i\theta} = r e^{i(\theta + 2n\pi)}, \quad \forall n \in \mathbb{Z}.$$ 
 
-Each value of $\theta$ is called the ***argument*** of $z$, and the set of all such values is denoted by $\arg z$. The ***principal value*** of $\arg z$, denoted by $\text{Arg } z$, is the unique value $\Phi$ such that $-\pi < \Phi \le \pi$. Then we have
+Each value of $\theta$ is called the ***argument*** of $z$, and the set of all such values is denoted by $\arg z$. The ***principal value*** of $\arg z$, denoted by $\text{Arg } z$, is the unique value $\Theta$ such that $-\pi < \Theta \le \pi$. Then we have
 
 $$\arg z = \{\text{Arg } z + 2n\pi \mid n \in \mathbb{Z}\}$$
+
+## Theorem 1
+Let $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$. Then
+
+**(i)** $z_1 z_2 = r_1 r_2 e^{i(\theta_1 + \theta_2)}$
+
+**(ii)** $\displaystyle \frac{z_1}{z_2} = \frac{r_1}{r_2} e^{i(\theta_1 - \theta_2)}$ if $z_2 \neq 0$
+
+**(iii)** $z_1^n = r_1^n e^{in\theta_1}$ for any integer $n$
+
+**(iv)** $\displaystyle \cos (2m \theta) = \sum_{k=0}^m (-1)^k \binom{2m}{2k} \cos^{2m-2k} \theta \sin^{2k} \theta$ and $\displaystyle \sin (2m \theta) = \sum_{k=0}^m (-1)^k \binom{2m}{2k+1} \cos^{2m-2k-1} \theta \sin^{2k+1} \theta$
+
+### Proof
