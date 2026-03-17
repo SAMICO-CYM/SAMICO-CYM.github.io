@@ -8,7 +8,7 @@ math: true
 
 ## Remark
 (i) Let $z = (x, y) \in \mathbb{C}$ and assume $z \neq 0$.
-![alt text](assets/img/2026-03-17-Exponential-Form/Gemini_Generated_Image_btbom8btbom8btbo.png)
+![alt text](assets/img/Gemini_Generated_Image_btbom8btbom8btbo.png)
 Note that $\theta$ is the angle between the positive real axis and the directed line segment from the origin to $z$. 
 
 The Euler's formula is given by
