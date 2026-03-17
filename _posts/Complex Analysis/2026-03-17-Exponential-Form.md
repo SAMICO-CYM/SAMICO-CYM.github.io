@@ -64,7 +64,7 @@ Let $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$. Then
 **(iv)** $\displaystyle \cos (2m \theta) = \sum_{k=0}^m (-1)^k \binom{2m}{2k} \cos^{2m-2k} \theta \sin^{2k} \theta$ and $\displaystyle \sin (2m \theta) = \sum_{k=0}^m (-1)^k \binom{2m}{2k+1} \cos^{2m-2k-1} \theta \sin^{2k+1} \theta$
 
 ### Proof
-(i) 
+**(i)** 
 
 $$\begin{align*}
 z_1 z_2 &= r_1 (\cos \theta_1 + i \sin \theta_1) r_2 (\cos \theta_2 + i \sin \theta_2) \\
@@ -73,7 +73,7 @@ z_1 z_2 &= r_1 (\cos \theta_1 + i \sin \theta_1) r_2 (\cos \theta_2 + i \sin \th
 &= r_1 r_2 e^{i(\theta_1 + \theta_2)}
 \end{align*}$$
 
-(ii) 
+**(ii)** 
 
 $$\begin{align*}
 \frac{z_1}{z_2} &= \frac{r_1 (\cos \theta_1 + i \sin \theta_1)}{r_2 (\cos \theta_2 + i \sin \theta_2)} \\
@@ -84,7 +84,7 @@ $$\begin{align*}
 &= \frac{r_1}{r_2} e^{i(\theta_1 - \theta_2)}
 \end{align*}$$
 
-(iii) Note that $z =r e^{i \theta}$ is clear. Suppose that $z^n = r^n e^{in\theta}$ for some $n \in \mathbb{N}$. Then 
+**(iii)** Note that $z =r e^{i \theta}$ is clear. Suppose that $z^n = r^n e^{in\theta}$ for some $n \in \mathbb{N}$. Then 
 
 $$\begin{align*}
 z^{n+1} &= z^n z \\
@@ -111,7 +111,7 @@ z^n &= z^{-m} \\
 
 Thus, $z^n = r^n e^{in\theta}$ for any $n \in \mathbb{Z}$. 
 
-(iv) Let $n = 2m$ be an even positive integer. For $z = e^{i \theta} = \cos \theta + i \sin \theta$, we have 
+**(iv)** Let $n = 2m$ be an even positive integer. For $z = e^{i \theta} = \cos \theta + i \sin \theta$, we have 
 
 $$\begin{align*} 
 z^n &= (\cos \theta + i \sin \theta)^n \\
