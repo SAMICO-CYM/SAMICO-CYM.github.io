@@ -24,3 +24,8 @@ $$\begin{align*}
 \end{align*}$$
 
 ## Uncertainty Principle
+Let $\sigma_x$ and $\sigma_p$ be the standard deviations of $x$ and $p$, respectively. Then we have
+
+$$\sigma_x \sigma_p \geq \frac{\hbar}{2},$$
+
+which is known as the ***uncertainty principle***. This means that it is impossible to simultaneously measure the position and momentum of a particle with arbitrary precision. 

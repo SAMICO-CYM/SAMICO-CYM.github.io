@@ -30,9 +30,19 @@ $$\int_{-\infty}^\infty \left\vert \frac{1}{\sqrt{C}}\Psi(x, t) \right\vert^2 \,
 Let $\Psi(x, t)$ be a wave function of a particle. If $\Psi(x, t)$ is normalized at $t = 0$, then it stays normalized for any $t > 0$.
 
 ### Proof
-Since $\Psi(x, t)$ is normalized at $t = 0$, we have 
 
-$$\int_{-\infty}^\infty \vert \Psi(x, 0) \vert^2 \, dx = \text{const.}$$
+$$\begin{align*} 
+\frac{d}{dt} \int \vert \Psi \vert^2 \, dx &= \int \frac{\partial}{\partial t} \Psi^\ast \Psi \, dx \\
+&= \int \Psi^\ast_t \Psi + \Psi^\ast \Psi_t \, dx \\
+&= \int \left( - \frac{i \hbar}{2m} \Psi^\ast_{xx} + \frac{i}{\hbar} V \Psi^\ast \right) \Psi + \Psi^\ast \left( - \frac{i \hbar}{2m} \Psi_{xx} + \frac{i}{\hbar} V \Psi \right) \, dx \\
+&= \frac{i \hbar}{2m} \int (\Psi^\ast \Psi_{xx} - \Psi^\ast_{xx} \Psi) \, dx \\
+&= \frac{i \hbar}{2m} \int \frac{\partial}{\partial x} (\Psi^\ast \Psi_x - \Psi^\ast_x \Psi) \, dx \\
+&= \frac{i \hbar}{2m} \left[ \Psi^\ast \Psi_x - \Psi^\ast_x \Psi \right]_{-\infty}^\infty \\
+&= 0
+\end{align*}$$
 
+Thus we have
+
+$$\int_{-\infty}^\infty \vert \Psi(x, t) \vert^2 \, dx = C. \blacksquare$$
 
 $\blacksquare$
