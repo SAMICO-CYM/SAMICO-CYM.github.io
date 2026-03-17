@@ -46,6 +46,8 @@ $$z = z_0 + Re^{i\theta}, \quad \theta \in [0, 2\pi).$$
 
 **(ii)** Note that $\cos \theta$ and $\sin \theta$ are periodic with period $2\pi$. Thus, there exists infinitely many $\theta$ such that $z = r e^{i\theta}$, says 
 
-$$z = re^{i\theta} = r e^{i(\theta + 2n\pi)}, \quad \forall n \in \mathbb{Z}.$$ Each value of $\theta$ is called the ***argument*** of $z$, and the set of all such values is denoted by $\arg z$. The ***principal value*** of $\arg z$, denoted by $\text{Arg } z$, is the unique value $\Phi$ such that $-\pi < \Phi \le \pi$. Then we have
+$$z = re^{i\theta} = r e^{i(\theta + 2n\pi)}, \quad \forall n \in \mathbb{Z}.$$ 
+
+Each value of $\theta$ is called the ***argument*** of $z$, and the set of all such values is denoted by $\arg z$. The ***principal value*** of $\arg z$, denoted by $\text{Arg } z$, is the unique value $\Phi$ such that $-\pi < \Phi \le \pi$. Then we have
 
 $$\arg z = \{\text{Arg } z + 2n\pi \mid n \in \mathbb{Z}\}$$
