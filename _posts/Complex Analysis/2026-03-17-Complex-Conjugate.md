@@ -24,8 +24,10 @@ Let $z_1, z_2 \in \mathbb{C}$. Then
 
 **(v)** $\overline{\overline{z}} = z$
 
-**(vi)** $\overline{z} = z$ if and only if $z \in \mathbb{R}$
+**(vi)** $\vert \overline{z} \vert = \vert z \vert$
 
-**(vii)** $\vert z \vert^2 = z \overline{z}$
+**(vii)** $\overline{z} = z$ if and only if $z \in \mathbb{R}$
+
+**(viii)** $\vert z \vert^2 = z \overline{z}$
 
 ### Proof
