@@ -64,3 +64,22 @@ Let $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$. Then
 **(iv)** $\displaystyle \cos (2m \theta) = \sum_{k=0}^m (-1)^k \binom{2m}{2k} \cos^{2m-2k} \theta \sin^{2k} \theta$ and $\displaystyle \sin (2m \theta) = \sum_{k=0}^m (-1)^k \binom{2m}{2k+1} \cos^{2m-2k-1} \theta \sin^{2k+1} \theta$
 
 ### Proof
+(i) 
+
+$$\begin{align*}
+z_1 z_2 &= r_1 (\cos \theta_1 + i \sin \theta_1) r_2 (\cos \theta_2 + i \sin \theta_2) \\
+&= r_1 r_2 ((\cos \theta_1 \cos \theta_2 - \sin \theta_1 \sin \theta_2) + i (\sin \theta_1 \cos \theta_2 + \cos \theta_1 \sin \theta_2)) \\
+&= r_1 r_2 (\cos (\theta_1 + \theta_2) + i \sin (\theta_1 + \theta_2)) \\
+&= r_1 r_2 e^{i(\theta_1 + \theta_2)}
+\end{align*}$$
+
+(ii) 
+
+$$\begin{align*}
+\frac{z_1}{z_2} &= \frac{r_1 (\cos \theta_1 + i \sin \theta_1)}{r_2 (\cos \theta_2 + i \sin \theta_2)} \\
+&= \frac{r_1}{r_2} \frac{\cos \theta_1 + i \sin \theta_1}{\cos \theta_2 + i \sin \theta_2} \\
+&= \frac{r_1}{r_2} \frac{(\cos \theta_1 + i \sin \theta_1)(\cos \theta_2 - i \sin \theta_2)}{(\cos \theta_2 + i \sin \theta_2)(\cos \theta_2 - i \sin \theta_2)} \\
+&= \frac{r_1}{r_2} \frac{\cos \theta_1 \cos \theta_2 + \sin \theta_1 \sin \theta_2 + i (\sin \theta_1 \cos \theta_2 - \cos \theta_1 \sin \theta_2)}{\cos^2 \theta_2 + \sin^2 \theta_2} \\
+&= \frac{r_1}{r_2} (\cos (\theta_1 - \theta_2) + i \sin (\theta_1 - \theta_2)) \\
+&= \frac{r_1}{r_2} e^{i(\theta_1 - \theta_2)}
+\end{align*}$$
