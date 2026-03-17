@@ -18,7 +18,7 @@ Let $z_1, z_2 \in \mathbb{C}$. Then
 
 **(ii)** $\overline{z_1 z_2} = \overline{z_1} \overline{z_2}$
 
-**(iii)** $\overline{\left(\frac{z_1}{z_2}\right)} = \frac{\overline{z_1}}{\overline{z_2}}$ ($z_2 \neq 0$)
+**(iii)** $\displaystyle \overline{\left(\frac{z_1}{z_2}\right)} = \frac{\overline{z_1}}{\overline{z_2}}$ ($z_2 \neq 0$)
 
 **(iv)** $\text{Re}(z) = \frac{z + \overline{z}}{2}$ and $\text{Im}(z) = \frac{z - \overline{z}}{2i}$
 
