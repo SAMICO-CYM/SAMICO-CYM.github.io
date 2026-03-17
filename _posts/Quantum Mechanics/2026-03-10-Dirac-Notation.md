@@ -20,7 +20,7 @@ $$\langle x \vert = \vert x \rangle^{\dagger} = \begin{bmatrix} x^*_1 & \cdots &
 $$\langle x \vert y \rangle = \sum_{i=1}^n x^*_iy_i$$
 
 ## Remark
-선형 연산자 $A$에 대해서 다음의 관계가 성립한다.
+Let $A$ be a linear operator.
 
 **(i)** $\vert Ax \rangle = A \vert x \rangle$
 
@@ -29,6 +29,6 @@ $$\langle x \vert y \rangle = \sum_{i=1}^n x^*_iy_i$$
 **(iii)** $\langle x \vert Ay \rangle = \langle x \vert A \vert y \rangle = \langle A^{\dagger} x \vert y \rangle$
 
 ## Expected Value
-Let $\Psi$ be a normalized wave function. Then the expected value of an operator $A$ is given by
+Let $\Psi$ be a normalized wave function. Then the expected value of a linear operator $A$ is given by
 
 $$\langle A \rangle = \langle \Psi \vert A \vert \Psi \rangle = \int_{-\infty}^{\infty} \Psi^* A \Psi \, dx$$
