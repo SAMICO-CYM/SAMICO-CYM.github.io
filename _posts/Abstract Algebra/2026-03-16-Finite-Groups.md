@@ -130,11 +130,11 @@ f & f & e & a & b & c & d \\
 * & e & a & b & c & d & f \\
 \hline
 e & e & a & b & c & d & f \\
-a & a & b & c & d & f & e \\
-b & b & c & d & f & e & a \\
-c & c & d & f & e & a & b \\
-d & d & f & e & a & b & c \\
-f & f & e & a & b & c & d \\
+a & a & b & e & d & f & c \\
+b & b & e & a & f & c & d \\
+c & c & f & d & e & b & a \\
+d & d & c & f & a & e & b \\
+f & f & d & c & b & a & e \\
 \end{array}
 $$
 
