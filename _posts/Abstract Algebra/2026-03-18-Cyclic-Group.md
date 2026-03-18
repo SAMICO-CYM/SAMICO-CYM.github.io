@@ -66,4 +66,4 @@ km \equiv 1 \quad \text{mod } n \quad \text{for some } k \in \mathbb{Z} \\
 
 $$km - \ell n = kad - \ell bd = (ka - \ell b)d = 1$$
 
-이 성립해야 하는데 $d > 1$이고 $ka - \ell b$ 또한 정수이므로 모순이다. 즉 $\gcd(m, n) = 1$이어야 하므로 순환군 $\langle m \rangle$에 원소 $1$을 포함하는 $n$보다 작은 자연수 $m$은 $n$과 서로소여야 한다. 즉 $\mathbb{Z}_n$를 생성하는 생성원은 $\phi(n)$개 존재한다. 
+이 성립해야 하는데 $d > 1$이고 $ka - \ell b$ 또한 정수이므로 모순이고, 즉 $\gcd(m, n) = 1$이다. 따라서 순환군 $\langle m \rangle$에 원소 $1$을 포함해서 $\mathbb{Z}_n$의 생성원이 되는 $n$보다 작은 자연수 $m$은 $n$과 서로소인 자연수만큼, 즉 $\phi(n)$개 존재한다. 
