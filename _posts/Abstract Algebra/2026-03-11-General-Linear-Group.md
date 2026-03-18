@@ -1,6 +1,6 @@
 ---
 title: General Linear Group
-date: 2026-03-11 00:01:24
+date: 2026-03-09 00:00:08
 categories: [Mathematics, Abstract Algebra]
 tags: []
 math: true

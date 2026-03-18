@@ -1,6 +1,6 @@
 --- 
 title: Semigroup
-date: 2026-03-11 00:01:29
+date: 2026-03-09 00:00:02
 categories: [Mathematics, Abstract Algebra]
 tags: []
 math: true

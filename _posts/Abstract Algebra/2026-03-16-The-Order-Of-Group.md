@@ -1,6 +1,6 @@
 ---
 title: The Order of Group
-date: 2026-03-16 00:01:26
+date: 2026-03-09 00:00:07
 categories: [Mathematics, Abstract Algebra]
 tags: []
 math: true
