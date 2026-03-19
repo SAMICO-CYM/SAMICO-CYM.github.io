@@ -20,7 +20,24 @@ $$r^n e^{i n \theta} = r_0 e^{i \theta_0}$$
 
 두 복소수 값이 같을 조건은 $r^n = r_0$와 $n\theta = \theta_0 + 2k\pi$ ($k$는 정수)으로 주어진다. 따라서 $r = \sqrt[n]{r_0}$, $\theta = \frac{\theta_0 + 2k\pi}{n}$ ($k$는 정수)를 얻는다. 이때 사실상 $k = 0, 1, ..., n-1$까지만 다뤄도 모든 distinct form들을 얻고, 각 $k$에 대해서 근을 $c_k$로 두자. 
 
-$$c_k = \sqrt[n]{r_0} \exp \left[ i \left( \frac{\theta_0}{n} + \frac{2k\pi}{n} \right) \right], \quad k = 0, 1, ..., n-1$$
+$$\begin{align*}
+c_k &= \sqrt[n]{r_0} \exp \left[ i \left( \frac{\theta_0}{n} + \frac{2k\pi}{n} \right) \right] \\
+&= \sqrt[n]{r_0} \exp \left( i \frac{\theta_0}{n} \right) \exp \left( i \frac{2k\pi}{n} \right), \quad k = 0, 1, ..., n-1
+\end{align*}$$
+
+그리고 $c_k$ 중에서 $\theta = \Arg z_0$를 갖는 $c_0$를 ***principal root***라고 부른다. 즉
+
+$$c_0 = \sqrt[n]{r_0} \exp \left( i \frac{\Arg z_0}{n} \right)$$
+
+이다. 이때 
+
+$$\omega_n = \exp \left( i \frac{2 \pi}{n} \right)$$
+
+으로 두면 정수 $k = 0, 1, ..., n-1$에 대해서
+
+$$\omega^k_n = \exp \left( i \frac{2 k \pi}{n} \right)$$
+
+이다. 
 
 따라서 방정식의 근의 집합 $z_0^{\frac{1}{n}}$은 다음과 같이 표현된다.
 
