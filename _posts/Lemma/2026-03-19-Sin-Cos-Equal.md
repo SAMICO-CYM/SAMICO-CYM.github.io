@@ -38,11 +38,7 @@ $$\begin{align*}
 -2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) &= 0.
 \end{align*}$$
 
-If 
-
-$$\sin \left( \frac{\alpha - \beta}{2} \right) \neq 0,$$
-
-then we have 
+If $\displaystyle \sin \left( \frac{\alpha - \beta}{2} \right) \neq 0,$ then we have 
 
 $$\begin{align*}
 \cos \left( \frac{\alpha + \beta}{2} \right) &= 0 \\
