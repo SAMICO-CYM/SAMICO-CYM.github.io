@@ -173,4 +173,23 @@ $$\begin{align*}
 \sin \theta_1 &= \sin \theta_2
 \end{align*}$$
 
-Thus
+Thus we have 
+
+$$\theta_1 - \theta_2 = 2k\pi \text{ where } k \text{ is any integer} (k = 0, \pm 1, \pm 2, ...)$$
+
+$(\Longleftarrow)$
+
+Suppose that $r_1 = r_2$ and $\theta_1 = \theta_2 + 2k\pi$ where $k$ is any integer. Then 
+
+$$\begin{align*}
+z_1 &= r_1 (\cos \theta_1 + i \sin \theta_1) \\
+&= r_2 (\cos (\theta_2 + 2k\pi) + i \sin (\theta_2 + 2k\pi)) \\
+&= r_2 (\cos \theta_2 + i \sin \theta_2) \\
+&= z_2
+\end{align*}$$
+
+Thus we have 
+
+$$z_1 = z_2 \iff r_1 = r_2 \text{ and } \theta_1 = \theta_2 + 2k\pi \text{ where } k \text{ is any integer} (k = 0, \pm 1, \pm 2, ...). \quad \blacksquare$$
+
+---
