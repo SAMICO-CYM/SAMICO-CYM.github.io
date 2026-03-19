@@ -25,9 +25,9 @@ c_k &= \sqrt[n]{r_0} \exp \left[ i \left( \frac{\theta_0}{n} + \frac{2k\pi}{n} \
 &= \sqrt[n]{r_0} \exp \left( i \frac{\theta_0}{n} \right) \exp \left( i \frac{2k\pi}{n} \right), \quad k = 0, 1, ..., n-1
 \end{align*}$$
 
-그리고 $c_k$ 중에서 $\theta = \Arg z_0$를 갖는 $c_0$를 ***principal root***라고 부른다. 즉
+그리고 $c_k$ 중에서 $\theta = \operatorname{Arg} z_0$를 갖는 $c_0$를 ***principal root***라고 부른다. 즉
 
-$$c_0 = \sqrt[n]{r_0} \exp \left( i \frac{\Arg z_0}{n} \right)$$
+$$c_0 = \sqrt[n]{r_0} \exp \left( i \frac{\operatorname{Arg} z_0}{n} \right)$$
 
 이다. 이때 
 
