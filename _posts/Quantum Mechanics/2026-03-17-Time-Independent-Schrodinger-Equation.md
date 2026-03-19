@@ -45,6 +45,6 @@ $$\Psi(x, t) = \psi(x) \varphi(t) = \psi(x) e^{-i \frac{E}{\hbar} t}$$
 
 상수 $C$는 normalization condition에 의해 $1$로 결정된다. 이에 대해서 임의의 연산자 $\hat{Q}(\hat{x}, \hat{p})$의 기댓값을 계산하면 다음과 같다.
 
-$$\langle \hat{Q} \rangle = \int_{-\infty}^{\infty} \Psi^*(x, t) \hat{Q} \Psi(x, t) dx = \int_{-\infty}^{\infty} \psi^*(x) e^{i \frac{E}{\hbar} t} \hat{Q} \psi(x) e^{-i \frac{E}{\hbar} t} dx = \int_{-\infty}^{\infty} \psi^*(x) \hat{Q} \psi(x) dx$$
+$$\begin{align*} \langle \hat{Q} \rangle &= \int_{-\infty}^{\infty} \Psi^*(x, t) \hat{Q} \Psi(x, t) dx \\ &= \int_{-\infty}^{\infty} \psi^*(x) e^{i \frac{E}{\hbar} t} \hat{Q} \psi(x) e^{-i \frac{E}{\hbar} t} dx \\ &= \int_{-\infty}^{\infty} \psi^*(x) \hat{Q} \psi(x) dx \end{align*}$$ 
 
 따라서 기댓값 또한 time-independent하고, 이러한 상태를 stationary state라고 부른다. 
