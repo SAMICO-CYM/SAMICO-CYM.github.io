@@ -24,8 +24,27 @@ i \hbar \psi \phi_t &= \left( - \frac{\hbar}{2m} \psi_{xx} + V \psi \right) \phi
 
 따라서 다음의 두 식을 얻는다.
 
-**(i)** $i \hbar \phi_t = E \phi$
+**(i)** $i \hbar \varphi_t = E \varphi$
 
 **(ii)** $- \frac{\hbar}{2m} \psi_{xx} + V \psi = E \psi$
 
-이때 두 번째 식을 시간 무관 슈뢰딩거 방정식이라고 부른다.
+이때 두 번째 식을 시간 무관 슈뢰딩거 방정식이라고 부른다. 해밀토니안 연산자를 사용해 표현하면 다음과 같이 쓸 수 있다.
+
+$$\hat{\mathcal{H}} \psi = E \psi$$
+
+---
+
+## Stationary States
+위 (i)식을 풀면 다음의 일반해를 얻는다. 
+
+$$\varphi(t) = Ce^{-i \frac{E}{\hbar} t} \quad (C \text{ is a constant.})$$
+
+시간 무관 슈뢰딩거 방정식의 해를 $\psi(x)$라고 하면, 시간 의존 슈뢰딩거 방정식의 해는 다음과 같이 쓸 수 있다.
+
+$$\Psi(x, t) = \psi(x) \varphi(t) = \psi(x) e^{-i \frac{E}{\hbar} t}$$
+
+상수 $C$는 normalization condition에 의해 $1$로 결정된다. 이에 대해서 임의의 연산자 $\hat{Q}(\hat{x}, \hat{p})$의 기댓값을 계산하면 다음과 같다.
+
+$$\langle \hat{Q} \rangle = \int_{-\infty}^{\infty} \Psi^*(x, t) \hat{Q} \Psi(x, t) dx = \int_{-\infty}^{\infty} \psi^*(x) e^{i \frac{E}{\hbar} t} \hat{Q} \psi(x) e^{-i \frac{E}{\hbar} t} dx = \int_{-\infty}^{\infty} \psi^*(x) \hat{Q} \psi(x) dx$$
+
+따라서 기댓값 또한 time-independent하고, 이러한 상태를 stationary state라고 부른다. 
