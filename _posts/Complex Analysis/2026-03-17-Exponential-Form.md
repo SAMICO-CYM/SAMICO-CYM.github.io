@@ -138,4 +138,30 @@ $$\begin{align*}
 ## Theorem 2
 Let $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$. Then 
 
-$$z_1 = z_2 \iff r_1 = r_2 \text{ and } \theta_1 = \theta_2 + 2n\pi \text{ where } n \text{ is any integer} (k = 0, \pm 1, \pm 2, ...).$$
+$$z_1 = z_2 \iff r_1 = r_2 \text{ and } \theta_1 = \theta_2 + 2k\pi \text{ where } k \text{ is any integer} (k = 0, \pm 1, \pm 2, ...).$$
+
+### Proof
+$(\Longrightarrow)$
+
+Suppose that $z_1 = z_2$. Note that 
+
+$$z_1 = r_1 (\cos \theta_1 + i \sin \theta_1) = (r_1 \cos \theta_1, r_1 \sin \theta_1)$$
+
+and 
+
+$$z_2 = r_2 (\cos \theta_2 + i \sin \theta_2) = (r_2 \cos \theta_2, r_2 \sin \theta_2).$$
+
+Then we have 
+
+$$\begin{align*}
+r_1 \cos \theta_1 &= r_2 \cos \theta_2 \\
+r_1 \sin \theta_1 &= r_2 \sin \theta_2
+\end{align*}$$
+
+so that 
+
+$$\begin{gather*}
+r_1^2 \cos^2 \theta_1 + r_1^2 \sin^2 \theta_1 &= r_2^2 \cos^2 \theta_2 + r_2^2 \sin^2 \theta_2 \\
+\implies r_1^2 &= r_2^2 \\
+\implies r_1 &= r_2 \quad (\because r_1, r_2 \ge 0)
+\end{gather*}$$
