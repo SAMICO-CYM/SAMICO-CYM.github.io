@@ -24,5 +24,5 @@ $$c_k = \sqrt[n]{r_0} e^{i \frac{\theta_0 + 2k\pi}{n}}, \quad k = 0, 1, ..., n-1
 
 따라서 방정식의 근의 집합 $z_0^{\frac{1}{n}}$은 다음과 같이 표현된다.
 
-$$z_0^{\frac{1}{n}} = \{ c_k \mid k = 0, 1, ..., n-1 \} = \{ \sqrt[n]{r_0} e^{i \frac{\theta_0 + 2k\pi}{n}} \mid k = 0, 1, ..., n-1 \}$$
+$$z_0^{\frac{1}{n}} = \{ c_k \mid k = 0, 1, ..., n-1 \} = \left\{ \sqrt[n]{r_0} \exp \left( i \frac{\theta_0 + 2k\pi}{n} \right) \middle| k = 0, 1, ..., n-1 \right\}$$
 
