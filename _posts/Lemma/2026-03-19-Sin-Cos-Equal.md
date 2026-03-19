@@ -13,7 +13,7 @@ $$\sin \alpha = \sin \beta \quad \text{and} \quad \cos \alpha = \cos \beta$$
 
 then 
 
-$$\alpha - \beta = 2n\pi \quad \text{for some } n \in \mathbb{Z}$$
+$$\alpha - \beta = + 2k\pi \text{ where } k \text{ is any integer} (k = 0, \pm 1, \pm 2, ...)$$
 
 ### Proof
 Note that the identity
@@ -55,8 +55,8 @@ $$\sin \left( \frac{\alpha - \beta}{2} \right) = 0$$
 
 so that 
 
-$$\frac{\alpha - \beta}{2} = n\pi \quad \text{for some } n \in \mathbb{Z}$$
+$$\frac{\alpha - \beta}{2} = k\pi \text{ where } k \text{ is any integer} (k = 0, \pm 1, \pm 2, ...)$$
 
 and therefore 
 
-$$\alpha - \beta = 2n\pi \quad \text{for some } n \in \mathbb{Z}. \quad \blacksquare$$
+$$\alpha - \beta = 2k\pi \text{ where } k \text{ is any integer} (k = 0, \pm 1, \pm 2, ...). \quad \blacksquare$$

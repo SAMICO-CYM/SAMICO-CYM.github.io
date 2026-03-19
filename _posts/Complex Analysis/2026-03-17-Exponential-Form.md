@@ -136,7 +136,7 @@ $$\begin{align*}
 ---
 
 ## Theorem 2
-Let $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$. Then 
+Let $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$ be nonzero complex numbers. Then 
 
 $$z_1 = z_2 \iff r_1 = r_2 \text{ and } \theta_1 = \theta_2 + 2k\pi \text{ where } k \text{ is any integer} (k = 0, \pm 1, \pm 2, ...).$$
 
@@ -163,5 +163,14 @@ so that
 $$\begin{gather*}
 r_1^2 \cos^2 \theta_1 + r_1^2 \sin^2 \theta_1 = r_2^2 \cos^2 \theta_2 + r_2^2 \sin^2 \theta_2 \\
 \implies r_1^2 = r_2^2 \\
-\implies r_1 = r_2 \quad (\because r_1, r_2 \ge 0)
+\implies r_1 = r_2 \quad (\because r_1, r_2 > 0)
 \end{gather*}$$
+
+Since $r_1 = r_2 > 0$, we have 
+
+$$\begin{align*}
+\cos \theta_1 &= \cos \theta_2 \\
+\sin \theta_1 &= \sin \theta_2
+\end{align*}$$
+
+Thus
