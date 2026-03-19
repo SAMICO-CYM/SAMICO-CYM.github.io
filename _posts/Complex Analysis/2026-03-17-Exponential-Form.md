@@ -193,3 +193,13 @@ Thus we have
 $$z_1 = z_2 \iff r_1 = r_2 \text{ and } \theta_1 = \theta_2 + 2k\pi \text{ where } k \text{ is any integer} (k = 0, \pm 1, \pm 2, ...). \quad \blacksquare$$
 
 ---
+
+## Theorem 3
+Let $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$ be nonzero complex numbers. Then 
+
+**(i)** $\arg (z_1 z_2) = \arg z_1 + \arg z_2$
+
+**(ii)** $\displaystyle \arg \left( \frac{z_1}{z_2} \right) = \arg z_1 - \arg z_2$
+
+### Proof
+(i) Let $\theta_1 + \theta_2 \in \arg z_1 + \arg z_2$.

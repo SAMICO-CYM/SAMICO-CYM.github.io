@@ -45,3 +45,4 @@ $$c_k = c_0 \omega^k_n, \quad k = 0, 1, ..., n-1$$
 
 $$z_0^{\frac{1}{n}} = \{ c_k \mid k = 0, 1, ..., n-1 \} = \left\{ c_0 \omega^k_n \middle| k = 0, 1, ..., n-1 \right\}$$
 
+따라서 방정식 $z^n = z_0$의 근은 principal root $c_0$와 $\omega_n^k$를 각 $k$에 대해서 구해서 얻을 수 있다. 
