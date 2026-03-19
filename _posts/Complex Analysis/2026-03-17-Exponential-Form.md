@@ -35,6 +35,8 @@ Let $z (\neq 0) \in \mathbb{C}$. Then $z$ can be written in ***exponential form*
 
 $$z = r e^{i\theta}.$$
 
+---
+
 ## Remark
 **(i)** The circle 
 
@@ -51,6 +53,8 @@ $$z = re^{i\theta} = r e^{i(\theta + 2n\pi)}, \quad \forall n \in \mathbb{Z}.$$
 Each value of $\theta$ is called the ***argument*** of $z$, and the set of all such values is denoted by $\arg z$. The ***principal value*** of $\arg z$, denoted by $\text{Arg } z$, is the unique value $\Theta$ such that $-\pi < \Theta \le \pi$. Then we have
 
 $$\arg z = \{\text{Arg } z + 2n\pi \mid n \in \mathbb{Z}\}$$
+
+---
 
 ## Theorem 1
 Let $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$. Then
@@ -128,3 +132,10 @@ $$\begin{align*}
 \cos(2m \theta) &= \sum_{k=0}^m (-1)^k \binom{2m}{2k} \cos^{2m-2k} \theta \sin^{2k} \theta \\
 \sin(2m \theta) &= \sum_{k=0}^m (-1)^k \binom{2m}{2k+1} \cos^{2m-2k-1} \theta \sin^{2k+1} \theta. \blacksquare
 \end{align*}$$
+
+---
+
+## Theorem 2
+Let $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$. Then 
+
+$$z_1 = z_2 \iff r_1 = r_2 \text{ and } \theta_1 = \theta_2 + 2n\pi \text{ where } n \text{ is any integer} (k = 0, \pm 1, \pm 2, ...).$$
