@@ -37,9 +37,11 @@ $$\omega_n = \exp \left( i \frac{2 \pi}{n} \right)$$
 
 $$\omega^k_n = \exp \left( i \frac{2 k \pi}{n} \right)$$
 
-이다. 
+이다. 따라서
 
-따라서 방정식의 근의 집합 $z_0^{\frac{1}{n}}$은 다음과 같이 표현된다.
+$$c_k = c_0 \omega^k_n, \quad k = 0, 1, ..., n-1$$
 
-$$z_0^{\frac{1}{n}} = \{ c_k \mid k = 0, 1, ..., n-1 \} = \left\{ \sqrt[n]{r_0} \exp \left[ i \left( \frac{\theta_0}{n} + \frac{2k\pi}{n} \right) \right] \middle| k = 0, 1, ..., n-1 \right\}$$
+이라고 쓸 수 있고, 방정식의 근의 집합 $z_0^{\frac{1}{n}}$은 다음과 같이 표현된다.
+
+$$z_0^{\frac{1}{n}} = \{ c_k \mid k = 0, 1, ..., n-1 \} = \left\{ c_0 \omega^k_n \middle| k = 0, 1, ..., n-1 \right\}$$
 
