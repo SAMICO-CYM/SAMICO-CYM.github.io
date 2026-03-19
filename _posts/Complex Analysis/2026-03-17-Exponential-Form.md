@@ -161,7 +161,7 @@ r_1 \sin \theta_1 &= r_2 \sin \theta_2
 so that 
 
 $$\begin{gather*}
-r_1^2 \cos^2 \theta_1 + r_1^2 \sin^2 \theta_1 &= r_2^2 \cos^2 \theta_2 + r_2^2 \sin^2 \theta_2 \\
-\implies r_1^2 &= r_2^2 \\
-\implies r_1 &= r_2 \quad (\because r_1, r_2 \ge 0)
+r_1^2 \cos^2 \theta_1 + r_1^2 \sin^2 \theta_1 = r_2^2 \cos^2 \theta_2 + r_2^2 \sin^2 \theta_2 \\
+\implies r_1^2 = r_2^2 \\
+\implies r_1 = r_2 \quad (\because r_1, r_2 \ge 0)
 \end{gather*}$$
