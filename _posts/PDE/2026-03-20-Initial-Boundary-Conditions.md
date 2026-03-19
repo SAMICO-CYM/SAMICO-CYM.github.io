@@ -1,6 +1,6 @@
 --- 
 title: Initial and Boundary Conditoins
-date: 2026-03-
+date: 2026-03-20
 categories: [Mathematics, PDE]
 tags: []
 math: true
