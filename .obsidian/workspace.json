@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Topology/2026-03-12-Topology.md",
+                "file": "_posts/PDE/2026-03-20-Initial-Boundary-Conditions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-12-Topology"
+              "title": "2026-03-20-Initial-Boundary-Conditions"
             }
           }
         ]
@@ -182,22 +182,24 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
+    "_posts/PDE/2026-03-12-1st-Order-Linear-PDE-Variable-Coefficients.md",
+    "_posts/PDE/2026-03-20-Initial-Boundary-Conditions.md",
+    "_site/posts/Sin-Cos-Equal/index.html",
+    "_site/posts/Sin-Cos-Equal",
+    "_site/posts/Roots-Of-Complex-Number/index.html",
+    "_site/posts/Roots-Of-Complex-Number",
+    "_site/categories/lemma/index.html",
+    "_site/categories/lemma",
+    "_posts/Topology/2026-03-12-Topology.md",
     "_posts/Lemma/2026-03-19-Sin-Cos-Equal.md",
     "_posts/Lemma",
     "_posts/Complex Analysis/2026-03-19-Roots-Of-Complex-Number.md",
     "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
-    "_posts/Topology/2026-03-12-Topology.md",
     "_site/posts/Cyclic-Group/index.html",
     "_site/posts/Cyclic-Group",
     "_site/posts/Subgroup/index.html",
-    "_site/posts/Subgroup",
-    "_site/page7/index.html",
-    "_site/page7",
     "_posts/Abstract Algebra/2026-03-18-Subgroup.md",
     "_posts/Abstract Algebra/2026-03-18-Cyclic-Group.md",
-    "_site/posts/Time-Dependent-Schrodinger-Equation/index.html",
-    "_site/posts/Time-Dependent-Schrodinger-Equation",
-    "_site/posts/Basis-Of-Topology/index.html",
     "_site/assets/img/Gemini_Generated_Image_btbom8btbom8btbo.png",
     "_posts/Topology/2026-03-10-Order-Relation.md",
     "_posts/Quantum Mechanics/2026-03-13-The-Statistical-Interpretation-Of-Wave-Functions.md",
@@ -218,8 +220,6 @@
     "_posts/Abstract Algebra/2026-03-16-The-Order-Of-Group.md",
     "_posts/Abstract Algebra/2026-03-16-Finite-Groups.md",
     "_posts/Set Theory/2026-03-09-Relation.md",
-    "_posts/Set Theory/2026-03-10-Cardinality.md",
-    "_posts/Set Theory/2026-03-09-Equivalence Relation.md",
     "_site/assets/img/Pasted image 20260221200726.png",
     "_site/assets/img/성막.jpg",
     "_site/assets/img/Pasted image 20260220174110.png",
