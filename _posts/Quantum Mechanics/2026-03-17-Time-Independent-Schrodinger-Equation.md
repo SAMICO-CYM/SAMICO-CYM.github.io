@@ -48,3 +48,43 @@ $$\Psi(x, t) = \psi(x) \varphi(t) = \psi(x) e^{-i \frac{E}{\hbar} t}$$
 $$\begin{align*} \langle \hat{Q} \rangle &= \int_{-\infty}^{\infty} \Psi^*(x, t) \hat{Q} \Psi(x, t) dx \\ &= \int_{-\infty}^{\infty} \psi^*(x) e^{i \frac{E}{\hbar} t} \hat{Q} \psi(x) e^{-i \frac{E}{\hbar} t} dx \\ &= \int_{-\infty}^{\infty} \psi^*(x) \hat{Q} \psi(x) dx \end{align*}$$ 
 
 따라서 기댓값 또한 time-independent하고, 이러한 상태를 stationary state라고 부른다. 
+
+---
+
+## Remark 1
+시간 무관 슈뢰딩거 방정식의 고유값 $E$와 고유함수 $\psi$에 대해서 해밀토니안 연산자의 기댓값을 구해보자.
+
+$$\begin{align*}
+\langle \hat{\mathcal{H}} \rangle &= \int_{-\infty}^{\infty} \psi^*(x) \hat{\mathcal{H}} \psi(x) dx \\
+&= \int_{-\infty}^{\infty} \psi^*(x) E \psi(x) dx \\
+&= E \int_{-\infty}^{\infty} \psi^*(x) \psi(x) dx \\
+&= E
+\end{align*}$$
+
+제곱의 기댓값 또한 구할 수 있다.
+
+$$\begin{align*}
+\langle \hat{\mathcal{H}}^2 \rangle &= \int_{-\infty}^{\infty} \psi^*(x) \hat{\mathcal{H}}^2 \psi(x) dx \\
+&= \int_{-\infty}^{\infty} \psi^*(x) E^2 \psi(x) dx \\
+&= E^2 \int_{-\infty}^{\infty} \psi^*(x) \psi(x) dx \\
+&= E^2
+\end{align*}$$
+
+따라서 해밀토니안 연산자의 표준편차는 다음과 같다.
+
+$$\sigma_{\mathcal{H}} = \sqrt{\langle \hat{\mathcal{H}}^2 \rangle - \langle \hat{\mathcal{H}} \rangle^2} = \sqrt{E^2 - E^2} = 0$$
+
+이는 정상상태에서 측정한 에너지의 uncertainity가 0임을 의미한다. 즉, 정상상태에서는 에너지가 정확하게 $E$로 결정된다.
+
+---
+
+## Remark 2
+시간 무관 슈뢰딩거 방정식에서 각 고유값 $E_n$에 대응되는 고유함수를 $\psi_n$이라고 하자. 이때 시간 무관 슈뢰딩거 방정식은 선형 미분 방정식이기 때문에 그 해집합은 벡터 공간이 되므로, 방정식의 일반해는 선형종속인 해들의 선형 결합으로 나타내어진다. 즉, 임의의 해 $\Psi(x, t)$는 다음과 같이 쓸 수 있다.
+
+$$\Psi(x, t) = \sum_{n=1}^\infty c_n \psi_n(x) e^{-i \frac{E_n}{\hbar} t}$$
+
+이러한 표현으로 해밀토니안의 기대값을 구하면 다음과 같다.
+
+$$\langle \hat{\mathcal{H}} \rangle = \sum_{n=1}^\infty \vert c_n \vert^2 E_n$$
+
+그리고 상수 $\vert c_n \vert^2$은 각 에너지 고유값 $E_n$을 측정할 확률을 나타낸다. 
