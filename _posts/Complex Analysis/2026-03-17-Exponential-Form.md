@@ -202,7 +202,7 @@ Let $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$ be nonzero complex n
 **(ii)** $\displaystyle \arg \left( \frac{z_1}{z_2} \right) = \arg z_1 - \arg z_2$
 
 ### Proof
-**(i)** Let $\alpha_1 + \alpha_2 \in \arg z_1 + \arg z_2$. Then 
+**(i)** Let $\alpha_1 + \alpha_2 \in \arg z_1 + \arg z_2$ where $\alpha_1 \in \arg z_1$ and $\alpha_2 \in \arg z_2$. Then 
 
 $$z_1 z_2 = r_1 e^{i \alpha_1} r_2 e^{i \alpha_2} = r_1 r_2 e^{i (\alpha_1 + \alpha_2)},$$
 
