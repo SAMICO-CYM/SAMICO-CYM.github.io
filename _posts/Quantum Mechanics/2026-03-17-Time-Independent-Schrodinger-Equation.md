@@ -79,11 +79,42 @@ $$\sigma_{\mathcal{H}} = \sqrt{\langle \hat{\mathcal{H}}^2 \rangle - \langle \ha
 ---
 
 ## Remark 2
-시간 무관 슈뢰딩거 방정식에서 각 고유값 $E_n$에 대응되는 고유함수를 $\psi_n$이라고 하자. 이때 시간 무관 슈뢰딩거 방정식은 선형 미분 방정식이기 때문에 그 해집합은 벡터 공간이 되므로, 방정식의 일반해는 선형종속인 해들의 선형 결합으로 나타내어진다. 즉, 임의의 해 $\Psi(x, t)$는 다음과 같이 쓸 수 있다.
+시간 무관 슈뢰딩거 방정식에서 각 고유값 $E_n$에 대응되는 고유함수를 $\psi_n$이라고 하자. 이때 시간 무관 슈뢰딩거 방정식은 선형 미분 방정식이기 때문에 그 해집합은 벡터 공간이 되므로, 방정식의 일반해는 선형종속인 해들의 선형 결합으로 나타내어진다. 즉, 임의의 해 $\Psi(x, t)$는 다음과 같이 쓸 수 있다. 
 
 $$\Psi(x, t) = \sum_{n=1}^\infty c_n \psi_n(x) e^{-i \frac{E_n}{\hbar} t}$$
 
-이러한 표현으로 해밀토니안의 기대값을 구하면 다음과 같다.
+이러한 표현으로 해밀토니안의 기대값을 구해보자.
+
+우선 각 고유함수들의 집합 $\\{ \psi _n \\}_{n=1}^\infty$는 orthonormal set임을 보이자. 우선
+
+$$\begin{align*}
+\langle \psi_m \vert \hat{\mathcal{H}} \psi_n \rangle &= \langle \psi_m \vert E_n \psi_n \rangle \\
+&= E_n \langle \psi_m \vert \psi_n \rangle
+\end{align*}$$
+
+이 성립하고, 반대로 해밀토니안 연산자를 반대쪽에 취해주면
+
+$$\begin{align*}
+\langle \psi_m \vert \hat{\mathcal{H}} \psi_n \rangle &= \langle \hat{\mathcal{H}} \psi_m \vert \psi_n \rangle \\
+&= E_m \langle \psi_m \vert \psi_n \rangle
+\end{align*}$$
+
+이 성립한다. 이 두 식의 값이 같기 때문에 
+
+$$(E_n - E_m) \langle \psi_m \vert \psi_n \rangle = 0$$
+
+이 성립한다. 따라서 $E_n \neq E_m$이면 $\langle \psi_m \vert \psi_n \rangle = 0$이므로, 각 고유함수들은 서로 orthogonal하다. 또한 파동함수는 규격화되어야 하기 때문에 $n = m$인 경우 $\langle \psi_n \vert \psi_n \rangle = 1$이 성립한다. 즉, 각 고유함수들의 집합 $\{ \psi _n \}_{n=1}^\infty$는 orthonormal set이다. 
+
+따라서 
+
+$$\begin{align*}
+\langle \hat{\mathcal{H}} \rangle &= \int_{-\infty}^{\infty} \Psi^*(x, t) \hat{\mathcal{H}} \Psi(x, t) dx \\
+&= \int_{-\infty}^{\infty} \left( \sum_{n=1}^\infty c_n^* \psi_n^*(x) e^{i \frac{E_n}{\hbar} t} \right) \hat{\mathcal{H}} \left( \sum_{m=1}^\infty c_m \psi_m(x) e^{-i \frac{E_m}{\hbar} t} \right) dx \\
+&= \int_{-\infty}^{\infty} \sum_{n=1}^\infty \sum_{m=1}^\infty c_n^* c_m \psi_n^*(x) \psi_m(x) e^{i \frac{E_n - E_m}{\hbar} t} \hat{\mathcal{H}} dx \\
+&= \int_{-\infty}^{\infty} \sum_{n=1}^\infty \sum_{m=1}^\infty c_n^* c_m \psi_n^*(x) \psi_m(x) e^{i \frac{E_n - E_m}{\hbar} t} E_m dx \\
+&= \sum_{n=1}^\infty \sum_{m=1}^\infty c_n^* c_m E_m e^{i \frac{E_n - E_m}{\hbar} t} \int_{-\infty}^{\infty} \psi_n^*(x) \psi_m(x) dx \\
+&= \sum_{n=1}^\infty \vert c_n \vert^2 E_n
+\end{align*}$$
 
 $$\langle \hat{\mathcal{H}} \rangle = \sum_{n=1}^\infty \vert c_n \vert^2 E_n$$
 
