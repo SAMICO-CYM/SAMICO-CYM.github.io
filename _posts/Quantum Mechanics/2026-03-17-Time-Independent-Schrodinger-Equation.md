@@ -83,6 +83,15 @@ $$\sigma_{\mathcal{H}} = \sqrt{\langle \hat{\mathcal{H}}^2 \rangle - \langle \ha
 
 $$\Psi(x, t) = \sum_{n=1}^\infty c_n \psi_n(x) e^{-i \frac{E_n}{\hbar} t}$$
 
+이때 정규화 조건을 사용해주면 다음과 같다.
+
+$$\begin{align*}
+\int_{-\infty}^\infty \vert \Psi(x, t) \vert^2 dx &= \int_{-\infty}^\infty \left( \sum_{n=1}^\infty c_n \psi_n(x) e^{-i \frac{E_n}{\hbar} t} \right) \left( \sum_{m=1}^\infty c_m^* \psi_m^*(x) e^{i \frac{E_m}{\hbar} t} \right) dx \\
+&= \int_{-\infty}^\infty \sum_{n=1}^\infty \sum_{m=1}^\infty c_n c_m^* \psi_n(x) \psi_m^*(x) e^{-i \frac{E_n - E_m}{\hbar} t} dx \\
+&= \sum_{n=1}^\infty \sum_{m=1}^\infty c_n c_m^* e^{-i \frac{E_n - E_m}{\hbar} t} \int_{-\infty}^\infty \psi_n(x) \psi_m^*(x) dx \\
+&= \sum_{n=1}^\infty \vert c_n \vert^2 = 1
+\end{align*}$$
+
 이러한 표현으로 해밀토니안의 기대값을 구해보자.
 
 우선 각 고유함수들의 집합 $\\{ \psi_n \\}_{n=1}^\infty$는 orthonormal set임을 보이자. 우선
