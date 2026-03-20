@@ -85,7 +85,7 @@ $$\Psi(x, t) = \sum_{n=1}^\infty c_n \psi_n(x) e^{-i \frac{E_n}{\hbar} t}$$
 
 이러한 표현으로 해밀토니안의 기대값을 구해보자.
 
-우선 각 고유함수들의 집합 $\\{ \psi _n \\}_{n=1}^\infty$는 orthonormal set임을 보이자. 우선
+우선 각 고유함수들의 집합 $\\{ \psi_n \\}_{n=1}^\infty$는 orthonormal set임을 보이자. 우선
 
 $$\begin{align*}
 \langle \psi_m \vert \hat{\mathcal{H}} \psi_n \rangle &= \langle \psi_m \vert E_n \psi_n \rangle \\
