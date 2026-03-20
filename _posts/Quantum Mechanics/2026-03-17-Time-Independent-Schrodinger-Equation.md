@@ -103,7 +103,7 @@ $$\begin{align*}
 
 $$(E_n - E_m) \langle \psi_m \vert \psi_n \rangle = 0$$
 
-이 성립한다. 따라서 $E_n \neq E_m$이면 $\langle \psi_m \vert \psi_n \rangle = 0$이므로, 각 고유함수들은 서로 orthogonal하다. 또한 파동함수는 규격화되어야 하기 때문에 $n = m$인 경우 $\langle \psi_n \vert \psi_n \rangle = 1$이 성립한다. 즉, 각 고유함수들의 집합 $\\{ \psi _n \\}_{n=1}^\infty$는 orthonormal set이다. 
+이 성립한다. 따라서 $E_n \neq E_m$이면 $\langle \psi_m \vert \psi_n \rangle = 0$이므로, 각 고유함수들은 서로 orthogonal하다. 또한 파동함수는 규격화되어야 하기 때문에 $n = m$인 경우 $\langle \psi_n \vert \psi_n \rangle = 1$이 성립한다. 즉, 각 고유함수들의 집합 $\\{ \psi_n \\}_{n=1}^\infty$는 orthonormal set이다. 
 
 따라서 
 
