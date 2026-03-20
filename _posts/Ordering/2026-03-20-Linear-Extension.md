@@ -18,6 +18,11 @@ $$x \le y \implies x \prec y.$$
 
 ---
 
+## Lemma
+A restriction of a poset is also a poset.
+
+---
+
 ## Theorem
 Every finite poset has a linear extension.
 
@@ -26,4 +31,6 @@ Let $(X, \le)$ be a finite poset. We prove this by induction on $n = \vert X \ve
 
 When $n = 1$, there is only one partial ordering on $X$, and clearly it is a linear extension.
 
-Assume that the theorem holds for all poset of size up to $n-1$ and let $\vert X \vert = n$. Since $X$ is finite, [it has a minimal element](<{% post_url Ordering/2026-03-20-Minimal-Minimum-Maximal-Maximum %}#theorem>) $x_0 \in X$.
+Assume that the theorem holds for all poset of size up to $n-1$ and let $\vert X \vert = n$. Since $X$ is finite, [it has a minimal element](<{% post_url Ordering/2026-03-20-Minimal-Minimum-Maximal-Maximum %}#theorem>) $x_0 \in X$. Let $X' = X \setminus \\{ x_0 \\}$. By the lemma and the induction hypothesis, the poset $(X', \le \cap (X' \times X'))$ has a linear extension $\prec'$. 
+
+Define the order $\prec$ on $X$ by $x \prec y$ if $x \prec' y$ for any $x, y \in X'$ or $x = x_0$ and $y \in X'$. Then $\prec$ is a total order on $X$, so that $\prec$ is a linear extension of $(X, \le)$. Thus the proof is complete. $\blacksquare$
