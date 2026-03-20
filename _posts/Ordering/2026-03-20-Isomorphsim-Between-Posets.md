@@ -1,5 +1,5 @@
 ---
-title: Isomorphism Between Relations
+title: Isomorphism Between Posets
 date: 2026-03-20
 categories: [Mathematics, Ordering]
 tags: []
@@ -19,7 +19,7 @@ Let $n \in \mathbb{N}$. Then the [boolean lattice](<{% post_url Ordering/2026-03
 ## Proof
 For each $a = (a_1, ..., a_n) \in B_n = \\{ 0, 1 \\}^n$, define a function $\phi: B_n \to 2^n$ by 
 
-$$\phi(a) = \\{ i \\in \\{ 1, ..., n \\} \\mid a_i = 1 \\}.$$ 
+$$\phi(a) = \{ i \in [n] \mid a_i = 1 \}.$$ 
 
 Then $\phi$ is clearly well-defined and bijective. 
 
