@@ -83,18 +83,7 @@ $$\sigma_{\mathcal{H}} = \sqrt{\langle \hat{\mathcal{H}}^2 \rangle - \langle \ha
 
 $$\Psi(x, t) = \sum_{n=1}^\infty c_n \psi_n(x) e^{-i \frac{E_n}{\hbar} t}$$
 
-이때 정규화 조건을 사용해주면 다음과 같다.
-
-$$\begin{align*}
-\int_{-\infty}^\infty \vert \Psi(x, t) \vert^2 dx &= \int_{-\infty}^\infty \left( \sum_{n=1}^\infty c_n \psi_n(x) e^{-i \frac{E_n}{\hbar} t} \right) \left( \sum_{m=1}^\infty c_m^* \psi_m^*(x) e^{i \frac{E_m}{\hbar} t} \right) dx \\
-&= \int_{-\infty}^\infty \sum_{n=1}^\infty \sum_{m=1}^\infty c_n c_m^* \psi_n(x) \psi_m^*(x) e^{-i \frac{E_n - E_m}{\hbar} t} dx \\
-&= \sum_{n=1}^\infty \sum_{m=1}^\infty c_n c_m^* e^{-i \frac{E_n - E_m}{\hbar} t} \int_{-\infty}^\infty \psi_n(x) \psi_m^*(x) dx \\
-&= \sum_{n=1}^\infty \vert c_n \vert^2 = 1
-\end{align*}$$
-
-이러한 표현으로 해밀토니안의 기대값을 구해보자.
-
-우선 각 고유함수들의 집합 $\\{ \psi_n \\}_{n=1}^\infty$는 orthonormal set임을 보이자. 우선
+이때 각 고유함수들의 집합 $\\{ \psi_n \\}_{n=1}^\infty$는 orthonormal set임을 보이자. 우선
 
 $$\begin{align*}
 \langle \psi_m \vert \hat{\mathcal{H}} \psi_n \rangle &= \langle \psi_m \vert E_n \psi_n \rangle \\
@@ -114,7 +103,18 @@ $$(E_n - E_m) \langle \psi_m \vert \psi_n \rangle = 0$$
 
 이 성립한다. 따라서 $E_n \neq E_m$이면 $\langle \psi_m \vert \psi_n \rangle = 0$이므로, 각 고유함수들은 서로 orthogonal하다. 또한 파동함수는 규격화되어야 하기 때문에 $n = m$인 경우 $\langle \psi_n \vert \psi_n \rangle = 1$이 성립한다. 즉, 각 고유함수들의 집합 $\\{ \psi_n \\}_{n=1}^\infty$는 orthonormal set이다. 
 
-따라서 
+한편 정규화 조건을 사용해주면 다음과 같다.
+
+$$\begin{align*}
+\int_{-\infty}^\infty \vert \Psi(x, t) \vert^2 dx &= \int_{-\infty}^\infty \left( \sum_{n=1}^\infty c_n \psi_n(x) e^{-i \frac{E_n}{\hbar} t} \right) \left( \sum_{m=1}^\infty c_m^* \psi_m^*(x) e^{i \frac{E_m}{\hbar} t} \right) dx \\
+&= \int_{-\infty}^\infty \sum_{n=1}^\infty \sum_{m=1}^\infty c_n c_m^* \psi_n(x) \psi_m^*(x) e^{-i \frac{E_n - E_m}{\hbar} t} dx \\
+&= \sum_{n=1}^\infty \sum_{m=1}^\infty c_n c_m^* e^{-i \frac{E_n - E_m}{\hbar} t} \int_{-\infty}^\infty \psi_n(x) \psi_m^*(x) dx \\
+&= \sum_{n=1}^\infty \vert c_n \vert^2 = 1
+\end{align*}$$
+
+이때 각 계수의 제곱 $\vert c_n \vert^2$은 전체 함수 $\Psi$에 대한 각 성분 $\psi_n$의 기여도, 다시 말해 고유값 $E_n$을 측정할 확률을 나타낸다. 
+
+한편 해밀토니안 연산자의 기대값을 구해보자.
 
 $$\begin{align*}
 \langle \hat{\mathcal{H}} \rangle &= \int_{-\infty}^{\infty} \Psi^*(x, t) \hat{\mathcal{H}} \Psi(x, t) dx \\
@@ -128,4 +128,4 @@ $$\begin{align*}
 
 $$\langle \hat{\mathcal{H}} \rangle = \sum_{n=1}^\infty \vert c_n \vert^2 E_n$$
 
-그리고 상수 $\vert c_n \vert^2$은 각 에너지 고유값 $E_n$을 측정할 확률을 나타낸다고 해석할 수 있다. 
+즉 위에서 언급한 것처럼 상수 $\vert c_n \vert^2$은 각 에너지 고유값 $E_n$을 측정할 확률을 나타낸다고 해석할 수 있다. 
