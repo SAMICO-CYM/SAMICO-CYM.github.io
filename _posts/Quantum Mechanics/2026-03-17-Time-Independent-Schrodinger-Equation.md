@@ -110,7 +110,6 @@ $$(E_n - E_m) \langle \psi_m \vert \psi_n \rangle = 0$$
 $$\begin{align*}
 \langle \hat{\mathcal{H}} \rangle &= \int_{-\infty}^{\infty} \Psi^*(x, t) \hat{\mathcal{H}} \Psi(x, t) dx \\
 &= \int_{-\infty}^{\infty} \left( \sum_{n=1}^\infty c_n^* \psi_n^*(x) e^{i \frac{E_n}{\hbar} t} \right) \hat{\mathcal{H}} \left( \sum_{m=1}^\infty c_m \psi_m(x) e^{-i \frac{E_m}{\hbar} t} \right) dx \\
-&= \int_{-\infty}^{\infty} \sum_{n=1}^\infty \sum_{m=1}^\infty c_n^* c_m \psi_n^*(x) \psi_m(x) e^{i \frac{E_n - E_m}{\hbar} t} \hat{\mathcal{H}} dx \\
 &= \int_{-\infty}^{\infty} \sum_{n=1}^\infty \sum_{m=1}^\infty c_n^* c_m \psi_n^*(x) \psi_m(x) e^{i \frac{E_n - E_m}{\hbar} t} E_m dx \\
 &= \sum_{n=1}^\infty \sum_{m=1}^\infty c_n^* c_m E_m e^{i \frac{E_n - E_m}{\hbar} t} \int_{-\infty}^{\infty} \psi_n^*(x) \psi_m(x) dx \\
 &= \sum_{n=1}^\infty \vert c_n \vert^2 E_n
