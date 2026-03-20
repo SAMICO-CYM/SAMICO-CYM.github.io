@@ -14,3 +14,5 @@ The ***Hasse diagram*** of a poset $(X, \le)$ is a drawing of the elements and t
 ## Example
 
 ![Hasse Diagram](assets/img/image.png)
+
+[Boolean lattice](<{% post_url Ordering/2026-03-20-Boolean-Lattice %}>) $\mathcal{B}_3$의 Hasse diagram은 위와 같다. 자명하게 $\mathcal{B}_3$은 poset이지만 total order는 아니다. 
