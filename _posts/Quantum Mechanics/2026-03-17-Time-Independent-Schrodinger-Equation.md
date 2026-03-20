@@ -115,6 +115,8 @@ $$\begin{align*}
 &= \sum_{n=1}^\infty \vert c_n \vert^2 E_n
 \end{align*}$$
 
+따라서 다음을 얻는다.
+
 $$\langle \hat{\mathcal{H}} \rangle = \sum_{n=1}^\infty \vert c_n \vert^2 E_n$$
 
-그리고 상수 $\vert c_n \vert^2$은 각 에너지 고유값 $E_n$을 측정할 확률을 나타낸다. 
+그리고 상수 $\vert c_n \vert^2$은 각 에너지 고유값 $E_n$을 측정할 확률을 나타낸다고 해석할 수 있다. 
