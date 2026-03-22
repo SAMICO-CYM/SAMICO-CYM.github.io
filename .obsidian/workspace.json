@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
+                "file": "_posts/Ordering/2026-03-20-Boolean-Lattice.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-17-Basis-Of-Topology"
+              "title": "2026-03-20-Boolean-Lattice"
             }
           }
         ]
@@ -182,6 +182,7 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
+    "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
     "_posts/Topology/2026-03-10-Order-Relation.md",
     "_posts/Number Theory/2026-03-22-Euler-Phi-Function.md",
     "_site/posts/Euler-Phi-Function/index.html",
@@ -190,7 +191,6 @@
     "_site/posts/Center-Of-Group",
     "_site/categories/number-theory/index.html",
     "_site/categories/number-theory",
-    "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
     "_posts/Abstract Algebra/2026-03-22-Center-Of-Group.md",
     "_posts/PDE/2026-03-20-Initial-Boundary-Conditions.md",
     "_posts/Number Theory",
