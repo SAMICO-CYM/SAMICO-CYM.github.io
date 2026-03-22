@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
+                "file": "_posts/Number Theory/2026-03-22-Euler-Phi-Function.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-17-Basis-Of-Topology"
+              "title": "2026-03-22-Euler-Phi-Function"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 330.5
   },
   "right": {
     "id": "9aef2bb0ca4df331",
@@ -182,6 +182,7 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
+    "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
     "_posts/Topology/2026-03-10-Order-Relation.md",
     "_posts/Abstract Algebra/2026-03-22-Center-Of-Group.md",
     "_posts/Number Theory/2026-03-22-Euler-Phi-Function.md",
@@ -214,7 +215,6 @@
     "_posts/Topology/2026-03-12-Topology.md",
     "_posts/Lemma/2026-03-19-Sin-Cos-Equal.md",
     "_posts/Complex Analysis/2026-03-19-Roots-Of-Complex-Number.md",
-    "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
     "_posts/Abstract Algebra/2026-03-18-Subgroup.md",
     "_posts/Abstract Algebra/2026-03-18-Cyclic-Group.md",
     "_site/assets/img/Gemini_Generated_Image_btbom8btbom8btbo.png",

@@ -1,6 +1,6 @@
 --- 
 title: Euler $\phi$ Function
-date: 2026-03-
+date: 2026-03-22
 categories: [Mathematics, Number Theory]
 tags: []
 math: true
