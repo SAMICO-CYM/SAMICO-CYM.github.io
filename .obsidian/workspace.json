@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/PDE/2026-03-20-Initial-Boundary-Conditions.md",
+                "file": "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-20-Initial-Boundary-Conditions"
+              "title": "2026-03-17-Basis-Of-Topology"
             }
           }
         ]
@@ -182,6 +182,11 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
+    "_posts/Topology/2026-03-10-Order-Relation.md",
+    "_posts/Abstract Algebra/2026-03-22-Center-Of-Group.md",
+    "_posts/Number Theory/2026-03-22-Euler-Phi-Function.md",
+    "_posts/PDE/2026-03-20-Initial-Boundary-Conditions.md",
+    "_posts/Number Theory",
     "_site/posts/Minimal-Minimum-Maximal-Maximum/index.html",
     "_site/posts/Minimal-Minimum-Maximal-Maximum",
     "_site/posts/Linear-Extension/index.html",
@@ -191,8 +196,6 @@
     "_site/posts/Hasse-Diagram/index.html",
     "_site/posts/Hasse-Diagram",
     "_site/posts/Embedding/index.html",
-    "_site/posts/Embedding",
-    "_site/posts/Boolean-Lattice/index.html",
     "_site/assets/img/minimal.png",
     "_site/assets/img/image.png",
     "_site/assets/img/Embedding.png",
@@ -208,7 +211,6 @@
     "_posts/Ordering/2026-03-15-Order.md",
     "_posts/Ordering/2026-03-09-Cover.md",
     "_posts/PDE/2026-03-12-1st-Order-Linear-PDE-Variable-Coefficients.md",
-    "_posts/PDE/2026-03-20-Initial-Boundary-Conditions.md",
     "_posts/Topology/2026-03-12-Topology.md",
     "_posts/Lemma/2026-03-19-Sin-Cos-Equal.md",
     "_posts/Complex Analysis/2026-03-19-Roots-Of-Complex-Number.md",
@@ -216,7 +218,6 @@
     "_posts/Abstract Algebra/2026-03-18-Subgroup.md",
     "_posts/Abstract Algebra/2026-03-18-Cyclic-Group.md",
     "_site/assets/img/Gemini_Generated_Image_btbom8btbom8btbo.png",
-    "_posts/Topology/2026-03-10-Order-Relation.md",
     "_posts/Quantum Mechanics/2026-03-13-The-Statistical-Interpretation-Of-Wave-Functions.md",
     "assets/img/Gemini_Generated_Image_btbom8btbom8btbo.png",
     "_posts/Quantum Mechanics/2026-03-17-Time-Independent-Schrodinger-Equation.md",
@@ -225,7 +226,6 @@
     "_posts/Quantum Mechanics/2026-03-10-Time-Dependent-Schrodinger-Equation.md",
     "_posts/Complex Analysis/2026-03-17-Exponential-Form.md",
     "_posts/Complex Analysis/2026-03-17-Complex-Conjugate.md",
-    "_posts/Quantum Mechanics/2026-03-10-Schrodinger-Equation.md",
     "_site/assets/img/Pasted image 20260221200726.png",
     "_site/assets/img/성막.jpg"
   ]
