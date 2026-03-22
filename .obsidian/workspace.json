@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Number Theory/2026-03-22-Euler-Phi-Function.md",
+                "file": "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-22-Euler-Phi-Function"
+              "title": "2026-03-17-Basis-Of-Topology"
             }
           }
         ]
@@ -182,21 +182,21 @@
   },
   "active": "207e554a6be8da43",
   "lastOpenFiles": [
-    "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
     "_posts/Topology/2026-03-10-Order-Relation.md",
-    "_posts/Abstract Algebra/2026-03-22-Center-Of-Group.md",
     "_posts/Number Theory/2026-03-22-Euler-Phi-Function.md",
+    "_site/posts/Euler-Phi-Function/index.html",
+    "_site/posts/Euler-Phi-Function",
+    "_site/posts/Center-Of-Group/index.html",
+    "_site/posts/Center-Of-Group",
+    "_site/categories/number-theory/index.html",
+    "_site/categories/number-theory",
+    "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
+    "_posts/Abstract Algebra/2026-03-22-Center-Of-Group.md",
     "_posts/PDE/2026-03-20-Initial-Boundary-Conditions.md",
     "_posts/Number Theory",
     "_site/posts/Minimal-Minimum-Maximal-Maximum/index.html",
     "_site/posts/Minimal-Minimum-Maximal-Maximum",
     "_site/posts/Linear-Extension/index.html",
-    "_site/posts/Linear-Extension",
-    "_site/posts/Isomorphsim-Between-Posets/index.html",
-    "_site/posts/Isomorphsim-Between-Posets",
-    "_site/posts/Hasse-Diagram/index.html",
-    "_site/posts/Hasse-Diagram",
-    "_site/posts/Embedding/index.html",
     "_site/assets/img/minimal.png",
     "_site/assets/img/image.png",
     "_site/assets/img/Embedding.png",
@@ -225,7 +225,6 @@
     "_posts/Quantum Mechanics/2026-03-17-Commutator.md",
     "_posts/Quantum Mechanics/2026-03-10-Time-Dependent-Schrodinger-Equation.md",
     "_posts/Complex Analysis/2026-03-17-Exponential-Form.md",
-    "_posts/Complex Analysis/2026-03-17-Complex-Conjugate.md",
     "_site/assets/img/Pasted image 20260221200726.png",
     "_site/assets/img/성막.jpg"
   ]
