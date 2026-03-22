@@ -68,7 +68,7 @@ Let $K \in T$. Then $\displaystyle K = \bigcup_{U \in \mathcal{A}} U$ for some $
 
 $$x \in U \subset \bigcup_{U \in \mathcal{A}}U = K,$$
 
-we have $K \in \mathcal{T}_{\mathcal{B}}$, which means that $T \subset \mathcal{T}_{\mathcal{B}}$.
+we have $K \in \mathcal{T_\mathcal{B}}$, which means that $T \subset \mathcal{T}_{\mathcal{B}}$.
 
 Let $K \in \mathcal{T}_{\mathcal{B}}$. If $x \in K$, then $\exists B_x \in \mathcal{B}$ such that $x \in B_x \subset K$. Note that 
 
