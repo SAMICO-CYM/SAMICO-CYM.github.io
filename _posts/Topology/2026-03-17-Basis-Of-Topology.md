@@ -74,4 +74,4 @@ Let $K \in \mathcal{T_\mathcal{B}}$. If $x \in K$, then $\exists B_x \in \mathca
 
 $$K = \bigcup_{x \in K} B_x.$$
 
-Since $\\{ B_x \in \mathcal{B} \mid x \in K \\}$ is a subcollection of $\mathcal{B}$, we have $K \in T$, which means that $\mathcal{T}_{\mathcal{B}} \subset T$. Thus $T = \mathcal{T}_{\mathcal{B}}. \blacksquare$ 
+Since $\\{ B_x \in \mathcal{B} \mid x \in K \\}$ is a subcollection of $\mathcal{B}$, we have $K \in T$, which means that $\mathcal{T_\mathcal{B}} \subset T$. Thus $T = \mathcal{T_\mathcal{B}}. \blacksquare$ 
