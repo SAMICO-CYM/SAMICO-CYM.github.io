@@ -29,7 +29,7 @@ x &= a^k \\
 &= a^r \in \{ e, a, a^2, \cdots, a^{m - n - 1} \}. \Big]
 \end{align*}$$
 
-Thus $G = \{ e, a, a^2, \cdots, a^{m - n - 1} \}$, so that $\vert G \vert = m - n < \infty$. $\bigotimes$ Hence $a^m \neq a^n, \forall m \neq n \in \mathbb{Z}$. $\Big]$
+Thus $G = \\{ e, a, a^2, \cdots, a^{m - n - 1} \\}$, so that $\vert G \vert = m - n < \infty$. $\bigotimes$ Hence $a^m \neq a^n, \forall m \neq n \in \mathbb{Z}$. $\Big]$
 
 Define the function $\phi : G \to \mathbb{Z}$ by $\phi(a^m) = m, \forall a^m \in G$. Clearly $\phi$ is well-defined. 
 
@@ -53,20 +53,4 @@ Thus $\phi$ is a homomorphism, and so that $G \cong (\mathbb{Z}, +)$.
 
 $\Big[ (\because)$ If $a^i = a^j$ for some $0 \le i < j \le n-1$, then $a^{j-i} = e$, which means that $G = \\{ e, a, a^2, \cdots, a^{j - i - 1} \\}$. Thus $\vert G \vert = j - i \le n-1$. $\bigotimes$ Hence $a^i \neq a^j, \forall 0 \le i < j \le n-1$. $\Big]$
 
-Define the function $\phi : G \to \mathbb{Z}_n$ by $\phi(a^m) = m \pmod{n}, \forall a^m \in G$. Clearly $\phi$ is well-defined. 
-
-If $\phi(a^m) = \phi(a^n)$, then $m = n$, so that $a^m = a^n$. Thus $\phi$ is injective. 
-
-Let $m \in \mathbb{Z}$. Then $a^m \in G$, so that $\phi(a^m) = m$. Thus $\phi$ is surjective.
-
-Let $a^m, a^n \in G$. Then 
-
-$$
-\begin{align*}
-    \phi(a^m a^n) &= \phi(a^{m + n}) \\
-    &= m + n \\
-    &= \phi(a^m) + \phi(a^n).
-\end{align*}
-$$
-
-Thus $\phi$ is a homomorphism, and so that $G \cong (\mathbb{Z}, +)$.
+Clearly $G \supset \\{ e, a, a^2, \cdots, a^{n-1} \\}$. Let $a^m \in G$. 
