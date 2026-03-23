@@ -6,7 +6,7 @@ tags: []
 math: true
 ---
 
-## Theorem
+## Theorem 1
 Let $G$ be a group, and let $a \in G$. Then the set
 
 $$
@@ -67,3 +67,46 @@ km \equiv 1 \quad \text{mod } n \quad \text{for some } k \in \mathbb{Z} \\
 $$km - \ell n = kad - \ell bd = (ka - \ell b)d = 1$$
 
 이 성립해야 하는데 $d > 1$이고 $ka - \ell b$ 또한 정수이므로 모순이고, 즉 $\gcd(m, n) = 1$이다. 따라서 순환군 $\langle m \rangle$에 원소 $1$을 포함해서 $\mathbb{Z}_n$의 생성원이 되는 $n$보다 작은 자연수 $m$은 $n$과 서로소인 자연수만큼, 즉 $\phi(n)$개 존재한다. 
+
+---
+
+## Theorem 2
+Every cyclic group is abelian. 
+
+### Proof
+Let $G$ be a cyclic group, which means that $G$ is a group and $G = \langle a \rangle$ for some $a \in G$.
+
+Let $x, y \in G$. Then $x = a^n$ and $y = a^m$ for some $n, m \in \mathbb{Z}$. Thus we have
+
+$$\begin{align*}
+    xy &= a^na^m \\
+    &= a^{n + m} \\
+    &= a^{m + n} \\
+    &= a^m a^n \\
+    &= yx,
+\end{align*}$$ 
+
+which means that $G$ is abelian. $\blacksquare$
+
+---
+
+## Theorem 3
+A subgroup of a cyclic group is cyclic. 
+
+### Proof
+Let $G$ be a cyclic group, which means that $G$ is a group and $G = \langle a \rangle$ for some $a \in G$. Let $H \le G$, and let $e$ denote the identity of $G$.
+
+If $H = \\{ e \\}$, then clearly $H = \langle e \rangle$.
+
+Suppose that $H \neq \\{ e \\}$, that is, some element $a(\neq e)$ of $G$ belongs to $H$. Note that the set $\\{ n \in \mathbb{N} \mid a^n \in H \\}$ is a nonemtpy subset of $\mathbb{N}$, so by the Well-Ordering Principle, there exists a smallest positive integer $m$ such that $a^m \in H$. We claim that $H = \langle a^m \rangle$.
+
+We claim that $H = \langle a^m \rangle$.
+
+$(\because)$ Clearly $\langle a^m \rangle \subset H$ since $a^m \in H$ and $H$ is a group. Let $x \in H$. Since $x \in G$, $x = a^n \in H$ for some $n \in \mathbb{Z}$. By the Division Algorithm, there exist integers $q$ and $r$ such that $n = mq + r$ and $0 \le r < m$. Thus we have
+
+$$\begin{gather*}
+a^n = a^{mq + r} = (a^m)^q a^r \\
+\implies a^r = ((a^m)^q)^{-1} a^n.
+\end{gather*}$$
+
+Since $a^n \in H$ and $(a^m)^q \in H$, so that its inverse is also in $H$, we have $a^r \in H$. If $r > 0$, then $a^r \in H$ and $r < m$, which contradicts the definition of $m$. Thus $r = 0$. Thus, $a^n = (a^m)^q \in \langle a^m \rangle$, which means that $H \subset \langle a^m \rangle$. Hence $H = \langle a^m \rangle$. $\blacksquare$

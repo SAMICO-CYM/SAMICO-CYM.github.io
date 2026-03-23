@@ -7,4 +7,8 @@ math: true
 ---
 
 ## Definition
-If $G$ is a group, then the ***order*** of $G$ is the number of elements in $G$, denoted by $\vert G\ vert$.
+Let $G$ be a group. 
+
+**(i)** The ***order*** of $G$ is the number of elements in $G$, denoted by $\vert G\ vert$.
+
+**(ii)** The order of an element $a \in G$ is the order of $\langle a \rangle$.
