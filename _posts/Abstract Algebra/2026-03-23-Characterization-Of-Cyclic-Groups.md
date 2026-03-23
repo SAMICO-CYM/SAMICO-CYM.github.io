@@ -53,4 +53,38 @@ Thus $\phi$ is a homomorphism, and so that $G \cong (\mathbb{Z}, +)$.
 
 $\Big[ (\because)$ If $a^i = a^j$ for some $0 \le i < j \le n-1$, then $a^{j-i} = e$, which means that $G = \\{ e, a, a^2, \cdots, a^{j - i - 1} \\}$. Thus $\vert G \vert = j - i \le n-1$. $\bigotimes$ Hence $a^i \neq a^j, \forall 0 \le i < j \le n-1$. $\Big]$
 
-Clearly $G \supset \\{ e, a, a^2, \cdots, a^{n-1} \\}$. Let $a^m \in G$. 
+Since $G = \langle a \rangle$, we have $G = \\{ e, a, a^2, \cdots, a^{n-1} \\}$. Then $a^n = e$ because $a^n \in G$ so that $a^n = a^k$ for some $0 \le k < n-1$ and $a^{n-k} = e$ with $n-k \in \{ 1, 2, \cdots, n-1 \}$. $\bigotimes$
+
+Define the function $\phi : G \to \mathbb{Z}_n$ by $\phi(a^m) = m \pmod n, \forall a^m \in G$. By division algorithm, $\phi$ is well-defined. Note that if $m \equiv r \pmod n$, then $a^m = a^r$.
+
+If $\phi(a^m) = \phi(a^k)$, then $m \equiv k \pmod n$. so that $a^m = a^k$. Thus $\phi$ is injective. 
+
+Let $m \in \mathbb{Z}_n$, that is, $m \equiv m \pmod n$. Then $a^m \in G$, so that $\phi(a^m) = m$. Thus $\phi$ is surjective.
+
+Let $a^m, a^k \in G$, and let $m \equiv r_1 \pmod n$ and $k \equiv r_2 \pmod n$ with $0 \le r_1, r_2 \le n-1$. Then 
+
+$$
+\begin{align*}
+    \phi(a^m a^k) &= \phi(a^{m + k}) \\
+    &= m + k \pmod n \\
+    &= r_1 + r_2 \pmod n \\
+    &= r_1 + r_2 \\
+    &= \phi(a^m) + \phi(a^k).
+\end{align*}
+$$
+
+Thus $\phi$ is a homomorphism, and so that $G \cong (\mathbb{Z}_n, +)$. $\blacksquare$
+
+---
+
+## Remark
+Let $G = \langle a \rangle$ with $\vert G \vert = n$. 
+
+**(i)** $n$ is the smallest positive integer such that $a^n = e$.
+
+**(ii)** $a^m = e$ for some $m \in \mathbb{Z} \setminus \\{ 0 \\} \iff n \vert m$.
+
+---
+
+## Example
+Let $U_n = \\{ z \in \mathbb{C} \mid z^n = 1 \\}$. Then $(U_n, \cdot) \cong (\mathbb{Z}_n, +)$.
