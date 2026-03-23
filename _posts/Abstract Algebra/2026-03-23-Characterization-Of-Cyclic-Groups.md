@@ -17,7 +17,9 @@ Let $G$ be a cyclic group.
 Let $G = \langle a \rangle$, and let $e$ denote the identity of $G$.
 
 **(i)** Suppose that $\vert G \vert = \infty$. Then $a^m \neq a^n \forall m \neq n \in \mathbb{Z}$.
+
 $(\because)$ Suppose that $a^m = a^n$ for some integers $m > n$. Then $a^{m - n} = e$. Then we claim $G = \\{ e, a, a^2, \cdots, a^{m - n - 1} \\}$.
+
 $(\because)$ Since $a \in G$, clearly $G \supset \\{ e, a, a^2, \cdots, a^{m - n - 1} \\}$. Let $x \in G$. Then $x = a^k$ for some $k \in \mathbb{Z}$. By division algorithm, $\exists \, q, r \in \mathbb{Z}$ such that $k = (m - n)q + r$ and $0 \le r < m - n$. Then we have 
 
 $$\begin{align*}
