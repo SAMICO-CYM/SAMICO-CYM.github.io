@@ -53,7 +53,7 @@ Let $G$ be a group, and let $a \in G$.
 
 ---
 
-## Remark
+## Remark 1
 
 $2$보다 큰 정수 $n$에 대해서 $\mathbb{Z}_n$의 생성원 중 $n$보다 작은 생성원 $m$은 몇 개나 있을까? 우선 Example (ii)에 의해서 $1$은 항상 생성원임을 알 수 있다. 이 말인즉슨 $1$이 순환군의 원소이면 항상 $\mathbb{Z}_n$을 생성해 낼 수 있다는 뜻이다. 즉 $m$의 적당한 정수배를 $n$으로 나눈 나머지가 $1$이 되면 $\langle m \rangle$에 $1$이 포함되고 $\mathbb{Z}_n$을 생성해 낼 수 있다. 즉 다음의 조건을 만족해야 한다.
 
@@ -101,7 +101,6 @@ If $H = \\{ e \\}$, then clearly $H = \langle e \rangle$.
 Suppose that $H \neq \\{ e \\}$, that is, some element $a(\neq e)$ of $G$ belongs to $H$. Note that the set $\\{ n \in \mathbb{N} \mid a^n \in H \\}$ is a nonemtpy subset of $\mathbb{N}$, so by the Well-Ordering Principle, there exists a smallest positive integer $m$ such that $a^m \in H$. We claim that $H = \langle a^m \rangle$.
 
 We claim that $H = \langle a^m \rangle$.
-
 $(\because)$ Clearly $\langle a^m \rangle \subset H$ since $a^m \in H$ and $H$ is a group. Let $x \in H$. Since $x \in G$, $x = a^n \in H$ for some $n \in \mathbb{Z}$. By the Division Algorithm, there exist integers $q$ and $r$ such that $n = mq + r$ and $0 \le r < m$. Thus we have
 
 $$\begin{gather*}
@@ -110,3 +109,16 @@ a^n = a^{mq + r} = (a^m)^q a^r \\
 \end{gather*}$$
 
 Since $a^n \in H$ and $(a^m)^q \in H$, so that its inverse is also in $H$, we have $a^r \in H$. If $r > 0$, then $a^r \in H$ and $r < m$, which contradicts the definition of $m$. Thus $r = 0$. Thus, $a^n = (a^m)^q \in \langle a^m \rangle$, which means that $H \subset \langle a^m \rangle$. Hence $H = \langle a^m \rangle$. $\blacksquare$
+
+---
+
+## Corollary
+The subgroups of $(\mathbb{Z}, +)$ are precisely of the forms $n\mathbb{Z}$ for some $n \in \mathbb{Z}$.
+
+### Proof
+Let $H \le (\mathbb{Z}, +)$. Since $(\mathbb{Z}, +)$ is cyclic, by Theorem 3, $H$ is cyclic. Thus $H = \langle n \rangle$ for some $n \in \mathbb{Z}$. Note that $\langle n \rangle = \\{mn \mid m \in \mathbb{Z} \\} = n\mathbb{Z}$. Hence $H = n\mathbb{Z}$. $\blacksquare$
+
+---
+
+## Remark 2
+An abelian group need not be cyclic. For example, the Klein 4-group $V$ is abelian but not cyclic.
