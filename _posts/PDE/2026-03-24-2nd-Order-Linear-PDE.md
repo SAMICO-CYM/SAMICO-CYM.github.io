@@ -37,7 +37,7 @@ $$u_{xx} + \cdots = 0$$
 unless $a_{11} = a_{12} = a_{22} = 0$.
 
 ### Proof
-(i) For convenience, we assume $a_{11} = 1$ and $a_1 = a_2 = a_0 = 0$. Then
+**(i)** For convenience, we assume $a_{11} = 1$ and $a_1 = a_2 = a_0 = 0$. Then
 
 $$\begin{align*}
 0 &= u_{xx} + 2a_{12}u_{xy} + a_{22}u_{yy} \\
@@ -61,7 +61,7 @@ $$\begin{align*}
 
 so that
 
-$$(\ast): 0 = \partial^2_\xi u + \partial^2_\eta u$$
+$$(\ast): 0 = \partial^2_\xi u + \partial^2_\eta u. \blacksquare$$
 
 ---
 
