@@ -71,7 +71,7 @@ $$E_n = \frac{\hbar^2 k_n^2}{2m} = \frac{n^2 \pi^2 \hbar^2}{2ma^2}, \quad n = 1,
 $$\begin{align*}
 P(x_1 \le x \le x_2) &= \int_{x_1}^{x_2} \vert \psi_n(x) \vert^2 \, dx \\
 &= \frac{2}{a} \int_{x_1}^{x_2} \sin^2 \left( \frac{n \pi x}{a} \right) \, dx \\
-&= \frac{2}{a} \left[ \frac{1}{2}x - \underbrac{\frac{a}{4n\pi} \sin \left( \frac{2n\pi x}{a} \right)}_{\text{goes to zero as }n \to \infty} \right]_{x_1}^{x_2} \\
+&= \frac{2}{a} \left[ \frac{1}{2}x - \underbrace{\frac{a}{4n\pi} \sin \left( \frac{2n\pi x}{a} \right)}_{\text{goes to zero as }n \to \infty} \right]_{x_1}^{x_2} \\
 &= \frac{x_2 - x_1}{a}
 \end{align*}$$
 
