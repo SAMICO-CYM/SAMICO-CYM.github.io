@@ -39,9 +39,11 @@ $$\begin{align*}
 
 **(i)** $(\hat{a_+})^{\dagger} = \hat{a_-}$, $(\hat{a_-})^{\dagger} = \hat{a_+}$.
 
-**(ii)** $[\hat{a_+}, \hat{a_-}] = 1$
+**(ii)** $\langle \psi_m \vert \psi_n \rangle = \delta_{mn}$
 
-**(iii)** $\hat{a_+} \hat{a_-} = \frac{1}{\hbar \omega} \left( \hat{H} - \frac{1}{2} \hbar \omega \right) = \frac{1}{\hbar \omega} \hat{\mathcal{H}} - \frac{1}{2}$
+**(iii)** $[\hat{a_+}, \hat{a_-}] = 1$
+
+**(iv)** $\hat{a_+} \hat{a_-} = \frac{1}{\hbar \omega} \left( \hat{H} - \frac{1}{2} \hbar \omega \right) = \frac{1}{\hbar \omega} \hat{\mathcal{H}} - \frac{1}{2}$
 
 **(iii)** $\hat{a_-} \hat{a_+} = \frac{1}{\hbar \omega} \left( \hat{H} + \frac{1}{2} \hbar \omega \right) = \frac{1}{\hbar \omega} \hat{\mathcal{H}} + \frac{1}{2}$
 
