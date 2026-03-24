@@ -28,15 +28,37 @@ $$\begin{align*}
 
 ## Ladder Operators
 
-방정식을 풀기에 앞서, 사다리 연산자 $\hat{a_+}, \hat{a_-}$를 다음과 같이 정의하자.
+방정식을 풀기에 앞서, ***사다리 연산자*** $\hat{a_+}, \hat{a_-}$를 다음과 같이 정의하자.
 
 $$\begin{align*}
 \hat{a_+} &= \frac{1}{\sqrt{2 m\hbar \omega}} \left( m \omega \hat{x} - i \hat{p} \right) \\
 \hat{a_-} &= \frac{1}{\sqrt{2 m\hbar \omega}} \left( m \omega \hat{x} + i \hat{p} \right)
 \end{align*}$$
 
-그러면 다음이 성립한다.
+이때 $\hat{a_+}$를 ***raising operator***, $\hat{a_-}$를 ***lowering operator***라고 부른다. 그러면 다음이 성립한다.
 
 **(i)** $[\hat{a_+}, \hat{a_-}] = 1$
 
 **(ii)** $\hat{H} = \hbar \omega \left( \hat{a_+} \hat{a_-} + \frac{1}{2} \right) = \hbar \omega \left( \hat{a_-} \hat{a_+} - \frac{1}{2} \right)$
+
+즉 해밀토니안 연산자는 사다리 연산자를 이용해서 표현할 수 있다.
+
+---
+
+## Theorem
+If $\psi$ is the solution of the time-independent Schrödinger equation for the 1D harmonic oscillator, then $\hat{a_+}\psi$ and $\hat{a_-}\psi$ are also solutions with the eigenvalue $E + \hbar \omega$ and $E - \hbar \omega$, respectively.
+
+### Proof
+Suppose that $\hat{\mathcal{H}}\psi = E \psi$. Then we have
+
+$$\begin{align*}
+\hat{\mathcal{H}}(\hat{a_+}\psi) &= \hbar \omega \left( \hat{a_+} \hat{a_-} + \frac{1}{2} \right) (\hat{a_+}\psi) \\
+&= \hbar \omega \hat{a_+} \left( \hat{a_-} \hat{a_+} + \frac{1}{2} \right) \psi \\
+&= \hbar \omega \hat{a_+} \left( \hat{a_+} \hat{a_-} + 1 + \frac{1}{2} \right) \\
+&= \hat{\mathcal{H}} (\hat{a_+} \psi) + \hbar \omega (\hat{a_+} \psi) \\
+&= (E + \hbar \omega) (\hat{a_+} \psi)
+\end{align*}$$
+
+Thus $\hat{\mathcal{H}}(\hat{a_+}\psi) = (E + \hbar \omega) (\hat{a_+} \psi)$. Similarly, we have 
+
+$$\hat{\mathcal{H}}(\hat{a_-}\psi) = (E - \hbar \omega) (\hat{a_-} \psi). \blacksquare$$
