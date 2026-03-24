@@ -39,7 +39,11 @@ $$\begin{align*}
 
 **(i)** $[\hat{a_+}, \hat{a_-}] = 1$
 
-**(ii)** $\hat{H} = \hbar \omega \left( \hat{a_+} \hat{a_-} + \frac{1}{2} \right) = \hbar \omega \left( \hat{a_-} \hat{a_+} - \frac{1}{2} \right)$
+**(ii)** $\hat{a_+} \hat{a_-} = \frac{1}{\hbar \omega} \left( \hat{H} - \frac{1}{2} \hbar \omega \right) = \frac{1}{\hbar \omega} \hat{\mathcal{H}} - \frac{1}{2}$
+
+**(iii)** $\hat{a_-} \hat{a_+} = \frac{1}{\hbar \omega} \left( \hat{H} + \frac{1}{2} \hbar \omega \right) = \frac{1}{\hbar \omega} \hat{\mathcal{H}} + \frac{1}{2}$
+
+**(iv)** $\hat{H} = \hbar \omega \left( \hat{a_+} \hat{a_-} + \frac{1}{2} \right) = \hbar \omega \left( \hat{a_-} \hat{a_+} - \frac{1}{2} \right)$
 
 즉 해밀토니안 연산자는 사다리 연산자를 이용해서 표현할 수 있다.
 
