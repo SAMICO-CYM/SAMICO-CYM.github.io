@@ -37,9 +37,11 @@ $$\begin{align*}
 
 이때 $\hat{a_+}$를 ***raising operator***, $\hat{a_-}$를 ***lowering operator***라고 부른다. 그러면 다음이 성립한다.
 
-**(i)** $[\hat{a_+}, \hat{a_-}] = 1$
+**(i)** $(\hat{a_+})^{\dagger} = \hat{a_-}$, $(\hat{a_-})^{\dagger} = \hat{a_+}$.
 
-**(ii)** $\hat{a_+} \hat{a_-} = \frac{1}{\hbar \omega} \left( \hat{H} - \frac{1}{2} \hbar \omega \right) = \frac{1}{\hbar \omega} \hat{\mathcal{H}} - \frac{1}{2}$
+**(ii)** $[\hat{a_+}, \hat{a_-}] = 1$
+
+**(iii)** $\hat{a_+} \hat{a_-} = \frac{1}{\hbar \omega} \left( \hat{H} - \frac{1}{2} \hbar \omega \right) = \frac{1}{\hbar \omega} \hat{\mathcal{H}} - \frac{1}{2}$
 
 **(iii)** $\hat{a_-} \hat{a_+} = \frac{1}{\hbar \omega} \left( \hat{H} + \frac{1}{2} \hbar \omega \right) = \frac{1}{\hbar \omega} \hat{\mathcal{H}} + \frac{1}{2}$
 
@@ -67,7 +69,7 @@ Thus $\hat{\mathcal{H}}(\hat{a_+}\psi) = (E + \hbar \omega) (\hat{a_+} \psi)$. S
 
 $$\hat{\mathcal{H}}(\hat{a_-}\psi) = (E - \hbar \omega) (\hat{a_-} \psi). \blacksquare$$
 
-이말인즉슨, 조화진동자의 파동함수 $\psi$에 사다리 연산자를 적용시키면 기존의 에너지 $E$에서 $\hbar \omega$만큼 더하거나 줄어드는 결과를 얻는다. 즉 $\hat{a_+}$는 에너지를 $\hbar \omega$ 단위 만큼 증가시키는, 반대로 $\hat{a_-}$는 $\hbar \omega$ 단위 만큼 감소시키는 연산자라고 이해할 수 있다. 그리고 우리는 $\hbar \omega$는 광자 하나의 에너지에 대응된다는 것을 알고 있다. 
+이말인즉슨, 조화진동자의 파동함수 $\psi$에 사다리 연산자를 적용시키면 기존의 에너지 $E$에서 $\hbar \omega$만큼 더하거나 줄어드는 결과를 얻는다. 즉 $\hat{a_+}$는 에너지를 $\hbar \omega$ 단위 만큼 증가시키는, 반대로 $\hat{a_-}$는 $\hbar \omega$ 단위 만큼 감소시키는 연산자라고 이해할 수 있다.
 
 ---
 
@@ -96,11 +98,11 @@ $$\begin{align*}
 &= \frac{1}{2} \hbar \omega
 \end{align*}$$
 
-이므로 바닥 상태의 에너지는 $E_0 = \frac{1}{2} \hbar \omega$이다. 한편 사다리 연산자는 에너지를 $\hbar \omega$만큼 올리고 내리는 연산자였으므로 각 자연수 $n = 1, 2, ...$에 대해서 파동함수의 에너지 $E_n$은 
+이므로 바닥 상태의 에너지는 $E_0 = \frac{1}{2} \hbar \omega$이다. 한편 사다리 연산자는 에너지를 $\hbar \omega$만큼 올리고 내리는 연산자였으므로 파동함수에 연산자를 가할 때마다 한 단계 위, 혹은 한 단계 아래의 에너지에 해당하는 파동함수를 준다. 즉 각 자연수 $n = 1, 2, ...$에 대해서 $\hat{a_+} \psi_n = c_n \psi_{n+1}$, 그리고 $\hat{a_-} \psi_n  d_n \psi_{n-1}$으로 둘 수 있고, 각 파동함수의 에너지 $E_n$은 
 
 $$E_n = \hbar \omega \left( n + \frac{1}{2} \right)$$
 
-으로 주어진다. 
+으로 주어진다.
 
 ---
 
@@ -118,7 +120,7 @@ $$E_n = \hbar \omega \left( n + \frac{1}{2} \right)$$
 **(v)** $\psi_n(x) = \frac{1}{\sqrt{n!}} (a_+)^n \psi_0(x)$ 
 
 ### Proof
-(i) 
+**(i)** 
 
 $$\begin{align*}
 \hat{a_+}\hat{a_-} \psi_n &= \left( \frac{1}{\hbar \omega} \hat{\mathcal{H}} - \frac{1}{2}\right) \psi_n \\
@@ -126,10 +128,55 @@ $$\begin{align*}
 &= n \psi_n
 \end{align*}$$
 
-(ii)
+**(ii)** 
 
 $$\begin{align*}
 \hat{a_-}\hat{a_+} \psi_n &= \left( \frac{1}{\hbar \omega} \hat{\mathcal{H}} + \frac{1}{2}\right) \psi_n \\
 &= \left( n + \frac{1}{2} \right) \psi_n + \frac{1}{2} \psi_n \\
 &= (n+1) \psi_n
+\end{align*}$$
+
+**(iii)** Note that
+
+$$\begin{align*}
+\langle \hat{a_+} \psi_n | \hat{a_+} \psi_n \rangle &= \langle \psi_n | \hat{a_+}^{\dagger} \hat{a_+} | \psi_n \rangle \\
+&= \langle \psi_n | \hat{a_-} \hat{a_+} | \psi_n \rangle \\
+&= (n+1) \langle \psi_n | \psi_n \rangle \\
+&= n+1
+\end{align*}$$ 
+
+On the other hand, we have 
+
+$$\begin{align*}
+\langle \hat{a_+} \psi_n \vert \hat{a_+} \psi_n \rangle &= \langle c_n \psi_{n+1} \vert c_n \psi_{n+1} \rangle \\
+&= |c_n|^2 \langle \psi_{n+1} \vert \psi_{n+1} \rangle = |c_n|^2
+\end{align*}$$
+
+Thus we have $c_n = \sqrt{n+1}$.
+
+**(iv)** Similarly, we have 
+
+$$\begin{align*}
+\langle \hat{a_-} \psi_n | \hat{a_-} \psi_n \rangle &= \langle \psi_n | \hat{a_-}^{\dagger} \hat{a_-} | \psi_n \rangle \\
+&= \langle \psi_n | \hat{a_+} \hat{a_-} | \psi_n \rangle \\
+&= n \langle \psi_n | \psi_n \rangle \\
+&= n
+\end{align*}$$ 
+
+On the other hand, we have 
+
+$$\begin{align*}
+\langle \hat{a_-} \psi_n | \hat{a_-} \psi_n \rangle &= \langle d_n \psi_{n-1} | d_n \psi_{n-1} \rangle \\
+&= |d_n|^2 \langle \psi_{n-1} | \psi_{n-1} \rangle = |d_n|^2
+\end{align*}$$ 
+
+Thus we have $d_n = \sqrt{n}$.
+
+**(v)** By (iii) and (iv), we have 
+
+$$\begin{align*}
+\psi_n(x) &= \frac{1}{\sqrt{n}} \hat{a_+} \psi_{n-1}(x) \\
+&= \frac{1}{\sqrt{n}} \frac{1}{\sqrt{n-1}} \hat{a_+} \psi_{n-2}(x) \\
+&= \dots \\
+&= \frac{1}{\sqrt{n!}} (\hat{a_+})^n \psi_0(x) \blacksquare
 \end{align*}$$
