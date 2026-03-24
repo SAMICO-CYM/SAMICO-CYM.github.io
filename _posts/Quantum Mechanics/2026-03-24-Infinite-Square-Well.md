@@ -79,7 +79,7 @@ which means that a particale can be find anywhere in the well.
 
 **(iv)** The eigenfunctions are orthogonal, that is, 
 
-$$\int_{-\infty}^{\infty} \psi_m^*(x) \psi_n(x) dx = \delta_{mn}$$
+$$\langle \psi_m \vert \psi_n \rangle = \int_{-\infty}^{\infty} \psi_m^*(x) \psi_n(x) dx = \delta_{mn}$$
 
 **(v)** The set of eigenfunctions has completeness, that is, any arbitrary function $\phi(x)$ can be expanded as a linear combination of the eigenfunctions, i.e., 
 
