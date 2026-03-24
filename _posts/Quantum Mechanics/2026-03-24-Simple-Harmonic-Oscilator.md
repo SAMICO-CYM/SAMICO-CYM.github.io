@@ -95,3 +95,5 @@ $$\begin{align*}
 이므로 바닥 상태의 에너지는 $E_0 = \frac{1}{2} \hbar \omega$이다. 한편 사다리 연산자는 에너지를 $\hbar \omega$만큼 올리고 내리는 연산자였으므로 각 자연수 $n = 1, 2, ...$에 대해서 파동함수의 에너지 $E_n$은 
 
 $$E_n = \hbar \omega \left( n + \frac{1}{2} \right)$$
+
+으로 주어진다. 
