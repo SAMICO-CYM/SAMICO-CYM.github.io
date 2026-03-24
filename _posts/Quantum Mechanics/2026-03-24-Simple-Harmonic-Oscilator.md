@@ -62,3 +62,25 @@ $$\begin{align*}
 Thus $\hat{\mathcal{H}}(\hat{a_+}\psi) = (E + \hbar \omega) (\hat{a_+} \psi)$. Similarly, we have 
 
 $$\hat{\mathcal{H}}(\hat{a_-}\psi) = (E - \hbar \omega) (\hat{a_-} \psi). \blacksquare$$
+
+이말인즉슨, 조화진동자의 파동함수 $\psi$에 사다리 연산자를 적용시키면 기존의 에너지 $E$에서 $\hbar \omega$만큼 더하거나 줄어드는 결과를 얻는다. 즉 $\hat{a_+}$는 에너지를 $\hbar \omega$ 단위 만큼 증가시키는, 반대로 $\hat{a_-}$는 $\hbar \omega$ 단위 만큼 감소시키는 연산자라고 이해할 수 있다. 그리고 우리는 $\hbar \omega$는 광자 하나의 에너지에 대응된다는 것을 알고 있다. 
+
+---
+
+## Simple Harmonic Oscillator
+
+이제 본격적으로 조화진동자의 파동함수과 에너지를 구해보자. 
+
+우선 파동함수에 lowering operator를 반복적으로 취할수록 점점 낮은 에너지값을 얻게 된다. 그런데 자명하게 에너지가 무한히 낮아질수는 없으므로 입자가 가질 수 있는 에너지의 최소값, 즉 바닥 상태가 존재할 것이고, 그때 대응되는 파동함수를 $\psi_0$라고 하면 다음과 같이 정의한다.
+
+$$\hat{a_-} \psi_0 = 0$$
+
+이 식을 정리하면 다음과 같다.
+
+$$\begin{align*}
+\hat{a_-} \psi_0 &= \frac{1}{\sqrt{2 m\hbar \omega}} \left( m \omega \hat{x} + i \hat{p} \right) \psi_0 \\
+&= \frac{1}{\sqrt{2 m\hbar \omega}} \left( m \omega x + \hbar \frac{d}{dx} \right) \psi_0 \\
+\implies & \frac{d \psi_0}{dx} = - \frac{m \omega}{\hbar} x \psi_0 \\
+\implies & \psi_0(x) = \left( \frac{m \omega}{\pi \hbar} \right)^{1/4} e^{-\frac{m \omega}{2 \hbar} x^2}
+
+\end{align*}$$
