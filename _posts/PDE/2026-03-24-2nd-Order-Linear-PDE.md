@@ -26,11 +26,11 @@ $$u_{xx} + u_{yy} + \cdots = 0$$
 
 where $\cdots$ denotes terms of order less than 2.
 
-**(ii)** Hyperbolic case: If $a^2_{12} > a_{11}a_{22}$, it is reducible to 
+**(ii)** Hyperbolic case: If $a_{12}^2 > a_{11}a_{22}$, it is reducible to 
 
 $$u_{xx} - u_{yy} + \cdots = 0$$
 
-**(iii)** Parabolic case: If $a^2_{12} = a_{11}a_{22}$, it is reducible to 
+**(iii)** Parabolic case: If $a_{12}^2 = a_{11}a_{22}$, it is reducible to 
 
 $$u_{xx} + \cdots = 0$$
 
