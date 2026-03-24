@@ -20,7 +20,7 @@ where $a_{11}, a_{12}, a_{22}, a_1, a_2, a_0$ and $f$ are functions of $x$ and $
 ## Theorem
 By a linear transformation of the independent variables, the equation can be reduced to one of three forms, as follows:
 
-**(i)** Elliptic case: If $a^2_{12} < a_{11}a_{22}$, it is reducible to 
+**(i)** Elliptic case: If $a_{12}^2 < a_{11}a_{22}$, it is reducible to 
 
 $$u_{xx} + u_{yy} + \cdots = 0$$
 
