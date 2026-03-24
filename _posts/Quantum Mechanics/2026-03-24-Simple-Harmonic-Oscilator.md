@@ -80,7 +80,6 @@ $$\hat{a_-} \psi_0 = 0$$
 $$\begin{align*}
 \hat{a_-} \psi_0 &= \frac{1}{\sqrt{2 m\hbar \omega}} \left( m \omega \hat{x} + i \hat{p} \right) \psi_0 \\
 &= \frac{1}{\sqrt{2 m\hbar \omega}} \left( m \omega x + \hbar \frac{d}{dx} \right) \psi_0 \\
-\implies & \frac{d \psi_0}{dx} = - \frac{m \omega}{\hbar} x \psi_0 \\
-\implies & \psi_0(x) = \left( \frac{m \omega}{\pi \hbar} \right)^{1/4} e^{-\frac{m \omega}{2 \hbar} x^2}
-
+\implies \frac{d \psi_0}{dx} &= - \frac{m \omega}{\hbar} x \psi_0 \\
+\implies \psi_0(x) &= \left( \frac{m \omega}{\pi \hbar} \right)^{1/4} \exp{-\frac{m \omega}{2 \hbar} x^2}
 \end{align*}$$
