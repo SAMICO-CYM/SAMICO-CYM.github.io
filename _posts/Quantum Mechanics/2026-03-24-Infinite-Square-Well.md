@@ -57,3 +57,33 @@ $$E_n = \frac{\hbar^2 k_n^2}{2m} = \frac{n^2 \pi^2 \hbar^2}{2ma^2}, \quad n = 1,
 으로 주어진다. 즉 $n$이 커질수록 에너지도 더 큰 값을 가지되, 자연수에 의존하는 이산적인 값, 즉 양자화된 값만을 가진다는 사실을 얻는다. 
 
 ![alt text](assets/img/graphwavefunction.png)
+
+---
+
+## Characteristics of Eigenfunctions
+
+**(i)** Each eigenfunction is even or odd for $x = \frac{1}{2}a$.
+
+**(ii)** The $n$th eigenfunction has exactly $n-1$ nodes (zeros) in the interior of the well.
+
+**(iii)** In classical dynamics limit, that is, $n \to \infty$, the probability of finding a particle between $x = x_1$ and $x = x_2$ is given by
+
+$$\begin{align*}
+P(x_1 \le x \le x_2) &= \int_{x_1}^{x_2} \vert \psi_n(x) \vert^2 \, dx \\
+&= \frac{2}{a} \int_{x_1}^{x_2} \sin^2 \left( \frac{n \pi x}{a} \right) \, dx \\
+&= \frac{2}{a} \left[ \frac{1}{2}x - \underbrac{\frac{a}{4n\pi} \sin \left( \frac{2n\pi x}{a} \right)}_{\text{goes to zero as }n \to \infty} \right]_{x_1}^{x_2} \\
+&= \frac{x_2 - x_1}{a}
+\end{align*}$$
+
+which means that a particale can be find anywhere in the well.
+
+**(iv)** The eigenfunctions are orthogonal, that is, 
+
+$$\int_{-\infty}^{\infty} \psi_m^*(x) \psi_n(x) dx = \delta_{mn}$$
+
+**(v)** The set of eigenfunctions has completeness, that is, any arbitrary function $\phi(x)$ can be expanded as a linear combination of the eigenfunctions, i.e., 
+
+$$\begin{align*}
+\phi(x) &= \sum_{n=1}^{\infty} c_n \psi_n(x) \\
+&= \sqrt{\frac{2}{a}} \sum_{n=1}^{\infty} c_n \sin \left( \frac{n \pi x}{a} \right)
+\end{align*}$$
