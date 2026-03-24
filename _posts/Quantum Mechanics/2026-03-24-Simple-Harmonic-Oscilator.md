@@ -81,5 +81,17 @@ $$\begin{align*}
 \hat{a_-} \psi_0 &= \frac{1}{\sqrt{2 m\hbar \omega}} \left( m \omega \hat{x} + i \hat{p} \right) \psi_0 \\
 &= \frac{1}{\sqrt{2 m\hbar \omega}} \left( m \omega x + \hbar \frac{d}{dx} \right) \psi_0 \\
 \implies \frac{d \psi_0}{dx} &= - \frac{m \omega}{\hbar} x \psi_0 \\
-\implies \psi_0(x) &= \left( \frac{m \omega}{\pi \hbar} \right)^{1/4} \exp{-\frac{m \omega}{2 \hbar} x^2}
+\implies \psi_0(x) &= \left( \frac{m \omega}{\pi \hbar} \right)^{1/4} \exp \left( -\frac{m \omega}{2 \hbar} x^2 \right)
 \end{align*}$$
+
+한편
+
+$$\begin{align*}
+\hat{\mathcal{H}} \psi_0 &= \hbar \omega \left( \hat{a_+} \hat{a_-} + \frac{1}{2} \right) \psi_0 \\
+&= \hbar \omega \left( \frac{1}{2} \right) \psi_0 \\
+&= \frac{1}{2} \hbar \omega
+\end{align*}$$
+
+이므로 바닥 상태의 에너지는 $E_0 = \frac{1}{2} \hbar \omega$이다. 한편 사다리 연산자는 에너지를 $\hbar \omega$만큼 올리고 내리는 연산자였으므로 각 자연수 $n = 1, 2, ...$에 대해서 파동함수의 에너지 $E_n$은 
+
+$$E_n = \hbar \omega \left( n + \frac{1}{2} \right)$$
