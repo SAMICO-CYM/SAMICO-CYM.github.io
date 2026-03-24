@@ -44,8 +44,8 @@ $$\begin{align*}
 &= u_{xx} + 2a_{12}u_{xy} + a_{12}^2u_{yy} + (a_{22} - a_{12}^2)u_{yy} \\
 &= (\partial_x + a_{12} \partial_y)^2u + (a_{22} - a_{12}^2)\partial^2_y u \quad \cdots \quad (\ast)
 \end{align*}$$
-
-Since $a^2_{12} < a_{11}a_{22}$, we let $b = \sqrt{a_{22} - a^2_{12}}$. Let substitute
+ 
+Since $a_{12}^2 < a_{11}a_{22}$, we let $b = \sqrt{a_{22} - a_{12}^2}$. Let substitute
 
 $$\begin{align*}
 x &= \xi \\
