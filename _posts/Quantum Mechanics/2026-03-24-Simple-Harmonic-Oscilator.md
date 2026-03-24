@@ -139,9 +139,10 @@ $$\begin{align*}
 **(iii)** Note that
 
 $$\begin{align*}
-\langle \hat{a_+} \psi_n | \hat{a_+} \psi_n \rangle &= \langle \psi_n | \hat{a_+}^{\dagger} \hat{a_+} | \psi_n \rangle \\
-&= \langle \psi_n | \hat{a_-} \hat{a_+} | \psi_n \rangle \\
-&= (n+1) \langle \psi_n | \psi_n \rangle \\
+\langle \hat{a_+} \psi_n \vert \hat{a_+} \psi_n \rangle &= \langle (\hat{a_+})^{\dagger} \hat{a_+} \psi_n \vert \psi_n \rangle \\
+&= \langle \hat{a_-} \hat{a_+} \psi_n \vert \psi_n \rangle \\
+&= \langle (n+1) \psi_n \vert \psi_n \rangle \\
+&= (n+1) \langle \psi_n \vert \psi_n \rangle \\
 &= n+1
 \end{align*}$$ 
 
@@ -157,17 +158,18 @@ Thus we have $c_n = \sqrt{n+1}$.
 **(iv)** Similarly, we have 
 
 $$\begin{align*}
-\langle \hat{a_-} \psi_n | \hat{a_-} \psi_n \rangle &= \langle \psi_n | \hat{a_-}^{\dagger} \hat{a_-} | \psi_n \rangle \\
-&= \langle \psi_n | \hat{a_+} \hat{a_-} | \psi_n \rangle \\
-&= n \langle \psi_n | \psi_n \rangle \\
+\langle \hat{a_-} \psi_n \vert \hat{a_-} \psi_n \rangle &= \langle (\hat{a_-})^{\dagger} \hat{a_-} \psi_n \vert \psi_n \rangle \\
+&= \langle \hat{a_+} \hat{a_-} \psi_n \vert \psi_n \rangle \\
+&= \langle n \psi_n \vert \psi_n \rangle \\
+&= n \langle \psi_n \vert \psi_n \rangle \\
 &= n
 \end{align*}$$ 
 
 On the other hand, we have 
 
 $$\begin{align*}
-\langle \hat{a_-} \psi_n | \hat{a_-} \psi_n \rangle &= \langle d_n \psi_{n-1} | d_n \psi_{n-1} \rangle \\
-&= |d_n|^2 \langle \psi_{n-1} | \psi_{n-1} \rangle = |d_n|^2
+\langle \hat{a_-} \psi_n \vert \hat{a_-} \psi_n \rangle &= \langle d_n \psi_{n-1} \vert d_n \psi_{n-1} \rangle \\
+&= |d_n|^2 \langle \psi_{n-1} \vert \psi_{n-1} \rangle = |d_n|^2
 \end{align*}$$ 
 
 Thus we have $d_n = \sqrt{n}$.
