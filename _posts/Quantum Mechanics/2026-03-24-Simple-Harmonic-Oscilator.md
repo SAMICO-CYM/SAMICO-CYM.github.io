@@ -26,7 +26,7 @@ $$\begin{align*}
 
 ---
 
-## Ladder Operators
+## Ladder Operators 1
 
 방정식을 풀기에 앞서, ***사다리 연산자*** $\hat{a_+}, \hat{a_-}$를 다음과 같이 정의하자.
 
@@ -101,3 +101,35 @@ $$\begin{align*}
 $$E_n = \hbar \omega \left( n + \frac{1}{2} \right)$$
 
 으로 주어진다. 
+
+---
+
+## Ladder Operators 2
+위의 결과를 참고하면 다음의 식이 성립한다.
+
+**(i)** $\hat{a_+}\hat{a_-} \psi_n = n \psi_n$ 
+
+**(ii)** $\hat{a_-}\hat{a_+} \psi_n = (n+1) \psi_n$ 
+
+**(iii)** $\hat{a_+} \psi_n = \sqrt{n+1} \psi_{n+1}$ 
+
+**(iv)** $\hat{a_-} \psi_n = \sqrt{n} \psi_{n-1}$ 
+
+**(v)** $\psi_n(x) = \frac{1}{\sqrt{n!}} (a_+)^n \psi_0(x)$ 
+
+### Proof
+(i) 
+
+$$\begin{align*}
+\hat{a_+}\hat{a_-} \psi_n &= \left( \frac{1}{\hbar \omega} \hat{\mathcal{H}} - \frac{1}{2}\right) \psi_n \\
+&= \left( n + \frac{1}{2} \right) \psi_n - \frac{1}{2} \psi_n \\
+&= n \psi_n
+\end{align*}$$
+
+(ii)
+
+$$\begin{align*}
+\hat{a_-}\hat{a_+} \psi_n &= \left( \frac{1}{\hbar \omega} \hat{\mathcal{H}} + \frac{1}{2}\right) \psi_n \\
+&= \left( n + \frac{1}{2} \right) \psi_n + \frac{1}{2} \psi_n \\
+&= (n+1) \psi_n
+\end{align*}$$
