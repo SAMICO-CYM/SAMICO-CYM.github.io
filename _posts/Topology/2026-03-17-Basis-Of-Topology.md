@@ -109,22 +109,22 @@ Next, we show that $\mathcal{T} = \mathcal{T}_{\mathcal{B}}$.
 
 Let $U \in \mathcal{T}$. If $x \in U$, $\exists B \in \mathcal{B}$ such that $x \in B \subset U$ by assumption. Thus $U \in \mathcal{T_{\mathcal{B}}}$ by definition of $\mathcal{T_{\mathcal{B}}}$.
 
-Let $U \in \mathcal{T}_{\mathcal{B}}$. By Theorem 2, $U = \bigcup_{K \in \mathcal{A}} K$ for some $\mathcal{A} \subset \mathcal{B}$. Since $\mathcal{B} \subset \mathcal{T}$, we have $U \in \mathcal{T}$.
+Let $U \in \mathcal{T_{\mathcal{B}}}$. By Theorem 2, $U = \bigcup_{K \in \mathcal{A}} K$ for some $\mathcal{A} \subset \mathcal{B}$. Since $\mathcal{B} \subset \mathcal{T}$, we have $U \in \mathcal{T}$.
 
-Thus $\mathcal{T} = \mathcal{T}_{\mathcal{B}}. \blacksquare$
+Thus $\mathcal{T} = \mathcal{T_{\mathcal{B}}}. \blacksquare$
 
 ---
 
 ## Theorem 4
-Let $\mathcal{B}$ and $\mathcal{B}'$ be bases for topologies $\mathcal{T}_{\mathcal{B}}$ and $\mathcal{T}_{\mathcal{B}'}$, respectively, on a set $X$. TFAE.
+Let $\mathcal{B}$ and $\mathcal{B}'$ be bases for topologies $\mathcal{T_{\mathcal{B}}}$ and $\mathcal{T_{\mathcal{B}'}}$, respectively, on a set $X$. TFAE.
 
-**(i)** $\mathcal{T}_{\mathcal{B}} \subset \mathcal{T}_{\mathcal{B}'}$, that is, $\mathcal{T}_{\mathcal{B}'}$ is finer than $\mathcal{T}_{\mathcal{B}}$.
+**(i)** $\mathcal{T_{\mathcal{B}}} \subset \mathcal{T_{\mathcal{B}'}}$, that is, $\mathcal{T_{\mathcal{B}'}}$ is finer than $\mathcal{T_{\mathcal{B}}}$.
 
 **(ii)** For each $x \in X$ and $B \in \mathcal{B}$ such that $x \in B$, $\exists B' \in \mathcal{B}'$ such that $x \in B' \subset B$.
 
 ### Proof
 **(i)** $\implies$ **(ii)**
-Let $x \in X$ and let $B \in \mathcal{B}$ such that $x \in B$. Since $\mathcal{T}_{\mathcal{B}} \subset \mathcal{T}_{\mathcal{B}'}$, we have $B \in \mathcal{T}_{\mathcal{B}'}$. By definition of $\mathcal{T}_{\mathcal{B}'}$, $\exists B' \in \mathcal{B}'$ such that $x \in B' \subset B$. 
+Let $x \in X$ and let $B \in \mathcal{B}$ such that $x \in B$. Since $\mathcal{T_{\mathcal{B}}} \subset \mathcal{T_{\mathcal{B}'}}$, we have $B \in \mathcal{T_{\mathcal{B}'}}$. By definition of $\mathcal{T_{\mathcal{B}'}}$, $\exists B' \in \mathcal{B}'$ such that $x \in B' \subset B$. 
 
 **(ii)** $\implies$ **(i)**
-Let $U \in \mathcal{T}_{\mathcal{B}}$. For each $x \in X$, $\exists B \in \mathcal{B}$ such that $x \in B \subset U$ by definition of $\mathcal{T}_{\mathcal{B}}$. By assumption, $\exists B' \in \mathcal{B}'$ such that $x \in B' \subset B \subset U$. Thus $U \in \mathcal{T}_{\mathcal{B}'}$. Hence $\mathcal{T}_{\mathcal{B}} \subset \mathcal{T}_{\mathcal{B}'}. \blacksquare$ 
+Let $U \in \mathcal{T_{\mathcal{B}}}$. For each $x \in X$, $\exists B \in \mathcal{B}$ such that $x \in B \subset U$ by definition of $\mathcal{T_{\mathcal{B}}}$. By assumption, $\exists B' \in \mathcal{B}'$ such that $x \in B' \subset B \subset U$. Thus $U \in \mathcal{T_{\mathcal{B}'}}$. Hence $\mathcal{T_{\mathcal{B}}} \subset \mathcal{T_{\mathcal{B}'}}. \blacksquare$ 
