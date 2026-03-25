@@ -43,11 +43,11 @@ Since $- \vert b \vert < r' \leq 0 \leq r < \vert b \vert$, we have $\vert r - r
 
 $$
 \begin{align*}
-    \vert r - r' \vert &= \vert q' - q \vert \vert b \vert < \vert b \vert \\
-    \Longrightarrow 0 \leq \vert q' - q \vert < 1 \\
-    \Longrightarrow \vert q' - q \vert &= 0 \\
-    \Longleftrightarrow q &= q' \\
-    \Longrightarrow r &= r'.
+    \vert &r - r' \vert = \vert q' - q \vert \vert b \vert < \vert b \vert \\
+    \Longrightarrow &0 \leq \vert q' - q \vert < 1 \\
+    \Longrightarrow &\vert q' - q \vert = 0 \\
+    \Longleftrightarrow &q = q' \\
+    \Longleftrightarrow &r = r'.
 \end{align*}
 $$
 
