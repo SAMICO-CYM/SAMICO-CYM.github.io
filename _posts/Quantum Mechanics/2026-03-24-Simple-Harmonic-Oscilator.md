@@ -41,7 +41,7 @@ $$\begin{align*}
 
 **(ii)** $\langle \psi_m \vert \psi_n \rangle = \delta_{mn}$
 
-**(iii)** $[\hat{a_+}, \hat{a_-}] = 1$
+**(iii)** $[\hat{a_-}, \hat{a_+}] = 1$
 
 **(iv)** $\hat{a_+} \hat{a_-} = \frac{1}{\hbar \omega} \left( \hat{H} - \frac{1}{2} \hbar \omega \right) = \frac{1}{\hbar \omega} \hat{\mathcal{H}} - \frac{1}{2}$
 
