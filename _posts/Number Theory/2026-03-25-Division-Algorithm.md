@@ -10,7 +10,15 @@ math: true
 Let $a, b \in \mathbb{Z}$ with $b \neq 0$. Then $\exists ! \, q, r \in \mathbb{Z}$ such that $a = bq + r$ and $0 \le r < \vert b \vert$.
 
 ### Proof
-Let $b > 0$, and let $S = \\{a - xb \geq 0 \mid x \in \mathbb{Z}\\}$. Since $b \geq 1$, $0 \leq a + |a| \leq a + |a|b = a - (-|a|)b$. Thus $S \neq \emptyset$. 
+Let $b > 0$, and let 
+
+$$S = \\{a - xb \geq 0 \mid x \in \mathbb{Z}\\}$$
+
+Since $b \geq 1$, we have
+
+$$0 \leq a + |a| \leq a + |a|b = a - (-|a|)b.$$
+
+Thus $S \neq \emptyset$. 
 
 By Well-Ordering Principle, there is the least element $r \in S$. Then $\exists q \in \mathbb{Z}$ such that $r = a - qb$. Suppose that $r \geq b$. Then $0 \leq r - b = r - (q + 1)b \in S$, but $r - (q+1)b \leq r \bigotimes$. Thus $0 \leq r < b = |b|$. 
 
