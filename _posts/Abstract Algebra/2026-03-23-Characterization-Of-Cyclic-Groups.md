@@ -116,3 +116,26 @@ $$\frac{\frac{ms}{d}}{\frac{n}{d}} = \frac{ms}{n} \in \mathbb{Z},$$
 so that $\frac{n}{d} \vert \frac{ms}{d}$, and so $\frac{n}{d} \vert m$ because $\gcd(\frac{n}{d}, \frac{s}{d}) = 1$. 
 
 Since $(a^s)^{\frac{n}{d}} = (a^{n})^{\frac{s}{d}} = e$, we have $m \vert \frac{n}{d}$. Thus $m = \frac{n}{d}$.  $\blacksquare$
+
+---
+
+## Corollary
+Let $G = \langle a \rangle$ with $\vert G \vert = n$. 
+
+**(i)** $\vert \langle a^s \rangle \vert = \vert \langle a^t \rangle \vert \iff \gcd(n, s) = \gcd(n, t)$.
+
+**(ii)** The other generators of $G$ are the elements of the form $a^r$, where $\gcd(n, r) = 1$.
+
+### Proof
+**(i)** By Theorem 2, 
+
+$$\begin{gather*} 
+\frac{n}{\gcd(n, s)} = \vert \langle a^s \rangle \vert = \vert \langle a^t \rangle \vert = \frac{n}{\gcd(n, t)} \\
+\iff \gcd(n, s) = \gcd(n, t).
+\end{gather*}$$
+
+**(ii)** Let $G = \langle a^r \rangle$. By Theorem 2, we have
+
+$$n = \vert G \vert = \vert \langle a^r \rangle \vert = \frac{n}{\gcd(n, r)}.$$
+
+Thus $\gcd(n, r) = 1$. $\blacksquare$
