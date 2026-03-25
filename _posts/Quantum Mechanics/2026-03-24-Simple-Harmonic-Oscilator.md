@@ -100,7 +100,7 @@ $$\begin{align*}
 &= \frac{1}{2} \hbar \omega
 \end{align*}$$
 
-이므로 바닥 상태의 에너지는 $E_0 = \frac{1}{2} \hbar \omega$이다. 한편 사다리 연산자는 에너지를 $\hbar \omega$만큼 올리고 내리는 연산자였으므로 파동함수에 연산자를 가할 때마다 한 단계 위, 혹은 한 단계 아래의 에너지에 해당하는 파동함수를 준다. 즉 각 자연수 $n = 1, 2, ...$에 대해서 $\hat{a_+} \psi_n = c_n \psi_{n+1}$, 그리고 $\hat{a_-} \psi_n  d_n \psi_{n-1}$으로 둘 수 있고, 각 파동함수의 에너지 $E_n$은 
+이므로 바닥 상태의 에너지는 $E_0 = \frac{1}{2} \hbar \omega$이다. 한편 사다리 연산자는 에너지를 $\hbar \omega$만큼 올리고 내리는 연산자였으므로 파동함수에 연산자를 가할 때마다 한 단계 위, 혹은 한 단계 아래의 에너지에 해당하는 파동함수를 준다. 즉 각 자연수 $n = 1, 2, ...$에 대해서 $\hat{a_+} \psi_n = c_n \psi_{n+1}$, 그리고 $\hat{a_-} \psi_n = d_n \psi_{n-1}$으로 둘 수 있고, 각 파동함수의 에너지 $E_n$은 
 
 $$E_n = \hbar \omega \left( n + \frac{1}{2} \right)$$
 
@@ -119,7 +119,7 @@ $$E_n = \hbar \omega \left( n + \frac{1}{2} \right)$$
 
 **(iv)** $\hat{a_-} \psi_n = \sqrt{n} \psi_{n-1}$ 
 
-**(v)** $\psi_n(x) = \frac{1}{\sqrt{n!}} (a_+)^n \psi_0(x)$ 
+**(v)** $\psi_n(x) = \frac{1}{\sqrt{n!}} (\hat{a}_+)^n \psi_0(x)$ 
 
 ### Proof
 **(i)** 
