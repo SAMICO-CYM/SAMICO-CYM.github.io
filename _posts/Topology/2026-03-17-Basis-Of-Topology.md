@@ -86,14 +86,14 @@ Since $\\{ B_x \in \mathcal{B} \mid x \in U \\}$ is a subcollection of $\mathcal
 ## Theorem 3
 Let $(X, \mathcal{T})$ be a topological space, and let $\mathcal{B}$ be a subcollection of $\mathcal{T}$. TFAE.
 
-**(i)** $\mathcal{B}$ is a basis for $\mathcal{T}$. That is, $\mathcal{T} = \mathcal{T}_\mathcal{B}$.
+**(i)** $\mathcal{B}$ is a basis for $\mathcal{T}$. That is, $\mathcal{T} = \mathcal{T} _{\mathcal{B}}$.
 
 **(ii)** For each $U \in \mathcal{T}$ and $x \in U$, $\exists B \in \mathcal{B}$ such that $x \in B \subset U$.
 
 ### Proof
 **(i)** $\implies$ **(ii)**
 
-By definition of $\mathcal{T}_{\mathcal{B}}$, it is clear.
+By definition of $\mathcal{T} _{\mathcal{B}}$, it is clear.
 
 **(ii)** $\implies$ **(i)**
 
@@ -105,18 +105,18 @@ Let $x \in B_1 \cap B_2$ for $B_1, B_2 \in \mathcal{B}$. Since $B_1, B_2 \in \ma
 
 Thus $\mathcal{B}$ is a basis.
 
-Next, we show that $\mathcal{T} = \mathcal{T}_{\mathcal{B}}$. 
+Next, we show that $\mathcal{T} = \mathcal{T} _{\mathcal{B}}$. 
 
-Let $U \in \mathcal{T}$. If $x \in U$, $\exists B \in \mathcal{B}$ such that $x \in B \subset U$ by assumption. Thus $U \in \mathcal{T_{\mathcal{B}}}$ by definition of $\mathcal{T_{\mathcal{B}}}$.
+Let $U \in \mathcal{T}$. If $x \in U$, $\exists B \in \mathcal{B}$ such that $x \in B \subset U$ by assumption. Thus $U \in \mathcal{T} _{\mathcal{B}}$ by definition of $\mathcal{T} _{\mathcal{B}}$.
 
-Let $U \in \mathcal{T_{\mathcal{B}}}$. By Theorem 2, $U = \bigcup_{K \in \mathcal{A}} K$ for some $\mathcal{A} \subset \mathcal{B}$. Since $\mathcal{B} \subset \mathcal{T}$, we have $U \in \mathcal{T}$.
+Let $U \in \mathcal{T} _{\mathcal{B}}$. By Theorem 2, $U = \bigcup_{K \in \mathcal{A}} K$ for some $\mathcal{A} \subset \mathcal{B}$. Since $\mathcal{B} \subset \mathcal{T}$, we have $U \in \mathcal{T}$.
 
-Thus $\mathcal{T} = \mathcal{T_{\mathcal{B}}}. \blacksquare$
+Thus $\mathcal{T} = \mathcal{T} _{\mathcal{B}}. \blacksquare$
 
 ---
 
 ## Theorem 4
-Let $\mathcal{B}$ and $\mathcal{B}'$ be bases for topologies $\mathcal{T_{\mathcal{B}}}$ and $\mathcal{T_{\mathcal{B}'}}$, respectively, on a set $X$. TFAE.
+Let $\mathcal{B}$ and $\mathcal{B}'$ be bases for topologies $\mathcal{T} _{\mathcal{B}}$ and $\mathcal{T} _{\mathcal{B}'}$, respectively, on a set $X$. TFAE.
 
 **(i)** $\mathcal{T} _{\mathcal{B}} \subset \mathcal{T} _{\mathcal{B}'}$, that is, $\mathcal{T} _{\mathcal{B}'}$ is finer than $\mathcal{T} _{\mathcal{B}}$.
 
@@ -124,7 +124,9 @@ Let $\mathcal{B}$ and $\mathcal{B}'$ be bases for topologies $\mathcal{T_{\mathc
 
 ### Proof
 **(i)** $\implies$ **(ii)**
-Let $x \in X$ and let $B \in \mathcal{B}$ such that $x \in B$. Since $\mathcal{T_{\mathcal{B}}} \subset \mathcal{T_{\mathcal{B}'}}$, we have $B \in \mathcal{T_{\mathcal{B}'}}$. By definition of $\mathcal{T_{\mathcal{B}'}}$, $\exists B' \in \mathcal{B}'$ such that $x \in B' \subset B$. 
+
+Let $x \in X$ and let $B \in \mathcal{B}$ such that $x \in B$. Since $\mathcal{T} _{\mathcal{B}} \subset \mathcal{T} _{\mathcal{B}'}$, we have $B \in \mathcal{T} _{\mathcal{B}'}$. By definition of $\mathcal{T} _{\mathcal{B}'}$, $\exists B' \in \mathcal{B}'$ such that $x \in B' \subset B$. 
 
 **(ii)** $\implies$ **(i)**
-Let $U \in \mathcal{T_{\mathcal{B}}}$. For each $x \in X$, $\exists B \in \mathcal{B}$ such that $x \in B \subset U$ by definition of $\mathcal{T_{\mathcal{B}}}$. By assumption, $\exists B' \in \mathcal{B}'$ such that $x \in B' \subset B \subset U$. Thus $U \in \mathcal{T_{\mathcal{B}'}}$. Hence $\mathcal{T_{\mathcal{B}}} \subset \mathcal{T_{\mathcal{B}'}}. \blacksquare$ 
+
+Let $U \in \mathcal{T} _{\mathcal{B}}$. For each $x \in X$, $\exists B \in \mathcal{B}$ such that $x \in B \subset U$ by definition of $\mathcal{T} _{\mathcal{B}}$. By assumption, $\exists B' \in \mathcal{B}'$ such that $x \in B' \subset B \subset U$. Thus $U \in \mathcal{T} _{\mathcal{B}'}$. Hence $\mathcal{T} _{\mathcal{B}} \subset \mathcal{T} _{\mathcal{B}'}. \blacksquare$ 
