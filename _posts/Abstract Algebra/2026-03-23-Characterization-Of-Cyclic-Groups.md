@@ -155,8 +155,4 @@ $k$가 $n$의 약수는 아니지만 적당히 공유하는 약수가 있다고 
 ---
 
 ## Example
-**(i)** In $\mathbb{Z}_{12}$, $\langle 3 \rangle = \\{ 0, 3, 6, 9 \\}$; so $\vert \langle 3 \rangle \vert = 4 = \frac{12}{\gcd(12, 3)}$
-
-**(ii)** In $\mathbb{Z}_{12}$, $\langle 4 \rangle = \\{ 0, 4, 8 \\}$; so $\vert \langle 4 \rangle \vert = 3 = \frac{12}{\gcd(12, 4)}$
-
-**(iii)** In $\mathbb{Z}_{12}$, $\langle 5 \rangle = \\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 \\}$; so $\vert \langle 5 \rangle \vert = 12 = \frac{12}{\gcd(12, 5)}$
+$\mathbb{Z}_{12}$를 고려하자. 직접 구해보면 $\langle 3 \rangle = \\{ 0, 3, 6, 9 \\}$이고, 위 정리를 사용해서 계산해도 $\vert \langle 3 \rangle \vert = 4 = \frac{12}{\gcd(12, 3)}$으로 같은 결과를 얻는다. 그런데 위에서 언급했듯이 $\langle 3 \rangle$을 생성하는 원소는 $3$이 유일하다고 말할수는 없다. Remark와 위 내용에 의하면 $\langle 3 \rangle$이라는 군에 대해서 3의 배수 $3n$ 중 $\gcd(12, 3n) = 3$을 만족하는 정수 $n$들을 구하면 생성원을 구할 수 있다. 즉, $n = 1, 3$이므로 $\langle 3 \rangle = \langle 9 \rangle$이다.
