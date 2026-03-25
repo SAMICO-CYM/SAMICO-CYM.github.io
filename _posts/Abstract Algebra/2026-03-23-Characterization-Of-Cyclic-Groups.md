@@ -6,7 +6,7 @@ tags: []
 math: true
 ---
 
-## Theorem
+## Theorem 1
 Let $G$ be a cyclic group.
 
 **(i)** If $\vert G \vert = \infty$, then $G \cong (\mathbb{Z}, +)$.
@@ -84,9 +84,35 @@ Let $G = \langle a \rangle$ with $\vert G \vert = n$.
 
 **(ii)** $a^m = e$ for some $m \in \mathbb{Z} \setminus \\{ 0 \\} \iff n \vert m$.
 
-즉 유한 순환군의 order는 생성원을 얼만큼 연산해야 항등원이 나오는지에 대한 지표라고도 할 수 있다. 그러면 거꾸로, 
-
 ---
 
 ## Example
 Let $U_n = \\{ z \in \mathbb{C} \mid z^n = 1 \\}$. Then $(U_n, \cdot) \cong (\mathbb{Z}_n, +)$.
+
+---
+
+## Theorem 2
+Let $G$ be a cyclic group with $\vert G \vert = n$, and let $a$ be a generator of $G$. Then 
+
+$$\vert \langle a^s \rangle \vert = \frac{n}{\gcd(n, s)}, \quad \forall s \in \mathbb{Z}$$
+
+### Proof
+
+Since $\langle a^s \rangle \le G$, $\vert \langle a^s \rangle \vert < \infty$. Let $m = \vert \langle a^s \rangle \vert$. Then $m$ is the smallest positive integer such that $a^{sm} = (a^s)^m = e$. Since $\vert \langle a \rangle \vert = \vert G \vert = n$, $n \vert sm$. 
+
+We claim $m = \frac{n}{\gcd(n, s)}$.
+
+$(\because)$ Let $d = \gcd(n, s)$. Then 
+
+$$\begin{align*}
+d &= n \alpha + s \beta \\
+\implies 1 &= \left( \frac{n}{d} \right) \alpha + \left( \frac{s}{d} \right) \beta
+\end{align*}$$
+
+for some $\alpha, \beta \in \mathbb{Z}$. Note that 
+
+$$\frac{\frac{ms}{d}}{\frac{n}{d}} = \frac{ms}{n} \in \mathbb{Z},$$
+
+so that $\frac{n}{d} \vert \frac{ms}{d}$, and so $\frac{n}{d} \vert m$ because $\gcd(\frac{n}{d}, \frac{s}{d}) = 1$. 
+
+Since $(a^s)^{\frac{n}{d}} = (a^{n})^{\frac{s}{d}} = e$, we have $m \vert \frac{n}{d}$. Thus $m = \frac{n}{d}$.  $\blacksquare$
