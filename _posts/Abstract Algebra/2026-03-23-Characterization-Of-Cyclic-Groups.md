@@ -84,6 +84,8 @@ Let $G = \langle a \rangle$ with $\vert G \vert = n$.
 
 **(ii)** $a^m = e$ for some $m \in \mathbb{Z} \setminus \\{ 0 \\} \iff n \vert m$.
 
+즉 유한 순환군의 order는 생성원을 얼만큼 연산해야 항등원이 나오는지에 대한 지표라고도 할 수 있다. 그러면 거꾸로, 
+
 ---
 
 ## Example
