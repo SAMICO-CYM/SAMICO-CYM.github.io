@@ -26,6 +26,6 @@ $(\because)$ Suppose that $a^i = a^j$ for some $0 \le i < j \le n-1$. Then $a^{j
 
 Clearly $\langle a \rangle \supset \\{ e, a, a^2, \cdots, a^{n-1} \\}$. Let $x \in \langle a \rangle$. Then $x = a^\ell$ for some $\ell \in \mathbb{Z}$. By division algorithm, $\exists q, r \in \mathbb{Z}$ such that $\ell = nq + r$ and $0 \le r \le n-1$. Then we have 
 
-$$x = a^{\ell} = (a^{n})^q a^r = a^r \in \\{ e, a, a^2, \cdots, a^{n-1} \\}.$$
+$$x = a^{\ell} = (a^{n})^q a^r = a^r \in \{ e, a, a^2, \cdots, a^{n-1} \}.$$
 
 Thus $\langle a \rangle = \\{ e, a, a^2, \cdots, a^{n-1} \\}$, so that $\vert a \vert = \vert \langle a \rangle \vert = n = \min \\{ m \in \mathbb{N} \mid a^m = e \\}$. $\blacksquare$
