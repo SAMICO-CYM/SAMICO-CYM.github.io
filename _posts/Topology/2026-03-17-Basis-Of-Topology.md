@@ -107,7 +107,7 @@ Thus $\mathcal{B}$ is a basis.
 
 Next, we show that $\mathcal{T} = \mathcal{T}_{\mathcal{B}}$. 
 
-Let $U \in \mathcal{T}$. If $x \in U$, $\exists B \in \mathcal{B}$ such that $x \in B \subset U$ by assumption. Thus $U \in \mathcal{T}_{\mathcal{B}}$ by definition of $\mathcal{T}_{\mathcal{B}}$.
+Let $U \in \mathcal{T}$. If $x \in U$, $\exists B \in \mathcal{B}$ such that $x \in B \subset U$ by assumption. Thus $U \in \mathcal{T_{\mathcal{B}}}$ by definition of $\mathcal{T_{\mathcal{B}}}$.
 
 Let $U \in \mathcal{T}_{\mathcal{B}}$. By Theorem 2, $U = \bigcup_{K \in \mathcal{A}} K$ for some $\mathcal{A} \subset \mathcal{B}$. Since $\mathcal{B} \subset \mathcal{T}$, we have $U \in \mathcal{T}$.
 
