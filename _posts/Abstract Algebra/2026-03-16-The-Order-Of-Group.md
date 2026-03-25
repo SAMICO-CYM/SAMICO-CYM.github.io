@@ -29,3 +29,5 @@ Clearly $\langle a \rangle \supset \\{ e, a, a^2, \cdots, a^{n-1} \\}$. Let $x \
 $$x = a^{\ell} = (a^{n})^q a^r = a^r \in \{ e, a, a^2, \cdots, a^{n-1} \}.$$
 
 Thus $\langle a \rangle = \\{ e, a, a^2, \cdots, a^{n-1} \\}$, so that $\vert a \vert = \vert \langle a \rangle \vert = n = \min \\{ m \in \mathbb{N} \mid a^m = e \\}$. $\blacksquare$
+
+군의 order는 단순히 군의 원소의 개수를 말한다. 그런데 유한군의 경우 그 순환군의 order는 특별하게도 생성원을 반복적으로 연산해서 항등원을 얻을 수 있는 가장 작은 자연수로 주어진다. 거꾸로 말해서 어떤 유한군이 순환군일 경우, 그 군의 order는 $a^n = e$를 만족하는 가장 작은 자연수 $n$으로 주어진다. 
