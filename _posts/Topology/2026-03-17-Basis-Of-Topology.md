@@ -72,7 +72,7 @@ Let us denote
 
 $$T = \left\{ \bigcup_{U \in \mathcal{A}} U \,\, \Bigg \vert \,\, \mathcal{A} \subset \mathcal{B} \right\}.$$
 
-Let $\displaystyle \bigcup_{U \in \mathcal{A}} U \in T$ where $\mathcal{A} \subset \mathcal{B}$. Since each $U \in \mathcal{B}$ is an element of $\mathcal{T} _{\mathcal{B}}$ and $\mathcal{T} _{\mathcal{B}}$ is a topology on $X$, the union $\displaystyle \bigcup_{U \in \mathcal{A}} U$ belongs to $\mathcal{T} _{\mathcal{B}}$, which means that $T \subset \mathcal{T} _{\mathcal{B}}$.
+Let $\bigcup_{U \in \mathcal{A}} U \in T$ where $\mathcal{A} \subset \mathcal{B}$. Since each $U \in \mathcal{B}$ is an element of $\mathcal{T} _{\mathcal{B}}$ and $\mathcal{T} _{\mathcal{B}}$ is a topology on $X$, the union $\bigcup_{U \in \mathcal{A}} U$ belongs to $\mathcal{T} _{\mathcal{B}}$, which means that $T \subset \mathcal{T} _{\mathcal{B}}$.
 
 Let $U \in \mathcal{T} _{\mathcal{B}}$. If $x \in U$, then $\exists B_x \in \mathcal{B}$ such that $x \in B_x \subset U$. Note that 
 
