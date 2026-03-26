@@ -23,5 +23,23 @@ math: true
 **(iii)** $\mathcal{T} _{\ell}$ and $\mathcal{T} _{K}$ are NOT comparable.
 
 ### Proof
+We will use the [Theorem 4](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-4>).
+
 **(i)** 
 
+If $x \in \mathbb{R}$, then $\exists (a, b) \in \mathcal{B}$ such that $x \in (a, b)$. Since $x \in [x, b) \in \mathcal{B}'$ and $[x, b) \subset (a, b)$, we have $\mathcal{T} \subset \mathcal{T} _{\mathcal{B}'}$. 
+
+Suppose that for each $x \in \mathbb{R}$ and $[a, b) \in \mathcal{B}'$ with $x \in [a, b)$, there exists $(a', b') \in \mathcal{B}$ such that $x \in (a', b') \subset [a, b)$. Then we have $a \le a' < x < b' \le b$. Note that $a \in [a, b)$, but we have $a \le a < a$. $\bigotimes$ Thus $\mathcal{T} \subsetneq \mathcal{T} _{\ell}$.  
+
+**(ii)** 
+
+If $x \in \mathbb{R}$, then $\exists (a, b) in \mathcal{B}$ such that $x \in (a, b)$. Since $x \in (a, b) \in \mathcal{B}''$, we have $\mathcal{T} \subset \mathcal{T} _{\mathcal{B}''}$. 
+
+Suppose that for $(0, 1) \setminus K \in \mathcal{B}''$, if $x \in (-1, 1) \setminus K$, then $\exists (a, b) \in \mathcal{B}$ such that $x \in (a, b) \subset (-1, 1) \setminus K$. Since $0 \in (-1, 1) \setminus K$, we have $0 \in (a, b) \subset (-1, 1) \setminus K$ for some $(a, b) \in \mathcal{B}$. Since $0 < b$, we have $\frac{1}{n} < b$ for some $n \in \mathbb{N}$ by Archimedean Property, which contradicts to $(a, b) \subset (-1, 1) \setminus K$. $\bigotimes$ Thus $\mathcal{T} \subsetneq \mathcal{T} _{K}$. 
+
+**(iii)** 
+Suppose that for $(0, 1) \setminus K \in \mathcal{B}''$, if $x \in (-1, 1) \setminus K$, then $\exists [a, b) \in \mathcal{B}'$ such that $x \in [a, b) \subset (-1, 1) \setminus K$. Since $0 \in (-1, 1) \setminus K$, we have $0 \in [a, b) \subset (-1, 1) \setminus K$ for some $[a, b) \in \mathcal{B}'$. Since $0 < b$, we have $\frac{1}{n} < b$ for some $n \in \mathbb{N}$ by Archimedean Property, which contradicts to $[a, b) \subset (-1, 1) \setminus K$. $\bigotimes$ Thus $\mathcal{T} _{K} \not\subset \mathcal{T} _{\ell}$. 
+
+
+
+Therefore, $\mathcal{T} _{\ell}$ and $\mathcal{T} _{K}$ are NOT comparable. 
