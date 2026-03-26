@@ -89,6 +89,8 @@ Let $(X, \mathcal{T})$ be a topological space, and let $\mathcal{B}$ be a subcol
 
 **(ii)** For each $U \in \mathcal{T}$ and $x \in U$, $\exists B \in \mathcal{B}$ such that $x \in B \subset U$.
 
+Theorem 1은 어떤 기저가 만들어내는 위상에 대해서 언급했다면, Theorem 3은 주어진 위상으로부터 컬렉션 $\mathcal{B}$를 위와 같이 정의하면 기저를 만들어낼 수 있음을 언급한다. 
+
 ### Proof
 **(i)** $\implies$ **(ii)**
 
@@ -118,6 +120,8 @@ Let $\mathcal{B}$ and $\mathcal{B}'$ be bases for topologies $\mathcal{T} _ { \m
 **(i)** $\mathcal{T} _ { \mathcal{B} } \subset \mathcal{T} _ { \mathcal{B}' }$, that is, $\mathcal{T} _ { \mathcal{B}' }$ is finer than $\mathcal{T} _ { \mathcal{B} }$.
 
 **(ii)** For each $x \in X$ and $B \in \mathcal{B}$ such that $x \in B$, $\exists B' \in \mathcal{B}'$ such that $x \in B' \subset B$.
+
+정리 자체는 한 방향의 포함 관계에 대해서만 말하고 있지만, 만약 두 방향 모두를 위 명제를 통해 보일 수 있다면 우리는 두 위상이 서로 같음을 보이게 된다. 
 
 ### Proof
 **(i)** $\implies$ **(ii)**
