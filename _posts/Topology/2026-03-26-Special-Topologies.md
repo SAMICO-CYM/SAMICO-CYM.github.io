@@ -29,17 +29,15 @@ We will use the [Theorem 4](<{% post_url Topology/2026-03-17-Basis-Of-Topology %
 
 If $x \in \mathbb{R}$, then $\exists (a, b) \in \mathcal{B}$ such that $x \in (a, b)$. Since $x \in [x, b) \in \mathcal{B}'$ and $[x, b) \subset (a, b)$, we have $\mathcal{T} \subset \mathcal{T} _{\ell}$. 
 
-Suppose that for each $x \in \mathbb{R}$ and $[a, b) \in \mathcal{B}'$ with $x \in [a, b)$, there exists $(a', b') \in \mathcal{B}$ such that $x \in (a', b') \subset [a, b)$. Then we have $a \le a' < x < b' \le b$. Note that $a \in [a, b)$, but we have $a \le a < a$. $\bigotimes$ Thus $\mathcal{T} \subsetneq \mathcal{T} _{\ell}$.  
+Suppose that for $[a, b) \in \mathcal{B}'$, if $x \in [a, b)$, then $\exists (a', b') \in \mathcal{B}$ such that $x \in (a', b') \subset [a, b)$. Since $a \in [a, b)$, we have $a \in (a', b') \subset [a, b)$ for some $(a', b') \in \mathcal{B}$. Then we have $a \le a' < a < b' \le b$. $\bigotimes$ Thus $\mathcal{T} \subsetneq \mathcal{T} _{\ell}$.  
 
 **(ii)** 
 
-If $x \in \mathbb{R}$, then $\exists (a, b) in \mathcal{B}$ such that $x \in (a, b)$. Since $x \in (a, b) \in \mathcal{B}''$, we have $\mathcal{T} \subset \mathcal{T} _{K}$. 
+If $x \in \mathbb{R}$, then $\exists (a, b) \in \mathcal{B}$ such that $x \in (a, b)$. Since $x \in (a, b) \in \mathcal{B}''$, we have $\mathcal{T} \subset \mathcal{T} _{K}$. 
 
 Suppose that for $(0, 1) \setminus K \in \mathcal{B}''$, if $x \in (-1, 1) \setminus K$, then $\exists (a, b) \in \mathcal{B}$ such that $x \in (a, b) \subset (-1, 1) \setminus K$. Since $0 \in (-1, 1) \setminus K$, we have $0 \in (a, b) \subset (-1, 1) \setminus K$ for some $(a, b) \in \mathcal{B}$. Since $0 < b$, we have $\frac{1}{n} < b$ for some $n \in \mathbb{N}$ by Archimedean Property, which contradicts to $(a, b) \subset (-1, 1) \setminus K$. $\bigotimes$ Thus $\mathcal{T} \subsetneq \mathcal{T} _{K}$. 
 
 **(iii)** 
 Suppose that for $(0, 1) \setminus K \in \mathcal{B}''$, if $x \in (-1, 1) \setminus K$, then $\exists [a, b) \in \mathcal{B}'$ such that $x \in [a, b) \subset (-1, 1) \setminus K$. Since $0 \in (-1, 1) \setminus K$, we have $0 \in [a, b) \subset (-1, 1) \setminus K$ for some $[a, b) \in \mathcal{B}'$. Since $0 < b$, we have $\frac{1}{n} < b$ for some $n \in \mathbb{N}$ by Archimedean Property, which contradicts to $[a, b) \subset (-1, 1) \setminus K$. $\bigotimes$ Thus $\mathcal{T} _{K} \not\subset \mathcal{T} _{\ell}$. 
 
-
-
-Therefore, $\mathcal{T} _{\ell}$ and $\mathcal{T} _{K}$ are NOT comparable. 
+Suppose that for $[a, b) \in \mathcal{B}'$, if $x \in [a, b)$, then $\exists B'' \in \mathcal{B}''$ such that $x \in B'' \subset [a, b)$. Since $a \in [a, b)$, we have $a \in B'' \subset [a, b)$ for some $B'' \in \mathcal{B}''$. Note that $B'' = (a', b')$ or $(a', b') \setminus K$. For any case, we have $a \le a' < a < b' \le b$. $\bigotimes$ Thus $\mathcal{T} _{\ell} \not\subset \mathcal{T} _{K}$, and therefore, $\mathcal{T} _{\ell}$ and $\mathcal{T} _{K}$ are NOT comparable. $\blacksquare$
