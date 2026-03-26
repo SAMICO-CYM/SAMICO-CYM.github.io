@@ -25,9 +25,9 @@ is a topology on $X$. In this case, we say that $\mathcal{T} _ { \mathcal{B} }$ 
 즉 부분집합 $U \subset X$가 기저 집합들에 대해서 open set의 성질을 만족하도록 collection을 구성하면 자연스럽게 위상 공간을 만들 수 있고, 이를 기저 $\mathcal{B}$가 생성하는 위상 공간이라고 부른다.
 
 ### Proof
-If $U = \emptyset$, then it satisfies the condition vacuously, which means that $\emptyset \in \mathcal{T}$. Let $U = X$ and let $x \in U$. Since $\mathcal{B}$ is a basis, $\exists B \in \mathcal{B}$ such that $x \in B \subset X = U$, so that $X \in \mathcal{T}$.
+If $U = \emptyset$, then it satisfies the condition vacuously, which means that $\emptyset \in \mathcal{T} _ { \mathcal{B} }$. Let $U = X$ and let $x \in U$. Since $\mathcal{B}$ is a basis, $\exists B \in \mathcal{B}$ such that $x \in B \subset X = U$, so that $X \in \mathcal{T} _ { \mathcal{B} }$.
 
-Let $\\{ U_\alpha \\}$ be a subcollection of $\mathcal{T}$. Then clearly the union of the subcollection is a subset of $X$. If we choose arbitrary $x$ in this union, then $x \in U_\alpha$ for some $U_\alpha \in \mathcal{T}$. By the definition, there exists $B \in \mathcal{B}$ such that $x \in B \subset U_\alpha \subset \bigcup U_\alpha$. Thus the union of the subcollection is an element of $\mathcal{T}$.
+Let $\\{ U_\alpha \\} \subset \mathcal{T} _ { \mathcal{B} }$. Clearly $\bigcup U_{\alpha} \subset X$. If $x \in \bigcup U_{\alpha}$, then $x \in U_{\alpha}$ for some $\alpha$. Since each $U_{\alpha}$ is in $\mathcal{T} _ { \mathcal{B} }$, there exists $B_x \in \mathcal{B}$ such that $x \in B_x \subset U_{\alpha} \subset \bigcup U_{\alpha}$.
 
 Let $\\{U_i \\}_{i=1}^n$ be a finite subcollection of $\mathcal{T}$. 
 
