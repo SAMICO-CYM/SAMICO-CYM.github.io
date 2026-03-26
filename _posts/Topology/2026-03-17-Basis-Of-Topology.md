@@ -27,9 +27,11 @@ is a topology on $X$. In this case, we say that $\mathcal{T} _ { \mathcal{B} }$ 
 ### Proof
 If $U = \emptyset$, then it satisfies the condition vacuously, which means that $\emptyset \in \mathcal{T} _ { \mathcal{B} }$. Let $U = X$ and let $x \in U$. Since $\mathcal{B}$ is a basis, $\exists B \in \mathcal{B}$ such that $x \in B \subset X = U$, so that $X \in \mathcal{T} _ { \mathcal{B} }$.
 
-Let $\\{ U_\alpha \\} \subset \mathcal{T} _ { \mathcal{B} }$. Clearly $\bigcup U_{\alpha} \subset X$. If $x \in \bigcup U_{\alpha}$, then $x \in U_{\alpha}$ for some $\alpha$. Since each $U_{\alpha}$ is in $\mathcal{T} _ { \mathcal{B} }$, there exists $B_x \in \mathcal{B}$ such that $x \in B_x \subset U_{\alpha} \subset \bigcup U_{\alpha}$.
+Let $\\{ U_\alpha \\} \subset \mathcal{T} _ { \mathcal{B} }$. Clearly $\bigcup U_{\alpha} \subset X$. If $x \in \bigcup U_{\alpha}$, then $x \in U_{\alpha}$ for some $\alpha$. Since each $U_{\alpha}$ is in $\mathcal{T} _ { \mathcal{B} }$, there exists $B_x \in \mathcal{B}$ such that $x \in B_x \subset U_{\alpha} \subset \bigcup U_{\alpha}$. Thus the union of $\\{ U_{\alpha} \\}$ is an element of $\mathcal{T} _ { \mathcal{B} }$.
 
-Let $\\{U_i \\}_{i=1}^n$ be a finite subcollection of $\mathcal{T}$. 
+We show the final condition by induction. Let $U_1, U_2 \in \mathcal{T} _ { \mathcal{B} }$. Let $x \in U_1 \cap U_2$. Since $U_1$ and $U_2$ are the elements of $\mathcal{T} _ { \mathcal{B} }$, there exists $B_1, B_2 \in \mathcal{B}$ such that $x \in B_1 \subset U_1$ and $x \in B_2 \subset U_2$. Then $x \in B_1 \cap B_2 \subset U_1 \cap U_2$. Since $\mathcal{B}$ is a basis, $\exists B_3 \in \mathcal{B}$ such that $x \in B_3 \subset B_1 \cap B_2 \subset U_1 \cap U_2$. Thus $U_1 \cap U_2 \in \mathcal{T} _ { \mathcal{B} }$.
+
+Suppose that $U_1 \cap \cdots \cap U_{n} \in \mathcal{T} _ { \mathcal{B} }$ for any $U_1, ..., U_n \in \mathcal{T} _ { \mathcal{B} }$. Let $U_{n+1} \in \mathcal{T} _ { \mathcal{B} }$. Since we have shown the intersection of two sets in $\mathcal{T} _ { \mathcal{B} }$ is also an element of $\mathcal{T} _ { \mathcal{B} }$, we have $U_1 \cap \cdots \cap U_{n+1} \in \mathcal{T} _ { \mathcal{B} }$. Thus $\mathcal{T} _ { \mathcal{B} }$ is a topology on $X$. $\blacksquare$
 
 ---
 
