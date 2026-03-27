@@ -135,8 +135,8 @@ g'(x) = \frac{1}{2} \left( \phi'(x) - \frac{\psi(x)}{c} \right)
 \end{cases}
 \\
 \implies &\begin{cases}
-f(x) = \frac{1}{2} \left( \phi(x) + \frac{1}{c} \int^x \psi(s) ds \right) + C_1 \\
-g(x) = \frac{1}{2} \left( \phi(x) - \frac{1}{c} \int^x \psi(s) ds \right) + C_2
+f(x) = \frac{1}{2} \phi(x) + \frac{1}{2c} \int^x \psi(s) ds  + C_1 \\
+g(x) = \frac{1}{2} \phi(x) - \frac{1}{2c} \int^x \psi(s) ds  + C_2
 \end{cases}
 \end{align*}$$
 
