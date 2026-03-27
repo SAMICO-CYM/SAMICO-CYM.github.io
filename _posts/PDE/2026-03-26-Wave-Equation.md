@@ -118,18 +118,17 @@ $$u_t = cf'(x + ct) - cg'(x - ct)$$
 
 Taking $t = 0$, we have
 
-$$
+$$\begin{align*}
 \begin{cases}
 f(x) + g(x) = \phi(x) \\
 cf'(x) - cg'(x) = \psi(x)
 \end{cases}
-$$
-
-$$
+\\
 \begin{cases}
 f'(x) + g'(x) = \phi'(x) \\
 f'(x) - g'(x) = \frac{\psi(x)}{c}
 \end{cases}
+\end{align*}
 $$
 
 $$
@@ -144,6 +143,8 @@ $$
 f(x) = \frac{1}{2} \left( \phi(x) + \frac{1}{c} \int^x \psi(s) ds \right) + C_1 \\
 g(x) = \frac{1}{2} \left( \phi(x) - \frac{1}{c} \int^x \psi(s) ds \right) + C_2
 \end{cases}
+$$
+
 $$
 \implies u(x, t) = f(x + ct) + g(x - ct) = \frac{1}{2} [\phi(x + ct) + \phi(x - ct)] + \frac{1}{2c} \int_{x - ct}^{x + ct} \psi(s) ds. \blacksquare
 
