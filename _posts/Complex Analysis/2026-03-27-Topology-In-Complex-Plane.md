@@ -22,7 +22,7 @@ $$N_{\varepsilon}(z_0) = \{ z \in \mathbb{C} \mid \vert z - z_0 \vert < \varepsi
 
 **(4)** $z_0$ is a ***boundary point*** of $S$ if every neighborhood of $z_0$ contains at least one point in $S$ and at least one point not in $S$. In other words, $z_0$ is a boundary point of $S$ if it is neither an interior point nor an exterior point of $S$. The set of all boundary points of $S$ is called the ***boundary*** of $S$ and is denoted by $\partial S$.
 
-**(5)** $S$ is an ***open set*** if $\S = \mathrm{int}(S) \iff S \cap \partial S = \emptyset$.
+**(5)** $S$ is an ***open set*** if $S = \mathrm{int}(S) \iff S \cap \partial S = \emptyset$.
 
 **(6)** $S$ is a ***closed set*** if $\partial S \subset S$.
 
