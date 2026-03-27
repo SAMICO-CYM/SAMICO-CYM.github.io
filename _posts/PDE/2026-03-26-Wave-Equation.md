@@ -119,12 +119,12 @@ $$u_t = cf'(x + ct) - cg'(x - ct)$$
 Taking $t = 0$, we have
 
 $$\begin{align*}
-\begin{cases}
+&\begin{cases}
 f(x) + g(x) = \phi(x) \\
 cf'(x) - cg'(x) = \psi(x)
 \end{cases}
 \\
-\begin{cases}
+\implies &\begin{cases}
 f'(x) + g'(x) = \phi'(x) \\
 f'(x) - g'(x) = \frac{\psi(x)}{c}
 \end{cases}
