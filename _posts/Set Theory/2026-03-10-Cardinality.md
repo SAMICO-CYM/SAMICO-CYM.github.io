@@ -7,4 +7,4 @@ math: true
 ---
 
 ## Definition
-Cardinality
+Cardinality 

@@ -25,18 +25,16 @@ Boolean lattice $\mathcal{B}_3$을 고려하자.
 
 딱봐도 $\\{(0, 1, 1), (1, 0, 1), (1, 1, 0) \\}$과 $\\{ (0,0,1), (0,1,0), (1,0,0) \\}$은 antichain이고, $\\{ (0,0,0), (0,0,1), (0,1,1), (1,1,1) \\}$은 chain이다. 
 
-직관적으로도 알 수 있듯이 chain은 위아래로 뻗어있지만 antichain은 좌우로 퍼져있는 느낌이다. Hasse diagram을 그리면 순서 관계에 있어서 우세할수록 위쪽에 놓이고, 열세할수록 아래쪽에 놓이지만 순서 관계가 없는 원소끼리는 같은 높이에 놓이는 경향이 있기 때문이다. 
-
-그러면 자연스럽게 드는 질문이, 어떤 finite poset이 주어졌을 때 가장 긴 chain의 길이와 가장 넓은 antichain의 너비는 얼마일까?
+직관적으로도 알 수 있듯이 chain은 위아래로 뻗어있지만 antichain은 좌우로 퍼져있는 느낌이다. Hasse diagram을 그리면 순서 관계에 있어서 우세할수록 위쪽에 놓이고, 열세할수록 아래쪽에 놓이지만 순서 관계가 없는 원소끼리는 같은 높이에 놓이는 경향이 있기 때문이다. 그래서 chain중 가장 원소가 많은 chain의 크기를 height라고 부르고, antichain중 가장 원소가 많은 antichain의 크기를 width라고 부른다. 그러면 자연스럽게 드는 질문이, 어떤 finite poset이 주어졌을 때 가장 긴 chain의 길이와 가장 넓은 antichain의 너비는 얼마일까?
 
 ---
 
 ## Definition 2
 Let $(X, \le)$ be a poset.
 
-**(i)** The ***height*** $\omega(X)$ of $X$ is the size of it largest chain.
+**(i)** The ***height*** $\, \omega(X)$ of $X$ is the size of it largest chain.
 
-**(ii)** The ***width*** $\alpha(X)$ of $X$ is the size of it largest antichain.
+**(ii)** The ***width*** $\, \alpha(X)$ of $X$ is the size of it largest antichain.
 
 ---
 
