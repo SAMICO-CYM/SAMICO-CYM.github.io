@@ -17,7 +17,47 @@ where $c$ is a constant.
 
 ---
 
-## Theorem
+## Theorem 1
+The general solution of the wave equation $u_{tt} = c^2 u_{xx}$ for $-\infty < x < \infty, t > 0$ is given by
+
+$$
+u(x, t) = f(x + ct) + g(x - ct)
+$$
+
+where $f$ and $g$ are arbitrary twice differentiable functions.
+
+### Proof
+Note that 
+
+$$\partial_{tt} - c^2 \partial_{xx} = (\partial_t - c \partial_x)(\partial_t + c \partial_x)$$
+
+Let $v = u_t + c u_x$. Then the wave equation can be written as
+
+$$
+v_t - cv_x = 0,
+$$
+
+[which solution is given by $v(x, t) = h(x + ct)$ for some arbitrary function $h$.](<{% post_url PDE/2026-03-10-1st-Order-Linear-PDE-Constant-Coefficients %}#theorem-1>)
+
+Thus, we have
+
+$$
+v = u_t + cu_x = h(x + ct)
+$$
+
+We can easily verify that $u(x, t) = f(x + ct)$ where $f$ is a function such that $f'(s) = \frac{h(s)}{2c}$. 
+
+$\Big[$ Since $u_x = f'(x+ct)$ and $u_t = c f'(x+ct)$, we have
+
+$$\begin{align*}
+u_t + c u_x &= c f'(x+ct) + c f'(x+ct) \\
+&= 2c f'(x+ct) \\
+&= h(x+ct) \Big]
+\end{align*}$$
+
+---
+
+## Theorem 2
 The initial value problem for the wave equation
 
 $$\begin{cases}
