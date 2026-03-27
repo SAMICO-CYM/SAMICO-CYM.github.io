@@ -90,6 +90,12 @@ u_{tt} - c^2 u_{xx} = -4c^2 u_{\xi \eta} = 0 \\
 
 The solution to the above equation is $u(x, y) = u(\xi, \eta) = f(\xi) + g(\eta) = f(x+ct) + g(x-ct)$ for some arbitrary twice differentiable functions $f$ and $g$. $\blacksquare$
 
+증명 1의 첫 줄에서 확인한 것처럼, 파동 방정식의 연산자는 두 개의 연산자 $\mathcal{L}_1 = \partial_t - c \partial_x$와 $\mathcal{L}_2 = \partial_t + c \partial_x$의 합성으로 분해할 수 있다.
+
+$$\partial_{tt} - c^2 \partial_{xx} = (\partial_t - c \partial_x)(\partial_t + c \partial_x)$$
+
+이때 각 미분연산자의 characteristic line이 $x + ct = A$, $x - ct = B$로 주어지므로, 변수를 이와 같이 치환하여 두는 방법이 효과가 있다. 
+
 ---
 
 ## Theorem 2
