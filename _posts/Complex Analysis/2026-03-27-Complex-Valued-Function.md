@@ -21,7 +21,7 @@ Let $f$ be a complex valued function on $S$. Then $f$ can be written as $f(z) = 
 
 ## Example
 
-**(i)** Consider $f(z) = \frac{1}{z}, \forall z \in \mathbb{C} \setminus \{ 0 \}$. Note that 
+**(i)** Consider $f(z) = \frac{1}{z}, \forall z \in \mathbb{C} \setminus \\{ 0 \\}$. Note that 
 
 $$\begin{align*}
 f(z) &= \frac{1}{z} \\
@@ -47,7 +47,7 @@ Hence $f = u + iv$ where
 
 $$u(x, y) = x^2 - y^2 \quad \text{and} \quad v(x, y) = 2xy.$$
 
-**(iii)** Consider $f(z) = z^{\frac{1}{2}}, \forall z \in \mathbb{C} \setminus \{ 0 \}$. Since $z^{\frac{1}{2}}$ has the two possible values
+**(iii)** Consider $f(z) = z^{\frac{1}{2}}, \forall z \in \mathbb{C} \setminus \\{ 0 \\}$. Since $z^{\frac{1}{2}}$ has the two possible values
 
 $$z^{\frac{1}{2}} = \pm \sqrt{r} \exp \left( i \frac{\Theta}{2} \right)$$
 
