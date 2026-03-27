@@ -47,13 +47,17 @@ $$
 
 We can easily verify that $u(x, t) = f(x + ct)$ where $f$ is a function such that $f'(s) = \frac{h(s)}{2c}$. 
 
-$\Big[$ Since $u_x = f'(x+ct)$ and $u_t = c f'(x+ct)$, we have
+$\Big[$ $(\because)$ Since $u_x = f'(x+ct)$ and $u_t = c f'(x+ct)$, we have
 
 $$\begin{align*}
 u_t + c u_x &= c f'(x+ct) + c f'(x+ct) \\
 &= 2c f'(x+ct) \\
 &= h(x+ct) \Big]
 \end{align*}$$
+
+Since the homogeneous equation $u_t + cu_x = 0$ has the solution $u(x, t) = g(x - ct)$ and the wave equation is linear, we have the general solution
+
+$$u(x, t) = f(x + ct) + g(x - ct). \blacksquare$$
 
 ---
 
