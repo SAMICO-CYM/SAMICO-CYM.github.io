@@ -128,24 +128,25 @@ cf'(x) - cg'(x) = \psi(x)
 f'(x) + g'(x) = \phi'(x) \\
 f'(x) - g'(x) = \frac{\psi(x)}{c}
 \end{cases}
-\end{align*}
-$$
-
-$$
-\implies \begin{cases}
+\\
+\implies &\begin{cases}
 f'(x) = \frac{1}{2} \left( \phi'(x) + \frac{\psi(x)}{c} \right) \\
 g'(x) = \frac{1}{2} \left( \phi'(x) - \frac{\psi(x)}{c} \right)
 \end{cases}
-$$
-
-$$
-\implies \begin{cases}
+\\
+\implies &\begin{cases}
 f(x) = \frac{1}{2} \left( \phi(x) + \frac{1}{c} \int^x \psi(s) ds \right) + C_1 \\
 g(x) = \frac{1}{2} \left( \phi(x) - \frac{1}{c} \int^x \psi(s) ds \right) + C_2
 \end{cases}
-$$
+\end{align*}$$
+
+Since $\phi(x) = f(x) + g(x) = \phi(x) + C_1 + C_2$, we have $C_1 + C_2 = 0$.
+
+Thus the particular solution is
 
 $$
-\implies u(x, t) = f(x + ct) + g(x - ct) = \frac{1}{2} [\phi(x + ct) + \phi(x - ct)] + \frac{1}{2c} \int_{x - ct}^{x + ct} \psi(s) ds. \blacksquare
-
+\begin{align*}
+u(x, t) &= f(x + ct) + g(x - ct) \\
+&= \frac{1}{2} [\phi(x + ct) + \phi(x - ct)] + \frac{1}{2c} \int_{x - ct}^{x + ct} \psi(s) ds. \blacksquare
+\end{align*}
 $$
