@@ -21,6 +21,8 @@ Let $(X, \le)$ be a poset.
 
 Boolean lattice $\mathcal{B}_3$을 고려하자. 
 
+![Hasse Diagram](assets/img/booleanlattice.png)
+
 딱봐도 $\\{(0, 1, 1), (1, 0, 1), (1, 1, 0) \\}$과 $\\{ (0,0,1), (0,1,0), (1,0,0) \\}$은 antichain이고, $\\{ (0,0,0), (0,0,1), (0,1,1), (1,1,1) \\}$은 chain이다. 
 
 직관적으로도 알 수 있듯이 chain은 위아래로 뻗어있지만 antichain은 좌우로 퍼져있는 느낌이다. Hasse diagram을 그리면 순서 관계에 있어서 우세할수록 위쪽에 놓이고, 열세할수록 아래쪽에 놓이지만 순서 관계가 없는 원소끼리는 같은 높이에 놓이는 경향이 있기 때문이다. 
