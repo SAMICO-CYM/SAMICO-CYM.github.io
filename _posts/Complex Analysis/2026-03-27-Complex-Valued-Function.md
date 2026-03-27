@@ -25,7 +25,7 @@ Let $f$ be a complex valued function on $S$. Then $f$ can be written as $f(z) = 
 
 $$\begin{align*}
 f(z) &= \frac{1}{z} \\
-&= \frac{\var{z}}{\vert z \vert^2} \\
+&= \frac{\bar{z}}{\vert z \vert^2} \\
 &= \frac{x - iy}{x^2 + y^2} \\
 &= \left( \frac{x}{x^2 + y^2} \right) + i \left( \frac{-y}{x^2 + y^2} \right).
 \end{align*}$$
