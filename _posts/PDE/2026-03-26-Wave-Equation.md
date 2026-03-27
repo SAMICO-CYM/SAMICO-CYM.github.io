@@ -18,7 +18,7 @@ where $c$ is a constant.
 ---
 
 ## Theorem 1
-The general solution of the wave equation $u_{tt} = c^2 u_{xx}$ for $-\infty < x < \infty, t > 0$ is given by
+The general solution of the wave equation $u_{tt} = c^2 u_{xx}$ is given by
 
 $$
 u(x, t) = f(x + ct) + g(x - ct)
@@ -26,7 +26,7 @@ $$
 
 where $f$ and $g$ are arbitrary twice differentiable functions.
 
-### Proof
+### Proof 1
 Note that 
 
 $$\partial_{tt} - c^2 \partial_{xx} = (\partial_t - c \partial_x)(\partial_t + c \partial_x)$$
@@ -58,6 +58,37 @@ u_t + c u_x &= c f'(x+ct) + c f'(x+ct) \\
 Since the homogeneous equation $u_t + cu_x = 0$ has the solution $u(x, t) = g(x - ct)$ and the wave equation is linear, we have the general solution
 
 $$u(x, t) = f(x + ct) + g(x - ct). \blacksquare$$
+
+### Proof 2
+We can derive the general solution by the method of change of variables. Let 
+
+$$\begin{align*}
+\xi &= x + ct \\
+\eta &= x - ct
+\end{align*}$$
+
+Then we have
+
+$$\begin{align*}
+u_x &= u_\xi + u_\eta \\
+u_t &= c(u_\xi - u_\eta)
+\end{align*}$$
+
+so that
+
+$$\begin{align*}
+u_{xx} &= u_{\xi \xi} + 2 u_{\xi \eta} + u_{\eta \eta} \\
+u_{tt} &= c^2 (u_{\xi \xi} - 2 u_{\xi \eta} + u_{\eta \eta}).
+\end{align*}$$
+
+Thus the wave equation can be written as
+
+$$\begin{gather*}
+u_{tt} - c^2 u_{xx} = -4c^2 u_{\xi \eta} = 0 \\
+\implies u_{\xi \eta} = 0.
+\end{gather*}$$
+
+The solution to the above equation is $u(x, y) = u(\xi, \eta) = f(\xi) + g(\eta) = f(x+ct) + g(x-ct)$ for some arbitrary twice differentiable functions $f$ and $g$. $\blacksquare$
 
 ---
 
