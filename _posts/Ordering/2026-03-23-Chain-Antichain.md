@@ -21,7 +21,7 @@ Let $(X, \le)$ be a poset.
 
 Boolean lattice $\mathcal{B}_3$을 고려하자. 
 
-![Hasse Diagram](assets/img/booleanlattice.png)
+![Hasse Diagram](assets/img/booleanlattice.jpg)
 
 딱봐도 $\\{(0, 1, 1), (1, 0, 1), (1, 1, 0) \\}$과 $\\{ (0,0,1), (0,1,0), (1,0,0) \\}$은 antichain이고, $\\{ (0,0,0), (0,0,1), (0,1,1), (1,1,1) \\}$은 chain이다. 
 
