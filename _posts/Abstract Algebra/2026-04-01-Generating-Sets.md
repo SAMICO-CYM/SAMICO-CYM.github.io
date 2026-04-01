@@ -18,7 +18,9 @@ Let $G$ be a group and let $S = \\{ a_i \mid i \in I \\}$ be a subset of $G$.
 ---
 
 ## Theorem 1
-Let $G$ be a group and let $\\{ H_i \\} _ {i \in I}$ be a collection of subgroups of $G$. Then $\bigcap_{i \in I} H_i \le G$.
+Let $G$ be a group and let $\\{ H_i \\} _ {i \in I}$ be a collection of subgroups of $G$. Then 
+
+$$\bigcap_{i \in I} H_i \le G.$$
 
 ### Proof
 Let $a, b \in \bigcap_{i \in I} H_i$. Then $a, b \in H_i, \forall i \in I$. Since $H_i \le G$ for each $i$, we have $ab^{-1} \in H_i, \forall i \in I$. Thus $ab^{-1} \in \bigcap_{i \in I} H_i$, which means that $\bigcap_{i \in I} H_i \le G$. $\blacksquare$
@@ -29,7 +31,7 @@ Let $G$ be a group and let $S \subset G$. Then
 $$\langle S \rangle = \bigcap_{S \subset H \le G} H.$$
 
 ### Proof
-Let $X$ be a subgroup of $G$ containing $S$. Since $X \in \{ H \mid S \subset H \le G \}$, we have 
+Let $X$ be a subgroup of $G$ containing $S$. Since $X \in \\{ H \mid S \subset H \le G \\}$, we have 
 
 $$\bigcap_{S \subset H \le G} H \subset X,$$
 
