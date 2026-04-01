@@ -29,7 +29,7 @@ $$(x, y) \in U_1 \times V_1 \cap U_2 \times V_2 = (U_1 \cap U_2) \times (V_1 \ca
 
 since $\mathcal{T}$ and $\mathcal{T}'$ are topologies. Thus $\mathcal{B}$ is a basis.
 
-**(ii)** We will use [Theorem 3](<{% post_url Topology/2026-03-17-Basis-Of-Toplogy %}#theorem-3>). 
+**(ii)** We will use [Theorem 3](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-3>). 
 
 
 ---
