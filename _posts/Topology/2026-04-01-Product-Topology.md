@@ -29,7 +29,11 @@ $$(x, y) \in U_1 \times V_1 \cap U_2 \times V_2 = (U_1 \cap U_2) \times (V_1 \ca
 
 since $\mathcal{T}$ and $\mathcal{T}'$ are topologies. Thus $\mathcal{B}$ is a basis.
 
-**(ii)** We will use [Theorem 3](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-3>). 
+**(ii)** We will use [Theorem 3](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-3>). Let $\mathcal{T}$ be the product topology. For each $W \in \mathcal{T}$ and each $(x, y) \in W$, $\exists U \in \mathcal{T}, V \in \mathcal{T}'$ such that $(x, y) \in U \times V \subset W$ by (i). Since $\mathcal{B}$ and $\mathcal{C}$ are bases, $\exists B \in \mathcal{B}, C \in \mathcal{C}$ such that 
+
+$$(x, y) \in B \times C \subset U \times V \subset W,$$
+
+which means that $\mathcal{D}$ is a basis. $\blacksquare$
 
 
 ---
