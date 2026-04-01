@@ -91,7 +91,7 @@ $(\because)$ Let $a, b \in \mathbb{Z}$. Then $a \equiv r_1 \pmod{n}$ and $b \equ
 
 $$\begin{align*}
 \phi(a+b) &\equiv r_1 + r_2 \pmod{n} \\
-&\equiv \phi(a) + \phi(b) \pmod{n},
+&= \phi(a) + \phi(b),
 \end{align*}$$
 
 so $\phi$ is a homomorphism. 
