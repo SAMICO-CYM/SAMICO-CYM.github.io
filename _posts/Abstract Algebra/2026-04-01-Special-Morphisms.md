@@ -87,11 +87,11 @@ $$\phi(a) = a \pmod{n}, \forall a \in \mathbb{Z}.$$
 
 Then $\phi$ is an epimorphism. 
 
-$(\because)$ Let $a, b \in \mathbb{Z}$. Then $a \equiv r_1 (\pmod{n})$ and $b \equiv r_2 (\pmod{n})$ for some $r_1, r_2 \in \\{ 0, 1, ..., n-1 \\}$. Note that $a+b \equiv r_1 + r_2 (\pmod{n})$. Then
+$(\because)$ Let $a, b \in \mathbb{Z}$. Then $a \equiv r_1 \pmod{n}$ and $b \equiv r_2 \pmod{n}$ for some $r_1, r_2 \in \\{ 0, 1, ..., n-1 \\}$. Note that $a+b \equiv r_1 + r_2 \pmod{n}$. Then
 
 $$\begin{align*}
-\phi(a+b) &\equiv r_1 + r_2 (\pmod{n}) \\
-&\equiv \phi(a) + \phi(b) (\pmod{n}),
+\phi(a+b) &\equiv r_1 + r_2 \pmod{n} \\
+&\equiv \phi(a) + \phi(b) \pmod{n},
 \end{align*}$$
 
 so $\phi$ is a homomorphism. 
