@@ -26,8 +26,7 @@ Let $\phi : (S, \ast) \to (T, \ast')$ be an isomorphism of $(S, \ast)$ with $(T,
 Let $t \in T$. Then $\exists s \in S$ such that $\phi(s) = t$ because $\phi$ is surjective. Thus we have
 
 $$\begin{align*}
-\phi(e) \ast' t & = \\
-&= \phi(e) \ast' \phi(s) = \\
+\phi(e) \ast' t & = \phi(e) \ast' \phi(s) \\
 &= \phi(e \ast s) \\
 &= \phi(s) \\
 &= t,

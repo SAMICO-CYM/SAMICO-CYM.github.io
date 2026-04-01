@@ -50,3 +50,10 @@ Let $K$ denote the set of all finite products of integral powers of the $a_i$. S
 Let $a, b \in K$. Since each $a$ and $b$ is the product of finitely many integral powers of the $a_i$'s, so is $b^{-1}$. Thus $ab^{-1}$ is also a product of finitely many integral powers of the $a_i$'s, so that $ab^{-1} \in K$. Hence $K \le G$. 
 
 Since $\bigcap_{S \subset H \le G} H$ is the smallest subgroup of $G$ containing $S$, we have $\bigcap_{S \subset H \le G} H \subset K$. Therefore, $\langle S \rangle = \bigcap_{S \subset H \le G} H = K$. $\blacksquare$
+
+---
+
+## Remark
+A union of subgroups of a group need NOT be a subgroup.
+
+$(\because)$ $\langle 2 \rangle, \langle 3 \rangle \le \mathbb{Z}$ but $\langle 2 \rangle \cup \langle 3 \rangle$ is not a subgroup of $\mathbb{Z}$ because $(-2) + 3 = 1 \notin \langle 2 \rangle \cup \langle 3 \rangle$. 
