@@ -21,6 +21,15 @@ $$\mathcal{D} = \{ B \times C \mid B \in \mathcal{B}, C \in \mathcal{C} \}$$
 is also a basis for the product topology on $X \times Y$.
 
 ### Proof
+**(i)** Let $(x, y) \in X \times Y$. Since $X \times Y \in \mathcal{B}$, the firsit condition is satisfied.
+
+If $(x, y) \in U_1 \times V_1 \cap U_2 \times V_2$ for $U_1, U_2 \in \mathcal{T}$ and $V_1, V_2 \in \mathcal{T}'$, then we have 
+
+$$(x, y) \in U_1 \times V_1 \cap U_2 \times V_2 = (U_1 \cap U_2) \times (V_1 \cap V_2) \in \mathcal{B}$$
+
+since $\mathcal{T}$ and $\mathcal{T}'$ are topologies. Thus $\mathcal{B}$ is a basis.
+
+**(ii)** We will use [Theorem 3](<{% post_url Topology/2026-03-17-Basis-Of-Toplogy %}#theorem-3>). 
 
 
 ---
