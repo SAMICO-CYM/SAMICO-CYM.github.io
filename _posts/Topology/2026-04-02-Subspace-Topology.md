@@ -21,6 +21,21 @@ $$\mathcal{B}_Y = \{ Y \cap B \mid B \in \mathcal{B} \}$$
 is a basis for $\mathcal{T}_Y$.
 
 ### Proof
+**(i)** Since $\emptyset = Y \cap \emptyset \in \mathcal{T}_Y$ and $Y = Y \cap X \in \mathcal{T}_Y$, the first condition is satisfied.
+
+Let $\\{ U_{\alpha} \\} \subset \mathcal{T}_Y$. Since each $U_{\alpha} \in \mathcal{T}_Y$, we have $U_{\alpha} = Y \cap V_{\alpha}$ for some $V_{\alpha} \in \mathcal{T}$, for each $\alpha$. Then
+
+$$\bigcup U_{\alpha} = \bigcup (Y \cap V_{\alpha}) = Y \cap \bigcup V_{\alpha}.$$
+
+Since $\bigcup V_{\alpha} \in \mathcal{T}$, we have $\bigcup U_{\alpha} \in \mathcal{T}_Y$. 
+
+Let $U_1, ..., U_n \in \mathcal{T}_Y$. Then $U_i = Y \cap V_i$ for some $V_i \in \mathcal{T}$, for each $i = 1, ..., n$. Then
+
+$$\bigcap_{i=1}^n U_i = \bigcap_{i=1}^n (Y \cap V_i) = Y \cap \bigcap_{i=1}^n V_i.$$
+
+Since $\bigcap_{i=1}^n V_i \in \mathcal{T}$, we have $\bigcap_{i=1}^n U_i \in \mathcal{T}_Y$. Thus $\mathcal{T}_Y$ is a topology on $Y$. 
+
+**(ii)**
 
 ---
 
