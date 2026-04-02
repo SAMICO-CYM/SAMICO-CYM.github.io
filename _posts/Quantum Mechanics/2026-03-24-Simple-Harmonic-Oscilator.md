@@ -184,3 +184,36 @@ $$\begin{align*}
 &= \dots \\
 &= \frac{1}{\sqrt{n!}} (\hat{a_+})^n \psi_0(x) \blacksquare
 \end{align*}$$
+
+---
+
+## Example
+
+1차원 단순 조화 진동자 상황에서 어떤 파동함수 $\Psi$가 초기 상태 $t = 0$에 대해서 다음과 같이 주어졌다고 가정하자.
+
+$$\Psi(x, 0) = A (3\psi_0(x) + 4\psi_1(x))$$
+
+$A$는 어떤 상수다. 이때 다음의 질문에 대답해보자.
+
+1. $A$의 값은 얼마인가?
+
+2. $\Psi(x, t)$와 $\vert \Psi(x, t) \vert^2$은 어떻게 주어지는가? 
+
+3. $\vert \Psi(x, t) \vert^2$는 시간이 지남에 따라 진동하는가?
+
+4. $\Psi$가 가질 수 있는 에너지와, 각 에너지를 측정할 확률은 얼마인가?
+
+### Solution
+
+1. $\Psi$는 정규화되어야 하므로 다음이 성립한다.
+
+$$\begin{align*}
+\langle \Psi \vert \Psi \rangle &= \langle A (3\psi_0 + 4\psi_1) \vert A (3\psi_0 + 4\psi_1) \rangle \\
+&= \vert A \vert^2 \langle 3\psi_0 + 4\psi_1 \vert 3\psi_0 + 4\psi_1 \rangle \\
+&= \vert A \vert^2 (9 \langle \psi_0 \vert \psi_0 \rangle + 16 \langle \psi_1 \vert \psi_1 \rangle) \\
+&= \vert A \vert^2 (9 + 16) = 25 \vert A \vert^2 = 1
+\end{align*}$$
+
+따라서 $A = \frac{1}{5}$이다.
+
+2. 
