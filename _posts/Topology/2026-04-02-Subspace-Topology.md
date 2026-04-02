@@ -46,6 +46,6 @@ Let $(Y, \mathcal{T}_Y)$ be a subspace of $(X, \mathcal{T})$. If $U$ is open in 
 ---
 
 ## Theorem 3
-Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $A \subset X$ and $B \subset Y$. Let $(X \times Y, \mathcal{T}_{X \times Y})$ be the product topological space, and let $(A, \mathcal{T}_A)$ and $(B, \mathcal{T}_B)$ be the subspace topologies on $A$ and $B$, respectively. Then the product topology on $A \times B$ is the same as the subspace topology on $A \times B$.
+Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $A \subset X$ and $B \subset Y$. Let $(X \times Y, \mathcal{T} _ {X \times Y})$ be the product topological space, and let $(A, \mathcal{T}_A)$ and $(B, \mathcal{T}_B)$ be the subspace topologies on $A$ and $B$, respectively. Then the product topology on $A \times B$ is the same as the subspace topology on $A \times B$.
 
 ### Proof
