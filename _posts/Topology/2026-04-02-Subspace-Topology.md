@@ -23,11 +23,11 @@ is a basis for $\mathcal{T}_Y$.
 ### Proof
 **(i)** Since $\emptyset = Y \cap \emptyset \in \mathcal{T}_Y$ and $Y = Y \cap X \in \mathcal{T}_Y$, the first condition is satisfied.
 
-Let $\\{ U_{\alpha} \\} \subset \mathcal{T}_Y$. Since each $U_{\alpha} \in \mathcal{T}_Y$, we have $U_{\alpha} = Y \cap V_{\alpha}$ for some $V_{\alpha} \in \mathcal{T}$, for each $\alpha$. Then
+Let $\\{ U _ {\alpha} \\} \subset \mathcal{T}_Y$. Since each $U _ {\alpha} \in \mathcal{T}_Y$, we have $U _ {\alpha} = Y \cap V _ {\alpha}$ for some $V _ {\alpha} \in \mathcal{T}$, for each $\alpha$. Then
 
-$$\bigcup U_{\alpha} = \bigcup (Y \cap V_{\alpha}) = Y \cap \bigcup V_{\alpha}.$$
+$$\bigcup U _ {\alpha} = \bigcup (Y \cap V _ {\alpha}) = Y \cap \bigcup V _ {\alpha}.$$
 
-Since $\bigcup V_{\alpha} \in \mathcal{T}$, we have $\bigcup U_{\alpha} \in \mathcal{T}_Y$. 
+Since $\bigcup V _ {\alpha} \in \mathcal{T}$, we have $\bigcup U _ {\alpha} \in \mathcal{T}_Y$. 
 
 Let $U_1, ..., U_n \in \mathcal{T}_Y$. Then $U_i = Y \cap V_i$ for some $V_i \in \mathcal{T}$, for each $i = 1, ..., n$. Then
 
