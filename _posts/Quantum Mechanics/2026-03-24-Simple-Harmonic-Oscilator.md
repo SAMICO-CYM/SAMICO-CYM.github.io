@@ -216,4 +216,24 @@ $$\begin{align*}
 
 따라서 $A = \frac{1}{5}$이다.
 
-2. 
+2. 파동함수 $\Psi(x, t)$는 변수 분리법에 의해 공간 텀과 시간 텀으로 분리될 수 있었다. 한편 위에서 살펴본 바와 같이 각 파동함수 $\psi_n$는 에너지 $E_n = \hbar \omega (n + \frac{1}{2})$를 가지고, 슈뢰딩거 방정식을 시간 텀에 대해서 풀었을 때 
+
+$$\phi_n(t) = e^{-i \frac{E_n}{\hbar}t}$$
+
+를 얻었었다. 따라서 각 $n$에 대해서 계산해준뒤 파동함수에 곱해주면 다음을 얻는다.
+
+$$
+\begin{align*}
+\Psi(x, t) &= \frac{1}{5} (3 \psi_0(x) e^{-i \frac{E_0}{\hbar}t} + 4 \psi_1(x) e^{-i \frac{E_1}{\hbar}t})
+&= \frac{1}{5} (3 \psi_0(x) e^{-i \frac{1}{2} \omega t} + 4 \psi_1(x) e^{-i \frac{3}{2} \omega t})
+\end{align*}
+$$
+
+제곱해서 확률 밀도 함수를 계산하면 다음과 같다.
+
+$$
+\begin{align*}
+\vert \Psi(x, t) \vert^2 &= \frac{1}{25} \vert 3 \psi_0 e^{-i \frac{1}{2} \omega t} + 4 \psi_1 e^{-i \frac{3}{2} \omega t} \vert^2 \\
+&= \frac{1}{25} (9 \vert \psi_0 \vert^2 + 16 \vert \psi_1 \vert^2 + 24 \text{Re}(\psi_0^* \psi_1 e^{-i \omega t}))
+\end{align*}
+$$
