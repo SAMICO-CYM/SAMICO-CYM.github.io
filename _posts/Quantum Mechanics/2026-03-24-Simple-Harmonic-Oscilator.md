@@ -239,13 +239,13 @@ $$
 
 따라서 $\cos(\omega t)$ 항으로 인해 시간이 지남에 따라 확률 밀도 함수가 진동하는 것을 알 수 있다.
 
-3. 파동함수의 확률론적 해석에 의해, 각 파동함수의 계수는 에너지를 측정할 확률이었다. 즉 $\Psi$는 $E_0$라는 에너지를 $\left(\frac{3}{5}\right)^2 = 36\%$의 확률로, $E_1$라는 에너지를 $\left(\frac{4}{5}\right)^2 = 64\%$의 확률로 가질 수 있다. 한편 에너지의 평균값을 구해보면 다음과 같다.
+3. 파동함수의 확률론적 해석에 의해, 각 파동함수의 계수는를 통해 에너지를 측정할 확률을 알 수 있었다. 즉 $\Psi$는 $E_0$라는 에너지를 $\left(\frac{3}{5}\right)^2 = 36\%$의 확률로, $E_1$라는 에너지를 $\left(\frac{4}{5}\right)^2 = 64\%$의 확률로 가질 수 있다. 한편 에너지의 평균값을 구해보면 다음과 같다.
 
 $$
 \begin{align*}
 \langle \mathcal{H} \rangle &= \left(\frac{3}{5}\right)^2 E_0 + \left(\frac{4}{5}\right)^2 E_1 \\
-&= \frac{9}{25} \hbar \omega (\frac{1}{2}) + \frac{16}{25} \hbar \omega (\frac{3}{2}) \\
-&= \frac{1}{25} \hbar \omega (\frac{9}{2} + \frac{48}{2}) \\
+&= \frac{9}{25} \hbar \omega \left(\frac{1}{2}\right) + \frac{16}{25} \hbar \omega \left(\frac{3}{2}\right) \\
+&= \frac{1}{25} \hbar \omega \left(\frac{9}{2} + \frac{48}{2}\right) \\
 &= \frac{57}{50} \hbar \omega = 1.14 \hbar \omega
 \end{align*}
 $$
