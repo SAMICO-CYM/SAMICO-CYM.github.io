@@ -70,4 +70,8 @@ Since $U$ is open in $Y$, $U = Y \cap V$ for some $V \in \mathcal{T}$. Since $Y$
 Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $A \subset X$ and $B \subset Y$. Let $(X \times Y, \mathcal{T} _ {X \times Y})$ be the product topological space, and let $(A, \mathcal{T}_A)$ and $(B, \mathcal{T}_B)$ be the subspace topologies on $A$ and $B$, respectively. Then the product topology on $A \times B$ is the same as the subspace topology on $A \times B$.
 
 ### Proof
-Let $\mathcal{T}$ be the product topology on $A \times B$, and let $\mathcal{T}'$ be the subspace topology on $A \times B$. 
+Let $\mathcal{T}$ be the product topology on $A \times B$, and let $\mathcal{T}'$ be the subspace topology on $A \times B$. Let $(A \times B) \cap (U \times V)$ be a basis element for $\mathcal{T}'$ where $U \in \mathcal{T}_X$ and $V \in \mathcal{T}_Y$. ($U \times V$ is a basis element of $\mathcal{T} _ {X \times Y}$.) Since 
+
+$$(A \times B) \cap (U \times V) = (A \cap U) \times (B \cap V),$$
+
+and $A \cap U$, $B \cap V$ are basis elements of $\mathcal{T}_A, \mathcal{T}_B$, respectively, $(A \cap U) \times (B \cap V)$ is a basis element for $\mathcal{T}$. Conversely, it is easy to verify that each basis element for $\mathcal{T}$ is also a basis element for $\mathcal{T}'$. Thus the basis for $\mathcal{T}$ and the basis for $\mathcal{T}'$ are the same, which means that $\mathcal{T} = \mathcal{T}'$. $\blacksquare$
