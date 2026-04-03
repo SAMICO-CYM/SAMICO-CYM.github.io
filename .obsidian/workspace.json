@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Complex Analysis/2026-04-03-Limit-At-Infinity.md",
+                "file": "_posts/Topology/2026-04-02-Subspace-Topology.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-03-Limit-At-Infinity"
+              "title": "2026-04-02-Subspace-Topology"
             }
           }
         ]
@@ -182,8 +182,12 @@
   },
   "active": "7a4503827723e1d6",
   "lastOpenFiles": [
+    "_posts/Complex Analysis/2026-04-03-Continuous-Function.md",
+    "_posts/Complex Analysis/2026-03-27-Topology-In-Complex-Plane.md",
     "_posts/Complex Analysis/2026-04-03-Limit-Complex-Functions.md",
     "_posts/Complex Analysis/2026-04-03-Limit-At-Infinity.md",
+    "_site/posts/Continuous-Function/index.html",
+    "_site/posts/Continuous-Function",
     "_site/posts/Subspace-Topology/index.html",
     "_site/posts/Subspace-Topology",
     "_site/posts/Limit-Complex-Functions/index.html",
@@ -213,19 +217,15 @@
     "_posts/Topology/2026-03-12-Topology.md",
     "_posts/Topology/2026-03-10-Order-Relation.md",
     "_posts/Quantum Mechanics/2026-03-24-Simple-Harmonic-Oscilator.md",
-    "_site/posts/Product-Topology/index.html",
-    "_site/posts/Product-Topology",
     "_site/assets/img/complexmapping3.png",
     "_site/assets/img/complexmapping2.png",
     "_site/assets/img/complexmapping.png",
     "_site/assets/img/booleanlattice.jpg",
-    "_posts/Complex Analysis/2026-03-27-Topology-In-Complex-Plane.md",
     "_posts/Complex Analysis/2026-03-27-Mapping.md",
     "_posts/Complex Analysis/2026-03-27-Complex-Valued-Function.md",
     "_posts/Abstract Algebra/2026-04-01-Special-Morphisms.md",
     "_posts/Abstract Algebra/2026-04-01-Generating-Sets.md",
     "_posts/Number Theory/2026-03-22-Euler-Phi-Function.md",
-    "_posts/Abstract Algebra/2026-03-22-Center-Of-Group.md",
-    "_posts/PDE/2026-03-20-Initial-Boundary-Conditions.md"
+    "_posts/Abstract Algebra/2026-03-22-Center-Of-Group.md"
   ]
 }
