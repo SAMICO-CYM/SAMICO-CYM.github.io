@@ -61,3 +61,16 @@ For $(x, y)$ such that $0 < \sqrt{(x - x_0)^2 + (y - y_0)^2} < \delta$, we have
 $$\vert u(x, y) - u_0 \vert \le \vert f(z) - \omega_0 \vert < \varepsilon.$$
 
 Thus, $\lim_{(x, y) \to (x_0, y_0)} u(x, y) = u_0$. Similarly, we can show that $\lim_{(x, y) \to (x_0, y_0)} v(x, y) = v_0$. $\blacksquare$
+
+---
+
+## Theorem 2
+Suppose that $\displaystyle \lim_{z \to z_0} f(z) = \omega_0$ and $\displaystyle \lim_{z \to z_0} g(z) = \omega_1$. Then the followings hold:
+
+**(i)** $\displaystyle \lim_{z \to z_0} [f(z) + g(z)] = \omega_0 + \omega_1$
+
+**(ii)** $\displaystyle \lim_{z \to z_0} [f(z) - g(z)] = \omega_0 - \omega_1$
+
+**(iii)** $\displaystyle \lim_{z \to z_0} [f(z) g(z)] = \omega_0 \omega_1$
+
+**(iv)** $\displaystyle \lim_{z \to z_0} \frac{f(z)}{g(z)} = \frac{\omega_0}{\omega_1}, \quad \text{provided } \omega_1 \ne 0.$
