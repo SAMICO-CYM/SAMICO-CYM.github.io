@@ -35,11 +35,16 @@ $$\bigcap_{i=1}^n U_i = \bigcap_{i=1}^n (Y \cap V_i) = Y \cap \bigcap_{i=1}^n V_
 
 Since $\bigcap_{i=1}^n V_i \in \mathcal{T}$, we have $\bigcap_{i=1}^n U_i \in \mathcal{T}_Y$. Thus $\mathcal{T}_Y$ is a topology on $Y$. 
 
-**(ii)**
+**(ii)** Let $U \in \mathcal{T}_Y$. Then $U = Y \cap V$ for some $V \in \mathcal{T}$. Since $\mathcal{B}$ is a basis for $\mathcal{T}$ and $V$ is an open set in $X$, for each $x \in U = Y \cap V$ (so that $x \in V$), $\exists B \in \mathcal{B}$ such that $x \in B \subset V$. Since $x \in Y$, we have $x \in Y \cap B \subset Y \cap V = U$. Since $Y \cap B \in \mathcal{B}_Y$, $\mathcal{B}_Y$ is a basis generating $\mathcal{T}_Y$. $\blacksquare$
 
 ---
 
 ## Example
+**(i)** Let $\mathcal{T}$ be the standard topology on $\mathbb{R}$, and let $Y = [0, 3] \subset \mathbb{R}$. Then $[0, 1) = Y \cap (-1, 1)$ so is open in $Y$. But $(-1, 1)$ is NOT open in $Y$. 
+
+$(\because)$ If $(-1, 1)$ is open in $Y$, then $(-1, 1) = Y \cap (a, b)$ for some $(a, b) \in \mathcal{T}$. Note that $-0.5 \in (-1, 1)$ but $-0.5 \notin [0, 3] = Y$. $\bigotimes$ Thus $(-1, 1)$ is not open in $Y$.
+
+**(ii)** Let $\mathcal{T}$ be the standard topology on $\mathbb{R}^2$, and let $Y = S^1$. Then each arc without the boundary points is open in $Y$.
 
 ---
 
@@ -57,6 +62,7 @@ Let $(X, \mathcal{T})$ be a topological space, and let $(Y, \mathcal{T}_Y)$ be a
 Let $(Y, \mathcal{T}_Y)$ be a subspace of $(X, \mathcal{T})$. If $U$ is open in $Y$ and $Y$ is open in $X$, then $U$ is open in $X$. 
 
 ### Proof
+Since $U$ is open in $Y$, $U = Y \cap V$ for some $V \in \mathcal{T}$. Since $Y$ is open in $X$ and $\mathcal{T}$ is a topology, $U = Y \cap V$ is open in $X$. $\blacksquare$
 
 ---
 
@@ -64,3 +70,4 @@ Let $(Y, \mathcal{T}_Y)$ be a subspace of $(X, \mathcal{T})$. If $U$ is open in 
 Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $A \subset X$ and $B \subset Y$. Let $(X \times Y, \mathcal{T} _ {X \times Y})$ be the product topological space, and let $(A, \mathcal{T}_A)$ and $(B, \mathcal{T}_B)$ be the subspace topologies on $A$ and $B$, respectively. Then the product topology on $A \times B$ is the same as the subspace topology on $A \times B$.
 
 ### Proof
+Let $\mathcal{T}$ be the product topology on $A \times B$, and let $\mathcal{T}'$ be the subspace topology on $A \times B$. 
