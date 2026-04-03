@@ -10,7 +10,7 @@ math: true
 The ***diffusion equation*** is a second order linear partial differential equation given by
 
 $$
-u_t = k \nu_{xx}$$
+u_t = k u_{xx}$$
 
 where $k > 0$ is a constant.
 
