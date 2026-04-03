@@ -36,11 +36,11 @@ $$
 \begin{align*}
 &u(x, t) \le M \\
 &\implies u(x, t) + \varepsilon x^2 \le M + \varepsilon x^2 \le M + \varepsilon L^2 \\
-&\implies v(x, t) \le M + \varepsilon L^2
+&\implies v(x, t) \le M + \varepsilon L^2,
 \end{align*}
 $$
 
-Note that $v$ satisfies that 
+which means that $M + \varepsilon L^2$ is the maximum value of $v$ on the three sides. Note that $v$ satisfies that 
 
 $$\begin{align*}
 v_t - kv_{xx} &= u_t - k(u_{xx} + 2 \varepsilon) \\
@@ -49,6 +49,31 @@ v_t - kv_{xx} &= u_t - k(u_{xx} + 2 \varepsilon) \\
 &= - 2 \varepsilon k < 0 \quad \cdots (\ast)
 \end{align*}$$ 
 
+Suppose that $v$ attains its maximum value at an interior point $(x_0, t_0)$ for $0 < x_0 < L$ and $0 < t_0 < T$. Then we have $v_t = 0$ and $v_{xx} \le 0$ at this point, so that
+
+$$
+0 > -2\varepsilon k = v_t - kv_{xx} = -kv_{xx} \ge 0. \bigotimes
+$$
+
+Suppose that, again, $v$ attains its maximum value at the top edge $(x_0, T)$ for $0 < x_0 < L$. Then we have $v_x \ge 0$ and $v_{xx} \le 0$ at this point. Note that
+
+$$v_t(x_0, T) = \lim_{h \to 0^+} \frac{v(x_0, T) - v(x_0, T - h)}{h} > 0.$$
+
+Then we have
+
+$$
+0 > -2\varepsilon k = v_t - kv_{xx} \ge 0. \bigotimes
+$$
+
+Since $v$ has a maximum value somewhere in the closed rectangle $R = \{ (x, t) \mid 0 \le x \le L, 0 \le t \le T \}$, $v$ must attain its maximum value on the bottom or sides. Thus $v(x, t) \le M + \varepsilon L^2$ throughout $R$. Since $\varepsilon$ is an arbitrary positive number, we have that for all $(x, t) \in R$,
+
+$$\begin{align*}
+v(x, t) \le M + \varepsilon L^2 \\
+\implies u(x, t) \le M + \varepsilon (L^2 - x^2) \\
+\implies u(x, t) \le M.
+\end{align*}$$
+
+Thus $u$ attains its maximum value on the bottom or sides. $\blacksquare$
 
 ---
 
