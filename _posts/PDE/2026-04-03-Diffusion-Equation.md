@@ -65,12 +65,12 @@ $$
 0 > -2\varepsilon k = v_t - kv_{xx} \ge 0. \bigotimes
 $$
 
-Since $v$ has a maximum value somewhere in the closed rectangle $R = \{ (x, t) \mid 0 \le x \le L, 0 \le t \le T \}$, $v$ must attain its maximum value on the bottom or sides. Thus $v(x, t) \le M + \varepsilon L^2$ throughout $R$. Since $\varepsilon$ is an arbitrary positive number, we have that for all $(x, t) \in R$,
+Since $v$ has a maximum value somewhere in the closed rectangle $R = \\{ (x, t) \mid 0 \le x \le L, 0 \le t \le T \\}$, $v$ must attain its maximum value on the bottom or sides. Thus $v(x, t) \le M + \varepsilon L^2$ throughout $R$. Since $\varepsilon$ is an arbitrary positive number, we have that for all $(x, t) \in R$,
 
 $$\begin{align*}
-v(x, t) \le M + \varepsilon L^2 \\
-\implies u(x, t) \le M + \varepsilon (L^2 - x^2) \\
-\implies u(x, t) \le M.
+&v(x, t) \le M + \varepsilon L^2 \\
+\implies &u(x, t) \le M + \varepsilon (L^2 - x^2) \\
+\implies &u(x, t) \le M.
 \end{align*}$$
 
 Thus $u$ attains its maximum value on the bottom or sides. $\blacksquare$
