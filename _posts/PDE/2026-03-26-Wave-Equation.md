@@ -10,7 +10,7 @@ math: true
 The ***wave equation*** is a second order linear partial differential equation given by
 
 $$
-u_{tt} = c^2 u_{xx} \quad \text{for } -\infty < x < \infty
+u_{tt} = c^2 u_{xx}
 $$
 
 where $c$ is a constant.
@@ -182,7 +182,7 @@ u(x, 0) = \phi(x), \quad u_t(x, 0) = \psi(x) \\
 
 그러면 영역 $\\{ (x, t) \mid \vert x \vert > R + ct \\}$에서 $u(x, t) = 0$이다.
 
-한편 운동 에너지와 퍼텐셜 에너지를 각각 다음과 같이 정의하자.
+한편 ***운동 에너지***와 ***퍼텐셜 에너지***를 각각 다음과 같이 정의하자.
 
 $$\begin{align*}
 K(t) &= \frac{1}{2} \int_{-\infty}^\infty \rho u_t^2 dx \\
@@ -200,7 +200,7 @@ $$\begin{align*}
 &= - \frac{dV}{dt}
 \end{align*}$$
 
-전체 에너지를 $E = K + V$로 정의하면 
+***전체 에너지***를 $E = K + V$로 정의하면 
 
 $$\begin{align*}
 \frac{dE}{dt} &= \frac{dK}{dt} + \frac{dV}{dt} = 0
