@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Topology/2026-04-01-Product-Topology.md",
+                "file": "_posts/Complex Analysis/2026-04-03-Limit-At-Infinity.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-01-Product-Topology"
+              "title": "2026-04-03-Limit-At-Infinity"
             }
           }
         ]
@@ -182,16 +182,27 @@
   },
   "active": "7a4503827723e1d6",
   "lastOpenFiles": [
+    "_posts/Complex Analysis/2026-04-03-Limit-Complex-Functions.md",
+    "_posts/Complex Analysis/2026-04-03-Limit-At-Infinity.md",
+    "_site/posts/Subspace-Topology/index.html",
+    "_site/posts/Subspace-Topology",
+    "_site/posts/Limit-Complex-Functions/index.html",
+    "_site/posts/Limit-Complex-Functions",
+    "_site/posts/Limit-At-Infinity/index.html",
+    "_site/posts/Limit-At-Infinity",
+    "_site/posts/Diffusion-Equation/index.html",
+    "_site/posts/Diffusion-Equation",
+    "_site/assets/img/domaininfluence.png",
+    "_site/assets/img/domaindependence.png",
+    "_site/assets/img/Sphere.png",
+    "_posts/Topology/2026-04-01-Product-Topology.md",
     "assets/img/domaininfluence.png",
     "assets/img/domaindependence.png",
     "assets/img/Sphere.png",
     "_posts/Topology/2026-04-02-Subspace-Topology.md",
     "_posts/PDE/2026-04-03-Diffusion-Equation.md",
-    "_posts/Complex Analysis/2026-04-03-Limit-Complex-Functions.md",
-    "_posts/Complex Analysis/2026-04-03-Limit-At-Infinity.md",
     "_posts/Ordering/2026-03-20-Isomorphsim-Between-Posets.md",
     "_posts/Ordering/2026-03-20-Embedding.md",
-    "_posts/Topology/2026-04-01-Product-Topology.md",
     "_posts/Ordering/2026-03-15-Order.md",
     "_posts/Ordering/2026-03-20-Boolean-Lattice.md",
     "_posts/Linear Algebra/2026-02-20-Vector-Space.md",
@@ -204,14 +215,6 @@
     "_posts/Quantum Mechanics/2026-03-24-Simple-Harmonic-Oscilator.md",
     "_site/posts/Product-Topology/index.html",
     "_site/posts/Product-Topology",
-    "_site/posts/Special-Morphisms/index.html",
-    "_site/posts/Special-Morphisms",
-    "_site/posts/Generating-Sets/index.html",
-    "_site/posts/Generating-Sets",
-    "_site/posts/Power-Set/index.html",
-    "_site/posts/Power-Set",
-    "_site/posts/Characteristic-Function/index.html",
-    "_site/posts/Characteristic-Function",
     "_site/assets/img/complexmapping3.png",
     "_site/assets/img/complexmapping2.png",
     "_site/assets/img/complexmapping.png",
@@ -223,10 +226,6 @@
     "_posts/Abstract Algebra/2026-04-01-Generating-Sets.md",
     "_posts/Number Theory/2026-03-22-Euler-Phi-Function.md",
     "_posts/Abstract Algebra/2026-03-22-Center-Of-Group.md",
-    "_posts/PDE/2026-03-20-Initial-Boundary-Conditions.md",
-    "_site/assets/img/minimal.png",
-    "_site/assets/img/image.png",
-    "_site/assets/img/Embedding.png",
-    "assets/img/minimal.png"
+    "_posts/PDE/2026-03-20-Initial-Boundary-Conditions.md"
   ]
 }

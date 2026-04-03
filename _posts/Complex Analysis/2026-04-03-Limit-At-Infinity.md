@@ -19,3 +19,56 @@ math: true
 
 ## Theorem
 
+**(i)** $\displaystyle \lim_{z \to z_0} \frac{1}{f(z)} \implies \lim_{z \to z_0} f(z) = \infty$ 
+
+**(ii)** $\displaystyle \lim_{z \to 0} f\left( \frac{1}{z} \right) = w_0 \implies \lim_{z \to \infty} f(z) = w_0$ 
+
+**(iii)** $\displaystyle \lim_{z \to 0} \frac{1}{f \left( \frac{1}{z} \right)} = 0 \implies \lim_{z \to \infty} f(z) = \infty$ 
+
+### Proof
+**(i)** By assumption, for any $\varepsilon > 0$, $\exists \delta > 0$ such that 
+
+$$\begin{align*}
+0 < \vert z - z_0 \vert < \delta \implies &\left \vert \frac{1}{f(z)} \right \vert < \varepsilon \\
+\implies & \vert f(z) \vert > \frac{1}{\varepsilon}.
+\end{align*}$$
+
+Thus we have 
+
+$$\lim_{z \to z_0} f(z) = \infty$$
+
+**(ii)** By assumption, for any $\varepsilon > 0$, $\exists \delta > 0$ such that 
+
+$$\begin{align*}
+0 < \vert z\vert < \delta \implies &\left \vert f\left( \frac{1}{z} \right) - w_0 \right \vert < \varepsilon.
+\end{align*}$$
+
+Let $z' = \frac{1}{z}$. Then we have 
+
+$$\begin{align*}
+\vert z' \vert > \frac{1}{\delta} \implies &0 < \vert z \vert < \delta \\
+\implies & \left \vert f\left( \frac{1}{z} \right) - w_0 \right \vert < \varepsilon \\
+\implies & \vert f(z') - w_0 \vert < \varepsilon.
+\end{align*}$$
+
+Thus we have 
+
+$$\lim_{z \to \infty} f(z) = w_0.$$
+
+**(iii)** By assumption, for any $\varepsilon > 0$, $\exists \delta > 0$ such that 
+
+$$\begin{align*}
+0 < \vert z\vert < \delta \implies &\left \vert \frac{1}{f\left( \frac{1}{z} \right)} \right \vert < \varepsilon.
+\end{align*}$$
+
+Let $z' = \frac{1}{z}$. Then we have 
+
+$$\begin{align*}
+\vert z' \vert > \frac{1}{\delta} \implies &0 < \vert z \vert < \delta \\
+\implies & \left \vert \frac{1}{f\left( \frac{1}{z} \right)} \right \vert < \varepsilon \\
+\implies & \vert f(z') \vert > \frac{1}{\varepsilon}.
+\end{align*}$$
+
+Thus we have 
+
+$$\lim_{z \to \infty} f(z) = \infty. \blacksquare$$
