@@ -20,14 +20,12 @@ $$\forall \varepsilon > 0, \exists \delta > 0 \text{ such that } 0 < |z - z_0| <
 **(ii)** Suppose that $f(z) = u(x, y) + iv(x, y) (z = x + iy)$ and $z_0 = x_0 + iy_0, \omega_0 = u_0 + iv_0$. Then
 
 $$\begin{gather*}
-\lim_{(x, y) \to (x_0, y_0)} u(x, y) = u_0 \quad \text{and} \quad \lim_{(x, y) \to (x_0, y_0)} v(x, y) = v_0 \\
-\iff \\
-\lim_{z \to z_0} f(z) = \omega_0.
+\lim_{(x, y) \to (x_0, y_0)} u(x, y) = u_0 \quad \text{and} \quad \lim_{(x, y) \to (x_0, y_0)} v(x, y) = v_0 \iff \lim_{z \to z_0} f(z) = \omega_0.
 \end{gather*}
 $$
 
 ### Proof
-(ii) 
+**(ii)** 
 
 $(\Longrightarrow)$
 
