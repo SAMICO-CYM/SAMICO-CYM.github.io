@@ -15,5 +15,7 @@ math: true
 
 그러면 어떤 $\varepsilon > 0$에 대하여 원 $\vert z \vert = \frac{1}{\varepsilon}$ 바깥에 있는 복소평면 위의 점들은 $N 근방에 있는 리만 스피어 위의 점들과 대응된다는 사실을 알 수 있다. 따라서 $\vert z \vert > \frac{1}{\varepsilon}$을 만족하는 점들을 $\infty$의 근방이라고 정의한다. 이제 극한의 정의에서 정의역과 공역에서 성립했던 근방의 개념을 무한대의 근방에까지 적용시킨다고 하면 복소공간에서도 무한대를 포함한 극한을 정의할 수 있다. 
 
-## Definition
+---
+
+## Theorem
 
