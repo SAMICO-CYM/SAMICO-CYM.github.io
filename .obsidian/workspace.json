@@ -182,6 +182,13 @@
   },
   "active": "7a4503827723e1d6",
   "lastOpenFiles": [
+    "assets/img/domaininfluence.png",
+    "assets/img/domaindependence.png",
+    "assets/img/Sphere.png",
+    "_posts/Topology/2026-04-02-Subspace-Topology.md",
+    "_posts/PDE/2026-04-03-Diffusion-Equation.md",
+    "_posts/Complex Analysis/2026-04-03-Limit-Complex-Functions.md",
+    "_posts/Complex Analysis/2026-04-03-Limit-At-Infinity.md",
     "_posts/Ordering/2026-03-20-Isomorphsim-Between-Posets.md",
     "_posts/Ordering/2026-03-20-Embedding.md",
     "_posts/Topology/2026-04-01-Product-Topology.md",
@@ -220,13 +227,6 @@
     "_site/assets/img/minimal.png",
     "_site/assets/img/image.png",
     "_site/assets/img/Embedding.png",
-    "assets/img/minimal.png",
-    "assets/img/image.png",
-    "assets/img/Embedding.png",
-    "_posts/Ordering/2026-03-20-Minimal-Minimum-Maximal-Maximum.md",
-    "_posts/Ordering/2026-03-20-Linear-Extension.md",
-    "_posts/Ordering/2026-03-20-Hasse-Diagram.md",
-    "_posts/Ordering/2026-03-09-Cover.md",
-    "_posts/PDE/2026-03-12-1st-Order-Linear-PDE-Variable-Coefficients.md"
+    "assets/img/minimal.png"
   ]
 }
