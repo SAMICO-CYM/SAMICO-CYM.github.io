@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Topology/2026-04-02-Subspace-Topology.md",
+                "file": "_posts/Combinatorics/2026-04-05-Big-O-Notation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-02-Subspace-Topology"
+              "title": "2026-04-05-Big-O-Notation"
             }
           }
         ]
@@ -182,22 +182,26 @@
   },
   "active": "7a4503827723e1d6",
   "lastOpenFiles": [
-    "_posts/Topology/2026-04-01-Product-Topology.md",
+    "_site/posts/Big-O-Notation/index.html",
+    "_site/posts/Big-O-Notation",
+    "_site/categories/combinatori/index.html",
+    "_site/categories/combinatori",
+    "_posts/Combinatorics/2026-04-05-Multinomial-Coefficient.md",
+    "_posts/Combinatorics/2026-04-05-Big-O-Notation.md",
+    "_site/posts/Multinomial-Coefficient/index.html",
+    "_site/posts/Multinomial-Coefficient",
+    "_posts/Combinatorics/2026-04-05-Binomial-Coefficient.md",
+    "_site/posts/Binomial-Coefficient/index.html",
+    "_site/posts/Binomial-Coefficient",
+    "_site/categories/combinatorics/index.html",
+    "_site/categories/combinatorics",
     "_posts/Topology/2026-04-02-Subspace-Topology.md",
+    "_posts/Combinatorics",
+    "_posts/Topology/2026-04-01-Product-Topology.md",
     "_posts/Complex Analysis/2026-04-03-Continuous-Function.md",
     "_posts/Complex Analysis/2026-03-27-Topology-In-Complex-Plane.md",
     "_posts/Complex Analysis/2026-04-03-Limit-Complex-Functions.md",
     "_posts/Complex Analysis/2026-04-03-Limit-At-Infinity.md",
-    "_site/posts/Continuous-Function/index.html",
-    "_site/posts/Continuous-Function",
-    "_site/posts/Subspace-Topology/index.html",
-    "_site/posts/Subspace-Topology",
-    "_site/posts/Limit-Complex-Functions/index.html",
-    "_site/posts/Limit-Complex-Functions",
-    "_site/posts/Limit-At-Infinity/index.html",
-    "_site/posts/Limit-At-Infinity",
-    "_site/posts/Diffusion-Equation/index.html",
-    "_site/posts/Diffusion-Equation",
     "_site/assets/img/domaininfluence.png",
     "_site/assets/img/domaindependence.png",
     "_site/assets/img/Sphere.png",
@@ -223,9 +227,6 @@
     "_site/assets/img/booleanlattice.jpg",
     "_posts/Complex Analysis/2026-03-27-Mapping.md",
     "_posts/Complex Analysis/2026-03-27-Complex-Valued-Function.md",
-    "_posts/Abstract Algebra/2026-04-01-Special-Morphisms.md",
-    "_posts/Abstract Algebra/2026-04-01-Generating-Sets.md",
-    "_posts/Number Theory/2026-03-22-Euler-Phi-Function.md",
-    "_posts/Abstract Algebra/2026-03-22-Center-Of-Group.md"
+    "_posts/Abstract Algebra/2026-04-01-Special-Morphisms.md"
   ]
 }
