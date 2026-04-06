@@ -54,7 +54,7 @@ which means that $H_n = O(\log_2{n})$.
 ## Theorem
 Let $f$ and $g$ be real functions. Then the following hold:
 
-$$\lim{x \to \infty} \frac{f(x)}{g(x)} = c \implies f(x) = O(g(x))$$
+$$\lim_{x \to \infty} \frac{f(x)}{g(x)} = c \implies f(x) = O(g(x))$$
 
 ---
 
