@@ -12,3 +12,29 @@ For $A_1, ..., A_d \subset X$,
 $$\left\vert \bigcup_{i=1}^d A_i \right\vert = \sum_{k=1}^d (-1)^{k-1} \sum_{I \in \binom{[d]}{k}} \left\vert \bigcap_{i \in I} A_i \right\vert.$$
 
 ### Proof
+If suffices to show that for each $x \in \bigcup_{i=1}^d A_i$, $x$ is counted exactly once in the right hand side.
+
+Suppose that $x$ is contained in $j$ sets of $A_i$'s. Then it is counted 
+
+$$\begin{align*}
+&+j \text{ times when } k = 1 \\
+&- \binom{j}{2} \text{ times when } k = 2 \\
+&+ \binom{j}{3} \text{ times when } k = 3 \\
+&\vdots \\
+&+ (-1)^{j-1} \binom{j}{j} \text{ times when } k = j \\
+&+ 0 \text{ times when } k > j
+\end{align*}$$
+
+In total, $x$ is counted 
+
+$$j - \binom{j}{2} + \binom{j}{3} - \cdots + (-1)^{j-1} \binom{j}{j}$$
+
+times. Note that 
+
+$$0 = (1- 1)^j = \sum_{i=0}^j \binom{j}{i}(-1)^i = 1 - j + \binom{j}{2} - \cdots + (-1)^j \binom{j}{j}$$
+
+Thus, 
+
+$$j - \binom{j}{2} + \binom{j}{3} - \cdots + (-1)^{j-1} \binom{j}{j} = 1,$$
+
+which means that $x$ is counted exactly once in the right hand side. $\blacksquare$
