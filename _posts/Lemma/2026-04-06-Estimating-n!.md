@@ -9,7 +9,7 @@ math: true
 ## Theorem
 For any $n \in \mathbb{N}$, we have
 
-**(i)** $\displaystyle 2^{n-1} \le n! \le n^n$ 
+**(i)** $\displaystyle 2^{n-1} \le n! \le n^n$ (That is, $n! = O(n^n)$)
 
 **(ii)** $\displaystyle \left( \frac{\sqrt{n}}{\sqrt{2}} \right)^n \le n! \le \left( \frac{n}{\sqrt{2}} \right)^n$ 
 
