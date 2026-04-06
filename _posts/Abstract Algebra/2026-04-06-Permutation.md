@@ -19,17 +19,17 @@ We denote the set of permutations of $A$ by $S_A$.
 
 ## Remark
 
-(i) If $\sigma$ and $\tau$ are permutations of $A$, then so are $\sigma \tau$ and $\tau \sigma$.
+**(i)** If $\sigma$ and $\tau$ are permutations of $A$, then so are $\sigma \tau$ and $\tau \sigma$.
 
-(ii) If $A = \\{ 1 \\}$, then $S_A = \\{ id_A \\}$ and it is isomorphic to $\mathbb{Z}_1$. If $A = \\{ 1, 2 \\}$, then $S_A = \\{ id_A, \\sigma \\}$, where 
+**(ii)** If $A = \\{ 1 \\}$, then $S_A = \\{ id_A \\}$ and it is isomorphic to $\mathbb{Z}_1$. If $A = \\{ 1, 2 \\}$, then $S_A = \\{ id_A, \\sigma \\}$, where 
 
 $$
-\\sigma = \begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix}.
+\sigma = \begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix}.
 $$
 
 Then $S_A$ is isomorphic to $\mathbb{Z}_2$.
 
-(iii) If $\vert A \vert \ge 3$, then $S_A$ is always non-abelian.
+**(iii)** If $\vert A \vert \ge 3$, then $S_A$ is always non-abelian.
 
 ($\because$) For $n \ge 3$, let $A = \\{ 1, 2, ..., n \\}$. Let 
 
@@ -69,7 +69,7 @@ $\vert S_n \vert = n!$.
 
 ## Example
 
-Let $A = \\{ 1, 2, 3 \\}$. Then $S_3 = \\{ \rho_0, \rho_1, \rho_2, \mu_1, \mu_2, \mu_3 \\}$, where 
+집합 $A = \\{ 1, 2, 3 \\}$에 대하여 대칭군 $S_3 = \\{ \rho_0, \rho_1, \rho_2, \mu_1, \mu_2, \mu_3 \\}$를 고려하자.
 
 $$ \begin{align*}
 \rho_0 = \begin{pmatrix} 1 & 2 & 3 \\ 1 & 2 & 3 \end{pmatrix}, \quad 
@@ -80,5 +80,19 @@ $$ \begin{align*}
 \mu_3 = \begin{pmatrix} 1 & 2 & 3 \\ 3 & 2 & 1 \end{pmatrix}.
 \end{align*}
 $$
+
+위 식에서 바로 알 수 있듯이, $\rho_k$는 identity function에서 원소를 왼쪽으로 $k$칸씩 미뤄서 얻은 것이고, $\mu_k$는 $k$번째 원소를 고정한 채 나머지의 순서를 뒤집어서 얻은 것이다. 정리 1에서 본 것처럼 $S_3$도 군의 구조를 가지고, table을 작성해보면 다음과 같다. 
+
+$$\begin{array}{c|c|c|c|c|c|c}
+       & \rho_0 & \rho_1 & \rho_2 & \mu_1  & \mu_2  & \mu_3  \\ \hline
+\rho_0 & \rho_0 & \rho_1 & \rho_2 & \mu_1  & \mu_2  & \mu_3  \\ \hline
+\rho_1 & \rho_1 & \rho_2 & \rho_0 & \mu_3  & \mu_1  & \mu_2  \\ \hline
+\rho_2 & \rho_2 & \rho_0 & \rho_1 & \mu_2  & \mu_3  & \mu_1  \\ \hline
+\mu_1  & \mu_1  & \mu_2  & \mu_3  & \rho_0 & \rho_1 & \rho_2 \\ \hline
+\mu_2  & \mu_2  & \mu_3  & \mu_1  & \rho_2 & \rho_0 & \rho_1 \\ \hline
+\mu_3  & \mu_3  & \mu_1  & \mu_2  & \rho_1 & \rho_2 & \rho_0
+\end{array}$$
+
+표에서 알 수 있듯이 $\mu_1 \rho_1 = \mu_2 \neq \mu_3 = \rho_1 \mu_1$이므로 $S_3$은 non-abelian group이다. 한편 finite group에서 유한군을 살펴봤을 때 order $6$인 group은 $\mathbb{Z}_6$과 $S_3$뿐이었다. $\mathbb{Z}_6$은 가환군이지만 $S_3$은 가환군이 아니었음을 기억하자.
 
 ---
