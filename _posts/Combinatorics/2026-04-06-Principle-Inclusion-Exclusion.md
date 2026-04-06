@@ -20,7 +20,7 @@ $$\begin{align*}
 &+j \text{ times when } k = 1 \\
 &- \binom{j}{2} \text{ times when } k = 2 \\
 &+ \binom{j}{3} \text{ times when } k = 3 \\
-&\vdots \\
+\vdots \\
 &+ (-1)^{j-1} \binom{j}{j} \text{ times when } k = j \\
 &+ 0 \text{ times when } k > j
 \end{align*}$$
