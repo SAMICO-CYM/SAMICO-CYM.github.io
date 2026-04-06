@@ -65,3 +65,5 @@ $$\begin{array}{c|c|c|c|c|c|c|c|c}
 Subgroup diagram은 다음과 같다.
 
 ![alt text](assets/img/diagram.png)
+
+위 예시들을 통해 $\vert D_n \vert = 2n$임을 쉽게 짐작할 수 있다.

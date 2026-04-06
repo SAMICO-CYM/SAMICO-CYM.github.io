@@ -1,5 +1,5 @@
 ---
-title: "Special Morphisms"
+title: Special Morphisms
 date: 2026-04-01
 categories: [Mathematics, Abstract Algebra]
 math: true
