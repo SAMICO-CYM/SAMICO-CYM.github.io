@@ -57,7 +57,7 @@ Let $Y$ be a subspace of a topological space $X$, and let $A \subset Y$.
 
 **(i)** 
 
-$(\implies)$
+$(\Longrightarrow)$
 
 Suppose that $A$ is closed in $Y$. Then $Y - A$ is open in $Y$, which means that $Y - A = Y \cap U$ for some open set $U$ of $X$. 
 
@@ -73,7 +73,7 @@ A = Y - (Y - A) &= Y - (Y \cap U) \\
 
 Since $U$ is open in $X$, $X - U$ is closed in $X$. Let $C = X - U$. Then $A = Y \cap C$ for some closed set $C$ of $X$. 
 
-$(\impliedby)$
+$(\Longleftarrow)$
 
 Suppose that $A = Y \cap C$ for some closed set $C$ of $X$. Note that 
 
@@ -92,7 +92,7 @@ Since $C$ is closed in $X$, $X - C$ is open in $X$. By definition, $Y - A$ is op
 Suppose that $A$ is closed in $Y$ and $Y$ is closed in $X$. By **(i)**, $A = Y \cap C$ for some closed subset $C$ of $X$, and $X - Y$ is open in $X$. Since $C$ is closed in $X$, $X - C$ is open in $X$. Then 
 
 $$\begin{align*} X - A &= X - (Y \cap C) \\
-&= (X - Y) \cup (X - C). \end{align*}
+&= (X - Y) \cup (X - C). \end{align*}$$
 
 Since $X - Y$ and $X - C$ are open in $X$, their union is open in $X$. Thus $X - A$ is open in $X$. Therefore, $A$ is closed in $X$. $\blacksquare$
 
