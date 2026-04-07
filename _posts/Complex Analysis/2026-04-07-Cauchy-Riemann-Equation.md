@@ -15,8 +15,8 @@ Suppose that $f(z) = u(x, y) + i v(x, y)$ is differentiable at $z_0 = x_0 + i y_
 
 $$
 \begin{cases}
-\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} \\
-\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}
+u_x = v_y \\
+u_y = -v_x
 \end{cases}
 $$
 
@@ -53,6 +53,6 @@ f'(z_0) &= \lim_{\Delta y \to 0} \frac{\Delta w}{\Delta z} \\
 Thus we have 
 
 $$\begin{align*}
-\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} \\
-\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x} \blacksquare
+u_x = v_y \\
+u_y = -v_x \blacksquare
 \end{align*}$$
