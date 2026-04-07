@@ -6,12 +6,12 @@ tags: []
 math: true
 ---
 
-## Theorem
+## Theorem 1
 Suppose that $f(z) = u(x, y) + i v(x, y)$ is differentiable at $z_0 = x_0 + i y_0$. Then 
 
 **(i)** $u_x, u_y, v_x, v_y$ exist at $(x_0, y_0)$
 
-**(ii)** $u_x, u_y, v_x, v_y$ satisfy the Cauchy-Riemann equations:
+**(ii)** $u_x, u_y, v_x, v_y$ satisfy the Cauchy-Riemann equations at $(x_0, y_0)$:
 
 $$
 \begin{cases}
@@ -52,7 +52,28 @@ f'(z_0) &= \lim_{\Delta y \to 0} \frac{\Delta w}{\Delta z} \\
 
 Thus we have 
 
-$$\begin{align*}
+$$\begin{cases*}
 u_x = v_y \\
 u_y = -v_x \blacksquare
-\end{align*}$$
+\end{cases*}$$
+
+---
+
+## Theorem 2
+Let $f(z) = u(x, y) +iv(x, y)$ be defined throughout some $\varepsilon$ neighborhood of $z_0 = x_0 + i y_0$. Suppose that 
+
+(i) $u_x, u_y, v_x, v_y$ exist in this neighborhood
+
+(ii) $u_x, u_y, v_x, v_y$ are continuous at $(x_0, y_0)$
+
+(iii) $u_x, u_y, v_x, v_y$ satisfy the Cauchy-Riemann equations at $(x_0, y_0)$
+
+Then $f$ is differentiable at $z_0$ and $f'(z_0)$ is given by
+
+$$ \begin{align*}
+f'(z_0) &= u_x(x_0, y_0) + i v_x(x_0, y_0) \\
+&= v_y(x_0, y_0) - i u_y(x_0, y_0)
+\end{align*}
+$$
+
+### Proof
