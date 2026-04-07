@@ -89,8 +89,8 @@ There is at most one solution to the problem
 
 $$\begin{cases}
 
-u_t - k u_{xx} = f(x, t) & 0 < x < L, 0 < t < T \\
-u(x, 0) = \phi(x) & 0 \le x \le L \\
+u_t - k u_{xx} = f(x, t) & 0 < x < L, t > 0 \\
+u(x, 0) = \phi(x) \\
 u(0, t) = g(t), \quad u(L, t) = h(t)
 \end{cases}$$
 
@@ -101,15 +101,9 @@ Let $u_1, u_2$ be two solutions, and let $w \equiv u_1 - u_2$. Then $w$ satisfie
 
 $$\begin{cases}
 
-w_t - k w_{xx} = 0 & 0 < x < L, 0 < t < T \\
-w(x, 0) = 0 & 0 \le x \le L \\
+w_t - k w_{xx} = 0 \\
+w(x, 0) = 0 \\
 w(0, t) = 0, \quad w(L, t) = 0
 \end{cases}$$
 
-By Maximum principle, $w(x, t) \le 0$ for all $0 \le x \le L$ and $0 \le t \le T$. 
-
-By Minimum principle, $w(x, t) \ge 0$ for all $0 \le x \le L$ and $0 \le t \le T$. 
-
-Thus $w(x, t) = 0$ for all $0 \le x \le L$ and $0 \le t \le T$. 
-
-Therefore, $u_1(x, t) = u_2(x, t)$ for all $0 \le x \le L$ and $0 \le t \le T$. $\blacksquare$
+By Maximum principle, $w(x, t) \le 0$ for all $0 \le x \le L$ and $t \ge 0$. Similarly, by Minimum principle, $w(x, t) \ge 0$ for all $0 \le x \le L$ and $t \ge 0$. Thus $w(x, t) = 0$ for all $0 \le x \le L$ and $t \ge 0$ and therefore, $u_1(x, t) = u_2(x, t)$ for all $0 \le x \le L$ and $t \ge 0$. $\blacksquare$
