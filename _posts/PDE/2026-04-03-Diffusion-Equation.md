@@ -34,8 +34,7 @@ Let $\varepsilon > 0$, and let $v(x, t) = u(x, t) + \varepsilon x^2$. On the thr
 
 $$
 \begin{align*}
-&u(x, t) \le M \\
-&\implies u(x, t) + \varepsilon x^2 \le M + \varepsilon x^2 \le M + \varepsilon L^2 \\
+u(x, t) \le M &\implies u(x, t) + \varepsilon x^2 \le M + \varepsilon x^2 \le M + \varepsilon L^2 \\
 &\implies v(x, t) \le M + \varepsilon L^2,
 \end{align*}
 $$
