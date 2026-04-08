@@ -85,4 +85,20 @@ $$\begin{align*}
 
 If $z = 0$, then $\frac{\Delta w}{\Delta z} = \overline{\Delta z}$, so $\lim_{\Delta z \to 0} \frac{\Delta w}{\Delta z} = 0$. Thus $f$ is differentiable at $z = 0$ and $f'(0) = 0$.
 
-Suppose that $z \neq 0$. Along the real axis, $\frac{\Delta w}{\Delta z} = z + \overline{z} + \Delta x$, so $\lim_{\Delta z \to 0} \frac{\Delta w}{\Delta z} = z + \overline{z}$. Along the imaginary axis, $\frac{\Delta w}{\Delta z} = z - \overline{z} - i \Delta y$, so $\lim_{\Delta z \to 0} \frac{\Delta w}{\Delta z} = z - \overline{z}$. Since $z \neq 0$, $z + \overline{z} \neq z - \overline{z}$. Thus $f$ is not differentiable at any point in $\mathbb{C}$ except at $z = 0$. 
+Suppose that $z \neq 0$. Along the real axis, we have 
+
+$$\frac{\Delta w}{\Delta z} = z + \overline{z} + \Delta x$$
+
+so that 
+
+$$\lim_{\Delta z \to 0} \frac{\Delta w}{\Delta z} = z + \overline{z}.$$
+
+Along the imaginary axis, we have 
+
+$$\frac{\Delta w}{\Delta z} = z - \overline{z} - i \Delta y$$
+
+so that 
+
+$$\lim_{\Delta z \to 0} \frac{\Delta w}{\Delta z} = z - \overline{z}.$$
+
+Since $z \neq 0$, $z + \overline{z} \neq z - \overline{z}$. Thus $f$ is not differentiable at any point in $\mathbb{C}$ except at $z = 0$. 
