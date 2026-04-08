@@ -145,3 +145,54 @@ which means that the energy $\int_0^L \frac{1}{2} w^2 dx$ is non-increasing in $
 $$0 \le \int_0^L \frac{1}{2} w^2 dx \le \int_0^L \frac{1}{2} w(x, 0)^2 dx = 0,$$
 
 which implies that $w(x, t) = 0$ for all $0 \le x \le L$ and $t \ge 0$. Therefore, $u_1(x, t) = u_2(x, t)$ for all $0 \le x \le L$ and $t \ge 0$. $\blacksquare$ 
+
+---
+
+## Theorem 3
+The problem 
+
+$$\begin{cases}
+
+u_t = k u_{xx} & 0 < x < L, t > 0 \\
+u(x, 0) = \phi(x) \\
+u(0, t) = 0 = u(L, t)
+\end{cases}$$
+
+satiesfies the stability.
+
+### Proof 1 ($L^2$ sense)
+Let $u_1, u_2$ be two solutions, and let $u_1(x, 0) = \phi_1(x)$ and $u_2(x, 0) = \phi_2(x)$. Let $w \equiv u_1 - u_2$. By the energy method of the previous theorem, we have
+
+$$
+\int_0^L \frac{1}{2} w(x, t)^2 dx \le \int_0^L \frac{1}{2} w(x, 0)^2 dx.
+$$
+
+Then we get
+
+$$\int_0^L (u_1 - u_2)^2 dx \le \int_0^L (\phi_1 - \phi_2)^2 dx.$$
+
+Note that RHS is independent of $t$, so that it is just a constant. This means that if we start nearby at $t=0$, then we stay nearby for all $t > 0$. Thus the solution is stable. $\blacksquare$
+
+### Proof 2 (Uniform sense)
+Let $u_1, u_2$ be two solutions, and let $u_1(x, 0) = \phi_1(x)$ and $u_2(x, 0) = \phi_2(x)$. Let $w \equiv u_1 - u_2$. Then $w = 0$ on the lateral sides of the rectangle, and $w$ satisfies
+
+$$\begin{cases}
+
+w_t - k w_{xx} = 0 \\
+w(x, 0) = \phi_1(x) - \phi_2(x) \\
+w(0, t) = 0 = w(L, t)
+\end{cases}$$
+
+By Maximum principle, we have
+
+$$u_1 - u_2 \le \max \vert \phi_1 - \phi_2 \vert$$
+
+and by Minimum principle, we have
+
+$$u_1 - u_2 \ge - \max \vert \phi_1 - \phi_2 \vert$$
+
+Thus we get
+
+$$\vert u_1 - u_2 \vert \le \max \vert \phi_1 - \phi_2 \vert.$$ 
+
+Note that RHS is independent of $t$, so that it is just a constant. This means that if we start nearby at $t=0$, then we stay nearby for all $t > 0$. Thus the solution is stable. $\blacksquare$
