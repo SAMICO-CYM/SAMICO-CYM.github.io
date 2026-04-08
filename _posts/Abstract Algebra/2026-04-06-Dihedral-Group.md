@@ -72,7 +72,7 @@ Subgroup diagram은 다음과 같다.
 
 ## Remark
 
-한편 $D_n$을 다룰 때 주의해야 하는 점이 있다. $D_3$에서 회전 $\displaystyle \rho_1 = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 3 & 1 \end{pmatrix}$과 반전 $\displaystyle \mu_1 = \begin{pmatrix} 1 & 2 & 3 \\ 1 & 3 & 2 \end{pmatrix}$을 생각해보자. 둘을 합성하면 
+한편 $D_n$을 다룰 때 주의해야 하는 점이 있다. $D_3$에서 회전 $\rho_1 = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 3 & 1 \end{pmatrix}$과 반전 $\displaystyle \mu_1 = \begin{pmatrix} 1 & 2 & 3 \\ 1 & 3 & 2 \end{pmatrix}$을 생각해보자. 둘을 합성하면 
 
 $$
 \rho_1 \mu_1 = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 3 & 1 \end{pmatrix} \begin{pmatrix} 1 & 2 & 3 \\ 1 & 3 & 2 \end{pmatrix} = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 1 & 3 \end{pmatrix} = \mu_3
