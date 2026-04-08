@@ -72,7 +72,13 @@ Subgroup diagram은 다음과 같다.
 
 ## Remark
 
-한편 $D_n$을 다룰 때 주의해야 하는 점이 있다. $D_3$에서 회전 $\rho_1 = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 3 & 1 \end{pmatrix}$과 반전 $\displaystyle \mu_1 = \begin{pmatrix} 1 & 2 & 3 \\ 1 & 3 & 2 \end{pmatrix}$을 생각해보자. 둘을 합성하면 
+한편 $D_n$을 다룰 때 주의해야 하는 점이 있다. $D_3$에서 회전 
+
+$$\rho_1 = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 3 & 1 \end{pmatrix}$$
+
+과 반전 
+
+$$\mu_1 = \begin{pmatrix} 1 & 2 & 3 \\ 1 & 3 & 2 \end{pmatrix}$을 생각해보자. 둘을 합성하면 
 
 $$
 \rho_1 \mu_1 = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 3 & 1 \end{pmatrix} \begin{pmatrix} 1 & 2 & 3 \\ 1 & 3 & 2 \end{pmatrix} = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 1 & 3 \end{pmatrix} = \mu_3
@@ -95,7 +101,19 @@ $$\begin{pmatrix}
 
 물론 한 번 적용시킬 때는 마치 실제로 숫자들이 움직이는 것처럼 봐도 무방하지만, 한 번더 적용되는 순간부터는 숫자를 신경쓰면 안된다. 처음 $\mu_1$을 적용시키고 그 다음에 $\rho_1$을 적용할 때에는 무게중심에 대하여 반시계 방향으로 $\frac{2\pi}{3}$만큼 회전시킨다는 $\rho_1$의 기하학적 의미로 적용해야지, 숫자만 보고 무작정 1은 2가 있던 자리로, 2는 3이 있던 자리로, 3은 1이 있던 자리로 보내면 안된다는 것이다. 실제로 위 그림에서 $\rho_1$을 반시계 방향으로 회전시켜보면 정상적으로 $\mu_3$의 결과를 얻게 된다. 
 
-$D_4$에서도 마찬가지이다. 회전 $\displaystyle \rho_1 = \begin{pmatrix} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{pmatrix}$과 반전 $\displaystyle \delta_2 = \begin{pmatrix} 1 & 2 & 3 & 4 \\ 1 & 4 & 3 & 2 \end{pmatrix}$를 생각해보자. 둘을 합성하면 
+$D_4$에서도 마찬가지이다. 회전 
+
+$$
+\rho_1 = \begin{pmatrix} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{pmatrix}
+$$
+
+과 반전 
+
+$$
+\delta_2 = \begin{pmatrix} 1 & 2 & 3 & 4 \\ 1 & 4 & 3 & 2 \end{pmatrix}
+$$
+
+을 생각해보자. 둘을 합성하면 
 
 $$
 \delta_2 \rho_1 = \begin{pmatrix} 1 & 2 & 3 & 4 \\ 1 & 4 & 3 & 2 \end{pmatrix} \begin{pmatrix} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 2 & 3 & 4 \\ 4 & 3 & 2 & 1 \end{pmatrix} = \mu_2
