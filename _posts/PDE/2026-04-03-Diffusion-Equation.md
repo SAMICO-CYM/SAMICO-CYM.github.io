@@ -107,3 +107,41 @@ w(0, t) = 0, \quad w(L, t) = 0
 \end{cases}$$
 
 By Maximum principle, $w(x, t) \le 0$ for all $0 \le x \le L$ and $t \ge 0$. Similarly, by Minimum principle, $w(x, t) \ge 0$ for all $0 \le x \le L$ and $t \ge 0$. Thus $w(x, t) = 0$ for all $0 \le x \le L$ and $t \ge 0$ and therefore, $u_1(x, t) = u_2(x, t)$ for all $0 \le x \le L$ and $t \ge 0$. $\blacksquare$
+
+### Proof 2 (Energy)
+Let $u_1, u_2$ be two solutions, and let $w \equiv u_1 - u_2$. Then $w$ satisfies
+
+$$\begin{cases}
+
+w_t - k w_{xx} = 0 \\
+w(x, 0) = 0 \\
+w(0, t) = 0, \quad w(L, t) = 0
+\end{cases}$$
+
+Multiplying the equation for $w$ by $w$ itself, we have 
+
+$$\begin{align*}
+0 &= 0 \cdot w \\
+&= (w_t - kw_{xx})w \\
+&= w_t w - k w_{xx} w \\
+&= \left( \frac{1}{2} w^2 \right)_t - (k w_x w)_x + k (w_x)^2.
+\end{align*}$$
+
+Integrating over $0 < x < L$, we get
+
+$$\begin{align*}
+0 &= \int_0^L \left( \frac{1}{2} w^2 \right)_t dx - \int_0^L (k w_x w)_x dx + \int_0^L k (w_x)^2 dx \\
+&= \frac{d}{dt} \int_0^L \frac{1}{2} w^2 dx - \left[ k w_x w \right]_0^L + \int_0^L k (w_x)^2 dx.
+\end{align*}$$
+
+Then 
+
+$$\begin{align*}
+\frac{d}{dt} \int_0^L \frac{1}{2} w^2 dx &= - \int_0^L k (w_x)^2 dx \le 0,
+\end{align*}$$
+
+which means that the energy $\int_0^L \frac{1}{2} w^2 dx$ is non-increasing in $t$. Thus
+
+$$0 \le \int_0^L \frac{1}{2} w^2 dx \le \int_0^L \frac{1}{2} w(x, 0)^2 dx = 0,$$
+
+which implies that $w(x, t) = 0$ for all $0 \le x \le L$ and $t \ge 0$. Therefore, $u_1(x, t) = u_2(x, t)$ for all $0 \le x \le L$ and $t \ge 0$. $\blacksquare$ 
