@@ -47,3 +47,42 @@ Thus we have $\lim_{z \to z_0} f(z) = f(z_0)$, which means that $f$ is continuou
 **(iii)** $\displaystyle \frac{d}{dz} \left[ \frac{f(z)}{g(z)} \right] = \frac{f'(z) g(z) - f(z) g'(z)}{[g(z)]^2}$
 
 **(iv)** $\displaystyle \frac{d}{dz} [f(g(z))] = f'(g(z)) g'(z)$
+
+---
+
+## Corollary 
+
+**(i)** $\displaystyle \frac{d}{dz} [c] = 0$
+
+**(ii)** $\displaystyle \frac{d}{dz} [z] = 1$
+
+**(iii)** $\displaystyle \frac{d}{dz} [z^n] = n z^{n-1}, \forall n \in \mathbb{Z}$, provided $z \neq 0$.
+
+---
+
+## Example
+
+**(i)** Let $f(z) = \frac{1}{z}, \forall z \in \mathbb{C} \setminus \{0\}$. Then we have $f'(z) = -\frac{1}{z^2}$. Thus, $f$ is differentiable on $\mathbb{C}$ except at $z = 0$.
+
+**(ii)** Let $f(z) = \overline{z}, \forall z \in \mathbb{C}$. Note that 
+
+$$\begin{align*}
+\frac{\Delta w}{\Delta z} &= \frac{\overline{z + \Delta z} - \overline{z}}{\Delta z} \\ 
+&= \frac{\overline{\Delta z}}{\Delta z} = \begin{cases} 1, & \text{if } \Delta z = \Delta x \\ -1, & \text{if } \Delta z = i \Delta y \end{cases}
+\end{align*}$$
+
+Thus $f$ is not differentiable at any point in $\mathbb{C}$. Note that for $f(z) = \overline{z} = x - iy$, $u(x, y) = x$ and $v(x, y) = -y$ are differentiable everywhere. 
+
+**(iii)** Let $f(z) = \vert z \vert^2 = x^2 + y^2, \forall z \in \mathbb{C}$. Then we have 
+
+$$\begin{align*}
+\frac{\Delta w}{\Delta z} &= \frac{\vert z + \Delta z \vert^2 - \vert z \vert^2}{\Delta z} \\ 
+&= \frac{(z + \Delta z) \overline{z + \Delta z} - \vert z \vert^2}{\Delta z} \\
+&= \frac{(z + \Delta z)(\overline{z} + \overline{\Delta z} - \vert z \vert^2}{\Delta z} \\
+&= \frac{\vert z \vert^2 + z \overline{\Delta z} + \overline{z} \Delta z + \vert \Delta z \vert^2 - \vert z \vert^2}{\Delta z} \\
+&= z \frac{\overline{\Delta z}}{\Delta z} + \overline{z} + \overline{\Delta z} = \begin{cases} z + \overline{z} + \Delta x, & \text{if } \Delta z = \Delta x \\ z - \overline{z} - i \Delta y, & \text{if } \Delta z = i \Delta y \end{cases}
+\end{align*}$$
+
+If $z = 0$, then $\frac{\Delta w}{\Delta z} = \overline{\Delta z}$, so $\lim_{\Delta z \to 0} \frac{\Delta w}{\Delta z} = 0$. Thus $f$ is differentiable at $z = 0$ and $f'(0) = 0$.
+
+Suppose that $z \neq 0$. Along the real axis, $\frac{\Delta w}{\Delta z} = z + \overline{z} + \Delta x$, so $\lim_{\Delta z \to 0} \frac{\Delta w}{\Delta z} = z + \overline{z}$. Along the imaginary axis, $\frac{\Delta w}{\Delta z} = z - \overline{z} - i \Delta y$, so $\lim_{\Delta z \to 0} \frac{\Delta w}{\Delta z} = z - \overline{z}$. Since $z \neq 0$, $z + \overline{z} \neq z - \overline{z}$. Thus $f$ is not differentiable at any point in $\mathbb{C}$ except at $z = 0$. 
