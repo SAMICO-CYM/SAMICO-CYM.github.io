@@ -39,7 +39,7 @@ Let $a \in G$. Since $x^{-1}a \in G$, we have
 
 $$\sigma_x(x^{-1}a) = x(x^{-1}a) = a$$
 
-Thus $\sigma_x$ is onto, so that $\sigma_x$ is a permutation of $G$. 
+Thus $\sigma_x$ is onto, so that $\sigma_x \in S_G$.
 
 Define a function $\phi: G \to S_G$ by 
 
@@ -64,3 +64,50 @@ $$\begin{align*}
 for all $g \in G$. Thus $\phi(xy) = \phi(x) \phi(y)$, so that $\phi$ is a homomorphism. 
 
 By Lemma, $G$ is isomorphic to $\operatorname{Im}(\phi)$, a subgroup of $S_G$. $\blacksquare$
+
+---
+
+## Example
+
+Let $G = \\{ e, a, b \\}$ be a group given by
+
+$$
+\begin{array}{c|ccc}
+* & e & a & b \\
+\hline
+e & e & a & b \\
+a & a & b & e \\
+b & b & e & a
+\end{array}
+$$
+
+Define for each $x \in G$, $\sigma_x: G \to G$ by $\sigma_x(g) = xg$ for all $g \in G$. Then we have
+
+$$
+\sigma_e = \begin{pmatrix}
+e & a & b \\
+e & a & b \\
+\end{pmatrix}, \quad 
+\sigma_a = \begin{pmatrix}
+e & a & b \\
+a & b & e \\
+\end{pmatrix}, \quad 
+\sigma_b = \begin{pmatrix}
+e & a & b \\
+b & e & a \\
+\end{pmatrix}
+$$
+
+Now, $\\{\sigma_e, \sigma_a, \sigma_b\\}$ forms a group under composition of functions as follows:
+
+$$
+\begin{array}{c|ccc}
+ & \sigma_e & \sigma_a & \sigma_b \\
+\hline
+\sigma_e & \sigma_e & \sigma_a & \sigma_b \\
+\sigma_a & \sigma_a & \sigma_b & \sigma_e \\
+\sigma_b & \sigma_b & \sigma_e & \sigma_a.
+\end{array}
+$$
+
+Hence $G \cong \\{ \sigma_e, \sigma_a, \sigma_b \\} \le S_G.$
