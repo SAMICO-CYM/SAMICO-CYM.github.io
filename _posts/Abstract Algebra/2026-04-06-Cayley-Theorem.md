@@ -14,7 +14,53 @@ Since $\phi$ is a homomorphism, clearly $\operatorname{Im}(\phi) = \phi(G) \le G
 
 Define a function $f: G \to \phi(G)$ by $f(g) = \phi(g)$ for all $g \in G$. Since $\phi$ is a monomorphism, $f$ is injective. Clearly $f$ is surjective, so that $f$ is an isomorphism. Thus, $\operatorname{Im}(\phi) \cong G$. $\blacksquare$
 
+---
+
 ## Cayley's Theorem
 Every group is isomorphic to a subgroup of $S_A$ for some set $A$.
 
 ### Proof
+Let $G$ be a group. Define a function $\sigma_x : G \to G$ by 
+
+$$\sigma_x(g) = xg, \forall g \in G.$$
+
+Since $G$ is a group, the binary operation is well-defined, so that $\sigma_x$ is well-defined. 
+
+Suppose that $\sigma_x(g_1) = \sigma_x(g_2)$ for some $g_1, g_2 \in G$. Then we have 
+
+$$\begin{align*}
+\sigma_x(g_1) = \sigma_x(g_2) &\implies xg_1 = xg_2 \\
+&\implies g_1 = g_2,
+\end{align*}$$
+
+which means that $\sigma_x$ is one-to-one. 
+
+Let $a \in G$. Since $x^{-1}a \in G$, we have 
+
+$$\sigma_x(x^{-1}a) = x(x^{-1}a) = a$$
+
+Thus $\sigma_x$ is onto, so that $\sigma_x$ is a permutation of $G$. 
+
+Define a function $\phi: G \to S_G$ by 
+
+$$\phi(x) = \sigma_x, \forall x \in G.$$
+
+Clearly $\phi$ is well-defined. If $\phi(x) = \phi(y)$, then $\sigma_x = \sigma_y$. Since 
+
+$$x = xe = \sigma_x(e) = \sigma_y(e) = ye = y,$$
+
+$x = y$ so that $\phi$ is one-to-one.
+
+Let $x, y \in G$. Then we have 
+
+$$\begin{align*}
+(\phi(xy))(g) &= (xy)g \\
+&= x(yg) \\
+&= \sigma_x(\sigma_y(g)) \\
+&= (\sigma_x \sigma_y)(g) \\
+&= (\phi(x) \phi(y))(g)
+\end{align*}$$
+
+for all $g \in G$. Thus $\phi(xy) = \phi(x) \phi(y)$, so that $\phi$ is a homomorphism. 
+
+By Lemma, $G$ is isomorphic to $\operatorname{Im}(\phi)$, a subgroup of $S_G$. $\blacksquare$
