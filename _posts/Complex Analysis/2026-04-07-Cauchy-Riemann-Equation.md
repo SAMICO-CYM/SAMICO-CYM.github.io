@@ -73,6 +73,25 @@ for some $\varepsilon_1, \varepsilon_2 > 0$ such that $\varepsilon_1, \varepsilo
 
 $$\begin{align*}
 \Delta w &= \Delta u + i \Delta v \\
-&= u_x \Delta x + u_y \Delta y + \varepsilon_1 \Delta x + \varepsilon_2 \Delta y + i (v_x \Delta x + v_y \Delta y + \varepsilon_3 \Delta x + \varepsilon_4 \Delta y) \\
-&= (u_x - v_y) \Delta x + (u_y + v_x) \Delta y + \varepsilon_1 \Delta x + \varepsilon_2 \Delta y + i \varepsilon_3 \Delta x + i \varepsilon_4 \Delta y \\
+&= (u_x \Delta x + u_y \Delta y + \varepsilon_1 \Delta x + \varepsilon_2 \Delta y) + i (v_x \Delta x + v_y \Delta y + \varepsilon_3 \Delta x + \varepsilon_4 \Delta y) \\
+&= (u_x + iv_x) \Delta x + (u_y + iv_y) \Delta y + (\varepsilon_1 + i \varepsilon_3) \Delta x + (\varepsilon_2 + i \varepsilon_4) \Delta y \\
+&= u_x(\Delta x + i \Delta y) + i v_x(\Delta x + i \Delta y) + (\varepsilon_1 + i \varepsilon_3) \Delta x + (\varepsilon_2 + i \varepsilon_4) \Delta y \\
+&= (u_x + iv_x) \Delta z + (\varepsilon_1 + i \varepsilon_3) \Delta x + (\varepsilon_2 + i \varepsilon_4) \Delta y
 \end{align*}$$
+
+where $\varepsilon_1, \varepsilon_2, \varepsilon_3, \varepsilon_4 \to 0$ as $(\Delta x, \Delta y) \to (0, 0)$.
+
+Then we have 
+$$\begin{align*}
+\frac{\Delta w}{\Delta z} &= u_x + iv_x + (\varepsilon_1 + i \varepsilon_3) \frac{\Delta x}{\Delta z} + (\varepsilon_2 + i \varepsilon_4) \frac{\Delta y}{\Delta z}
+\end{align*}$$
+
+Since $\vert \frac{\Delta x}{\Delta z} \vert \le 1$ and $\vert \frac{\Delta y}{\Delta z} \vert \le 1$, we have 
+
+$$\begin{align*}
+\vert \frac{\Delta w}{\Delta z} - (u_x + iv_x) \vert &= \vert (\varepsilon_1 + i \varepsilon_3) \frac{\Delta x}{\Delta z} + (\varepsilon_2 + i \varepsilon_4) \frac{\Delta y}{\Delta z} \vert \\
+&\le \vert \varepsilon_1 \vert + \vert \varepsilon_3 \vert + \vert \varepsilon_2 \vert + \vert \varepsilon_4 \vert \\
+&\to 0 \quad \text{as } (\Delta x, \Delta y) \to (0, 0).
+\end{align*}$$
+
+Thus $f$ is differentiable at $z_0$ and $f'(z_0) = u_x + iv_x$. $\blacksquare$
