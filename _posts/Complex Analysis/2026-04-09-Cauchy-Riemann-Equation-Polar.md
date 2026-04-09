@@ -41,7 +41,7 @@ $$\begin{bmatrix} v_x \\ v_y \end{bmatrix} = \frac{1}{r} \begin{bmatrix} r \cos 
 
 Applying the Cauchy-Riemann equations in Cartesian coordinates, we have 
 
-$$\begin{cases} \cos \theta - \frac{1}{r} \sin \theta = u_x = v_y = \frac{1}{r} v_\theta \\ \sin \theta + \frac{1}{r} \cos \theta = u_y = -v_x = -\frac{1}{r} v_r \end{cases}$$
+$$\begin{cases} \cos \theta - \frac{1}{r} \sin \theta = u_x = v_y = \frac{1}{r} \cos \theta v_r - \frac{1}{r} \sin \theta v_\theta \\ \sin \theta + \frac{1}{r} \cos \theta = u_y = -v_x = -\frac{1}{r} \sin \theta v_r - \frac{1}{r} \cos \theta v_\theta \end{cases}$$
 
 By multipliying $r$ to the both sides, we have 
 
