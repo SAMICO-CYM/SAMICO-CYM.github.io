@@ -97,7 +97,7 @@ $$S(x, t) = \frac{\partial Q}{\partial x}(x, t).$$
 
 By Lemma (ii), $S$ is also a solution. By Lemma (iv), we have 
 
-$$u(x, t) = \int_{-\infty}^{\infty} S(x - y, t) \phi(y) dy$$
+$$u(x, t) = \int_{-\infty}^{\infty} S(x - y, t) \phi(y) dy = \frac{1}{\sqrt{4 \pi k t}} \int_{-\infty}^{\infty} e^{-\frac{(x - y)^2}{4 k t}} \phi(y) dy$$
 
 is a solution. 
 
@@ -119,4 +119,42 @@ u(x, 0) &= \int_{-\infty}^{\infty} Q(x-y, 0) \phi'(y) dy \\
 &= \phi(x), 
 \end{align*}$$
 
-which means that $u$ is a solution to the diffusion equation with the initial condition $u(x, 0) = \phi(x)$. $\blacksquare$
+which means that 
+
+$$u(x, t) = \frac{1}{\sqrt{4 \pi k t}} \int_{-\infty}^{\infty} e^{-\frac{(x - y)^2}{4 k t}} \phi(y) dy$$ 
+
+is a solution to the diffusion equation with the initial condition $u(x, 0) = \phi(x)$. $\blacksquare$
+
+---
+
+## Remark
+Note that 
+
+$$S(x, t) = \frac{\partial Q}{\partial x}(x, t) = \frac{1}{\sqrt{4 \pi k t}} e^{-\frac{x^2}{4 k t}}$$
+
+is the probability density function of the normal distribution $N(0, 2kt)$. We call $S$ the ***source function*** (or ***fundamental solution***) of the diffusion equation. Clearly, it has the following properties:
+
+**(i)** $\displaystyle \int_{-\infty}^{\infty} S(x, t) dx = 1$ for all $t > 0$.
+
+**(ii)** $\displaystyle \lim_{t \to 0^+} S(x, t) = \delta(x)$ (Dirac delta function).
+
+**(iii)** $\displaystyle \lim_{t \to \infty} S(x, t) = 0$ for all $x \in \mathbb{R}$.
+
+**(iv)** $\displaystyle S(x, t) > 0$ and $\displaystyle S(x, t) = S(-x, t)$.
+
+**(v)** For any fixed $h > 0$, $\displaystyle \lim_{t \to \infty} \max _ {\vert x \vert > h} = 0$.
+
+--- 
+
+## Note
+The ***error function*** is defined as 
+
+$$\text{erf}(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} dt.$$
+
+Note that 
+
+**(i)** $\text{erf}(0) = 0$
+
+**(ii)** $\displaystyle \lim_{x \to \infty} \text{erf}(x) = 1$
+
+**(iii)** $\displaystyle Q(x, t) = \frac{1}{2} \text{erf}\left( \frac{x}{\sqrt{4kt}} \right) + \frac{1}{2}$.
