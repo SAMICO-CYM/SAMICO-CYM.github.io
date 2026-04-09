@@ -69,6 +69,8 @@ rv_r = -u_\theta
 \end{cases}
 $$
 
+Conversely, if $u_r, u_\theta, v_r, v_\theta$ exist and satisfy the Cauchy-Riemann equations in polar coordinates at $(r_0, \theta_0)$, then $u_x, u_y, v_x, v_y$ exist and satisfy the Cauchy-Riemann equations in Cartesian coordinates at $(x_0, y_0)$.
+
 ## Theorem 1
 Let $f(z) = u(r, \theta) + i v(r, \theta)$ be defined throughout some $\varepsilon$ neighborhood of $z_0 = r_0 e^{i \theta_0}$. Suppose that $u_r, u_\theta, v_r, v_\theta$ exist in this neighborhood, are continuous at $(r_0, \theta_0)$, and satisfy the Cauchy-Riemann equations in polar coordinates at $(r_0, \theta_0)$:
 
@@ -84,9 +86,3 @@ Then $f$ is differentiable at $z_0$ and
 $$
 f'(z_0) = e^{-i \theta_0} (u_r + i v_r)
 $$
-
-### Proof
-
----
-
-## Theorem 2
