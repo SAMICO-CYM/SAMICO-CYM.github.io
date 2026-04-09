@@ -101,7 +101,7 @@ $$u(x, t) = \int_{-\infty}^{\infty} S(x - y, t) \phi(y) dy$$
 
 is a solution. 
 
-Let's check the initial condition, i.e., $u(x, 0) = \phi(x)$. Assume that $\phi(y) = 0$ for sufficiently large $|y|$. Note that
+Let's check the initial condition, i.e., $u(x, 0) = \phi(x)$. Assume that $\phi(y) = 0$ for sufficiently large $\vert y \vert$. Note that
 
 $$\begin{align*}
 u(x, t) &= \int_{-\infty}^{\infty} S(x - y, t) \phi(y) dy \\
