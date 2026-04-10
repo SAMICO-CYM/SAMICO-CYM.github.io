@@ -52,5 +52,8 @@ $$\begin{align*}
 \left\vert \bigcap_{i=1}^n A_i^c \right\vert &= \left\vert \left( \bigcup_{i=1}^n A_i \right)^c \right\vert \\
 &= \vert X \vert - \left\vert \bigcup_{i=1}^n A_i \right\vert \\
 &= \vert X \vert - \sum_{k=1}^n (-1)^{k-1} \sum_{I \in \binom{[n]}{k}} \left\vert \bigcap_{i \in I} A_i \right\vert \\
+&= \vert X \vert + \sum_{k=1}^n (-1)^{k} \sum_{I \in \binom{[n]}{k}} \left\vert \bigcap_{i \in I} A_i \right\vert \\
 &= \sum_{k=0}^n (-1)^k \sum_{I \in \binom{[n]}{k}} \left\vert \bigcap_{i \in I} A_i \right\vert.
 \end{align*}$$
+
+because $\bigcap_{i \in \emptyset} A_i = X$. $\blacksquare$
