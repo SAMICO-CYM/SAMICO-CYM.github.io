@@ -1,0 +1,15 @@
+---
+title: "Isomorphism"
+date: 2026-04-10
+categories: [Mathematics, Graph Theory]
+tags: []
+math: true
+---
+
+## Definition
+An ***isomorphism*** from a graph $G$ to a graph $H$ is a bijection $\phi: V(G) \to V(H)$ such that for all $u, v \in V(G)$, we have $\{ u, v \} \in E(G)$ if and only if $\{ \phi(u), \phi(v) \} \in E(H)$. Two graphs $G$ and $H$ are said to be ***isomorphic*** if there exists an isomorphism from $G$ to $H$. We denote this by $G \cong H$.
+
+---
+
+## Remark
+How many non-isomorphic graphs are there on $n$ vertices? The answer is, we don't know. It is at most $2^{\binom{n}{2}}$ and at least $\frac{2^{\binom{n}{2}}}{n!}$. 
