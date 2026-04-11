@@ -41,7 +41,19 @@ Suppose that $U_1 \cap \cdots \cap U_{n} \in \mathcal{T} _ { \mathcal{B} }$ for 
 
 **(ii)** Every topology on a set $X$ has a basis generating itself. In particular, $\mathcal{T}$ is a basis for itself, that is, $\mathcal{T} = \mathcal{T} _ { \mathcal{T} }$.
 
-$(\because)$ Let $\mathcal{T}$ be a topology on a set $X$. For each $x \in X$, $x \in X \in \mathcal{T}$. If $x \in B_1 \cap B_2$ for $B_1, B_2 \in \mathcal{T}$, then $x \in B_1 \cap B_2 \in \mathcal{T}$. Thus $\mathcal{T}$ is a basis for a topology on $X$. $\blacksquare$ 
+$(\because)$ Let $\mathcal{T}$ be a topology on a set $X$. For each $x \in X$, $x \in X \in \mathcal{T}$. If $x \in B_1 \cap B_2$ for $B_1, B_2 \in \mathcal{T}$, then $x \in B_1 \cap B_2 \in \mathcal{T}$. Thus $\mathcal{T}$ is a basis for a topology on $X$. 
+
+Let $U \in \mathcal{T}$. If $x \in U$, then $x \in U \subset U$, which means that $U \in \mathcal{T} _ {\mathcal{T}}$. Thus $\mathcal{T} \subset \mathcal{T} _ {\mathcal{T}}$.
+
+Let $U \in \mathcal{T} _ {\mathcal{T}}$. If $x \in U$, then $\exists B_x \in \mathcal{T}$ such that $x \in B_x \subset U$. We claim that $\bigcup_{x \in U} B_x = U$. 
+
+$(\because)$ Since each $B_x \subset U$, we have $\bigcup_{x \in U} B_x \subset U$. 
+
+If $x \in U$, then $\exists B_x \in \mathcal{T}$ such that $x \in B_x \subset U$, which means that $x \in \bigcup_{x \in U} B_x$. Thus $U \subset \bigcup_{x \in U} B_x$. 
+
+Therefore $\bigcup_{x \in U} B_x = U$. Since $\mathcal{T}$ is a topology on $X$, $\bigcup_{x \in U} B_x \in \mathcal{T}$, which means that $U \in \mathcal{T}$. Thus $\mathcal{T} _ {\mathcal{T}} \subset \mathcal{T}$. 
+
+Therefore $\mathcal{T} = \mathcal{T} _ {\mathcal{T}}$. $\blacksquare$ 
 
 **(iii)** But every basis on a set $X$ need **NOT** be a topology on $X$ in general. The counterexample is $\mathcal{B}_1$ in Example **(i)**.
 
