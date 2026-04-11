@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Combinatorics/2026-04-05-Big-O-Notation.md",
+                "file": "_posts/Set Theory/2026-03-27-Characteristic-Function.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-05-Big-O-Notation"
+              "title": "2026-03-27-Characteristic-Function"
             }
           }
         ]
@@ -182,12 +182,19 @@
   },
   "active": "7a4503827723e1d6",
   "lastOpenFiles": [
+    "_posts/Set Theory/2026-03-15-Diagonal-Relation.md",
+    "_posts/Set Theory/2026-03-27-Characteristic-Function.md",
+    "_posts/Set Theory/2026-03-27-Power-Set.md",
+    "_posts/Set Theory/2026-03-09-Relation.md",
+    "_posts/Set Theory/2026-03-10-Cardinality.md",
+    "_posts/Set Theory/2026-03-10-Tuple.md",
+    "_posts/Set Theory/2026-03-09-Equivalence Relation.md",
+    "_posts/Combinatorics/2026-04-05-Big-O-Notation.md",
     "_site/posts/Big-O-Notation/index.html",
     "_site/posts/Big-O-Notation",
     "_site/categories/combinatori/index.html",
     "_site/categories/combinatori",
     "_posts/Combinatorics/2026-04-05-Multinomial-Coefficient.md",
-    "_posts/Combinatorics/2026-04-05-Big-O-Notation.md",
     "_site/posts/Multinomial-Coefficient/index.html",
     "_site/posts/Multinomial-Coefficient",
     "_posts/Combinatorics/2026-04-05-Binomial-Coefficient.md",
@@ -196,7 +203,6 @@
     "_site/categories/combinatorics/index.html",
     "_site/categories/combinatorics",
     "_posts/Topology/2026-04-02-Subspace-Topology.md",
-    "_posts/Combinatorics",
     "_posts/Topology/2026-04-01-Product-Topology.md",
     "_posts/Complex Analysis/2026-04-03-Continuous-Function.md",
     "_posts/Complex Analysis/2026-03-27-Topology-In-Complex-Plane.md",
@@ -218,15 +224,9 @@
     "_posts/Topology/2026-03-26-Special-Topologies.md",
     "_posts/Topology/2026-03-26-Open-Sets.md",
     "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
-    "_posts/Topology/2026-03-12-Topology.md",
-    "_posts/Topology/2026-03-10-Order-Relation.md",
-    "_posts/Quantum Mechanics/2026-03-24-Simple-Harmonic-Oscilator.md",
     "_site/assets/img/complexmapping3.png",
     "_site/assets/img/complexmapping2.png",
     "_site/assets/img/complexmapping.png",
-    "_site/assets/img/booleanlattice.jpg",
-    "_posts/Complex Analysis/2026-03-27-Mapping.md",
-    "_posts/Complex Analysis/2026-03-27-Complex-Valued-Function.md",
-    "_posts/Abstract Algebra/2026-04-01-Special-Morphisms.md"
+    "_site/assets/img/booleanlattice.jpg"
   ]
 }
