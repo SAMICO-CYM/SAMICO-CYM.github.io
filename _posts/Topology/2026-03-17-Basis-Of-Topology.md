@@ -47,7 +47,7 @@ Let $U \in \mathcal{T}$. If $x \in U$, then $x \in U \subset U$, which means tha
 
 Let $U \in \mathcal{T} _ {\mathcal{T}}$. If $x \in U$, then $\exists B_x \in \mathcal{T}$ such that $x \in B_x \subset U$. We claim that $\bigcup_{x \in U} B_x = U$. 
 
-[$(\because)$ Since each $B_x \subset U$, we have $\bigcup_{x \in U} B_x \subset U$. If $x \in U$, then $\exists B_x \in \mathcal{T}$ such that $x \in B_x \subset U$, which means that $x \in \bigcup_{x \in U} B_x$. Thus $U \subset \bigcup_{x \in U} B_x$.]
+$\big[$ $(\because)$ Since each $B_x \subset U$, we have $\bigcup_{x \in U} B_x \subset U$. If $x \in U$, then $\exists B_x \in \mathcal{T}$ such that $x \in B_x \subset U$, which means that $x \in \bigcup_{x \in U} B_x$. Thus $U \subset \bigcup_{x \in U} B_x$. $\big]$
 
 Therefore $\bigcup_{x \in U} B_x = U$. Since $\mathcal{T}$ is a topology on $X$, $\bigcup_{x \in U} B_x \in \mathcal{T}$, which means that $U \in \mathcal{T}$. Thus $\mathcal{T} _ {\mathcal{T}} \subset \mathcal{T}$. 
 
