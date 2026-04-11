@@ -37,7 +37,7 @@ $$
 v_t - cv_x = 0,
 $$
 
-[which solution is given by $v(x, t) = h(x + ct)$ for some arbitrary function $h$.](<{% post_url PDE/2026-03-10-1st-Order-Linear-PDE-Constant-Coefficients %}#theorem-1>)
+[which solution is given by $v(x, t) = h(x + ct)$ for some arbitrary function $h$.](<{% post_url PDE/2026-03-10-1st-Order-Linear-PDE-Constant-Coefficients %}#theorem>)
 
 Thus, we have
 
