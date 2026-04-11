@@ -7,12 +7,12 @@ math: true
 ---
 
 ## Theorem
-For $A_1, ..., A_d \subset X$, 
+For $A_1, ..., A_n \subset X$, 
 
-$$\left\vert \bigcup_{i=1}^d A_i \right\vert = \sum_{k=1}^d (-1)^{k-1} \sum_{I \in \binom{[d]}{k}} \left\vert \bigcap_{i \in I} A_i \right\vert.$$
+$$\left\vert \bigcup_{i=1}^n A_i \right\vert = \sum_{k=1}^n (-1)^{k-1} \sum_{I \in \binom{[n]}{k}} \left\vert \bigcap_{i \in I} A_i \right\vert.$$
 
 ### Proof
-If suffices to show that for each $x \in \bigcup_{i=1}^d A_i$, $x$ is counted exactly once in the right hand side.
+If suffices to show that for each $x \in \bigcup_{i=1}^n A_i$, $x$ is counted exactly once in the right hand side.
 
 Suppose that $x$ is contained in $j$ sets of $A_i$'s. Then it is counted 
 
@@ -38,3 +38,22 @@ Thus,
 $$j - \binom{j}{2} + \binom{j}{3} - \cdots + (-1)^{j-1} \binom{j}{j} = 1,$$
 
 which means that $x$ is counted exactly once in the right hand side. $\blacksquare$
+
+---
+
+## Corollary
+For $A_1, ..., A_n \subset X$, 
+
+$$\left\vert \bigcap_{i=1}^n A_i^c \right\vert = \sum_{k=0}^n (-1)^k \sum_{I \in \binom{[n]}{k}} \left\vert \bigcap_{i \in I} A_i \right\vert.$$
+
+### Proof
+
+$$\begin{align*}
+\left\vert \bigcap_{i=1}^n A_i^c \right\vert &= \left\vert \left( \bigcup_{i=1}^n A_i \right)^c \right\vert \\
+&= \vert X \vert - \left\vert \bigcup_{i=1}^n A_i \right\vert \\
+&= \vert X \vert - \sum_{k=1}^n (-1)^{k-1} \sum_{I \in \binom{[n]}{k}} \left\vert \bigcap_{i \in I} A_i \right\vert \\
+&= \vert X \vert + \sum_{k=1}^n (-1)^{k} \sum_{I \in \binom{[n]}{k}} \left\vert \bigcap_{i \in I} A_i \right\vert \\
+&= \sum_{k=0}^n (-1)^k \sum_{I \in \binom{[n]}{k}} \left\vert \bigcap_{i \in I} A_i \right\vert.
+\end{align*}$$
+
+because $\bigcap_{i \in \emptyset} A_i = X$. $\blacksquare$
