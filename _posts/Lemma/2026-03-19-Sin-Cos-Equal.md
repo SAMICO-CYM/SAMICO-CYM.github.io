@@ -13,7 +13,7 @@ $$\sin \alpha = \sin \beta \quad \text{and} \quad \cos \alpha = \cos \beta$$
 
 then 
 
-$$\alpha - \beta = + 2k\pi \text{ where } k \text{ is any integer} (k = 0, \pm 1, \pm 2, ...)$$
+$$\alpha - \beta = 2k\pi \text{ where } k \text{ is any integer} (k = 0, \pm 1, \pm 2, ...)$$
 
 ### Proof
 Note that the identity
