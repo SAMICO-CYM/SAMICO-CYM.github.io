@@ -141,3 +141,10 @@ Let $A$ be a finite set with $\vert A \vert \ge 2$. Then any permutation of $A$ 
 
 ### Proof
 By Theorem 1, a permutation of $A$ is a product of disjoint cycles, and by the previous remark, each cycle is a product of transpositions. Thus, any permutation of $A$ is a product of transpositions. $\blacksquare$
+
+---
+
+## Theorem 2
+No permutation in $S_n$ can be expressed by both as a product of an even number of transpositions and as a product of an odd number of transpositions.
+
+### Proof
