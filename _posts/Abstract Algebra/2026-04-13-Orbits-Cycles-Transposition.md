@@ -93,7 +93,51 @@ $$(1, 2)(1, 3)(4, 5)(1) = (1, 2)(1, 3)(1) = (1, 2)(3) = 3$$
 
 ---
 
-## Theorem 
+## Theorem 1
 Every permutation of a finite set is a product of disjoint cycles, and the expression is unique up to the order of factors.
 
 ### Proof
+Let $\sigma$ be a permutation of a finite set $A$, and let $B_1, ..., B_r$ be the orbits of $\sigma$. For each $i \in \\{ 1, ..., r \\}$, define $\mu_i : A \to A$ as 
+
+$$\mu_i(a) = \begin{cases} \sigma(a) & \text{if } a \in B_i \\\ 
+a & \text{if } a \notin B_i \end{cases}$$
+
+Then each $\mu_i$ is a cycle, and $\sigma = \mu_1 \mu_2 \cdots \mu_r$.
+
+$(\because)$
+
+Since $\mu_i(a) = \sigma(a)$ for each $a \in B_i$, each $\mu_i$ is a cycle. 
+
+Let $a \in A$. Then $a \in B_i$ for some $i \in \\{ 1, ..., r \\}$, which implies that $\sigma(a) \in B_i$. Then we have
+
+$$\begin{align*}
+(\mu_1 \cdots \mu_r)(a) &= (\mu_1 \cdots \mu_{r-1})\mu_r(a) \\
+&= \cdots \\
+&= (\mu_1 \cdots \mu_{i-1})\mu_i(a) \\
+&= (\mu_1 \cdots \mu_{i-1})\sigma(a) \\
+&= \cdots \\
+&= \sigma(a)
+\end{align*}$$
+
+Hence $\sigma = \mu_1 \mu_2 \cdots \mu_r$. Since $B_1, ..., B_r$ are disjoint, $\mu_1, ..., \mu_r$ are disjoint. 
+
+Note that the orbits of $\sigma$ are unique and each orbit of $\sigma$ determines the unique cylce. Hence the expression is unique. $\blacksquare$ 
+
+---
+
+## Remark
+**(i)** A product of disjoint cycles is commutative.
+
+**(ii)** Every cycle of finite length is a product of transpositions. That is, 
+
+$$(a_1, a_2, ..., a_n) = (a_1, a_n)(a_1, a_{n-1})...(a_1, a_2).$$
+
+**(iii)** In $S_n(n \ge 2)$, the identity permutation is $(i, j)(i, j), \forall i \ge j$.
+
+---
+
+## Corollary
+Let $A$ be a finite set with $\vert A \vert \ge 2$. Then any permutation of $A$ is a product of transpositions. 
+
+### Proof
+By Theorem 1, a permutation of $A$ is a product of disjoint cycles, and by the previous remark, each cycle is a product of transpositions. Thus, any permutation of $A$ is a product of transpositions. $\blacksquare$
