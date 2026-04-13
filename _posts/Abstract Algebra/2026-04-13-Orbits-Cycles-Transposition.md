@@ -1,6 +1,6 @@
 ---
 title: Orbits, Cycles, and Transpositions
-date: 2027-04-13
+date: 2026-04-13
 categories: [Mathematics, Abstract Algebra]
 tags: []
 math: true
