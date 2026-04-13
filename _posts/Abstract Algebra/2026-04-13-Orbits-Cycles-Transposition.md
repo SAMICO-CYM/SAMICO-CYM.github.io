@@ -10,7 +10,7 @@ math: true
 Let $\sigma$ be a permutation of a set $A$.
 Define a relation $\sim$ on $A$ by
 
-$$ a \sim b \quad \iff \quad b = \sigma^n(a) \quad \text{for some} \quad n \in \mathbb{Z}. $$
+$$ a \sim b \iff b = \sigma^n(a) \text{ for some } n \in \mathbb{Z}. $$
 
 Then $\sim$ is an equivalence relation on $A$.
 
@@ -51,12 +51,9 @@ Then
 
 $$
 \begin{align*}
-1 &\xrightarrow{\sigma} \boxed{3} \xrightarrow{\sigma} \boxed{6} \xrightarrow{\sigma} \boxed{1} \xrightarrow{\sigma} 3 \\
-&\xrightarrow{\sigma} 6 \xrightarrow{\sigma} \cdots, \\
-2 &\xrightarrow{\sigma} \boxed{8} \xrightarrow{\sigma} \boxed{2} \xrightarrow{\sigma} 8 \xrightarrow{\sigma} 2 \\
-&\xrightarrow{\sigma} 8 \xrightarrow{\sigma} \cdots \\
-\text{and} \quad 4 &\xrightarrow{\sigma} \boxed{7} \xrightarrow{\sigma} \boxed{5} \xrightarrow{\sigma} \boxed{4} \\
-&\xrightarrow{\sigma} 7 \xrightarrow{\sigma} 5 \xrightarrow{\sigma} \cdots.
+1 &\xrightarrow{\sigma} 3 \xrightarrow{\sigma} 6 \xrightarrow{\sigma} 1 \xrightarrow{\sigma} 3 \xrightarrow{\sigma} 6 \xrightarrow{\sigma} \cdots, \\
+2 &\xrightarrow{\sigma} 8 \xrightarrow{\sigma} 2 \xrightarrow{\sigma} 8 \xrightarrow{\sigma} 2 \xrightarrow{\sigma} 8 \xrightarrow{\sigma} \cdots, \\
+4 &\xrightarrow{\sigma} 7 \xrightarrow{\sigma} 5 \xrightarrow{\sigma} 4 \xrightarrow{\sigma} 7 \xrightarrow{\sigma} 5 \xrightarrow{\sigma} \cdots.
 \end{align*}
 $$
 
