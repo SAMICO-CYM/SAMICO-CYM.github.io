@@ -16,7 +16,7 @@ Let $z_1, z_2 \in \mathbb{C}$. Then
 
 **(i)** $\overline{z_1 + z_2} = \overline{z_1} + \overline{z_2}$
 
-**(ii)** $\overline{z_1 z_2} = \overline{z_1} \overline{z_2}$
+**(ii)** $\overline{z_1 z_2} = \overline{z_1} \, \overline{z_2}$
 
 **(iii)** $\displaystyle \overline{\left(\frac{z_1}{z_2}\right)} = \frac{\overline{z_1}}{\overline{z_2}}$ ($z_2 \neq 0$)
 
