@@ -7,11 +7,71 @@ math: true
 --- 
 
 ## Definition
-Let $X$ be a topological space. Let $A \subset X$ and let $x \in X$. Then $x$ is called a ***limit point*** of $A$ if every open set $U$ containing $x$ satisfies $U \cap (A \setminus \{x\}) \neq \emptyset$. The set of all limit points of $A$ is called the ***derived set*** of $A$, denoted by $A'$.
+Let $X$ be a topological space. Let $A \subset X$ and let $x \in X$. 
 
-$A$를 어떤 수열이라고 생각해보면, 자연스럽게 $x$는 수열의 극한값처럼 생각할 수 있다. 재밌는 것은, 일반적인 위상공간에서 수열의 극한값은 유일하지 않다는 사실이다. 정의는 $x$를 포함하든 모든 오픈 셋이 수열의 일부, 즉 $A$의 일부를 항상 포함하고 있을 때 $x$를 limit point라고 말하고 있다. 수열의 극한의 정의를 떠올리면 이러한 센스에서 이 자체가 바로 수열의 극한의 정의와 동일하다는 것을 알 수 있다. 사실 정의에서 "the" limit point가 아닌 "a" limit point라고 표현한 것부터 이러한 내막이 숨겨져 있기도 하고 말이다. 
+**(i)** $x$ is called a ***limit point*** of $A$ if every open set $U$ containing $x$ satisfies $A \cap (U - \\{x\\}) \neq \emptyset$.
+
+**(ii)** The set of all limit points of $A$ is called the ***derived set*** of $A$, denoted by $A'$.
+
+$A$를 어떤 수열이라고 생각해보면, 자연스럽게 $x$는 수열의 극한값처럼 생각할 수 있다. 재밌는 점은, 일반적인 위상공간에서 수열의 극한값은 유일하지 않다. 정의는 $x$를 포함하든 모든 오픈 셋이 수열의 일부, 즉 $A$의 일부를 항상 포함하고 있을 때 $x$를 limit point라고 말하고 있다. 수열의 극한의 정의를 떠올리면 이러한 센스에서 이 자체가 바로 수열의 극한의 정의와 사실상 동일하다는 것을 알 수 있다.
 
 ---
 
 ## Remark
-(i) A limit point of $A$ is not necessarily a point in $A$. 
+**(i)** A limit point of $A$ is not necessarily a point in $A$. 
+
+**(ii)** $A \cap (U - \\{x\\}) = U \cap (A - \\{x\\}) $ for any open set $U$ containing $x$.
+
+---
+
+## Theorem 1 
+Let $A$ be a subset of a topological space $X$.
+
+**(i)** $x \in \overline{A}$ $\iff$ every open set $U$ containing $x$ intersects $A$. ($A$ ***intersects*** $B$ if $A \cap B \neq \emptyset$)
+
+**(ii)** $x \in \overline{A}$ $\iff$ every basis element containing $x$ intersects $A$. 
+
+### Proof 
+**(i)** 
+
+$(\Longrightarrow)$
+
+Suppose that $U \cap A = \emptyset$ for some open set $U$ containing $x$. Since $U$ contains $x$, $A$ does not contain $x$, which means that $x \notin X - U$.
+
+Since $U$ is open, $X - U$ is closed. Since $U \cap A = \emptyset$, $A \subset X - U$. Then $\overline{A} \subset X - U$. Since $x \in \overline{A}$, $x$ must be in $X - U$. This contradicts the fact that $x \notin X - U$. Therefore, every open set $U$ containing $x$ intersects $A$.
+
+$(\Longleftarrow)$
+
+Suppose that $x \notin \overline{A}$. Note that $A \subset \overline{A}$. If $x \in A$, then $x \in \overline{A}$. $\bigotimes$ Thus $x \notin A$.
+
+Since $\overline{A}$ is closed in $X$, $X - \overline{A}$ is open in $X$. Since $x \notin \overline{A}$, $x \in X - \overline{A}$. By assumption, $(X - \overline{A}) \cap A \neq \emptyset$. But $A \subset \overline{A}$ implies that $A \cap (X - \overline{A}) = \emptyset$. $\bigotimes$ Thus $x \in \overline{A}$. 
+
+**(ii)** 
+
+$(\Longrightarrow)$
+
+Since every basis element is an open set, this follows from (i). 
+
+$(\Longleftarrow)$
+
+Let $U$ be an open set containing $x$. Then $x \in B \subset U$ for some basis element $B$. By assumption, $B \cap A \neq \emptyset$. Since $B \subset U$, $U \cap A \neq \emptyset$. By (i), $x \in \overline{A}$. $\blacksquare$
+
+---
+
+## Theorem 2
+Let $A$ be a subset of a topological space $X$. Then $\overline{A} = A \cup A'$.
+
+### Proof
+Let $x \in \overline{A}$. If $x \in A$, then $x \in A \cup A'$. 
+
+Assume $x \notin A$. Then $A = A - \\{ x \\}$. Since $x \in \overline{A}$, 
+
+$$U \cap (A - \\{ x \\}) = U \cap A \neq \emptyset$$
+
+for any open set $U$ containing $x$ by Theorem 1. By definition, we have $x \in A'$. Therefore, $\overline{A} \subset A \cup A'$. 
+
+Now, let $x \in A \cup A'$. If $x \in A$, then $x \in \overline{A}$ because $A \subset \overline{A}$. 
+
+Assume $x \in A' - A$. Since $x \notin A$, we have $A = A - \\{ x \\}$. Then for any open set $U$ containing $x$, $U \cap A = U \cap (A - \\{ x \\}) \neq \emptyset$. By Theorem 1, $x \in \overline{A}$. 
+
+Therefore, $A \cup A' \subset \overline{A}$. $\blacksquare$
