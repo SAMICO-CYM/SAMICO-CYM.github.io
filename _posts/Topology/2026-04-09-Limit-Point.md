@@ -9,9 +9,11 @@ math: true
 ## Definition
 Let $X$ be a topological space. Let $A \subset X$ and let $x \in X$. 
 
-**(i)** $x$ is called a ***limit point*** of $A$ if every open set $U$ containing $x$ satisfies $A \cap (U - \\{x\\}) \neq \emptyset$.
+**(i)** An open set $U$ of $X$ containing $x$ is called a ***neighborhood*** of $x$. 
 
-**(ii)** The set of all limit points of $A$ is called the ***derived set*** of $A$, denoted by $A'$.
+**(ii)** $x$ is called a ***limit point*** of $A$ if every neighborhood of $x$ satisfies $A \cap (U - \\{x\\}) \neq \emptyset$.
+
+**(iii)** The set of all limit points of $A$ is called the ***derived set*** of $A$, denoted by $A'$.
 
 $A$를 어떤 수열이라고 생각해보면, 자연스럽게 $x$는 수열의 극한값처럼 생각할 수 있다. 재밌는 점은, 일반적인 위상공간에서 수열의 극한값은 유일하지 않다. 정의는 $x$를 포함하든 모든 오픈 셋이 수열의 일부, 즉 $A$의 일부를 항상 포함하고 있을 때 $x$를 limit point라고 말하고 있다. 수열의 극한의 정의를 떠올리면 이러한 센스에서 이 자체가 바로 수열의 극한의 정의와 사실상 동일하다는 것을 알 수 있다.
 
@@ -27,7 +29,7 @@ $A$를 어떤 수열이라고 생각해보면, 자연스럽게 $x$는 수열의 
 ## Theorem 1 
 Let $A$ be a subset of a topological space $X$.
 
-**(i)** $x \in \overline{A}$ $\iff$ every open set $U$ containing $x$ intersects $A$. ($A$ ***intersects*** $B$ if $A \cap B \neq \emptyset$)
+**(i)** $x \in \overline{A}$ $\iff$ every neighborhood of $x$ intersects $A$. ($A$ ***intersects*** $B$ if $A \cap B \neq \emptyset$)
 
 **(ii)** $x \in \overline{A}$ $\iff$ every basis element containing $x$ intersects $A$. 
 
@@ -75,3 +77,15 @@ Now, let $x \in A \cup A'$. If $x \in A$, then $x \in \overline{A}$ because $A \
 Assume $x \in A' - A$. Since $x \notin A$, we have $A = A - \\{ x \\}$. Then for any open set $U$ containing $x$, $U \cap A = U \cap (A - \\{ x \\}) \neq \emptyset$. By Theorem 1, $x \in \overline{A}$. 
 
 Therefore, $A \cup A' \subset \overline{A}$. $\blacksquare$
+
+---
+
+## Corollary
+Let $C$ be a subset of a topological space $X$. Then 
+
+$$C \text{ is closed in } X \iff C \text{ contains all of its limit points} \iff C = \overline{C}$$
+
+### Proof
+Suppose that $C$ is closed in $X$. Then $\overline{C} \subset C$. Since $C \subset \overline{C}$, we have $\overline{C} = C$. Since $\overline{C} = C \cup C'$, we have $C' \subset C$. Thus $C$ contains all of its limit points. 
+
+Conversely, suppose that $\overline{C} = C$. Then $C' \subset C$ by Theorem 2, which means that $C$ contains all of its limit points. Since $\overline{C}$ is closed in $X$, we have $C$ is closed in $X$. $\blacksquare$ 
