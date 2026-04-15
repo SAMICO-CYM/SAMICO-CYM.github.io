@@ -14,6 +14,21 @@ $$\Delta H = H_{xx} + H_{yy} = 0$$
 ---
 
 ## Theorem 1
-Let $f(z) = u(x, y) + i v(x, y)$ be an analytic function on $D$. Then $u$ and $v$ are harmonic on $D$.
+Let $f(z) = u(x, y) + i v(x, y)$ be an analytic function in $D$. Then $u$ and $v$ are harmonic in $D$.
 
 ### Proof
+Since $f$ is analytic in $D$, the first order partial derivatives exist and saitsfy the Cauchy-Riemann equation 
+
+$$\begin{cases}
+u_x = v_y \\
+u_y = -v_x
+\end{cases}$$
+
+Then we have 
+
+$$\begin{cases}
+u_{xx} = v_{yx} \\
+u_{yy} = -v_{xy}
+\end{cases}$$
+
+Since $v_{yx} = y_{xy}$, we have $\Delta u = u_{xx} + u_{yy} = 0$. Similarly, we have $\Delta v = v_{xx} + v_{yy} = 0$. Thus $u$ and $v$ are harmonic in $D$. $\blacksquare$
