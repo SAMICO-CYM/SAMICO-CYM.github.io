@@ -19,7 +19,7 @@ math: true
 
 ## Theorem
 
-**(i)** $\displaystyle \lim_{z \to z_0} \frac{1}{f(z)} \implies \lim_{z \to z_0} f(z) = \infty$ 
+**(i)** $\displaystyle \lim_{z \to z_0} \frac{1}{f(z)} = 0 \implies \lim_{z \to z_0} f(z) = \infty$ 
 
 **(ii)** $\displaystyle \lim_{z \to 0} f\left( \frac{1}{z} \right) = w_0 \implies \lim_{z \to \infty} f(z) = w_0$ 
 
