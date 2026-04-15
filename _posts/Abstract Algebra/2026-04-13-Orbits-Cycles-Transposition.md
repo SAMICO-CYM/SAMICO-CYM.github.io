@@ -26,7 +26,7 @@ Therefore, $\sim$ is an equivalence relation on $A$.
 
 ---
 
-## Definition 
+## Definition 1
 Let $\sigma$ be a permutation of a set $A$. 
 
 **(i)** The ***orbits*** of $\sigma$ are the equivalence classes in $A$ determined by the equivalence relation $\sim$ in the previous remark.
@@ -132,11 +132,11 @@ Note that the orbits of $\sigma$ are unique and each orbit of $\sigma$ determine
 
 $$(a_1, a_2, ..., a_n) = (a_1, a_n)(a_1, a_{n-1})...(a_1, a_2).$$
 
-**(iii)** In $S_n(n \ge 2)$, the identity permutation is $(i, j)(i, j), \forall i \ge j$.
+**(iii)** In $S_n(n \ge 2)$, the identity permutation is $(i, j)(i, j), \forall i \ge j$. It implies that $(i, j)^{-1} = (i, j)$.
 
 ---
 
-## Corollary
+## Corollary 1
 Let $A$ be a finite set with $\vert A \vert \ge 2$. Then any permutation of $A$ is a product of transpositions. 
 
 ### Proof
@@ -211,4 +211,11 @@ $$\begin{align*}
 
 Thus the number of orbits of $\tau \sigma$ is different from $\sigma$ by $1$. $\big]$
 
-We have shown
+We have shown that the number of orbits of a permutation $\sigma$ is different from $\tau \sigma$ by $1$ whenever we multiply $\sigma$ by a transposition $\tau$ in any cases. 
+
+Note that the identity permutation $id = (1)(2) \cdots (n) \in S_n$ has $n$ orbits. Also, the number of orbits of $\sigma$ is fixed. By Corollary 1, $\sigma$ can be expressed as the product of transpositions. Since we can go from $id$ to $\sigma$ by multiplying these transpositions, there are no ways to go from $id$ to $\sigma$ by multiplying both an even number of transpositions and an odd number of transpositions. Thus, $\sigma$ cannot be both even and odd. $\blacksquare$
+
+---
+
+## Definition 2
+A permutation $\sigma \in S_n$ is said to be ***even*** (***odd***) if it can be expreesed as a product of an even (odd) number of transpositions.

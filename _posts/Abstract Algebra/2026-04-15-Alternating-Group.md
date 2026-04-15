@@ -1,0 +1,40 @@
+---
+title: Alternating Group
+date: 2026-04-15
+categories: [Mathematics, Abstract Algebra]
+tags: []
+math: true
+---
+
+## Theorem
+Let $n \ge 2$ and let $A_n$ be the set of even permutation in $S_n$. Then $A_n \le S_n$ and $\vert A_n \vert = \frac{n!}{2}$.
+
+### Proof
+**(i)** $A_n \le S_n$
+
+Since $id = (1, 2)(1, 2) \in A_n$, $A_n \neq \emptyset$. Let $\sigma = (a_1, b_1) \cdots (a_{2m}, b_{2m}), \tau = (c_1, d_1) \cdots (c_{2n}, d_{2n}) \in A_n$. Then we have 
+
+$$\begin{align*}
+\sigma \tau^{-1} &= (a_1, b_1) \cdots (a_{2m}, b_{2m})((c_1, d_1) \cdots (c_{2n}, d_{2n}))^{-1} \\
+&= (a_1, b_1) \cdots (a_{2m}, b_{2m}) (c_{2n}, d_{2n})^{-1} \cdots (c_1, d_1)^{-1} \\
+&= (a_1, b_1) \cdots (a_{2m}, b_{2m}) (c_{2n}, d_{2n}) \cdots (c_1, d_1) \\
+& \in A_n.
+\end{align*}$$
+
+Thus $A_n \le S_n$.
+
+(ii) $\vert A_n \vert = \frac{n!}{2}$
+Let $B_n$ be the set of odd permutations in $S_n$. Then $S_n = A_n \cup B_n$ and $A_n \cap B_n = \emptyset$, which means that $\\{ A_n, B_n \\}$ is a partition of $S_n$. Then $n! = \vert S_n \vert = \vert A_n \vert + \vert B_n \vert$. 
+
+Define $\pi: A_n \to B_n$ by $\pi(\sigma) = (1, 2) \sigma, \forall \sigma \in A_n$. Since $(1, 2) \sigma \in B_n$ for each $\sigma$, $\pi$ is well-defined.
+
+If $\pi(\sigma_1) = \pi(\sigma_2)$, then $(1, 2) \sigma_1 = (1, 2) \sigma_2$. Thus we have $\sigma_1 = \sigma_2$, which means that $\pi$ is injective.
+
+Let $\tau \in B_n$. Then $(1, 2) \tau \in A_n$ and $\pi((1, 2) \tau) = (1, 2)(1, 2)\tau = \tau$. Thus $\pi$ is surjective.
+
+Hence $\pi$ is bijective, which implies that $\vert A_n \vert = \vert B_n \vert$. Thus, $\vert A_n \vert = \frac{n!}{2}.$ $\blacksquare$
+
+---
+
+## Definition
+For $n \ge 2$, the group $A_n$ is called the ***alternating group*** on $n$ letters. 
