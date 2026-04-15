@@ -23,7 +23,7 @@ $$\begin{align*}
 
 Thus $A_n \le S_n$.
 
-(ii) $\vert A_n \vert = \frac{n!}{2}$
+**(ii)** $\vert A_n \vert = \frac{n!}{2}$
 Let $B_n$ be the set of odd permutations in $S_n$. Then $S_n = A_n \cup B_n$ and $A_n \cap B_n = \emptyset$, which means that $\\{ A_n, B_n \\}$ is a partition of $S_n$. Then $n! = \vert S_n \vert = \vert A_n \vert + \vert B_n \vert$. 
 
 Define $\pi: A_n \to B_n$ by $\pi(\sigma) = (1, 2) \sigma, \forall \sigma \in A_n$. Since $(1, 2) \sigma \in B_n$ for each $\sigma$, $\pi$ is well-defined.

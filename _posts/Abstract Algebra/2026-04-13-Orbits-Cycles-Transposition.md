@@ -219,3 +219,12 @@ Note that the identity permutation $id = (1)(2) \cdots (n) \in S_n$ has $n$ orbi
 
 ## Definition 2
 A permutation $\sigma \in S_n$ is said to be ***even*** (***odd***) if it can be expreesed as a product of an even (odd) number of transpositions.
+
+---
+
+## Remark
+**(i)** Note that $\vert A_2 \vert = 1$, so that $A_2$ is the trivial group.
+
+**(ii)** Note that $\vert A_3 \vert = 3$, so that $A_3$ is isomorphic to $\mathbb{Z}_3$.
+
+**(iii)** For $n \ge 4$, $A_n$ is never abelian.
