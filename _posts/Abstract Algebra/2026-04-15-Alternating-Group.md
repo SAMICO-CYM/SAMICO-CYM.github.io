@@ -38,3 +38,12 @@ Hence $\pi$ is bijective, which implies that $\vert A_n \vert = \vert B_n \vert$
 
 ## Definition
 For $n \ge 2$, the group $A_n$ is called the ***alternating group*** on $n$ letters. 
+
+---
+
+## Remark
+**(i)** Note that $\vert A_2 \vert = 1$, so that $A_2$ is the trivial group.
+
+**(ii)** Note that $\vert A_3 \vert = 3$, so that $A_3$ is isomorphic to $\mathbb{Z}_3$.
+
+**(iii)** For $n \ge 4$, $A_n$ is never abelian.

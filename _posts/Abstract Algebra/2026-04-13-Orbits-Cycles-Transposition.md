@@ -223,8 +223,4 @@ A permutation $\sigma \in S_n$ is said to be ***even*** (***odd***) if it can be
 ---
 
 ## Remark
-**(i)** Note that $\vert A_2 \vert = 1$, so that $A_2$ is the trivial group.
-
-**(ii)** Note that $\vert A_3 \vert = 3$, so that $A_3$ is isomorphic to $\mathbb{Z}_3$.
-
-**(iii)** For $n \ge 4$, $A_n$ is never abelian.
+Let $\sigma = c_1 \cdots c_k \in S_n$ where each $c_i$ is a disjoint cycle whose length is $\ell_i$. Then $\vert \langle \sigma \rangle \vert = \mathrm{lcm}(\ell_1, ..., \ell_k)$.
