@@ -83,6 +83,7 @@ $$
 
 Then $f$ is differentiable at $z_0$ and
 
-$$
-f'(z_0) = e^{-i \theta_0} (u_r + i v_r)
-$$
+$$\begin{align*}
+f'(z_0) &= e^{-i \theta_0} (u_r + i v_r) \\
+&= \frac{1}{z_0}(v_\theta - i u_\theta)
+\end{align*}$$
