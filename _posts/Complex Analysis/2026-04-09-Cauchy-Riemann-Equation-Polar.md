@@ -85,5 +85,5 @@ Then $f$ is differentiable at $z_0$ and
 
 $$\begin{align*}
 f'(z_0) &= e^{-i \theta_0} (u_r + i v_r) \\
-&= \frac{1}{z_0}(v_\theta - i u_\theta)
+&= -\frac{i}{z_0}(u_\theta + i v_\theta)
 \end{align*}$$
