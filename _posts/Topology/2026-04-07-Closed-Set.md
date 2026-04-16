@@ -59,7 +59,7 @@ Let $Y$ be a subspace of a topological space $X$, and let $A \subset Y$.
 
 $(\Longrightarrow)$
 
-Suppose that $A$ is closed in $Y$. Then $Y - A$ is open in $Y$, which means that $Y - A = Y \cap U$ for some open set $U$ of $X$. 
+Suppose that $A$ is closed in $Y$. (Clearly $A \subset Y$) Then $Y - A$ is open in $Y$, which means that $Y - A = Y \cap U$ for some open set $U$ of $X$. 
 
 Note that 
 
