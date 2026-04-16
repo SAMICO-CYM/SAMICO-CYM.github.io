@@ -1,5 +1,5 @@
 --- 
-title: Diffusion on the Half Line
+title: Half Line Problem
 date: 2026-04-16
 categories: [Mathematics, PDE]
 tags: []
