@@ -53,27 +53,27 @@ Thus $\phi$ is a homomorphism, and so that $G \cong (\mathbb{Z}, +)$.
 
 $\Big[ (\because)$ If $a^i = a^j$ for some $0 \le i < j \le n-1$, then $a^{j-i} = e$, which means that $G = \\{ e, a, a^2, \cdots, a^{j - i - 1} \\}$. Thus $\vert G \vert = j - i \le n-1$. $\bigotimes$ Hence $a^i \neq a^j, \forall 0 \le i < j \le n-1$. $\Big]$
 
-Since $G = \langle a \rangle$, we have $G = \\{ e, a, a^2, \cdots, a^{n-1} \\}$. Then $a^n = e$ because $a^n \in G$ so that $a^n = a^k$ for some $0 \le k < n-1$ and $a^{n-k} = e$ with $n-k \in \{ 1, 2, \cdots, n-1 \}$. $\bigotimes$
+Since $G = \langle a \rangle$ and $\vert G \vert = n$, we have $G = \\{ e, a, a^2, \cdots, a^{n-1} \\}$. Then $a^n = e$. 
 
-Define the function $\phi : G \to \mathbb{Z}_n$ by $\phi(a^m) = m \pmod n, \forall a^m \in G$. By division algorithm, $\phi$ is well-defined. Note that if $m \equiv r \pmod n$, then $a^m = a^r$.
+$\Big[ (\because)$ Since $a^n \in G$, $a^n = a^k$ for some $k \in \mathbb{Z}$ with $0 \le k < n$. If $k \neq 0$, then we have $a^{n-k} = e$ and with $n-k \in \\{ 1, 2, \cdots, n-1 \\}$. $\bigotimes$ Thus, $a^n = e$. $\Big]$
 
-If $\phi(a^m) = \phi(a^k)$, then $m \equiv k \pmod n$. so that $a^m = a^k$. Thus $\phi$ is injective. 
+Define the function $\phi : G \to \mathbb{Z}_n$ by $\phi(a^m) = m, \forall a^m \in G$. Since $m \in \\{ 0, 1, ..., n-1 \\}$ for each $a^m \in G$, $\phi(a^m) = m \in \mathbb{Z}_n$. With this and above claim, $\phi$ is well-defined. 
 
-Let $m \in \mathbb{Z}_n$, that is, $m \equiv m \pmod n$. Then $a^m \in G$, so that $\phi(a^m) = m$. Thus $\phi$ is surjective.
+If $\phi(a^m) = \phi(a^k)$, then $m = k$, so that $a^m = a^k$. Thus $\phi$ is injective. 
 
-Let $a^m, a^k \in G$, and let $m \equiv r_1 \pmod n$ and $k \equiv r_2 \pmod n$ with $0 \le r_1, r_2 \le n-1$. Then 
+Let $m \in \mathbb{Z}_n$. Then $a^m \in G$ and $\phi(a^m) = m$. Thus $\phi$ is surjective.
+
+Let $a^m, a^k \in G$. Then 
 
 $$
 \begin{align*}
     \phi(a^m a^k) &= \phi(a^{m + k}) \\
-    &= m + k \pmod n \\
-    &= r_1 + r_2 \pmod n \\
-    &= r_1 + r_2 \\
+    &= m + k \\
     &= \phi(a^m) + \phi(a^k).
 \end{align*}
 $$
 
-Thus $\phi$ is a homomorphism, and so that $G \cong (\mathbb{Z}_n, +)$. $\blacksquare$
+Thus $\phi$ is a homomorphism. Hence $\phi$ is an isomorphism, which implies that $G \cong (\mathbb{Z}_n, +)$. $\blacksquare$
 
 ---
 
