@@ -137,9 +137,13 @@ Hence $\sigma = \mu_1 \mu_2 \cdots \mu_r$. Since $B_1, ..., B_r$ are disjoint, $
 
 **Claim 4**: The expression $\sigma = \mu_1 \mu_2 \cdots \mu_r$ is unique up to the order of the factors.
 
-$\Big[$ $(\because)$ Suppose that $\sigma$ is also expressed as $\sigma = \tau_1 \tau_2 \cdots \tau_k$ where $\tau_1, \tau_2, \cdots , \tau_k$ are disjoint cycles. Let $a \in A$. Since $\mu_i$'s and $\tau_j$'s are disjoint, respectively, $(\mu_1 \mu_2 \cdots \mu_r)(a) = \mu_i(a)$ for some $1 \le i \le r$, which means that $a \in B_i$, and $(\tau_1 \tau_2 \cdots \tau_k)(a) = \tau_j(a)$ for some $1 \le j \le k$. 
+$\Big[$ $(\because)$ If $\sigma = \mathrm{id}$, then clearly the expression is unique. Suppose that $\sigma \neq \mathrm{id}$ and $\sigma$ is also expressed as $\sigma = \tau_1 \tau_2 \cdots \tau_k$ where $\tau_1, \tau_2, \cdots , \tau_k$ are disjoint cycles. Since $\sigma \neq \mathrm{id}$, there is an element $a \in A$ such that $\sigma(a) \neq a$. Since $\mu_i$'s and $\tau_j$'s are disjoint, respectively, $\sigma(a) = (\mu_1 \mu_2 \cdots \mu_r)(a) = \mu_i(a)$ for some $1 \le i \le r$, which means that $a \in B_i$, and $\sigma(a) = (\tau_1 \tau_2 \cdots \tau_k)(a) = \tau_j(a)$ for some $1 \le j \le k$. Then we have $\mu_i(a) = \tau_j(a)$ and $a \neq \tau_j(a)$. 
 
-Denote the equivalence class of $a$ determined by $\tau_j$ by $[a]_j$. If $b \in [a]_j$, then $\tau_j^n(a) = b$ for some $n \in \mathbb{Z}$. Since $\tau_j(a) = \mu_i(a)$, we have $\mu_i^n(a) = b$, which means that $b \in [a]_i$. If $b \in [a]_i$, then $\mu_i^n(a) = b$ for some $n \in \mathbb{Z}$. Similarly, we have $\tau_j^n(a) = b$, so that $b \in [a]_j$. Thus, $[a]_i = [a]_j$ and $B_i = [a]_j$ because $B_i = [a]_i$. Since $\tau_j$ is a cycle, it has at most one orbit containing more than one element. This means that $\tau_j = \mu_i$. Thus, the expression of $\sigma$ is unique up to the order of the factors. $\blacksquare$ $\Big]$
+Denote the equivalence class of $a$ determined by $\tau_j$ by $[a]_j$. Then $\tau_j(a) \in [a]_j$. (If not, then $\tau_j^n(a) \neq \tau_j(a)$ for any integer $n$. $\bigotimes$) Since $a \neq \tau_j(a)$, the orbit $[a]_j$ contains more than one element.
+
+If $b \in [a]_j$, then $\tau_j^n(a) = b$ for some $n \in \mathbb{Z}$. Since $\tau_j(a) = \mu_i(a)$, we have $\mu_i^n(a) = b$, which means that $b \in [a]_i$. If $b \in [a]_i$, then $\mu_i^n(a) = b$ for some $n \in \mathbb{Z}$. Similarly, we have $\tau_j^n(a) = b$, so that $b \in [a]_j$. Thus, $[a]_i = [a]_j$, so that $B_i = [a]_j$ because $B_i = [a]_i$.
+
+Since $[a]_j$ contains more than one element, so does $B_i$. Thus, the orbit of $\mu_i$ and $\tau_j$ containing more than one element are the same. Since $\mu_i$ and $\tau_j$ are cycles, they have at most one orbit containing more than one element, which means that $\tau_j = \mu_i$. Thus, the expression of $\sigma$ is unique up to the order of the factors. $\blacksquare$ $\Big]$
 
 ---
 
