@@ -106,27 +106,23 @@ a & \text{if } a \notin B_i \end{cases}$$
 
 $\Big[$ $(\because)$ Since either $a \in B_i$ or $a \notin B_i$ (not both), $\mu_i$ is well-defined. 
 
-Suppose that $\mu_i(a) = \mu_i(b)$ for some $a, b \in A$. If $a, b \in B_i$, then we have $\sigma(a) = \sigma(b)$. Since $\sigma$ is injective, $a = b$. If $a \in B_i$ and $b \notin B_i$, then we have $\sigma(a) = b$. Since $a \in B_i$, $b \in B_i$. $\bigotimes$. Similarly, if $a \notin B_i$ and $b \in B_i$, then we obtain the contradiction. If $a, b \notin B_i$, then we have $a = b$. For any case, we obtain $a = b$, which means that $\mu_i$ is injective. 
+Suppose that $\mu_i(a) = \mu_i(b)$ for some $a, b \in A$. If $a, b \in B_i$, then we have $\sigma(a) = \sigma(b)$. Since $\sigma$ is injective, $a = b$. If $a \in B_i$ and $b \notin B_i$, then we have $\sigma(a) = b$. Then $a \sim b$, which means that $a$ and $b$ belong to the same orbit. Since $a \in B_i$, $b \in B_i$. $\bigotimes$. Similarly, if $a \notin B_i$ and $b \in B_i$, then we obtain the contradiction. If $a, b \notin B_i$, then we have $a = b$. For any case, we obtain $a = b$, which means that $\mu_i$ is injective. 
 
 Let $b \in A$. If $b \notin B_i$, then $\mu_i(b) = b$. If $b \in B_i$, then $\sigma(a) = b$ for some $a \in B_i$. Since $a \in B_i$, we have $\mu_i(a) = \sigma(a) = b$. Thus, $\mu_i$ is surjective. 
 
 Hence, $\mu_i$ is bijective, which means that $\mu_i$ is a permutation of $A$. $\Big]$
 
-**Claim 2**: each $\mu_i$ is a cylce.
+**Claim 2**: each $\mu_i$ is a cycle.
 
-$\Big[$ $(\because)$ Denote the equivalence relation determined by $\mu_i$ by $\sim_i$.
-
-Let $a \in A$. If $a \notin B_i$, then $a \in B_j$ for some $j \neq i$, because the orbits $B_1, ..., B_r$ of $\sigma$ are disjoint. Denote the equivalence class of $a$ determined by $\sim_i$ by $[a]_i$. If $b \in [a]_i$, then $\mu_i^n(a) = b$ for some $n \in \mathbb{Z}$. Since $a \notin B_i$, we have $a = b$. Thus, for each $a \notin B_i$, the equivalence class $[a]_i$, which is the orbit of $\mu_i$,. contains only one element $a$.
+$\Big[$ $(\because)$ Let $a \in A$. If $a \notin B_i$, then $a \in B_j$ for some $j \neq i$, because the orbits $B_1, ..., B_r$ of $\sigma$ are disjoint. Denote the equivalence class of $a$ determined by $\mu_i$ by $[a]_i$. If $b \in [a]_i$, then $\mu_i^n(a) = b$ for some $n \in \mathbb{Z}$. Since $a \notin B_i$, we have $a = b$. Thus, for each $a \notin B_i$, the equivalence class $[a]_i$, which is the orbit of $\mu_i$,. contains only one element $a$.
 
 Suppose that $a \in B_i$. If $b \in [a]_i$, then $\mu_i^n(a) = b$ for some $n \in \mathbb{Z}$. Since $a \in B_i$, we have $\sigma^n(a) = b$, which implies that $b \in B_i$. Thus, $[a]_i \subset B_i$. If $b \in B_i$, then $\sigma^n(a) = b$ for some $n \in \mathbb{Z}$. Since $a \in B_i$, we have $\mu_i^n(a) = b$, which means that $b \in [a]_i$. Thus, $B_i \subset [a]_i$. 
 
-Hence, $B_i = [a]_i$, which means that each $\mu_i$ has at most one orbit containing more then one element of $A$. Therefore, $\mu_i$ is a cylce. $\Big]$
+Hence, $B_i = [a]_i$, which means that each $\mu_i$ has at most one orbit containing more then one element of $A$. Therefore, $\mu_i$ is a cycle. $\Big]$
 
 **Claim 3**: $\sigma = \mu_1 \mu_2 \cdots \mu_r$.
 
-$\Big[$ $(\because)$ Since $\mu_i(a) = \sigma(a)$ for each $a \in B_i$, each $\mu_i$ is a cycle. 
-
-Let $a \in A$. Then $a \in B_i$ for some $i \in \\{ 1, ..., r \\}$, which implies that $\sigma(a) \in B_i$. Then we have
+$\Big[$ $(\because)$ Let $a \in A$. Then $a \in B_i$ for some $i \in \\{ 1, ..., r \\}$, which implies that $\sigma(a) \in B_i$. Then we have
 
 $$\begin{align*}
 (\mu_1 \cdots \mu_r)(a) &= (\mu_1 \cdots \mu_{r-1})\mu_r(a) \\
@@ -139,7 +135,11 @@ $$\begin{align*}
 
 Hence $\sigma = \mu_1 \mu_2 \cdots \mu_r$. Since $B_1, ..., B_r$ are disjoint, $\mu_1, ..., \mu_r$ are disjoint. $\Big]$
 
-Note that the orbits of $\sigma$ are unique and each orbit of $\sigma$ determines the unique cylce. Hence the expression is unique. $\blacksquare$ 
+**Claim 4**: The expression $\sigma = \mu_1 \mu_2 \cdots \mu_r$ is unique up to the order of the factors.
+
+$\Big[$ $(\because)$ Suppose that $\sigma$ is also expressed as $\sigma = \tau_1 \tau_2 \cdots \tau_k$ where $\tau_1, \tau_2, \cdots , \tau_k$ are disjoint cycles. Let $a \in A$. Since $\mu_i$'s and $\tau_j$'s are disjoint, respectively, $(\mu_1 \mu_2 \cdots \mu_r)(a) = \mu_i(a)$ for some $1 \le i \le r$, which means that $a \in B_i$, and $(\tau_1 \tau_2 \cdots \tau_k)(a) = \tau_j(a)$ for some $1 \le j \le k$. 
+
+Denote the equivalence class of $a$ determined by $\tau_j$ by $[a]_j$. If $b \in [a]_j$, then $\tau_j^n(a) = b$ for some $n \in \mathbb{Z}$. Since $\tau_j(a) = \mu_i(a)$, we have $\mu_i^n(a) = b$, which means that $b \in [a]_i$. If $b \in [a]_i$, then $\mu_i^n(a) = b$ for some $n \in \mathbb{Z}$. Similarly, we have $\tau_j^n(a) = b$, so that $b \in [a]_j$. Thus, $[a]_i = [a]_j$ and $B_i = [a]_j$ because $B_i = [a]_i$. Since $\tau_j$ is a cycle, it has at most one orbit containing more than one element. This means that $\tau_j = \mu_i$. Thus, the expression of $\sigma$ is unique up to the order of the factors. $\blacksquare$ $\Big]$
 
 ---
 
