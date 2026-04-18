@@ -9,7 +9,7 @@ Math: true
 ---
 
 ## Definition
-Let $n \in \mathbb{N}$. The $n$-th ***boolean lattice*** $\mathcal{B}_n$ is the [poset](<{% post_url Ordering/2026-03-15-Order %}>) $(B_n, \prec)$, where $B_n = \{ 0, 1 \}^n$ and $\prec$ is defined by 
+Let $n \in \mathbb{N}$. The $n$-th ***boolean lattice*** $\mathcal{B}_n$ is the [poset](<{% post_url Ordering/2026-03-09-Order %}>) $(B_n, \prec)$, where $B_n = \{ 0, 1 \}^n$ and $\prec$ is defined by 
 
 $$a \prec b \iff a_i \le b_i, \forall i \in [n]$$
 
