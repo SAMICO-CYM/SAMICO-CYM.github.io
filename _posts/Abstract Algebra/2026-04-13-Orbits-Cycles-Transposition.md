@@ -102,11 +102,29 @@ Let $\sigma$ be a permutation of a finite set $A$, and let $B_1, ..., B_r$ be th
 $$\mu_i(a) = \begin{cases} \sigma(a) & \text{if } a \in B_i \\\ 
 a & \text{if } a \notin B_i \end{cases}$$
 
-Then each $\mu_i$ is a cycle, and $\sigma = \mu_1 \mu_2 \cdots \mu_r$.
+**Claim 1**: each $\mu_i$ is a permutation of $A$.
 
-$(\because)$
+$\Big[$ $(\because)$ Since either $a \in B_i$ or $a \notin B_i$ (not both), $\mu_i$ is well-defined. 
 
-Since $\mu_i(a) = \sigma(a)$ for each $a \in B_i$, each $\mu_i$ is a cycle. 
+Suppose that $\mu_i(a) = \mu_i(b)$ for some $a, b \in A$. If $a, b \in B_i$, then we have $\sigma(a) = \sigma(b)$. Since $\sigma$ is injective, $a = b$. If $a \in B_i$ and $b \notin B_i$, then we have $\sigma(a) = b$. Since $a \in B_i$, $b \in B_i$. $\bigotimes$. Similarly, if $a \notin B_i$ and $b \in B_i$, then we obtain the contradiction. If $a, b \notin B_i$, then we have $a = b$. For any case, we obtain $a = b$, which means that $\mu_i$ is injective. 
+
+Let $b \in A$. If $b \notin B_i$, then $\mu_i(b) = b$. If $b \in B_i$, then $\sigma(a) = b$ for some $a \in B_i$. Since $a \in B_i$, we have $\mu_i(a) = \sigma(a) = b$. Thus, $\mu_i$ is surjective. 
+
+Hence, $\mu_i$ is bijective, which means that $\mu_i$ is a permutation of $A$. $\Big]$
+
+**Claim 2**: each $\mu_i$ is a cylce.
+
+$\Big[$ $(\because)$ Denote the equivalence relation determined by $\mu_i$ by $\sim_i$.
+
+Let $a \in A$. If $a \notin B_i$, then $a \in B_j$ for some $j \neq i$, because the orbits $B_1, ..., B_r$ of $\sigma$ are disjoint. Denote the equivalence class of $a$ determined by $\sim_i$ by $[a]_i$. If $b \in [a]_i$, then $\mu_i^n(a) = b$ for some $n \in \mathbb{Z}$. Since $a \notin B_i$, we have $a = b$. Thus, for each $a \notin B_i$, the equivalence class $[a]_i$, which is the orbit of $\mu_i$,. contains only one element $a$.
+
+Suppose that $a \in B_i$. If $b \in [a]_i$, then $\mu_i^n(a) = b$ for some $n \in \mathbb{Z}$. Since $a \in B_i$, we have $\sigma^n(a) = b$, which implies that $b \in B_i$. Thus, $[a]_i \subset B_i$. If $b \in B_i$, then $\sigma^n(a) = b$ for some $n \in \mathbb{Z}$. Since $a \in B_i$, we have $\mu_i^n(a) = b$, which means that $b \in [a]_i$. Thus, $B_i \subset [a]_i$. 
+
+Hence, $B_i = [a]_i$, which means that each $\mu_i$ has at most one orbit containing more then one element of $A$. Therefore, $\mu_i$ is a cylce. $\Big]$
+
+**Claim 3**: $\sigma = \mu_1 \mu_2 \cdots \mu_r$.
+
+$\Big[$ $(\because)$ Since $\mu_i(a) = \sigma(a)$ for each $a \in B_i$, each $\mu_i$ is a cycle. 
 
 Let $a \in A$. Then $a \in B_i$ for some $i \in \\{ 1, ..., r \\}$, which implies that $\sigma(a) \in B_i$. Then we have
 
@@ -119,7 +137,7 @@ $$\begin{align*}
 &= \sigma(a)
 \end{align*}$$
 
-Hence $\sigma = \mu_1 \mu_2 \cdots \mu_r$. Since $B_1, ..., B_r$ are disjoint, $\mu_1, ..., \mu_r$ are disjoint. 
+Hence $\sigma = \mu_1 \mu_2 \cdots \mu_r$. Since $B_1, ..., B_r$ are disjoint, $\mu_1, ..., \mu_r$ are disjoint. $\Big]$
 
 Note that the orbits of $\sigma$ are unique and each orbit of $\sigma$ determines the unique cylce. Hence the expression is unique. $\blacksquare$ 
 
