@@ -179,9 +179,9 @@ Let $\sigma \in S_n$ and let $\tau = (i, j) \in S_n$ with $i \neq j$.
 
 We claim that $\sigma$ and $\tau \sigma$ have different numbers of orbits by $1$. 
 
-$\big[$ $(\because)$ **Case 1**: $i$ and $h$ belong to different orbits in $\sigma$. 
+$\big[$ $(\because)$ **Case 1**: $i$ and $j$ belong to different orbits in $\sigma$. 
 
-**Subcase 1**: $\sigma = (i, a_1, ..., a_s)(j, b_1, ..., b_t) \cdots $ (a product of disjoint cycles)
+**Subcase 1**: $\sigma = (i, a_1, ..., a_s)(j, b_1, ..., b_t) \cdots$ (a product of disjoint cycles)
 
 In this subcase, we have 
 
@@ -192,7 +192,7 @@ $$\begin{align*}
 
 Thus the number of orbits of $\tau \sigma$ is different from $\sigma$ by $1$.
 
-**Subcase 2**: $\sigma = (i)(j, b_1, ..., b_t) \cdots $ (a product of disjoint cycles)
+**Subcase 2**: $\sigma = (i)(j, b_1, ..., b_t) \cdots$ (a product of disjoint cycles)
 
 In this subcase, we have 
 
@@ -203,7 +203,7 @@ $$\begin{align*}
 
 Thus the number of orbits of $\tau \sigma$ is different from $\sigma$ by $1$.
 
-**Subcase 3**: $\sigma = (i, a_1, ..., a_s)(j) \cdots $ (a product of disjoint cycles)
+**Subcase 3**: $\sigma = (i, a_1, ..., a_s)(j) \cdots$ (a product of disjoint cycles)
 
 In this subcase, we have 
 
@@ -214,7 +214,7 @@ $$\begin{align*}
 
 Thus the number of orbits of $\tau \sigma$ is different from $\sigma$ by $1$.
 
-**Subcase 4**: $\sigma = (i)(j) \cdots $ (a product of disjoint cycles)
+**Subcase 4**: $\sigma = (i)(j) \cdots$ (a product of disjoint cycles)
 
 In this subcase, we have 
 
@@ -225,7 +225,7 @@ $$\begin{align*}
 
 Thus the number of orbits of $\tau \sigma$ is different from $\sigma$ by $1$.
 
-**Case 2**: $i$ and $h$ belong to the same orbits of $\sigma$. 
+**Case 2**: $i$ and $j$ belong to the same orbits of $\sigma$. 
 
 In this case, we can write $\sigma = (i, a_1, ..., a_s, j, b_1, ..., b_t) \cdots$ (a product of disjoint cycles)
 
