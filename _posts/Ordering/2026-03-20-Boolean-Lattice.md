@@ -1,9 +1,9 @@
 ---
-Title: Boolean Lattice
-Date: 2026-03-20
-Categories: [Mathematics, Ordering]
-Tags: []
-Math: true
+title: Boolean Lattice
+date: 2026-03-20
+categories: [Mathematics, Ordering]
+tags: []
+math: true
 ---
 
 ## Definition
