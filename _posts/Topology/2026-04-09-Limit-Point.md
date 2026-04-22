@@ -89,3 +89,12 @@ $$C \text{ is closed in } X \iff C \text{ contains all of its limit points} \iff
 Suppose that $C$ is closed in $X$. Then $\overline{C} \subset C$. Since $C \subset \overline{C}$, we have $\overline{C} = C$. Since $\overline{C} = C \cup C'$, we have $C' \subset C$. Thus $C$ contains all of its limit points. 
 
 Conversely, suppose that $\overline{C} = C$. Then $C' \subset C$ by Theorem 2, which means that $C$ contains all of its limit points. Since $\overline{C}$ is closed in $X$, we have $C$ is closed in $X$. $\blacksquare$ 
+
+---
+
+## Example
+In $\mathbb{R}$ with the usual topology, each singleton set has no limit points, i.e., $\\{ x_0 \\}' = \emptyset$ for all $x_0 \in \mathbb{R}$. Thus, $\\{ x_0 \\}$ is closed in $\mathbb{R}$. 
+
+$(\because)$ Suppose that $\\{ x_0 \\}' \neq \emptyset$. Let $x \in \\{ x_0 \\}'$. Then for any open set $U$ containing $x$, we have $U \cap (\\{ x_0 \\} - \\{ x \\}) \neq \emptyset$. If $x = x_0$, then clearly $U \cap (\\{ x_0 \\} - \\{ x \\}) = U \cap \emptyset = \emptyset$. $\bigotimes$ Thus $x \neq x_0$. 
+
+WLOG, $x < x_0$. Then there exists an open interval $(x - \epsilon, x + \epsilon)$ such that $x_0 \notin (x - \epsilon, x + \epsilon)$. Let $U = (x - \epsilon, x + \epsilon)$. Then $U$ is an open set containing $x$ and $U \cap (\\{ x_0 \\} - \\{ x \\}) = \emptyset$. $\bigotimes$ Thus $x \in \\{ x_0 \\}'$ is impossible. $\blacksquare$ 
