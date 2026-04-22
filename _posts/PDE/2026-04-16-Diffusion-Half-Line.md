@@ -113,4 +113,4 @@ u(x, t) &= \int_{-\infty}^{\infty} S(x - y, t) \phi _ {\text{even}}(y) \, dy \\
 
 Hence, for $0 < x < \infty$ and $0 < t < \infty$, we have 
 
-$$v(x, t) = \frac{1}{\sqrt{4 \pi kt}} \int_0^{\infty} \left[ e^{-\frac{(x-y)^2}{4kt}} + e^{-\frac{(x+y)^2}{4kt}} \right] \phi(y) \, dy.$$
+$$v(x, t) = \frac{1}{\sqrt{4 \pi kt}} \int_0^{\infty} \left[ e^{-\frac{(x-y)^2}{4kt}} + e^{-\frac{(x+y)^2}{4kt}} \right] \phi(y) \, dy.$$ 
