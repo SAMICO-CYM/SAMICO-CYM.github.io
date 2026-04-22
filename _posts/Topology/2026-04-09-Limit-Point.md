@@ -92,7 +92,7 @@ Conversely, suppose that $\overline{C} = C$. Then $C' \subset C$ by Theorem 2, w
 
 ---
 
-## Example
+## Remark
 In $\mathbb{R}$ with the usual topology, each singleton set has no limit points, i.e., $\\{ x_0 \\}' = \emptyset$ for all $x_0 \in \mathbb{R}$. Thus, $\\{ x_0 \\}$ is closed in $\mathbb{R}$. 
 
 $(\because)$ Suppose that $\\{ x_0 \\}' \neq \emptyset$. Let $x \in \\{ x_0 \\}'$. Then for any open set $U$ containing $x$, we have $U \cap (\\{ x_0 \\} - \\{ x \\}) \neq \emptyset$. If $x = x_0$, then clearly $U \cap (\\{ x_0 \\} - \\{ x \\}) = U \cap \emptyset = \emptyset$. $\bigotimes$ Thus $x \neq x_0$. 
