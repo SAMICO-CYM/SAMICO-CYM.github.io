@@ -107,10 +107,10 @@ Note that
 $$\begin{align*}
 u(x, t) &= \int_{-\infty}^{\infty} S(x - y, t) \phi _ {\text{even}}(y) \, dy \\
 &= \int_0^{\infty} S(x-y, t) \phi(y) \, dy + \int_{-\infty}^0 S(x-y, t)\phi(-y) \, dy \\
-&= \int_0^{\infty} S(x-y, t) \phi(y) \, dy + \int_{\infty}^0 S(x + y, t) \phi(y) \, dy \\
+&= \int_0^{\infty} S(x-y, t) \phi(y) \, dy - \int_{\infty}^0 S(x + y, t) \phi(y) \, dy \\
 &= \int_0^{\infty} \left[ S(x-y, t) + S(x+y, t) \right] \phi(y) \, dy.
 \end{align*}$$
 
 Hence, for $0 < x < \infty$ and $0 < t < \infty$, we have 
 
-$$v(x, t) = \frac{1}{\sqrt{4 \pi kt}} \int_0^{\infty} \left[ e^{-\frac{(x-y)^2}{4kt}} - e^{-\frac{(x+y)^2}{4kt}} \right] \phi(y) \, dy.$$
+$$v(x, t) = \frac{1}{\sqrt{4 \pi kt}} \int_0^{\infty} \left[ e^{-\frac{(x-y)^2}{4kt}} + e^{-\frac{(x+y)^2}{4kt}} \right] \phi(y) \, dy.$$
