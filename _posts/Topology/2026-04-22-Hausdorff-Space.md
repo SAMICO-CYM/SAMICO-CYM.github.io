@@ -12,12 +12,10 @@ A topological space $X$ is called a ***Hausdorff space*** if for each pair $x_1,
 ---
 
 ## Theorem 1
-A topological space $X$ is a Hausdorff space if and only if every singleton set in $X$ is closed in $X$.
+Every singleton set in a Hausdorff space is closed. 
 
 ### Proof 
-$(\Longrightarrow)$
-
-Suppose that $X$ is a Hausdorff space. Let $x \in X$. 
+Let $X$ be a Hausdorff space, and let $x \in X$. 
 
 **Claim**: $\\{x\\}' = \emptyset$. 
 
@@ -30,3 +28,12 @@ U_2 \cap (\{ x \} - \{ y \}) = U_2 \cap \{ x \} \subset U_2 \cap U_1 = \emptyset
 \end{align*}$$ 
 
 But $U_2 \cap (\\{ x \\} - \\{ y \\}) \neq \emptyset$. $\bigotimes$ Thus $\\{ x \\}' = \emptyset$ $\Big]$
+
+Hence, $\\{ x \\}$ is closed in $X$. $\blacksquare$
+---
+
+## Corollary 
+Every finite set in a Hausdorff space is closed. 
+
+### Proof
+Let $\\{ x_1, ..., x_n \\}$ be a finite set in a Hausdorff space $X$. Since $\\{ x_1, ..., x_n \\} = \\bigcup_{i=1}^n \\{ x_i \\}$ and $\\{ x_i \\}$ is closed in $X$ for each $i$ by Theorem 1, it follows that $\\{ x_1, ..., x_n \\}$ is closed in $X$ by the definition of a topology. $\blacksquare$
