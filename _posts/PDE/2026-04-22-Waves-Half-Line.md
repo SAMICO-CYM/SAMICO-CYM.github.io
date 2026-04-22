@@ -94,13 +94,11 @@ for $0 < x < \infty$ and $0 < t < \infty$.
 Let define the ***even extensions*** $\phi _ {\text{even}}$ and $\psi _ {\text{even}}$ of $\phi$ and $\psi$ by 
 
 $$\phi _ {\text{even}}(x) = \begin{cases}
-\phi(x) & \text{for } x > 0 \\
+\phi(x) & \text{for } x \ge 0 \\
 \phi(-x) & \text{for } x < 0 \\
-0 & \text{for } x = 0.
 \end{cases} \quad \text{and} \quad \psi _ {\text{even}}(x) = \begin{cases}
-\psi(x) & \text{for } x > 0 \\
+\psi(x) & \text{for } x \ge 0 \\
 \psi(-x) & \text{for } x < 0 \\
-0 & \text{for } x = 0.
 \end{cases}$$
 
 Let $u(x, t)$ be the solution of the initial value problem
@@ -151,7 +149,7 @@ $$\begin{cases}
 
 Thus, in this case, we have
 $$\begin{align*}
-v(x, t) &= \frac{1}{2} [\phi(ct + x) - \phi(ct - x)] + \frac{1}{2c} \left[ \int_{0}^{x + ct} \psi(s) \, ds - \int_{x-ct}^0 \psi(-s) \, ds \right] \\
-&= \frac{1}{2} [\phi(ct + x) - \phi(ct - x)] + \frac{1}{2c} \left[ \int_{0}^{ct + x} \psi(s) \, ds - \int_0^{ct-x} \psi(s) \, ds \right] \\ 
-&= \frac{1}{2} [\phi(ct + x) - \phi(ct - x)] + \frac{1}{2c} \int_{ct - x}^{ct + x} \psi(s) \, ds.
+v(x, t) &= \frac{1}{2} [\phi(ct + x) + \phi(ct - x)] + \frac{1}{2c} \left[ \int_{0}^{x + ct} \psi(s) \, ds + \int_{x-ct}^0 \psi(-s) \, ds \right] \\
+&= \frac{1}{2} [\phi(ct + x) + \phi(ct - x)] + \frac{1}{2c} \left[ \int_{0}^{ct + x} \psi(s) \, ds - \int_{ct-x}^{0} \psi(s) \, ds \right] \\
+&= \frac{1}{2} [\phi(ct + x) + \phi(ct - x)] + \frac{1}{2c} \left[ \int_{0}^{ct + x} \psi(s) \, ds + \int_{0}^{ct-x} \psi(s) \, ds \right]
 \end{align*}$$
