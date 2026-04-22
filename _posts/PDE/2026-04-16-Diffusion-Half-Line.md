@@ -74,9 +74,8 @@ for $0 < x < \infty$ and $0 < t < \infty$.
 Let define the ***even extension*** $\phi _ {\text{even}}$ of $\phi$ by 
 
 $$\begin{cases}
-\phi(x) & \text{for } x > 0 \\
+\phi(x) & \text{for } x \ge 0 \\
 \phi(-x) & \text{for } x < 0 \\
-0 & \text{for } x = 0.
 \end{cases}$$
 
 Let $u(x, t)$ be the solution of the initial value problem
@@ -94,15 +93,20 @@ Let $v(x, t)$ be the restriction of $u(x, t)$ for $x \ge 0$. Note that
 
 1. $v(x, t)$ solves the diffusion equation because $u(x, t)$ solves it.
 2. $v(x, 0) = u(x, 0) = \phi _ {\text{even}}(x) = \phi(x)$.
-3. Since $u(-x, t) = u(x, t)$, we have $v_x(0, t) = u_x(0, t) = 0$.
+3. Since $u(-x, t) = u(x, t)$, we have $-u_x(-x, t) = u_x(x, t)$. In particular, $u_x(0, t) = -u_x(0, t)$, so that $u_x(0, t) = 0$. Thus, 
 
-Thus, $v(x, t)$ is the unique solutaion of the half-line problem. 
+$$\begin{align*} v_x(0, t) &= \lim_{x \to 0^+} u_x(x, t) \\ 
+&= \lim_{x \to 0^+} -u_x(-x, t) \\ 
+&= -u_x(0, t) \\ 
+&= 0. \end{align*}$$  
+
+Thus, $v(x, t)$ is the unique solution of the half-line problem. 
 
 Note that 
 
 $$\begin{align*}
 u(x, t) &= \int_{-\infty}^{\infty} S(x - y, t) \phi _ {\text{even}}(y) \, dy \\
-&= \int_0^{\infty} S(x-y, t) \phi(y) \, dy - \int_{-\infty}^0 S(x-y, t)\phi(-y) \, dy \\
+&= \int_0^{\infty} S(x-y, t) \phi(y) \, dy + \int_{-\infty}^0 S(x-y, t)\phi(-y) \, dy \\
 &= \int_0^{\infty} S(x-y, t) \phi(y) \, dy + \int_{\infty}^0 S(x + y, t) \phi(y) \, dy \\
 &= \int_0^{\infty} \left[ S(x-y, t) + S(x+y, t) \right] \phi(y) \, dy.
 \end{align*}$$
