@@ -103,7 +103,8 @@ where $F _ {\text{odd}}$ and $\psi _ {\text{odd}}$ are the odd expansions of $F$
 
 $$\begin{align*}
 V(x, t) &= \int_{-\infty}^\infty S(x-y, t) \psi_\text{odd}(y) \, dy + \int_0^t \int_{-\infty}^\infty S(x-y, t-s) F _ {\text{odd}}(y, s) \, dy ds \\
-&= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] \psi(y) \, dy + \int_0^t \int_0^\infty [S(x-y, t-s) - S(x+y, t-s)] F(y, s) \, dy ds.
+&= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] \psi(y) \, dy \\
+&+ \int_0^t \int_0^\infty [S(x-y, t-s) - S(x+y, t-s)] F(y, s) \, dy ds.
 \end{align*}$$
 
 We take $U(x, t)$ to be the restriction of $V(x, t)$ for $x \ge 0$. Note that 
@@ -117,5 +118,6 @@ Thus, $U(x, t)$ is the unique solution of the half-line problem, and therefore w
 $$\begin{align*}
 u(x, t) &= U(x, t) + h(t) \\
 &= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] \psi(y) \, dy + \int_0^t \int_0^\infty [S(x-y, t-s) - S(x+y, t-s)] F(y, s) \, dy ds + h(t) \\
-&= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] (\phi(y) - h(0)) \, dy + \int_0^t \int_0^\infty [S(x-y, t-s) - S(x+y, t-s)] (f(y,s) - h'(s)) \, dy ds + h(t). \blacksquare
+&= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] (\phi(y) - h(0)) \, dy \\
+&+ \int_0^t \int_0^\infty [S(x-y, t-s) - S(x+y, t-s)] (f(y,s) - h'(s)) \, dy ds + h(t). \blacksquare
 \end{align*}$$
