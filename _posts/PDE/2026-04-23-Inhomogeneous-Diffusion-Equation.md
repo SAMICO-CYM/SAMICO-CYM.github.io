@@ -88,29 +88,29 @@ $$
 Let $u(x,t)$ be a solution of the given initial value problem. Let $U(x, t) := u(x, t) - h(t)$ for $0 < x < \infty$ and $t > 0$. Then $U(x, t)$ satisfies 
 
 $$\begin{cases}
-U_t - k U_{xx} = f(x, t) - h'(t) \\
-U(x, 0) = \phi(x) - h(0) \\
+U_t - k U_{xx} = F(x, t) := f(x, t) - h'(t) \\
+U(x, 0) = \Psi(x) := \phi(x) - h(0) \\
 U(0, t) = 0 
 \end{cases}$$
 
-for $0 < x < \infty, t > 0$. Let $\psi(x) := \phi(x) - h(0)$ for $0 < x < \infty$. We consider the whole-line problem 
+for $0 < x < \infty, t > 0$. We consider the whole-line problem 
 
 $$\begin{cases}
-V_t - k V_{xx} = f(x, t) - h'(t) \\
-V(x, 0) = \psi _ {\text{odd}}(x)
+V_t - k V_{xx} = F _ {\text{odd}}(x, t) \\
+V(x, 0) = \Psi _ {\text{odd}}(x)
 \end{cases}$$ 
 
-where $\psi _ {\text{odd}}$ is the odd expansion of $\psi$ for the whole-line. Then we have the solution 
+where $F _ {\text{odd}}$ and $\Psi _ {\text{odd}}$ are the odd expansions of $F$ and $\Psi$ respectively for the whole-line of $x$. Then the solution of the whole-line problem is given by 
 
 $$\begin{align*}
-V(x, t) &= \int_{-\infty}^\infty S(x-y, t) \psi_\text{odd}(y) \, dy + \int_0^t \int_{-\infty}^\infty S(x-y, t-s) [f(y, s) - h'(s)] \, dy ds \\
-&= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] \psi(y) \, dy + \int_0^t \int_{-\infty}^\infty S(x-y, t-s) [f(y, s) - h'(s)] \, dy ds.
+V(x, t) &= \int_{-\infty}^\infty S(x-y, t) \Psi_\text{odd}(y) \, dy + \int_0^t \int_{-\infty}^\infty S(x-y, t-s) F(y, s) \, dy ds \\
+&= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] \Psi(y) \, dy + \int_0^t \int_{-\infty}^\infty S(x-y, t-s) F(y, s) \, dy ds.
 \end{align*}$$
 
 We take $U(x, t)$ to be the restriction of $V(x, t)$ for $x \ge 0$. Note that 
 
 1. $U(x,t)$ solves the inhomogeneous diffusion equation $U_t - k U_{xx} = f(x, t) - h'(t)$ because $V(x, t)$ solves it.
-2. $U(x, 0) = V(x, 0) = \psi _ {\text{odd}}(x) = \psi(x) = \phi(x) - h(0)$.
+2. $U(x, 0) = V(x, 0) = \Psi _ {\text{odd}}(x) = \Psi(x) = \phi(x) - h(0)$.
 3. Since $V(-x, t) = -V(x, t)$, we have $U(0, t) = V(0, t) = 0$.
 
 Thus, $U(x, t)$ is the unique solution of the half-line problem. 
