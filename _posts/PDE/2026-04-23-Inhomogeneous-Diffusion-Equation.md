@@ -6,7 +6,7 @@ tags: []
 math: true
 ---
 
-## Theorem
+## Theorem 1
 The solution of the initial value problem
 
 $$ \begin{cases} 
@@ -14,7 +14,7 @@ u_t - k u_{xx} = f(x, t) \\
 u(x, 0) = \phi(x)
 \end{cases} $$
 
-where $f$ and $\phi$ are given functions, is given by
+for $-\infty < x < \infty, t >0$, where $f$ and $\phi$ are given functions, is given by
 
 $$
 \begin{align*}
@@ -62,3 +62,47 @@ $$\begin{align*}
 \end{align*}$$
 
 which means that $u$ satisfies the inhomogeneous diffusion equation. Clearly, $u(x, 0) = 0$. Thus, $u$ is the solution of the given initial value problem. $\blacksquare$
+
+--- 
+
+## Theorem 2 (Half-Line Problem)
+
+The solution of the half-line problem
+
+$$ \begin{cases} 
+u_t - k u_{xx} = f(x, t) \\
+u(x, 0) = \phi(x) \\
+u(0, t) = h(t)
+\end{cases} $$
+
+for $0 < x < \infty, t > 0$, where $f, \phi$ and $h$ are given functions, is given by
+
+$$
+\begin{align*}
+u(x, t) &= \int_{-\infty}^{\infty} S(x- y, t) \phi(y) \, dy + \int_0^t \int_{-\infty}^{\infty} S(x- y, t - s) f(y, s) \, dy ds
+\\ &= \frac{1}{\sqrt{4 \pi k t}} \int_{-\infty}^{\infty} e^{-\frac{(x - y)^2}{4 k t}} \phi(y) \, dy + \int_0^t \int_{-\infty}^{\infty} \frac{1}{\sqrt{4 \pi k (t - s)}} e^{- \frac{(x - y)^2}{4 k (t - s)}} f(y, s) \, dy ds.
+\end{align*}
+$$
+
+### Proof
+Let $U(x, t) := u(x, t) - h(t)$ for $0 < x < \infty$ and $t > 0$. Then $U(x, t)$ satisfies 
+
+$$\begin{cases}
+U_t - k U_{xx} = f(x, t) - h'(t) \\
+U(x, 0) = \phi(x) - h(0) \\
+U(0, t) = 0 
+\end{cases}$$
+
+for $0 < x < \infty, t > 0$. Let $\psi(x) := \phi(x) - h(0)$ for $0 < x < \infty$. We consider the whole-line problem 
+
+$$\begin{cases}
+V_t - k V_{xx} = f(x. t) - h'(t) \\
+V(x, 0) = \psi _ {\text{odd}}(x)
+\end{cases}$$ 
+
+where $\psi _ {\text{odd}}$ is the odd expansion of $\psi$ for the whole-line. Then we have the solution 
+
+$$\begin{align*}
+V(x, t) &= \int_{-\infty}^\infty S(x-y, t) \psi_\text{odd}(y) \, dy + \int_0^t \int_{-\infty}^\infty S(x-y, t-s) [f(y, s) - h'(s)] \, dy ds \\
+&= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] \psi(y) \, dy + \int_0^t \int_{-\infty}^\infty S(x-y, t-s) [f(y, s) - h'(s)] \, dy ds.
+\end{align*} 
