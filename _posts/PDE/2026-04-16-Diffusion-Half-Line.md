@@ -42,7 +42,7 @@ Let $v(x, t)$ be the restriction of $u(x, t)$ for $x \ge 0$. Note that
 2. $v(x, 0) = u(x, 0) = \phi _ {\text{odd}}(x) = \phi(x)$.
 3. Since $u(-x, t) = -u(x, t)$, we have $v(0, t) = u(0, t) = 0$.
 
-Thus, $v(x, t)$ is the unique solutaion of the half-line problem. 
+Thus, $v(x, t)$ is the unique solution of the half-line problem. 
 
 Note that 
 
