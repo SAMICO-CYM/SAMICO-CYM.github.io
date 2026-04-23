@@ -103,8 +103,8 @@ V(x, 0) = \psi _ {\text{odd}}(x)
 where $F _ {\text{odd}}$ and $\psi _ {\text{odd}}$ are the odd expansions of $F$ and $\psi$ respectively for the whole-line of $x$. Then the solution of the whole-line problem is given by 
 
 $$\begin{align*}
-V(x, t) &= \int_{-\infty}^\infty S(x-y, t) \psi_\text{odd}(y) \, dy + \int_0^t \int_{-\infty}^\infty S(x-y, t-s) F(y, s) \, dy ds \\
-&= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] \psi(y) \, dy + \int_0^t \int_{-\infty}^\infty S(x-y, t-s) F(y, s) \, dy ds.
+V(x, t) &= \int_{-\infty}^\infty S(x-y, t) \psi_\text{odd}(y) \, dy + \int_0^t \int_{-\infty}^\infty S(x-y, t-s) F _ {\text{odd}}(y, s) \, dy ds \\
+&= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] \psi(y) \, dy + \int_0^t \int_0^\infty [S(x-y, t-s) - S(x+y, t-s)] F(y, s) \, dy ds.
 \end{align*}$$
 
 We take $U(x, t)$ to be the restriction of $V(x, t)$ for $x \ge 0$. Note that 
