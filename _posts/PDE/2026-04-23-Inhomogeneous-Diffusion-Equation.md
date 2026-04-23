@@ -80,7 +80,7 @@ for $0 < x < \infty, t > 0$, where $f, \phi$ and $h$ are given functions, is giv
 $$
 \begin{align*}
 u(x, t) &= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] (\phi(y) - h(0)) \, dy + \int_0^t \int_0^\infty [S(x-y, t-s) - S(x+y, t-s)] (f(y,s) - h'(s)) \, dy ds + h(t).
-$$
+\end{align*}$$
 
 ### Proof
 Let $u(x,t)$ be a solution of the given initial value problem. Let $U(x, t) := u(x, t) - h(t)$ for $0 < x < \infty$ and $t > 0$. Then $U(x, t)$ satisfies 
