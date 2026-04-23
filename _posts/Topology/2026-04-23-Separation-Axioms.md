@@ -33,8 +33,8 @@ $$T_4 \implies T_3 \implies T_2 \implies T_1 \implies T_0$$
 ---
 
 ## Example
-(i) $(\mathbb{R}^n, \mathcal{T} _ {\text{usual}})$ is a $T_4$-space. 
+**(i)** $(\mathbb{R}^n, \mathcal{T} _ {\text{usual}})$ is a $T_4$-space. 
 
-(ii) $(\mathbb{R}, \mathcal{T}_c)$ is a $T_1$-space, but not a $T_2$-space.
+**(ii)** $(\mathbb{R}, \mathcal{T}_c)$ is a $T_1$-space, but not a $T_2$-space.
 
-(iii) $(\mathbb{R}, \mathcal{T}_K)$ is a $T_2$-space, but not a $T_3$-space.
+**(iii)** $(\mathbb{R}, \mathcal{T}_K)$ is a $T_2$-space, but not a $T_3$-space.
