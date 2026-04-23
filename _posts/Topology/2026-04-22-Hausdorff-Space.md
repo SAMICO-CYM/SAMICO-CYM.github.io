@@ -44,7 +44,7 @@ Let $\\{ x_n \\}$ be a sequence of points of $X$. If $\\{ x_n \\}$ does not conv
 
 $$(U \times Y) \cap (V \times Y) = (U \cap V) \times Y = \emptyset.$$
 
-Thus, $X \times Y$ is a Hausdorff space. $\blacksquare$
+Thus, $X \times Y$ is a Hausdorff space.
 
 **(ii)** Let $Y$ be a subspace of a Hausdorff space $X$. Let $x, y \in Y$ with $x \neq y$. Since $x, y \in X$ and $X$ is Hausdorff, there exist neighborhoods $U$ and $V$ of $x$ and $y$, respectively, such that $U \cap V = \emptyset$. Note that $Y \cap U$ and $Y \cap V$ are neighborhoods of $x$ and $y$ in $Y$, respectively, and that
 
