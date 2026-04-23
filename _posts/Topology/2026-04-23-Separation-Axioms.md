@@ -7,21 +7,27 @@ math: true
 ---
 
 ## Definition
-Let $(X, \mathcal{T})$ be a topological space. Let $x, y \in X$ with $x \neq y$. Then $X$ is called a
+Let $(X, \mathcal{T})$ be a topological space. 
 
-**(i)** ***$T_0$-space*** if $\exists U \in \mathcal{T}$ such that $x \in U$ and $y \notin U$.
+Let $x, y \in X$ with $x \neq y$.
 
-**(ii)** ***$T_1$-space*** if $\exists U, V \in \mathcal{T}$ such that $x \in U, y \notin U$ and $y \in V, x \notin V$.
+**(i)** $X$ is called a ***$T_0$-space*** if $\exists U \in \mathcal{T}$ such that $x \in U$ and $y \notin U$.
 
-**(iii)** ***$T_2$-space*** or ***Hausdorff space*** if $\exists U, V \in \mathcal{T}$ such that $x \in U, y \in V$ and $U \cap V = \emptyset$.
+**(ii)** $X$ is called a ***$T_1$-space*** if $\exists U, V \in \mathcal{T}$ such that $x \in U, y \notin U$ and $y \in V, x \notin V$.
 
-**(iv)** ***regular space*** if $\exists U, V \in \mathcal{T}$ such that $x \in U, C \subset V$ and $U \cap V = \emptyset$ for any closed set $C$ and any point $x \notin C$.
+**(iii)** $X$ is called a ***$T_2$-space*** or ***Hausdorff space*** if $\exists U, V \in \mathcal{T}$ such that $x \in U, y \in V$ and $U \cap V = \emptyset$.
 
-**(v)** ***$T_3$-space*** or ***regular Hausdorff*** if $X$ is regular and $T_1$.
+Let $C$ be a closed set in $X$, and let $x \notin C$.
 
-**(vi)** ***normal space*** if $\exists U, V \in \mathcal{T}$ such that $C \subset U, D \subset V$ and $U \cap V = \emptyset$ for any closed sets $C, D$ with $C \cap D = \emptyset$.
+**(iv)** $X$ is called a ***regular space*** if $\exists U, V \in \mathcal{T}$ such that $x \in U, C \subset V$ and $U \cap V = \emptyset$.
 
-**(vii)** ***$T_4$-space*** or ***normal Hausdorff*** if $X$ is normal and $T_1$.
+**(v)** $X$ is called a ***$T_3$-space*** or ***regular Hausdorff*** if $X$ is regular and $T_1$.
+
+Let $C, D$ be closed sets in $X$ with $C \cap D = \emptyset$.
+
+**(vi)** $X$ is called a ***normal space*** if $\exists U, V \in \mathcal{T}$ such that $C \subset U, D \subset V$ and $U \cap V = \emptyset$.
+
+**(vii)** $X$ is called a ***$T_4$-space*** or ***normal Hausdorff*** if $X$ is normal and $T_1$.
 
 ---
 
