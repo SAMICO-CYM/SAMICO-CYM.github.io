@@ -40,6 +40,14 @@ Let $\\{ x_n \\}$ be a sequence of points of $X$. If $\\{ x_n \\}$ does not conv
 **(ii)** A subspace of a Hausdorff space is a Hausdorff space.
 
 ### Proof
-(i)
+**(i)** Let $(x_1, y_1)$ and $(x_2, y_2)$ be two distinct points in $X \times Y$. Then $x_1 \neq x_2$ or $y_1 \neq y_2$. WLOG, assume $x_1 \neq x_2$. Since $X$ is Hausdorff, there exist neighborhoods $U$ and $V$ of $x_1$ and $x_2$, respectively, such that $U \cap V = \emptyset$. Since $(x_1, y_1) \in U \times Y$ and $U \times Y$ is open in $X \times Y$, $U \times Y$ is a neighborhood of $(x_1, y_1)$. Similarly, $V \times Y$ is a neighborhood of $(x_2, y_2)$. Note that 
 
-(ii)
+$$(U \times Y) \cap (V \times Y) = (U \cap V) \times Y = \emptyset.$$
+
+Thus, $X \times Y$ is a Hausdorff space. $\blacksquare$
+
+**(ii)** Let $Y$ be a subspace of a Hausdorff space $X$. Let $x, y \in Y$ with $x \neq y$. Since $x, y \in X$ and $X$ is Hausdorff, there exist neighborhoods $U$ and $V$ of $x$ and $y$, respectively, such that $U \cap V = \emptyset$. Note that $Y \cap U$ and $Y \cap V$ are neighborhoods of $x$ and $y$ in $Y$, respectively, and that
+
+$$(Y \cap U) \cap (Y \cap V) = Y \cap (U \cap V) = \emptyset.$$
+
+Thus, $Y$ is a Hausdorff space. $\blacksquare$
