@@ -79,9 +79,7 @@ for $0 < x < \infty, t > 0$, where $f, \phi$ and $h$ are given functions, is giv
 
 $$
 \begin{align*}
-u(x, t) &= \int_{-\infty}^{\infty} S(x- y, t) \phi(y) \, dy + \int_0^t \int_{-\infty}^{\infty} S(x- y, t - s) f(y, s) \, dy ds
-\\ &= \frac{1}{\sqrt{4 \pi k t}} \int_{-\infty}^{\infty} e^{-\frac{(x - y)^2}{4 k t}} \phi(y) \, dy + \int_0^t \int_{-\infty}^{\infty} \frac{1}{\sqrt{4 \pi k (t - s)}} e^{- \frac{(x - y)^2}{4 k (t - s)}} f(y, s) \, dy ds.
-\end{align*}
+u(x, t) &= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] (\phi(y) - h(0)) \, dy + \int_0^t \int_0^\infty [S(x-y, t-s) - S(x+y, t-s)] (f(y,s) - h'(s)) \, dy ds + h(t).
 $$
 
 ### Proof
@@ -113,4 +111,10 @@ We take $U(x, t)$ to be the restriction of $V(x, t)$ for $x \ge 0$. Note that
 2. $U(x, 0) = V(x, 0) = \psi _ {\text{odd}}(x) = \psi(x) = \phi(x) - h(0)$.
 3. Since $V(-x, t) = -V(x, t)$, we have $U(0, t) = V(0, t) = 0$.
 
-Thus, $U(x, t)$ is the unique solution of the half-line problem. 
+Thus, $U(x, t)$ is the unique solution of the half-line problem, and therefore we have 
+
+$$\begin{align*}
+u(x, t) &= U(x, t) + h(t) \\
+&= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] \psi(y) \, dy + \int_0^t \int_0^\infty [S(x-y, t-s) - S(x+y, t-s)] F(y, s) \, dy ds + h(t) \\
+&= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] (\phi(y) - h(0)) \, dy + \int_0^t \int_0^\infty [S(x-y, t-s) - S(x+y, t-s)] (f(y,s) - h'(s)) \, dy ds + h(t). \blacksquare
+\end{align*}$$
