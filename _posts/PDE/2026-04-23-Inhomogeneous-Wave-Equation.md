@@ -17,12 +17,14 @@ u(x, 0) = \phi(x), \quad u_t(x, 0) = \psi(x)
 for $-\infty < x < \infty, t >0$, where $f, \phi$ and $\psi$ are given functions, is given by
 
 $$
-u(x, t) = \frac{1}{2} [\phi(x-ct) + \phi(x+ct)] + \frac{1}{2c} \int_{x-ct}^{x+ct} \psi(s) \, ds + \frac{1}{2c} \iint_{\triangle} f,
+u(x, t) = \frac{1}{2} [\phi(x-ct) + \phi(x+ct)] + \frac{1}{2c} \int_{x-ct}^{x+ct} \psi(s) \, ds + \frac{1}{2c} \iint_{\Delta} f,
 $$ 
 
-where $\triangle$ is the charateristic triangle, that is,
+where $\Delta$ is the characteristic triangle, that is,
 
-$$\frac{1}{2c} \iint_{\triangle} f = \frac{1}{2c} \int_0^t \int_{x - c(t - s)}^{x + c(t - s)} f(y, s) \, dy ds$$
+$$
+\frac{1}{2c} \iint_{\Delta} f = \frac{1}{2c} \int_0^t \int_{x - c(t - s)}^{x + c(t - s)} f(y, s) \, dy ds
+$$
 
 ### Proof
 
