@@ -105,4 +105,4 @@ where $\psi _ {\text{odd}}$ is the odd expansion of $\psi$ for the whole-line. T
 $$\begin{align*}
 V(x, t) &= \int_{-\infty}^\infty S(x-y, t) \psi_\text{odd}(y) \, dy + \int_0^t \int_{-\infty}^\infty S(x-y, t-s) [f(y, s) - h'(s)] \, dy ds \\
 &= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] \psi(y) \, dy + \int_0^t \int_{-\infty}^\infty S(x-y, t-s) [f(y, s) - h'(s)] \, dy ds.
-\end{align*} 
+\end{align*}$$
