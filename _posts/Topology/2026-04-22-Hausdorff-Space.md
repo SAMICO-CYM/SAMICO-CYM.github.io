@@ -58,6 +58,7 @@ Let $X$ be a space satisfying the $T_1$ axiom, and let $A \subset X$. Then $x \i
 
 ### Proof
 $(\Longrightarrow)$
+
 Let $x \in A'$. Then for any neighborhood $U$ of $x$, we have $A \cap (U - \\{x\\}) \neq \emptyset$. Suppose that there is some neighborhood $U$ of $x$ such that $U \cap A$ is finite. Then $U \cap (A - \\{ x \\})$ is also finite, and we denote $U \cap (A - \\{ x \\}) = \\{ x_1, ..., x_n \\}$. 
 
 Since $X$ is a $T_1$ space, $\\{ x_1, ..., x_n \\}$ is closed in $X$, so that $X - \\{ x_1, ..., x_n \\}$ is open in $X$. Then $U \cap (X - \\{ x_1, ..., x_n \\}) = U - \\{ x_1, ..., x_n \\}$ is also open in $X$. Since $x \notin U \cap (A - \\{ x \\}) = \\{ x_1, ..., x_n \\}$, we have that $x \in U - \\{ x_1, ..., x_n \\}$, which means that $U - \\{ x_1, ..., x_n \\}$ is a neighborhood of $x$.
@@ -68,11 +69,12 @@ $$(U - \\{ x_1, ..., x_n \\}) \cap (A - \\{ x \\}) \neq \emptyset$$
 
 by assumption. But $U \cap (A - \\{ x \\}) = \\{ x_1, ..., x_n \\}$, so that
 
-$$(U - \\{ x_1, ..., x_n \\}) \cap (A - \\{ x \\}) = \\emptyset. \bigotimes$$
+$$(U - \\{ x_1, ..., x_n \\}) \cap (A - \\{ x \\}) = \emptyset. \bigotimes$$
 
 Thus, every neighborhood of $x$ contains infinitely many points of $A$. 
 
 $(\Longleftarrow)$
+
 Let $U$ be a neighborhood of $x$. Then $U$ contains infinitely many points of $A$. Then $A \cap (U - \\{ x \\})$ also contains infinitely many points of $A$, which means that it is not empty. Thus $x \in A'$. $\blacksquare$
 
 ---
