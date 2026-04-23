@@ -16,6 +16,7 @@ Let $(X, \mathcal{T})$ be a topological space. Let $x, y \in X$ with $x \neq y$.
 **(iii)** ***$T_2$-space*** or ***Hausdorff space*** if $\exists U, V \in \mathcal{T}$ such that $x \in U, y \in V$ and $U \cap V = \emptyset$.
 
 (Let $C, D$ be closed subsets of $X$ with $C \cap D = \emptyset, x \notin C$.)
+
 **(iv)** ***regular space*** if $\exists U, V \in \mathcal{T}$ such that $x \in U, C \subset V$ and $U \cap V = \emptyset$.
 
 **(v)** ***$T_3$-space*** or ***regular Hausdorff*** if $X$ is regular and $T_1$.
