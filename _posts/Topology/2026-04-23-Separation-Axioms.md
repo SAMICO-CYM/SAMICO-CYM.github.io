@@ -9,7 +9,7 @@ math: true
 ## Definition
 Let $(X, \mathcal{T})$ be a topological space. 
 
-Let $x, y \in X$ with $x \neq y$.
+- Let $x, y \in X$ with $x \neq y$.
 
 **(i)** $X$ is called a ***$T_0$-space*** if $\exists U \in \mathcal{T}$ such that $x \in U$ and $y \notin U$.
 
@@ -17,13 +17,13 @@ Let $x, y \in X$ with $x \neq y$.
 
 **(iii)** $X$ is called a ***$T_2$-space*** or ***Hausdorff space*** if $\exists U, V \in \mathcal{T}$ such that $x \in U, y \in V$ and $U \cap V = \emptyset$.
 
-Let $C$ be a closed set in $X$, and let $x \notin C$.
+- Let $C$ be a closed set in $X$, and let $x \notin C$.
 
 **(iv)** $X$ is called a ***regular space*** if $\exists U, V \in \mathcal{T}$ such that $x \in U, C \subset V$ and $U \cap V = \emptyset$.
 
 **(v)** $X$ is called a ***$T_3$-space*** or ***regular Hausdorff*** if $X$ is regular and $T_1$.
 
-Let $C, D$ be closed sets in $X$ with $C \cap D = \emptyset$.
+- Let $C, D$ be closed sets in $X$ with $C \cap D = \emptyset$.
 
 **(vi)** $X$ is called a ***normal space*** if $\exists U, V \in \mathcal{T}$ such that $C \subset U, D \subset V$ and $U \cap V = \emptyset$.
 
