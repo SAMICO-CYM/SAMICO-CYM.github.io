@@ -117,7 +117,8 @@ Thus, $U(x, t)$ is the unique solution of the half-line problem, and therefore w
 
 $$\begin{align*}
 u(x, t) &= U(x, t) + h(t) \\
-&= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] \psi(y) \, dy + \int_0^t \int_0^\infty [S(x-y, t-s) - S(x+y, t-s)] F(y, s) \, dy ds + h(t) \\
+&= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] \psi(y) \, dy \\
+&+ \int_0^t \int_0^\infty [S(x-y, t-s) - S(x+y, t-s)] F(y, s) \, dy ds + h(t) \\
 &= \int_{0}^\infty [S(x-y, t) - S(x+y, t)] (\phi(y) - h(0)) \, dy \\
 &+ \int_0^t \int_0^\infty [S(x-y, t-s) - S(x+y, t-s)] (f(y,s) - h'(s)) \, dy ds + h(t). \blacksquare
 \end{align*}$$
