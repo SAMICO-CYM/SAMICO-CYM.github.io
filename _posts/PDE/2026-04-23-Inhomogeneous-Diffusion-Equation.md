@@ -88,12 +88,12 @@ $$
 Let $u(x,t)$ be a solution of the given initial value problem. Let $U(x, t) := u(x, t) - h(t)$ for $0 < x < \infty$ and $t > 0$. Then $U(x, t)$ satisfies 
 
 $$\begin{cases}
-U_t - k U_{xx} = F(x, t) := f(x, t) - h'(t) \\
-U(x, 0) = \psi(x) := \phi(x) - h(0) \\
+U_t - k U_{xx} = F(x, t) \\
+U(x, 0) = \psi(x) \\
 U(0, t) = 0 
 \end{cases}$$
 
-for $0 < x < \infty, t > 0$. We consider the whole-line problem 
+for $0 < x < \infty, t > 0$, where $F(x, t) := f(x, t) - h'(t)$ and $\psi(x) := \phi(x) - h(0)$. We consider the whole-line problem 
 
 $$\begin{cases}
 V_t - k V_{xx} = F _ {\text{odd}}(x, t) \\
