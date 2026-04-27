@@ -52,3 +52,11 @@ $(\Longleftarrow)$
 Suppose that a graph $G$ has only one component, say $C$. Then clearly $G = C$. By (i), $G$ is connected. $\blacksquare$
 
 ---
+
+## Theorem 3
+If a graph $G$ is disconnected, then its complement $\overline{G}$ is connected. 
+
+### Proof
+Suppose that $\overline{G}$ is disconnected. By Theorem 2 (ii), $\overline{G}$ has more than one components. Let $C_1, ..., C_n$ be the all components of $\overline{G}$. Then $u \not \sim_{\overline{G}} v, \forall u \in C_i, v \in C_j, i \ne j$, which is equivalent to $u \sim_{G} v, \forall u \in C_i, v \in C_j, i \ne j$. 
+
+Let $x, y \in V(G)$. If $$
