@@ -57,10 +57,18 @@ Suppose that a graph $G$ has only one component, say $C$. Then clearly $G = C$. 
 If a graph $G$ is disconnected, then its complement $\overline{G}$ is connected. 
 
 ### Proof
-Suppose that $\overline{G}$ is disconnected. By Theorem 2 (ii), $\overline{G}$ has more than one components. Let $C_1, ..., C_n$ be the all components of $\overline{G}$. Then $u \not \sim_{\overline{G}} v, \forall u \in C_i, v \in C_j, i \ne j$, which is equivalent to $u \sim_{G} v, \forall u \in C_i, v \in C_j, i \ne j$. 
+We prove the contrapositive.
 
-Let $x, y \in V(G)$. If $x$ and $y$ are in the different components $C_i$ and $C_j$ of $\overline{G}$ with $i \ne j$, then $x \sim_G y$, which means that there is a $xy$-walk in $G$. 
+Suppose that $\overline{G}$ is disconnected. By Theorem 2 (ii), $\overline{G}$ has more than one component. Let $C_1, ..., C_n$ be the all components of $\overline{G}$. Then $u \not \sim_{\overline{G}} v, \forall u \in C_i, v \in C_j, i \ne j$, which is equivalent to $u \sim_{G} v, \forall u \in C_i, v \in C_j, i \ne j$. 
 
-Suppose that $x$ and $y$ are in the same component $C_i$ of $\overline{G}$. Take $z \in V(G)$ such that $z \in C_j$ with $j \ne i$. (We may assume that $\vert V(G) \vert \ge 3$) Then $x \sim_G z$ and $z \sim_G y$, which means that there are $xz$-walk and $zy$-walk in $G$. Then there are $xy$-walks in $G$. 
+Let $x, y \in V(G)$. If $x = y$, then clearly there is a $xy$-walk in $G$. Suppose that $x \neq y$.
 
-Thus, for any $x, y \in V(G)$, there are $xy$-walks in $G$, so $G$ is connected. $\bigotimes$ Hence, $\overline{G}$ is connected. $\blacksquare$
+Case 1: $x \in C_i$ and $y \in C_j$ with $i \ne j$.
+
+Then $x \sim_G y$, which means that there is a $xy$-walk in $G$. 
+
+Case 2: $x, y \in C_i$.
+
+Take $z \in C_j$ with $j \ne i$. Then $x \sim_G z$ and $z \sim_G y$, which means that there are $xz$-walk and $zy$-walk in $G$. Then there are $xy$-walks in $G$. 
+
+Thus, for any $x, y \in V(G)$, there are $xy$-walks in $G$, so $G$ is connected. $\blacksquare$
