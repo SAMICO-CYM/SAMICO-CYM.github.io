@@ -63,11 +63,11 @@ Suppose that $\overline{G}$ is disconnected. By Theorem 2 (ii), $\overline{G}$ h
 
 Let $x, y \in V(G)$. If $x = y$, then clearly there is a $xy$-walk in $G$. Suppose that $x \neq y$.
 
-Case 1: $x \in C_i$ and $y \in C_j$ with $i \ne j$.
+**Case 1**: $x \in C_i$ and $y \in C_j$ with $i \ne j$.
 
 Then $x \sim_G y$, which means that there is a $xy$-walk in $G$. 
 
-Case 2: $x, y \in C_i$.
+**Case 2**: $x, y \in C_i$.
 
 Take $z \in C_j$ with $j \ne i$. Then $x \sim_G z$ and $z \sim_G y$, which means that there are $xz$-walk and $zy$-walk in $G$. Then there are $xy$-walks in $G$. 
 
