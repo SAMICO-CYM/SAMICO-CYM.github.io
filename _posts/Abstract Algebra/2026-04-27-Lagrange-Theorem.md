@@ -35,22 +35,27 @@ $$\vert G \vert = \sum_{i=1}^n \vert H_i \vert = n \vert H \vert$$
 
 by the previous lemma. Thus $\vert H \vert$ divides $\vert G \vert$. $\blacksquare$
 
-$G$가 유한군이므로 coset은 반드시 유한 개만 존재한다. 
+군 $G$의 부분군 $H$가 주어질 때마다 그 $H$를 기준으로 동치 관계를 정의할 수 있고, 따라서 동치류들로 구성된 파티션을 만들 수 있다. 이때 각 동치류들을 coset이라고 부르기로 했으므로 위 증명에서 각 $H_i$들은 $G$를 구성하는 서로 disjoint한 coset들이다. 한편, $G$가 유한군이므로 coset들은 반드시 유한 개만 존재한다. 
+
+또한, 위 증명에서 각 coset들의 크기는 모두 $\vert H \vert$로 같은데, 이러한 coset들이 총 $n$개 존재한다. 다르게 말하면, 부분군 $H$의 크기는 군 $G$의 크기를 나누는데, 이때 몫은 $n$이고 이는 원소의 개수가 $\vert H \vert$인 부분군으로 만들 수 있는 coset의 개수이다. 
 
 ---
 
 ## Corollary
 Let $G$ be a finite group.
 
-(i) If $a \in G$, then $\vert \langle a \rangle \vert$ divides $\vert G \vert$.
+**(i)** If $a \in G$, then $\vert \langle a \rangle \vert$ divides $\vert G \vert$.
 
-(ii) If the order of $G$ is prime, then $G$ is cyclic.
+**(ii)** If the order of $G$ is prime, then $G$ is cyclic.
 
 ### Proof
-(i) Note that $\langle a \rangle \le G$. By Lagrange's theorem, $\vert \langle a \rangle \vert$ divides $\vert G \vert$. 
+**(i)** Note that $\langle a \rangle \le G$. By Lagrange's theorem, $\vert \langle a \rangle \vert$ divides $\vert G \vert$. 
 
-(ii) Suppose that $\vert G \vert$ is prime, and let $a \in G - \\{ e \\}$. By (i), $\vert \langle a \rangle \vert$ divides $\vert G \vert$. Since $a \neq e$, $\vert \langle a \rangle \vert > 1$. Thus, $\vert \langle a \rangle \vert = \vert G \vert$. Hence, $\langle a \rangle = G$, so $G$ is cyclic. $\blacksquare$
+**(ii)** Suppose that $\vert G \vert$ is prime, and let $a \in G - \\{ e \\}$. By (i), $\vert \langle a \rangle \vert$ divides $\vert G \vert$. Since $a \neq e$, $\vert \langle a \rangle \vert > 1$. Thus, $\vert \langle a \rangle \vert = \vert G \vert$. Hence, $\langle a \rangle = G$, so $G$ is cyclic. $\blacksquare$
 
 ---
 
 ## Example
+(i) $\vert G \vert = 5$인 군 $G$는 위 corollary (ii)에 의해 반드시 $G \cong \mathbb{Z}_5$여야만 한다. 
+
+(ii) 반면 $\vert G \vert = 6$인 군 $G$는 cyclic일 수도, 아닐 수도 있다. 예를 들어 $G = \mathbb{Z}_6$는 cyclic이지만 $G = S_3$는 cyclic이 아니다. 
