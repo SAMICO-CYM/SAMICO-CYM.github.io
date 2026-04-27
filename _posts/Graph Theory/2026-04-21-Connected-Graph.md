@@ -61,6 +61,6 @@ Suppose that $\overline{G}$ is disconnected. By Theorem 2 (ii), $\overline{G}$ h
 
 Let $x, y \in V(G)$. If $x$ and $y$ are in the different components $C_i$ and $C_j$ of $\overline{G}$ with $i \ne j$, then $x \sim_G y$, which means that there is a $xy$-walk in $G$. 
 
-Suppose that $x$ and $y$ are in the same component $C_i$ of $\overline{G}$. Take $z \in V(G)$ such that $z \in C_j$ with $j \ne i$. (We may assume that $|V(G)| \ge 3$) Then $x \sim_G z$ and $z \sim_G y$, which means that there are $xz$-walk and $zy$-walk in $G$. Then there are $xy$-walks in $G$. 
+Suppose that $x$ and $y$ are in the same component $C_i$ of $\overline{G}$. Take $z \in V(G)$ such that $z \in C_j$ with $j \ne i$. (We may assume that $\vert V(G) \vert \ge 3$) Then $x \sim_G z$ and $z \sim_G y$, which means that there are $xz$-walk and $zy$-walk in $G$. Then there are $xy$-walks in $G$. 
 
 Thus, for any $x, y \in V(G)$, there are $xy$-walks in $G$, so $G$ is connected. $\bigotimes$ Hence, $\overline{G}$ is connected. $\blacksquare$
