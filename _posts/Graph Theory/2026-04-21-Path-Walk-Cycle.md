@@ -50,6 +50,6 @@ $$\binom{n}{k} \frac{k!}{2k} = \binom{n}{k} \frac{(k-1)!}{2}. \blacksquare$$
 ---
 
 ## Corollary
-The number of $k$-cycles in $K_n$ is given by 
+The number of cycles in $K_n$ is given by 
 
-$$\sum_{i=3}^n \binom{n}{i} \frac{(i-1)!}{2}.$$
+$$\sum_{k=3}^n \binom{n}{k} \frac{(k-1)!}{2}.$$
