@@ -56,6 +56,6 @@ Let $G$ be a finite group.
 ---
 
 ## Example
-(i) $\vert G \vert = 5$인 군 $G$는 위 corollary (ii)에 의해 반드시 $G \cong \mathbb{Z}_5$여야만 한다. 
+**(i)** $\vert G \vert = 5$인 군 $G$는 위 corollary (ii)에 의해 반드시 $G \cong \mathbb{Z}_5$여야만 한다. 
 
-(ii) 반면 $\vert G \vert = 6$인 군 $G$는 cyclic일 수도, 아닐 수도 있다. 예를 들어 $G = \mathbb{Z}_6$는 cyclic이지만 $G = S_3$는 cyclic이 아니다. 
+**(ii)** 반면 $\vert G \vert = 6$인 군 $G$는 cyclic일 수도, 아닐 수도 있다. 예를 들어 $G = \mathbb{Z}_6$는 cyclic이지만 $G = S_3$는 cyclic이 아니다. 
