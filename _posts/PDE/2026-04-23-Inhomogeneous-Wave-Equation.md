@@ -122,9 +122,11 @@ u(x, 0) = \phi(x), \quad u_t(x, 0) = \psi(x)
 for $-\infty < x < \infty, t >0$, where $f, \phi$ and $\psi$ are given functions, is well-posed. 
 
 ### Proof
-(i) The existence of a solution follows from Theorem 1.
+**(i)** The existence of a solution follows from Theorem 1.
 
-(ii) Note that the uniform norm of functions $w(x)$ and $w(x, t)$ is defined as
+**(ii)** The problem is stable in the sense that if the data $(\phi, \psi, f)$ changes a little, then $u$ also changes only a little.
+
+$(\because)$ Note that the uniform norm of functions $w(x)$ and $w(x, t)$ is defined as
 
 $$
 \|w\| = \sup_{-\infty < x < \infty} \vert w(x) \vert,
@@ -134,4 +136,33 @@ $$
 \|w\|_{T} = \sup_{-\infty < x < \infty, 0 \le t \le T} \vert w(x, t) \vert.
 $$
 
-where $T$ is fixed. 
+where $T > 0$ is fixed. 
+
+Suppose that $u_1(x, t)$ and $u_2(x, t)$ are two solutions with the data $(\phi_1, \psi_1, f_1)$ and $(\phi_2, \psi_2, f_2)$, respectively. Let $u := u_1 - u_2$. Then $u$ is a solution with the data $(\phi, \psi, f) := (\phi_1 - \phi_2, \psi_1 - \psi_2, f_1 - f_2)$. 
+
+By Theorem 1, we have
+
+$$
+u(x, t) = \frac{1}{2} [\phi(x-ct) + \phi(x+ct)] + \frac{1}{2c} \int_{x-ct}^{x+ct} \psi(s) \, ds + \frac{1}{2c} \iint_{\Delta} f.
+$$
+
+Then we obtain 
+
+$$\begin{align*}
+\vert u(x, t) \vert &\le \sup \vert \phi \vert + \frac{1}{2c} \sup \vert \psi \vert \cdot (2ct) + \frac{1}{2c} \sup \vert f \vert \cdot (ct^2) \\
+&= \sup \vert \phi \vert + \sup \vert \psi \vert t + \sup \vert f \vert \frac{t^2}{2}.
+\end{align*}$$
+
+Thus, 
+
+$$\begin{align*}
+\| u_1 - u_2 \|_{T} &\le \| \phi_1 - \phi_2 \| + T \| \psi_1 - \psi_2 \| + \frac{T^2}{2} \| f_1 - f_2 \|.
+\end{align*}$$
+
+If $\| \phi_1 - \phi_2 \| < \delta, \| \psi_1 - \psi_2 \| < \delta$, and $\| f_1 - f_2 \| < \delta,$ then 
+
+$$
+\| u_1 - u_2 \|_{T} \le \left( 1 + T + \frac{T^2}{2} \right) \delta < \varepsilon,
+$$
+
+provided $\delta < \frac{\varepsilon}{1 + T + \frac{T^2}{2}}.$ $\blacksquare$
