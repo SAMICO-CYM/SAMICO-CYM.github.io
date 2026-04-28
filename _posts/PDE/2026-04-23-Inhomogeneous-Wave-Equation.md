@@ -108,3 +108,30 @@ $$\int_{\eta_0}^{\xi} \cdots d \eta$$
 그리고 $\xi$를 $\eta_0$에서부터 $\xi_0$까지 적분하면 주어진 삼각형 영역을 표현할 수 있는 것이다. 
 
 $$\int_{\eta_0}^{\xi_0} \int_{\eta_0}^{\xi} \cdots d \eta \, d \xi$$
+
+---
+
+## Theorem 2
+The initial value problem 
+
+$$ \begin{cases} 
+u_{tt} - c^2 u_{xx} = f(x, t) \\
+u(x, 0) = \phi(x), \quad u_t(x, 0) = \psi(x)
+\end{cases} $$
+
+for $-\infty < x < \infty, t >0$, where $f, \phi$ and $\psi$ are given functions, is well-posed. 
+
+### Proof
+(i) The existence of a solution follows from Theorem 1.
+
+(ii) Note that the uniform norm of functions $w(x)$ and $w(x, t)$ is defined as
+
+$$
+\|w\| = \sup_{-\infty < x < \infty} \vert w(x) \vert,
+$$
+
+$$
+\|w\|_{T} = \sup_{-\infty < x < \infty, 0 \le t \le T} \vert w(x, t) \vert.
+$$
+
+where $T$ is fixed. 
