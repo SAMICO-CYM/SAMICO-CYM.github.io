@@ -159,7 +159,7 @@ $$\begin{align*}
 \| u_1 - u_2 \|_{T} &\le \| \phi_1 - \phi_2 \| + T \| \psi_1 - \psi_2 \| + \frac{T^2}{2} \| f_1 - f_2 \|_{T}.
 \end{align*}$$
 
-If $\| \phi_1 - \phi_2 \| < \delta, \| \psi_1 - \psi_2 \| < \delta$, and $\| f_1 - f_2 \|_{T} < \delta,$ then 
+If $\Vert \phi_1 - \phi_2 \Vert < \delta, \Vert \psi_1 - \psi_2 \Vert < \delta$, and $\Vert f_1 - f_2 \Vert_{T} < \delta,$ then 
 
 $$
 \| u_1 - u_2 \|_{T} \le \left( 1 + T + \frac{T^2}{2} \right) \delta < \varepsilon,
