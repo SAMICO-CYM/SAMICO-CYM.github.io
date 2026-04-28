@@ -159,10 +159,14 @@ $$\begin{align*}
 \| u_1 - u_2 \|_{T} &\le \| \phi_1 - \phi_2 \| + T \| \psi_1 - \psi_2 \| + \frac{T^2}{2} \| f_1 - f_2 \|.
 \end{align*}$$
 
-If $\| \phi_1 - \phi_2 \| < \delta, \| \psi_1 - \psi_2 \| < \delta$, and $\| f_1 - f_2 \| < \delta,$ then 
+If $\| \phi_1 - \phi_2 \|_T < \delta, \| \psi_1 - \psi_2 \| < \delta$, and $\| f_1 - f_2 \| < \delta,$ then 
 
 $$
 \| u_1 - u_2 \|_{T} \le \left( 1 + T + \frac{T^2}{2} \right) \delta < \varepsilon,
 $$
 
-provided $\delta < \frac{\varepsilon}{1 + T + \frac{T^2}{2}}.$ $\blacksquare$
+provided $\delta < \frac{\varepsilon}{1 + T + \frac{T^2}{2}}.$ Hence, the data changes a little $\delta$, then $u$ also changes only a little $\varepsilon$. 
+
+**(iii)** By above process, take $\phi_1 = \phi_2$, $\psi_1 = \psi_2$ and $f_1 = f_2$. Then we have $\| u_1 - u_2 \|_T = 0$, which means that $u_1 = u_2$ for all $-\infty < x < \infty$ and $0 \le t \le T$. Thus, the solution is unique.
+
+By **(i)**, **(ii)**, **(iii)**, the given problem is well-posed. $\blacksquare$
