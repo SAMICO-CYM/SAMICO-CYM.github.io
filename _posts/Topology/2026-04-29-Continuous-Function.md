@@ -14,7 +14,7 @@ Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces. A funct
 ## Remark
 **(i)** Let $\mathcal{B}$ be a basis generating $\mathcal{T}_Y$. If $f^{-1}(B) \in \mathcal{T}_X, \forall B \in \mathcal{B}$, then $f$ is continuous.  
 
-$\big[ (\because)$ Let $V \in \mathcal{T}_Y$. Then $V = \bigcup_{B \in \mathcal{A}} B$ for some $\mathcal{A} \subset \mathcal{B}$. Then
+$\big[ (\because)$ Let $V \in \mathcal{T}_Y$. Then $V = \bigcup _ {B \in \mathcal{A}} B$ for some $\mathcal{A} \subset \mathcal{B}$. Then
 
 $$\begin{align*}
 f^{-1}(V) &= f^{-1} \left( \bigcup_{B \in \mathcal{A}} B \right) \\
