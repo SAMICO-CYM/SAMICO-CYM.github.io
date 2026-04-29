@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Complex Analysis/2026-04-29-Contour-Integrals.md",
+                "file": "_posts/Abstract Algebra/2026-04-27-Lagrange-Theorem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-29-Contour-Integrals"
+              "title": "2026-04-27-Lagrange-Theorem"
             }
           }
         ]
@@ -182,8 +182,8 @@
   },
   "active": "7a4503827723e1d6",
   "lastOpenFiles": [
-    "_posts/Complex Analysis/2026-04-28-Contours.md",
     "_posts/Complex Analysis/2026-04-29-Contour-Integrals.md",
+    "_posts/Complex Analysis/2026-04-28-Contours.md",
     "_site/posts/Contour-Integrals/index.html",
     "_site/posts/Contour-Integrals",
     "_site/posts/Contours/index.html",

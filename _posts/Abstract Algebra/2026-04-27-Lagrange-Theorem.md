@@ -59,3 +59,10 @@ Let $G$ be a finite group.
 **(i)** $\vert G \vert = 5$인 군 $G$는 위 corollary (ii)에 의해 반드시 $G \cong \mathbb{Z}_5$여야만 한다. 
 
 **(ii)** 반면 $\vert G \vert = 6$인 군 $G$는 cyclic일 수도, 아닐 수도 있다. 예를 들어 $G = \mathbb{Z}_6$는 cyclic이지만 $G = S_3$는 cyclic이 아니다. 
+
+---
+
+## Remark
+1. The converse of Lagrange's theorem does NOT hold!!
+$(\because)$ Note that $\vert A_4 \vert = 12$ but there is no subgroup of order $6$. 
+2. ***(The fisrt Sylow Theorem)*** Let $G$ be a finite group and let $p$ be a prime. If $p^n$ divides $\vert G \vert$ for some $n \in \mathbb{N}$, then there exists a subgroup $H$ of $G$ with $\vert H \vert = p^i$ for all $i = 1, ..., n$. 
