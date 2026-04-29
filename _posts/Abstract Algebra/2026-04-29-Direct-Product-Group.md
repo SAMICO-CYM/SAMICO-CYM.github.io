@@ -24,6 +24,6 @@ Let $G := \displaystyle \prod_{i=1}^n G_i$.
 
 **(ii)** $G$ is finite $\iff$ each $G_i$ is finite. 
 
-**(iii)** $G$ is cyclic $\centernot \iff$ each $G_i$ is cyclic.
+**(iii)** $G$ is cyclic $\not\iff$ each $G_i$ is cyclic.
 
 $\big[$$(\because)$ Note that $\mathbb{Z}_2 \times \mathbb{Z}_2 \cong V$ and $\mathbb{Z}_2 \times \mathbb{Z}_3 \cong \mathbb{Z}_6$. $\big]$
