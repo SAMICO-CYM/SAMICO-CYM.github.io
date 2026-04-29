@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Abstract Algebra/2026-04-29-Direct-Product-Group.md",
+                "file": "_posts/Topology/2026-04-29-Continuous-Function.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-29-Direct-Product-Group"
+              "title": "2026-04-29-Continuous-Function"
             }
           }
         ]
@@ -182,10 +182,11 @@
   },
   "active": "7a4503827723e1d6",
   "lastOpenFiles": [
+    "_posts/Abstract Algebra/2026-04-29-Direct-Product-Group.md",
+    "_posts/Topology/2026-04-29-Continuous-Function.md",
     "_site/posts/Direct-Product-Group/index.html",
     "_site/posts/Direct-Product-Group",
     "_posts/Abstract Algebra/2026-04-27-Coset.md",
-    "_posts/Abstract Algebra/2026-04-29-Direct-Product-Group.md",
     "_posts/Abstract Algebra/2026-04-27-Lagrange-Theorem.md",
     "_posts/Complex Analysis/2026-04-29-Contour-Integrals.md",
     "_posts/Complex Analysis/2026-04-28-Contours.md",
@@ -197,7 +198,6 @@
     "_site/posts/Adjacency-Matrix",
     "_site/posts/Lagrange-Theorem/index.html",
     "_site/posts/Lagrange-Theorem",
-    "_site/posts/Coset/index.html",
     "_site/assets/img/coor2.png",
     "_site/assets/img/coor1.png",
     "_posts/Abstract Algebra/2026-04-13-Orbits-Cycles-Transposition.md",
