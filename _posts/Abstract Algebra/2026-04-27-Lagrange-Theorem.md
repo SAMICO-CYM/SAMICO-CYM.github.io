@@ -64,5 +64,6 @@ Let $G$ be a finite group.
 
 ## Remark
 1. The converse of Lagrange's theorem does NOT hold!!
+
 $(\because)$ Note that $\vert A_4 \vert = 12$ but there is no subgroup of order $6$. 
 2. ***(The fisrt Sylow Theorem)*** Let $G$ be a finite group and let $p$ be a prime. If $p^n$ divides $\vert G \vert$ for some $n \in \mathbb{N}$, then there exists a subgroup $H$ of $G$ with $\vert H \vert = p^i$ for all $i = 1, ..., n$. 
