@@ -1,5 +1,5 @@
 --- 
-title: Continuous Function
+title: Continuous Functions
 date: 2026-04-29
 categories: [Mathematics, Topology]
 tags: []
