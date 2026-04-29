@@ -6,8 +6,8 @@ tags: []
 math: true
 ---
 
-## Definition 1
-Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces. A function $f: X \to Y$ is said to be continuous if $f^{-1}(V) \in \mathcal{T}_X, \forall V \in \mathcal{T}_Y$. 
+## Definition
+Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces. A function $f: X \to Y$ is said to be ***continuous*** if $f^{-1}(V) \in \mathcal{T}_X, \forall V \in \mathcal{T}_Y$. 
 
 ---
 
