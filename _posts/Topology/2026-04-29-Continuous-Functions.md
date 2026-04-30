@@ -9,6 +9,12 @@ math: true
 ## Definition
 Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces. A function $f: X \to Y$ is said to be ***continuous*** if $f^{-1}(V) \in \mathcal{T}_X, \forall V \in \mathcal{T}_Y$. 
 
+정의만 보면 왜 이 모양인가 싶겠지만, 사실 해석학에서 다루던 $\varepsilon - \delta$ 논법을 위상수학의 언어로 바꾼 것과 다름 없다. 
+
+$$f: \mathbb{R} \to \mathbb{R} \text{ is continuous at } a \iff \forall \varepsilon > 0, \exists \delta > 0 \text{ such that } \vert x - a \vert < \delta \implies \vert f(x) - f(a) \vert < \varepsilon $$
+
+
+
 ---
 
 ## Remark
@@ -45,7 +51,7 @@ Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let
 
 **(iii)** $f^{-1}(B)$ is closed in $X$ for all closed set $B$ of $Y$.
 
-**(iv)** For each $x \in X$ and a neighborhood $V$ of $f(x)$, there exists a neighborhood $U$ of $x$ such that $f(U) \subset V$. 
+**(iv)** For each $x \in X$ and a neighborhood $V$ of $f(x)$, there exists a neighborhood $U$ of $x$ such that $f(U) \subset V$. In this case, we say that $f$ is ***continuous at*** $x \in X$.
 
 ### Proof
 **(i)** $\Longrightarrow$ **(ii)**
