@@ -58,11 +58,11 @@ Thus $(a, b)$ is open in $\mathbb{R} _ {\ell}$. By Remark (i), $f$ is continuous
 
 **(ii)** Let $f_2 : \mathbb{R} _ {\text{usual}} \to \mathbb{R} _ {\ell}$ defined by $f_2(x) = x$. Then $f$ is NOT continuous.
 
-$\big[(\because)$ Note that $f^{-1}([0, 1)) = [0, 1).$ If $f$ is continuous, then $[0, 1)$ is open in $\mathbb{R} _ {\text{usual}}$. But there is no basis element $B$ of $\mathbb{R} _ {\text{usual}}$ such that $0 \in B$ and $B \subset [0, 1)$. Hence $f$ is not continuous. $\blacksquare$ $\big]$
+$\big[(\because)$ Note that $f^{-1}([0, 1)) = [0, 1).$ If $f$ is continuous, then $[0, 1)$ is open in $\mathbb{R} _ {\text{usual}}$. But there is no basis element $B$ of $\mathbb{R} _ {\text{usual}}$ such that $0 \in B$ and $B \subset [0, 1)$. Hence $f$ is not continuous. $\big]$
 
 ---
 
-## Theorem
+## Theorem 1
 Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $f:X \to Y$ be a function. TFAE.
 
 **(i)** $f$ is continuous.
@@ -107,3 +107,26 @@ Suppose that $f$ is continuous. Let $x \in X$ and let $V$ be a neighborhood of $
 **(iv)** $\Longrightarrow$ **(i)**
 
 Suppose that for each $x \in X$ and a neighborhood $V$ of $f(x)$, there exists a neighborhood $U$ of $x$ such that $f(U) \subset V$. Let $V \in \mathcal{T}_Y$. Let $x \in f^{-1}(V)$. Then $f(x) \in V$. Then there exists a neighborhood $U$ of $x$ such that $f(U) \subset V$, which implies that $U \subset f^{-1}(V)$. Thus, $f^{-1}(V) \in \mathcal{T}_X$, so that $f$ is continuous. $\blacksquare$
+
+---
+
+## Theorem 2
+Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $f: X \to Y$ be a injective continuous function. Let $A \subset X$. Then $f(A') \subset f(A)'$. 
+
+### Proof
+
+
+위상 공간에서 연속 함수란 일종의 '가까이 있음'을 보존하는 함수라고 생각해도 좋다. Theorem 1의 (iv)를 생각해본다면, 점 $x$에서 함수 $f$가 연속이라는 말은, $f(x)$의 어떤 근방 $V$를 잡아도(거리 공간의 센스로 생각한다면, 얼마나 가깝게 잡거나 멀게 잡든지 상관없이) 점 $x$의 적당한 근방 $U$가 존재해서 $f$에 의해 보내진 $U$의 image, 즉 $f(U)$가 여전히 적당히 $V$의 근처에 머물고 있다는 뜻이다. 뒤집어서 말하면, $x$의 근방을 굉장히 이상하게 잡고 $f$에 의해 보냈을 때 갑자기 $V$와 멀리 떨어져버리는 상황이 생기지 않는다는 뜻이다. 
+
+![alt text](assets/img/continuous.png)
+
+예컨대 위 그림과 같이 불연속함수를 가져오면, $f(1)$ 주변에서 어떤 근방을 잡아도 여전히 $f$가 근방성을 보존하도록 하는 그러한 $1$의 근방은 존재하지 않는다. 갑자기 점프해버리는 상황을 머릿속으로 생각해보자. 
+
+이러한 컨셉은 거리공간에서 생각해보면 더욱 명확하다.
+
+$$\forall \varepsilon > 0, \exists \delta > 0 \text{ such that } d(x, a) < \delta \implies d(f(x), f(a)) < \varepsilon.$$
+
+반면, limit point는 필연적으로 '서로 다른 점들'이라는 컨셉으로 이해해야 한다. 
+
+> Theorem
+> Let $X$ be a $T_1$-space, and let $A \subset X$. Then $x \in A'$ $\iff$ every neighborhood of $x$ contains infinitely many points of $A$.
