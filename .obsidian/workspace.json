@@ -182,6 +182,8 @@
   },
   "active": "7a4503827723e1d6",
   "lastOpenFiles": [
+    "_site/assets/img/continuous.png",
+    "assets/img/continuous.png",
     "_posts/Topology/2026-04-29-Homeomorphism.md",
     "_posts/Topology/2026-04-29-Continuous-Functions.md",
     "_site/posts/Homeomorphism/index.html",
@@ -225,7 +227,6 @@
     "_site/assets/img/permutation2.png",
     "_site/assets/img/permutation1.png",
     "_site/assets/img/npath.png",
-    "_site/assets/img/ncycle.png",
-    "_site/assets/img/diagram.png"
+    "_site/assets/img/ncycle.png"
   ]
 }
