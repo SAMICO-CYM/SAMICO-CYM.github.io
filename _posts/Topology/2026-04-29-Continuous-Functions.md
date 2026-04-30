@@ -128,7 +128,5 @@ $$\forall \varepsilon > 0, \exists \delta > 0 \text{ such that } d(x, a) < \delt
 
 반면, limit point는 필연적으로 '서로 다른 점들'이라는 컨셉으로 이해해야 한다. 
 
-> $\text{limit point는 근방에서 무수히 많은 점을 포함}$
->
 > Let $X$ be a $T_1$-space, and let $A \subset X$. Then $x \in A'$ $\iff$ every neighborhood of $x$ contains infinitely many points of $A$.
 {: .prompt-info }
