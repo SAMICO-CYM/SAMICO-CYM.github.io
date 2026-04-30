@@ -18,7 +18,7 @@ f: \mathbb{R} \to \mathbb{R} \text{ is continuous at } a &\iff \forall \varepsil
 & \iff \forall \varepsilon > 0, \exists \delta > 0 \text{ such that } (a - \delta, a + \delta) \subset f^{-1}((f(a) - \varepsilon, f(a) + \varepsilon))
 \end{align*}$$
 
-즉 양수 $\varepsilon$을 하나 가지고 온다는 것은 $f(a)$의 네이버후드 $V$를 가지고 오는 것이고, 그에 대응되는 양수 $\delta$가 존재한다는 것은 $f^{-1}(V)$에 속하는 $a$의 네이버후드가 존재한다는 말이다. 그런데 이건 정확히 $f^{-1}(V)$가 open이 되는 조건이므로, 위에서 새롭게 정의한 연속과 $\varepsilon- \delta$논법의 정의가 사실상 같음을 알 수 있다. 
+즉 양수 $\varepsilon$을 하나 가지고 온다는 것은 $f(a)$의 네이버후드 $V$를 가지고 오는 것이고, 그에 대응되는 양수 $\delta$가 존재한다는 것은 $f^{-1}(V)$에 속하는 $a$의 네이버후드가 존재한다는 말이다. 그런데 이건 사실상 $f^{-1}(V)$가 open이 되는 조건이므로, 위에서 새롭게 정의한 연속과 $\varepsilon- \delta$ 논법의 정의가 사실상 같음을 알 수 있다. 
 
 ---
 
@@ -44,6 +44,21 @@ f^{-1}(B) &= f^{-1} \left( \bigcap_{i=1}^n S_i \right) \\
 \end{align*}$$
 
 because each $f^{-1}(S_i) \in \mathcal{T}_X$. By (i), $f$ is continuous. $\blacksquare$ $\big]$
+
+---
+
+## Example
+**(i)** Let $f_1 : \mathbb{R} _ {\ell} \to \mathbb{R} _ {\text{usual}}$ defined by $f_1(x) = x$. Then $f$ is continuous.
+
+$\big[(\because)$ Let $(a, b)$ be a basis element of $\mathbb{R} _ {\text{usual}}$. Then we have $f^{-1}((a, b)) = (a, b)$. Note that 
+
+$$(a, b) = \bigcup_{n=1}^{\infty} \left[ a + \frac{1}{n}, b \right).$$
+
+Thus $(a, b)$ is open in $\mathbb{R} _ {\ell}$. By Remark (i), $f$ is continuous. $\big]$
+
+**(ii)** Let $f_2 : \mathbb{R} _ {\text{usual}} \to \mathbb{R} _ {\ell}$ defined by $f_2(x) = x$. Then $f$ is NOT continuous.
+
+$\big[(\because)$ Note that $f^{-1}([0, 1)) = [0, 1).$ If $f$ is continuous, then $[0, 1)$ is open in $\mathbb{R} _ {\text{usual}}$. But there is no basis element $B$ of $\mathbb{R} _ {\text{usual}}$ such that $0 \in B$ and $B \subset [0, 1)$. Hence $f$ is not continuous. $\blacksquare$ $\big]$
 
 ---
 
