@@ -135,11 +135,6 @@ $$\forall \varepsilon > 0, \exists \delta > 0 \text{ such that } d(x, a) < \delt
 
 이는 limit point가 연속함수에 의해서 보존되기 위해서는 추가적으로 조건이 더 필요하고, '서로 다름'이라는 조건을 가지고 있는 함수는 다름아닌 단사함수이고, 이를 표현한 정리가 Theorem 2이다.
 
----
-
-## Theorem 3
-Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $f: X \to Y$ be a continuous function. If $\mathcal{B}$ is a basis for $\mathcal{T}_X$, then 
-
 
 
 <style>

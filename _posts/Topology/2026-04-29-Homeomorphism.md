@@ -16,6 +16,11 @@ Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces.
 **(iii)** Let $f: X \to Y$ be an injective continuous function. If $X \cong f(X)$, where $f(X)$ is a subspace of $Y$, then $f$ is called an ***embedding*** of $X$ in $Y$. 
 
 ---
-
 ## Remark
 **(i)** $f: X \to Y$ is a homeomorphism $\iff$ $[f(U) \in \mathcal{T}_Y \iff U \in \mathcal{T}_X]$. 
+
+---
+## Theorem 1
+Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $f: X \to Y$ be a continuous function. If $\mathcal{B}$ is a basis for $\mathcal{T}_X$, then $f(\mathcal{B})$ is a basis for $\mathcal{T}_Y$. 
+
+### Proof
