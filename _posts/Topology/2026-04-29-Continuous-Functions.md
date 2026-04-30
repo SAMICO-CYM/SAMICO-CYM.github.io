@@ -11,9 +11,14 @@ Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces. A funct
 
 정의만 보면 왜 이 모양인가 싶겠지만, 사실 해석학에서 다루던 $\varepsilon - \delta$ 논법을 위상수학의 언어로 바꾼 것과 다름 없다. 
 
-$$f: \mathbb{R} \to \mathbb{R} \text{ is continuous at } a \iff \forall \varepsilon > 0, \exists \delta > 0 \text{ such that } \vert x - a \vert < \delta \implies \vert f(x) - f(a) \vert < \varepsilon $$
+$$\begin{align*}
+f: \mathbb{R} \to \mathbb{R} \text{ is continuous at } a &\iff \forall \varepsilon > 0, \exists \delta > 0 \text{ such that } \vert x - a \vert < \delta \implies \vert f(x) - f(a) \vert < \varepsilon \\
+& \iff \forall \varepsilon > 0, \exists \delta > 0 \text{ such that } x \in (a - \delta, a + \delta) \implies f(x) \in (f(a) - \varepsilon, f(a) + \varepsilon) \\
+& \iff \forall \varepsilon > 0, \exists \delta > 0 \text{ such that } x \in (a - \delta, a + \delta) \implies x \in f^{-1}((f(a) - \varepsilon, f(a) + \varepsilon)) \\
+& \iff \forall \varepsilon > 0, \exists \delta > 0 \text{ such that } (a - \delta, a + \delta) \subset f^{-1}((f(a) - \varepsilon, f(a) + \varepsilon))
+\end{align*}$$
 
-
+즉 양수 $\varepsilon$을 하나 가지고 온다는 것은 $f(a)$의 네이버후드 $V$를 가지고 오는 것이고, 그에 대응되는 양수 $\delta$가 존재한다는 것은 $f^{-1}(V)$에 속하는 $a$의 네이버후드가 존재한다는 말이다. 그런데 이건 정확히 $f^{-1}(V)$가 open이 되는 조건이므로, 위에서 새롭게 정의한 연속과 $\varepsilon- \delta$논법의 정의가 사실상 같음을 알 수 있다. 
 
 ---
 
