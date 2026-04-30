@@ -129,4 +129,16 @@ $$\forall \varepsilon > 0, \exists \delta > 0 \text{ such that } d(x, a) < \delt
 반면, limit point는 필연적으로 '서로 다른 점들'이라는 컨셉으로 이해해야 한다. 
 
 > Let $X$ be a $T_1$-space, and let $A \subset X$. Then $x \in A'$ $\iff$ every neighborhood of $x$ contains infinitely many points of $A$.
-{: .prompt-info }
+{: .prompt-info .no-icon }
+
+이는 limit point가 연속함수에 의해서 보존되기 위해서는 추가적으로 조건이 더 필요하고, '서로 다름'이라는 조건을 가지고 있는 함수는 다름아닌 단사함수이고, 이를 표현한 정리가 Theorem 2이다.
+
+<style>
+/* 아이콘 숨기기 및 아이콘이 있던 왼쪽 빈 여백 줄이기 */
+.no-icon {
+  padding-left: 1rem !important; 
+}
+.no-icon::before {
+  display: none !important; 
+}
+</style>
