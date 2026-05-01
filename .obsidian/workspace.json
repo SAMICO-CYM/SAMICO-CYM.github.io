@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Topology/2026-04-29-Homeomorphism.md",
+                "file": "_posts/Complex Analysis/2026-05-01-ML-Lemma.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-29-Homeomorphism"
+              "title": "2026-05-01-ML-Lemma"
             }
           }
         ]
@@ -182,8 +182,13 @@
   },
   "active": "7a4503827723e1d6",
   "lastOpenFiles": [
-    "_posts/Topology/2026-04-29-Continuous-Functions.md",
+    "_site/posts/ML-Lemma/index.html",
+    "_site/posts/ML-Lemma",
+    "_posts/Complex Analysis/2026-04-29-Contour-Integrals.md",
+    "_posts/Complex Analysis/2026-05-01-ML-Lemma.md",
+    "_posts/Complex Analysis/2026-04-03-Limit-Complex-Functions.md",
     "_posts/Topology/2026-04-29-Homeomorphism.md",
+    "_posts/Topology/2026-04-29-Continuous-Functions.md",
     "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
     "_posts/Topology/2026-04-30-Open-map.md",
     "_posts/Topology/2026-03-26-Special-Topologies.md",
@@ -202,10 +207,8 @@
     "_site/posts/Direct-Product-Group",
     "_posts/Abstract Algebra/2026-04-27-Coset.md",
     "_posts/Abstract Algebra/2026-04-27-Lagrange-Theorem.md",
-    "_posts/Complex Analysis/2026-04-29-Contour-Integrals.md",
     "_posts/Complex Analysis/2026-04-28-Contours.md",
     "_site/posts/Contour-Integrals/index.html",
-    "_site/posts/Contour-Integrals",
     "_site/assets/img/coor2.png",
     "_site/assets/img/coor1.png",
     "_posts/Abstract Algebra/2026-04-13-Orbits-Cycles-Transposition.md",
@@ -221,9 +224,6 @@
     "_posts/PDE/2026-04-16-Diffusion-Half-Line.md",
     "_posts/Graph Theory/2026-04-27-Adjacency-Matrix.md",
     "_posts/Graph Theory/2026-04-21-Subgraph.md",
-    "_posts/Graph Theory/2026-04-21-Path-Walk-Cycle.md",
-    "_posts/Graph Theory/2026-04-21-Connected-Graph.md",
-    "_posts/Abstract Algebra/2026-04-06-Permutation.md",
     "_site/assets/img/triangle.png",
     "_site/assets/img/permutation2.png",
     "_site/assets/img/permutation1.png",

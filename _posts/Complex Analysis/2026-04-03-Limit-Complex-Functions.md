@@ -67,10 +67,12 @@ Thus, $\lim_{(x, y) \to (x_0, y_0)} u(x, y) = u_0$. Similarly, we can show that 
 ## Theorem 2
 Suppose that $\displaystyle \lim_{z \to z_0} f(z) = w_0$ and $\displaystyle \lim_{z \to z_0} g(z) = w_1$. Then the followings hold:
 
-**(i)** $\displaystyle \lim_{z \to z_0} [f(z) + g(z)] = w_0 + w_1$
+**(i)** $\displaystyle \lim_{z \to z_0} [f(z) + cg(z)] = w_0 + cw_1$
 
 **(ii)** $\displaystyle \lim_{z \to z_0} [f(z) - g(z)] = w_0 - w_1$
 
 **(iii)** $\displaystyle \lim_{z \to z_0} [f(z) g(z)] = w_0 w_1$
 
 **(iv)** $\displaystyle \lim_{z \to z_0} \frac{f(z)}{g(z)} = \frac{w_0}{w_1}, \quad \text{provided } w_1 \ne 0.$
+
+**(v)** $\displaystyle \lim_{z \to z_0} \overline{f(z)} = \overline{f(z_0)}$
