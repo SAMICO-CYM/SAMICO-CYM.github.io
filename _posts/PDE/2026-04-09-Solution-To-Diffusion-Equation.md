@@ -158,3 +158,107 @@ Note that
 **(ii)** $\displaystyle \lim_{x \to \infty} \text{erf}(x) = 1$
 
 **(iii)** $\displaystyle Q(x, t) = \frac{1}{2} \text{erf}\left( \frac{x}{\sqrt{4kt}} \right) + \frac{1}{2}$.
+
+---
+## Theorem 2
+Let $\phi(x)$ be a bounded continuous function on $-\infty < x < \infty$. Then the function 
+
+$$\begin{align*}
+u(x, t) &= \frac{1}{\sqrt{4 \pi k t}} \int_{-\infty}^{\infty} e^{- \frac{(x-y)^2}{4kt}} \phi(y) \, dy \\
+&= \frac{1}{\sqrt{4 \pi}} \int_{-\infty}^{\infty} e^{- \frac{p^2}{4}} \phi(x-p\sqrt{kt}) \, dp
+\end{align*}$$
+
+defines an infinitely differentiable function $u(x, t)$ for $- \infty < x < \infty, t > 0$, which satisfies the diffusion equation and $\lim_{t \searrow 0} u(x, t) = \phi(x)$ for each $x$.
+
+### Proof
+Note that 
+
+$$\begin{align*}
+u(x, t) &= \int_{-\infty}^\infty S(x-y, t) \phi(y) \, dy \\
+&= \int_{-\infty}^\infty \phi(x-y) S(y, t) \, dy
+\end{align*}$$
+
+by the properties of convolution. By substituting $\displaystyle p = \frac{y}{\sqrt{kt}}$, we get 
+
+$$\begin{align*}
+u(x, t) &= \int_{-\infty}^\infty \phi(x-y) S(y, t) \, dy \\
+&= \frac{1}{\sqrt{4\pi}} \int_{-\infty}^\infty e^{-\frac{p^2}{4}} \phi(x- p \sqrt{kt}) \, dp \quad \cdots \, \, (\ast)
+\end{align*}$$
+
+First, we see that the improper integral converges since 
+
+$$\begin{align*}
+\vert u(x, t) \vert & \le \frac{1}{\sqrt{4\pi}} \int_{-\infty}^\infty \left \vert e^{-\frac{p^2}{4}} \phi(x- p \sqrt{kt}) \right \vert \, dp \\
+& \le \frac{1}{\sqrt{4\pi}} \sup \vert \phi \vert \int_{-\infty}^\infty e^{-\frac{p^2}{4}} \, dp \\
+&= \sup \vert \phi \vert < \infty.
+\end{align*}$$
+
+Thus, the integral converges uniformly and absolutely. 
+
+Let's show that $\displaystyle \frac{\partial u}{\partial x}$ exists. Note that 
+
+$$\frac{\partial u}{\partial x}(x, t) = \int_{-\infty}^\infty \frac{\partial S}{\partial x}(x-y, t) \phi(y) \, dy$$
+
+provided that this integral also converges absolutely. 
+
+$\big[(\because)$ We see that 
+
+$$\begin{align*}
+\left \vert \frac{\partial u}{\partial x}(x, t) \right \vert &\le \int_{-\infty}^\infty \left \vert \frac{\partial S}{\partial x}(x-y, t) \phi(y) \right \vert \, dy \\
+& = \frac{1}{\sqrt{4 \pi kt}} \int_{-\infty}^\infty \left \vert - \frac{x-y}{2kt} e^{- \frac{(x-y)^2}{4kt}} \phi(y) \right \vert \, dy \\
+&= \frac{1}{2\sqrt{4 \pi kt}} \int_{-\infty}^\infty \left \vert p e^{- \frac{p^2}{4}} \phi(x - p \sqrt{kt}) \right \vert \, dp \quad (\text{substituting } x-y = p\sqrt{kt}) \\
+&\le \frac{1}{2\sqrt{4 \pi kt}} \sup \vert \phi \vert \int_{-\infty}^\infty \vert p \vert e^{- \frac{p^2}{4}} \, dp \\
+& < \infty.
+\end{align*}$$
+
+Thus, the integral converges uniformly and absolutely, so that $\displaystyle \frac{\partial u}{\partial x}$ exists and is given by the formula $(\ast)$. $\big]$
+
+We can easily verify that all derivatives of all orders $u_t, u_{xx}, u_{xt}, u_{tt}, ...$ work the same way. Therefore, $u(x, t)$ is differentiable to all orders. 
+
+Also, $u(x, t)$ satiesfies the diffustion equation, by Lemma (iv), since $S(x, t)$ satisfies it. 
+
+Now, lets's prove the initial condition. Since $\displaystyle \int_{-\infty}^\infty S(x-y, t) \, dy = 1$, we have
+
+$$\begin{align*}
+u(x, t) - \phi(x) &= \int_{-\infty}^\infty S(x-y, t) \phi(y) \, dy - \int_{-\infty}^\infty S(x-y, t) \phi(x) \, dy \\
+&= \int_{-\infty}^\infty S(x-y, t) \left[ \phi(y) - \phi(x) \right] \, dy \\
+&= \frac{1}{\sqrt{4\pi}} \int_{-\infty}^\infty e^{-\frac{p^2}{4}} \left[ \phi(x-p\sqrt{kt}) - \phi(x) \right] \, dp.
+\end{align*}$$
+
+Let $\varepsilon > 0$. Then there exists $\delta > 0$ such that if $\vert y - x \vert < \delta$, then $\vert \phi(y) - \phi(x) \vert < \frac{\varepsilon}{2}$ since $\phi$ is continuous. Then we have 
+
+$$\sup_{\vert y - x \vert < \delta} \vert \phi(y) - \phi(x) \vert \le \frac{\varepsilon}{2}.$$
+
+We break up the integral into the part where $\displaystyle \vert p \vert < \frac{\delta}{\sqrt{kt}}$ and the part where $\displaystyle \vert p \vert \ge \frac{\delta}{\sqrt{kt}}$. The first part is 
+
+$$\begin{align*}
+\left \vert \int_{\vert p \vert < \frac{\delta}{\sqrt{kt}}} \right \vert & \le \left( \frac{1}{\sqrt{4\pi}} \int_{\vert p \vert < \frac{\delta}{\sqrt{kt}}} e^{-\frac{p^2}{4}} \, dp \right) \cdot \sup_{\vert y - x \vert < \delta} \vert \phi(y) - \phi(x) \vert \\
+&< \frac{\varepsilon}{2}.
+\end{align*}$$
+
+The second part is 
+
+$$\begin{align*}
+\left \vert \int_{\vert p \vert \ge \frac{\delta}{\sqrt{kt}}} \right \vert & \le \left( \frac{1}{\sqrt{4\pi}} \int_{\vert p \vert \ge \frac{\delta}{\sqrt{kt}}} e^{-\frac{p^2}{4}} \, dp \right) \cdot 2\sup \vert \phi\vert \\
+& < \frac{\varepsilon}{2}.
+\end{align*}$$
+
+Therefore, 
+
+$$\vert u(x, t) - \phi(x) \vert < \varepsilon$$
+
+provided that $t$ is small enough. Thus, 
+
+$$\lim_{t \searrow 0} u(x, t) = \phi(x). \quad \blacksquare$$
+
+---
+## Corollary
+The solution has all derivatives of all orders for $t > 0$, even if $\phi$ is not differentiable. Thus, all solutions become smooth as soon as diffusion takes effect. There are no singularity, contrast to the wave equation.
+
+---
+## Theorem 3
+Let $\phi(x)$ be a bounded function that is piecewise continuous. Then $(\ast)$ is an infinitely differentiable solution for $t > 0$, and 
+
+$$\lim_{t \searrow 0} u(x, t) = \frac{1}{2} \left[ \phi(x+) + \phi(x-) \right]$$
+
+for each $x$.
