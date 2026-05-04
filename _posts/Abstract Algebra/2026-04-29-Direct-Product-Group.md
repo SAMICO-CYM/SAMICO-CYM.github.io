@@ -119,7 +119,7 @@ Note that
 
 $$\prod_{i=1}^{t+1} \mathbb{Z} _ {m_i} \cong \left( \prod_{i=1}^t \mathbb{Z} _ {m_i} \right) \times \mathbb{Z} _ {m_{t+1}}.$$
 
-By the induction hypothesis and Theorem 11.5, we have 
+By the induction hypothesis and Theorem 2, we have 
 
 $$\prod_{i=1}^{t+1} \mathbb{Z} _ {m_i} \cong \mathbb{Z} _ {m_1 \cdots m_{t+1}} \iff \gcd(m_1 \cdots m_t, m_{t+1}) = 1 \iff \gcd(m_i, m_{t+1}) = 1, \forall 1 \le i \le t.$$
 
@@ -128,7 +128,7 @@ Hence, for all $n \ge 2$, we have
 $$\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i} \cong \mathbb{Z} _ {m_1 m_2 \cdots m_n} \iff \gcd(m_i, m_j) = 1, \forall i \neq j. \quad \blacksquare$$
 
 ---
-## Example
+## Example 1
 **(i)** Let $n = p_1^{r_1} \cdots p_m^{r_m}$ be the prime factorization of $n$, where $p_1, \cdots, p_r$ are distinct primes. Then $\mathbb{Z}_n \cong \mathbb{Z} _ {p_1^{r_1}} \times \cdots \times \mathbb{Z} _ {p_m^{r_m}}$. 
 
 **(ii)** $\mathbb{Z} _ {72} = \mathbb{Z}_8 \times \mathbb{Z}_9$.  
@@ -150,6 +150,12 @@ Suppose that there exists a common multiple $t \in \mathbb{N}$ of $r_1, ..., r_n
 $$(a_1, \cdots, a_n)^t = (a_1^t, \cdots, a_n^t) = (e_1, \cdots, e_n).$$
 
 Since $\vert \langle (a_1, \cdots, a_n) \rangle \vert = m$, we have $m \vert t$. Thus, $m = \mathrm{lcm}(r_1, \cdots, r_n)$. $\blacksquare$
+
+---
+## Example 2
+**(i)** Let $(8, 4, 10) \in \mathbb{Z}_{12} \times \mathbb{Z}_{60} \times \mathbb{Z}_{24}$. Then $\vert \langle 8 \rangle \vert = 3, \vert \langle 4 \rangle \vert = 15$ and $\vert \langle 10 \rangle \vert = 12$. By Theorem 3, $\vert \langle (8, 4, 10) \rangle \vert = \mathrm{lcm}(3, 15, 12) = 60$.
+
+**(ii)** $\mathbb{Z} \times \mathbb{Z}_2 = $
 
 ---
 
