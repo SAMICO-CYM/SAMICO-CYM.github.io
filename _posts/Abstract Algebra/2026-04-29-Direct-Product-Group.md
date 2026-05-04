@@ -70,9 +70,9 @@ Let $G := \displaystyle \prod_{i=1}^n G_i$.
 
 **(ii)** $G$ is finite $\iff$ each $G_i$ is finite. 
 
-**(iii)** $G$ is cyclic $\not\iff$ each $G_i$ is cyclic.
+**(iii)** $G$ is cyclic ***NOT*** if and only if each $G_i$ is cyclic.
 
-$\big[$$(\because)$ Note that $\mathbb{Z}_2 \times \mathbb{Z}_2 \cong V$ and $\mathbb{Z}_2 \times \mathbb{Z}_3 \cong \mathbb{Z}_6$. $\big]$
+$\big[$$(\because)$ Note that $\mathbb{Z}_2 \times \mathbb{Z}_2 \cong V$, $\mathbb{Z}_3 \times \mathbb{Z}_3 \not \cong \mathbb{Z}_9$ and $\mathbb{Z}_2 \times \mathbb{Z}_3 \cong \mathbb{Z}_6$. $\big]$
 
 ---
 
@@ -109,6 +109,23 @@ Note that $mn(1, 1) = (mn, mn) = (0, 0)$. Thus, $\vert (1, 1) \vert = mn$, which
 $\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i}$ is cyclic $\iff \gcd(m_i, m_j) = 1$ for all $i \neq j$. In this case, $\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i} \cong \mathbb{Z} _ {m_1 m_2 \cdots m_n}$.
 
 ### Proof
+We use the induction on $n$. The case when $n=2$ was shown in Theorem 11.5
+
+Suppose that there exists $t \ge 2$ such that 
+
+$$\prod_{i=1}^t \mathbb{Z} _ {m_i} \cong \mathbb{Z} _ {m_1 \cdots m_t} \iff \gcd(m_i, m_j) = 1, \forall 1 \le i < j \le t.$$
+
+Note that 
+
+$$\prod_{i=1}^{t+1} \mathbb{Z} _ {m_i} \cong \left( \prod_{i=1}^t \mathbb{Z} _ {m_i} \right) \times \mathbb{Z} _ {m_{t+1}}.$$
+
+By the induction hypothesis and Theorem 11.5, we have 
+
+$$\prod_{i=1}^{t+1} \mathbb{Z} _ {m_i} \cong \mathbb{Z} _ {m_1 \cdots m_{t+1}} \iff \gcd(m_1 \cdots m_t, m_{t+1}) = 1 \iff \gcd(m_i, m_{t+1}) = 1, \forall 1 \le i \le t.$$
+
+Hence, for all $n \ge 2$, we have
+
+$$\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i} \cong \mathbb{Z} _ {m_1 m_2 \cdots m_n} \iff \gcd(m_i, m_j) = 1, \forall i \neq j. \quad \blacksquare$$
 
 ---
 
@@ -116,6 +133,7 @@ $\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i}$ is cyclic $\iff \gcd(m_i, m_j) 
 Let $(a_1, \cdots, a_n) \in \displaystyle \prod_{i=1}^n G_i$. If $\vert \langle a_i \rangle \vert = r_i$ in $G_i$, then $\vert \langle (a_1, \cdots, a_n) \rangle \vert = \mathrm{lcm}(r_1, \cdots, r_n)$ in $\displaystyle \prod_{i=1}^n G_i$.
 
 ### Proof
+
 
 ---
 
