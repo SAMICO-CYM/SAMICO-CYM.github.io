@@ -27,3 +27,53 @@ Let $G := \displaystyle \prod_{i=1}^n G_i$.
 **(iii)** $G$ is cyclic $\not\iff$ each $G_i$ is cyclic.
 
 $\big[$$(\because)$ Note that $\mathbb{Z}_2 \times \mathbb{Z}_2 \cong V$ and $\mathbb{Z}_2 \times \mathbb{Z}_3 \cong \mathbb{Z}_6$. $\big]$
+
+---
+
+## Theorem 2
+$\mathbb{Z}_m \times \mathbb{Z}_n$ is cyclic $\iff \gcd(m, n) = 1$. In this case, $\mathbb{Z}_m \times \mathbb{Z}_n \cong \mathbb{Z}_{mn}$.
+
+### Proof
+
+$(\Longrightarrow)$
+Suppose that $\alpha = \gcd(m, n) \neq 1$. Then $m = \alpha k_1$ and $n = \alpha k_2$ for some $k_1, k_2 \in \mathbb{N}$ with $\gcd(k_1, k_2) = 1$. Since $\mathbb{Z}_m \times \mathbb{Z}_n$ is cyclic, it has a generator $(a, b)$. Then $r(a, b) \neq (0, 0), \forall r \in \\{ 1, ..., mn-1\\}$ because $\mathbb{Z}_m \times \mathbb{Z}_n$ has order $mn$. 
+
+However, we have 
+
+$$\begin{align*}
+\frac{mn}{\alpha}(a, b) &= \left( \frac{n}{\alpha}ma, \frac{m}{\alpha} nb \right) \\
+&= (k_2ma, k_1nb) \\
+&= (0, 0)
+\end{align*}$$ 
+
+which is a contradiction. Therefore $\alpha = 1$.
+
+$(\Longleftarrow)$
+Suppose that $\gcd(m, n) = 1$. We claim that $r(1, 1) \neq s(1,1), \forall 0 \le r < s < mn$.
+
+---
+
+## Corollary
+$\displaystyle \prod_{i=1}^n \mathbb{Z}_{m_i}$ is cyclic $\iff \gcd(m_i, m_j) = 1$ for all $i \neq j$. In this case, $\displaystyle \prod_{i=1}^n \mathbb{Z}_{m_i} \cong \mathbb{Z}_{m_1 m_2 \cdots m_n}$.
+
+### Proof
+
+---
+
+## Theorem 3
+Let $(a_1, \cdots, a_n) \in \displaystyle \prod_{i=1}^n G_i$. If $\vert \langle a_i \rangle \vert = r_i$ in $G_i$, then $\vert \langle (a_1, \cdots, a_n) \rangle \vert = \mathrm{lcm}(r_1, \cdots, r_n)$ in $\displaystyle \prod_{i=1}^n G_i$.
+
+### Proof
+
+---
+
+## Theorem 4 (Fundamental Theorem of Finitely Generated Abelian Groups)
+**(i)** Every finitely generated abelian group $G$ is isomorphic to a direct product of cyclic groups in the form 
+
+$$\mathbb{Z}_{p_1^{r_1}} \times \cdots \times \mathbb{Z}_{p_k^{r_k}} \times \mathbb{Z} \times \cdots \times \mathbb{Z}$$
+
+where $p_i$ are not necessarily distinct primes and $r_i \in \mathbb{N}$.
+
+**(ii)** The direct product as in (i) is unique except for possible rearrangement of the factors.
+
+Furthermore, the number of $\mathbb{Z}$ in the direct product of cyclic groups in (i) is called the ***Betti number*** of $G$.
