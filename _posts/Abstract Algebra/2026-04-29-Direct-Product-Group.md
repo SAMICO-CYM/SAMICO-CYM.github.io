@@ -95,7 +95,11 @@ $$\begin{align*}
 which is a contradiction. Therefore $\alpha = 1$.
 
 $(\Longleftarrow)$
-Suppose that $\gcd(m, n) = 1$. We claim that $r(1, 1) \neq s(1,1), \forall 0 \le r < s < mn$. 
+Suppose that $\gcd(m, n) = 1$. Note that $(1, 1) \in \mathbb{Z}_m \times \mathbb{Z}_n$. We claim that $r(1, 1) \neq s(1,1), \forall 0 \le r < s < mn$. 
+
+$\big[(\because)$ Suppose that $r(1, 1) = s(1, 1)$ for some $0 \le r < s < mn$. Then $(s-r)(1, 1) = (s-r, s-r) = (0, 0) \in \mathbb{Z}_m \times \mathbb{Z}_n$, which implies that $m$ and $n$ divide $s-r$. Since $\gcd(m ,n) = 1$, $mn$ divides $s-r$, which implies that $mn \le s-r$. But we have $s-r < mn$. $\bigotimes$ $\big]$
+
+Note that $mn(1, 1) = (mn, mn) = (0, 0)$. Thus, $\vert (1, 1) \vert = mn$, which means that $\mathbb{Z}_m \times \mathbb{Z}_n = \langle (1, 1) \rangle. \blacksquare$
 
 ---
 
