@@ -82,6 +82,7 @@ $\mathbb{Z}_m \times \mathbb{Z}_n$ is cyclic $\iff$ $\gcd(m, n) = 1$. In this ca
 ### Proof
 
 $(\Longrightarrow)$
+
 Suppose that $\alpha = \gcd(m, n) \neq 1$. Then $m = \alpha k_1$ and $n = \alpha k_2$ for some $k_1, k_2 \in \mathbb{N}$ with $\gcd(k_1, k_2) = 1$. Since $\mathbb{Z}_m \times \mathbb{Z}_n$ is cyclic, it has a generator $(a, b)$. Then $r(a, b) \neq (0, 0), \forall r \in \\{ 1, ..., mn-1\\}$ because $\mathbb{Z}_m \times \mathbb{Z}_n$ has order $mn$. 
 
 However, we have 
@@ -95,6 +96,7 @@ $$\begin{align*}
 which is a contradiction. Therefore $\alpha = 1$.
 
 $(\Longleftarrow)$
+
 Suppose that $\gcd(m, n) = 1$. Note that $(1, 1) \in \mathbb{Z}_m \times \mathbb{Z}_n$. We claim that $r(1, 1) \neq s(1,1), \forall 0 \le r < s < mn$. 
 
 $\big[(\because)$ Suppose that $r(1, 1) = s(1, 1)$ for some $0 \le r < s < mn$. Then $(s-r)(1, 1) = (s-r, s-r) = (0, 0) \in \mathbb{Z}_m \times \mathbb{Z}_n$, which implies that $m$ and $n$ divide $s-r$. Since $\gcd(m ,n) = 1$, $mn$ divides $s-r$, which implies that $mn \le s-r$. But we have $s-r < mn$. $\bigotimes$ $\big]$
@@ -104,7 +106,7 @@ Note that $mn(1, 1) = (mn, mn) = (0, 0)$. Thus, $\vert (1, 1) \vert = mn$, which
 ---
 
 ## Corollary
-$\displaystyle \prod_{i=1}^n \mathbb{Z}_{m_i}$ is cyclic $\iff \gcd(m_i, m_j) = 1$ for all $i \neq j$. In this case, $\displaystyle \prod_{i=1}^n \mathbb{Z}_{m_i} \cong \mathbb{Z}_{m_1 m_2 \cdots m_n}$.
+$\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i}$ is cyclic $\iff \gcd(m_i, m_j) = 1$ for all $i \neq j$. In this case, $\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i} \cong \mathbb{Z} _ {m_1 m_2 \cdots m_n}$.
 
 ### Proof
 
