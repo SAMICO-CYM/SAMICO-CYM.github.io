@@ -14,6 +14,52 @@ $$(a_1, \cdots, a_n) (b_1, \cdots, b_n) = (a_1b_1, \cdots, a_nb_n)$$
 for all $(a_1, \cdots, a_n), (b_1, \cdots, b_n) \in \displaystyle \prod_{i=1}^n G_i$, and we call it the ***direct product*** of the groups $G_i$. 
 
 ### Proof
+Let $a = (a_1, \cdots, a_n), b = (b_1, \cdots, b_n), c = (c_1, \cdots, c_n) \in \displaystyle \prod_{i=1}^n G_i$. Then 
+
+$$\begin{align*}
+ab &= (a_1, \cdots, a_n)(b_1, \cdots, b_n) \\
+&= (a_1b_1, \cdots, a_nb_n) \\
+& \in \prod_{i=1}^n G_i.
+\end{align*}$$
+
+Next, we have 
+
+$$\begin{align*}
+(ab)c &= ((a_1, \cdots, a_n)(b_1, \cdots, b_n))(c_1, \cdots, c_n) \\
+&= (a_1b_1, \cdots, a_nb_n)(c_1, \cdots, c_n) \\
+&= ((a_1b_1)c_1, \cdots, (a_nb_n)c_n) \\
+&= (a_1(b_1c_1), \cdots, a_n(b_nc_n)) \\
+&= (a_1, \cdots, a_n)((b_1, \cdots, b_n)(c_1, \cdots, c_n)) \\
+&= a(bc).
+\end{align*}$$
+
+Next, let $e := (e_1, \cdots, e_n)$. Then $e \in \displaystyle \prod_{i=1}^n G_i$ and we have 
+
+$$\begin{align*}
+ea &= (e_1, \cdots, e_n)(a_1, \cdots, b_n) \\
+&= (e_1a_1, \cdots, e_na_n) \\
+&= (a_1, \cdots, a_n) \\
+&= (a_1e_1, \cdots, a_ne_n) \\
+&= (a_1, \cdots, a_n)(e_1, \cdots, e_n) \\
+&= ae.
+\end{align*}$$
+
+Hence $e$ is the identity element of $\displaystyle \prod_{i=1}^n G_i$. 
+
+Let $a^{-1} := (a^{-1}_1, \cdots, a^{-1}_n)$. Then we have 
+
+$$\begin{align*}
+a^{-1}a &= (a^{-1}_1, \cdots, a^{-1}_n)(a_1, \cdots, a_n) \\
+&= (a^{-1}_1a_1, \cdots, a^{-1}_na_n) \\
+&= (e_1, \cdots, e_n) \\
+&= e \\
+&= (e_1, \cdots, e_n) \\
+&= (a_1a^{-1}_1, \cdots, a_na^{-1}_n) \\
+&= (a_1, \cdots, a_n)(a^{-1}_1, \cdots, a^{-1}_n) \\
+&= aa^{-1}.
+\end{align*}$$
+
+Thus, $\displaystyle \prod_{i=1}^n G_i$ is a group. $\blacksquare$
 
 ---
 
@@ -49,7 +95,7 @@ $$\begin{align*}
 which is a contradiction. Therefore $\alpha = 1$.
 
 $(\Longleftarrow)$
-Suppose that $\gcd(m, n) = 1$. We claim that $r(1, 1) \neq s(1,1), \forall 0 \le r < s < mn$.
+Suppose that $\gcd(m, n) = 1$. We claim that $r(1, 1) \neq s(1,1), \forall 0 \le r < s < mn$. 
 
 ---
 

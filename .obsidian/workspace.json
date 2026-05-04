@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/PDE/2026-04-09-Solution-To-Diffusion-Equation.md",
+                "file": "_posts/Abstract Algebra/2026-04-29-Direct-Product-Group.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-09-Solution-To-Diffusion-Equation"
+              "title": "2026-04-29-Direct-Product-Group"
             }
           }
         ]
@@ -182,6 +182,13 @@
   },
   "active": "7a4503827723e1d6",
   "lastOpenFiles": [
+    "_site/posts/Breadth-First-Search/index.html",
+    "_site/posts/Breadth-First-Search",
+    "_site/categories/algorithm/index.html",
+    "_site/categories/algorithm",
+    "_posts/PDE/2026-04-09-Solution-To-Diffusion-Equation.md",
+    "_posts/Algorithm/2026-05-04-Breadth-First-Search.md",
+    "_posts/Algorithm",
     "_posts/PDE/2026-04-03-Diffusion-Equation.md",
     "_posts/Complex Analysis/2026-05-01-ML-Lemma.md",
     "_site/posts/ML-Lemma/index.html",
@@ -201,11 +208,7 @@
     "_site/page15",
     "_site/assets/img/continuous.png",
     "assets/img/continuous.png",
-    "_site/posts/Homeomorphism/index.html",
-    "_site/posts/Homeomorphism",
     "_posts/Abstract Algebra/2026-04-29-Direct-Product-Group.md",
-    "_site/posts/Direct-Product-Group/index.html",
-    "_site/posts/Direct-Product-Group",
     "_posts/Abstract Algebra/2026-04-27-Coset.md",
     "_posts/Abstract Algebra/2026-04-27-Lagrange-Theorem.md",
     "_posts/Complex Analysis/2026-04-28-Contours.md",
@@ -221,9 +224,6 @@
     "_posts/PDE/2026-04-23-Inhomogeneous-Wave-Equation.md",
     "_posts/PDE/2026-04-23-Inhomogeneous-Diffusion-Equation.md",
     "_posts/PDE/2026-04-22-Waves-Half-Line.md",
-    "_posts/PDE/2026-04-16-Diffusion-Half-Line.md",
-    "_posts/Graph Theory/2026-04-27-Adjacency-Matrix.md",
-    "_posts/Graph Theory/2026-04-21-Subgraph.md",
     "_site/assets/img/triangle.png",
     "_site/assets/img/permutation2.png",
     "_site/assets/img/permutation1.png",
