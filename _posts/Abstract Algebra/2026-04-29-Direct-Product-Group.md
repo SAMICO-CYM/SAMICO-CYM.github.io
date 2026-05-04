@@ -77,7 +77,7 @@ $\big[$$(\because)$ Note that $\mathbb{Z}_2 \times \mathbb{Z}_2 \cong V$ and $\m
 ---
 
 ## Theorem 2
-$\mathbb{Z}_m \times \mathbb{Z}_n$ is cyclic $\iff \gcd(m, n) = 1$. In this case, $\mathbb{Z}_m \times \mathbb{Z}_n \cong \mathbb{Z}_{mn}$.
+$\mathbb{Z}_m \times \mathbb{Z}_n$ is cyclic $\iff$ $\gcd(m, n) = 1$. In this case, $\mathbb{Z}_m \times \mathbb{Z}_n \cong \mathbb{Z} _ {mn}$.
 
 ### Proof
 
