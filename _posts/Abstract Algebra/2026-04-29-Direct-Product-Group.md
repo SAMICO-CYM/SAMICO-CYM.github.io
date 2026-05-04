@@ -153,9 +153,15 @@ Since $\vert \langle (a_1, \cdots, a_n) \rangle \vert = m$, we have $m \vert t$.
 
 ---
 ## Example 2
-**(i)** Let $(8, 4, 10) \in \mathbb{Z}_{12} \times \mathbb{Z}_{60} \times \mathbb{Z}_{24}$. Then $\vert \langle 8 \rangle \vert = 3, \vert \langle 4 \rangle \vert = 15$ and $\vert \langle 10 \rangle \vert = 12$. By Theorem 3, $\vert \langle (8, 4, 10) \rangle \vert = \mathrm{lcm}(3, 15, 12) = 60$.
+**(i)** Let $(8, 4, 10) \in \mathbb{Z} _ {12} \times \mathbb{Z} _ {60} \times \mathbb{Z} _ {24}$. Then $\vert \langle 8 \rangle \vert = 3, \vert \langle 4 \rangle \vert = 15$ and $\vert \langle 10 \rangle \vert = 12$. By Theorem 3, $\vert \langle (8, 4, 10) \rangle \vert = \mathrm{lcm}(3, 15, 12) = 60$.
 
-**(ii)** $\mathbb{Z} \times \mathbb{Z}_2 = $
+**(ii)** $\mathbb{Z} \times \mathbb{Z}_2 = \langle (1, 0), (0, 1) \rangle$ 
+
+**(iii)** $\mathbb{Z} _ {m_1} \times \cdots \times \mathbb{Z} _ {m_n} = \langle (1, 0, \cdots, 0), (0, 1, 0, \cdots, 0), \cdots, (0, \cdots, 0, 1) \rangle$
+
+**(iv)** $\mathbb{Z} _ 3 \times \mathbb{Z} _ 4 \times \mathbb{Z} _ {35} = \langle (1, 1, 1) \rangle$.  
+
+(ii)와 (ii)의 경우,  finite가 아니거나 서로소라는 보장이 없으면 cyclic으로 나타낼 수 없지만 finitely generated set은 항상 된다는 사실을 보여준다. 반면 (iv)는 finite하면서 모두 서로소이므로 one-generated set, 즉 cyclic group이 된다.
 
 ---
 
