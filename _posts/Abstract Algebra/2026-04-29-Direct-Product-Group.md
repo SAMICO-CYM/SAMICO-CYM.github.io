@@ -128,12 +128,28 @@ Hence, for all $n \ge 2$, we have
 $$\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i} \cong \mathbb{Z} _ {m_1 m_2 \cdots m_n} \iff \gcd(m_i, m_j) = 1, \forall i \neq j. \quad \blacksquare$$
 
 ---
+## Example
+**(i)** Let $n = p_1^{r_1} \cdots p_m^{r_m}$ be the prime factorization of $n$, where $p_1, \cdots, p_r$ are distinct primes. Then $\mathbb{Z}_n \cong \mathbb{Z} _ {p_1^{r_1}} \times \cdots \times \mathbb{Z} _ {p_m^{r_m}}$. 
+
+**(ii)** $\mathbb{Z} _ {72} = \mathbb{Z}_8 \times \mathbb{Z}_9$.  
+
+---
 
 ## Theorem 3
 Let $(a_1, \cdots, a_n) \in \displaystyle \prod_{i=1}^n G_i$. If $\vert \langle a_i \rangle \vert = r_i$ in $G_i$, then $\vert \langle (a_1, \cdots, a_n) \rangle \vert = \mathrm{lcm}(r_1, \cdots, r_n)$ in $\displaystyle \prod_{i=1}^n G_i$.
 
 ### Proof
+Let $\vert \langle (a_1, \cdots, a_n) \rangle \vert = m$. Then 
 
+$$(a_1^m, \cdots, a_n^m) = (a_1, \cdots, a_n)^m = (e_1, \cdots, e_n),$$
+
+so that each $r_i$ divides $m$. Hence $m$ is a common multiple of $r_1, ..., r_n$. 
+
+Suppose that there exists a common multiple $t \in \mathbb{N}$ of $r_1, ..., r_n$. Then we have 
+
+$$(a_1, \cdots, a_n)^t = (a_1^t, \cdots, a_n^t) = (e_1, \cdots, e_n).$$
+
+Since $\vert \langle (a_1, \cdots, a_n) \rangle \vert = m$, we have $m \vert t$. Thus, $m = \mathrm{lcm}(r_1, \cdots, r_n)$. $\blacksquare$
 
 ---
 
