@@ -17,6 +17,8 @@ Let $G$ be a graph, and let $v_1, v_2, ..., v_n \in V(G)$.
 
 **(iv)** The ***distance*** between two vertices $u$ and $v$ in $G$, denoted by $d_G(u, v)$, is the length of the shortest $uv$-path in $G$. If $u$ and $v$ are not connected in $G$, we write $d_G(u, v) = \infty$.
 
+**(v)** The ***diameter*** $\mathrm{diam}(G)$ of G is the maximum of the distance over all pairs of vertices $u$ and $v$ of the graph, that is, $\displaystyle \mathrm{diam}(G) = \max_{u, v \in V(G)} d(u, v)$.
+
 ---
 
 ## Remark
