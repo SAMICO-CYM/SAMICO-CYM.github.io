@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Algorithm/2026-05-04-Breadth-First-Search.md",
+                "file": "_posts/Graph Theory/2026-05-05-Degree.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-04-Breadth-First-Search"
+              "title": "2026-05-05-Degree"
             }
           }
         ]
@@ -182,11 +182,11 @@
   },
   "active": "7a4503827723e1d6",
   "lastOpenFiles": [
+    "_posts/Algorithm/2026-05-04-Breadth-First-Search.md",
     "_posts/Graph Theory/2026-04-21-Path-Walk-Cycle.md",
     "_posts/Graph Theory/2026-04-21-Connected-Graph.md",
     "_posts/Graph Theory/2026-04-10-Isomorphism-Of-Graph.md",
     "_posts/Graph Theory/2026-04-10-Graph.md",
-    "_posts/Algorithm/2026-05-04-Breadth-First-Search.md",
     "_posts/Graph Theory/2026-05-05-Degree.md",
     "_site/posts/Degree/index.html",
     "_site/posts/Degree",
