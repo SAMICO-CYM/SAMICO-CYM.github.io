@@ -27,21 +27,21 @@ $$-\frac{T''}{c^2T} = - \frac{X''}{X} = \lambda.$$
 
 This defines a quantity $\lambda$, which must be a constant. ($\lambda$ does not depend on both $x$ and $t$.) 
 
-1. $\lambda > 0$
+**1.** $\lambda = 0$
 
 We obtain $X''(x) = 0$, so $X(x) = C + Dx$ for some constants $C, D$. From the Dirichlet condition $u(0, t) = 0 = u(l, t)$, we have $X(0) = 0 = X(l)$, which implies that $C = 0 = D$. Thus, $X(x) = 0$, so that $u(x, t) = 0$.  It could not satisfy the initial condition. 
 
-2. $\lambda < 0$
+**2.** $\lambda < 0$
 
 Let $\lambda = - \gamma^2$. Then we have $X'' = \gamma^2 X$, which has a solution $X(x) = C\cosh(\gamma x) + D \sinh(-\gamma x)$ for some constants $C, D$. Since $X(0) = 0 = X(l)$, we can obtain $C = 0 = D$. Thus, $X(x) = 0$, so that $u(x, t) = 0$. It could not satisfy the initial condition. 
 
-3. $\lambda = 0$
+**3.** $\lambda > 0$
 
 We write $\lambda = \beta^2 (\beta > 0)$. Then we have $X'' + \beta^2 X = 0$ and $T'' + c^2\beta^2 T = 0$. Then we get $X(x) = C \cos \beta x + D \sin \beta x$ and $T(t) A \cos \beta c t + B \sin \beta c t$ for some constants $A, B, C, D$. Since $X(0) = 0 = X(l)$, we get $C = 0$ and $D\sin \beta l = 0$. Since we are not interested in the obvious solution $C = 0 = D$, we must have $\beta l = n \pi$ where $n \in \mathbb{N}$. Then we have
 
 $$\lambda_n = \left( \frac{n \pi}{l} \right)^2, \quad X_n(x) = \sin \frac{n \pi x}{l}, \quad \text{and} \quad T_n(t) = A_n \cos \frac{n \pi ct}{l} + B_n \sin \frac{n \pi ct}{l}$$
 
-for $n = 1, 2, \cdots$. 
+for $n = 1, 2, \cdots$. Each sine function $X_n$ may be multipled by an arbitrary constant.
 
 Since
 
@@ -78,7 +78,7 @@ $$\frac{T'}{kT} = \frac{X''}{X} = -\lambda.$$
 
 This defines a quantity $\lambda$, which must be a constant. ($\lambda$ does not depend on both $x$ and $t$.) 
 
-Similarly to the wave equation, we only consider the case $\lambda > 0$. Then we have $X'' + \lambda X = 0$ and $T' = -\lambda k T$, which have solutions $X(x) = C \cos \beta x + D \sin \beta x$ and $T(t) = Ae^{-\lambda k t}$, respectively. By the Dirichlet condition $X(0) = 0 = X(l)$, we have 
+Similarly to the wave equation, we only consider the case $\lambda > 0$. Then we have $X'' + \lambda X = 0$ and $T' = -\lambda k T$, which have solutions $X(x) = C \cos \beta x + D \sin \beta x$ and $T(t) = Ae^{-\lambda k t}$, respectively, for some constants $A, C, D$. By the Dirichlet condition $X(0) = 0 = X(l)$, we have 
 
 $$\lambda_n = \left( \frac{n \pi}{l} \right)^2, \quad X_n(x) = \sin \frac{n \pi x}{l}, \quad \text{and} \quad T_n(t) = A_n e^{- \left( \frac{n \pi}{l} \right)^2 kt}$$
 
