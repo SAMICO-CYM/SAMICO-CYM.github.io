@@ -13,7 +13,7 @@ math: true
 
 ***Steps:*** 
 **1.** Set $L_0 := \\{ v \\}, U = V(G) - L_0$, and $i = 0$.
-**2.** Until $U = \emptyset$, do:
+**2.** Until $U = \emptyset$ or does not decrease, do:
 (a) Increase $i$. ($i := i+1$)
 (b) Let $L_i$ be the set of vertices in $U$ adjacenty to some vertex in $L_{i-1}$.
 (c) Set $U := U - L_i$.
@@ -28,3 +28,8 @@ math: true
 
 ---
 ## Time
+주어진 그래프 $G$에 대해서 $\vert V(G) \vert = n$이라고 하자. 이 그래프에서 BFS를 수행하는데 가장 반복을 많이 해야하는 경우는 $n-1$ path $P_{n-1}$, 즉 $n$개의 버텍스가 일렬로 늘어져 있는 경우이다. 따라서 BFS를 완료하기 위해서 반복해야 하는 횟수는 최대 $\mathcal{O}(n)$이다. 
+
+또한 한번 반복할 때마다 $L_{i-1}$의 각 버텍스에 대해서 인접해 있는 버텍스를 $U$ 전체에서 찾아야 하므로, 최대 $\mathcal{O}(n^2)$의 반복횟수가 필요하다. 
+
+따라서 BFS를 수행하기 위해서 최대로 걸리는 시간은 두 횟수를 곱한 $\mathcal{O}(n^3)$이다.

@@ -7,7 +7,7 @@ math: true
 ---
 
 ## Definition 1
-Let $f$ and $g$ be real functions. We say that $f$ is ***big-Oh*** of $g$, denoted by $f = O(g)$ if $\exists M > 0, c > 0$ such that $f(x) < cg(x), \forall x > M$.
+Let $f$ and $g$ be real functions. We say that $f$ is ***big-Oh*** of $g$, denoted by $f = \mathcal{O}(g)$ if $\exists M > 0, c > 0$ such that $f(x) < cg(x), \forall x > M$.
 
 ---
 
@@ -20,7 +20,7 @@ f(x) = x^3 + 20x^2 - 7 &\le x^3 + 20x^2 \\
 & \le 21x^3 
 \end{align*}$$
 
-for all $x \ge 1$, which means that $f = O(x^3)$. 
+for all $x \ge 1$, which means that $f = \mathcal{O}(x^3)$. 
 
 **(ii)** Let $H_n$ be the $n$th harmonic number, i.e., 
 
@@ -47,19 +47,19 @@ we have
 
 $$\frac{1}{2} \lfloor \log_2{n} \rfloor \le H_n < \lceil \log_2n \rceil,$$
 
-which means that $H_n = O(\log_2{n})$.
+which means that $H_n = \mathcal{O}(\log_2{n})$.
 
 ---
 
 ## Theorem
 Let $f$ and $g$ be real functions. Then the following hold:
 
-$$\lim_{x \to \infty} \frac{f(x)}{g(x)} = c \implies f(x) = O(g(x))$$
+$$\lim_{x \to \infty} \frac{f(x)}{g(x)} = c \implies f(x) = \mathcal{O}(g(x))$$
 
 ---
 
 ## Definition 2
-Let $f$ and $g$ be real functions. We say that $f$ is ***liitle-oh*** of $g$, denoted by $f = o(g)$, if 
+Let $f$ and $g$ be real functions. We say that $f$ is ***liitle-oh*** of $g$, denoted by $f = \mathcal{o}(g)$, if 
 
 $$\lim_{x \to \infty} \frac{f(x)}{g(x)} = 0.$$
 
