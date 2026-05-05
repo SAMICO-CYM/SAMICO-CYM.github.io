@@ -6,7 +6,7 @@ tags: []
 math: true
 ---
 
-## Wave equation
+## Wave Equation
 We consider the problem
 
 $$\begin{cases}
@@ -58,5 +58,37 @@ By the initial conditions $u(x, 0) = \phi(x)$ and $u_t(x, 0) = \psi(x)$, we have
 $$\begin{align*}
 \phi(x) &= u(x, 0) = \sum_{n=1}^\infty A_n \sin \frac{n \pi x}{l} \\
 \psi(x) &= u_t(x, 0) = \sum_{n=1}^\infty \frac{n \pi c}{l} B_n \sin \frac{n \pi x}{l}.
+\end{align*}$$
+
+---
+## Diffusion Equation
+We consider the problem
+
+$$\begin{cases}
+u_t = ku_{xx} \\
+u(0, t) = 0 = u(l, t) \\
+u(x, 0) = \phi(x)
+\end{cases}$$
+
+for $0 < x < l$ and $t > 0$. 
+
+Suppose that a solution is given by the seperated form $u(x, t) = X(x)T(t)$. Plugging this form into the wave equation, we get
+
+$$\frac{T'}{kT} = \frac{X''}{X} = -\lambda.$$
+
+This defines a quantity $\lambda$, which must be a constant. ($\lambda$ does not depend on both $x$ and $t$.) 
+
+Similarly to the wave equation, we only consider the case $\lambda > 0$. Then we have $X'' + \lambda X = 0$ and $T' = -\lambda k T$, which have solutions $X(x) = C \cos \beta x + D \sin \beta x$ and $T(t) = Ae^{-\lambda k t}$, respectively. By the Dirichlet condition $X(0) = 0 = X(l)$, we have 
+
+$$\lambda_n = \left( \frac{n \pi}{l} \right)^2, \quad X_n(x) = \sin \frac{n \pi x}{l}, \quad \text{and} \quad T_n(t) = A_n e^{- \left( \frac{n \pi}{l} \right)^2 kt}$$
+
+for $n = 1, 2, \cdots$. Thus, we have a general solution 
+
+$$u(x, t) = \sum_{n=1}^\infty A_n e^{- \left( \frac{n \pi}{l} \right)^2 kt} \sin \frac{n \pi x}{l}.$$
+
+By the initial conditions $u(x, 0) = \phi(x)$, we have 
+
+$$\begin{align*}
+\phi(x) &= u(x, 0) = \sum_{n=1}^\infty A_n \sin \frac{n \pi x}{l}.
 \end{align*}$$
 
