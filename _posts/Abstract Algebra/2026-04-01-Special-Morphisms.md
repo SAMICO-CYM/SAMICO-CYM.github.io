@@ -6,19 +6,21 @@ math: true
 ---
 
 ## Definition
-Let $G$ and $G'$ be groups. Then a map $\phi: G \to G'$ is a homomorphism if 
+Let $G$ and $G'$ be groups. 
+
+**(i)** A map $\phi: G \to G'$ is a ***homomorphism*** if 
 
 $$\phi(ab) = \phi(a)\phi(b), \forall a, b \in G.$$
 
 Let $\phi : G \to G'$ be a homomorphism.
 
-**(i)** If $\phi$ is injective, then $\phi$ is called a ***monomorphism***.
+**(ii)** If $\phi$ is injective, then $\phi$ is called a ***monomorphism***.
 
-**(ii)** If $\phi$ is surjective, then $\phi$ is called an ***epimorphism***.
+**(iii)** If $\phi$ is surjective, then $\phi$ is called an ***epimorphism***.
 
-**(iii)** If $\phi$ is bijective, then $\phi$ is called an ***isomorphism***.
+**(iv)** If $\phi$ is bijective, then $\phi$ is called an ***isomorphism***.
 
-**(iv)** If $\phi$ is an isomorphism and $G = G'$, then $\phi$ is called an ***automorphism***.
+**(v)** If $\phi$ is an isomorphism and $G = G'$, then $\phi$ is called an ***automorphism***.
 
 ---
 
@@ -97,3 +99,30 @@ $$\begin{align*}
 so $\phi$ is a homomorphism. 
 
 Let $r \in \\{ 0, 1, ..., n-2 \\}$. Then clearly $\phi(r) = r$, so $\phi$ is surjective, hence it is an epimorphism. 
+
+**(vi)** Define $\phi: \mathbb{C} \setminus \\{ 0 \\} \to \mathbb{R}^+$ by 
+
+$$\phi(z) = \vert z \vert, \forall z \in \mathbb{C} \setminus \\{ 0 \\}.$$
+
+Clearly, $\phi$ is a homomorphism. Note that $\mathrm{Ker}(\phi)$ is a unit circle in the complex plane.
+
+**(vii)** Defined $\phi: S_n \to \mathbb{Z}_2$ by 
+
+$$\phi(\sigma) = \begin{cases} 
+0 & \text{if } \sigma \text{ is even} \\
+1 & \text{if } \sigma \text{ is odd}
+\end{cases}$$
+
+for all $\sigma \in S_n$. Then clearly $\phi$ is an epimorphism.
+
+**(viii)** Let $G = \displaystyle \prod_{i=1}^n G_i$ be a direct product of groups. For each $k \in \\{ 1, ..., n \\}$, define $\iota_k : G_k \to G$ by 
+
+$$\iota_k(g_k) = (e_1, \cdots, e_{k-1}, g_k, e_{k+1}, \cdots, e_n), \forall g_k \in G_k.$$
+
+Then $\iota_k$ is a monomorphism, but not epimorphism in general. The map $\iota_k$ is called the ***natural injection***.
+
+Furthermore, For each $k \in \\{ 1, ..., n \\}$, define $\pi_k : G \to G_k$ by 
+
+$$\pi_k(g_1, \cdots, g_n) = g_k, \forall (g_1, \cdots, g_n) \in G.$$
+
+Then $\pi_k$ is an epimorphism, but not monomorphism in general. The map $\pi_k$ is called the ***canonical epimorphism***, or the ***projection map***.

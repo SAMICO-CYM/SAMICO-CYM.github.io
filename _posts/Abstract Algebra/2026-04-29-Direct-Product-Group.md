@@ -164,7 +164,6 @@ Since $\vert \langle (a_1, \cdots, a_n) \rangle \vert = m$, we have $m \vert t$.
 (ii)와 (ii)의 경우,  finite가 아니거나 서로소라는 보장이 없으면 cyclic으로 나타낼 수 없지만 finitely generated set은 항상 된다는 사실을 보여준다. 반면 (iv)는 finite하면서 모두 서로소이므로 one-generated set, 즉 cyclic group이 된다.
 
 ---
-
 ## Theorem 4 (Fundamental Theorem of Finitely Generated Abelian Groups)
 **(i)** Every finitely generated abelian group $G$ is isomorphic to a direct product of cyclic groups in the form 
 
@@ -175,3 +174,45 @@ where $p_i$ are not necessarily distinct primes and $r_i \in \mathbb{N}$.
 **(ii)** The direct product as in (i) is unique except for possible rearrangement of the factors.
 
 Furthermore, the number of $\mathbb{Z}$ in the direct product of cyclic groups in (i) is called the ***Betti number*** of $G$.
+
+---
+## Example 3
+위 정리를 사용해서 오더가 $360$인 아벨군을 모두 찾아보자. 우선 위 정리에 의해서 우리가 구하고자 하는 군은 반드시 
+
+$$\mathbb{Z}_{p_1^{r_1}} \times \cdots \times \mathbb{Z}_{p_k^{r_k}}$$
+
+와 동형이어야 한다. 일단 유한군이므로 $\mathbb{Z} \times \cdots \times \mathbb{Z}$ 파트는 나타나지 않는다. 즉, Betti number가 0이다.
+
+한편 $360 = 2^3 \times 3^2 \times 5$이므로, 각 $p_i^{r_i}$는 이 소인수들 안에서만 나타나야 한다. 그렇지 않으면 원소의 개수가 반드시 다르게 나타나므로 동형이 아니다.
+
+**1.** $2^3$
+
+소인수 $2$에 관해서는 다음의 세 가지 경우가 가능하다. 
+
+$$\mathbb{Z}_8, \quad \mathbb{Z}_4 \times \mathbb{Z}_2, \quad \mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_2$$
+
+이 세 군이 서로 동형이 아님은 자명한데, $\mathbb{Z}_8$은 order가 8인 원소를 갖는 반면 $\mathbb{Z}_4 \times \mathbb{Z}_2$와 $\mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_2$는 그렇지 않으므로 동형이 아니고, 다른 경우들도 같은 이유로 동형이 아니다. 
+
+**2.** $3^2$
+
+마찬가지로 $3$에 대해서도 다음의 두 가지 경우가 나타난다.
+
+$$\mathbb{Z}_9, \quad \mathbb{Z}_3 \times \mathbb{Z}_3$$
+
+마찬가지로 이 두 군도 서로 동형이 아니다.
+
+**3.** $5$
+
+$5$는 한 번만 곱해졌으므로 $\mathbb{Z}_5$의 한 가지 경우만 나타난다.
+
+따라서 오더가 $360$인 아벨군은 다음 여섯 가지의 서로 동형이 아닌 케이스가 존재한다.
+
+$$\begin{align*}
+& 1. \quad \mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_3 \times \mathbb{Z}_3 \times \mathbb{Z}_5 \\
+& 2. \quad \mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_9 \times \mathbb{Z}_5 \\
+& 3. \quad \mathbb{Z}_2 \times \mathbb{Z}_4 \times \mathbb{Z}_3 \times \mathbb{Z}_3 \times \mathbb{Z}_5 \\
+& 4. \quad \mathbb{Z}_2 \times \mathbb{Z}_4 \times \mathbb{Z}_9 \times \mathbb{Z}_5 \\
+& 5. \quad \mathbb{Z}_8 \times \mathbb{Z}_3 \times \mathbb{Z}_3 \times \mathbb{Z}_5 \\
+& 6. \quad \mathbb{Z}_8 \times \mathbb{Z}_9 \times \mathbb{Z}_5
+\end{align*}$$
+한편, '형태' 자체는 위 여섯 가지 경우와 다른 케이스도 존재한다. 예를 들어 $\mathbb{Z}_{72} \times \mathbb{Z}_5$도 오더가 360인 아벨군이지만, 사실 $\mathbb{Z}_8 \times \mathbb{Z}_9 \cong \mathbb{Z}_{72}$ 이기 때문에 이 경우는 6번 케이스와 동형이다.
