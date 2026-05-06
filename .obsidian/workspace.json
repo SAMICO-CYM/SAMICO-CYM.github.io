@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Topology/2026-04-30-Open-map.md",
+                "file": "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-30-Open-map"
+              "title": "2026-05-06-Normal-Subgroup"
             }
           }
         ]
@@ -182,6 +182,14 @@
   },
   "active": "7a4503827723e1d6",
   "lastOpenFiles": [
+    "_site/posts/Normal-Subgroup/index.html",
+    "_site/posts/Normal-Subgroup",
+    "_posts/Abstract Algebra/2026-05-06-Kernel.md",
+    "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
+    "_site/posts/Kernel/index.html",
+    "_site/posts/Kernel",
+    "_posts/Abstract Algebra/2026-04-29-Direct-Product-Group.md",
+    "_posts/Topology/2026-04-30-Open-map.md",
     "_posts/Graph Theory/2026-05-05-Degree.md",
     "assets/img/graph.png",
     "_site/assets/img/graph.png",
@@ -207,18 +215,11 @@
     "_posts/PDE/2026-04-22-Waves-Half-Line.md",
     "_posts/PDE/2026-04-23-Inhomogeneous-Diffusion-Equation.md",
     "_posts/PDE/2026-04-23-Inhomogeneous-Wave-Equation.md",
-    "_posts/Abstract Algebra/2026-04-29-Direct-Product-Group.md",
     "_posts/Abstract Algebra/2026-04-01-Generating-Sets.md",
     "_posts/Abstract Algebra/2026-03-22-Center-Of-Group.md",
     "_posts/Abstract Algebra/2026-03-23-Characterization-Of-Cyclic-Groups.md",
     "_site/posts/Breadth-First-Search/index.html",
-    "_site/posts/Breadth-First-Search",
-    "_site/categories/algorithm/index.html",
-    "_site/categories/algorithm",
     "_posts/Complex Analysis/2026-05-01-ML-Lemma.md",
-    "_posts/Complex Analysis/2026-04-29-Contour-Integrals.md",
-    "_posts/Complex Analysis/2026-04-03-Limit-Complex-Functions.md",
-    "_posts/Topology/2026-04-29-Homeomorphism.md",
     "_site/assets/img/continuous.png",
     "assets/img/continuous.png",
     "_site/assets/img/coor2.png",
