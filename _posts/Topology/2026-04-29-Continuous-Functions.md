@@ -172,10 +172,8 @@ $$\begin{align*}
 x \in f^{-1}(g^{-1}(W)) & \iff f(x) \in g^{-1}(W) \\
 & \iff g(f(x)) \in W \\
 & \iff (g \circ f)(x) \in W \\
-& \iff x \in (g \circ f)^{-1}(W)
+& \iff x \in (g \circ f)^{-1}(W). \big]
 \end{align*}$$
-
-$\big]$
 
 Since $(g \circ f)^{-1}(W) = f^{-1}(g^{-1}(W)) \in \mathcal{T}_X$, $g \circ f$ is continuous.
 
