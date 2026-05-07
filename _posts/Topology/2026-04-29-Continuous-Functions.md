@@ -135,6 +135,29 @@ $$\forall \varepsilon > 0, \exists \delta > 0 \text{ such that } d(x, a) < \delt
 
 이는 limit point가 연속함수에 의해서 보존되기 위해서는 추가적으로 조건이 더 필요하고, '서로 다름'이라는 조건을 가지고 있는 함수는 다름아닌 단사함수이고, 이를 표현한 정리가 Theorem 2이다.
 
+---
+## Theorem 3
+Let $X, Y, Z$ be topological spaces. Then
+
+**(i)** For some $y_0 \in Y$, the function $f : X \to Y$ defined by $f(x) = y_0, \forall x \in X$, called a ***constant function***, is continuous.
+
+**(ii)** Let $A$ be a subspace of $X$. The function $i : A \hookrightarrow X$ given by $i(a) = a, \forall a \in A$, called the ***inclusion***, is continuous.
+
+**(iii)** If $f : X \to Y$ and $g : Y \to Z$ are continuous, then the composition $g \circ f$ is continuous.
+
+**(iv)** If $f : X \to Y$ is continuous and $A$ is a subspace of $X$, then the restriction of $f$ onto $A$, denoted by $f|_A : A \to Y$, is continuous.
+
+**(v)** Let $f : X \to Y$ be a continuous function.
+
+  **(1)** If $Z$ is a subspace of $Y$ containing $f(X)$, then the function $g : X \to Z$, obtained by restricting the range of $f$, is continuous.
+
+  **(2)** If $Y$ is a subspace of $Z$, then the function $h : X \to Z$, obtained by expanding the range of $f$, is continuous.
+
+**(vi)** Let $\\{U_\alpha\\}$ be a collection of open sets in $X$. The function $f : X \to Y$ is continuous if $X = \bigcup U_\alpha$ and $f|_{U_\alpha}$ is continuous for each $\alpha$.
+
+### Proof
+
+
 
 
 <style>
