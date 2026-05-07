@@ -180,8 +180,10 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "7a4503827723e1d6",
+  "active": "7de54e063efb4f46",
   "lastOpenFiles": [
+    "_posts/Fourier Series/2026-05-07-Fourier-Series.md",
+    "_posts/Fourier Series",
     "_posts/Abstract Algebra/2026-04-01-Special-Morphisms.md",
     "_posts/Abstract Algebra/2026-03-09-Isomorphism.md",
     "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
@@ -208,7 +210,6 @@
     "_site/posts/Newmann-Condition/index.html",
     "_site/posts/Newmann-Condition",
     "_site/posts/Dirichlet-Condition/index.html",
-    "_site/posts/Dirichlet-Condition",
     "_posts/PDE/2026-03-24-2nd-Order-Linear-PDE.md",
     "_posts/PDE/2026-04-03-Diffusion-Equation.md",
     "_posts/PDE/2026-03-26-Wave-Equation.md",
@@ -219,7 +220,6 @@
     "_posts/PDE/2026-04-23-Inhomogeneous-Wave-Equation.md",
     "_posts/Abstract Algebra/2026-04-01-Generating-Sets.md",
     "_posts/Abstract Algebra/2026-03-22-Center-Of-Group.md",
-    "_posts/Abstract Algebra/2026-03-23-Characterization-Of-Cyclic-Groups.md",
     "_site/assets/img/continuous.png",
     "assets/img/continuous.png",
     "_site/assets/img/coor2.png",
