@@ -197,17 +197,17 @@ g^{-1}(W) &= f^{-1}(W) \\
 
 so that $g$ is continuous.
 
-**(v-2)** By (ii), the inclusion $i: Y \to Z$ is continuous. By (iii), $h = i \circ f$ is continuous. 
+**(v-2)** By (ii), the inclusion $i: Y \to Z$ is continuous. By (iii), $h = i \circ f: X \to Z$ is continuous. 
 
-**(vi)** Let $\\{ U_\alpha \\}$ be a collection of open sets in $X$ such that $X = \bigcup U_\alpha$. Suppose that each $f \vert U_\alpha : U_\alpha \to Y$ is continuous. Let $V \in \mathcal{T}_Y$. If we consider each $U_\alpha$ as a subspace of $X$, then $\left( f \vert U_\alpha \right)^{-1}(V) \in \mathcal{T} _ {U_\alpha}$ for each $\alpha$. Since each $U_\alpha$ is open in $X$, we have $\left( f \vert U_\alpha \right)^{-1}(V) \in \mathcal{T}_X$. We claim that 
+**(vi)** Let $\\{ U_\alpha \\}$ be a collection of open sets in $X$ such that $X = \bigcup U _ {\alpha}$. Suppose that each $f \vert U _ {\alpha} : U _ {\alpha} \to Y$ is continuous. Let $V \in \mathcal{T}_Y$. If we consider each $U _ {\alpha}$ as a subspace of $X$, then $\left( f \vert U _ {\alpha} \right)^{-1}(V) \in \mathcal{T} _ {U _ {\alpha}}$ for each $\alpha$. Since each $U _ {\alpha}$ is open in $X$, we have $\left( f \vert U _ {\alpha} \right)^{-1}(V) \in \mathcal{T}_X$. We claim that 
 
-$$\bigcup_\alpha \left( f \vert U_\alpha \right)^{-1}(V) = f^{-1}(V).$$
+$$\bigcup_\alpha \left( f \vert U _ {\alpha} \right)^{-1}(V) = f^{-1}(V).$$
 
-$\big[(\because)$ Let $x \in \bigcup_\alpha \left( f \vert U_\alpha \right)^{-1}(V)$. Then $x \in \left( f \vert U_\alpha \right)^{-1}(V)$ for some $\alpha$. Then $x \in U_\alpha$ and $(f \vert U_\alpha)(x) \in V$, so that $x \in f^{-1}(V)$.
+$\big[(\because)$ Let $x \in \bigcup_\alpha \left( f \vert U _ {\alpha} \right)^{-1}(V)$. Then $x \in \left( f \vert U _ {\alpha} \right)^{-1}(V)$ for some $\alpha$. Then $x \in U _ {\alpha}$ and $(f \vert U _ {\alpha})(x) \in V$, so that $x \in f^{-1}(V)$.
 
-If $y \in f^{-1}(V)$, then $f(y) \in V$. Since $f^{-1}(V) \subset X$, $y \in U_\alpha$ for some $\alpha$, so that $\left( f \vert U_{\alpha} \right)(y) = f(y) \in V$. Thus, $y \in \left( f \vert U_\alpha \right)^{-1}(V)$. Hence, $f^{-1}(V) = \bigcup_\alpha \left( f \vert U_\alpha \right)^{-1}(V)$. $\big]$
+If $y \in f^{-1}(V)$, then $f(y) \in V$. Since $f^{-1}(V) \subset X$, $y \in U _ {\alpha}$ for some $\alpha$, so that $\left( f \vert U _ {\alpha} \right)(y) = f(y) \in V$. Thus, $y \in \left( f \vert U _ {\alpha} \right)^{-1}(V)$. Hence, $f^{-1}(V) = \bigcup_\alpha \left( f \vert U _ {\alpha} \right)^{-1}(V)$. $\big]$
 
-Since $f^{-1}(V)= \bigcup_\alpha \left( f \vert U_\alpha \right)^{-1}(V) \in \mathcal{T}_X$, $f$ is continuous. $\blacksquare$
+Since $f^{-1}(V)= \bigcup_\alpha \left( f \vert U _ {\alpha} \right)^{-1}(V) \in \mathcal{T}_X$, $f$ is continuous. $\blacksquare$
 
 
 
