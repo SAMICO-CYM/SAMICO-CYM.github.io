@@ -38,18 +38,33 @@ for every closed contour $C$ lying in $D$.
 ## Theorem 2
 Suppose that
 
-**(i)** $C$ is simple closed contour with the counterclockwise direction.
+**(i)** $C$ is positively oriented simple closed contour.
 
-**(ii)** $C_k (k = 1, 2, \cdots, n)$ are disjoint, simple closed contours interior to $C$, with the counter clockwise directions.
+**(ii)** $C_k (k = 1, 2, \cdots, n)$ are disjoint, positively oriented simple closed contours interior to $C$.
 
 **(iii)** A function $f(z)$ is analytic on all of these contours and throughout the multiply connected domain consisting of the points inside $C$ and exterior to each $C_k$.
 
 Then 
 
-$$\int_C f(z) \, dz + \sum_{k=1}^n \int_{C_k} f(z) \, dz = 0.$$
+$$\int_C f(z) \, dz = \sum_{k=1}^n \int_{C_k} f(z) \, dz.$$
 
 ### Proof
 
 
 ---
 ## Corollary 2
+Let $C_1$ and $C_2$ denote positively oriented simple closed contours, where $C_1$ is interior to $C_2$. If a function $f(z)$ is analytic in the closed region consisting of those contours and all points between them, then 
+
+$$\int_{C_1} f(z) \, dz = \int_{C_2} f(z) \, dz.$$
+
+이 따름정리는 Principle of deformation of paths라고도 불리는데, $C_1$이 $f$가 analytic한 점들, 그러니까 $C_1$과 $C_2$ 사이에 있는 점들을 지나면서 "연속적으로" $C_2$로 변형된다고 했을 때, $C_1$에서의  $f$의 적분값은 변하지 않는다고 이해할 수 있기 때문이다. 
+
+---
+## Example
+Let $C$ be any positively oriented simple closed contour surrounding the origin. Then we can construct a positively oriented circle $C_0$ with center at the origin and sufficiently small radius, lying inside $C$. Since 
+
+$$\int_{C_0} \frac{1}{z} \, dz = 2 \pi i,$$
+
+by corollary 2, we have 
+
+$$\int_C \frac{1}{z} \, dz = 2 \pi i.$$
