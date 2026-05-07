@@ -60,6 +60,15 @@ $$\begin{align*}
 \psi(x) &= u_t(x, 0) = \sum_{n=1}^\infty \frac{n \pi c}{l} B_n \sin \frac{n \pi x}{l}.
 \end{align*}$$
 
+Since these expressions are the Fourier sine series, we have 
+
+$$\begin{align*}
+A_n &= \frac{2}{l}\int_0^l \phi(x) \sin \frac{n \pi x}{l} \, dx \\
+B_n &= \frac{2}{n \pi c}\int_0^l \psi(x) \sin \frac{n \pi x}{l} \, dx
+\end{align*}$$
+
+for each $n = 1, 2, \cdots.$
+
 ---
 ## Diffusion Equation
 We consider the problem
@@ -92,3 +101,8 @@ $$\begin{align*}
 \phi(x) &= u(x, 0) = \sum_{n=1}^\infty A_n \sin \frac{n \pi x}{l}.
 \end{align*}$$
 
+Since this expression is a Fourier sine series, we have 
+
+$$\begin{align*}
+A_n &= \frac{2}{l}\int_0^l \phi(x) \sin \frac{n \pi x}{l} \, dx.
+\end{align*}$$
