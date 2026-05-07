@@ -182,8 +182,12 @@
   },
   "active": "7a4503827723e1d6",
   "lastOpenFiles": [
-    "_posts/Vector Calculus/2026-03-05-Class-C1-Functions.md",
+    "assets/img/gre2.png",
+    "_site/assets/img/gre1.png",
+    "_posts/Graph Theory/2026-04-10-Graph.md",
     "_posts/Vector Calculus/2026-05-08-Green-Theorem.md",
+    "assets/img/gre1.png",
+    "_posts/Vector Calculus/2026-03-05-Class-C1-Functions.md",
     "_site/posts/Green-Theorem/index.html",
     "_site/posts/Green-Theorem",
     "_site/page16/index.html",
@@ -202,7 +206,6 @@
     "_posts/Graph Theory/2026-04-27-Adjacency-Matrix.md",
     "_posts/Graph Theory/2026-05-05-Degree.md",
     "_posts/Graph Theory/2026-04-10-Isomorphism-Of-Graph.md",
-    "_posts/Graph Theory/2026-04-10-Graph.md",
     "_posts/Dynamics/2026-02-20-Multi-dimensional-Linear-Maps.md",
     "_posts/Dynamics/2026-02-19-Dynamical-System.md",
     "_posts/Complex Analysis/2026-03-09-Complex-Number.md",
@@ -224,8 +227,6 @@
     "_site/assets/img/coor2.png",
     "_site/assets/img/coor1.png",
     "assets/img/coor2.png",
-    "assets/img/coor1.png",
-    "_site/assets/img/triangle.png",
-    "_site/assets/img/permutation2.png"
+    "assets/img/coor1.png"
   ]
 }

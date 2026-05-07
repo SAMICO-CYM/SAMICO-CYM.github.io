@@ -26,6 +26,8 @@ The curve $C$ can be expressed by two different curves:
 
 $$C_1: y = f_1(x), a \leq x \leq b, \quad -C_2: y = f_2(x), a \le x \le b.$$
 
+![](assets/img/gre1.png)
+
 Then we have 
 
 $$\begin{align*}
@@ -40,6 +42,8 @@ $$\begin{align*}
 Similarly, we can integrate $Q_x$ on the region $R$. We can divide $C$ by two distinct curves $C'_1$ and $C'_2$: 
 
 $$-C'_1: x = g_1(y), c \le y \le d, \quad C'_2: x = g_2(y), c \leq y \leq d$$
+
+![](assets/img/gre2.png)
 
 Then we obtain 
 
