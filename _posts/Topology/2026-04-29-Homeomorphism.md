@@ -19,6 +19,17 @@ Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces.
 ## Remark
 **(i)** $f: X \to Y$ is a homeomorphism $\iff$ $[f(U) \in \mathcal{T}_Y \iff U \in \mathcal{T}_X]$. 
 
+(ii) Even though $f$ is bijective and continuous, $f^{-1}$ need not be continuous.
+
+$\big[(\because)$ The function $h: [0, 1) \to S^1$ defined by $h(t) = (\cos 2\pi t, \sin 2\pi t)$ is bijective and continuous. But for the neigbhorhood $V$ of $(1, 0)$ in $S^1$, we must have $h^{-1}(V) = [0, a) \cup (b, 1)$ for some $a, b \in (0, 1)$. This set is not open in $[0, 1)$. Thus, $h^{-1}$ is not continuous.$\big]$
+---
+## Example
+Usual topology가 부여된 실수 공간 $\mathbb{R}$을 생각하자. 
+
+**(i)** 함수 $f: (-1, 1) \to \mahtbb{R}$가 $f(x) = \tan \frac{\pi}{2}x$로 정의되었다고 하자. 자명하게 $f$는 전단사이고, $f$와 $f^{-1}$ 모두 연속이므로 $f$는 homeomorphism이다. 즉 $\mathbb{R} \cong (-1, 1)$이다. 이 사실을 이용해서 실수 공간은 임의의 열린 구간과 homeomorphic이다는 것을 보일 수 있다. 
+
+**(ii)** Open unit disk $D$에 대해서, 함수 $g: D \to \mathbb{R}^2$가 $g(x, y) = \frac{(x, y)}{1-(x^2+y^2)}$로 정의되었다고 하자. 마찬가지로 $g$는 전단사이고, $g$와 $g^{-1}$ 모두 연속이므로 $g$는 homeomorphism이다. 즉 $D \cong \mathbb{R}^2$이다. 
+
 ---
 ## Theorem 1
 Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $f: X \to Y$ be a homeomorphism. Let $A \subset X$.
