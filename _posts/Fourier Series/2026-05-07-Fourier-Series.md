@@ -39,8 +39,20 @@ b_n &= \frac{1}{L} \int_{-L}^L f(x) \sin \frac{n \pi}{L} x \, dx.
 
 **(i)** Let $f$ be an even real-valued function on $(-L, L)$. Then the ***Fourier cosine series*** of $f$ is defined by 
 
-$$\frac{a_0}{2} + \sum_{n=1}^{\infty} a_n \cos \frac{n \pi}{L} x \\ \text{where } a_n = \frac{2}{L} \int_{0}^L f(x) \cos \frac{n \pi}{L} x \, dx$$. 
+$$\frac{a_0}{2} + \sum_{n=1}^{\infty} a_n \cos \frac{n \pi}{L} x$$
+
+where 
+
+$$\begin{align*}
+    a_n &= \frac{2}{L} \int_{0}^L f(x) \cos \frac{n \pi}{L} x \, dx.
+\end{align*}$$
 
 **(ii)** Let $f$ be an odd real-valued function on $(-L, L)$. Then the ***Fourier sine series*** of $f$ is defined by 
 
-$$\sum_{n=1}^{\infty} b_n \sin \frac{n \pi}{L} x \\ \text{where } b_n = \frac{2}{L} \int_{0}^L f(x) \sin \frac{n \pi}{L} x \, dx$$.
+$$\sum_{n=1}^{\infty} b_n \sin \frac{n \pi}{L} x $$
+
+where 
+
+$$\begin{align*}
+    b_n &= \frac{2}{L} \int_{0}^L f(x) \sin \frac{n \pi}{L} x \, dx.
+\end{align*}$$
