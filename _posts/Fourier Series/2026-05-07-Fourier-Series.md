@@ -18,19 +18,19 @@ is called the ***Fourier series*** of $x$ (relative to $X$). The coefficient $\l
 ## Remark
 Note that 
 
-$$\left\\{ 1, \cos \frac{n\pi}{p} x, \sin \frac{n \pi}{p} x \, \bigg \vert \, n \in \mathbb{N} \right\\}$$
+$$\left \\{ 1, \cos \frac{n\pi x}{L}, \sin \frac{n \pi x}{L} \mid n \in \mathbb{N} \right \\}$$
 
 is an orthonormal basis of $\mathcal{R}[-L, L]$. Then the Fourier series of a function $f$ in $\mathcal{R}[-L, L]$ relative to the trigonometric set is 
 
 $$\begin{align*}
-\sum_{n=0}^\infty \langle f, \phi_n \rangle \phi_n(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n \cos \frac{n \pi}{L} x + b_n \sin \frac{n \pi}{L} x \right)
+\sum_{n=0}^\infty \langle f, \phi_n \rangle \phi_n(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n \cos \frac{n \pi x}{L} + b_n \sin \frac{n \pi x}{L} \right)
 \end{align*}$$ 
 
 where 
 
 $$\begin{align*}
-a_n &= \frac{1}{L} \int_{-L}^L f(x) \cos \frac{n \pi}{L} x \, dx \\ 
-b_n &= \frac{1}{L} \int_{-L}^L f(x) \sin \frac{n \pi}{L} x \, dx.
+a_n &= \frac{1}{L} \int_{-L}^L f(x) \cos \frac{n \pi x}{L} \, dx \\ 
+b_n &= \frac{1}{L} \int_{-L}^L f(x) \sin \frac{n \pi x}{L} \, dx.
 \end{align*}$$ 
 
 ---
@@ -44,15 +44,15 @@ $$\frac{a_0}{2} + \sum_{n=1}^{\infty} a_n \cos \frac{n \pi}{L} x$$
 where 
 
 $$\begin{align*}
-    a_n &= \frac{2}{L} \int_{0}^L f(x) \cos \frac{n \pi}{L} x \, dx.
+    a_n &= \frac{2}{L} \int_{0}^L f(x) \cos \frac{n \pi x}{L} \, dx.
 \end{align*}$$
 
 **(ii)** Let $f$ be an odd real-valued function on $(-L, L)$. Then the ***Fourier sine series*** of $f$ is defined by 
 
-$$\sum_{n=1}^{\infty} b_n \sin \frac{n \pi}{L} x $$
+$$\sum_{n=1}^{\infty} b_n \sin \frac{n \pi x}{L} $$
 
 where 
 
 $$\begin{align*}
-    b_n &= \frac{2}{L} \int_{0}^L f(x) \sin \frac{n \pi}{L} x \, dx.
+    b_n &= \frac{2}{L} \int_{0}^L f(x) \sin \frac{n \pi x}{L} \, dx.
 \end{align*}$$
