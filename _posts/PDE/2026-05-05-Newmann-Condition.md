@@ -106,5 +106,5 @@ Since this expression is the Fourier cosine series, we have
 $$\begin{align*}
 A_n &= \frac{2}{l}\int_0^l \phi(x) \cos \frac{n \pi x}{l} \, dx
 \end{align*}$$
-
+ 
 for each $n = 0, 1, 2, \cdots.$
