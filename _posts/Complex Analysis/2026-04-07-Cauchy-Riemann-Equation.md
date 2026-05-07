@@ -67,7 +67,7 @@ $$
 ### Proof
 Let $\Delta z = \Delta x + i \Delta y$ where $0 < \vert \Delta z \vert < \varepsilon$. Since the first order partial derivatives exist and are continuous at $(x_0, y_0)$, we have 
 
-$$\Delta u = u(x_0 + \Delta x, y_0 + \Delta y) - u(x_0, y_0) = u_x \Delta x + u_y \Delta y + \varepsilon_1 \Delta x + \varepsilon_2 \Delta y$$ 
+$$\Delta u = u(x_0 + \Delta x, y_0 + \Delta y) - u(x_0, y_0) = u_x \Delta x + u_y \Delta y + \varepsilon_1 \Delta x + \varepsilon_2 \Delta y$$
 
 for some $\varepsilon_1, \varepsilon_2 > 0$ such that $\varepsilon_1, \varepsilon_2 \to 0$ as $(\Delta x, \Delta y) \to 0$. Then we have 
 
