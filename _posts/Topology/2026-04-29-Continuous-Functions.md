@@ -177,7 +177,9 @@ x \in f^{-1}(g^{-1}(W)) & \iff f(x) \in g^{-1}(W) \\
 
 Since $(g \circ f)^{-1}(W) = f^{-1}(g^{-1}(W)) \in \mathcal{T}_X$, $g \circ f$ is continuous.
 
-**(iv)** Let $V \in \mathcal{T}_Y$. Since $f$ is continuous, $f^{-1}(V) \in \mathcal{T}_X$. Then $f^{-1}(V) \cap A \in \mathcal{T}_A$. We claim that $f^{-1}(V) \cap A = \left( f \vert_A \right)^{-1}(V)$.
+**(iv)** By (ii), the inclusion $i: A \to X$ is continuous. By (iii), $f \vert A = f \circ i: A \to Y$ is continuous. 
+
+Let $V \in \mathcal{T}_Y$. Since $f$ is continuous, $f^{-1}(V) \in \mathcal{T}_X$. Then $f^{-1}(V) \cap A \in \mathcal{T}_A$. We claim that $f^{-1}(V) \cap A = \left( f \vert_A \right)^{-1}(V)$.
 
 $\big[(\because)$ Let $x \in \left( f \vert_A \right)^{-1}(V)$. Since $\left( f \vert_A \right)^{-1}(V) \subset A$, $x \in A$. Then $f(x) = (f \vert_A)(x) \in V$, so that $x \in f^{-1}(V) \cap A$. 
 
