@@ -145,15 +145,15 @@ Let $X, Y, Z$ be topological spaces. Then
 
 **(iii)** If $f : X \to Y$ and $g : Y \to Z$ are continuous, then the composition $g \circ f$ is continuous.
 
-**(iv)** If $f : X \to Y$ is continuous and $A$ is a subspace of $X$, then the restriction of $f$ onto $A$, denoted by $f|_A : A \to Y$, is continuous.
+**(iv)** If $f : X \to Y$ is continuous and $A$ is a subspace of $X$, then the restriction of $f$ onto $A$, denoted by $f|\vert_A : A \to Y$, is continuous.
 
 **(v)** Let $f : X \to Y$ be a continuous function.
 
-  **(1)** If $Z$ is a subspace of $Y$ containing $f(X)$, then the function $g : X \to Z$, obtained by restricting the range of $f$, is continuous.
+**(v-1)** If $Z$ is a subspace of $Y$ containing $f(X)$, then the function $g : X \to Z$, obtained by restricting the range of $f$, is continuous.
 
-  **(2)** If $Y$ is a subspace of $Z$, then the function $h : X \to Z$, obtained by expanding the range of $f$, is continuous.
+**(v-2)** If $Y$ is a subspace of $Z$, then the function $h : X \to Z$, obtained by expanding the range of $f$, is continuous.
 
-**(vi)** Let $\\{U_\alpha\\}$ be a collection of open sets in $X$. The function $f : X \to Y$ is continuous if $X = \bigcup U_\alpha$ and $f|_{U_\alpha}$ is continuous for each $\alpha$.
+**(vi)** Let $\\{U_\alpha\\}$ be a collection of open sets in $X$. The function $f : X \to Y$ is continuous if $X = \bigcup U_\alpha$ and $f \vert _ {U_\alpha}$ is continuous for each $\alpha$.
 
 ### Proof
 
