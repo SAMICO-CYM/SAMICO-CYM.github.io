@@ -18,7 +18,7 @@ is called the ***Fourier series*** of $x$ (relative to $X$). The coefficient $\l
 ## Remark
 Note that 
 
-$$\left\\{ 1, \cos \frac{n\pi}{p} x, \sin \frac{n \pi}{p} x \, \bigg| \, n, m \in \mathbb{N} \right\\}$$
+$$\left\\{ 1, \cos \frac{n\pi}{p} x, \sin \frac{n \pi}{p} x \, \bigg \vert \, n \in \mathbb{N} \right\\}$$
 
 is an orthonormal basis of $\mathcal{R}[-L, L]$. Then the Fourier series of a function $f$ in $\mathcal{R}[-L, L]$ relative to the trigonometric set is 
 
