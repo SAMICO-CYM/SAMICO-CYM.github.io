@@ -21,7 +21,7 @@ Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces.
 
 **(ii)** Even though $f$ is bijective and continuous, $f^{-1}$ need not be continuous.
 
-$\big[(\because)$ The function $h: [0, 1) \to S^1$ defined by $h(t) = (\cos 2\pi t, \sin 2\pi t)$ is bijective and continuous. But for the neighborhood $V$ of $(1, 0)$ in $S^1$, we must have $h^{-1}(V) = [0, a) \cup (b, 1)$ for some $a, b \in (0, 1)$. This set is not open in $[0, 1)$. Thus, $h^{-1}$ is not continuous.$\big]$
+$\big[(\because)$ The function $h: [0, 1) \to S^1$ defined by $h(t) = (\cos 2\pi t, \sin 2\pi t)$ is bijective and continuous. But for the point $(1, 0)$ and the neighborhood $V$ of $h^{-1}(1, 0) = 0$ in $[0, 1)$, we must have that for any neighborhood $U$ of $(1, 0)$, $h^{-1}(U) = [0, a) \cup (b, 1) \not \subset V$ for some $a, b \in (0, 1)$. Thus, $h^{-1}$ is not continuous.$\big]$
 
 ---
 ## Example
