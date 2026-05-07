@@ -143,9 +143,9 @@ Let $X, Y, Z$ be topological spaces. Then
 
 **(ii)** Let $A$ be a subspace of $X$. The function $i : A \hookrightarrow X$ given by $i(a) = a, \forall a \in A$, called the ***inclusion***, is continuous.
 
-**(iii)** If $f : X \to Y$ and $g : Y \to Z$ are continuous, then the composition $g \circ f$ is continuous.
+**(iii)** If $f : X \to Y$ and $g : Y \to Z$ are continuous, then the composition $g \circ f: X \to Z$ is continuous.
 
-**(iv)** If $f : X \to Y$ is continuous and $A$ is a subspace of $X$, then the restriction of $f$ onto $A$, denoted by $f|\vert_A : A \to Y$, is continuous.
+**(iv)** If $f : X \to Y$ is continuous and $A$ is a subspace of $X$, then the restriction of $f$ onto $A$, denoted by $f\vert_A : A \to Y$, is continuous.
 
 **(v)** Let $f : X \to Y$ be a continuous function.
 
@@ -156,6 +156,70 @@ Let $X, Y, Z$ be topological spaces. Then
 **(vi)** Let $\\{U_\alpha\\}$ be a collection of open sets in $X$. The function $f : X \to Y$ is continuous if $X = \bigcup U_\alpha$ and $f \vert _ {U_\alpha}$ is continuous for each $\alpha$.
 
 ### Proof
+**(i)** Let $V \in \mathcal{T}_Y$. If $y_0 \in V$, then $f^{-1}(V) = X \in \mathcal{T}_X$. If $y_0 \notin V$, then $f^{-1}(V) = \emptyset \in \mathcal{T}_X$. Thus, $f$ is continuous.
+
+**(ii)** Let $V \in \mathcal{T}_Y$. We claim that $i^{-1}(V) = V \cap A$. 
+
+$\big[(\because)$ Let $a \in i^{-1}(V)$. Then $a = i(a) \in V$. Since $a \in A$, we have $a \in V \cap A$. If $b \in V \cap A$, then $i(b) = b \in V$, so that $b \in i^{-1}(V)$. Thus, $i^{-1}(V) = V \cap A$. $\big]$ 
+
+Since $i^{-1}(V) = V \cap A \in \mathcal{T}_A$, $i$ is continuous. 
+
+**(iii)** Let $W \in \mathcal{T}_Z$. Since $g$ is continuous, $g^{-1}(W) \in \mathcal{T}_Y$. Since $f$ is continuous, $f^{-1}(g^{-1}(W)) \in \mathcal{T}_X$. We claim that $f^{-1}(g^{-1}(W)) = (g \circ f)^{-1}(W)$.
+
+$\big[(\because)$ 
+
+$$\begin{align*}
+x \in f^{-1}(g^{-1}(W)) & \iff f(x) \in g^{-1}(W) \\
+& \iff g(f(x)) \in W \\
+& \iff (g \circ f)(x) \in W \\
+& \iff x \in (g \circ f)^{-1}(W)
+\end{align*}$$
+
+$\big]$
+
+Since $(g \circ f)^{-1}(W) = f^{-1}(g^{-1}(W)) \in \mathcal{T}_X$, $g \circ f$ is continuous.
+
+**(iv)** Let $V \in \mathcal{T}_Y$. Since $f$ is continuous, $f^{-1}(V) \in \mathcal{T}_X$. Then $f^{-1}(V) \cap A \in \mathcal{T}_A$. We claim that $f^{-1}(V) \cap A = \left( f \vert_A \right)^{-1}(V)$.
+
+$\big[(\because)$ Let $x \in \left( f \vert_A \right)^{-1}(V)$. Since $\left( f \vert_A \right)^{-1}(V) \subset A$, $x \in A$. Then $f(x) = (f \vert_A)(x) \in V$, so that $x \in f^{-1}(V) \cap A$. 
+
+If $y \in f^{-1}(V) \cap A$, then $y \in A$ and $(f \vert_A)(y) = f(y) \in V$, which means that $y \in \left( f \vert_A \right)^{-1}(V)$. Thus, $f^{-1}(V) \cap A = \left( f \vert_A \right)^{-1}(V)$. $\big]$
+
+Since $\left( f \vert_A \right)^{-1}(V) = f^{-1}(V) \cap A \in \mathcal{T}_A$, $f \vert_A$ is continuous. 
+
+**(v-1)** Let $W \in \mathcal{T}_Z$. Since $Z$ is a subspace of $Y$, $W = V \cap Z$ for some $V \in \mathcal{T}_Y$. Note that $f(x) = g(x), \forall x \in X$. Then we have 
+
+$$\begin{align*}
+g^{-1}(W) &= f^{-1}(W) \\
+&= f^{-1}(V \cap Z) \\
+&= f^{-1}(V) \cap f^{-1}(Z) \\
+&= f^{-1}(V) \cap X \\
+&= f^{-1}(V) \in \mathcal{T}_X,
+\end{align*}$$
+
+so that $g$ is continuous.
+
+**(v-2)** Let $W \in \mathcal{T}_Z$. Since $Y$ is a subspace of $Z$, $V := W \cap Z \in \mathcal{T}_Y$. Note that $f(x) = h(x), \forall x \in X$. Then we have 
+
+$$\begin{align*}
+h^{-1}(W) &= h^{-1}(W) \cap X \\
+&= h^{-1}(W) \cap h^{-1}(Z) \\
+&= h^{-1}(W \cap Z) \\
+&= h^{-1}(V) \\
+&= f^{-1}(V) \in \mathcal{T}_X,
+\end{align*}$$
+
+so that $h$ is continuous.
+
+**(vi)** Let $\\{ U_\alpha \\}$ be a collection of open sets in $X$ such that $X = \bigcup U_\alpha$. Suppose that each $f \vert U_\alpha : U_\alpha \to Y$ is continuous. Let $V \in \mathcal{V}$. If we consider each $U_\alpha$ as a subspace of $X$, then $\left( f \vert U_\alpha \right)^{-1}(V) \in \mathcal{T} _ {U_\alpha}$ for each $\alpha$. Since each $U_\alpha$ is open in $X$, we have $\left( f \vert U_\alpha \right)^{-1}(V) \in \mathcal{T}_X$. We claim that 
+
+$$\bigcup_\alpha \left( f \vert U_\alpha \right)^{-1}(V) = f^{-1}(V).$$
+
+$\big[(\because)$ Let $x \in \bigcup_\alpha \left( f \vert U_\alpha \right)^{-1}(V)$. Then $x \in \left( f \vert U_\alpha \right)^{-1}(V)$ for some $\alpha$. Then $x \in U_\alpha$ and $(f \vert U_\alpha)(x) \in V$, so that $x \in f^{-1}(V)$.
+
+If $y \in f^{-1}(V)$, then $f(y) \in V$. Since $f^{-1}(V) \subset X$, $y \in U_\alpha$ for some $\alpha$, so that $\left( f \vert U_{\alpha} \right)(y) = f(y) \in V$. Thus, $y \in \left( f \vert U_\alpha \right)^{-1}(V)$. Hence, $f^{-1}(V) = \bigcup_\alpha \left( f \vert U_\alpha \right)^{-1}(V)$. $\big]$
+
+Since $f^{-1}(V)= \bigcup_\alpha \left( f \vert U_\alpha \right)^{-1}(V) \in \mathcal{T}_X$, $f$ is continuous. $\blacksquare$
 
 
 
