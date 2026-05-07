@@ -1,7 +1,7 @@
 --- 
-title: 
-date: 2026-03-
-categories: [Mathematics, ]
+title: Multiply Connected Domain
+date: 2026-05-08
+categories: [Mathematics, Complex Analysis]
 tags: []
 math: true
 ---
