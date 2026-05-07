@@ -197,19 +197,9 @@ g^{-1}(W) &= f^{-1}(W) \\
 
 so that $g$ is continuous.
 
-**(v-2)** Let $W \in \mathcal{T}_Z$. Since $Y$ is a subspace of $Z$, $V := W \cap Z \in \mathcal{T}_Y$. Note that $f(x) = h(x), \forall x \in X$. Then we have 
+**(v-2)** By (ii), the inclusion $i: Y \to Z$ is continuous. By (iii), $h = i \circ f$ is continuous. 
 
-$$\begin{align*}
-h^{-1}(W) &= h^{-1}(W) \cap X \\
-&= h^{-1}(W) \cap h^{-1}(Z) \\
-&= h^{-1}(W \cap Z) \\
-&= h^{-1}(V) \\
-&= f^{-1}(V) \in \mathcal{T}_X,
-\end{align*}$$
-
-so that $h$ is continuous.
-
-**(vi)** Let $\\{ U_\alpha \\}$ be a collection of open sets in $X$ such that $X = \bigcup U_\alpha$. Suppose that each $f \vert U_\alpha : U_\alpha \to Y$ is continuous. Let $V \in \mathcal{V}$. If we consider each $U_\alpha$ as a subspace of $X$, then $\left( f \vert U_\alpha \right)^{-1}(V) \in \mathcal{T} _ {U_\alpha}$ for each $\alpha$. Since each $U_\alpha$ is open in $X$, we have $\left( f \vert U_\alpha \right)^{-1}(V) \in \mathcal{T}_X$. We claim that 
+**(vi)** Let $\\{ U_\alpha \\}$ be a collection of open sets in $X$ such that $X = \bigcup U_\alpha$. Suppose that each $f \vert U_\alpha : U_\alpha \to Y$ is continuous. Let $V \in \mathcal{T}_Y$. If we consider each $U_\alpha$ as a subspace of $X$, then $\left( f \vert U_\alpha \right)^{-1}(V) \in \mathcal{T} _ {U_\alpha}$ for each $\alpha$. Since each $U_\alpha$ is open in $X$, we have $\left( f \vert U_\alpha \right)^{-1}(V) \in \mathcal{T}_X$. We claim that 
 
 $$\bigcup_\alpha \left( f \vert U_\alpha \right)^{-1}(V) = f^{-1}(V).$$
 
