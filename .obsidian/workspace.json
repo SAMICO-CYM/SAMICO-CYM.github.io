@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Abstract Algebra/2026-04-29-Direct-Product-Group.md",
+                "file": "_posts/Complex Analysis/2026-04-09-Analytic-Function.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-29-Direct-Product-Group"
+              "title": "2026-04-09-Analytic-Function"
             }
           }
         ]
@@ -180,8 +180,9 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "7de54e063efb4f46",
+  "active": "7a4503827723e1d6",
   "lastOpenFiles": [
+    "_posts/Abstract Algebra/2026-04-29-Direct-Product-Group.md",
     "_posts/Fourier Series/2026-05-07-Fourier-Series.md",
     "_posts/Fourier Series",
     "_posts/Abstract Algebra/2026-04-01-Special-Morphisms.md",
@@ -192,7 +193,6 @@
     "_posts/Abstract Algebra/2026-05-06-Kernel.md",
     "_site/posts/Kernel/index.html",
     "_site/posts/Kernel",
-    "_posts/Abstract Algebra/2026-04-29-Direct-Product-Group.md",
     "_posts/Topology/2026-04-30-Open-map.md",
     "_posts/Graph Theory/2026-05-05-Degree.md",
     "assets/img/graph.png",
