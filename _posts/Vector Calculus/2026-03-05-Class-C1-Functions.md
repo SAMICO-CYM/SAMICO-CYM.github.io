@@ -27,7 +27,7 @@ $\blacksquare$
 
 ## Definition 1
 **(i)** A differentiable mapping $\mathbf{f}$ of an open set $E \subset \mathbb{R}^n$ into $\mathbb{R}^m$ is said to be ***continuously differentiable*** in $E$ if $\mathbf{f}'$ is a continuous mapping of $E$ into $\mathcal{L}(\mathbb{R}^n, \mathbb{R}^m)$. More explicitly, it is required that to every $\mathbf{x} \in E$ and to every $\varepsilon > 0$ corresponds a $\delta > 0$ such that $$||\mathbf{f}'(\mathbf{y}) - \mathbf{f}'(\mathbf{x})|| < \varepsilon$$ if $\mathbf{y} \in E$ and $\| \mathbf{x} - \mathbf{y} \| < \delta$. 
-\
+
 If $\mathbf{f}$ is cotinuously diffenrentiable in $E$, then we also say that $\mathbf{f}$ is a $C^1$-mapping, or $\mathbf{f}$ is of class $C^1$, and denoted by $\mathbf{f} \in C^1(E)$.
 
 **(ii)** If the partial derivatives of the functions $f_i$ of order less than or equal to $r$ exist and are continuous on $E$, we say that $\mathbf{f}$ is ***of class $C^r$*** on $E$. (The function $\mathbf{f}$ is of class $C^r$ on $E$ $\iff$ each $D_j f_i$ is of class $C^{r-1}$ on $E$.)

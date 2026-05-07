@@ -13,6 +13,20 @@ Let $f(z)$ be a continuous function on a domain $D$. A function $F(z)$ is called
 ## Remark
 An antiderivative of a given function $f(z)$ is unique except for an additive constant.
 
-$\big[(\because)$ Let $F(z)$ and $G(z)$ be two antiderivatives of $f(z)$. Since $F'(z) = f(z) = G'(z)$ on $D$, we have $(F - G)'(z) = F'(z) - G'(z) = 0$ on $D$, which means that the function $F - G$ is analytic on $D$. By [Theorem 1]({% post_url Complex Analysis/2026-04-09-Analytic-Function %}#theorem-1), we have $F(z) - G(z) = (F-G)(z) = C$ for some constant $C$. 
+$\big[(\because)$ Let $F(z)$ and $G(z)$ be two antiderivatives of $f(z)$. Since $F'(z) = f(z) = G'(z)$ on $D$, we have $(F - G)'(z) = F'(z) - G'(z) = 0$ on $D$, which means that the function $F - G$ is analytic on $D$. By [Theorem 1]({% post_url Complex Analysis/2026-04-09-Analytic-Function %}#theorem-1), we have $F(z) - G(z) = (F-G)(z) = C$ for some constant $C$.$\big]$
 
-$\big]$
+---
+## Theorem 1
+Suppose that a function $f(z)$ is continuous on a domain $D$. TFAE.
+
+**(i)** $f(z)$ has an antiderivative $F(z)$ throughout $D$.
+
+**(ii)** For any contour $C \subset D$, extending from any fixed point $z_1$ to any fixed point $z_2$, the value of integral along $C$ is ***independent of path*** taken. In particular, 
+
+$$\int_{z_1}^{z_2} f(z) \, dz = F(z_2) - F(z_1),$$
+
+where $F(z)$ is the antiderivative of $f(z)$.
+
+**(iii)** For any closed contour $C \subset D$, $\displaystyle \int_C f(z) \, dz = 0$.
+
+### Proof
