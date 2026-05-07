@@ -23,8 +23,14 @@ $$\left\\{ 1, \cos \frac{n\pi}{p} x, \sin \frac{n \pi}{p} x \, \bigg| \, n, m \i
 is an orthonormal basis of $\mathcal{R}[-L, L]$. Then the Fourier series of a function $f$ in $\mathcal{R}[-L, L]$ relative to the trigonometric set is 
 
 $$\begin{align*}
-\sum_{n=0}^\infty \langle f, \phi_n \rangle \phi_n(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n \cos \frac{n \pi}{L} x + b_n \sin \frac{n \pi}{L} x \right)\\ 
-\text{where } a_n = \frac{1}{L} \int_{-L}^L f(x) \cos \frac{n \pi}{L} x \, dx \\ b_n = \frac{1}{L} \int_{-L}^L f(x) \sin \frac{n \pi}{L} x \, dx.
+\sum_{n=0}^\infty \langle f, \phi_n \rangle \phi_n(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n \cos \frac{n \pi}{L} x + b_n \sin \frac{n \pi}{L} x \right)
+\end{align*}$$ 
+
+where 
+
+$$\begin{align*}
+a_n &= \frac{1}{L} \int_{-L}^L f(x) \cos \frac{n \pi}{L} x \, dx \\ 
+b_n &= \frac{1}{L} \int_{-L}^L f(x) \sin \frac{n \pi}{L} x \, dx.
 \end{align*}$$ 
 
 ---
