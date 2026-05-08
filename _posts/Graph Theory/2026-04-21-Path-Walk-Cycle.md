@@ -13,6 +13,8 @@ Let $G$ be a graph, and let $v_1, v_2, ..., v_n \in V(G)$.
 
 **(ii)** A ***walk*** between $v_1$ and $v_n$ in $G$ is a sequence of not necessarily distinct vertices $v_1, v_2, ..., v_n$ such that $\\{ v_{i}, v_{i+1} \\} \in E(G), \forall i \in [n]$.
 
+**(iii)** A ***trail*** in $G$ is a walk such that no edge occurs more than once.  
+
 **(iii)** A ***cycle*** in $G$ is a subgraph isomorphic to $k$-cycle $C_k$ for some $k \le \vert V(G) \vert$.
 
 **(iv)** The ***distance*** between two vertices $u$ and $v$ in $G$, denoted by $d_G(u, v)$, is the length of the shortest $uv$-path in $G$. If $u$ and $v$ are not connected in $G$, we write $d_G(u, v) = \infty$.
