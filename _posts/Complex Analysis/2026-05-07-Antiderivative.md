@@ -59,3 +59,77 @@ $$\begin{align*}
 Thus, the value $F(z_n) - F(z_1)$ of this countour integral is independent of the contour $C$. 
 
 **(ii)** $\Longrightarrow$ **(iii)**
+
+Suppose that the value of the integral of $f(z)$ is independent of path in $D$. Let $z_1$ and $z_2$ be two points on any closed contour $C$ lying in $D$ and form two paths $C_1$ and $C_2$, each with initial point $z_1$ and final point $z_2$, such that $C = C_1 - C_2$. By the independence of path, we have 
+
+$$\int _ {C_1} f(z) \, dz = \int _ {C_2} f(z) \, dz,$$
+
+so that 
+
+$$\begin{align*}
+\int_C f(z) \, dz &= \int _ {C_1 - C_2} f(z) \, dz \\
+&= \int _ {C_1} f(z) \, dz + \int _ {-C_2} f(z) \, dz \\
+&= \int _ {C_1} f(z) \, dz - \int _ {C_2} f(z) \, dz \\
+&= 0.
+\end{align*}$$
+
+**(iii)** $\Longrightarrow$ **(i)**
+
+Suppose that the value of the integral on the closed contour $C$ in $D$ is zero. We let $C_1$ and $C_2$ denote any two contours, lying in $D$, from a point $z_1$ to a point $z_2$. Then $C := C_1 - C_2$ is a closed contour in $D$. Then we have 
+
+$$\begin{align*}
+0 &= \int_C f(z) \, dz \\
+&= \int _ {C_1 - C_2} f(z) \, dz \\
+&= \int _ {C_1} f(z) \, dz + \int _ {-C_2} f(z) \, dz \\
+&= \int _ {C_1} f(z) \, dz - \int _ {C_2} f(z) \, dz,
+\end{align*}$$
+
+so that 
+
+$$\int _ {C_1} f(z) \, dz = \int _ {C_2} f(z) \, dz.$$
+
+Thus, the value of the integral on a contour in $D$ is independent of path. 
+
+We define the function 
+
+$$F(z) = \int _ {z_0}^z f(s) \, ds$$
+
+on $D$, where $z_0$ is a fixed point in $D$. Note that 
+
+$$\begin{align*}
+F(z + \Delta z) - F(z) &= \int _ {z_0} ^ {z + \Delta z} f(s) \, ds - \int _ {z_0}^z f(s) \, ds \\
+&= \int _ {z} ^ {z + \Delta z} f(s) \, ds,
+\end{align*}$$
+
+and we regard this integral as the contour integral in which the path is a line segment from $z$ to $z + \Delta z$. 
+
+Since 
+
+$$\int _ {z} ^ {z + \Delta z} ds = \Delta z,$$
+
+we have 
+
+$$f(z) = \frac{1}{\Delta z} \int _ {z} ^ {z + \Delta z} f(z) \, ds,$$
+
+so that
+
+$$\frac{F(z+ \Delta z) - F(z)}{\Delta z} - f(z) = \frac{1}{\Delta z}\int _ {z} ^ {z + \Delta z} [f(s) - f(z)] \, ds.$$
+
+Since $f(z)$ is continuous at $z$, for each $\varepsilon > 0$, there exists $\delta > 0$ such that 
+
+$$\vert s - z \vert < \delta \implies \vert f(s) - f(z) \vert < \varepsilon.$$
+
+For sufficiently small $\Delta z$, so that $\vert \Delta z \vert < \delta$, we have 
+
+$$\begin{align*}
+\left \vert \frac{F(z+ \Delta z) - F(z)}{\Delta z} - f(z) \right \vert &= \left \vert \frac{1}{\Delta z}\int _ {z} ^ {z + \Delta z} [f(s) - f(z)] \, ds \right \vert \\
+&\le \frac{1}{\vert \Delta z \vert} \int _ {z} ^ {z + \Delta z} \vert f(s) - f(z) \vert \, ds \\
+& < \frac{1}{\vert \Delta z \vert} \varepsilon \vert \Delta z \vert \\
+& = \varepsilon.
+\end{align*}$$
+
+Thus, we have 
+
+$$F'(z) = \lim_{\Delta z \to 0} \frac{F(z+ \Delta z) - F(z)}{\Delta z} = f(z)$$
+
+on $D$. $\blacksquare$
