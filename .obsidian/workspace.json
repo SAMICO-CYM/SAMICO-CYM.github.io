@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Complex Analysis/2026-05-08-Multiply-Connected-Domain.md",
+                "file": "_posts/Graph Theory/2026-05-05-Degree.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-08-Multiply-Connected-Domain"
+              "title": "2026-05-05-Degree"
             }
           }
         ],
@@ -197,10 +197,11 @@
   },
   "active": "eb01c4f1d6188e0a",
   "lastOpenFiles": [
+    "_posts/Graph Theory/2026-04-10-Graph.md",
+    "_posts/Complex Analysis/2026-05-08-Multiply-Connected-Domain.md",
     "_site/posts/Multiply-Connected-Domain/index.html",
     "_site/posts/Multiply-Connected-Domain",
     "_posts/Complex Analysis/2026-05-08-Cauchy-Goursat-Theorem.md",
-    "_posts/Complex Analysis/2026-05-08-Multiply-Connected-Domain.md",
     "_posts/Complex Analysis/2026-04-09-Analytic-Function.md",
     "_posts/Complex Analysis/2026-03-27-Topology-In-Complex-Plane.md",
     "_site/posts/Cauchy-Goursat-Theorem/index.html",
@@ -210,7 +211,6 @@
     "_posts/Vector Calculus/2026-05-08-Green-Theorem.md",
     "assets/img/gre2.png",
     "_site/assets/img/gre1.png",
-    "_posts/Graph Theory/2026-04-10-Graph.md",
     "assets/img/gre1.png",
     "_posts/Vector Calculus/2026-03-05-Class-C1-Functions.md",
     "_site/posts/Green-Theorem/index.html",
@@ -236,7 +236,6 @@
     "_posts/Complex Analysis/2026-03-10-Complex-Plane.md",
     "_site/posts/Antiderivative/index.html",
     "_site/posts/Antiderivative",
-    "_site/posts/Fourier-Series/index.html",
     "assets/img/graph.png",
     "_site/assets/img/graph.png",
     "_site/assets/img/continuous.png",
