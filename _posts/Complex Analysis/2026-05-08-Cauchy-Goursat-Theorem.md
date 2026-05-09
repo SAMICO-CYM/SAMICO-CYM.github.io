@@ -56,3 +56,69 @@ If a function $f(z)$ is analytic at each point interior to and on the simple clo
 $$\int_C f(z) \, dz = 0.$$
 
 ### Proof
+Let $C$ be a positively oriented simple closed contour, and let $R$ be a closed region consisting of the points of $C$ and interior to it. (If the theorem holds for a positively oriented contour, then we can show that the theorem also holds for a negatively oriented contour $C'$, by taking the positively oriented contour $-C'$.)
+
+Let $\varepsilon > 0$. By the Lemma, $R$ can be covered with a finite number of squares and partial squares, indexed by $j = 1, 2,...,n$ such that in each one there is a fixed point $z_j$ for which the inequality
+
+$$\left \vert \frac{f(z) - f(z_j)}{z - z_j} - f'(z_j) \right \vert < \varepsilon \quad \cdots \quad (\ast)$$
+
+is satisfied by all points other than $z_j$ in that square or partial square. 
+
+We define a function $\delta_j(z)$ on the $j$th square or partial square by 
+
+$$\delta_j(z) = \begin{cases}
+0 & \text{if } z = z_j \\
+\frac{f(z) - f(z_j)}{z-z_j} - f'(z_j) & \text{if } z \neq z_j
+\end{cases}$$
+
+Note that 
+
+**1.** $\vert \delta_j(z) \vert < \varepsilon$ for all $z$ in the subregion on which it is defined. 
+
+**2.** $\delta_j(z)$ is continuous throughout the subregion and $\lim_{z \to z_j} \delta_j(z) = f'(z_j) - f'(z_j) = 0$ since $f(z)$ is continuous there.
+
+We let $C_j (j = 1, \cdots, n)$ denote the positively oriented boundaries of the above squares or partial squares covering $R$. By the definition of $\delta_j(z)$, we have 
+
+$$f(z) = f(z_j) - z_jf'(z_j) +f'(z_j)z + (z-z_j)\delta_j(z)$$
+
+on any particular $C_j$. Then we have 
+
+$$\int _ {C_j} f(z) \, dz = [f(z_j) - z_jf'(z_j)]\int _ {C_j} \, dz + f'(z_j) \int _ {C_j} z \, dz + \int _ {C_j} (z-z_j)\delta_j(z) \, dz.$$
+
+Since the functions $1$ and $z$ always have antiderivatives, we have 
+
+$$\int _ {C_j} dz = 0 \quad \text{and} \quad \int _ {C_j} z \, dz = 0$$
+
+by [Theorem 1]({% post_url Complex Analysis/2026-05-07-Antiderivative %}#theorem-1). Thus, we have 
+
+$$\begin{align*}
+&\int _ {C_j} f(z) \, dz = \int _ {C_j} (z-z_j)\delta_j(z) \, dz \\
+\implies &\int_C f(z) \, dz = \sum_{j=1}^n \int _ {C_j} f(z) \, dz = \sum_{j=1}^n \int _ {C_j} (z-z_j)\delta_j(z) \, dz \\
+\implies &\left \vert \int_C f(z) \, dz \right \vert \le \sum_{j=1}^n \left \vert \int _ {C_j} (z-z_j)\delta_j(z) \, dz \right \vert.
+\end{align*}$$
+
+Note that each $C_j$ coincides either entirely or partially with the boundary of a square. In either case, we let $s_j$ and $A_j$ denote the length of a side of the $j$th square and the area of the square, respectively. Since, in $j$th integral, both the variable $z$ and the point $z_j$ lie in that square, we have 
+
+$$\vert z - z_j \vert \le \sqrt{2} s_j,$$
+
+so that 
+
+$$\vert (z-z_j)\delta_j(z) \vert < \sqrt{2} s_j \varepsilon.$$
+
+Note that the length of $C_j$ is $4s_j$ if $C_j$ is the boundary of a square. In that case, we have 
+
+$$\left \vert \int _ {C_j} (z-z_j)\delta_j(z) \, dz \right \vert < (\sqrt{2}s_j \varepsilon) \cdot (4s_j) = 4\sqrt{2}A_j\varepsilon.$$
+
+If $C_j$ is the boundary of a partial square, its length does not exceed $4s_j + L_j$, where $L_j$ is the length of that part of $C_j$ which is also a part of $C$. In that case, we have 
+
+$$\left \vert \int _ {C_j} (z-z_j)\delta_j(z) \, dz \right \vert < (\sqrt{2}s_j \varepsilon) \cdot (4s_j + L_j) = 4\sqrt{2}A_j\varepsilon + \sqrt{2}SL_j \varepsilon,$$
+
+where $S$ is the legnth or a side of a side of some square that encloses the entire contour $C$ as well as all of the squares originally used in covering $R$. Note that the sum of all the $A_j$’s does not exceed $S^2$. 
+
+If we l;et $L$ denote the length of $C$, then we obtain that 
+
+$$\left \vert \int_C f(z) \, dz \right \vert < 4 \sqrt{2} S^2 \varepsilon + \sqrt{2} SL \varepsilon = (4\sqrt{2}S^2 + \sqrt{2}SL) \varepsilon.$$
+
+Since we have chosen $\varepsilon$ arbitrarily, we must have 
+
+$$\int_C f(z) \, dz =0. \quad \blacksquare$$
