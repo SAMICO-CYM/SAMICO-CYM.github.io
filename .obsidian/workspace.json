@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Complex Analysis/2026-05-08-Cauchy-Goursat-Theorem.md",
+                "file": "_posts/Graph Theory/2026-05-05-Degree.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-08-Cauchy-Goursat-Theorem"
+              "title": "2026-05-05-Degree"
             }
           }
         ]
@@ -182,9 +182,9 @@
   },
   "active": "6f95aac2634806c8",
   "lastOpenFiles": [
+    "_posts/Complex Analysis/2026-05-08-Cauchy-Goursat-Theorem.md",
     "_posts/Complex Analysis/2026-05-08-Cauchy-Theorem.md",
     "_posts/Complex Analysis/2026-05-01-ML-Lemma.md",
-    "_posts/Complex Analysis/2026-05-08-Cauchy-Goursat-Theorem.md",
     "_posts/Complex Analysis/2026-05-07-Antiderivative.md",
     "assets/img/Pasted image 20260220163028.png",
     "assets/img/Pasted image 20260220174110.png",
