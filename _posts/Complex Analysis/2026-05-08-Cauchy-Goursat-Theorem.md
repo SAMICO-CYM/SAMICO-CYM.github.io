@@ -21,6 +21,8 @@ $$\left \vert \frac{f(z) - f(z_j)}{z - z_j} - f'(z_j) \right \vert < \varepsilon
 is satisfied by all points other than $z_j$ in that square or partial square.
 
 ### Proof
+If every subregion contain a needed point $z_j$ such that the inequality $(\ast)$ holds for all other points $z$ in it, then we are done.
+
 Suppose that there is some subregion $\sigma$ in which no point $z_j$ exists such that the inequality $(\ast)$ holds for all other points $z$ in it. 
 
 If the subregion is a square, then we construct four smaller squares by drawing line segments joining the midpoints of its opposite sides. If the subregion is a partial square, then we treat the whole square in the same manner and then let the prtions that lie outside of $R$ be discarded. 
