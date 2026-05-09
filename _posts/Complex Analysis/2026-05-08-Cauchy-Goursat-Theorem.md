@@ -21,7 +21,7 @@ $$\left \vert \frac{f(z) - f(z_j)}{z - z_j} - f'(z_j) \right \vert < \varepsilon
 is satisfied by all points other than $z_j$ in that square or partial square.
 
 ### Proof
-Suppose that there is some subregion, covering $R$, in which no point $z_j$ exists such that the inequality $(\ast)$ holds for all other points $z$ in it. 
+Suppose that there is some subregion $\sigma$ in which no point $z_j$ exists such that the inequality $(\ast)$ holds for all other points $z$ in it. 
 
 If the subregion is a square, then we construct four smaller squares by drawing line segments joining the midpoints of its opposite sides. If the subregion is a partial square, then we treat the whole square in the same manner and then let the prtions that lie outside of $R$ be discarded. 
 
@@ -29,15 +29,15 @@ We claim that if this process is done to each of the original subreigoins that r
 
 $\big[(\because)$ Suppose that after any finite number of steps, $R$ cannot be covered with a finite number of subregions such that the lemma is true. 
 
-We let $\sigma_0$ denote that subregion if it is a square; otherwise, if it is a partial square, we let $\sigma_0$ denote the entire square of which it is a part. 
+We let $\sigma_0$ denote that subregion $\sigma$ if it is a square; otherwise, if it is a partial square, we let $\sigma_0$ denote the entire square of which $\sigma$ is a part. 
 
-After we subdivide $\sigma_0$, at least one of the four smaller squares, denoted by $\sigma_1$, must contain points of $R$ but does not satisfy the lemma. We take $\sigma_1$ to be the one lowest and then furthest to the left. We then subdivide $\sigma_1$ and continue in this manner. Thus, we obtain the nested infinite sequence 
+After we subdivide $\sigma_0$, at least one of the four smaller squares, denoted by $\sigma_1$, must contain points of $R$ but no needed point $z_j$. We take $\sigma_1$ to be the one lowest and then furthest to the left. We then subdivide $\sigma_1$ and continue in this manner. Thus, we obtain the nested infinite sequence 
 
 $$\sigma_0, \sigma_1, \cdots, \sigma_{k-1}, \sigma_k, \cdots$$
 
 of squares. 
 
-By the [nested interval theorem]({% post_url Real Analysis/2026-05-09-Nested-Interval-Theorem %}#nested-interval-theorem), there exists a point $z_0$ common to each $\sigma_k$. Note that each of these squares contains points of $R$ other than possibly $z_0$. Note that any $\delta$-neighborhood $\vert z - z_0 \vert < \delta$ of $z_0$ contains such squares when their diagonals have lenghts less than $\delta$. Therefore, every $\delta$-neighborhood $\vert z - z_0 \vert < \delta$ of $z_0$ contains points of $R$ distinct from $z_0$, which means that $z_0$ is a limit point of $R$. Since $R$ is closed, $z_0 \in R$. 
+By the [nested interval theorem]({% post_url Real Analysis/2026-05-09-Nested-Interval-Theorem %}#nested-interval-theorem), there exists a point $z_0$ common to each $\sigma_k$. (By regarding each $\sigma_k$ as the product of two closed intervals in $\mathbb{R}$ and applying the theorem twice, we can find such point $z_0$.) Note that each of these squares contains points of $R$ other than possibly $z_0$. Note that any $\delta$-neighborhood $\vert z - z_0 \vert < \delta$ of $z_0$ contains such squares when their diagonals have lenghts less than $\delta$. Therefore, every $\delta$-neighborhood $\vert z - z_0 \vert < \delta$ of $z_0$ contains points of $R$ distinct from $z_0$, which means that $z_0$ is a limit point of $R$. Since $R$ is closed, $z_0 \in R$. 
 
 Since $f(z)$ is analytic in $R$, it is analytic at $z_0$, which means that $f'(z_0)$ exists. Then for each $\varepsilon > 0$, there exists $\delta > 0$ such that
 
