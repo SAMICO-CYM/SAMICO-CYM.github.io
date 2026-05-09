@@ -25,7 +25,7 @@ Suppose that there is some subregion $\sigma$ in which no point $z_j$ exists suc
 
 If the subregion is a square, then we construct four smaller squares by drawing line segments joining the midpoints of its opposite sides. If the subregion is a partial square, then we treat the whole square in the same manner and then let the prtions that lie outside of $R$ be discarded. 
 
-We claim that if this process is done to each of the original subreigoins that requires it, then we can find that after a finite number of steps, $R$ can be covered with a finite number of subregions such that the lemma is true.
+We claim that if this process is done to each of the original subreigoins that requires it, then we can find that after a finite number of steps, $R$ can be covered with a finite number of subregions such that the lemma is true. 
 
 $\big[(\because)$ Suppose that after any finite number of steps, $R$ cannot be covered with a finite number of subregions such that the lemma is true. 
 
@@ -35,7 +35,7 @@ After we subdivide $\sigma_0$, at least one of the four smaller squares, denoted
 
 $$\sigma_0, \sigma_1, \cdots, \sigma_{k-1}, \sigma_k, \cdots$$
 
-of squares. 
+of squares. Note that each $\sigma_k$ does not contain the needed point $z_j$.
 
 By the [nested interval theorem]({% post_url Real Analysis/2026-05-09-Nested-Interval-Theorem %}#nested-interval-theorem), there exists a point $z_0$ common to each $\sigma_k$. (By regarding each $\sigma_k$ as the product of two closed intervals in $\mathbb{R}$ and applying the theorem twice, we can find such point $z_0$.) Note that each of these squares contains points of $R$ other than possibly $z_0$. Note that any $\delta$-neighborhood $\vert z - z_0 \vert < \delta$ of $z_0$ contains such squares when their diagonals have lenghts less than $\delta$. Therefore, every $\delta$-neighborhood $\vert z - z_0 \vert < \delta$ of $z_0$ contains points of $R$ distinct from $z_0$, which means that $z_0$ is a limit point of $R$. Since $R$ is closed, $z_0 \in R$. 
 
@@ -43,7 +43,9 @@ Since $f(z)$ is analytic in $R$, it is analytic at $z_0$, which means that $f'(z
 
 $$\vert z - z_0 \vert < \delta \implies \left \vert \frac{f(z) - f(z_0)}{z - z_0} - f'(z_0) \right \vert < \varepsilon.$$
 
-Note that the neighborhood $\vert z − z_0 \vert < \delta$ of $z_0$ contains a square $\sigma_K$ when the integer $K$ is large enough that the length of a diagonal of that square is less than $\delta$. Thus, $z_0$ is the needed point $z_j$ in inequality $(\ast)$ for the subregion consisting of the square $\sigma_K$ or a part of $\sigma_K$. Consequently, after a finite number of steps of dividing $\sigma_0$ until $\sigma_K$, $R$ can be covered with a finite number of subregions such that the lemma is true. $\bigotimes$ Hence, the claim is true. $\big]$
+Note that the neighborhood $\vert z − z_0 \vert < \delta$ of $z_0$ contains a square $\sigma_K$ when the integer $K$ is large enough that the length of a diagonal of that square is less than $\delta$. Thus, $z_0$ is the needed point $z_j$ in inequality $(\ast)$ for the subregion consisting of the square $\sigma_K$ or a part of $\sigma_K$. This contradicts that the nested sequence $\sigma_0, \sigma_1, \cdots, \sigma_k, \cdots$ does not contain the needed point $z_j.$ $\bigotimes$ Hence, the claim is true. $\big]$
+
+Thus, we can always cover $R$ with a finite number of subregions such that the lemma is true. $\blacksquare$
 
 ---
 ## Cauchy-Goursat Theorem
