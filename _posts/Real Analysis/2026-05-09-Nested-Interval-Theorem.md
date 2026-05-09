@@ -1,7 +1,7 @@
 --- 
 title: Nested Interval Theorem
 date: 2026-05-09
-categories: [Mathematics, Real-Analysis]
+categories: [Mathematics, Real Analysis]
 tags: []
 math: true
 ---
