@@ -85,6 +85,10 @@ on any particular $C_j$. Then we have
 
 $$\int _ {C_j} f(z) \, dz = [f(z_j) - z_jf'(z_j)]\int _ {C_j} \, dz + f'(z_j) \int _ {C_j} z \, dz + \int _ {C_j} (z-z_j)\delta_j(z) \, dz.$$
 
+Since the two integrals along the common boundary of every pair of adjacent subregions cancel each other, we have 
+
+$$\int_C f(z) \, dz = \sum_{j=1}^n \int _ {C_j} f(z) \, dz.$$
+
 Since the functions $1$ and $z$ always have antiderivatives, we have 
 
 $$\int _ {C_j} dz = 0 \quad \text{and} \quad \int _ {C_j} z \, dz = 0$$
@@ -105,17 +109,17 @@ so that
 
 $$\vert (z-z_j)\delta_j(z) \vert < \sqrt{2} s_j \varepsilon.$$
 
-Note that the length of $C_j$ is $4s_j$ if $C_j$ is the boundary of a square. In that case, we have 
+We will use the [$ML$ Lemma]({% post_url Complex Analysis/2026-05-01-ML-Lemma %}#theorem-($ML$-lemma)). Note that the length of $C_j$ is $4s_j$ if $C_j$ is the boundary of a square. In that case, we have 
 
 $$\left \vert \int _ {C_j} (z-z_j)\delta_j(z) \, dz \right \vert < (\sqrt{2}s_j \varepsilon) \cdot (4s_j) = 4\sqrt{2}A_j\varepsilon.$$
 
 If $C_j$ is the boundary of a partial square, its length does not exceed $4s_j + L_j$, where $L_j$ is the length of that part of $C_j$ which is also a part of $C$. In that case, we have 
 
-$$\left \vert \int _ {C_j} (z-z_j)\delta_j(z) \, dz \right \vert < (\sqrt{2}s_j \varepsilon) \cdot (4s_j + L_j) = 4\sqrt{2}A_j\varepsilon + \sqrt{2}SL_j \varepsilon,$$
+$$\left \vert \int _ {C_j} (z-z_j)\delta_j(z) \, dz \right \vert < (\sqrt{2}s_j \varepsilon) \cdot (4s_j + L_j) = 4\sqrt{2}A_j\varepsilon + \sqrt{2}s_jL_j \varepsilon,$$
 
-where $S$ is the legnth or a side of a side of some square that encloses the entire contour $C$ as well as all of the squares originally used in covering $R$. Note that the sum of all the $A_j$’s does not exceed $S^2$. 
+where $S$ is the length of a side of some square that encloses the entire contour $C$ as well as all of the squares originally used in covering $R$. Note that the sum of all the $A_j$’s does not exceed $S^2$ and $s_j \le S$.
 
-If we l;et $L$ denote the length of $C$, then we obtain that 
+If we let $L$ denote the length of $C$, then we obtain that 
 
 $$\left \vert \int_C f(z) \, dz \right \vert < 4 \sqrt{2} S^2 \varepsilon + \sqrt{2} SL \varepsilon = (4\sqrt{2}S^2 + \sqrt{2}SL) \varepsilon.$$
 
