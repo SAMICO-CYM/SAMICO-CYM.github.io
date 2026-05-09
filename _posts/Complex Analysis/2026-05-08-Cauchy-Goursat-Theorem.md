@@ -31,9 +31,9 @@ We claim that if this process is done to each of the original subreigions that r
 
 $\big[(\because)$ Suppose that after any finite number of steps, $R$ cannot be covered with a finite number of subregions such that the lemma is true. Since $R$ was initially divided into a finite number of subregions, there must exist at least one initial subregion that cannot be covered in a finite number of steps.
 
-We let $\sigma_0$ denote that subregion if it is a square; otherwise, if it is a partial square, we let $\sigma_0$ denote the entire square of which $\sigma$ is a part. 
+We let $\sigma_0$ denote that subregion if it is a square; otherwise, if it is a partial square, we let $\sigma_0$ denote the entire square of which it is a part. 
 
-After we subdivide $\sigma_0$, at least one of the four smaller squares, denoted by $\sigma_1$, must contain points of $R$ but no needed point $z_j$. We take $\sigma_1$ to be the one lowest and then furthest to the left. We then subdivide $\sigma_1$ and continue in this manner. Thus, we obtain the nested infinite sequence 
+After we subdivide $\sigma_0$, at least one of the four smaller squares, denoted by $\sigma_1$, must contain points of $R$ but does not contain a point $z_j$ such that the inequality $(\ast)$ holds for all other points in it. We take $\sigma_1$ to be the one lowest and then furthest to the left. We then subdivide $\sigma_1$ and continue in this manner. Thus, we obtain the nested infinite sequence 
 
 $$\sigma_0, \sigma_1, \cdots, \sigma_{k-1}, \sigma_k, \cdots$$
 
