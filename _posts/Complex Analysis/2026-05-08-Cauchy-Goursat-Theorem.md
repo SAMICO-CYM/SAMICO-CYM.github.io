@@ -6,7 +6,7 @@ tags: []
 math: true
 ---
 
-[Cauchy Theorem]({% post_url Complex Analysis/2026-05-08-Cauchy-Theorem %}#cauchy's-theorem)은 $f(z)$가 analytic하고 $f'(z)$가 연속이어야 한다는 두 가지 조건이 필요했었다. 이때 $f'(z)$가 연속이라는 조건을 빼도 동일한 결론이 성립한다는 사실을 보인 정리가 Cauchy-Goursat Theorem이다. 
+[Cauchy Theorem]({% post_url Complex Analysis/2026-05-08-Cauchy-Theorem %})은 $f(z)$가 analytic하고 $f'(z)$가 연속이어야 한다는 두 가지 조건이 필요했었다. 이때 $f'(z)$가 연속이라는 조건을 빼도 동일한 결론이 성립한다는 사실을 보인 정리가 Cauchy-Goursat Theorem이다. 
 
 우선 simple closed contour $C$의 내부와 그 점들로 만든 영역을 $R$이라고 하자. 이때 구분구적법처럼 $R$을 각 축에 평행하게 잘게 자른다. 이때 $R$의 모양에 따라서 완벽한 사각형으로 잘릴 수도 있고, 경계면에 의해 잘려서 완벽하지 못한 사각형으로 잘릴 수도 있다. 이때 완벽한 사각형을 square, 완벽하지 못한 사각형을 partial sqaure이라고 하자. 각 square과 partial square들은 경계면 또한 포함하고 있음을 주의하자. 
 
@@ -109,7 +109,7 @@ so that
 
 $$\vert (z-z_j)\delta_j(z) \vert < \sqrt{2} s_j \varepsilon.$$
 
-We will use the [$ML$ Lemma]({% post_url Complex Analysis/2026-05-01-ML-Lemma %}#theorem-($ML$-lemma)). Note that the length of $C_j$ is $4s_j$ if $C_j$ is the boundary of a square. In that case, we have 
+We will use the [$ML$ Lemma]({% post_url Complex Analysis/2026-05-01-ML-Lemma %}). Note that the length of $C_j$ is $4s_j$ if $C_j$ is the boundary of a square. In that case, we have 
 
 $$\left \vert \int _ {C_j} (z-z_j)\delta_j(z) \, dz \right \vert < (\sqrt{2}s_j \varepsilon) \cdot (4s_j) = 4\sqrt{2}A_j\varepsilon.$$
 
