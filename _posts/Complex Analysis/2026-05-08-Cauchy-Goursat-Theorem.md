@@ -75,7 +75,7 @@ Note that
 
 **1.** $\vert \delta_j(z) \vert < \varepsilon$ for all $z$ in the subregion on which it is defined. 
 
-**2.** $\delta_j(z)$ is continuous throughout the subregion and $\lim_{z \to z_j} \delta_j(z) = f'(z_j) - f'(z_j) = 0$ since $f(z)$ is continuous there.
+**2.** $\delta_j(z)$ is continuous throughout the subregion and $\lim_{z \to z_j} \delta_j(z) = f'(z_j) - f'(z_j) = 0$ since $f(z)$ is analytic there.
 
 We let $C_j (j = 1, \cdots, n)$ denote the positively oriented boundaries of the above squares or partial squares covering $R$. By the definition of $\delta_j(z)$, we have 
 
