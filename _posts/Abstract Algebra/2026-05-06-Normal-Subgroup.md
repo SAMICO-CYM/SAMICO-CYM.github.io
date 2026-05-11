@@ -35,6 +35,8 @@ Let $H \le G$. TFAE.
 
 **(iii)** $gHg^{-1} = H, \forall g \in G$
 
+결국 normal group에 한해서, 집합 양 옆에 곱해져있는 원소들을 마치 원소를 연산하듯이 처리해도 된다는 결론을 얻는다.
+
 ### Proof
 **(i)** $\Longrightarrow$ **(ii)**
 
@@ -49,3 +51,6 @@ Suppose that $gHg^{-1} \subset H, \forall g \in G$. Let $h \in H$. Since $g^{-1}
 Suppose that $gHg^{-1} = H, \forall g \in G$. Let $g \in G$, and let $h \in H$. Then $ghg^{-1} = a$ for some $a \in H$, so that $gh = ag \in Hg$. Thus $gH \subset Hg$.
 
 Let $h \in H$. Since $g^{-1}Hg = H$, we have $g^{-1}hg = b$ for some $b \in H$, so that $hg = gb \in gH$. Thus $Hg \subset gH$. Hence, $gH = Hg$, which means that $H \lhd G$. $\blacksquare$
+
+---
+
