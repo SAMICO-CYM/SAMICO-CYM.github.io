@@ -62,7 +62,6 @@ a^{-1}a &= (a^{-1}_1, \cdots, a^{-1}_n)(a_1, \cdots, a_n) \\
 Thus, $\displaystyle \prod_{i=1}^n G_i$ is a group. $\blacksquare$
 
 ---
-
 ## Remark
 Let $G := \displaystyle \prod_{i=1}^n G_i$.
 
@@ -73,6 +72,18 @@ Let $G := \displaystyle \prod_{i=1}^n G_i$.
 **(iii)** $G$ is cyclic ***NOT*** if and only if each $G_i$ is cyclic.
 
 $\big[$$(\because)$ Note that $\mathbb{Z}_2 \times \mathbb{Z}_2 \cong V$, $\mathbb{Z}_3 \times \mathbb{Z}_3 \not \cong \mathbb{Z}_9$ and $\mathbb{Z}_2 \times \mathbb{Z}_3 \cong \mathbb{Z}_6$. $\big]$
+
+**(iv)** Define
+
+$$\overline{G_i} := \{ (e_1, \cdots, e_{i-1}, g_i, e_{i+1}, \cdots, a_n) \mid g_i \in G_i \}.$$
+
+Then we have that for each $i = 1, \cdots, n$, 
+
+**1.** $\overline{G_i} \le G$.
+
+**2.** $\overline{G_i} \cong G_i$.
+
+We consider $G$ to be the internal direct product of these subgroups $\overline{G_i}$'s. 
 
 ---
 
@@ -217,17 +228,3 @@ $$\begin{align*}
 \end{align*}$$
 
 한편, '형태' 자체는 위 여섯 가지 경우와 다른 케이스도 존재한다. 예를 들어 $\mathbb{Z} _ {72} \times \mathbb{Z}_5$도 오더가 360인 아벨군이지만, 사실 $\mathbb{Z}_8 \times \mathbb{Z}_9 \cong \mathbb{Z} _ {72}$ 이기 때문에 이 경우는 6번 케이스와 동형이다.
-
----
-## Remark
-Let $\displaystyle G := \prod_{i=1}^n G_i$ be the direct product of groups $G_i$. Define
-
-$$\overline{G_i} := \{ (e_1, \cdots, e_{i-1}, g_i, e_{i+1}, \cdots, a_n) \mid g_i \in G_i \}.$$
-
-Then we have that for each $i = 1, \cdots, n$, 
-
-**(i)** $\overline{G_i} \le G$.
-
-**(ii)** $\overline{G_i} \cong G_i$.
-
-We consider $G$ to be the internal direct product of these subgroups $\overline{G_i}$'s. 
