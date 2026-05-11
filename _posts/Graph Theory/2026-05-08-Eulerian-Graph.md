@@ -10,7 +10,7 @@ math: true
 Let $G$ be a graph. ***An Eulerian tour*** of $G$ is a closed trail that contains every vertex and edge of $G$. We call $G$ ***Eulerian*** if $G$ has an Eulerian tour.
 
 ---
-## Theorem
+## Theorem 1
 Let $G$ be a connected graph. Then $G$ is Eulerian $\iff$ Every vertex of $G$ has even degree.
 
 ### Proof
@@ -35,3 +35,12 @@ $\big[(\because)$ If not, then there is some vertex $s$ not in $T$. Since $G$ is
 $\big[(\because)$ If not, then there is some edge $e$ not in $T$. Since $T$ contains all vertices of $G$, $e := \\{ t_i, t_j \\}$ for some $t_i, t_j (i < j)$ in $T$. Then we can construct the trail $t_i \cdots t_j \stackrel{e}{\to} t_i \cdots t_1 t_n \cdots t_j$, which is longer than $T$. $\bigotimes$ Thus, all edges of $G$ are in $T$. $\big]$ 
 
 By above claims, $T$ is a closed trail containing all vertices and edges of $G$, which means that $T$ is an Eulerian tour. Hence, $G$ is Eulerian. $\blacksquare$
+
+---
+## Theorem 2
+Let $G$ be a connected graph. Then $G$ has a trail containing every edge $\iff$ exactly zero or two vertices of $G$ have odd degree.
+
+### Proof
+$(\Longrightarrow)$
+
+$(\Longleftarrow)$
