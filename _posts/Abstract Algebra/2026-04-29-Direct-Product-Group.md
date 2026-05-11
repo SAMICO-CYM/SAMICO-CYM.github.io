@@ -11,7 +11,7 @@ Let $G_1, ..., G_n$ be groups. Then $\displaystyle \prod_{i=1}^n G_i$ is a group
 
 $$(a_1, \cdots, a_n) (b_1, \cdots, b_n) = (a_1b_1, \cdots, a_nb_n)$$
 
-for all $(a_1, \cdots, a_n), (b_1, \cdots, b_n) \in \displaystyle \prod_{i=1}^n G_i$, and we call it the ***direct product*** of the groups $G_i$. 
+for all $(a_1, \cdots, a_n), (b_1, \cdots, b_n) \in \displaystyle \prod_{i=1}^n G_i$, and we call it the ***(external) direct product*** of the groups $G_i$. 
 
 ### Proof
 Let $a = (a_1, \cdots, a_n), b = (b_1, \cdots, b_n), c = (c_1, \cdots, c_n) \in \displaystyle \prod_{i=1}^n G_i$. Then 
@@ -217,3 +217,17 @@ $$\begin{align*}
 \end{align*}$$
 
 한편, '형태' 자체는 위 여섯 가지 경우와 다른 케이스도 존재한다. 예를 들어 $\mathbb{Z} _ {72} \times \mathbb{Z}_5$도 오더가 360인 아벨군이지만, 사실 $\mathbb{Z}_8 \times \mathbb{Z}_9 \cong \mathbb{Z} _ {72}$ 이기 때문에 이 경우는 6번 케이스와 동형이다.
+
+---
+## Remark
+Let $\displaystyle G := \prod_{i=1}^n G_i$ be the direct product of groups $G_i$. Define
+
+$$\overline{G_i} := \{ (e_1, \cdots, e_{i-1}, g_i, e_{i+1}, \cdots, a_n) \mid g_i \in G_i \}.$$
+
+Then we have that for each $i = 1, \cdots, n$, 
+
+(i) $\overline{G_i} \le G$.
+
+(ii) $\overline{G_i} \cong G_i$.
+
+We consider $G$ to be the internal direct product of these subgroups $\overline{G_i}$'s. 
