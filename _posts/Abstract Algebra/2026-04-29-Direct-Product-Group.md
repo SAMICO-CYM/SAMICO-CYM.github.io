@@ -83,7 +83,7 @@ Then we have that for each $i = 1, \cdots, n$,
 
 **2.** $\overline{G_i} \cong G_i$.
 
-We consider $G$ to be the internal direct product of these subgroups $\overline{G_i}$'s. 
+We consider $G$ to be the ***internal direct product*** of these subgroups $\overline{G_i}$'s. 
 
 ---
 
