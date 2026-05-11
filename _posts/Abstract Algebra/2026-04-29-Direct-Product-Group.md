@@ -226,8 +226,8 @@ $$\overline{G_i} := \{ (e_1, \cdots, e_{i-1}, g_i, e_{i+1}, \cdots, a_n) \mid g_
 
 Then we have that for each $i = 1, \cdots, n$, 
 
-(i) $\overline{G_i} \le G$.
+**(i)** $\overline{G_i} \le G$.
 
-(ii) $\overline{G_i} \cong G_i$.
+**(ii)** $\overline{G_i} \cong G_i$.
 
 We consider $G$ to be the internal direct product of these subgroups $\overline{G_i}$'s. 
