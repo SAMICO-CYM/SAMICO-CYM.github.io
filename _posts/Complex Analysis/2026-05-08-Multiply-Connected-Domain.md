@@ -57,7 +57,7 @@ Let $C_1$ and $C_2$ denote positively oriented simple closed contours, where $C_
 
 $$\int_{C_1} f(z) \, dz = \int_{C_2} f(z) \, dz.$$
 
-이 따름정리는 Principle of deformation of paths라고도 불리는데, $C_1$이 $f$가 analytic한 점들, 그러니까 $C_1$과 $C_2$ 사이에 있는 점들을 지나면서 "연속적으로" $C_2$로 변형된다고 했을 때, $C_1$에서의  $f$의 적분값은 변하지 않는다고 이해할 수 있기 때문이다. 
+이 따름정리는 ***Principle of deformation of paths***라고도 불리는데, $C_1$이 $f$가 analytic한 점들, 그러니까 $C_1$과 $C_2$ 사이에 있는 점들을 지나면서 "연속적으로" $C_2$로 변형된다고 했을 때, $C_1$에서의  $f$의 적분값은 변하지 않는다고 이해할 수 있기 때문이다. 
 
 ---
 ## Example
