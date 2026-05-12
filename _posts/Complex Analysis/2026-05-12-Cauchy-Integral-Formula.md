@@ -62,4 +62,4 @@ For any point $z$ interior to $C$, we have
 
 $$f(z) = \frac{1}{2\pi i} \int_C \frac{f(s)}{s-z} \, ds$$
 
-by Cauchy integral formula. Let $d := \min \\{ \vert s - z \vert \mid s \in C \\}$. 
+by Cauchy integral formula. Let $d := \min \\{ \vert s - z \vert \mid s \in C \\}$. (Assume that $C$ is parametrized by $\gamma: [a, b] \to C$. Since $C$ is a simple closed contour, $\gamma$ is (piecewise) continuous and surjective. Then $C = \gamma([a, b])$ is compact. Note that the function $f: C \to \mathbb{R}$ defined by $f(s) = \vert s - z \vert$ is continuous. Thus, $f$ has the minimum, says $d$.)
