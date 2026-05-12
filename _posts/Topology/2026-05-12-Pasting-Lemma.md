@@ -19,7 +19,7 @@ is continuous.
 증명 과정을 보면 알겠지만 $A$와 $B$가 닫힌 집합이 아닌 열린 집합으로 줘도 동일하게 결론이 성립한다는 사실을 알 수 있다. 다만 함수와 함수의 정의역을 합쳐서 만든다는 점에서 닫힌 집합으로 조건을 주는 게 여러모로 유용하다. 실수 상에서 열린 구간은 결코 한 점에서만 겹칠 수 없지만, 닫힌 구간은 각 구간의 양 끝점, 그러니까 딱 한 점에서만 겹치더라도 합쳐서 만들어낼 수 있다는 점에서 열린 집합보다는 닫힌 집합일 때 그 빛을 발한다. 
 
 ### Proof
-Let $C$ be a closed subset of $X$. Note that $h^{-1}(C) = f^{-1}(C) \cup g^{-1}(C)$. 
+Clearly, the function $h$ is well-defined. Let $C$ be a closed subset of $X$. Note that $h^{-1}(C) = f^{-1}(C) \cup g^{-1}(C)$. 
 
 $\big[(\because)$ Let $x \in h^{-1}(C)$. Then $h(x) \in C$. Since $x \in X = A \cup B$, either $x \in A$ or $x \in B$. WLOG, we may assume that $x \in A$. Then $f(x) = h(x) \in C$, which means that $x \in f^{-1}(C)$. Thus, $x \in f^{-1}(C) \cup g^{-1}(C)$, so that $h^{-1}(C) \subset f^{-1}(C) \cup g^{-1}(C)$. 
 

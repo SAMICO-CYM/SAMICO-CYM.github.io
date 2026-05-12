@@ -211,7 +211,48 @@ If $y \in f^{-1}(V)$, then $f(y) \in V$. Since $f^{-1}(V) \subset X$, $y \in U _
 
 Since $f^{-1}(V)= \bigcup_\alpha \left( f \vert U _ {\alpha} \right)^{-1}(V) \in \mathcal{T}_X$, $f$ is continuous. $\blacksquare$
 
+---
+## Theorem 4
+Let $A, X$ and $Y$ be topological spaces. Let $f_1: A \to X$ and $f_2:A \to Y$ be functions. Then the function $f: A \to X \times Y$ defined by $f(a) = (f_1(a), f_2(a))$ is continuous $\iff$ the coordinate functions $f_1$ and $f_2$ of $f$ are continuous.
 
+### Proof
+$(\Longrightarrow)$
+
+Suppose that $f$ is continuous. Note that the projection maps $\pi_1: X \times Y \to X$ and $\pi_2 : X \times Y \to Y$ are continuous.
+
+$\big[(\because)$ Let $U$ be an open subset of $X$. Then we have $\pi_1^{-1}(U) = U \times Y$, which is open in $X \times Y$. Thus, $\pi_1$ is continuous. Similarly, $\pi_2$ is also continuous.$\big]$
+
+Note that $\pi_1 \circ f = f_1$ and $\pi_2 \circ f = f_2$.
+
+$\big[(\because)$ For each $a \in A$, we have that 
+
+$$\begin{align*}
+(\pi_1 \circ f)(a) &= \pi_1(f(a)) \\
+&= \pi_1(f_1(a), f_2(a)) \\
+&= f_1(a),
+\end{align*}$$
+
+so that $\pi_1 \circ f = f_1$. Similarly, we have that $\pi_2 \circ f = f_2$.$\big]$
+
+Since $\pi_1, \pi_2$ and $f$ are continuous, their compositions are also continuous.
+ Thus, $f_1$ and $f_2$ are continuous.
+
+$(\Longleftarrow)$
+
+Suppose that $f_1$ and $f_2$ are continuous. Let $U \times V$ be a basis element of $X \times Y$, where $U$ and $V$ are open subsets of $X$ and $Y$, respectively. Note that $f^{-1}(U \times V) = f_1^{-1}(U) \cap f_2^{-1}(V)$.
+
+$\big[(\because)$ We have
+
+$$\begin{align*}
+a \in f^{-1}(U \times V) & \iff (f_1(a), f_2(a)) = f(a) \in U \times V \\
+& \iff f_1(a) \in U \wedge f_2(a) \in V \\
+& \iff a \in f_1^{-1}(U) \wedge a \in f_2^{-1}(V) \\
+& \iff a \in f_1^{-1}(U) \cap f_2^{-1}(V).
+\end{align*}$$
+
+Thus, $f^{-1}(U \times V) = f_1^{-1}(U) \cap f_2^{-1}(V)$.$\big]$
+
+Since $f_1$ and $f_2$ are continuous, $f_1^{-1}(U)$ and $f_2^{-1}(V)$ are open in $X$ and $Y$, respectively, which implies that $f^{-1}(U \times V) = f_1^{-1}(U) \cap f_2^{-1}(V)$ is open in $X \times Y$. Thus, $f$ is continuous. $\blacksquare$
 
 
 <style>
