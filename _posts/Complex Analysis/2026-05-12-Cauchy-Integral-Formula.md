@@ -64,9 +64,45 @@ $$f(z) = \frac{1}{2\pi i} \int_C \frac{f(s)}{s-z} \, ds$$
 
 by Cauchy integral formula. Let $d := \min \\{ \vert s - z \vert \mid s \in C \\}$. (Assume that $C$ is parametrized by $\gamma: [a, b] \to C$. Since $C$ is a simple closed contour, $\gamma$ is (piecewise) continuous and surjective. Then $C = \gamma([a, b])$ is compact. Note that the function $f: C \to \mathbb{R}$ defined by $f(s) = \vert s - z \vert$ is continuous. Thus, $f$ has the minimum, says $d$.) 
 
-Assume that $0 < \vert \Delta z \vert < d$. Then we have 
+We may assume that $0 < \vert \Delta z \vert < d$ because $f$ is analytic inside and on $C$. Then we have 
 
 $$\begin{align*}
 \frac{f(z + \Delta z) - f(z)}{\Delta z} &= \frac{1}{2 \pi i} \int_C \left[ \frac{1}{s-(z + \Delta z)} - \frac{1}{s - z} \right] \frac{f(s)}{\Delta z} \, ds \\
-&= \frac{1}{2\pi i}
+&= \frac{1}{2\pi i} \int_C \frac{f(s)}{(s - z - \Delta z)(s-z)}\, ds \\
+&= \frac{1}{2\pi i} \int_C f(s)\left[ \frac{1}{(s-z)^2} + \frac{1}{(s - z - \Delta z)(s-z)} - \frac{1}{(s-z)^2} \right] \, ds \\
+&= \frac{1}{2\pi i} \int_C \frac{f(s)}{(s-z)^2} \, ds + \frac{1}{2\pi i} \int_C f(s) \left[ \frac{1}{(s - z - \Delta z)(s-z)} - \frac{1}{(s-z)^2} \right] \, ds.
 \end{align*}$$
+
+Since $\vert s - z \vert \ge d$ and $\vert \Delta z \vert < d$, we have
+
+$$\begin{align*}
+\vert s - z - \Delta z \vert &\ge \vert \vert s- z \vert - \vert \Delta z \vert \vert \\
+& \ge d - \vert \Delta z \vert > 0,
+\end{align*}$$
+
+so that 
+
+$$\begin{align*}
+\left \vert \frac{1}{(s - z - \Delta z)(s-z)} - \frac{1}{(s-z)^2} \right \vert &= \left \vert \frac{(s-z) - (s-z-\Delta z)}{(s-z-\Delta z)(s-z)^2} \right \vert \\
+&= \left \vert \frac{\Delta z}{(s-z-\Delta z)(s-z)^2} \right \vert \\
+& \le \frac{\vert \Delta z \vert}{(d - \vert \Delta z \vert)d^2}.
+\end{align*}$$
+
+If we let $M$ denote the maximum value of $\vert f(s) \vert$ on $C$, then we have 
+
+$$\left \vert \int_C f(s) \left[ \frac{1}{(s - z - \Delta z)(s-z)} - \frac{1}{(s-z)^2} \right] \, ds \right \vert \le \frac{M\vert \Delta z \vert}{(d - \vert \Delta z \vert)d^2}L$$
+
+where $L$ is the lenght of $C$. By taking the limit that $\Delta z$ goes to $0$, we obtain that 
+
+$$\lim_{\Delta z \to 0} \int_C f(s) \left[ \frac{1}{(s - z - \Delta z)(s-z)} - \frac{1}{(s-z)^2} \right] \, ds = 0.$$
+
+Thus, we conclude that 
+
+$$\begin{align*}
+f'(z) &= \lim_{\Delta z \to 0} \frac{f(z + \Delta z) - f(z)}{\Delta z} \\
+&= \frac{1}{2\pi i} \int_C \frac{f(s)}{(s-z)^2} \, ds + \lim_{\Delta z \to 0} \frac{1}{2\pi i} \int_C f(s) \left[ \frac{1}{(s - z - \Delta z)(s-z)} - \frac{1}{(s-z)^2} \right] \, ds \\
+&=  \frac{1}{2\pi i} \int_C \frac{f(s)}{(s-z)^2} \, ds.
+\end{align*}$$
+
+
+
