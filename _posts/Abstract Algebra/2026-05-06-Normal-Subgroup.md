@@ -20,7 +20,7 @@ $(\because)$ Let $G$ be an abelian group and $H \le G$. Let $a \in G$. Then $ah 
 
 **(iii)** Every group has trivial normal subgroups $\\{ e\\}$ and $G$.
 
-$(\because)$ Let $a \in G$. Then $ae = ea = a$, so $a\{e\} = \{a\} = \{e\}a$. Thus $\\{e\} \lhd G$. 
+$(\because)$ Let $a \in G$. Then $ae = ea = a$, so $a\{e\} = \{a\} = \{e\}a$. Thus $\\{e\\} \lhd G$. 
 
 Let $a \in G$. Then for each $g \in G$, $a = a(a^{-1}g) \in aG$ and $a = (ga^{-1})a \in Ga$. Thus $aG = Ga$, which means that $G \lhd G$. 
 
