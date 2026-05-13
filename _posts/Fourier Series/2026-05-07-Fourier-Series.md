@@ -56,3 +56,15 @@ where
 $$\begin{align*}
     b_n &= \frac{2}{L} \int_{0}^L f(x) \sin \frac{n \pi x}{L} \, dx.
 \end{align*}$$
+
+---
+## Remark
+**(i)** The Fourier sine series $\displaystyle \sum_{n=1}^{\infty} b_n \sin \frac{n \pi x}{L}$ can be regarded as an expansion of an arbitrary function that is odd and has period $2L$ defined on $\mathbb{R}$.
+
+**(ii)** The Fourier sine series $\displaystyle \frac{a_0}{2} + \sum_{n=1}^{\infty} a_n \cos \frac{n \pi}{L} x$ can be regarded as an expansion of an arbitrary function that is even and has period $2L$ defined on $\mathbb{R}$.
+
+**(iii)** The Dirichlet boundary conditions $u(0, t) = 0 = u(L, t)$ correspond to the odd extension.
+
+**(iv)** The Newmann boundary conditions $u_x(0, t) = 0 = u_x(L, t)$ correspond to the even extension.
+
+**(v)** The periodic boundary conditions $u(L, t) = u(-L, t)$ and $u_x(L, t) = u_x(-L, t)$ correspond to the periodic extension.

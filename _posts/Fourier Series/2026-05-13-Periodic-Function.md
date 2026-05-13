@@ -11,7 +11,7 @@ A function $f: \mathbb{R} \to \mathbb{R}$ is said to be ***periodic*** if there 
 
 ---
 ## Lemma
-If a periodic function $f:\mathbb{R} \to \mathbb{R}$ has a period $p$, then $f$ has a period $mp$ for each $m \in \mathbb{N}$.
+If a periodic function $f:\mathbb{R} \to \mathbb{R}$ has period $p$, then $f$ has period $mp$ for each $m \in \mathbb{N}$.
 
 ### Proof
 For all $x \in \mathbb{R}$, we have
@@ -44,7 +44,7 @@ Thus, $f$ is a periodic function with a period $p$. $\blacksquare$
 
 ---
 ## Definition 2
-Let $f: (-p, p) \to \mathbb{R}$ be a function. The periodic extension $f _ {\text{per}}$ of $f$ is a function $f _ {\text{per}} : \mathbb{R} \to \mathbb{R}$ defined by 
+Let $f: (-p, p) \to \mathbb{R}$ be a function. The ***periodic extension*** $f _ {\text{per}}$ of $f$ is a function $f _ {\text{per}} : \mathbb{R} \to \mathbb{R}$ defined by 
 
 $$f _ {\text{per}}(x) = f(x - 2pm)$$
 
