@@ -184,7 +184,7 @@ Let $a$ and $b$ be the least upper bounds for $X$. Then $a \leq b$ because $b$ i
 
 ---
 
-## Theorem 5
+## Theorem 5 (Greatest Lower Bound Property)
 A nonempty subset of real numbers which is bounded below has a greatest lower bound.
 
 ### Proof
