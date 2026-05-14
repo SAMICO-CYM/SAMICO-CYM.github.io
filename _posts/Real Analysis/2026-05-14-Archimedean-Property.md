@@ -1,6 +1,6 @@
 ---
 title: Archimedean Property
-date: 2028-05-14
+date: 2026-05-14
 categories: [Mathematics, Real Analysis]
 tags: []
 math: true
