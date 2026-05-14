@@ -87,6 +87,7 @@ $$\begin{align*} -(x + y) &= -(x+y) + 0 + 0 \text{(A4)} \\ &= -(x+y) + (x -x) + 
 Thus $-(x+y) = -x -y$.   
 
 **(iv)** 
+
 $(\Longleftarrow)$ 
 
 Clear.  
