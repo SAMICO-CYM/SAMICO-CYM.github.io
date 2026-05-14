@@ -123,10 +123,10 @@ $$\begin{align*}
 B &= A \cap C \\
 &= \left( \prod _ {\alpha \in J} A_\alpha \right) \cap \left( \prod _ {\alpha \in J} U_\alpha \right) \\
 &= \prod _ {\alpha \in J} (A_\alpha \cap U_\alpha) \\
-&= \prod _ {\alpha \in J} B_\alpha,
+&= \prod _ {\alpha \in J} V_\alpha,
 \end{align*}$$
 
-where $B_\alpha = A_\alpha \cap U_\alpha$ for each $\alpha \in J$. Since each $A_\alpha$ is a subspace of $X_\alpha$, $B_\alpha$ is an open set of $A_\alpha$ for each $\alpha \in J$. Then $B \in \mathcal{B} _ {box}$ by Theorem 3. Thus, $\mathcal{B} _ {sub} \subset \mathcal{B} _ {box}$, and therefore $\mathcal{B} _ {sub} = \mathcal{B} _ {box}$. 
+where $V_\alpha = A_\alpha \cap U_\alpha$ for each $\alpha \in J$. Since each $A_\alpha$ is a subspace of $X_\alpha$, $V_\alpha$ is an open set of $A_\alpha$ for each $\alpha \in J$. Then $B \in \mathcal{B} _ {box}$. Thus, $\mathcal{B} _ {sub} \subset \mathcal{B} _ {box}$, and therefore $\mathcal{B} _ {sub} = \mathcal{B} _ {box}$. 
 
 
 
@@ -144,4 +144,4 @@ $$U = (-1, 1) \times \left( - \frac{1}{2}, \frac{1}{2} \right) \times \left( - \
 
 $$f^{-1}(U) = \bigcap_{n \in \mathbb{N}} \left( - \frac{1}{n}, \frac{1}{n} \right) = \{0\}$$
 
-는 $\mathbb{R}$에서 open이 아니다. 따라서 $f$는 box topology에서 연속이 아니므로 $(iv)$의 진술은 box topology에서 성립하지 않는다.
+는 $\mathbb{R}$에서 open이 아니다. 따라서 $f$는 box topology에서 연속이 아니므로 (iv)의 진술은 box topology에서 성립하지 않는다.
