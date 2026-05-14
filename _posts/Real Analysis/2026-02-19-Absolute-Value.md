@@ -1,6 +1,6 @@
 --- 
 title: Absolute Value
-date: 2026-02-19 15:00:00 +0900
+date: 2028-02-19 15:00:00 +0900
 categories: [Mathematics, Real Analysis]
 tags: []
 math: true
