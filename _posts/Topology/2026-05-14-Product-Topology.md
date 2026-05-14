@@ -49,7 +49,7 @@ X_\alpha, & \text{otherwise}
 
 ---
 ## Theorem 2
-Let $\{ X_\alpha \} _ {\alpha \in J}$ be an indexed family of topological spaces, and let $\displaystyle X := \prod _ {\alpha \in J} X_\alpha$. Let $\mathcal{B}$ and $\mathcal{B}'$ be the bases, described above, for the box topology and the product topology on $X$, respectively. 
+Let $\\{ X_\alpha \\} _ {\alpha \in J}$ be an indexed family of topological spaces, and let $\displaystyle X := \prod _ {\alpha \in J} X_\alpha$. Let $\mathcal{B}$ and $\mathcal{B}'$ be the bases, described above, for the box topology and the product topology on $X$, respectively. 
 
 **(i)** If $\vert J \vert < \infty$, then $\mathcal{B} = \mathcal{B}'$.
 
@@ -85,7 +85,7 @@ Then $\mathcal{B}_1'$ is a basis for the product topology on $X$.
 ---
 
 ## Theorem 4
-Let $\{ X_\alpha \} _ {\alpha \in J}$ be an indexed family of topological spaces, and let $\displaystyle X := \prod _ {\alpha \in J} X_\alpha$. Let $\mathcal{T}$ and $\mathcal{T}'$ be the box topology and the product topology, respectively, on $X$. 
+Let $\\{ X_\alpha \\} _ {\alpha \in J}$ be an indexed family of topological spaces, and let $\displaystyle X := \prod _ {\alpha \in J} X_\alpha$. Let $\mathcal{T}$ and $\mathcal{T}'$ be the box topology and the product topology, respectively, on $X$. 
 
 **(i)** If $A_\alpha$ is a subspace of $X_\alpha$ for each $\alpha \in J$, then $\displaystyle A := \prod _ {\alpha \in J} A_\alpha$ is a subspace on $(X, \mathcal{T})$ and $(X, \mathcal{T}')$.
 
