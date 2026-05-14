@@ -96,20 +96,35 @@ Let $\\{ X_\alpha \\} _ {\alpha \in J}$ be an indexed family of topological spac
 **(iv)** Let $f_\alpha: A \to X_\alpha$ be a function for each $\alpha \in J$. Then the function $f := (f_\alpha) _ {\alpha \in J} : A \to X$ is continuous on $(X, \mathcal{T}')$ $\iff$ $f_\alpha$ is continuous for each $\alpha \in J$. 
 
 ### Proof
-**(i)** Suppose that $A$ is equipped with the box topology. Let $U$ be an open set in $A$. Then we have
+**(i)** Suppose that $A$ is equipped with the box topology. Let $B$ be a basis element of $A$. Then we have
 
-$$U = \prod _ {\alpha \in J} U_\alpha$$
+$$B = \prod _ {\alpha \in J} B_\alpha$$
 
-for some open subsets $U_\alpha$ of $A_\alpha$ for each $\alpha \in J$. Since each $A_\alpha$ is a subspace of $X_\alpha$, we have that $U_\alpha = A_\alpha \cap V_\alpha$ for some open set $V_\alpha$ in $X_\alpha$ for each $\alpha \in J$. Then we have
+for some basis elements $B_\alpha$ of $A_\alpha$ for each $\alpha \in J$ by Theorem 3. Since each $A_\alpha$ is a subspace of $X_\alpha$, we have that $B_\alpha = A_\alpha \cap C_\alpha$ for some basis elements $C_\alpha$ of $X_\alpha$ for each $\alpha \in J$. Then we have
 
 $$\begin{align*}
-U &= \prod _ {\alpha \in J} U_\alpha \\
-&= \prod _ {\alpha \in J} (A_\alpha \cap V_\alpha) \\
-&= \left( \prod _ {\alpha \in J} A_\alpha \right) \cap \left( \prod _ {\alpha \in J} V_\alpha \right) \\
-&= A \cap \left( \prod _ {\alpha \in J} V_\alpha \right).
+B &= \prod _ {\alpha \in J} B_\alpha \\
+&= \prod _ {\alpha \in J} (A_\alpha \cap C_\alpha) \\
+&= \left( \prod _ {\alpha \in J} A_\alpha \right) \cap \left( \prod _ {\alpha \in J} C_\alpha \right) \\
+&= A \cap \left( \prod _ {\alpha \in J} C_\alpha \right).
 \end{align*}$$
 
-Since $\prod _ {\alpha \in J} V_\alpha$ is an open set in $(X, \mathcal{T})$ by the definition of the box topology, it follows that $U$ is open in $A$ with the subspace topology. Thus, the box topology on $A$ is a subspace topology on $(X, \mathcal{T})$.
+Since $\prod _ {\alpha \in J} C_\alpha$ is a basis element of $(X, \mathcal{T})$ by the definition of the box topology, it follows that $B$ is a basis element of $A$ with the subspace topology. 
+
+Conversely, let $B$ be a basis element of $A$ with the subspace topology. Then $B = A \cap C$ for some basis element $C$ of $(X, \mathcal{T})$. By the definition of the box topology, we have 
+
+$$C = \prod _ {\alpha \in J} C_\alpha$$
+
+for some basis elements $C_\alpha$ of $X_\alpha$ for each $\alpha \in J$. Then we have 
+
+$$\begin{align*}
+B &= A \cap C \\
+&= \left( \prod _ {\alpha \in J} A_\alpha \right) \cap \left( \prod _ {\alpha \in J} C_\alpha \right) \\
+&= \prod _ {\alpha \in J} (A_\alpha \cap C_\alpha) \\
+&= \prod _ {\alpha \in J} B_\alpha,
+\end{align*}$$
+
+where $B_\alpha = A_\alpha \cap C_\alpha$ for each $\alpha \in J$. Since $A_\alpha$ is a subspace of $X_\alpha$, $B_\alpha$ is a basis element of $A_\alpha$ with the subspace topology. Thus, the box topology on $A$ is a subspace topology on $(X, \mathcal{T})$.
 
 
 
