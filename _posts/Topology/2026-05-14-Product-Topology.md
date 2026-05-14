@@ -87,7 +87,7 @@ Then $\mathcal{B}_1'$ is a basis for the product topology on $X$.
 ## Theorem 4
 Let $\{ X_\alpha \} _ {\alpha \in J}$ be an indexed family of topological spaces, and let $\displaystyle X := \prod _ {\alpha \in J} X_\alpha$. Let $\mathcal{T}$ and $\mathcal{T}'$ be the box topology and the product topology, respectively, on $X$. 
 
-**(i)** If $A_\alpha$ is a subspace of $X_\alpha$ for each $\alpha \in J$, then $\displaystyle \prod _ {\alpha \in J} A_\alpha$ is a subspace on $(X, \mathcal{T})$ and $(X, \mathcal{T}')$.
+**(i)** If $A_\alpha$ is a subspace of $X_\alpha$ for each $\alpha \in J$, then $\displaystyle A := \prod _ {\alpha \in J} A_\alpha$ is a subspace on $(X, \mathcal{T})$ and $(X, \mathcal{T}')$.
 
 **(ii)** If $X_\alpha$ is Hausdorff for each $\alpha \in J$, then $(X, \mathcal{T})$ and $(X, \mathcal{T}')$ are Hausdorff.
 
@@ -96,7 +96,22 @@ Let $\{ X_\alpha \} _ {\alpha \in J}$ be an indexed family of topological spaces
 **(iv)** Let $f_\alpha: A \to X_\alpha$ be a function for each $\alpha \in J$. Then the function $f := (f_\alpha) _ {\alpha \in J} : A \to X$ is continuous on $(X, \mathcal{T}')$ $\iff$ $f_\alpha$ is continuous for each $\alpha \in J$. 
 
 ### Proof
-(i)
+**(i)** Suppose that $A$ is equipped with the box topology. Let $U$ be an open set in $A$. Then we have
+
+$$U = \prod _ {\alpha \in J} U_\alpha$$
+
+for some open subsets $U_\alpha$ of $A_\alpha$ for each $\alpha \in J$. Since each $A_\alpha$ is a subspace of $X_\alpha$, we have that $U_\alpha = A_\alpha \cap V_\alpha$ for some open set $V_\alpha$ in $X_\alpha$ for each $\alpha \in J$. Then we have
+
+$$\begin{align*}
+U &= \prod _ {\alpha \in J} U_\alpha \\
+&= \prod _ {\alpha \in J} (A_\alpha \cap V_\alpha) \\
+&= \left( \prod _ {\alpha \in J} A_\alpha \right) \cap \left( \prod _ {\alpha \in J} V_\alpha \right) \\
+&= A \cap \left( \prod _ {\alpha \in J} V_\alpha \right).
+\end{align*}$$
+
+Since $\prod _ {\alpha \in J} V_\alpha$ is an open set in $(X, \mathcal{T})$ by the definition of the box topology, it follows that $U$ is open in $A$ with the subspace topology. Thus, the box topology on $A$ is a subspace topology on $(X, \mathcal{T})$.
+
+
 
 ---
 ## Counterexample
