@@ -115,18 +115,18 @@ Since $\prod _ {\alpha \in J} V_\alpha$ is a basis element of $(X, \mathcal{T})$
 
 Conversely, let $B \in \mathcal{B} _ {sub}$. Then $B = A \cap C$ for some basis element $C$ of $(X, \mathcal{T})$. By the definition of the box topology, we have
 
-$$C = \prod _ {\alpha \in J} C_\alpha$$
+$$C = \prod _ {\alpha \in J} U_\alpha$$
 
-for some basis elements $C_\alpha$ of $X_\alpha$ for each $\alpha \in J$. Then we have 
+for some open sets $U_\alpha$ of $X_\alpha$ for each $\alpha \in J$. Then we have 
 
 $$\begin{align*}
 B &= A \cap C \\
-&= \left( \prod _ {\alpha \in J} A_\alpha \right) \cap \left( \prod _ {\alpha \in J} C_\alpha \right) \\
-&= \prod _ {\alpha \in J} (A_\alpha \cap C_\alpha) \\
+&= \left( \prod _ {\alpha \in J} A_\alpha \right) \cap \left( \prod _ {\alpha \in J} U_\alpha \right) \\
+&= \prod _ {\alpha \in J} (A_\alpha \cap U_\alpha) \\
 &= \prod _ {\alpha \in J} B_\alpha,
 \end{align*}$$
 
-where $B_\alpha = A_\alpha \cap C_\alpha$ for each $\alpha \in J$. Since $A_\alpha$ is a subspace of $X_\alpha$, $B_\alpha$ is a basis element of the subspace $A_\alpha$ for each $\alpha \in J$. Then $B \in \mathcal{B} _ {box}$ by Theorem 3. Thus, $\mathcal{B} _ {sub} \subset \mathcal{B} _ {box}$, and therefore $\mathcal{B} _ {sub} = \mathcal{B} _ {box}$. 
+where $B_\alpha = A_\alpha \cap U_\alpha$ for each $\alpha \in J$. Since each $A_\alpha$ is a subspace of $X_\alpha$, $B_\alpha$ is an open set of $A_\alpha$ for each $\alpha \in J$. Then $B \in \mathcal{B} _ {box}$ by Theorem 3. Thus, $\mathcal{B} _ {sub} \subset \mathcal{B} _ {box}$, and therefore $\mathcal{B} _ {sub} = \mathcal{B} _ {box}$. 
 
 
 
