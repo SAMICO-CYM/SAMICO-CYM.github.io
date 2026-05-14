@@ -80,12 +80,12 @@ Let $\{ X_\alpha \} _ {\alpha \in J}$ be an indexed family of topological spaces
 
 함수 $f: \mathbb{R} \to \prod _ {n \in \mathbb{N}} \mathbb{R}$를 $f(x) = (x, x, \cdots)$와 같이 정의하자. 이때 각각의 coordinate function $f_n: \mathbb{R} \to \mathbb{R}$는 $f_n(x) = x$이므로 연속이다. 
 
-한편, 
+반면, 
 
 $$U = (-1, 1) \times \left( - \frac{1}{2}, \frac{1}{2} \right) \times \left( - \frac{1}{3}, \frac{1}{3} \right) \times \cdots = \prod _ {n \in \mathbb{N}} \left( - \frac{1}{n}, \frac{1}{n} \right)$$
 
-는 box topology $(X, \mathcal{T})$에서 open이지만, 
+는 box topology에서 open이지만
 
-$$f^{-1}(U) = \bigcap_{n \in \mathbb{N}} \left( - \frac{1}{n}, \frac{1}{n} \right) = {0}$$
+$$f^{-1}(U) = \bigcap_{n \in \mathbb{N}} \left( - \frac{1}{n}, \frac{1}{n} \right) = \{0\}$$
 
 는 $\mathbb{R}$에서 open이 아니다. 따라서 $f$는 box topology에서 연속이 아니므로 $(iv)$의 진술은 box topology에서 성립하지 않는다.
