@@ -38,6 +38,19 @@ $$T_4 \implies T_3 \implies T_2 \implies T_1 \implies T_0$$
 
 ---
 
+## Theorem 2
+Let $\mathcal{T}$ and $\mathcal{T}'$ be two topological space on a set $X$. Suppose that $\mathcal{T}'$ is finer than $\mathcal{T}$, i.e., $\mathcal{T} \subset \mathcal{T}'$. 
+
+**(i)** If $\mathcal{T}$ is $T_0$, then $\mathcal{T}'$ is $T_0$.
+
+**(ii)** If $\mathcal{T}$ is $T_1$, then $\mathcal{T}'$ is $T_1$.
+
+**(iii)** If $\mathcal{T}$ is $T_2$, then $\mathcal{T}'$ is $T_2$.
+
+### Proof
+
+---
+
 ## Example
 **(i)** $(\mathbb{R}^n, \mathcal{T} _ {\text{usual}})$ is a $T_4$-space. 
 
