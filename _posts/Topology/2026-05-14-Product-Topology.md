@@ -96,11 +96,13 @@ Let $\\{ X_\alpha \\} _ {\alpha \in J}$ be an indexed family of topological spac
 **(iv)** Let $f_\alpha: A \to X_\alpha$ be a function for each $\alpha \in J$. Then the function $f := (f_\alpha) _ {\alpha \in J} : A \to X$ is continuous on $(X, \mathcal{T}')$ $\iff$ $f_\alpha$ is continuous for each $\alpha \in J$. 
 
 ### Proof
-**(i)** Suppose that $A$ is equipped with the box topology. Let $B$ be a basis element of $A$. Then we have
+**(i)** Let $\mathcal{B}_{box}$ and $\mathcal{B}_{sub}$ be bases for the box topology and the subspace topology on $A$, respectively. 
+ 
+Let $B \in \mathcal{B}_{box}$. Then we have
 
 $$B = \prod _ {\alpha \in J} B_\alpha$$
 
-for some basis elements $B_\alpha$ of $A_\alpha$ for each $\alpha \in J$ by Theorem 3. Since each $A_\alpha$ is a subspace of $X_\alpha$, we have that $B_\alpha = A_\alpha \cap C_\alpha$ for some basis elements $C_\alpha$ of $X_\alpha$ for each $\alpha \in J$. Then we have
+for some basis elements $B_\alpha$ of the subspace $A_\alpha$ for each $\alpha \in J$ by Theorem 3. Since each $A_\alpha$ is a subspace of $X_\alpha$, we have that $B_\alpha = A_\alpha \cap C_\alpha$ for some basis elements $C_\alpha$ of $X_\alpha$ for each $\alpha \in J$. Then we have
 
 $$\begin{align*}
 B &= \prod _ {\alpha \in J} B_\alpha \\
@@ -109,9 +111,9 @@ B &= \prod _ {\alpha \in J} B_\alpha \\
 &= A \cap \left( \prod _ {\alpha \in J} C_\alpha \right).
 \end{align*}$$
 
-Since $\prod _ {\alpha \in J} C_\alpha$ is a basis element of $(X, \mathcal{T})$ by the definition of the box topology, it follows that $B$ is a basis element of $A$ with the subspace topology. 
+Since $\prod _ {\alpha \in J} C_\alpha$ is a basis element of $(X, \mathcal{T})$ by the definition of the box topology, it follows that $B \in \mathcal{B}_{sub}$. Thus, $\mathcal{B}_{box} \subset \mathcal{B}_{sub}$.
 
-Conversely, let $B$ be a basis element of $A$ with the subspace topology. Then $B = A \cap C$ for some basis element $C$ of $(X, \mathcal{T})$. By the definition of the box topology, we have 
+Conversely, let $B \in \mathcal{B}_{sub}$. Then $B = A \cap C$ for some basis element $C$ of $(X, \mathcal{T})$. By the definition of the box topology, we have
 
 $$C = \prod _ {\alpha \in J} C_\alpha$$
 
@@ -124,7 +126,7 @@ B &= A \cap C \\
 &= \prod _ {\alpha \in J} B_\alpha,
 \end{align*}$$
 
-where $B_\alpha = A_\alpha \cap C_\alpha$ for each $\alpha \in J$. Since $A_\alpha$ is a subspace of $X_\alpha$, $B_\alpha$ is a basis element of $A_\alpha$ with the subspace topology. Thus, the box topology on $A$ is a subspace topology on $(X, \mathcal{T})$.
+where $B_\alpha = A_\alpha \cap C_\alpha$ for each $\alpha \in J$. Since $A_\alpha$ is a subspace of $X_\alpha$, $B_\alpha$ is a basis element of the subspace $A_\alpha$ for each $\alpha \in J$. Then $B \in \mathcal{B}_{box}$ by Theorem 3. Thus, $\mathcal{B}_{sub} \subset \mathcal{B}_{box}$, and therefore $\mathcal{B}_{sub} = \mathcal{B}_{box}$. 
 
 
 
