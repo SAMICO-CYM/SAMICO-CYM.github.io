@@ -16,10 +16,10 @@ A set $X \subseteq \mathbb{R}$ is said to be a ***successor set*** if the follo
 실수 집합 $\mathbb{R}$이 successor set이기 때문에 successor set은 적어도 하나 존재한다.
 
 ## Lemma 1
-If $\mathcal{A}$ is any nonempty collection of successor sets, then $\cap \mathcal{A}$ is a successor set.
+If $\mathcal{A}$ is any nonempty collection of successor sets, then $\displaystyle \bigcap \mathcal{A}$ is a successor set.
 
 ### Proof
-Since $1$ is in every succerssor set, $1 \in \cap \mathcal{A}$. Let $n \in \cap \mathcal{A}$. Then $n \in A, \forall A \in \mathcal{A}$. Then $n + 1$ is also in any $A$ in $\mathcal{A}$ by definition. Thus $\cap \mathcal{A}$ is a successor set. $\blacksquare$
+Since $1$ is in every succerssor set, $1 \in \displaystyle \bigcap \mathcal{A}$. Let $n \in \displaystyle \bigcap \mathcal{A}$. Then $n \in A, \forall A \in \mathcal{A}$. Then $n + 1$ is also in any $A$ in $\mathcal{A}$ by definition. Thus $\displaystyle \bigcap \mathcal{A}$ is a successor set. $\blacksquare$
 
 ---
 
