@@ -87,7 +87,7 @@ Then $\mathcal{B}_1'$ is a basis for the product topology on $X$.
 ## Theorem 4
 Let $\\{ X_\alpha \\} _ {\alpha \in J}$ be an indexed family of topological spaces, and let $\displaystyle X := \prod _ {\alpha \in J} X_\alpha$. Let $\mathcal{T}$ and $\mathcal{T}'$ be the box topology and the product topology, respectively, on $X$. 
 
-**(i)** If $A_\alpha$ is a subspace of $X_\alpha$ for each $\alpha \in J$, then $\displaystyle A := \prod _ {\alpha \in J} A_\alpha$ is a subspace on $(X, \mathcal{T})$ and $(X, \mathcal{T}')$.
+**(i)** If $A_\alpha$ is a subspace of $X_\alpha$ for each $\alpha \in J$, then $\displaystyle A := \prod _ {\alpha \in J} A_\alpha$ equipped with the box topology and product topology is a subspace of $(X, \mathcal{T})$ and $(X, \mathcal{T}')$, respectively.
 
 **(ii)** If $X_\alpha$ is Hausdorff for each $\alpha \in J$, then $(X, \mathcal{T})$ and $(X, \mathcal{T}')$ are Hausdorff.
 
