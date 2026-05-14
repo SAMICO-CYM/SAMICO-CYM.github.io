@@ -166,7 +166,8 @@ Let $X$ be a nonempty subset of $\mathbb{R}$.
 - **(1)** $a$ is an upper bound for $X$.  
 
 - **(2)** If $b$ is an upper bound for $X$, then $a ≤ b$.  
-- A number $a$ in $\mathbb{R}$ is said to be a ***greatest lower bound*** or an ***infimum*** for $X$, denoted by $b = \inf X$, if  
+
+**(iii)** A number $a$ in $\mathbb{R}$ is said to be a ***greatest lower bound*** or an ***infimum*** for $X$, denoted by $b = \inf X$, if  
 
 - **(1)** $a$ is a lower bound for $X$.  
 
