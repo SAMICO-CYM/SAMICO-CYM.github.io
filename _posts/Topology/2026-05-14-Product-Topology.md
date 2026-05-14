@@ -96,8 +96,8 @@ Let $\\{ X_\alpha \\} _ {\alpha \in J}$ be an indexed family of topological spac
 **(iv)** Let $f_\alpha: A \to X_\alpha$ be a function for each $\alpha \in J$. Then the function $f := (f_\alpha) _ {\alpha \in J} : A \to X$ is continuous on $(X, \mathcal{T}')$ $\iff$ $f_\alpha$ is continuous for each $\alpha \in J$. 
 
 ### Proof
-**(i)** Let $\mathcal{B} _ {box}$ and $\mathcal{B} _ {sub}$ be bases for the box topology and the subspace topology on $A$, respectively. 
- 
+**(i)** Let $\mathcal{B} _ {box}, \mathcal{B} _ {prod}$ and $\mathcal{B} _ {sub}$ be bases for the box topology, the product topology and the subspace topology on $A$, respectively. 
+
 Let $B \in \mathcal{B}_{box}$. Then we have
 
 $$B = \prod _ {\alpha \in J} U_\alpha$$
@@ -126,7 +126,46 @@ B &= A \cap C \\
 &= \prod _ {\alpha \in J} V_\alpha,
 \end{align*}$$
 
-where $V_\alpha = A_\alpha \cap U_\alpha$ for each $\alpha \in J$. Since each $A_\alpha$ is a subspace of $X_\alpha$, $V_\alpha$ is an open set of $A_\alpha$ for each $\alpha \in J$. Then $B \in \mathcal{B} _ {box}$. Thus, $\mathcal{B} _ {sub} \subset \mathcal{B} _ {box}$, and therefore $\mathcal{B} _ {sub} = \mathcal{B} _ {box}$. 
+where $V_\alpha = A_\alpha \cap U_\alpha$ for each $\alpha \in J$. Since each $A_\alpha$ is a subspace of $X_\alpha$, $V_\alpha$ is an open set of $A_\alpha$ for each $\alpha \in J$. Then $B \in \mathcal{B} _ {box}$. Thus, $\mathcal{B} _ {sub} \subset \mathcal{B} _ {box}$, and therefore $\mathcal{B} _ {sub} = \mathcal{B} _ {box}$. Hence, $A$ equipped with the box topology and the subspace topology is the same.
+
+Next, we consider $A$ equipped with the product topology. Since $\mathcal _ {prod} \subset \mathcal{B} _ {box} = \mathcal{B} _ {sub}$ by Theorem 2, we only need to show that $\mathcal{B} _ {sub} \subset \mathcal{B} _ {prod}$. 
+
+Let $B \in \mathcal{B} _ {sub}$. Then $B = A \cap C$ for some basis element $C$ of $(X, \mathcal{T})$. By the definition of the product topology, we have 
+
+$$C = \prod _ {\alpha \in J} U_\alpha$$
+
+where 
+
+$$U_\alpha = \begin{cases} 
+U_\beta, & \text{if } \alpha = \beta \in I \\ 
+X_\alpha, & \text{otherwise} 
+\end{cases}$$
+
+and each $U_\beta$ is open in $X_\beta$, and $I \subset J$ with $\vert I \vert < \infty$. Then we have 
+
+$$\begin{align*}
+B &= A \cap C \\
+&= \left( \prod _ {\alpha \in J} A_\alpha \right) \cap \left( \prod _ {\alpha \in J} U_\alpha \right) \\
+&= \prod _ {\alpha \in J} (A_\alpha \cap U_\alpha) \\
+&= \prod _ {\alpha \in J} V_\alpha,
+\end{align*}$$
+
+where $V_\alpha := A_\alpha \cap U_\alpha$ for each $\alpha \in J$. Note that 
+
+$$V_\alpha = \begin{cases}
+A_\beta \cap U_\beta, & \text{if } \alpha = \beta \in I \\ 
+A_\alpha, & \text{otherwise}
+\end{cases}$$
+
+and each $V_\alpha$ is an open set of $A_\alpha$ for each $\alpha \in J$. Since each $A_\alpha$ is a subspace of $X_\alpha$, each $A_\beta \cap U_\beta$ is open in $A_\beta$ for each $\beta \in I$. By definition of the product topology, $B \in \mathcal{B} _ {prod}$. Thus, $\mathcal{B} _ {sub} \subset \mathcal{B} _ {prod}$, and therefore $\mathcal{B} _ {sub} = \mathcal{B} _ {prod}$. Hence, $A$ equipped with the product topology and the subspace topology is the same.
+
+**(ii)** Suppose that each $X_\alpha$ is Hausdorff. Let $x = (x_\alpha) _ {\alpha \in J}, y = (y_\alpha) _ {\alpha \in J} \in X$ with $x \neq y$. Then there exists $\beta \in J$ such that $x_\beta \neq y_\beta$. Since each $X_\beta$ is Hausdorff, there exist neighborhoods $U_\beta$ and $V_\beta$ of $x_\beta$ and $y_\beta$, respectively, such that $U_\beta \cap V_\beta = \emptyset$. Let
+
+$$
+U := \prod _ {\alpha \in J} U_\alpha \quad \text{and} \quad V := \prod _ {\alpha \in J} V_\alpha
+$$
+
+where $U_\alpha = U_\beta$ and $V_\alpha = V_\beta$ if $\alpha = \beta$, and $U_\alpha = X_\alpha$ and $V_\alpha = X_\alpha$ otherwise. Then $U$ and $V$ are open sets in both $(X, \mathcal{T})$ and $(X, \mathcal{T}')$. Moreover, $x \in U, y \in V$, and $U \cap V = \emptyset$ because $U_\beta \cap V_\beta = \emptyset$. Thus, $(X, \mathcal{T})$ and $(X, \mathcal{T}')$ are Hausdorff. 
 
 
 
