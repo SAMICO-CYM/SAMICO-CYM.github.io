@@ -33,7 +33,7 @@ $$\begin{align*}
 \left \vert \frac{f(z) - f(z_0)}{z - z_0} \right \vert < \frac{\varepsilon}{\rho}
 \end{align*}$$
 
-for all $z$ in $C _ {\rho}$. By [$ML$-lemma](<{% post_url Complex Analysis/2026-05-01-ML-Lemma %}), we obtain 
+for all $z$ in $C _ {\rho}$. By [$ML$-Lemma](<{% post_url Complex Analysis/2026-05-01-ML-Lemma %}>), we obtain 
 
 $$\begin{align*}
 \left \vert \int _ {C _ {\rho}} \frac{f(z) - f(z_0)}{z - z_0} \, dz \right \vert < \frac{\varepsilon}{\rho} \cdot 2\pi \rho = 2 \pi \varepsilon.
