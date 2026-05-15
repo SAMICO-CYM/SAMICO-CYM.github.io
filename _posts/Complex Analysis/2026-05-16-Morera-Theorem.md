@@ -13,7 +13,7 @@ $$\int_C f(z) \, dz = 0$$
 
 for every closed contour $C$ in $D$, then $f$ is analytic throughout $D$.
 
-[코시 정리]가 $f$가 analytic일 때 모든 closed contour에 대해서 적분이 $0$인 것을 보인 것과 반대로, 모레라 정리는 적분이 $0$일 때 $f$가 analytic임을 보인다. 
+[코시 정리](<{% post_url Complex Analysis/2026-05-08-Cauchy-Theorem %}#cauchy's-theorem>)가 $f$가 analytic일 때 모든 closed contour에 대해서 적분이 $0$인 것을 보인 것과 반대로, 모레라 정리는 적분이 $0$일 때 $f$가 analytic임을 보인다. 
 
 ### Proof
 

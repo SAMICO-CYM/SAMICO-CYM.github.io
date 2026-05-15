@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Complex Analysis/2026-05-16-Maximum-Modulus-Principle.md",
+                "file": "_posts/Complex Analysis/2026-05-08-Cauchy-Theorem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-16-Maximum-Modulus-Principle"
+              "title": "2026-05-08-Cauchy-Theorem"
             }
           },
           {
@@ -49,7 +49,8 @@
               "title": "2026-03-27-Topology-In-Complex-Plane"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -208,11 +209,12 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "9f66c7cea0cdde2c",
+  "active": "cd446b75b15fbc82",
   "lastOpenFiles": [
+    "_posts/Complex Analysis/2026-05-08-Cauchy-Theorem.md",
+    "_posts/Complex Analysis/2026-05-16-Maximum-Modulus-Principle.md",
     "_posts/Complex Analysis/2026-05-16-Morera-Theorem.md",
     "_posts/Complex Analysis/2026-03-27-Topology-In-Complex-Plane.md",
-    "_posts/Complex Analysis/2026-05-16-Maximum-Modulus-Principle.md",
     "_site/posts/Maximum-Modulus-Principle/index.html",
     "_site/posts/Maximum-Modulus-Principle",
     "_posts/Complex Analysis/2026-05-16-Gauss-Mean-Value-Theorem.md",
@@ -229,7 +231,6 @@
     "_posts/Topology/2026-04-01-Product-Topology-On-Two-Set.md",
     "_posts/Topology/2026-05-14-Product-Topology.md",
     "_posts/Complex Analysis/2026-05-12-Cauchy-Integral-Formula.md",
-    "_posts/Complex Analysis/2026-05-08-Cauchy-Theorem.md",
     "_site/posts/Liouville-Theorem/index.html",
     "_site/posts/Liouville-Theorem",
     "_posts/Complex Analysis/2026-05-01-ML-Lemma.md",
