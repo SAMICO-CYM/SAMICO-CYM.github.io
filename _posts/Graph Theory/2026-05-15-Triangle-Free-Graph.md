@@ -75,7 +75,8 @@ $$\begin{align*}
 \left\lfloor \frac{(n-2)^2}{4} \right\rfloor + 1 + n-2 &= \left\lfloor \frac{(2k-2)^2}{4} \right\rfloor + 1 + (2k-2) \\
 &= (k-1)^2 + 1 + (2k-2) \\
 &= k^2 - 2k + 1 + 2k - 1 \\
-&= k^2 = \left\lfloor \frac{n^2}{4} \right\rfloor
+&= k^2 \\
+&= \left\lfloor \frac{n^2}{4} \right\rfloor
 \end{align*}$$
 
 If $n = 2k-1$ for some $k \in \mathbb{N}$, then we have
