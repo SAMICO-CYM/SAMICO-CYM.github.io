@@ -67,7 +67,7 @@ Let $\\{ u, v \\}$ be an edge in $G$, and let $G'$ be a graph with $V(G') = V(G)
 
 Since $u$ and $v$ cannot have common neighbors in $G'$, $G$ has at most $\lfloor \frac{(n-2)^2}{4} \rfloor + 1 + n-2$ edges.
 
-Claim: $\lfloor \frac{(n-2)^2}{4} \rfloor + 1 + n-2 = \lfloor \frac{n^2}{4} \rfloor$
+**Claim:** $\lfloor \frac{(n-2)^2}{4} \rfloor + 1 + n-2 = \lfloor \frac{n^2}{4} \rfloor$
 
 $\big[(\because)$ If $n = 2k$ for some $k \in \mathbb{N}$, then we have 
 
@@ -91,4 +91,4 @@ $$
 \end{align*}
 $$
 
-Hence, in any cases, we obtain the desired result.$\big]$
+Hence, in any cases, we obtain the desired result. $\blacksquare$ $\big]$
