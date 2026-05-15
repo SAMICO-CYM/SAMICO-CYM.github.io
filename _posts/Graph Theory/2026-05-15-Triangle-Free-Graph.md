@@ -52,7 +52,7 @@ $$\frac{n}{2} = \frac{a+b}{2} \ge \sqrt{ab}$$
 
 ---
 ## Theorem
-For all $n\ ge 1$, we have 
+For all $n \ge 1$, we have 
 
 $$T(n) = \left\lfloor \frac{n^2}{4} \right\rfloor$$
 
