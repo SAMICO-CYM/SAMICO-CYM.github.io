@@ -26,7 +26,7 @@ Let $G$ be a graph on $n$ verticies.
 
 **(iii)** How many edges can $G$ have to be triangle-free?
 
-- $\lfloor \frac{n^2}{4} \rfloor$
+- $\displaystyle \lfloor \frac{n^2}{4} \rfloor$
 
 ---
 
