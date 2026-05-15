@@ -40,7 +40,7 @@ $$\begin{align*}
 &= \frac{a^2 - a + b^2 - b}{2} \\
 &= \frac{(a+b)^2 - (a+b) - 2ab}{2} \\
 &= \frac{n^2 - n - 2ab}{2}
-\end{align*}
+\end{align*}$$
 
 이 값을 최대로 하는 $a, b$는 $a=1, b=n-1$ 또는 $a=n-1, b=1$일 때이다. 즉, 우리가 원하는 최대값은 $\displaystyle \binom{n-1}{2}$이다.
 
