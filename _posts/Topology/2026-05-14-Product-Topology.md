@@ -128,7 +128,7 @@ B &= A \cap C \\
 
 where $V_\alpha = A_\alpha \cap U_\alpha$ for each $\alpha \in J$. Since each $A_\alpha$ is a subspace of $X_\alpha$, $V_\alpha$ is an open set of $A_\alpha$ for each $\alpha \in J$. Then $B \in \mathcal{B} _ {box}$. Thus, $\mathcal{B} _ {sub} \subset \mathcal{B} _ {box}$, and therefore $\mathcal{B} _ {sub} = \mathcal{B} _ {box}$. Hence, $A$ equipped with the box topology and the subspace topology is the same.
 
-Next, we consider $A$ equipped with the product topology. Since $\mathcal _ {prod} \subset \mathcal{B} _ {box} = \mathcal{B} _ {sub}$ by Theorem 2, we only need to show that $\mathcal{B} _ {sub} \subset \mathcal{B} _ {prod}$. 
+Next, we consider $A$ equipped with the product topology. Since $\mathcal{B} _ {prod} \subset \mathcal{B} _ {box} = \mathcal{B} _ {sub}$ by Theorem 2, we only need to show that $\mathcal{B} _ {sub} \subset \mathcal{B} _ {prod}$. 
 
 Let $B \in \mathcal{B} _ {sub}$. Then $B = A \cap C$ for some basis element $C$ of $(X, \mathcal{T})$. By the definition of the product topology, we have 
 

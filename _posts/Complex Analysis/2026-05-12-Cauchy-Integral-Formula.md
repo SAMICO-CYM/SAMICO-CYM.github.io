@@ -1,4 +1,4 @@
---- 
+-- 
 title: Cauchy Integral Formula
 date: 2026-05-12
 categories: [Mathematics, Complex Analysis]
@@ -33,7 +33,7 @@ $$\begin{align*}
 \left \vert \frac{f(z) - f(z_0)}{z - z_0} \right \vert < \frac{\varepsilon}{\rho}
 \end{align*}$$
 
-for all $z$ in $C _ {\rho}$. By [$ML$-Lemma](<{% post_url Complex Analysis/2026-05-01-ML-Lemma %}>), we obtain 
+for all $z$ in $C _ {\rho}$. By $ML$-Lemma, we obtain 
 
 $$\begin{align*}
 \left \vert \int _ {C _ {\rho}} \frac{f(z) - f(z_0)}{z - z_0} \, dz \right \vert < \frac{\varepsilon}{\rho} \cdot 2\pi \rho = 2 \pi \varepsilon.
@@ -48,7 +48,7 @@ Thus,
 $$\int _ {C _ {\rho}} \frac{f(z)}{z - z_0} \, dz = 2\pi i f(z_0). \quad \blacksquare$$
 
 ---
-## Corollary 
+## Corollary 1
 Let $f$ be an analytic function inside and on a positvely oriented simple closed contour $C$. If $z_0$ be any point interior to $C$, then 
 
 $$f^{(n)}(z_0) = \frac{n!}{2\pi i} \int_C \frac{f(z)}{(z - z_0)^{n+1}} \, dz$$
@@ -104,5 +104,28 @@ f'(z) &= \lim_{\Delta z \to 0} \frac{f(z + \Delta z) - f(z)}{\Delta z} \\
 &=  \frac{1}{2\pi i} \int_C \frac{f(s)}{(s-z)^2} \, ds.
 \end{align*}$$
 
+---
+## Corollary 2
+If a function $f$ is analytic at a given point, then its derivatives of all orders are analytic there too.
 
+다시 말해 복소공간에서는 함수가 한번 미분가능하면 무한번 미분가능하다는 사실이 보장된다는 말도 안되는 내용이 성립한다.
 
+### Proof
+Let $f^{(n)}$ be the $n$th order derivative of $f$. We use induction on $n$.
+
+Suppose that $f$ is analytic at a point $z_0$. By definition, there is a neighborhood $\vert z-z_0 \vert < \varepsilon$ of $z_0$ throughout which $f$ is analytic. Then there is a positively oriented circle $C_0$ centered at $z_0$ and with radius $\frac{\varepsilon}{2}$, such that $f$ is analytic inside and on $C_0$. 
+
+By Cauchy integral formula, we have 
+
+$$f''(z) = \frac{1}{\pi i} \int _ {C_0} \frac{f(s)}{(s-z)^3} \, ds$$
+
+at each point $z$ interior to $C_0$. This means that $f''$ exists throughout $C_0$. Thus, $f'$ is analytic throughout the neighborhood $\vert z - z_0 \vert < \frac{\varepsilon}{2}$, which means that $f'$ is analytic at $z_0$. 
+
+Suppose that $f^{(n)}$ is analytic at $z_0$ for some $n > 1$. Then we can show that $f^{(n+1)}$ is analytic at $z_0$ as before. Thus, $f^{(n)}$ is analytic at $z_0$ for all $n$. $\blacksquare$
+
+---
+## Corollary 3
+If a function $f(z) = u(x, y) + iv(x, y)$ is analytic at a point $z = (x, y)$, then the component functions $u$ and $v$ are of class $C^\infty$, that is, have continuous partial derivatives of all orders at that point.
+
+### Proof
+Since $f$ is analytic at $z$, $f'(z) = u_x + iv_x = v_y - iu_x$ is also analytic, which means that $u_x, u_y, v_x, v_y$ exist and are continuous. By induction, $u$ and $v$ have continuous partial derivatives of all orders at $z$, which means that they are of class $C^\infty$. $\blacksquare$
