@@ -13,9 +13,10 @@ $$\int_C f(z) \, dz = 0$$
 
 for every closed contour $C$ in $D$, then $f$ is analytic throughout $D$.
 
-[코시 정리](<{% post_url Complex Analysis/2026-05-08-Cauchy-Theorem %}#cauchy's-theorem>)가 $f$가 analytic일 때 모든 closed contour에 대해서 적분이 $0$인 것을 보인 것과 반대로, 모레라 정리는 적분이 $0$일 때 $f$가 analytic임을 보인다. 
+[Cauchy-Goursat Theorem](<{% post_url Complex Analysis/2026-05-08-Cauchy-Goursat-Theorem %}#cauchy-goursat-theorem>)이 $f$가 analytic일 때 모든 closed contour에 대해서 적분이 $0$인 것을 보인 것과 반대로, 모레라 정리는 적분이 $0$일 때 $f$가 analytic임을 보인다. 
 
 ### Proof
+By [Theorem 1](<{% post_url Complex Analysis/2026-05-07-Antiderivative %}#theorem-1>), $f$ has an antiderivative $F$ in $D$, which means that there exists an analytic function $F$ such that $F'(z) = f(z), \forall z \in D$. Since $f$ is a derivative of $F$, $f$ is analytic by [Corollary 2](<{% post_url Complex Analysis/2026-05-12-Cauchy-Integral-Formula %}#corollary-2>). $\blacksquare$
 
 ---
 ## Cauchy's Inequality
@@ -23,4 +24,17 @@ Suppose that a function $f$ is analytic inside and on a positively oriented circ
 
 $$\left\vert f^{(n)}(z_0) \right\vert \le \frac{n! M_R}{R^n}, \forall n \in \mathbb{N}.$$
 
+This inequality is called ***Cauchy's inequailty***.
+
 ### Proof
+By Cauchy integral formula, we have 
+
+$$f^{(n)}(z_0) = \frac{n!}{2\pi i} \int _ {C_R} \frac{f(z)}{(z - z_0)^{n+1}} \, dz.$$
+
+Since $\vert z - z_0 \vert = R$ for all $z$ in $C_R$, we have that by $ML$-lemma,
+
+$$\begin{align*}
+\left\vert f^{(n)}(z_0) \right\vert &= \left \vert \frac{n!}{2\pi i} \int _ {C_R} \frac{f(z)}{(z - z_0)^{n+1}} \, dz \right \vert \\
+& \le \frac{n!}{2 \pi} \frac{M_R}{R^{n+1}} \cdot 2 \pi R \\
+&= \frac{n! M_R}{R^n}. \quad \blacksquare
+\end{align*}$$
