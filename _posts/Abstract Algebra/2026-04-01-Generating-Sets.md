@@ -16,16 +16,7 @@ Let $G$ be a group and let $S = \\{ a_i \mid i \in I \\}$ be a subset of $G$.
 **(iii)** If there exists $a_1, ..., a_n \in G$ such that $G = \langle \\{ a_1, ..., a_n \\} \rangle$, then $G$ is said to be ***finitely generated***. In this case, we write $G = \langle a_1, ..., a_n \rangle$.
 
 ---
-
 ## Theorem 1
-Let $G$ be a group and let $\\{ H_i \\} _ {i \in I}$ be a collection of subgroups of $G$. Then 
-
-$$\bigcap_{i \in I} H_i \le G.$$
-
-### Proof
-Let $a, b \in \bigcap_{i \in I} H_i$. Then $a, b \in H_i, \forall i \in I$. Since $H_i \le G$ for each $i$, we have $ab^{-1} \in H_i, \forall i \in I$. Thus $ab^{-1} \in \bigcap_{i \in I} H_i$, which means that $\bigcap_{i \in I} H_i \le G$. $\blacksquare$
-
-## Corollary
 Let $G$ be a group and let $S \subset G$. Then 
 
 $$\langle S \rangle = \bigcap_{S \subset H \le G} H.$$
@@ -50,10 +41,3 @@ Let $K$ denote the set of all finite products of integral powers of the $a_i$. S
 Let $a, b \in K$. Since each $a$ and $b$ is the product of finitely many integral powers of the $a_i$'s, so is $b^{-1}$. Thus $ab^{-1}$ is also a product of finitely many integral powers of the $a_i$'s, so that $ab^{-1} \in K$. Hence $K \le G$. 
 
 Since $\bigcap_{S \subset H \le G} H$ is the smallest subgroup of $G$ containing $S$, we have $\bigcap_{S \subset H \le G} H \subset K$. Therefore, $\langle S \rangle = \bigcap_{S \subset H \le G} H = K$. $\blacksquare$
-
----
-
-## Remark
-A union of subgroups of a group need NOT be a subgroup.
-
-$(\because)$ $\langle 2 \rangle, \langle 3 \rangle \le \mathbb{Z}$ but $\langle 2 \rangle \cup \langle 3 \rangle$ is not a subgroup of $\mathbb{Z}$ because $(-2) + 3 = 1 \notin \langle 2 \rangle \cup \langle 3 \rangle$. 
