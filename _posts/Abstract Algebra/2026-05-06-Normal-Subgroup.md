@@ -53,4 +53,22 @@ Suppose that $gHg^{-1} = H, \forall g \in G$. Let $g \in G$, and let $h \in H$. 
 Let $h \in H$. Since $g^{-1}Hg = H$, we have $g^{-1}hg = b$ for some $b \in H$, so that $hg = gb \in gH$. Thus $Hg \subset gH$. Hence, $gH = Hg$, which means that $H \lhd G$. $\blacksquare$
 
 ---
+## Theorem 2
+An intersection of normal subgroups of a group $G$ is again a normal subgroup of $G$.
 
+### Proof
+Let $\{ H_i \lhd G \mid i \in I\}$ be a collection of normal subgroups of $G$, where $I$ is an index set. By [Theorem 2](<{% post_url Abstract Algebra/2026-03-18-Subgroup %}#theorem-2>), $\bigcap_{i \in I}  H_i \le G$. By Theorem 1, we have that $gH_ig^{-1} \subset H_i, \forall g \in G$, for each $i \in I$. 
+
+Denote 
+
+$$H := \bigcap_{i \in I}H_i.$$
+
+We will show that $gHg^{-1} \subset H, \forall g \in G,$ which is equivalent to $H \lhd G$. 
+
+Fix $g \in G$, and let $x \in gHg^{-1}$. Then $x = gyg^{-1}$ for some $y \in H$. Since $y \in H_i, \forall i \in I$, $gyg^{-1} \in gH_ig^{-1} \subset H_i, \forall i \in I$ by Theorem 1, which means that $gyg^{-1} \in H$. Thus, we have $x = gyg^{-1} \in H$, and therefore $gHg^{-1} \subset H$. By Theorem 1, $H \lhd G$. $\blacksquare$
+
+---
+## Remark
+A union of normal subgroups of a group need NOT be a normal subgroup.
+
+$(\because)$ Consider the Klein-$4$ group $V = \\{e, a, b, c \\}$. Since $V$ is abelian, $\\{ e, a \\}$ and $\\{ e, b \\}$ are normal subgroups of $V$. But $\\{ e, a\\} \cup \\{ e, b \\} = \\{ e, a, b \\}$ is not closed under the operation of $V$ because $ab = c$. Thus, $\\{ e, a\\} \cup \\{ e, b \\} = \\{ e, a, b \\}$ is not a subgroup of $G$, so is not a normal subgroup of $G$.
