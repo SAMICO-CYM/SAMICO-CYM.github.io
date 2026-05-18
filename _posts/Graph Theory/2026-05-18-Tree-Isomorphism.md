@@ -27,15 +27,22 @@ For each planted tree $(T, r, \nu)$ on $n$ verticies, we define the ***code*** $
 **(iii)** $A(T) = L_r$. 
 
 ---
+## Remark
+Each label has the same number of $0$s as $1$s and the same is not true of any nontrivial initial sublabel.
+
+---
 ## Theorem
-For planted trees $T$ and $T'$, $A(T) = A(T') \iff T \cong T'$.
+For planted trees $T$ and $T'$, $A(T) = A(T') \iff T \cong T'$, that is, a given code uniquely determines the planted tree up to isomorphisms.
 
 ### Proof
 If $T \cong T'$, then clearly $A(T) = A(T')$. 
 
-Conversely, suppose that $A(T) = A(T')$. 
+Conversely, we suppose that a given code $A(T)$ of the planted tree $T$ on $n$ verticies uniquely determines $T$ up to isomorphisms. We will show this by induction on $n$.
 
----
+The basic case $n=1$ gives us that $A(T) = 01$ and $T$ is the planted tree with a single vertex.
 
-## Remark
-Each label has the same number of $0$s as $1$s and the same is not true of any nontrivial tnitial sublabel.
+Suppose that for a given code of length $2 < m < 2n$, it corresponds to a unique planted tree up to isomorphisms. Let $C$ be a code of length $2n$ of a planted tree $(T, r, \nu)$. Then $C$ must be written as $C = 0L_1 \cdots L_t 1$ where each $L_i$ is a code of a planted tree $T_i$ with a root $r_i$ and $t$ is a maximum number of children of $r$. We claim that the decomposition $C = 0L_1 \cdots L_t 1$ is unique. 
+
+$\big[(\because)$ Since each $L_i$ is a code of a planted tree, it has the same number of $0$s as $1$s, and the same is not true of any non-trivial initial sublabel of $L_i$. Then $L_i$ terminates at the position $j$ such that the sublabel $1 \cdots j$ of $L_i$ has the same number of $0$s as $1$s. It gives us the unique expression of $L_i$. Thus the decomposition $C = 0L_1 \cdots L_t 1$ is unique.$\big]$
+
+By the inductive hypothesis, each $T_i$ is uniquely determined up to isomorphism by $L_i$. Drawing the planted trees $T_i$ in accordance with the corresponding linear ordering of $\nu$, we must obtain the planted tree $(T, r, \nu)$. Thus, the code uniquely determines the planted tree up to isomorphisms. $\blacksquare$ 
