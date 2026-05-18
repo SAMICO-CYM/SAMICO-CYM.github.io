@@ -30,16 +30,16 @@ $$\begin{align*}
 
 Thus, $xa^{-1} \in H$, which means that $x \in Ha$. Hence, $aH \subset Ha$.
 
-Conversely, if $x \in Ha$, then we have $x = ha$ for some $h \in H$. Since $a^{-1} = x^{-1}h \in x^{-1}H$, we have $a^{-1}H = x^{-1}H$, and therefore 
+Conversely, if $x \in Ha$, then we have $x = ha$ for some $h \in H$. Then 
 
 $$\begin{align*}
-(a^{-1}x)H &= (a^{-1}H)(xH) \\
-&= (x^{-1}H)(xH) \\
-&= (x^{-1}xH) \\
-&= H.
+xH &= (ha)H \\
+&=(hH)(aH) \\
+&= H(aH) \\
+&= aH.
 \end{align*}$$
 
-Thus, $a^{-1}x \in H$, which means that $x \in aH$. Hence, $Ha \subset aH$, so that $aH = aH.
+Thus, $x \in aH$ and therefore, $Ha \subset aH$. Hence, $aH = aH.$
 
 $(\Longleftarrow)$
 
