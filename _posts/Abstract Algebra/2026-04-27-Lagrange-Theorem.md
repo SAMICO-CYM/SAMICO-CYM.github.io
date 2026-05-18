@@ -63,7 +63,19 @@ Let $G$ be a finite group.
 ---
 
 ## Remark
-1. The converse of Lagrange's theorem does NOT hold!!
+**(i)** The converse of Lagrange's theorem does NOT hold!!
 
-$(\because)$ Note that $\vert A_4 \vert = 12$ but there is no subgroup of order $6$. 
-2. ***(The fisrt Sylow Theorem)*** Let $G$ be a finite group and let $p$ be a prime. If $p^n$ divides $\vert G \vert$ for some $n \in \mathbb{N}$, then there exists a subgroup $H$ of $G$ with $\vert H \vert = p^i$ for all $i = 1, ..., n$. 
+$\big[ (\because) $ Consider $A_4$. Suppose that $H$ is a subgroup of $A_4$ with $\vert H \vert = 6$. [Then $(A_n : H) = 2$, so that $H \lhd A_4$.](<{% post_url Abstract Algebra/2026-04-27-Coset %}#theorem-3>) Therefore, $A_4 / H \cong \mathbb{Z_2}$. 
+
+Let $\sigma H \in A_4 / H$. Then $\sigma^2H = (\sigma H)^2 = H$, which means that $\sigma^2 \in H$. But we see that 
+
+$$\begin{align*}
+(1, 2, 3) = (1, 3, 2)^2 \quad (1, 3, 2) = (1, 2, 3)^2 \\
+(1, 2, 4) = (1, 4, 2)^2 \quad (1, 4, 2) = (1, 2, 4)^2 \\
+(1, 3, 4) = (1, 4, 3)^2 \quad (1, 4, 3) = (1, 3, 4)^2 \\
+(2, 3, 4) = (2, 4, 3)^2 \quad (2, 4, 3) = (2, 3, 4)^2.
+\end{align*}$$
+
+Therefore, $H$ contains at least $8$ elements: $(1,2,3), (1, 3,2), (1, 2,4), (1, 4,2), (1, 3,4), (1, 4,3), (2, 3,4), (2, 4,3)$. Hence, $6 = \vert H \vert \ge 8. \bigotimes$ Thus, $A_4$ does not have a subgroup of order $6$. $\big]$
+
+**(ii)** ***(The fisrt Sylow Theorem)*** Let $G$ be a finite group and let $p$ be a prime. If $p^n$ divides $\vert G \vert$ for some $n \in \mathbb{N}$, then there exists a subgroup $H$ of $G$ with $\vert H \vert = p^i$ for all $i = 1, ..., n$. 
