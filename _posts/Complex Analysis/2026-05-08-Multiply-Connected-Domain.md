@@ -26,7 +26,17 @@ $$\int_C f(z) \, dz = 0$$
 for every closed contour $C$ lying in $D$.
 
 ### Proof
+Let $C$ be a closed contour lying in $D$. If $C$ is simple, then it follows directly from the [Cauchy-Goursat theorem.](<{% post_url Complex Analysis/2026-05-08-Cauchy-Goursat-Theorem %}#>) 
 
+Suppose that $C$ is not simple and intersets itself a finite number of times. Then it consists of a finite number of simple closed contours $C_1, \cdots, C_n$, which measn that $C = C_1 \cup \cdots \cup C_n$. By applying the Cauchy-Goursat theorem to them, we have
+
+$$\int _ {C_i} f(z) \, dz = 0$$
+
+for all $1 \le i \le n$. Therefore, we conclude
+
+$$\begin{align*}
+\int_C f(z) \, dz = \sum_{i=1}^n \int _ {C_i} f(z) \, dz = 0
+\end{align*}$$
 
 ---
 ## Corollary 1
