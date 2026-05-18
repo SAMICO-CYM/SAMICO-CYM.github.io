@@ -46,3 +46,13 @@ Suppose that for a given code of length greater than $2$ and less than $2n$, it 
 $\big[(\because)$ Since each $L_i$ is a code of a planted tree, it has the same number of $0$s as $1$s, and the same is not true of any non-trivial initial sublabel of $L_i$. Therefore, if we read the inner sublabel $L_1 \cdots L_t$ from left to right, the first sublabel $L_1$ must terminate exactly at the first position $j$ such that the sublabel $s_1 \cdots s_j$ of $L_i$ has the same number of $0$s as $1$s. This uniquely determines $L_1$. Applying this argument repeatedly to the remaining sublabel uniquely determines $L_2, \dots, L_t$ in sequence. Thus, the decomposition $C = 0L_1 \cdots L_t 1$ is unique.$\big]$ 
 
 By the inductive hypothesis, each $T_i$ is uniquely determined up to isomorphism by $L_i$. Suppose $T'$ is another planted tree with $A(T') = C$. By the unique decomposition proven above, $T'$ also has a root $r'$ with $t$ children, and the codes of its subtrees $T'_i$ are exactly $L_1, \dots, L_t$. Thus, by the inductive hypothesis, there exists a rooted tree isomorphism $\phi_i : V(T_i) \to V(T'_i)$ for each $i = 1, \dots, t$.We construct a mapping $\Phi : V(T) \to V(T')$ by setting $\Phi(r) = r'$ and $\Phi(v) = \phi_i(v)$ for all $v \in V(T_i)$. Since each $\phi_i$ is an isomorphism and we preserve the corresponding linear ordering of $\nu$ and $\nu'$ for the children, $\Phi$ perfectly preserves the adjacency, the roots, and the left-to-right orderings. Thus, $\Phi$ is a planted tree isomorphism between $(T, r, \nu)$ and $(T', r', \nu')$. Consequently, the code uniquely determines the planted tree up to isomorphisms. $\blacksquare$
+
+---
+## Algorithm
+그렇다면 구체적으로 주어진 코드와 planted tree가 어떻게 대응되는지 그 방법을 살펴보자.
+
+핵심은 $0$은 아래로, $1$은 위로 가는 edge를 나타낸다는 것이다. 백문이 불여일견이다.
+
+$$0000101101011011 \leftrightarrow \downarrow \downarrow \downarrow \downarrow \uparrow \downarrow \uparrow \uparrow \downarrow \uparrow \uparrow \uparrow \downarrow \uparrow \uparrow \uparrow$$
+
+![alt text](assets/img/code.png)
