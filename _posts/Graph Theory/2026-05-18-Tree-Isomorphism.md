@@ -53,6 +53,6 @@ By the inductive hypothesis, each $T_i$ is uniquely determined up to isomorphism
 
 핵심은 $0$은 아래로, $1$은 위로 가는 edge를 나타낸다는 것이다. 백문이 불여일견이다.
 
-$$0000101101011011 \quad \longleftrightarrow \quad \downarrow \downarrow \downarrow \downarrow \uparrow \downarrow \uparrow \uparrow \downarrow \uparrow \uparrow \uparrow \downarrow \uparrow \uparrow \uparrow$$
+$$0000101101011011 \quad \longleftrightarrow \quad \downarrow \downarrow \downarrow \downarrow \uparrow \downarrow \uparrow \uparrow \downarrow \uparrow \downarrow \uparrow \uparrow \downarrow \uparrow \uparrow$$
 
 ![alt text](assets/img/code.png)
