@@ -1,4 +1,4 @@
--- 
+---
 title: Cauchy Integral Formula
 date: 2026-05-12
 categories: [Mathematics, Complex Analysis]
