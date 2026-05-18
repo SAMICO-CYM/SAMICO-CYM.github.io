@@ -98,11 +98,11 @@ Thus, each element $aH$ in $G/H$ has the inverse and $(aH)^{-1} = a^{-1}H$. Henc
 
 ---
 ## Definition
-The gruop $G/H$ is called the ***factor group*** (or ***quotient group***) of $G$ by $H$. 
+Let $H \lhd G$. The group $G/H$ is called the ***factor group*** (or ***quotient group***) of $G$ by $H$. 
 
 ---
 ## Remark
-**(i)** If $G$ is abelian and $H \le G$, then $G / H$ is abelian.
+**(i)** If $G$ is abelian and $H \lhd G$, then $G / H$ is abelian.
 
 **(ii)** $G /H$ being abelian does not imply that $G$ is abelian.
 
@@ -111,3 +111,5 @@ $\big[(\because)$ Note that $A_n \le S_n$ and $\vert A_n \vert = \frac{n!}{2}$. 
 **(iii)** For $n \in \mathbb{N}$, we have $n\mathbb{Z} \lhd \mathbb{Z}$ because $\mathbb{Z}$ is abelian. Then $\mathbb{Z}/n\mathbb{Z}$ is the factor group of $\mathbb{Z}$ by $n\mathbb{Z}$. In particular, $\mathbb{Z}/n\mathbb{Z} \cong \mathbb{Z}_n$.
 
 **(iv)** Note that $\ker(\phi) \lhd G$ for a group homomorphism $\phi : G \to G'$ by [Theorem 1.](<{% post_url Abstract Algebra/2026-05-06-Kernel %}#theorem-1>) Then $G/\ker(\phi)$ is a factor group of $G$ by $\ker(\phi)$. 
+
+**(v)** $G / \\{ e \\} \cong G$ and $G / G \cong \\{ e \\}$.
