@@ -75,6 +75,47 @@ Suppose that $\forall x \in X$ and $\forall \varepsilon > 0$, $\exists \delta > 
 Let $d, d', d''$ be the Euclidean metric, the taxicab metric, and the square metric, respectively, on $\mathbb{R}^n$. Then $\mathcal{T} _d = \mathcal{T} _{d'} = \mathcal{T} _{d''}$.
 
 ### Proof
+Let $x \in \mathbb{R}^n$ and $\varepsilon > 0$.
+
+(i) $\mathcal{T} _d \subset \mathcal{T} _{d'}$
+
+We claim that $B _{d'}(x, \varepsilon) \subset B _{d}(x, \varepsilon)$.
+
+To verify this, let $y \in B _{d'}(x, \varepsilon)$. Then we have
+
+$$d(x, y) = \sqrt{\sum_{i=1}^n (x_i - y_i)^2} \le \sum_{i=1}^n \vert x_i - y_i \vert = d'(x, y) < \varepsilon,$$ 
+
+so that $y \in B_d(x, \varepsilon)$. Thus, we have $B _{d'}(x, \varepsilon) \subset B _{d}(x, \varepsilon)$, and therefore $\mathcal{T} _d \subset \mathcal{T} _{d'}$ by Theoerm 2.
+
+(ii) $\mathcal{T} _{d'} \subset \mathcal{T} _{d''}$
+
+Take $\delta = \frac{\varepsilon}{n}$. We claim that $B _{d''}(x, \delta) \subset B _{d'}(x, \varepsilon)$.
+
+To verify this, let $y \in B _{d''}(x, \delta)$. Then we have
+
+$$\vert x_i - y_i \vert \le \max_{1 \le i \le n} \vert x_i - y_i \vert < \delta = \frac{\varepsilon}{n}, \forall i \in \{ 1, 2, \cdots, n \}$$
+
+which implies that 
+
+$$d'(x, y) = \sum_{i=1}^n \vert x_i - y_i \vert < n \max_{1 \le i \le n} \vert x_i - y_i \vert < n \delta = \varepsilon.$$
+
+Hence, $y \in B_{d'}(x, \varepsilon)$, so that $B_{d''}(x, \delta) \subset B_{d'}(x, \varepsilon)$. Therefore, $\mathcal{T} _{d'} \subset \mathcal{T} _{d''}$ by Theoerm 2.
+
+(iii) $\mathcal{T} _{d''} \subset \mathcal{T} _{d}$
+
+Take $\delta = \frac{\varepsilon}{\sqrt{n}}$. We claim that $B _{d}(x, \delta) \subset B _{d''}(x, \varepsilon)$.
+
+To verify this, let $y \in B _{d}(x, \delta)$. Then we have
+
+$$\sqrt{\sum_{i=1}^n (x_i - y_i)^2} < \delta = \frac{\varepsilon}{\sqrt{n}}$$
+
+which implies that 
+
+$$d''(x, y) = \max_{1 \le i \le n} \vert x_i - y_i \vert < \sqrt{\sum_{i=1}^n (x_i - y_i)^2} < \delta = \frac{\varepsilon}{\sqrt{n}} < \varepsilon$$
+
+Hence, $y \in B_{d''}(x, \varepsilon)$, so that $B_{d}(x, \delta) \subset B_{d''}(x, \varepsilon)$. Therefore, $\mathcal{T} _{d''} \subset \mathcal{T} _{d}$ by Theoerm 2. $\blacksquare$
+
+
 
 
 <style>
