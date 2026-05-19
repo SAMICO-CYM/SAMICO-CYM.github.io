@@ -17,6 +17,7 @@ $$\begin{align*}
 a_n &= \frac{1}{2\pi i} \int_C \frac{f(z)}{(z-z_0)^{n+1}} \, dz \quad (n= 0, 1, 2, \cdots)\\
 b_n &= \frac{1}{2\pi i} \int_C \frac{f(z)}{(z-z_0)^{-n+1}} \, dz \quad (n= 1, 2, \cdots).
 \end{align*}$$
+
 This series is called the ***Laurent series*** for $f$ about $z_0$.
 
 ### Proof
