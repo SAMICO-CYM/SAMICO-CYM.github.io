@@ -13,6 +13,7 @@ Let $(X, d)$ be a metric space. The collection $\mathcal{B} = \\{ B_d(x, \vareps
 > 1. $d(x, y) \geq 0, \forall x, y \in X$, and $d(x, y) = 0$ if and only if $x = y$.
 > 2. $d(x, y) = d(y, x), \forall x, y \in X$.
 > 3. $d(x, z) \leq d(x, y) + d(y, z), \forall x, y, z \in X$.
+
 > The $\varepsilon$-ball centered at $x$ is defined by $B_d(x, \varepsilon) = \{ y \in X \mid d(x, y) < \varepsilon \}$.
 {: .prompt-info .no-icon }
 
@@ -45,7 +46,7 @@ Let $X$ be a topological space.
 
 ---
 ## Theorem 2
-Let $d, d'$ be two metrics on a set $X, and let $\mathcal{T}_d, \mathcal{T}_{d'}$ be two topologies induced by $d, d'$, respectively. Then $\mathcal{T}_{d'}$ is finer than $\mathcal{T}_d$ $\iff$ $\forall x \in X$ and $\forall \varepsilon > 0$, $\exists \delta > 0$ such that $B_{d'}(x, \delta) \subset B_d(x, \varepsilon)$.
+Let $d, d'$ be two metrics on a set $X, and let $\mathcal{T}_d, \mathcal{T} _ {d'}$ be two topologies induced by $d, d'$, respectively. Then $\mathcal{T}_{d'}$ is finer than $\mathcal{T}_d$ $\iff$ $\forall x \in X$ and $\forall \varepsilon > 0$, $\exists \delta > 0$ such that $B_{d'}(x, \delta) \subset B_d(x, \varepsilon)$.
 
 ### Proof
 $(\Longrightarrow)$
