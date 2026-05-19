@@ -71,7 +71,7 @@ $(\Longleftarrow)$
 Suppose that $\forall x \in X$ and $\forall \varepsilon > 0$, $\exists \delta > 0$ such that $B _{d'}(x, \delta) \subset B _d(x, \varepsilon)$. Let $B$ be a basis element of $\mathcal{T} _{d}$. Then $B = B _{d}(x, \varepsilon)$ for some $x \in X$ and $\varepsilon > 0$. By assumption, $\exists \delta > 0$ such that $B _{d'}(x, \delta) \subset B _d(x, \varepsilon)$. Since $B _{d'}(x, \delta)$ is a basis element of $\mathcal{T} _{d'}$ and it contains $x$, we conclude that $\mathcal{T} _{d} \subset \mathcal{T} _{d'}$. $\blacksquare$
 
 ---
-## Corollary
+## Corollary 1
 Let $d, d', d''$ be the Euclidean metric, the taxicab metric, and the square metric, respectively, on $\mathbb{R}^n$. Then $\mathcal{T} _d = \mathcal{T} _{d'} = \mathcal{T} _{d''}$.
 
 ### Proof
@@ -116,6 +116,21 @@ $$d''(x, y) = \max_{1 \le i \le n} \vert x_i - y_i \vert < \sqrt{\sum_{i=1}^n (x
 Hence, $y \in B_{d''}(x, \varepsilon)$, so that $B_{d}(x, \delta) \subset B_{d''}(x, \varepsilon)$. Therefore, $\mathcal{T} _{d''} \subset \mathcal{T} _{d}$ by Theoerm 2. 
 
 Thus, we have $\mathcal{T} _d = \mathcal{T} _{d'} = \mathcal{T} _{d''}$. $\blacksquare$
+
+---
+## Corollary 2
+Let $d$ be a discrete metric on a set $X$. Then the metric topology induced by $d$ is the discrete topology on $X$.
+
+### Proof
+Let $U$ be an open set of the discrete topology on $X$, and let $x \in U$. Note that 
+
+$$B_d(x, \varepsilon) = \begin{cases}
+\{ x \} & \text{if } \varepsilon \le 1 \\
+X & \text{of } \varepsilon > 1
+\end{cases}$$
+
+by the definition of the discrete metric. [Thus, we always have $x \in B_d(x, 1) = \\{ x \\} \subset U$, and therefore, the discrete topology on $X$ is the metric topology induced by $d$.](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-3>) $\blacksquare$
+
 
 <style>
 /* 아이콘 숨기기 및 아이콘이 있던 왼쪽 빈 여백 줄이기 */
