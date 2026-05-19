@@ -46,7 +46,7 @@ Let $X$ be a topological space.
 
 ---
 ## Theorem 2
-Let $d, d'$ be two metrics on a set $X$, and let $\mathcal{T}_d, \mathcal{T} _ {d'}$ be two topologies induced by $d, d'$, respectively. Then $\mathcal{T}_{d'}$ is finer than $\mathcal{T}_d$ $\iff$ $\forall x \in X$ and $\forall \varepsilon > 0$, $\exists \delta > 0$ such that $B_{d'}(x, \delta) \subset B_d(x, \varepsilon)$.
+Let $d, d'$ be two metrics on a set $X$, and let $\mathcal{T}_d, \mathcal{T} _ {d\prime}$ be two topologies induced by $d, d'$, respectively. Then $\mathcal{T}_{d\prime}$ is finer than $\mathcal{T}_d$ $\iff$ $\forall x \in X$ and $\forall \varepsilon > 0$, $\exists \delta > 0$ such that $B_{d\prime}(x, \delta) \subset B_d(x, \varepsilon)$.
 
 ### Proof
 $(\Longrightarrow)$
