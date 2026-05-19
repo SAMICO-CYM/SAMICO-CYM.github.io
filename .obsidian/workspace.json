@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Complex Analysis/2026-05-19-Talyor-Series.md",
+                "file": "_posts/Complex Analysis/2026-05-20-Laurent-Series.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-19-Talyor-Series"
+              "title": "2026-05-20-Laurent-Series"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Complex Analysis/2026-05-12-Cauchy-Integral-Formula.md",
+                "file": "_posts/Complex Analysis/2026-05-19-Talyor-Series.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-12-Cauchy-Integral-Formula"
+              "title": "2026-05-19-Talyor-Series"
             }
           }
         ]
@@ -196,10 +196,13 @@
   },
   "active": "b19ae931943856eb",
   "lastOpenFiles": [
+    "_posts/Complex Analysis/2026-05-19-Talyor-Series.md",
+    "_posts/Complex Analysis/2026-05-20-Laurent-Series.md",
     "_posts/Complex Analysis/2026-05-12-Cauchy-Integral-Formula.md",
+    "_site/posts/Laurent-Series/index.html",
+    "_site/posts/Laurent-Series",
     "_posts/Complex Analysis/2026-05-16-Fundamental-Theorem-Of-Algebra.md",
     "_posts/Complex Analysis/2026-05-16-Gauss-Mean-Value-Theorem.md",
-    "_posts/Complex Analysis/2026-05-19-Talyor-Series.md",
     "_posts/Topology/2026-05-19-Metric-Topology.md",
     "_site/posts/Metric-Topology/index.html",
     "_site/posts/Metric-Topology",
@@ -221,8 +224,6 @@
     "_posts/Abstract Algebra/2026-05-13-Factor-Group.md",
     "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
     "_posts/Abstract Algebra/2026-04-27-Coset.md",
-    "_site/posts/Tree-Isomorphism/index.html",
-    "_site/posts/Tree-Isomorphism",
     "_site/assets/img/code.png",
     "_posts/PDE/2026-05-05-Dirichlet-Condition.md",
     "assets/img/code.png",
@@ -232,8 +233,6 @@
     "_posts/Abstract Algebra/2026-04-01-Generating-Sets.md",
     "_posts/Abstract Algebra/2026-05-06-Kernel.md",
     "_posts/Complex Analysis/2026-05-16-Maximum-Modulus-Principle.md",
-    "_posts/Complex Analysis/2026-04-03-Continuous-Function.md",
-    "_posts/Complex Analysis/2026-05-16-Liouville-Theorem.md",
     "_site/assets/img/Pasted image 20260513165730.png",
     "assets/img/Pasted image 20260513165730.png",
     "_site/assets/img/rullet.png",

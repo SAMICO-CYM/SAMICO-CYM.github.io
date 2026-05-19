@@ -6,7 +6,7 @@ tags: []
 math: true
 ---
 
-## Theorem 1
+## Theorem
 Suppose that a function $f$ is analytic throughout a disk $\vert z - z_0 \vert < R_0$ centered at $z_0$ and with radius $R_0$. Then $f$ has the power series expansion 
 
 $$f(z) = \sum_{n=0}^\infty a_n(z-z_0)^n \quad (\vert z - z_0 \vert < R_0),$$
