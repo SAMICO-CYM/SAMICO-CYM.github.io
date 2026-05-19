@@ -17,6 +17,15 @@ Let $(X, d)$ be a metric space. The collection $\mathcal{B} = \\{ B_d(x, \vareps
 {: .prompt-info .no-icon }
 
 ### Proof
+Let $x \in X$. Since $d(x, x) = 0$, we have $x \in B_d(x, \varepsilon), \forall \varepsilon > 0$. Thus, there is $B \in \mathcal{B}$ such that $x \in B$.
+
+Let $x \in B_1 \cap B_2$ for some $B_1, B_2 \in \mathcal{B}$. Then $B_1 = B_d(x_1, \delta_1)$ and $B_2 = B_d(x_2, \delta_2)$ for some $x_1, x_2 \in X$ and $\delta_1, \delta_2 > 0$. Then we see that $x \in B_d(x_1, \delta_1)$ and $x \in B_d(x_2, \delta_2)$, which means that $d(x, x_1) < \delta_1$ and $d(x, x_2) < \delta_2$. Let $\delta = \min \{ \delta_1 - d(x, x_1), \delta_2 - d(x, x_2) \}$. Clearly $\delta > 0$. Then we must have $x \in B_d(x, \delta) \subset B_1 \cap B_2$.
+
+To see this, let $y \in B_d(x, \delta)$. Then $d(x, y) < \delta$, so that $d(x, y) < \delta_1 - d(x, x_1)$ and $d(x, y) < \delta_2 - d(x, x_2)$. Thus, we have 
+
+$$d(y, x_1) \le d(y, x) + d(x, x_1) < \delta_1 \quad \text{and} \quad d(y, x_2) \le d(y, x) + d(x, x_2) < \delta_2,$$
+
+so that $y \in B_d(x_1, \delta_1) \cap B_d(x_2, \delta_2) = B_1 \cap B_2$. Therefore, $B_d(x, \delta) \subset B_1 \cap B_2$. It follows that $\mathcal{B}$ is a basis for a topology on $X$. $\blacksquare$
 
 ---
 ## Remark
