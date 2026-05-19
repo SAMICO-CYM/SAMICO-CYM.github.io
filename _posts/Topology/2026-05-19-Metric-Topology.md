@@ -77,7 +77,7 @@ Let $d, d', d''$ be the Euclidean metric, the taxicab metric, and the square met
 ### Proof
 Let $x \in \mathbb{R}^n$ and $\varepsilon > 0$.
 
-(i) $\mathcal{T} _d \subset \mathcal{T} _{d'}$
+**(i)** $\mathcal{T} _d \subset \mathcal{T} _{d'}$
 
 We claim that $B _{d'}(x, \varepsilon) \subset B _{d}(x, \varepsilon)$.
 
@@ -87,7 +87,7 @@ $$d(x, y) = \sqrt{\sum_{i=1}^n (x_i - y_i)^2} \le \sum_{i=1}^n \vert x_i - y_i \
 
 so that $y \in B_d(x, \varepsilon)$. Thus, we have $B _{d'}(x, \varepsilon) \subset B _{d}(x, \varepsilon)$, and therefore $\mathcal{T} _d \subset \mathcal{T} _{d'}$ by Theoerm 2.
 
-(ii) $\mathcal{T} _{d'} \subset \mathcal{T} _{d''}$
+**(ii)** $\mathcal{T} _{d'} \subset \mathcal{T} _{d''}$
 
 Take $\delta = \frac{\varepsilon}{n}$. We claim that $B _{d''}(x, \delta) \subset B _{d'}(x, \varepsilon)$.
 
@@ -101,7 +101,7 @@ $$d'(x, y) = \sum_{i=1}^n \vert x_i - y_i \vert < n \max_{1 \le i \le n} \vert x
 
 Hence, $y \in B_{d'}(x, \varepsilon)$, so that $B_{d''}(x, \delta) \subset B_{d'}(x, \varepsilon)$. Therefore, $\mathcal{T} _{d'} \subset \mathcal{T} _{d''}$ by Theoerm 2.
 
-(iii) $\mathcal{T} _{d''} \subset \mathcal{T} _{d}$
+**(iii)** $\mathcal{T} _{d''} \subset \mathcal{T} _{d}$
 
 Take $\delta = \frac{\varepsilon}{\sqrt{n}}$. We claim that $B _{d}(x, \delta) \subset B _{d''}(x, \varepsilon)$.
 
