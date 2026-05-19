@@ -14,7 +14,7 @@ Let $(X, d)$ be a metric space. The collection $\mathcal{B} = \\{ B_d(x, \vareps
 > 2. $d(x, y) = d(y, x), \forall x, y \in X$.
 > 3. $d(x, z) \leq d(x, y) + d(y, z), \forall x, y, z \in X$.
 >
-> The $\varepsilon$-ball centered at $x$ is defined by $B_d(x, \varepsilon) = \{ y \in X \mid d(x, y) < \varepsilon \}$.
+> The $\varepsilon$-ball centered at $x$ is defined by $B_d(x, \varepsilon) = \\{ y \in X \mid d(x, y) < \varepsilon \\}$.
 {: .prompt-info .no-icon }
 
 ### Proof
@@ -46,20 +46,20 @@ Let $X$ be a topological space.
 
 ---
 ## Theorem 2
-Let $d, d'$ be two metrics on a set $X$, and let $\mathcal{T}_d, \mathcal{T}_{d'}$ be two topologies induced by $d, d'$, respectively. Then $\mathcal{T}_{d'}$ is finer than $\mathcal{T}_d$ $\iff$ $\forall x \in X$ and $\forall \varepsilon > 0$, $\exists \delta > 0$ such that $B_{d'}(x, \delta) \subset B_d(x, \varepsilon)$.
+Let $d, d'$ be two metrics on a set $X$, and let $\mathcal{T} _d, \mathcal{T} _{d'}$ be two topologies induced by $d, d'$, respectively. Then $\mathcal{T} _{d'}$ is finer than $\mathcal{T} _d$ $\iff$ $\forall x \in X$ and $\forall \varepsilon > 0$, $\exists \delta > 0$ such that $B _{d'}(x, \delta) \subset B _d(x, \varepsilon)$.
 
 ### Proof
 $(\Longrightarrow)$
 
-Suppose that $\mathcal{T}_{d} \subset \mathcal{T}_{d'}$. Let $x \in X$ and $\varepsilon > 0$. Since $B_d(x, \varepsilon)$ is a basis element of $\mathcal{T}_{d}$, [there exists a basis element $B'$ of $\mathcal{T}_{d'}$ such that $x \in B' \subset B_d(x, \varepsilon)$.](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-4>) Then $B' = B_{d'}(x, \delta)$ for some $\delta > 0$. Thus, we have $B_{d'}(x, \delta) \subset B_d(x, \varepsilon)$.
+Suppose that $\mathcal{T} _{d} \subset \mathcal{T} _{d'}$. Let $x \in X$ and $\varepsilon > 0$. Since $B _d(x, \varepsilon)$ is a basis element of $\mathcal{T} _{d}$, [there exists a basis element $B'$ of $\mathcal{T} _{d'}$ such that $x \in B' \subset B _d(x, \varepsilon)$.](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-4>) Then $B' = B _{d'}(x, \delta)$ for some $\delta > 0$. Thus, we have $B _{d'}(x, \delta) \subset B _d(x, \varepsilon)$.
 
 $(\Longleftarrow)$
 
-Suppose that $\forall x \in X$ and $\forall \varepsilon > 0$, $\exists \delta > 0$ such that $B_{d'}(x, \delta) \subset B_d(x, \varepsilon)$. Let $B$ be a basis element of $\mathcal{T}_{d}$. Then $B = B_{d}(x, \varepsilon)$ for some $x \in X$ and $\varepsilon > 0$. By assumption, $\exists \delta > 0$ such that $B_{d'}(x, \delta) \subset B_d(x, \varepsilon)$. Since $B_{d'}(x, \delta)$ is a basis element of $\mathcal{T}_{d'}$ and it contains $x$, we conclude that $\mathcal{T}_{d} \subset \mathcal{T}_{d'}$. $\blacksquare$
+Suppose that $\forall x \in X$ and $\forall \varepsilon > 0$, $\exists \delta > 0$ such that $B _{d'}(x, \delta) \subset B _d(x, \varepsilon)$. Let $B$ be a basis element of $\mathcal{T} _{d}$. Then $B = B _{d}(x, \varepsilon)$ for some $x \in X$ and $\varepsilon > 0$. By assumption, $\exists \delta > 0$ such that $B _{d'}(x, \delta) \subset B _d(x, \varepsilon)$. Since $B _{d'}(x, \delta)$ is a basis element of $\mathcal{T} _{d'}$ and it contains $x$, we conclude that $\mathcal{T} _{d} \subset \mathcal{T} _{d'}$. $\blacksquare$
 
 ---
 ## Corollary
-Let $d, d', d''$ be the Euclidean metric, the taxicab metric, and the square metric, respectively, on $\mathbb{R}^n$. Then $\mathcal{T}_d = \mathcal{T}_{d'} = \mathcal{T}_{d''}$.
+Let $d, d', d''$ be the Euclidean metric, the taxicab metric, and the square metric, respectively, on $\mathbb{R}^n$. Then $\mathcal{T} _d = \mathcal{T} _{d'} = \mathcal{T} _{d''}$.
 
 ### Proof
 

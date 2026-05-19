@@ -1,0 +1,1 @@
+require 'kramdown'; puts Kramdown::Document.new(%q{Let , d'$ be two metrics on a set $, and let $\mathcal{T}_d, \mathcal{T} _{d'}$ be two topologies induced by , d'$, respectively. Then $\mathcal{T} _{d'}$ is finer than $\mathcal{T}_d$ $\iff$ $\forall x \in X$ and $\forall \varepsilon > 0$, $\exists \delta > 0$ such that  _{d'}(x, \delta) \subset B_d(x, \varepsilon)$.}).to_html
