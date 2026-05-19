@@ -20,8 +20,6 @@ for each point in the open disk $\vert z - z_0 \vert < R_0$.
 This series is called the ***Taylor series*** for $f$ about $z_0$. When $z_0 = 0$, the series is also called the ***Maclaurin series*** for $f$.
 
 ### Proof
-At first, we assume $z_0 = 0$. 
-
 For a given $z$ in the open disk $\vert z - z_0 \vert < R_0$, we write $\vert z - z_0 \vert = r$ and let $C_0$ denote the positively oriendted circle $\vert z - z_0 \vert = r_0$ where $r < r_0 < R_0$. Since $f$ is analytic inside and on $C_0$ and $z$ is interior to $C_0$, we have 
 
 $$f(z) = \frac{1}{2\pi i} \int _{C_0} \frac{f(s)}{s-z} \, ds$$
