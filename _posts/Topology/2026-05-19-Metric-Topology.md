@@ -32,6 +32,10 @@ so that $y \in B_d(x_1, \delta_1) \cap B_d(x_2, \delta_2) = B_1 \cap B_2$. There
 A set $U$ is open in the metric topology induced by $d$ $\iff$ $\forall x \in U, \exists \delta > 0$ such that $B_d(x, \delta) \subset U$.
 
 ---
+## Example
+
+
+---
 ## Definition
 Let $X$ be a topological space.
 
@@ -44,6 +48,13 @@ Let $X$ be a topological space.
 Let $d, d'$ be two metrics on a set $X, and let $\mathcal{T}_d, \mathcal{T}_{d'}$ be two topologies induced by $d, d'$, respectively. Then $\mathcal{T}_{d'}$ is finer than $\mathcal{T}_d$ $\iff$ $\forall x \in X$ and $\forall \varepsilon > 0$, $\exists \delta > 0$ such that $B_{d'}(x, \delta) \subset B_d(x, \varepsilon)$.
 
 ### Proof
+$(\Longrightarrow)$
+
+Suppose that $\mathcal{T}_{d} \subset \mathcal{T}_{d'}$. Let $x \in X$ and $\varepsilon > 0$. Since $B_d(x, \varepsilon)$ is a basis element of $\mathcal{T}_{d}$, [there exists a basis element $B'$ of $\mathcal{T}_{d'}$ such that $x \in B' \subset B_d(x, \varepsilon)$.](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-4>) Then $B' = B_{d'}(x, \delta)$ for some $\delta > 0$. Thus, we have $B_{d'}(x, \delta) \subset B_d(x, \varepsilon)$.
+
+$(\Longleftarrow)$
+
+Suppose that $\forall x \in X$ and $\forall \varepsilon > 0$, $\exists \delta > 0$ such that $B_{d'}(x, \delta) \subset B_d(x, \varepsilon)$. Let $B$ be a basis element of $\mathcal{T}_{d}$. Then $B = B_{d}(x, \varepsilon)$ for some $x \in X$ and $\varepsilon > 0$. By assumption, $\exists \delta > 0$ such that $B_{d'}(x, \delta) \subset B_d(x, \varepsilon)$. Since $B_{d'}(x, \delta)$ is a basis element of $\mathcal{T}_{d'}$ and it contains $x$, we conclude that $\mathcal{T}_{d} \subset \mathcal{T}_{d'}$. $\blacksquare$
 
 ---
 ## Corollary
