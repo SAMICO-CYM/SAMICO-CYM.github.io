@@ -1,5 +1,5 @@
 ---
-title: Complex Series
+title: Complex Sequence and Series
 date: 2026-05-19
 categories: [Mathematics, Complex Analysis]
 tags: []
