@@ -15,3 +15,12 @@ Let $(X, d)$ be a metric space. The collection $\mathcal{B} = \\{ B_d(x, \vareps
 > 3. $d(x, z) \leq d(x, y) + d(y, z), \forall x, y, z \in X$.
 {: .prompt-info .no-icon }
 
+<style>
+/* 아이콘 숨기기 및 아이콘이 있던 왼쪽 빈 여백 줄이기 */
+.no-icon {
+  padding-left: 1rem !important; 
+}
+.no-icon::before {
+  display: none !important; 
+}
+</style>
