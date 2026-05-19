@@ -93,11 +93,11 @@ Take $\delta = \frac{\varepsilon}{n}$. We claim that $B _{d''}(x, \delta) \subse
 
 To verify this, let $y \in B _{d''}(x, \delta)$. Then we have
 
-$$\vert x_i - y_i \vert \le \max_{1 \le i \le n} \vert x_i - y_i \vert < \delta = \frac{\varepsilon}{n}, \forall i \in \{ 1, 2, \cdots, n \}$$
+$$\vert x_i - y_i \vert \le \max_{1 \le i \le n} \vert x_i - y_i \vert < \delta,$$
 
-which implies that 
+for all $i = 1, 2, \cdots, n$, which implies that 
 
-$$d'(x, y) = \sum_{i=1}^n \vert x_i - y_i \vert < n \max_{1 \le i \le n} \vert x_i - y_i \vert < n \delta = \varepsilon.$$
+$$d'(x, y) = \sum_{i=1}^n \vert x_i - y_i \vert < n \max_{1 \le i \le n} \vert x_i - y_i \vert < n \delta = n \frac{\varepsilon}{n} = \varepsilon.$$
 
 Hence, $y \in B_{d'}(x, \varepsilon)$, so that $B_{d''}(x, \delta) \subset B_{d'}(x, \varepsilon)$. Therefore, $\mathcal{T} _{d'} \subset \mathcal{T} _{d''}$ by Theoerm 2.
 
@@ -107,16 +107,15 @@ Take $\delta = \frac{\varepsilon}{\sqrt{n}}$. We claim that $B _{d}(x, \delta) \
 
 To verify this, let $y \in B _{d}(x, \delta)$. Then we have
 
-$$\sqrt{\sum_{i=1}^n (x_i - y_i)^2} < \delta = \frac{\varepsilon}{\sqrt{n}}$$
+$$\vert x_i - y_i \vert \le \sqrt{\sum_{i=1}^n (x_i - y_i)^2} < \delta = \frac{\varepsilon}{\sqrt{n}}$$
 
-which implies that 
+for all $i = 1, 2, \cdots, n$, which implies that 
 
 $$d''(x, y) = \max_{1 \le i \le n} \vert x_i - y_i \vert < \sqrt{\sum_{i=1}^n (x_i - y_i)^2} < \delta = \frac{\varepsilon}{\sqrt{n}} < \varepsilon$$
 
-Hence, $y \in B_{d''}(x, \varepsilon)$, so that $B_{d}(x, \delta) \subset B_{d''}(x, \varepsilon)$. Therefore, $\mathcal{T} _{d''} \subset \mathcal{T} _{d}$ by Theoerm 2. $\blacksquare$
+Hence, $y \in B_{d''}(x, \varepsilon)$, so that $B_{d}(x, \delta) \subset B_{d''}(x, \varepsilon)$. Therefore, $\mathcal{T} _{d''} \subset \mathcal{T} _{d}$ by Theoerm 2. 
 
-
-
+Thus, we have $\mathcal{T} _d = \mathcal{T} _{d'} = \mathcal{T} _{d''}$. $\blacksquare$
 
 <style>
 /* 아이콘 숨기기 및 아이콘이 있던 왼쪽 빈 여백 줄이기 */
