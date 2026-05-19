@@ -34,7 +34,20 @@ A set $U$ is open in the metric topology induced by $d$ $\iff$ $\forall x \in U,
 
 ---
 ## Example
+The following give the metrics on $\mathbb{R}^n$:
 
+**(i)** ***The Euclidean metric***: $\displaystyle d(x, y) = \sqrt{\sum_{i=1}^n (x_i - y_i)^2}$.
+
+**(ii)** ***The discrete metric***: 
+
+$$d(x, y) = \begin{cases}
+1 & \text{if } x = y \\
+0 & \text{if } x \neq y.
+\end{cases}$$
+
+**(iii)** ***The taxicab metric***: $\displaystyle d(x, y) = \sum_{i=1}^n \vert x_i - y_i \vert$.
+
+**(iv)** ***The square metric***: $\displaystyle d(x, y) = \max _{1 \le i \le n} \\{ \vert x_i - y_i \vert \\}$.
 
 ---
 ## Definition
