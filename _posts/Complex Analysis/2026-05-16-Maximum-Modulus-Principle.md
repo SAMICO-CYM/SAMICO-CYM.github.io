@@ -61,10 +61,17 @@ Since $\vert f(z) \vert \le \vert f(z_0) \vert, \forall z \in D$, it also holds 
 Since $z_n = P$ and we have chosen an arbitrary point $P$ in $D$, we conclude that $f(z) = f(z_0), \forall z \in D$, which means that $f$ is a constant function in $D$. $\bigotimes$ Thus, $f$ does not have the maximum value in $D$. $\blacksquare$ 
 
 ---
-## Corollary
+## Corollary 1
 Suppose that a function $f$ is continuous on a compact region $R$ and that it is analytic and not constant in the interior of $R$. Then the maximum value of $\vert f(z) \vert$ in $R$, which is always reached, occurs somewhere on the boundary of $R$ and never in the interior.
 
 즉 최대값은 항상 경계에서 일어날 수 밖에 없음을 보장해준다. 이는 Lagrange multiplier의 직관과도 잘 일치함을 알 수 있다.
 
 ### Proof
-Since $f$ is continuous on a compact region $R$, $f$ has the maximum value somewhere in $R$. By the maximum modulus principle, $f$ has no maximum value in the interior of $R$. Thus, the maximum value must occur on the boundary of $R$ and never in the interior. $\blacksquare$
+Since $f$ is continuous on a compact region $R$, $|f|$ has the maximum value somewhere in $R$. By the maximum modulus principle, $|f|$ has no maximum value in the interior of $R$. Thus, the maximum value must occur on the boundary of $R$ and never in the interior. $\blacksquare$
+
+---
+## Corollary 2
+Suppose that a function $f(z) = u(x, y) + iv(x, y)$ is continuous on a compact region $R$ and that it is analytic and not constant in the interior of $R$. Then the maximum value of $\vert u(x, y) \vert$ in $R$, which is always reached, occurs somewhere on the boundary of $R$ and never in the interior.
+
+### Proof
+Since $f$ is continuous on $R$, so are $u$ and $v$. Then $g(z) = e^{f(z)}$ is continuous on $R$ and analytic and not constant in the interior of $R$ by assumption. Since $\vert g(z) \vert = e^{u(x, y)}$ is continuous on $R$, it must have the maximum values somewhere in $R$. Since the exponential function is an increasing function, the maximum value of $u(x, y)$ must occurs on the boundary of $R$, not interior. $\blacksquare$
