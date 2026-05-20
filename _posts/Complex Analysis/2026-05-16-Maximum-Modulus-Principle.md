@@ -67,4 +67,4 @@ Suppose that a function $f$ is continuous on a compact region $R$ and that it is
 즉 최대값은 항상 경계에서 일어날 수 밖에 없음을 보장해준다. 이는 Lagrange multiplier의 직관과도 잘 일치함을 알 수 있다.
 
 ### Proof
-Since $f$ is continuous on a compact region $R$, $f$ has the maximum value somewhere in $R$. By the maximum modulus principle, $f$ 
+Since $f$ is continuous on a compact region $R$, $f$ has the maximum value somewhere in $R$. By the maximum modulus principle, $f$ has no maximum value in the interior of $R$. Thus, the maximum value must occur on the boundary of $R$ and never in the interior. $\blacksquare$
