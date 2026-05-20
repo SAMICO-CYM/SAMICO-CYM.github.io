@@ -109,8 +109,8 @@ $$\begin{align*}
 &= \phi(h_1,k_1) \phi(h_2,k_2).
 \end{align*}$$
 
-Thus, $\phi$ is an epimorphism. Furthermore, $\ker(\phi) = N_1 \times N_2$ because $N_1$ is the identity element of $H / N_1$ and $hN_1 = N_1 \iff h \in N_1$. 
-
+Thus, $\phi$ is an epimorphism. Furthermore, $\ker(\phi) = N_1 \times N_2$ because $N_1$ is the identity element of $H / N_1$ and $hN_1 = N_1 \iff h \in N_1$, and the same holds for $N_2$ and $K/N_2$.
+ 
 By the first isomorphism theorem, we conclude
 
 $$(H \times K) / (N_1 \times N_2) \cong (H/N_1) \times (K / N_2). \quad \blacksquare$$
@@ -142,7 +142,7 @@ Let $H$ and $K$ be groups.
 
 --- 
 ## Example
-(i) 다음과 같이 정의된 group homomorphism $\phi: \mathbb{Z}_4 \times \mathbb{Z}_2 \to \mathbb{Z}_4 \times \mathbb{Z}_2$을 고려하자. 
+**(i)** 다음과 같이 정의된 group homomorphism $\phi: \mathbb{Z}_4 \times \mathbb{Z}_2 \to \mathbb{Z}_4 \times \mathbb{Z}_2$을 고려하자. 
 
 $$\phi(a, b) = (a, 0), \forall (a, b) \in \mathbb{Z}_4 \times \mathbb{Z}_2.$$
 
@@ -171,3 +171,45 @@ $(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (0, 1) \rangle$도 abelian이고, 
 위에서와 마찬가지로 원소의 order를 계산해보자. 쉽게 알 수 있는 사실은 factor group의 원소 $(1, 0) + \langle (0,1) \rangle$은 order 4인 원소라는 것이다. 따라서 $(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (0, 1) \rangle \cong \mathbb{Z}_4$를 얻는다. 
 
 이번에는 homomorphism을 이용해서 결론을 도출해보자. 함수 $\phi: \mathbb{Z}_4 \times \mathbb{Z}_6 \to \mathbb{Z}_4$를 $\phi(a, b) = a, \forall (a, b) \in \mathbb{Z}_4 \times \mathbb{Z}_6$와 같이 정의하면 $\phi$는 epimorphism이고 $\ker(\phi) = \\{ 0 \\} \times \mathbb{Z}_6 = \langle (0, 1) \rangle$이라는 사실을 쉽게 알 수 있다. 따라서 $\mathbb{Z}_4 \times \mathbb{Z}_4 / \langle (0, 1) \rangle \cong \mathbb{Z}_4$임을 얻는다. 
+
+**(iii)** 이번엔 $(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (0, 2) \rangle$을 다뤄보자. 위 두 예시에서 충분히 자세하게 설명했으므로 팩트만 나열해서 계산하겠다. 
+
+우선 $\vert (\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (0, 2) \rangle \vert = 24/3 = 8$이므로 가능한 후보군은 $\mathbb{Z}_8, \mathbb{Z}_4 \times \mathbb{Z}_2, \mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_2$이다. factor group의 원소 $(1, 0) + \langle (0, 2) \rangle$의 order는 $4$이고 자명하게도 order $8$인 원소는 존재하지 않으므로 $(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (0, 2) \rangle \cong \mathbb{Z}_4 \times \mathbb{Z}_2$이다. 
+
+이번엔 함수 $\phi: \mathbb{Z}_4 \times \mathbb{Z}_6 \to \mathbb{Z}_4 \times \mathbb{Z}_6$를 $\phi(a, b) =(a, 3b)$로 정의하자. 이때 $\phi$는 homomorphism이고 $\mathrm{Im}(\phi) = \mathbb{Z}_4 \times \\{ 0, 3 \\} \cong \mathbb{Z}_4 \times \mathbb{Z}_2$이면서 $\ker(\phi) = \\{ 0 \\} \times \\{ 0, 2, 4 \\} = \langle (0 ,2) \rangle$이 성립한다. 따라서 
+
+$$(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (0, 2) \rangle \cong \mathbb{Z}_4 \times \mathbb{Z}_2$$
+
+를 얻는다.
+
+**(iv)** 이번엔 $(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (2, 3) \rangle$을 다뤄보자. 비슷해 보이지만 다르다. 
+
+우선 $\vert (\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (2, 3) \rangle \vert = 24/2 = 12$이므로 가능한 후보군은 $\mathbb{Z}_{12}, \mathbb{Z}_4 \times \mathbb{Z}_3, \mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_3$이다. factor group의 원소 $(1, 0) + \langle (2, 3) \rangle$의 order는 계산해보면 $4$이고 자명하게도 order $12$인 원소는 존재하지 않으므로 $(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (2, 3) \rangle \cong \mathbb{Z}_4 \times \mathbb{Z}_3$이다. 
+
+함수로 계산할 수도 있는데, 이 경우 함수가 그리 직관적으로 정의되지는 않는다. 함수 $\phi: \mathbb{Z}_4 \times \mathbb{Z}_6 \to \mathbb{Z}_4 \times \mathbb{Z}_6$를 
+
+$$\phi(a, b) = (a+2b, 2b), \forall (a, b) \in \mathbb{Z}_4 \times \mathbb{Z}_6$$
+
+으로 정의하자. 그러면 $\phi$는 homomorphism이며 
+
+$$\begin{align*}
+\mathrm{Im}(\phi) &= \{ 0, 1, 2, 3 \} \times \{ 0, 2, 4 \} \cong \mathbb{Z}_4 \times \mathbb{Z}_3 \\
+\ker(\phi) &= \{ (0, 0), (2, 3) \} = \langle (2, 3) \rangle
+\end{align*}$$
+
+을 얻는다. 따라서 $(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (2, 3) \rangle \cong \mathbb{Z}_4 \times \mathbb{Z}_3$이다.
+
+**(v)** 무한군 $(\mathbb{Z} \times \mathbb{Z}) / \langle (1, 1) \rangle$의 경우도 다뤄보자. 이번엔 finite generated abelian group의 성질을 사용할 수 없으므로 바로 함수를 잡아내야 한다. 
+
+함수 $\phi: \mathbb{Z} \times \mathbb{Z} \to \mathbb{Z}$를 $\phi(a, b) = b-a, \forall (a, b) \in \mathbb{Z} \times \mathbb{Z}$로 정의하자. 자명하게 $\phi$는 epimorphism이며 $\ker(\phi) = \langle (1, 1) \rangle$이다. 따라서 $(\mathbb{Z} \times \mathbb{Z}) / \langle (1, 1) \rangle \cong \mathbb{Z}$이다. 
+
+사실 직관적으로도 같은 결론을 얻어낼 수 있다. 두 coset이 같을 조건은 다음과 같이 주어진다. 
+
+$$\begin{align*}
+& (a_1, b_1) + \langle (1, 1) \rangle = (a_2, b_2) + \langle (1, 1) \rangle \\
+\iff & (a_1 - a_2, b_1 - b_2) \in \langle (1, 1) \rangle \\
+\iff & a_1 - a_2 = b_1 - b_2 \\
+\iff & b_1 - a_1 = b_2 - a_2
+\end{align*}$$
+
+그러니까 각 좌표의 차가 같으면 같은 coset이라는 뜻이다. 그러면 주어진 factor group에는 총 $\mathbb{Z}$개의 coset이 있으리라는 사실을 알 수 있고, 따라서 결론을 얻는다. 
