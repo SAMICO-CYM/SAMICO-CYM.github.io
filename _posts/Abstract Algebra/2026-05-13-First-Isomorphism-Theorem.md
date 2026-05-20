@@ -86,6 +86,37 @@ Since $\phi$ is surjective, we have $\mathrm{Im}(\phi) = G'$. By Theorem 1 (i), 
 
 ---
 ## Theorem 3
+Let $H$ and $K$ be groups, and let $N_1 \lhd H$ and $N_2 \lhd K$. Then
+
+$$(H \times K) / (N_1 \times N_2) \cong (H/N_1) \times (K / N_2).$$
+
+### Proof
+Note that the [factor groups $H/N_1$ and $K/N_2$ are well-defined because $N_1 \lhd H$ and $N_2 \lhd K$.](<{% post_url Abstract Algebra/2026-05-13-Factor-Group %}#theorem-1>) 
+
+Define a function $\phi: H \times K \to (H/N_1) \times (K / N_2)$ by 
+
+$$\phi(h, k) = (hN_1, kN_2), \forall (h, k) \in H \times K.$$
+
+Clearly, $\phi$ is well-defined. For each $(hN_1, kN_2) \in (H/N_1) \times (K / N_2)$, we have $\phi(h, k) = (hN_1, kN_2)$, which means that $\phi$ is onto. 
+
+Let $(h_1,k_1), (h_2,k_2) \in H \times K$. Then we have 
+
+$$\begin{align*}
+\phi((h_1,k_1)(h_2,k_2)) &= \phi((h_1h_2,k_1k_2)) \\
+&= ((h_1h_2)N_1,(k_1k_2)N_2) \\
+&= ((h_1N_1)(h_2N_1), (k_1N_2)(k_2N_2)) \\
+&= (h_1N_1,k_1N_2)(h_2N_1,k_2N_2) \\
+&= \phi(h_1,k_1) \phi(h_2,k_2).
+\end{align*}$$
+
+Thus, $\phi$ is an epimorphism. Furthermore, $\ker(\phi) = N_1 \times N_2$ because $N_1$ is the identity element of $H / N_1$ and $hN_1 = N_1 \iff h \in N_1$. 
+
+By the first isomorphism theorem, we conclude
+
+$$(H \times K) / (N_1 \times N_2) \cong (H/N_1) \times (K / N_2). \quad \blacksquare$$
+
+---
+## Corollary
 Let $H$ and $K$ be groups. 
 
 **(i)** $(H \times K) / (H \times \\{ e_K \\}) \cong K$.
@@ -132,4 +163,11 @@ $$
 
 위와 같이 집합 간의 isomorphic함을 보이기 위해서 first isomorphism theorem을 이용할 수도 있지만, 이 방법은 구체적으로 homomorphism을 잡아야 한다는 단점이 있다. 따라서 위와 같이 finite abelian group을 분류해 냄으로써 isomorphic함을 보이는 게 때때로는 더 효율적일 수도 있음을 명심하자.
 
-(ii) 
+**(ii)** 비슷한 문제로, $(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (0, 1) \rangle$과 isomorphic한 그룹이 뭔지 찾아보자. 우선 $\vert \mathbb{Z}_4 \times \mathbb{Z}_6 \vert = 24$이고 $\vert \langle (0, 1) \rangle \vert = 6$이므로 factor group의 order는 $\vert (\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (0, 1) \rangle \vert = 24/6 = 4$이다. 
+
+한편 $(\mathbb{Z}_4 \times \mathbb{Z}_6)$가 abelian이므로 그 factor group인 
+$(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (0, 1) \rangle$도 abelian이고, finite group이므로 finite generated group이다. 따라서 fundamental theorem of finitely generated abelian group에 의해 $(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (0, 1) \rangle$은 $\mathbb{Z}_4$ 혹은 $\mathbb{Z}_2 \times \mathbb{Z}_2 \cong V$ 중 하나와 isomorphic하다. 
+
+위에서와 마찬가지로 원소의 order를 계산해보자. 쉽게 알 수 있는 사실은 factor group의 원소 $(1, 0) + \langle (0,1) \rangle$은 order 4인 원소라는 것이다. 따라서 $(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (0, 1) \rangle \cong \mathbb{Z}_4$를 얻는다. 
+
+이번에는 homomorphism을 이용해서 결론을 도출해보자. 함수 $\phi: \mathbb{Z}_4 \times \mathbb{Z}_6 \to \mathbb{Z}_4$를 $\phi(a, b) = a, \forall (a, b) \in \mathbb{Z}_4 \times \mathbb{Z}_6$와 같이 정의하면 $\phi$는 epimorphism이고 $\ker(\phi) = \\{ 0 \\} \times \mathbb{Z}_6 = \langle (0, 1) \rangle$이라는 사실을 쉽게 알 수 있다. 따라서 $\mathbb{Z}_4 \times \mathbb{Z}_4 / \langle (0, 1) \rangle \cong \mathbb{Z}_4$임을 얻는다. 
