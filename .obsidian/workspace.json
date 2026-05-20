@@ -35,8 +35,7 @@
               "title": "2026-04-03-Continuous-Function"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -195,10 +194,10 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "dbf6324d3b7ef719",
+  "active": "505c8591ded86220",
   "lastOpenFiles": [
-    "_posts/Complex Analysis/2026-05-16-Maximum-Modulus-Principle.md",
     "_posts/Complex Analysis/2026-04-03-Continuous-Function.md",
+    "_posts/Complex Analysis/2026-05-16-Maximum-Modulus-Principle.md",
     "_posts/Complex Analysis/2026-03-27-Topology-In-Complex-Plane.md",
     "_posts/Complex Analysis/2026-04-09-Analytic-Function.md",
     "_posts/Complex Analysis/2026-05-16-Gauss-Mean-Value-Theorem.md",
