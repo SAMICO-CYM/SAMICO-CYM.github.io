@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Complex Analysis/2026-05-20-Laurent-Series.md",
+                "file": "_posts/Abstract Algebra/2026-05-13-Factor-Group.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-20-Laurent-Series"
+              "title": "2026-05-13-Factor-Group"
             }
           },
           {
@@ -196,8 +196,9 @@
   },
   "active": "b19ae931943856eb",
   "lastOpenFiles": [
-    "_posts/Complex Analysis/2026-05-19-Talyor-Series.md",
+    "_posts/Abstract Algebra/2026-05-13-First-Isomorphism-Theorem.md",
     "_posts/Complex Analysis/2026-05-20-Laurent-Series.md",
+    "_posts/Complex Analysis/2026-05-19-Talyor-Series.md",
     "_posts/Complex Analysis/2026-05-12-Cauchy-Integral-Formula.md",
     "_site/posts/Laurent-Series/index.html",
     "_site/posts/Laurent-Series",

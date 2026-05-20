@@ -1,4 +1,4 @@
---- 
+---- 
 title: Laurent Series
 date: 2026-05-20
 categories: [Mathematics, Complex Analysis]

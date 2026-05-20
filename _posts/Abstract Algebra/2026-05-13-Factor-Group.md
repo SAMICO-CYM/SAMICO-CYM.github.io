@@ -113,3 +113,14 @@ $\big[(\because)$ Note that $A_n \le S_n$ and $\vert A_n \vert = \frac{n!}{2}$. 
 **(iv)** Note that $\ker(\phi) \lhd G$ for a group homomorphism $\phi : G \to G'$ by [Theorem 1.](<{% post_url Abstract Algebra/2026-05-06-Kernel %}#theorem-1>) Then $G/\ker(\phi)$ is a factor group of $G$ by $\ker(\phi)$. 
 
 **(v)** $G / \\{ e \\} \cong G$ and $G / G \cong \\{ e \\}$.
+
+---
+## Theorem 2
+A factor group of a cyclic group is cyclic.
+
+### Proof
+Let $G = \langle a \rangle$ and let $H \lhd G$. We claim that $G/H = \langle a H \rangle$.
+
+To see this, let $bH \in G/H$. Since $b \in G$, $b = a^n$ for some $n \in \mathbb{Z}$. Then we have $bH = a^nH = (aH)^n \in \langle aH \rangle$, which means that $G/H \subset \langle aH \rangle$.
+
+Since $aH \in G/H$, $\langle aH \rangle \subset G/H$ is clear. Thus, $G/H = \langle a H \rangle$. $\blacksquare$

@@ -85,6 +85,19 @@ Let $\phi: G \to G'$ be a group epimorphism. Then $G/\ker(\phi) \cong G'$.
 Since $\phi$ is surjective, we have $\mathrm{Im}(\phi) = G'$. By Theorem 1 (i), $G/\ker(\phi) \cong \mathrm{Im}(\phi) = G'$. $\blacksquare$
 
 ---
+## Theorem 3
+Let $H$ and $K$ be groups. 
+
+**(i)** $(H \times K) / (H \times \\{ e_K \\}) \cong K$.
+
+**(ii)** $(H \times K) / (\\{ e_H \\} \times K) \cong H$.
+
+### Proof
+**(i)** Define a function $\phi: H \times K \to K$ by $\phi(h, k) = k, \forall (h, k) \in H \times K$. Clearly, $\phi$ is an epimorphism with kernel $H \times \\{ e_K \\}$. By the first isomorphism theorem, $(H \times K)/(H \times \\{ e_K \\}) \cong K$. 
+
+**(ii)** Similar to (i). $\blacksquare$
+
+---
 ## Remark
 대수학을 잠깐 벗어나서 집합론으로 돌아가 일반적으로 생각해보자. 집합 $X$가 주어지면 각각의 원소는 exactly 구분된다. 정말로 각 원소가 같으면 같고 다르면 다르다는 말이다. 그런데 "같음"을 정의하는 방식을 항상 이렇게 강하게 줄 필요는 없다. 두 도형이 같다는 말을 정확히 길이와 각도가 같은 합동 조건으로 줄 수도 있지만, 닮음 조건으로 줄 수도 있듯이 말이다. 마찬가지로 수학에서 두 대상이 "같다"라는 말을 할 때 주로 사용하는 방법이 동치 조건을 이용한 방법인데, 동치 조건 $\sim$에 대하여 $x \sim y$라면 두 대상 $x, y$는 "사실상 같다"고 말할 수 있다. 그러면 이렇게 "사실상 같은" 대상들 끼리 모아서 집합 $[x]$을 구성하면 그 자체를 우리가 정의한 동치 관계 $\sim$의 관점에서 하나의 원소로 취급할 수 있고, 이들을 모아놓은 집합을 $X / \sim$이라고 쓰고 quotient set이라고 부른다. 
 
@@ -98,7 +111,7 @@ Since $\phi$ is surjective, we have $\mathrm{Im}(\phi) = G'$. By Theorem 1 (i), 
 
 --- 
 ## Example
-다음과 같이 정의된 group homomorphism $\phi: \mathbb{Z}_4 \times \mathbb{Z}_2 \to \mathbb{Z}_4 \times \mathbb{Z}_2$을 고려하자. 
+(i) 다음과 같이 정의된 group homomorphism $\phi: \mathbb{Z}_4 \times \mathbb{Z}_2 \to \mathbb{Z}_4 \times \mathbb{Z}_2$을 고려하자. 
 
 $$\phi(a, b) = (a, 0), \forall (a, b) \in \mathbb{Z}_4 \times \mathbb{Z}_2.$$
 
@@ -106,7 +119,7 @@ $$\phi(a, b) = (a, 0), \forall (a, b) \in \mathbb{Z}_4 \times \mathbb{Z}_2.$$
 
 $$
 \begin{align*}
-\mathbb{Z}_4 \times \mathbb{Z}_2 / (\{ 0 \\} \times \mathbb{Z}_2) & \cong \mathbb{Z}_4 \times \\{ 0 \\} \\
+\mathbb{Z}_4 \times \mathbb{Z}_2 / (\{ 0 \} \times \mathbb{Z}_2) & \cong \mathbb{Z}_4 \times \{ 0 \} \\
 & \cong \mathbb{Z}_4
 \end{align*}
 $$
@@ -115,6 +128,8 @@ $$
 
 우선 $\mathbb{Z}_4 \times \mathbb{Z}_2$은 order $8$인 group이고 $\ker(\phi) = \\{ 0 \\} \times \mathbb{Z}_2$은 order $2$인 subgroup이므로 factor group의 order는 $\frac{8}{2} = 4$이다. 이때 order $4$인 group은 $\mathbb{Z}_4$와 Klein-4 group $V$뿐임을 알고 있으므로, factor group은 둘 중 하나와 isomorphic하다. 
 
-결정하기 위해서 factor group의 원소를 가지고 계산해보자. $(1, 0) + \ker(\phi)$를 두 번 더하면 $(2, 0) + \ker(\phi)$이고, 또 두 번 더하면 $(0, 0) + \ker(\phi)$가 된다. 따라서 order가 $4$인 원소가 존재하므로, factor group은 $\mathbb{Z}_4$와 isomorphic하다. 
+둘 중 어느 것과 isomorphic한지 결정하기 위해서 factor group의 원소의 order를 계산해보자. $(1, 0) + \ker(\phi)$를 반복해서 더하면 $(1, 0) + \ker(\phi), (2, 0) + \ker(\phi), (3, 0) + \ker(\phi), (0, 0) + \ker(\phi)$이 나오고 각 coset들은 자명하게 모두 다르다. 따라서 $(1, 0) + \ker(\phi)$는 order가 $4$인 원소이므로, factor group은 $\mathbb{Z}_4$와 isomorphic하다. 
 
-집합 간의 isomorphic함을 보이기 위해서 first isomorphism theorem을 이용할 수도 있지만, 이 방법은 구체적으로 homomorphism을 잡아야 한다는 단점이 있다. 따라서 위와 같이 finite abelian group을 분류해 냄으로써 isomorphic함을 보이는 게 때때로는 더 효율적일 수도 있음을 명심하자.
+위와 같이 집합 간의 isomorphic함을 보이기 위해서 first isomorphism theorem을 이용할 수도 있지만, 이 방법은 구체적으로 homomorphism을 잡아야 한다는 단점이 있다. 따라서 위와 같이 finite abelian group을 분류해 냄으로써 isomorphic함을 보이는 게 때때로는 더 효율적일 수도 있음을 명심하자.
+
+(ii) 
