@@ -43,18 +43,28 @@ $$\vert f(z_0) \vert = \vert f(z_0 + \rho e^{i\theta}) \vert, \forall \theta \in
 
 which means that $\vert f(z) \vert = \vert f(z_0) \vert$ for all $z$ on the circle $C_\rho$. 
 
-Since we have chosen $\rho$ arbitrarily, it follows that $\vert f(z) \vert = \vert f(z_0) \vert$ in the neighborhood $\vert z - z_0 \vert < \varepsilon$. By Theorem 2, $f(z)$ is constant throughout that neighborhood, which means that $f(z) = f(z_0)$ for each point $z$ in the neighborhood. $\blacksquare$
+Since we have chosen $\rho$ arbitrarily, it follows that $\vert f(z) \vert = \vert f(z_0) \vert$ in the neighborhood $\vert z - z_0 \vert < \varepsilon$. By [Theorem 2](<{% post_url Complex Analysis/2026-04-09-Analytic-Function %}#theorem-2>), $f(z)$ is constant throughout that neighborhood, which means that $f(z) = f(z_0)$ for each point $z$ in the neighborhood. $\blacksquare$
 
 ---
 ## Maximum Modulus Principle
 If a function $f$ is analytic and not constant in a given domain $D$, then $\vert f(z) \vert$ has no maximum value in $D$. That is, there is no point $z_0 \in D$ such that $\vert f(z) \vert \le \vert f(z_0) \vert, \forall z \in D$. 
 
 ### Proof
+Suppose that there is a point $z_0 \in D$ such that $\vert f(z) \vert \le \vert f(z_0) \vert, \forall z \in D$. 
+
+We draw a polygonal line $L$ lying in $D$ and extending from $z_0$ to any other point $P$ in $D$. Also, we let $d$ denote the shortest distance from points on $L$ to $\partial D$. When $D = \mathbb{C}$, $d$ may have any positive value. 
+
+Next, we construct a finite sequence of points $z_0, z_1, \cdots, z_n = P$ along $L$ such that $\vert z_k - z_{k-1} \vert < d$ for each $k = 1, 2, ..., n$. Furthermore, we form a finite sequence of neighborhoods $N_0, N_1, \cdots, N_n$ where each $N_k$ has center $z_k$ and radius $d$. Note that $f$ is analytic in each of these neighborhoods, and the center $z_k$ of each neighborhoods $N_k$ lies in the neighborhood $N_{k-1}$. 
+
+Since $\vert f(z) \vert \le \vert f(z_0) \vert, \forall z \in D$, it also holds throughout $N_0$. By the preceeding lemma, $f$ has the constant value $f(z_0)$ throughout $N_0$. In particular, $f(z_1) = f(z_0)$. It implies that $\vert f(z) \vert \le \vert f(z_1) \vert$ for each point $z$ in $N_1$. By applying the lemma again, $f$ has the constant value $f(z_1) = f(z_0)$ throughout $N_1$. Continuing this process, we must arrive at the neighborhood $N_n$ and the fact $f(z_n) = f(z_0)$. 
+
+Since $z_n = P$ and we have chosen an arbitrary point $P$ in $D$, we conclude that $f(z) = f(z_0), \forall z \in D$, which means that $f$ is a constant function in $D$. $\bigotimes$ Thus, $f$ does not have the maximum value in $D$. $\blacksquare$ 
 
 ---
 ## Corollary
-Suppose that a function $f$ is continuous on a closed bounded region $R$ and that it is analytic and not constant in the interior of $R$. Then the maximum value of $\vert f(z) \vert$ in $R$, which is always reached, occurs somewhere on the boundary of $R$ and never in the interior.
+Suppose that a function $f$ is continuous on a compact region $R$ and that it is analytic and not constant in the interior of $R$. Then the maximum value of $\vert f(z) \vert$ in $R$, which is always reached, occurs somewhere on the boundary of $R$ and never in the interior.
 
 즉 최대값은 항상 경계에서 일어날 수 밖에 없음을 보장해준다. 이는 Lagrange multiplier의 직관과도 잘 일치함을 알 수 있다.
 
 ### Proof
+Since $f$ is continuous on a compact region $R$, $f$ has the maximum value somewhere in $R$. By the maximum modulus principle, $f$ 
