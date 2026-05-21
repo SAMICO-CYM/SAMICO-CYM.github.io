@@ -206,7 +206,7 @@ Let $U$ be a neighborhood of $x$. Since $x \in U$, then $x \in B_d(x, \varepsilo
 
 ---
 ## Theorem 6
-Let $f: X \to Y$ be a function. If $f$ is continuous, then for every sequence $\\{ x_n \\}_{n=1}^\infty$ such that $x_n \in X, \forall n \in \mathbb{N}$ and $\lim_{n \to \infty} x_n = x$, we have $\lim_{n \to \infty} f(x_n) = f(x)$. Moreover, if $X$ is metrizable, then the converse holds. 
+Let $f: X \to Y$ be a function. If $f$ is continuous, then for every sequence $\\{ x_n \\} _{n=1} ^{\infty}$ such that $x_n \in X, \forall n \in \mathbb{N}$ and $\lim_{n \to \infty} x_n = x$, we have $\lim_{n \to \infty} f(x_n) = f(x)$. Moreover, if $X$ is metrizable, then the converse holds. 
 
 ### Proof
 $(\Longrightarrow)$
