@@ -11,7 +11,7 @@ Let $X$ be a topological space. Let $A \subset X$ and let $x \in X$.
 
 **(i)** An open set $U$ of $X$ containing $x$ is called a ***neighborhood*** of $x$. 
 
-**(ii)** $x$ is called a ***limit point*** of $A$ if every neighborhood of $x$ satisfies $A \cap (U - \\{x\\}) \neq \emptyset$.
+**(ii)** $x$ is called a ***limit point*** of $A$ if every neighborhood $U$ of $x$ satisfies $A \cap (U - \\{x\\}) \neq \emptyset$.
 
 **(iii)** The set of all limit points of $A$ is called the ***derived set*** of $A$, denoted by $A'$.
 
@@ -22,7 +22,7 @@ $A$를 어떤 수열이라고 생각해보면, 자연스럽게 $x$는 수열의 
 ## Remark
 **(i)** A limit point of $A$ is not necessarily a point in $A$. 
 
-**(ii)** $A \cap (U - \\{x\\}) = U \cap (A - \\{x\\}) $ for any open set $U$ containing $x$.
+**(ii)** $A \cap (U - \\{ x \\}) = U \cap (A - \\{ x \\}) $ for any open set $U$ containing $x$.
 
 ---
 
