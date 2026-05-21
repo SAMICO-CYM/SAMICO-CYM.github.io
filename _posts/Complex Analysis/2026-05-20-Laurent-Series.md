@@ -21,7 +21,115 @@ b_n &= \frac{1}{2\pi i} \int_C \frac{f(z)}{(z-z_0)^{-n+1}} \, dz \quad (n= 1, 2,
 This series is called the ***Laurent series*** for $f$ about $z_0$.
 
 ### Proof
+Let $z$ be a point in the domain, and let denote $\vert z- z_0 \vert = r$. Let $C$ be a positively oriented simple closed contour around $z_0$ lying in that domain. We construct a closed annular region $r_1 \le \vert z - z_0 \vert \le r_2$ that is contained in the domain $R_1 < \vert z - z_0 \vert < R_2$ and whose interior contains both the point $z$ and the contour $C$. We let $C_1$ and $C_2$ denote the positively oriented circles $\vert z - z_0 \vert = r_1$ and $\vert z - z_0 \vert = r_2$, respectively. Note that $f$ is analytic on $C_1$ and $C_2$, as well as in the annular domain between them.
 
+Next, we construct a positively oriented circle $\gamma$ with center at $z$ and small enough to be contained in the interior of the annular region $r_1 \le \vert z - z_0 \vert \le r_2$. 
+
+![](assets/img/Pasted%20image%2020260522015239.png)
+
+By the principle of deformation of the path, we obtain 
+
+$$\int _{C_2} \frac{f(s)}{s - z} \, ds - \int _{C_1} \frac{f(s)}{s - z} \, ds - \int _{\gamma} \frac{f(s)}{s-z} \, ds = 0.$$
+
+By the Cauchy integral formula, we have 
+
+$$\begin{align*}
+f(z) &= \frac{1}{2\pi i} \int _{\gamma} \frac{f(s)}{s - z} \, ds \\
+&= \frac{1}{2\pi i} \int _{C_2} \frac{f(s)}{s - z} \, ds - \frac{1}{2\pi i} \int _{C_1} \frac{f(s)}{s - z} \, ds \\
+&= \frac{1}{2\pi i} \int _{C_2} \frac{f(s)}{s - z} \, ds + \frac{1}{2\pi i} \int _{C_1} \frac{f(s)}{z - s} \, ds.
+\end{align*}$$
+
+Note that for $s \in C_2$, $\left \vert \frac{z-z_0}{s-z_0} \right \vert = \frac{r}{r_2} < 1$. Then we have
+
+$$\begin{align*}
+\frac{1}{s-z} &= \frac{1}{(s-z_0) - (z- z_0)} \\
+&=\frac{1}{s-z_0} \cdot \frac{1}{1- \frac{z-z_0}{s-z_0}} \\
+&= \frac{1}{s-z_0} \left[ \sum_{n=0}^{k-1} \left( \frac{z-z_0}{s-z_0} \right)^n + \frac{\left( \frac{z-z_0}{s-z_0} \right)^k}{1 - \frac{z-z_0}{s-z_0}} \right] \\
+&= \sum_{n=0}^{k-1} \frac{\left( z-z_0 \right)^n}{(s-z_0)^{n+1}} + \frac{(z-z_0)^k}{(s-z)(s-z_0)^k},
+\end{align*}$$
+
+for all $k \ge 0$. Similarly, for $s \in C_1$, $\left \vert \frac{s-z_0}{z-z_0} \right \vert = \frac{r_1}{r} < 1$. Then we have 
+
+$$\frac{1}{z-s} = \sum_{n=0}^{k-1} \frac{\left( s-z_0 \right)^n}{(z-z_0)^{n+1}} + \frac{(s-z_0)^k}{(z-s)(z-z_0)^k}$$
+
+for all $k \ge 0$.
+
+Thus, we have 
+
+$$\begin{align*}
+f(z) &= \frac{1}{2\pi i} \int _{C_2} \frac{f(s)}{s - z} \, ds + \frac{1}{2\pi i} \int _{C_1} \frac{f(s)}{z - s} \, ds \\
+&= \frac{1}{2\pi i} \int _{C_1} f(s) \left[ \sum_{n=0}^{k-1} \frac{\left( z-z_0 \right)^n}{(s-z_0)^{n+1}} + \frac{(z-z_0)^k}{(s-z)(s-z_0)^k} \right] \, ds + \frac{1}{2\pi i} \int _{C_1} f(s) \left[ \sum_{n=0}^{k-1} \frac{\left( s-z_0 \right)^n}{(z-z_0)^{n+1}} + \frac{(s-z_0)^k}{(z-s)(z-z_0)^k} \right] \\
+&= \left[ \sum_{n=0}^{k-1} a_n (z-z_0)^n + \rho_k(z) \right] + \left[ \sum_{n=0}^{k-1} b_{n+1} (z-z_0)^{-n-1} + \sigma_k(z) \right] \\
+&= \left[ \sum_{n=0}^{k-1} a_n (z-z_0)^n + \rho_k(z) \right] + \left[ \sum_{n=1}^{k} b_{n} (z-z_0)^{-n} + \sigma_k(z) \right]
+\end{align*}$$
+
+where 
+
+$$\begin{align*}
+&a_n := \frac{1}{2\pi i} \int _{C_2} \frac{f(s)}{(s-z_0)^{n+1}} \, ds \\
+& b_n := \frac{1}{2\pi i} \int _{C_1} \frac{f(s)}{(s-z_0)^{-n+1}} \, ds
+\end{align*}$$
+
+for all $n \ge 0$, and where 
+
+$$\begin{align*}
+&\rho_k(z) := \frac{(z-z_0)^k}{2\pi i} \int _{C_2} \frac{f(s)}{(s-z)(s-z_0)^{k}} \, ds \\
+& \sigma_k(z) := \frac{1}{2\pi i(z-z_0)^k} \int _{C_2} \frac{f(s)(s-z_0)^{k}}{z-s} \, ds
+\end{align*}$$
+
+for all $k \ge 0$.
+
+We claim that 
+
+$$\lim_{k \to \infty} \rho_k(z) = 0 \quad \text{and} \quad \lim_{k \to \infty} \sigma_k(z) = 0$$
+
+for all $z$ in the domain $R_1 < \vert z - z_0 \vert < R_2$. 
+
+To verify this, we use $ML$-lemma.
+
+$$\begin{align*}
+\vert \rho_k(z) \vert &= \left\vert \frac{(z-z_0)^k}{2\pi i} \int _{C_2} \frac{f(s)}{(s-z)(s-z_0)^{k}} \, ds  \right \vert  \\
+& \le \frac{r^k}{2\pi} \cdot \frac{\max _{s \in C_2} f(s)}{(r_2 - r)r_2^k} \cdot 2\pi r_2 \\
+&= \frac{r_2}{r_2 - r} \cdot \max _{s \in C_2} f(s) \cdot \left( \frac{r}{r_2} \right)^k.
+\end{align*}$$
+
+Since $\frac{r}{r_2} < 1$, we obtain 
+
+$$\lim_{k \to \infty} \vert \rho_k(z) \vert = 0,$$
+
+so that 
+
+$$\lim_{k \to \infty} \rho_k(z) = 0.$$
+
+Similarly, we can show that 
+
+$$\lim_{k \to \infty} \sigma_k(z) = 0.$$
+
+Since we have chosen an arbitrary point $z$ in the domain, the result holds for any $z$ in the domain.
+
+Thus, we have 
+
+$$\begin{align*}
+f(z) &= \lim_{k \to \infty} f(z) \\
+&= \lim_{k \to \infty} \left[ \sum_{n=0}^{k-1} a_n (z-z_0)^n + \rho_k(z) + \sum_{n=1}^{k} b_{n} (z-z_0)^{-n} + \sigma_k(z) \right] \\
+&= \sum_{n=0}^\infty a_n(z-z_0)^n + \sum_{n=1}^\infty \frac{b_n}{(z-z_0)^n}
+\end{align*}$$
+
+whenever $R_1 < \vert z - z_0 \vert < R_2$. 
+
+By the deformation of the path, we have  
+
+$$\begin{align*}
+a_n &= \frac{1}{2\pi i} \int _{C_2} \frac{f(s)}{(s-z_0)^{n+1}} \, ds \\
+&= \frac{1}{2\pi i} \int _{C} \frac{f(s)}{(s-z_0)^{n+1}} \, ds
+\end{align*}$$
+
+and 
+
+$$\begin{align*}
+b_n &= \frac{1}{2\pi i} \int _{C_1} \frac{f(s)}{(s-z_0)^{-n+1}} \, ds \\
+&= \frac{1}{2\pi i} \int _{C} \frac{f(s)}{(s-z_0)^{-n+1}} \, ds. \quad \blacksquare
+\end{align*}$$
 
 ---
 ## Remark
