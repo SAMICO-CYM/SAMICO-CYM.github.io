@@ -72,7 +72,7 @@ Suppose that $\forall x \in X$ and $\forall \varepsilon > 0$, $\exists \delta > 
 
 ---
 ## Corollary 1
-Let $d, d', d''$ be the Euclidean metric, the taxicab metric, and the square metric, respectively, on $\mathbb{R}^n$. Then $\mathcal{T} _d = \mathcal{T} _{d'} = \mathcal{T} _{d''}$.
+Let $d, d', d''$ be the Euclidean metric, the taxicab metric, and the square metric, respectively, on $\mathbb{R}^n$. Then $\mathcal{T} _d = \mathcal{T} _{d'} = \mathcal{T} _{d''}$. Furthermore, these topologies are the same as the usual topology of $\mathbb{R}^n$.
 
 ### Proof
 Let $x \in \mathbb{R}^n$ and $\varepsilon > 0$.
@@ -115,7 +115,35 @@ $$d''(x, y) = \max_{1 \le i \le n} \vert x_i - y_i \vert < \sqrt{\sum_{i=1}^n (x
 
 Hence, $y \in B_{d''}(x, \varepsilon)$, so that $B_{d}(x, \delta) \subset B_{d''}(x, \varepsilon)$. Therefore, $\mathcal{T} _{d''} \subset \mathcal{T} _{d}$ by Theoerm 2. 
 
-Thus, we have $\mathcal{T} _d = \mathcal{T} _{d'} = \mathcal{T} _{d''}$. $\blacksquare$
+Thus, we have $\mathcal{T} _d = \mathcal{T} _{d'} = \mathcal{T} _{d''}$. 
+
+To show that these topologies are the same as the usual topology of $\mathbb{R}^n$, it suffices to show for the case $\mathcal{T}_d$. 
+
+Let 
+
+$$B := \prod_{i=1}^n (a_i, b_i)$$
+
+be a basis element of the usual topology of $\mathbb{R}^n$, and let $x \in B$. For each $i = 1, 2, ..., n$, there exists $\varepsilon_i > 0$ such that $x_i \in (x_i - \varepsilon_i, x_i + \varepsilon_i) \subset (a_i, b_i)$. Let $\varepsilon := \min _{1 \le i \le n} \varepsilon_i$. Then we claim that $x \in B_d(x, \varepsilon) \subset B$. 
+
+To see this, let $y \in B_d(x, \varepsilon)$. Then $d(x, y) < \varepsilon$, which means that 
+
+$$\vert x_i - y_i \vert \le \sqrt{\sum_{i=1}^n (x_i-y_i)^2} < \varepsilon \le \varepsilon_i$$
+
+for each $i = 1, 2, ..., n$. Then $y_i \in (x_i - \varepsilon_i, x_i + \varepsilon_i) \subset (a_i, b_i)$ for each $i = 1,2, ..., n$, which implies that $y \in B$. Thus, $x \in B_d(x, \varepsilon) \subset B$, and therefore $\mathcal{T}_d$ is finer than the usual topology.
+
+Conversely, let $B_d(x, \varepsilon)$ be a basis element of $\mathcal{T}_d$, and let $y \in B_d(x, \varepsilon)$. Then $y \in B_d(y, \delta) \subset B_d(x, \varepsilon)$ for some $\delta > 0$. Take 
+
+$$B := \prod_{i=1}^n \left(y_i - \frac{\delta}{\sqrt{n}}, y_i + \frac{\delta}{\sqrt{n}} \right).$$
+
+Then $B$ is open in the usual topology, and $y \in B$. We claim that $y \in B \subset B_d(y, \delta) \subset B_d(x, \varepsilon)$, so that the usual topology is finer than $\mathcal{T}_d$.
+
+To see this, let $z \in B$. Then we have that $z_i \in \left(y_i - \frac{\delta}{\sqrt{n}}, y_i + \frac{\delta}{\sqrt{n}} \right)$, which means that $\vert z_i - y_i \vert < \frac{\delta}{\sqrt{n}}$, for each $i = 1, 2, ..., n$. Then we obtain
+
+$$\begin{align*}
+d(z, y) = \sqrt{\sum_{i=1}^n (z_i - y_i)^2} < \sqrt{n\left( \frac{\delta}{\sqrt{n}} \right)^2} = \delta,
+\end{align*}$$
+
+so that $z \in B_d(y, \delta)$. Thus, $B \subset B_d(y, \delta)$, and therefore $\mathcal{T}_d$ and the usual topology of $\mathbb{R}^n$ are the same. Hence, all of $\mathcal{T}_d, \mathcal{T}_{d'}, \mathcal{T}_{d''}$ and the usual topology are the same. $\blacksquare$
 
 ---
 ## Corollary 2
@@ -130,6 +158,33 @@ X & \text{of } \varepsilon > 1
 \end{cases}$$
 
 by the definition of the discrete metric. [Thus, we always have $x \in B_d(x, 1) = \\{ x \\} \subset U$, and therefore, the discrete topology on $X$ is the metric topology induced by $d$.](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-3>) $\blacksquare$
+
+---
+## Theorem 3
+Every metric space is Hausdorff.
+
+### Proof
+Let $X$ be a metric space with the metric $d$. Let $x, y \in X$ with $x \neq y$. Then $d(x, y) > 0$. Take $\varepsilon = \frac{1}{2}d(x, y)$. Since
+
+$$B_d(x, \varepsilon) \cap B_d(y, \varepsilon) = \emptyset$$
+
+and each $B_d(x, \varepsilon), B_d(y, \varepsilon)$ is open in $X$, $X$ is Hausdorff. $\blacksquare$
+
+---
+## Theorem 4
+Let $X, Y$ be metrizble with metrics $d_X, d_Y$, respectively. Let $f: X \to Y$ be a function. Then 
+
+$$f \text{ is continuous } \iff \forall x \in X, \forall \varepsilon > 0, \exists \delta >0 \text{ such that } d_X(x, y) < \delta \implies d_Y(f(x), f(y)) < \varepsilon.$$
+
+### Proof
+$(\Longrightarrow)$
+
+Suppose that $f$ is continuous. Let $x \in X$ and $\varepsilon > 0$. Note that $B _{d_Y}(f(x), \varepsilon)$ is open in $Y$ and $f(x) \in B _{d_Y}(f(x), \varepsilon)$. Since $f$ is continuous, there exists a neighborhood $U$ of $x$ such that $f(U) \subset B _{d_Y}(f(x), \varepsilon)$. Since $x \in U$, $x \in B _{d_X}(x, \delta) \subset U$ for some $\delta > 0$. If $y \in B _{d_X}(x, \delta) \subset U$, which implies that $d_X(x, y) < \delta$, then we have $f(y) \in f(U) \subset B _{d_Y}(f(x), \varepsilon)$, so that $d_Y(f(x), f(y)) < \varepsilon$. 
+
+$(\Longleftarrow)$
+
+Suppose that $\forall x \in X, \forall \varepsilon > 0, \exists \delta >0$ such that $d_X(x, y) < \delta \implies d_Y(f(x), f(y)) < \varepsilon.$ 
+
 
 
 <style>
