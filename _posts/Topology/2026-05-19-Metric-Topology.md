@@ -183,7 +183,39 @@ Suppose that $f$ is continuous. Let $x \in X$ and $\varepsilon > 0$. Note that $
 
 $(\Longleftarrow)$
 
-Suppose that $\forall x \in X, \forall \varepsilon > 0, \exists \delta >0$ such that $d_X(x, y) < \delta \implies d_Y(f(x), f(y)) < \varepsilon.$ 
+Suppose that the statement holds. Let $x \in X$ and let $V$ be a neighborhood of $f(x)$. Since $f(x) \in V$, $f(x) \in B _{d_Y}(f(x), \varepsilon) \subset V$ for some $\varepsilon > 0$. By assumtion, $\exists \delta > 0$ such that $d_X(x, y) < \delta \implies d_Y(f(x), f(y)) < \varepsilon.$ Take $U := B _{d_X}(x, \delta)$. Then $U$ is a neighborhood of $x$, and we have 
+
+$$f(U) \subset B _{d_Y}(f(x), \varepsilon) \subset V.$$
+
+Thus, $f$ is continuous. $\blacksquare$
+
+---
+## Theorem 5
+Let $X$ be a topological space, and let $A \subset X$. If there exists a sequence of points of $A$ converging to $x \in X$, then $x \in \overline{A}$. Moreover, if $X$ is metrizable, then the converse holds.
+
+### Proof
+$(\Longrightarrow)$
+
+Suppose that there exists a sequence $\\{ x_n \\}_{n=1}^\infty$ of points of $A$ converging to $x \in X$. Let $U$ be a neighborhood of $x$. Then there exists $N \in \mathbb{N}$ such that $x_n \in U, \forall n \ge N$. Then $A \cap U \neq \emptyset$, which means that $x \in \overline{A}$.
+
+$(\Longleftarrow)$
+
+Let $X$ be a metric space with a metric $d$. Let $x \in \overline{A}$.  Then $A \cap U \neq \emptyset$ for each neighborhood $U$ of $x$. For each $n \in \mathbb{N}$, we choose an element $x_n$ in $A \cap B_d\left( x, \frac{1}{n} \right)$.
+
+Let $U$ be a neighborhood of $x$. Since $x \in U$, then $x \in B_d(x, \varepsilon) \subset U$ for some $\varepsilon > 0$. Note that $\frac{1}{N} < \varepsilon$ for some $N \in \mathbb{N}$. Then we have $x_n \in B_d\left(x, \frac{1}{n} \right) \subset B_d(x, \varepsilon) \subset U, \forall n \ge N$, and $x_n \in A, \forall n \in \mathbb{N}$. Thus, $\lim_{n \to \infty} x_n = x$. 
+
+---
+## Theorem 6
+Let $f: X \to Y$ be a function. If $f$ is continuous, then for every sequence $\\{ x_n \\}_{n=1}^\infty$ such that $x_n \in X, \forall n \in \mathbb{N}$ and $\lim_{n \to \infty} x_n = x$, we have $\lim_{n \to \infty} f(x_n) = f(x)$. Moreover, if $X$ is metrizable, then the converse holds. 
+
+### Proof
+$(\Longrightarrow)$
+
+Let $\\{ x_n \\}_{n=1}^\infty$ be a sequence such that $x_n \in X, \forall n \in \mathbb{N}$ and $\lim_{n \to \infty} x_n = x$. Let $V$ be a neighborhood of $f(x)$. Note that $x \in f^{-1}(V)$ and $f^{-1}(V)$ is open in $X$ because $f$ is continuous. Then $\exists N \in \mathbb{N}$ such that $x_n \in f^{-1}(V), \forall n \ge N$, which implies that $f(x_n) \in V, \forall n \ge N$. Thus, $\lim_{n \to \infty} f(x_n) = f(x)$.
+
+$(\Longleftarrow)$
+
+Let $X$ be a metric space with a metric $d$. Suppose that the statement holds. Let $A \subset X$, and let $y \in f(\overline{A})$. Then $y = f(x)$ for some $x \in \overline{A}$. Then there exists a sequence $\\{ x_n \\}_{n=1}^\infty$ such that $x_n \in A, \forall n \in \mathbb{N}$ and $\lim_{n \to \infty} x_n = x \in X$ by the preceeding theorem. By assumption, we have $\lim_{n \to \infty} f(x_n) = f(x)$ and $f(x_n) \in f(A), \forall n \in \mathbb{N}$. By the preceeding theorem, we have $y = f(x) \in \overline{f(A)}$, which means that $f(\overline{A}) \subset \overline{f(A)}$. Hence, $f$ is continuous. $\blacksquare$ 
 
 
 
