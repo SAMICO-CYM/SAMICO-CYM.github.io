@@ -30,7 +30,7 @@ Suppose that $A$ and $B$ are two sets with order relaitons $<_A$ and $<_B$, resp
 $$a_1 <_A a_2 \implies f(a_1) <_B f(a_2).$$
 
 ## Definition 3
-Suppose that $A$ and $B$ are two sets with order relations $<_A$ and $<_B$, respectively. Define an order relation $<$ on $A \times B$ by defining
+Suppose that $A$ and $B$ are two sets with order relations $<_A$ and $<_B$, respectively. Define an order relation $<$ on $A \times B$ by
 
 $$a_1 \times b_1 < a_2 \times b_2$$
 

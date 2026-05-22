@@ -38,7 +38,7 @@ For each planted tree $(T, r, \nu)$ on $n$ verticies, we define the ***code*** $
 Each label has the same number of $0$s as $1$s and the same is not true of any nontrivial initial sublabel.
 
 ---
-## Theorem
+## Theorem 1
 For planted trees $T$ and $T'$, $A(T) = A(T') \iff T \cong T'$, that is, a given code uniquely determines the planted tree up to isomorphisms.
 
 ### Proof
@@ -66,8 +66,48 @@ $$0000101101011011 \quad \longleftrightarrow \quad \downarrow \downarrow \downar
 
 ---
 ## Lexicographic Ordering
-We define the lexicographic ordering $<$ between two sequences $A = (a_1, a_2, \cdots, a_n)$ and $B = (b_1, b_2, \cdots, b_m)$ as follows:
+We define the ***lexicographic ordering*** $\le$ between two sequences $A = (a_1, a_2, \cdots, a_n)$ and $B = (b_1, b_2, \cdots, b_m)$ by $A \le B$ 
 
-(i) If $A$ is an initial segment of $B$, then $A < B$. If $B$ is an initial segment of $A$, then $B < A$.
+**(i)** if $a_i = b_i$ for each $i = 1, 2, \cdots, n$, 
 
-(ii) Otherwise, 
+**(ii)** if $a_i < b_i$ where $i$ is the min index with $a_i \neq b_i$,
+
+**(iii)** $A$ is an initial segment of $B$. 
+
+Planted tree는 같은 부모를 가지는 vertex들 사이에 순서 관계가 주어져 있지만, rooted tree는 그렇지 않다. 때문에 rooted tree에서 planted tree를 유도해서 코드를 찾으려면 순서 관계를 주어야 하고, 위에서 정의한 사전식 순서는 이렇게 순서를 주는 canonical한 방법이 된다. 이렇게 어떤 vertex $v$의 자식들 $v_1, v_2, ..., v_d$들 사이에 순서 관계 $v_1 \le v_2 \le \cdots \le v_d$를 주면 이 순서대로 $v$의 label을 $0L _{v_1}L _{v_2} \cdots L _{v_d}1$로 만들 수 있다. 
+
+---
+## Eccentricity and Center
+Let $G$ be a graph, and let $v \in V(G)$. 
+
+**(i)** We define the ***eccentricity*** of $v$ by 
+
+$$\mathrm{ex}_G(v) = \max _{u \in V(G)} d_G(u, v).$$
+
+**(ii)** We define the ***center*** of $G$ is the set $C(G)$ of verticies of $G$ with the minimum eccentricity. 
+
+쉽게 말해 eccentricity란 어떤 고정된 정점으로부터 그래프가 얼마나 멀리 뻗어나가 있는지 측정하는 척도 정도로 생각할 수 있다. 거꾸로 생각하면, 이 값이 크면 클수록 그래프의 주변부에 정점이 위치해 있고, 이 값이 작으면 작을수록 그래프의 '중심'에 위치해 있다는 뜻이 된다. 따라서 자연스럽게 그래프의 center, 즉 중심은 가장 작은 eccentricity를 가지는 vertex들의 집합으로 정의된다.
+
+Minimum이라는 말 때문에 $C(G)$는 항상 singleton일 것 같지만, 실제로 한 개만 있을 필요는 없고 여러 개 있을 수도 있다. 예를 들어 cycle $C_3$를 생각해보면 3개의 vertex 모두가 $C(G)$에 들어있다. 
+
+다시 tree의 관점으로 돌아오면, 위에서 rooted tree로부터 planted tree를 유도하는 방법을 다뤘으니 이제는 tree로부터 rooted tree를 유도하는 방법만 안다면 진정한 의미에서 tree의 isomorphic relation을 체크하는 문제를 해결할 수 있게 된다. 
+
+그러면 우리는 주어진 tree로부터 root라는 특별한 vertex를 정의해야 하는데, 아래 정리는 root를 $C(G)$에서 뽑아서 canonical하게 정의할 수 있음을 보장해준다.
+
+---
+## Theorem 2
+For a tree $T$, the center $C(T)$ of $T$ consists of a single vertex, or two adjacent vertices.
+
+### Proof
+We proceed by induction on $n = \vert V(T) \vert$. 
+
+---
+만약 $C(T)$가 가질 수 있는 형태가 여러 가지였다면 꽤나 골치아팠겠지만, 다행히도 하나 아니면 두 개 밖에 없으니 두 가지 경우만 커버하면 된다. 
+
+우선 하나 밖에 없을 경우 고르고 자시고 할 게 없다. 그냥 하나 밖에 없는 그 원소를 root로 택하면 된다.
+
+다음으로 $C(G) = \\{c, c' \\}$으로 두 인접한 원소로 이루어지는 경우, 어찌됐든 둘 중에 하나를 택해야 한다. 이때 둘 중 아무거나 택했을 때 tree의 코드가 이 선택에 의존할 가능성이 생긴다. 때문에 하나를 선택하는 canonical한 방법을 찾아야 하는데, 위에서 정의한 사전식 순서가 그 방법을 준다. 
+
+우선 트리에서 edge $\\{ c, c' \\}$를 제거하는데, 트리의 정의에 의해 트리는 두 개의 component로 분리된다. 이때 각 component는 $c$와 $c'$을 포함하는데, 각 component 또한 tree이므로 root를 $c$와 $c'$으로 선택하는 rooted tree로 간주하고 각 tree의 코드를 구한 뒤 사전식 순서로 비교해서 더 큰 쪽의 component의 root를 원래 트리의 root로 선택한다. 
+
+따라서 우리는 tree에서 rooted tree를, rooted tree에서 planted tree를 유일하게 유도하고 planted tree에서 code를 유일하게 결정하는 방법을 모두 알아냈음으로, 모든 tree는 유일하게 code를 가짐을 알아냈다. 이로써 코드를 이용해서 두 tree의 isomorphic relation을 결정할 수 있다. 
