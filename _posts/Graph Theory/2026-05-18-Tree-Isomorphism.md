@@ -5,7 +5,11 @@ categories: [Mathematics, Graph Theory]
 tags: []
 math: true
 ---
+$n$개의 vertex를 가지는 두 그래프 $G, G'$이 있다고 하자. 이때 두 그래프가 isomorphic한지 결정하는 문제는 보통 매우 어려운 일이다. 정확히는, 꽤나 큰 시간 복잡도를 요구하는 문제이다. 가장 최악의 경우 $\mathcal{O}(n!)$이 소요된다. 팩토리얼이라는 함수가 얼마나 급격하게 증가하는지를 생각해본다면, vertex의 개수가 그리 크지 않음에도 이 문제가 얼마나 복잡한지 짐작할 수 있을 것이다.
 
+그러나 다행히도 tree라는 그래프의 특별한 한 종류에 대해서는 이 문제를 해결하는 일반적인 알고리즘이 알려져 있고, 팩토리얼이 아닌 선형 시간 내에 해결할 수 있다.
+
+---
 ## Definition 1
 **(i)** A ***rooted tree*** $(T, r)$ is a tree $T$ with a special vertex $r \in V(T)$, called the ***root***. If $\\{ x, y \\} \in E(T)$ is an edge and a vertex $x$ lies on the unique path from $y$ to the root $r$, we say that $x$ is the ***father*** of $y$ and $y$ is the ***child*** of $x$.
 
@@ -15,8 +19,9 @@ math: true
 
 **(iv)** Two planted trees $(T, r, \nu)$ and $(T', r', \nu')$ are called ***isomorphic*** if there exists a rooted tree isomorphism $\phi: V(T) \to V(T')$ such that for children $a, b$ of a vertex, $a \le_\nu b \iff \phi(a) \le_{\nu'} \phi(b)$.
 
----
+즉 tree 중에서 root라는 특별한 vertex를 가지는 tree를 rooted tree라고 부르며, rooted tree에서 같은 부모를 가지는 vertex들 사이에 ordering을 준 rooted tree를 planted tree라고 부른다. 
 
+---
 ## Definition 2
 For each planted tree $(T, r, \nu)$ on $n$ verticies, we define the ***code*** $A(T) \in \\{ 0, 1 \\}^{2n}$ of the tree $T$ recursively as follows:
 
@@ -25,6 +30,8 @@ For each planted tree $(T, r, \nu)$ on $n$ verticies, we define the ***code*** $
 **(ii)** For a vertex $v$ with children $a_1 \le_\nu a_2 \le_\nu \cdots \le_\nu a_k$ such that each $a_i$ has a label $L_{a_i}$, let $L_v = 0L_{a_1}L_{a_2}\cdots L_{a_k}1$.
 
 **(iii)** $A(T) = L_r$. 
+
+이제 우리는 모든 planted tree와 code 사이에 일대일 대응이 존재함을 보일 것이다. 그리고 rooted tree에 canonical한 방법으로 order를 주고, 각 tree에서 항상 root를 정할 수 있음을 보임으로써 모든 tree에 대해서 code를 유일하게 결정할 수 있음을 보일 수 있다. 이러한 방법으로 서로 다른 두 tree가 isomorphic한지 선형 시간 내에 결정할 수 있다.
 
 ---
 ## Remark
@@ -56,3 +63,11 @@ By the inductive hypothesis, each $T_i$ is uniquely determined up to isomorphism
 $$0000101101011011 \quad \longleftrightarrow \quad \downarrow \downarrow \downarrow \downarrow \uparrow \downarrow \uparrow \uparrow \downarrow \uparrow \downarrow \uparrow \uparrow \downarrow \uparrow \uparrow$$
 
 ![alt text](assets/img/code.png)
+
+---
+## Lexicographic Ordering
+We define the lexicographic ordering $<$ between two sequences $A = (a_1, a_2, \cdots, a_n)$ and $B = (b_1, b_2, \cdots, b_m)$ as follows:
+
+(i) If $A$ is an initial segment of $B$, then $A < B$. If $B$ is an initial segment of $A$, then $B < A$.
+
+(ii) Otherwise, 
