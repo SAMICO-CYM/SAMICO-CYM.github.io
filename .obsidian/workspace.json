@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Graph Theory/2026-05-18-Tree-Isomorphism.md",
+                "file": "_posts/Graph Theory/2026-05-22-Spanning-Tree.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-18-Tree-Isomorphism"
+              "title": "2026-05-22-Spanning-Tree"
             }
           },
           {
@@ -210,13 +210,16 @@
   },
   "active": "962eebcbea291717",
   "lastOpenFiles": [
+    "_posts/Graph Theory/2026-05-18-Tree-Isomorphism.md",
+    "_posts/Graph Theory/2026-05-22-Spanning-Tree.md",
+    "_site/posts/Spanning-Tree/index.html",
+    "_site/posts/Spanning-Tree",
     "_posts/Ordering/2026-03-20-Minimal-Minimum-Maximal-Maximum.md",
     "_posts/Graph Theory/2026-04-21-Connected-Graph.md",
     "_posts/Graph Theory/2026-04-10-Isomorphism-Of-Graph.md",
     "_posts/Graph Theory/2026-04-10-Graph.md",
     "_posts/Graph Theory/2026-05-05-Degree.md",
     "_posts/Graph Theory/2026-04-21-Path-Walk-Cycle.md",
-    "_posts/Graph Theory/2026-05-18-Tree-Isomorphism.md",
     "_posts/Topology/2026-03-10-Order-Relation.md",
     "_posts/Complex Analysis/2026-05-19-Talyor-Series.md",
     "_posts/Graph Theory/2026-05-15-Tree.md",
@@ -242,12 +245,8 @@
     "_site/posts/Talyor-Series",
     "_site/posts/Complex-Sequence-And-Series/index.html",
     "_site/posts/Complex-Sequence-And-Series",
-    "_site/test_kramdown.rb",
     "_posts/Complex Analysis/2026-05-08-Cauchy-Goursat-Theorem.md",
-    "test_kramdown.rb",
     "_posts/Complex Analysis/2026-05-19-Complex-Sequence-And-Series.md",
-    "_posts/Complex Analysis/2026-05-07-Antiderivative.md",
-    "_posts/Complex Analysis/2026-04-28-Contours.md",
     "_site/assets/img/code.png",
     "assets/img/code.png",
     "_site/assets/img/Pasted image 20260513165730.png",

@@ -108,6 +108,6 @@ We proceed by induction on $n = \vert V(T) \vert$.
 
 다음으로 $C(G) = \\{c, c' \\}$으로 두 인접한 원소로 이루어지는 경우, 어찌됐든 둘 중에 하나를 택해야 한다. 이때 둘 중 아무거나 택했을 때 tree의 코드가 이 선택에 의존할 가능성이 생긴다. 때문에 하나를 선택하는 canonical한 방법을 찾아야 하는데, 위에서 정의한 사전식 순서가 그 방법을 준다. 
 
-우선 트리에서 edge $\\{ c, c' \\}$를 제거하는데, 트리의 정의에 의해 트리는 두 개의 component로 분리된다. 이때 각 component는 $c$와 $c'$을 포함하는데, 각 component 또한 tree이므로 root를 $c$와 $c'$으로 선택하는 rooted tree로 간주하고 각 tree의 코드를 구한 뒤 사전식 순서로 비교해서 더 큰 쪽의 component의 root를 원래 트리의 root로 선택한다. 
+우선 트리에서 edge $\\{ c, c' \\}$를 제거하는데, 트리의 정의에 의해 트리는 두 개의 component로 분리된다. 이때 각 component는 $c$와 $c'$을 포함하는데, 각 component 또한 tree이므로 root를 $c$와 $c'$으로 선택하는 rooted tree로 간주하고 각 tree의 코드를 구한 뒤 사전식 순서로 비교해서 더 작은 쪽의 component의 root를 원래 트리의 root로 선택한다. 
 
 따라서 우리는 tree에서 rooted tree를, rooted tree에서 planted tree를 유일하게 유도하고 planted tree에서 code를 유일하게 결정하는 방법을 모두 알아냈음으로, 모든 tree는 유일하게 code를 가짐을 알아냈다. 이로써 코드를 이용해서 두 tree의 isomorphic relation을 결정할 수 있다. 
