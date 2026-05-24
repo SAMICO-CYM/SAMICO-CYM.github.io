@@ -203,7 +203,7 @@ $$
 
 where $U_\alpha = U_\beta$ and $V_\alpha = V_\beta$ if $\alpha = \beta$, and $U_\alpha = X_\alpha$ and $V_\alpha = X_\alpha$ otherwise. Then $U$ and $V$ are open sets in both $(X, \mathcal{T})$ and $(X, \mathcal{T}')$. Moreover, $x \in U, y \in V$, and $U \cap V = \emptyset$ because $U_\beta \cap V_\beta = \emptyset$. Thus, $(X, \mathcal{T})$ and $(X, \mathcal{T}')$ are Hausdorff. 
 
-**(iii)** Let $\displaystyle x \in \prod _{\alpha \in J} \overline{A}_\alpha.$ Then $x_\alpha \in \overline{A_\alpha}$ for each $\alpha \in J$. By [Theorem 1,](<{% post_url Topology/2026-04-09-Limit-Point %}#theorem-1>) $A_\alpha \cap U_\alpha \neq \emptyset$ for any neighborhood $U_\alpha$ of $x_\alpha$ in $X_\alpha$. 
+**(iii)** Let $\displaystyle x \in \prod _ {\alpha \in J} \overline{A} _\alpha.$ Then $x_\alpha \in \overline{A_\alpha}$ for each $\alpha \in J$. By [Theorem 1,](<{% post_url Topology/2026-04-09-Limit-Point %}#theorem-1>) $A_\alpha \cap U_\alpha \neq \emptyset$ for any neighborhood $U_\alpha$ of $x_\alpha$ in $X_\alpha$. 
 
 Let 
 
