@@ -80,7 +80,43 @@ X_\alpha, & \text{otherwise}
 Then $\mathcal{B}_1'$ is a basis for the product topology on $X$. 
 
 ### Proof
+**(i)** To prove this, we will use [Theorem 3.](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-3>) 
 
+Let $U$ be an open set of the box topology on $X$, and let $x \in U$. Then $x \in B \subset U$ for some basis element $B$ of the box topology. That is, 
+
+$$B = \prod _{\alpha \in J} U_\alpha$$
+
+where each $U_\alpha$ is open in $X_\alpha$. Since $x \in B$, for each $\alpha \in J$, $x_\alpha \in U_\alpha$, which implies that $x_\alpha \in B_\alpha \subset U_\alpha$ for some basis element $B_\alpha$ of $X_\alpha$, i.e., $B_\alpha \in \mathcal{B_\alpha}.$ Take 
+
+$$B_1 := \prod _{\alpha \in J} B_\alpha.$$
+
+Then $B_1 \in \mathcal{B_1}$ and $x \in B_1 \subset B \subset U$, so that $\mathcal{B_1}$ is a basis for the box topology on $X$ by [Theorem 3.](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-3>)
+
+**(ii)** Similarly, we use the [Theorem 3.](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-3>) Let $U$ be an open set of the product topology on $X$, and let $x \in U$. Then $x \in B \subset U$ for some basis element $B$ of the product topology. That is, 
+
+$$B = \prod _{\alpha \in J} U_\alpha$$
+
+where 
+
+$$U_\alpha = \begin{cases}
+V_\alpha & \text{if } \alpha \in I \\
+X_\alpha & \text{otherwise,}
+\end{cases}$$
+
+each $V_\alpha$ is open in $X_\alpha$, and $I \subset J$ with $\vert I \vert < \infty$. 
+
+Since $x \in B$, for each $\alpha \in I$, $x_\alpha \in V_\alpha$, which implies that $x_\alpha \in C_\alpha \subset V_\alpha$ for some basis element $C_\alpha$ of $X_\alpha$, i.e., $C_\alpha \in \mathcal{B_\alpha}.$ Take 
+
+$$B_1' := \prod _{\alpha \in J} B_\alpha,$$
+
+where 
+
+$$B_\alpha = \begin{cases}
+C_\alpha & \text{if } \alpha \in I \\
+X_\alpha & \text{otherwise.}
+\end{cases}$$
+
+Then $B_1' \in \mathcal{B_1'}$ and $x \in B_1' \subset B \subset U$, so that $\mathcal{B_1}$ is a basis for the product topology on $X$ by [Theorem 3.](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-3>) $\blacksquare$
 
 ---
 
