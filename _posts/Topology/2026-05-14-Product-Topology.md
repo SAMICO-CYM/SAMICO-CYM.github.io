@@ -203,7 +203,39 @@ $$
 
 where $U_\alpha = U_\beta$ and $V_\alpha = V_\beta$ if $\alpha = \beta$, and $U_\alpha = X_\alpha$ and $V_\alpha = X_\alpha$ otherwise. Then $U$ and $V$ are open sets in both $(X, \mathcal{T})$ and $(X, \mathcal{T}')$. Moreover, $x \in U, y \in V$, and $U \cap V = \emptyset$ because $U_\beta \cap V_\beta = \emptyset$. Thus, $(X, \mathcal{T})$ and $(X, \mathcal{T}')$ are Hausdorff. 
 
+**(iii)** Let $\displaystyle x \in \prod _{\alpha \in J} \overline{A_\alpha}.$ Then $x_\alpha \in \overline{A_\alpha}$ for each $\alpha \in J$. By [Theorem 1,](<{% post_url Topology/2026-04-09-Limit-Point %}#theorem-1>) $A_\alpha \cap U_\alpha \neq \emptyset$ for any neighborhood $U_\alpha$ of $x_\alpha$ in $X_\alpha$. 
 
+Let 
+
+$$B = \prod _{\alpha \in J} U_\alpha$$
+
+be a basis element of the box topology on $X$, containing $x$, where each $U_\alpha$ is open in $X_\alpha$. 
+
+Then $x_\alpha \in U_\alpha$ for each $\alpha \in J$, which means that $U_\alpha$ is a neighborhood of $x_\alpha$. Then we have $A_\alpha \cap U_\alpha \neq \emptyset$, so that
+
+$$\begin{align*}
+\emptyset &\neq \prod _{\alpha \in J} (A_\alpha \cap U_\alpha) \\
+&= \prod _{\alpha \in J} A_\alpha \cap \prod _{\alpha \in J} U_\alpha \\
+&= \prod _{\alpha \in J} A_\alpha \cap B.
+\end{align*}$$
+
+By Theorem 1, $\displaystyle  x \in \overline{\prod _{\alpha \in J} A_\alpha}.$ Thus, $\displaystyle \prod _ {\alpha \in J} \overline{A_\alpha} \subset \overline{\prod _ {\alpha \in J} A_\alpha}.$ 
+
+Conversely, let $\displaystyle  x \in \overline{\prod _{\alpha \in J} A_\alpha}.$ Then $\displaystyle \prod _{\alpha \in J} A_\alpha \cap B \neq \emptyset$ for any basis element $B$ of the box topology on $X$, containing $x$. 
+
+Let $U_\alpha$ be a neighborhood of $x_\alpha$ for each $\alpha \in J$, and let 
+
+$$B := \prod _{\alpha \in J} U_\alpha.$$
+
+Then $B$ is a basis element of the box topology on $X$, containing $x$, which implies that $\displaystyle \prod _{\alpha \in J} A_\alpha \cap B \neq \emptyset.$ Then there exists $\displaystyle y \in \prod _{\alpha \in J} A_\alpha \cap B$, so that $y_\alpha \in A_\alpha \cap U_\alpha$ for each $\alpha \in J$. Then $A_\alpha \cap U_\alpha \neq \emptyset$ for each $\alpha \in J$, which means that $x_\alpha \in \overline{A_\alpha}.$ Thus, $\displaystyle x \in \prod _{\alpha \in J} \overline{A_\alpha},$ and therefore $\displaystyle \overline{\prod _ {\alpha \in J} A_\alpha} \subset \prod _ {\alpha \in J} \overline{A_\alpha}.$ Hence, we obtain 
+
+$$\prod _ {\alpha \in J} \overline{A_\alpha} = \overline{\prod _ {\alpha \in J} A_\alpha}$$
+
+in the box topology. 
+
+We can prove the case of the produc topology by the same manner. 
+
+(iv) 
 
 ---
 ## Counterexample
