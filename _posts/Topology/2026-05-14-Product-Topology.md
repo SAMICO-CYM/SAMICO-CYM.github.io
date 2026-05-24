@@ -235,7 +235,38 @@ in the box topology.
 
 We can prove the case of the produc topology by the same manner. 
 
-(iv) 
+**(iv)** 
+
+$(\Longrightarrow)$
+
+Suppose that $f$ is continuous. Let $U_\alpha$ be an open set of $X_\alpha$ for a fixed $\alpha \in J$. Note that the projection map $\displaystyle \pi_\alpha: \prod _{\alpha \in J} X_\alpha \to X_\alpha$ is continuous, so that the composite map $\pi_\alpha \circ f$ is continuous. Since $\pi_\alpha \circ f = f_\alpha$, each $f_\alpha$ is continuous.
+
+$(\Longleftarrow)$
+
+Suppose that each $f_\alpha$ is continuous. Let 
+
+$$B := \prod _{\alpha \in J} U_\alpha$$
+
+be a basis element of the product topoloy on $X$, where 
+
+$$U_\alpha = \begin{cases}
+V_\alpha & \text{if } \alpha \in I \\
+X_\alpha & \text{otherwise,}
+\end{cases}$$
+
+each $V_\alpha$ is open in $X_\alpha$, and $I \subset J$ with $\vert I \vert < \infty$. Since each $f_\alpha$ is continuous, each $f^{-1}_\alpha(U_\alpha)$ is open in $A$.
+
+Then we have 
+
+$$\begin{align*}
+x \in f^{-1}(B) & \iff x \in f^{-1} \left( \prod _{\alpha \in J} U_\alpha \right) \\
+&\iff f(x) \in f \left( \prod _{\alpha \in J} U_\alpha \right) \\
+& \iff f_\alpha(x) \in U_\alpha, \forall \alpha \in J \\
+& \iff x \in f^{-1}_\alpha(U_\alpha), \forall \alpha \in J \\
+& \iff x \in \bigcap_{\alpha \in J} f^{-1}_\alpha(U_\alpha),
+\end{align*}$$
+
+which means that $\displaystyle f^{-1}(B) = \bigcap_{\alpha \in J} f^{-1}_\alpha(U_\alpha).$ Since $f^{-1}_\alpha(U_\alpha) = A$ for $\alpha \notin I$, we have $\displaystyle f^{-1}(B) = \bigcap_{\alpha \in I} f^{-1}_\alpha(U_\alpha),$ which is the finite intersection of open subsets $f^{-1}_\alpha(U_\alpha)$ of $A.$ Thus, $f^{-1}(B)$ is open in $A$, which implies that $f$ is continuous. $\blacksquare$
 
 ---
 ## Counterexample
