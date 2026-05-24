@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Topology/2026-04-09-Limit-Point.md",
+                "file": "_posts/Topology/2026-04-29-Continuous-Functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-09-Limit-Point"
+              "title": "2026-04-29-Continuous-Functions"
             }
           }
         ]
@@ -196,6 +196,7 @@
   },
   "active": "37975381fc15b7fd",
   "lastOpenFiles": [
+    "_posts/Topology/2026-04-29-Continuous-Functions.md",
     "_posts/Topology/2026-04-09-Limit-Point.md",
     "_posts/Topology/2026-05-14-Product-Topology.md",
     "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
@@ -227,7 +228,6 @@
     "_posts/Complex Analysis/2026-05-16-Gauss-Mean-Value-Theorem.md",
     "_posts/Abstract Algebra/2026-05-13-First-Isomorphism-Theorem.md",
     "_posts/Abstract Algebra/2026-05-13-Factor-Group.md",
-    "_posts/Complex Analysis/2026-05-12-Cauchy-Integral-Formula.md",
     "_site/posts/Laurent-Series/index.html",
     "_site/posts/Laurent-Series",
     "_site/posts/Metric-Topology/index.html",
