@@ -74,3 +74,48 @@ $$\sum_{n=0}^\infty a_n(z-z_0)^n$$
 be a power series with the circle of convergence $\vert z - z_0 \vert = R$, and let $z_1$ be a point inside the circle of convergence. Then the series must be uniformly convergent in the closed disk $\vert z- z_0 \vert \le R_1$, where $R_1 = \vert z_1 - z_0 \vert$. 
 
 ### Proof
+Since $R_1 < R$, there are points inside the circle of convergence and farther from $z_0$ than $z_1$ for which the series converges. By Theorem 1, there is a open disk containing $z_1$, lying in the circle of convergence. Thus, the series converges absolutely at $z_1$, i.e., 
+
+$$\sum_{n=0}^\infty \vert a_n(z_1-z_0)^n \vert$$
+
+converges. 
+
+For each point $z$ inside the circle of convergence, we can write the remainders as
+
+$$\begin{align*}
+\rho_k(z) = \lim_{m \to \infty} \sum_{n=k}^m a_n(z-z_0)^n
+\end{align*}$$
+
+and
+
+$$\sigma_k = \lim_{m \to \infty} \sum_{n=k}^m \vert a_n(z_1 - z_0)^n \vert$$
+
+for each positive integer $k$, respectively. Since $\rho_k(z)$ is defined at each point inside the circle of convergence, the limit converges. Then we have 
+
+$$\vert \rho_k(z) \vert = \lim_{m \to \infty} \left \vert \sum_{n=k}^m a_n(z-z_0)^n \right \vert.$$
+
+Let $z$ be a point in the closed disk $\vert z - z_0 \vert \le R_1$, where $R_1 = \vert z_1 - z_0 \vert$, so $\vert z - z_0 \vert \le \vert z_1 - z_0 \vert$. Then we have
+
+$$\begin{align*}
+\left \vert \sum_{n=k}^m a_n(z-z_0)^n \right \vert & \le \sum_{n=k}^m \vert a_n \vert \vert z-z_0 \vert^n \\
+& \le \sum_{n=k}^m \vert a_n \vert \vert z_1-z_0 \vert^n \\
+&= \sum_{n=k}^m \vert a_n (z_1-z_0)^n \vert.
+\end{align*}$$
+
+By taking the limit that $m$ goes to infinity, we obtain 
+
+$$\vert \rho_k(z) \vert \le \sigma_k \quad \text{when} \quad \vert z-z_0 \vert \le R_1.$$
+
+Since the remainders are well-defined, each limit exists. 
+
+Note that $\lim_{k \to \infty} \sigma_k = 0$ because the series $\displaystyle \sum_{n=0}^\infty \vert a_n(z_1-z_0)^n \vert$ converges. That is, for a given $\varepsilon > 0$, there exists a positive integer $N$ such that 
+
+$$\sigma_k = \vert \sigma_k \vert < \varepsilon, \forall k \ge N.$$
+
+Thus, we have that 
+
+$$\vert \rho_k(z) \vert < \varepsilon, \forall k \ge N, \text{ whenever } \vert z - z_0 \vert \le R_1,$$
+
+which means that the series $\displaystyle \sum_{n=0}^\infty a_n(z-z_0)^n$ converges uniformly in the closed disk $\vert z - z_0 \vert \le R_1$. $\blacksquare$
+
+---
