@@ -172,3 +172,21 @@ where
 $$a_n = \frac{1}{2\pi i} \int_C \frac{f(z)}{(z-z_0)^{n+1}} \, dz \quad (n= 0, 1, 2, \cdots).$$
 
 **(iii)** Although $f$ is analytic everywhere in the complex plane $\mathbb{C}$ except at $z_0$, the Laurent series is valid at each point $z$ with $0 < \vert z-z_0 \vert < \infty$. 
+
+**(iv)** Consider the series 
+
+$$\sum_{n=1}^\infty \frac{b_n}{(z-z_0)^n}.$$
+
+Let 
+
+$$w = \frac{1}{z-z_0}.$$
+
+If the series $\displaystyle \sum_{n=1}^\infty \frac{b_n}{(z-z_0)^n}$ converges at a point $z_1 \neq z_0$, then the series $\displaystyle \sum_{n=1}^\infty b_nw^n$ converges absolutely when 
+
+$$\vert w \vert < \frac{1}{\vert z_1 - z_0 \vert} \iff \vert z- z_0 \vert > \vert z_1 - z_0 \vert$$
+
+by Theorem 1. Thus, the series $\displaystyle \sum_{n=1}^\infty \frac{b_n}{(z-z_0)^n}$ converges absolutely exterior to the circle $\vert z-z_0 \vert = R_1,$ where $R_1 = \vert z_1 - z_0 \vert.$ Hence, if a function $f$ has the Laurant series expansion 
+
+$$f(z) = \sum_{n=0}^\infty a_n(z-z_0)^n + \sum_{n=1}^\infty \frac{b_n}{(z-z_0)^n}$$
+
+in an annulus domain $R_1 < \vert z- z_0 \vert < R_2$, then the Laurant series converges uniformly in any closed annulus which is concentric to and interior to the domain $R_1 < \vert z- z_0 \vert < R_2$. 
