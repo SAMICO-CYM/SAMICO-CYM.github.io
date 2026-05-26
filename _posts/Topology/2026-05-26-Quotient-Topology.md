@@ -11,7 +11,7 @@ Let $X$ and $Y$ be topological spaces, and let $p: X \to Y$ be a surjective map.
 
 $$U \text{ is open in } Y \iff p^{-1}(U) \text{ is open in } X.$$
 
-[연속함수](<{% post_url Topology/2026-04-29-Continuous-Function %}#definition>)가 $(\Longrightarrow)$ 방향에 대해서만 정의되는 반면, quotient map은 양방향 모두 성립하면서 surjective인 함수로 정의된다. 
+[연속함수](<{% post_url Topology/2026-04-29-Continuous-Functions %}#definition>)가 $(\Longrightarrow)$ 방향에 대해서만 정의되는 반면, quotient map은 양방향 모두 성립하면서 surjective인 함수로 정의된다. 
 
 ---
 ## Remark
