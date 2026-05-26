@@ -119,3 +119,45 @@ $$\vert \rho_k(z) \vert < \varepsilon, \forall k \ge N, \text{ whenever } \vert 
 which means that the series $\displaystyle \sum_{n=0}^\infty a_n(z-z_0)^n$ converges uniformly in the closed disk $\vert z - z_0 \vert \le R_1$. $\blacksquare$
 
 ---
+## Theorem 3
+A power series 
+
+$$S(z) := \sum_{n=0}^\infty a_n(z-z_0)^n$$
+
+is a continuous function at each point inside its circle of convergence $\vert z - z_0 \vert = R$. 
+
+### Proof
+We let $S_k(z)$ denote the sum of the firsk $k$ terms of series, and write the remainder function 
+
+$$\rho_k(z) = S(z) - S_k(z)$$
+
+for $\vert z- z_0 \vert < R$. Since $S(z) = S_k(z) + \rho_k(z)$ for $\vert z- z_0 \vert < R$, we have 
+
+$$\begin{align*}
+\vert S(z) - S(z_1) \vert &= \vert [S_k(z) + \rho_k(z)] - [S_k(z_1) + \rho_k(z_1)] \vert \\
+&= \vert [S_k(z) - S_k(z_1)] + [\rho_k(z) - \rho_k(z_1)] \vert \\
+& \le \vert S_k(z) - S_k(z_1) \vert + \vert \rho_k(z) \vert + \vert \rho_k(z_1) \vert
+\end{align*}$$
+
+for each positive integer $k$ and $\vert z- z_0 \vert < R.$
+
+Let $z$ be a point inside some closed disk $\vert z - z_0 \vert \le R_0$ where $\vert z_1 - z_0 \vert < R_0 < R$. By Theorem 2, $S(z)$ converges uniformly in that closed disk. That is, for a given $\varepsilon > 0$, there exists a positive integer $N$ such that 
+
+$$\vert \rho_k(z) \vert < \frac{\varepsilon}{3}, \forall k \ge N, \text{ whenever } \vert z - z_0 \vert \le R_0.$$
+
+In particular, the preceeding condition holds for each point $z$ in some neighborhood $\vert z- z_1 \vert < \delta_1$ of $z_1$ that is small enough to be contained in the closed disk $\vert z - z_0 \vert \le R_0$. 
+
+Since the partial sum $S_k(z)$ is a polynomial, it is continuous at $z_1$ for each positive integer $k$. In particular, taking $k = N$, there exists $\delta_2 > 0$ such that if $\vert z - z_1 \vert < \delta_2$, then
+
+$$\vert S_N(z) - S_N(z_1) \vert < \frac{\varepsilon}{3}.$$
+
+Let $\delta := \min \\{ \delta_1, \delta_2 \\}.$ Thus, we obtain 
+
+$$\begin{align*}
+\vert S(z) - S(z_1) \vert &\le \vert S_N(z) - S_N(z_1) \vert + \vert \rho_N(z) \vert + \vert \rho_N(z_1) \vert \\
+&< \frac{\varepsilon}{3} + \frac{\varepsilon}{3} + \frac{\varepsilon}{3} \\
+&= \varepsilon
+\end{align*}$$
+
+for $\vert z - z_1 \vert < \delta$. Hence, $S(z)$ is continuous at each point $z$ inside $\vert z- z_0 \vert < R$. $\blacksquare$
+
