@@ -1,5 +1,5 @@
 --- 
-title: Open map
+title: Open and Closed Map
 date: 2026-04-30
 categories: [Mathematics, Topology]
 tags: []
@@ -7,7 +7,11 @@ math: true
 ---
 
 ## Definition 
-Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces. A map $f: X \to Y$ is called an ***open map*** if $f(U) \in \mathcal{T}_Y, \forall U \in \mathcal{T}_X$. 
+Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $f: X \to Y$ be a map.
+
+**(i)** A map $f$ is called an ***open map*** if $f(U) \in \mathcal{T}_Y, \forall U \in \mathcal{T}_X$. 
+
+**(ii)** A map $f$ is called a ***closed map*** if $f(C)$ is closed in $Y$ for each closed set $C$ in $X$.
 
 ---
 ## Theorem 1
