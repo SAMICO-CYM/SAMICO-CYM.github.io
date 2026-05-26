@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Complex Analysis/2026-05-20-Laurent-Series.md",
+                "file": "_posts/Complex Analysis/2026-05-23-Convergence-Power-Series.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-20-Laurent-Series"
+              "title": "2026-05-23-Convergence-Power-Series"
             }
           }
         ]
@@ -182,6 +182,7 @@
   },
   "active": "6476d65df64790fc",
   "lastOpenFiles": [
+    "_posts/Complex Analysis/2026-05-20-Laurent-Series.md",
     "_posts/Complex Analysis/2026-05-23-Convergence-Power-Series.md",
     "_posts/Topology/2026-04-29-Continuous-Functions.md",
     "_posts/Topology/2026-04-22-Convergence-Sequence.md",
@@ -195,7 +196,6 @@
     "_posts/Topology/2026-05-19-Metric-Topology.md",
     "_site/posts/Convergence-Power-Series/index.html",
     "_site/posts/Convergence-Power-Series",
-    "_posts/Complex Analysis/2026-05-20-Laurent-Series.md",
     "_posts/Graph Theory/2026-05-22-Spanning-Tree.md",
     "_posts/Graph Theory/2026-05-18-Tree-Isomorphism.md",
     "_site/posts/Spanning-Tree/index.html",

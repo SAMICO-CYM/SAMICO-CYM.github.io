@@ -161,3 +161,80 @@ $$\begin{align*}
 
 for $\vert z - z_1 \vert < \delta$. Hence, $S(z)$ is continuous at each point $z$ inside $\vert z- z_0 \vert < R$. $\blacksquare$
 
+---
+## Theorem 4
+Let $C$ denote any contour interior to the circle of convergence of the power series 
+
+$$S(z) := \sum_{n=0}^\infty a_n(z-z_0)^n,$$
+
+and let $g$ be a continuous function on $C$. Then 
+
+$$\int_C g(z) S(z) \, dz = \sum_{n=0}^\infty a_n \int_C g(z) (z-z_0)^n \, dz.$$
+
+### Proof
+Let 
+
+$$\rho_k(z) = \sum_{n=k}^\infty a_n(z-z_0)^n$$
+
+for each positive integer $k$. By Theorem 3, both $g$ and $S$ are continuous on $C$. Then the integeral over $C$ of 
+
+$$g(z) S(z) = \sum_{n=0}^{k-1} a_n \, g(z) (z-z_0)^n + g(z) \rho_k(z)$$
+
+exists for each $k$. Since both the partial sum of $S(z)$ and the remainder are continuous, we obtain 
+
+$$\int_C g(z) S(z) \, dz = \sum_{n=0}^{k-1} a_n \int_C g(z) (z-z_0)^n \, dz + \int_C g(z) \rho_k(z) \, dz.$$
+
+Let $\displaystyle M := \max _ {z \in C} \vert g(z) \vert$, and let $L := \text{length}(C)$. Since the series converges uniformly on $C$, for a given $\varepsilon > 0$, there exists a positive integer $N$ such that 
+
+$$\vert \rho_k(z) \vert < \frac{\varepsilon}{ML}, \forall k \ge N.$$
+
+By $ML$-Lemma, we have 
+
+$$\left \vert \int_C g(z) \rho_k(z) \, dz \right \vert \le M \frac{\varepsilon}{ML} L = \varepsilon, \forall k \ge N,$$
+
+which implies that 
+
+$$\lim_{k \to \infty} \int_C g(z) \rho_k(z) \, dz = 0.$$
+
+It follows that 
+
+$$\begin{align*}
+\int_C g(z) S(z) \, dz &= \lim_{k \to \infty} \int_C g(z) S(z) \, dz \\
+&= \lim_{k \to \infty} \left[ \sum_{n=0}^{k-1} a_n \int_C g(z) (z-z_0)^n \, dz + \int_C g(z) \rho_k(z) \, dz \right] \\
+&= \sum_{n=0}^\infty a_n \int_C g(z) (z-z_0)^n \, dz. \quad \blacksquare
+\end{align*}$$
+
+---
+## Corollary
+The power series 
+
+$$S(z) := \sum_{n=0}^\infty a_n(z-z_0)^n$$
+
+is analytic at each point $z$ interior to the circle of convergence of that series. 
+
+### Proof
+Let $C$ be a closed contour lying in the open disk bounded by the circle of convergence of the series, and let $g(z) = 1$ for each point $z$ in that domain. Since $(z-z_0)^n$ is a polynomial, it is entire for each $n = 0, 1, 2, \cdots.$ Then we have 
+
+$$\int_C g(z) (z-z_0)^n \, dz = \int_C (z-z_0)^n \, dz = 0$$
+
+by [Theorem 1.](<{% post_url Complex Analysis/2026-05-08-Multiply-Connected-Domain %}#theorem-1>) 
+
+By Theorem 4, we have 
+
+$$\int_C S(z) \, dz = 0.$$
+
+By [Morera's Theorem](<{% post_url Complex Analysis/2026-05-16-Morera-Theorem %}#morera's-theorem>), we conclude that $S$ is analytic throughout the circle of convergence of the series. $\blacksquare$
+
+---
+## Theorem 5
+Let
+
+$$S(z) := \sum_{n=0}^\infty a_n(z-z_0)^n$$
+
+be a power series. Then 
+
+$$S'(z) = \sum_{n=1}^\infty na_n(z-z_0)^{n-1}$$
+
+at each point $z$ inside the circle of convergence of the series. 
+
+### Proof
