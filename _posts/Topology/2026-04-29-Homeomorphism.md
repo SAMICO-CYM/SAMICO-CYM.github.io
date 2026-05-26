@@ -7,7 +7,7 @@ math: true
 ---
 
 ## Definition 1
-Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces. 
+Let $(X, \mathscr{T}_X)$ and $(Y, \mathscr{T}_Y)$ be topological spaces. 
 
 **(i)** A function $f: X \to Y$ is called a ***homeomorphism*** if $f$ is bijective and both $f$ and $f^{-1}$ are continuous. If such a function exists, then we say that $X$ and $Y$ are ***homeomorphic***, denoted by $X \cong Y$. 
 
@@ -17,7 +17,7 @@ Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces.
 
 ---
 ## Remark
-**(i)** $f: X \to Y$ is a homeomorphism $\iff$ $[f(U) \in \mathcal{T}_Y \iff U \in \mathcal{T}_X]$. 
+**(i)** $f: X \to Y$ is a homeomorphism $\iff$ $[f(U) \in \mathscr{T}_Y \iff U \in \mathscr{T}_X]$. 
 
 **(ii)** Even though $f$ is bijective and continuous, $f^{-1}$ need not be continuous.
 
@@ -33,17 +33,17 @@ Usual topology가 부여된 실수 공간 $\mathbb{R}$을 생각하자.
 
 ---
 ## Theorem 1
-Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $f: X \to Y$ be a homeomorphism. Let $A \subset X$.
+Let $(X, \mathscr{T}_X)$ and $(Y, \mathscr{T}_Y)$ be topological spaces, and let $f: X \to Y$ be a homeomorphism. Let $A \subset X$.
 
-**(i)** If $\mathcal{B}$ is a basis for $\mathcal{T}_X$, then $f(\mathcal{B})$ is a basis for $\mathcal{T}_Y$. 
+**(i)** If $\mathscr{B}$ is a basis for $\mathscr{T}_X$, then $f(\mathscr{B})$ is a basis for $\mathscr{T}_Y$. 
 
 **(ii)** $f(A') = f(A)'$.
 
 **(iii)** $f(\overline{A}) = \overline{f(A)}$.
 ### Proof
-**(i)** Since each $B$ in $\mathcal{B}$ is open in $X$, each $f(B)$ is open in $Y$, which means that $f(\mathcal{B}) \subset \mathcal{T}_Y$.
+**(i)** Since each $B$ in $\mathscr{B}$ is open in $X$, each $f(B)$ is open in $Y$, which means that $f(\mathscr{B}) \subset \mathscr{T}_Y$.
 
-Let $V \in \mathcal{T}_Y$ and let $y \in V$. Since $f$ is continuous, $f^{-1}(V) \in \mathcal{T}_X$. Since $f$ is surjective, $y = f(x)$ for some $x \in X$. Then $x \in f^{-1}(V)$, and $x \in B \subset f^{-1}(V)$ for some $B \in \mathcal{B}$. Then $y = f(x) \in f(B) \subset f(f^{-1}(V)) = V$ because $f$ is surjective. Thus, [$f(\mathcal{B})$ is a basis for $\mathcal{T}_Y$.](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-3>) 
+Let $V \in \mathscr{T}_Y$ and let $y \in V$. Since $f$ is continuous, $f^{-1}(V) \in \mathscr{T}_X$. Since $f$ is surjective, $y = f(x)$ for some $x \in X$. Then $x \in f^{-1}(V)$, and $x \in B \subset f^{-1}(V)$ for some $B \in \mathscr{B}$. Then $y = f(x) \in f(B) \subset f(f^{-1}(V)) = V$ because $f$ is surjective. Thus, [$f(\mathscr{B})$ is a basis for $\mathscr{T}_Y$.](<{% post_url Topology/2026-03-17-Basis-Of-Topology %}#theorem-3>) 
 
 **(ii)** Since $f$ and $f^{-1}$ is continuous and injective, we have that $f(A') \subset f(A)'$ and $f^{-1}()$
 $\blacksquare$

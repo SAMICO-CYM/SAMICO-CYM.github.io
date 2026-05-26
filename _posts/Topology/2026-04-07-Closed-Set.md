@@ -104,6 +104,6 @@ Since $X - Y$ and $X - C$ are open in $X$, their union is open in $X$. Thus $X -
 
 **(ii)** Let $X = \mathbb{R}^2$ with the usual topology. The region $R = \\{ (x, y) \in \mathbb{R}^2 \mid x \ge 0 \\} = \mathbb{R}^+ \times \mathbb{R}$ is closed in $\mathbb{R}^2$ because $\mathbb{R} - R = \mathbb{R}^- \times \mathbb{R}$ and $\mathbb{R}^-$ and $\mathbb{R}$ are open in $\mathbb{R}$. 
 
-**(iii)** Let $\mathcal{T}_f$ be the cofinite topology on $X$. Then $\emptyset, X$ and all finite subsets of $X$ are closed in $X$. 
+**(iii)** Let $\mathscr{T}_f$ be the cofinite topology on $X$. Then $\emptyset, X$ and all finite subsets of $X$ are closed in $X$. 
 
-**(iv)** Let $\mathcal{T}_d$ be the discrete topology on $X$. Then every subset of $X$ is closed in $X$. 
+**(iv)** Let $\mathscr{T}_d$ be the discrete topology on $X$. Then every subset of $X$ is closed in $X$. 

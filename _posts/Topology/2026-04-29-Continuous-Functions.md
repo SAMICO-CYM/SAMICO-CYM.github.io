@@ -7,7 +7,7 @@ math: true
 ---
 
 ## Definition
-Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces. A function $f: X \to Y$ is said to be ***continuous*** if $f^{-1}(V) \in \mathcal{T}_X, \forall V \in \mathcal{T}_Y$. 
+Let $(X, \mathscr{T}_X)$ and $(Y, \mathscr{T}_Y)$ be topological spaces. A function $f: X \to Y$ is said to be ***continuous*** if $f^{-1}(V) \in \mathscr{T}_X, \forall V \in \mathscr{T}_Y$. 
 
 정의만 보면 왜 이 모양인가 싶겠지만, 사실 해석학에서 다루던 $\varepsilon - \delta$ 논법을 위상수학의 언어로 바꾼 것과 다름 없다. 
 
@@ -23,27 +23,27 @@ f: \mathbb{R} \to \mathbb{R} \text{ is continuous at } a &\iff \forall \varepsil
 ---
 
 ## Remark
-**(i)** Let $\mathcal{B}$ be a basis generating $\mathcal{T}_Y$. If $f^{-1}(B) \in \mathcal{T}_X, \forall B \in \mathcal{B}$, then $f$ is continuous.  
+**(i)** Let $\mathscr{B}$ be a basis generating $\mathscr{T}_Y$. If $f^{-1}(B) \in \mathscr{T}_X, \forall B \in \mathscr{B}$, then $f$ is continuous.  
 
-$\big[ (\because)$ Let $V \in \mathcal{T}_Y$. Then $V = \bigcup _ {B \in \mathcal{A}} B$ for some $\mathcal{A} \subset \mathcal{B}$. Then
+$\big[ (\because)$ Let $V \in \mathscr{T}_Y$. Then $V = \bigcup _ {B \in \mathcal{A}} B$ for some $\mathcal{A} \subset \mathscr{B}$. Then
 
 $$\begin{align*}
 f^{-1}(V) &= f^{-1} \left( \bigcup_{B \in \mathcal{A}} B \right) \\
-&= \bigcup_{B \in \mathcal{A}}f^{-1}(B) \in \mathcal{T}_X
+&= \bigcup_{B \in \mathcal{A}}f^{-1}(B) \in \mathscr{T}_X
 \end{align*}$$
 
-because each $f^{-1}(B) \in \mathcal{T}_X$. Thus, $f$ is continuous. $\blacksquare$ $\big]$
+because each $f^{-1}(B) \in \mathscr{T}_X$. Thus, $f$ is continuous. $\blacksquare$ $\big]$
 
-**(ii)** Let $\mathcal{S}$ be a subbasis generating $\mathcal{T}_Y$. If $f^{-1}(S) \in \mathcal{T}_X, \forall S \in \mathcal{S}$, then $f$ is continuous.
+**(ii)** Let $\mathscr{S}$ be a subbasis generating $\mathscr{T}_Y$. If $f^{-1}(S) \in \mathscr{T}_X, \forall S \in \mathscr{S}$, then $f$ is continuous.
 
-$\big[ (\because)$ Let $B \in \mathcal{B}$. Then $B = \bigcap_{i=1}^n S_i$ for some $S_1, ..., S_n \in \mathcal{S}$. Then
+$\big[ (\because)$ Let $B \in \mathscr{B}$. Then $B = \bigcap_{i=1}^n S_i$ for some $S_1, ..., S_n \in \mathscr{S}$. Then
 
 $$\begin{align*}
 f^{-1}(B) &= f^{-1} \left( \bigcap_{i=1}^n S_i \right) \\
-&= \bigcap_{i=1}^n f^{-1}(S_i) \in \mathcal{T}_X
+&= \bigcap_{i=1}^n f^{-1}(S_i) \in \mathscr{T}_X
 \end{align*}$$
 
-because each $f^{-1}(S_i) \in \mathcal{T}_X$. By (i), $f$ is continuous. $\blacksquare$ $\big]$
+because each $f^{-1}(S_i) \in \mathscr{T}_X$. By (i), $f$ is continuous. $\blacksquare$ $\big]$
 
 ---
 
@@ -63,7 +63,7 @@ $\big[(\because)$ Note that $f^{-1}([0, 1)) = [0, 1).$ If $f$ is continuous, the
 ---
 
 ## Theorem 1
-Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $f:X \to Y$ be a function. TFAE.
+Let $(X, \mathscr{T}_X)$ and $(Y, \mathscr{T}_Y)$ be topological spaces, and let $f:X \to Y$ be a function. TFAE.
 
 **(i)** $f$ is continuous.
 
@@ -76,7 +76,7 @@ Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let
 ### Proof
 **(i)** $\Longrightarrow$ **(ii)**
 
-Suppose that $f$ is continuous. Let $y \in f(\overline{A})$. Then $y = f(x)$ for some $x \in \overline{A}$. Let $V$ be a neighborhood of $y$. Since $f(x) = y \in V$, we have $x \in f^{-1}(V)$. Since $V$ is open in $Y$,  $f^{-1}(V) \in \mathcal{T}_X$, which means that $f^{-1}(V)$ is a neighborhood of $x$. Then $f^{-1}(V) \cap A \neq \emptyset$, which implies that $\exists a \in f^{-1}(V) \cap A$. Then $a \in f^{-1}(V)$ and $a \in A$, so that $f(a) \in V$ and $f(a) \in f(A)$. Thus, $f(a) \in V \cap f(A)$, which means that $V \cap f(A) \neq \emptyset$. Hence, $y \in \overline{f(A)}$, so that $f(\overline{A}) \subset \overline{f(A)}$. 
+Suppose that $f$ is continuous. Let $y \in f(\overline{A})$. Then $y = f(x)$ for some $x \in \overline{A}$. Let $V$ be a neighborhood of $y$. Since $f(x) = y \in V$, we have $x \in f^{-1}(V)$. Since $V$ is open in $Y$,  $f^{-1}(V) \in \mathscr{T}_X$, which means that $f^{-1}(V)$ is a neighborhood of $x$. Then $f^{-1}(V) \cap A \neq \emptyset$, which implies that $\exists a \in f^{-1}(V) \cap A$. Then $a \in f^{-1}(V)$ and $a \in A$, so that $f(a) \in V$ and $f(a) \in f(A)$. Thus, $f(a) \in V \cap f(A)$, which means that $V \cap f(A) \neq \emptyset$. Hence, $y \in \overline{f(A)}$, so that $f(\overline{A}) \subset \overline{f(A)}$. 
 
 **(ii)** $\Longrightarrow$ **(iii)**
 
@@ -91,7 +91,7 @@ Since clearly $f^{-1}(B) \subset \overline{f^{-1}(B)}$, we have $f^{-1}(B) = \ov
 
 **(iii)** $\Longrightarrow$ **(i)**
 
-Suppose that $f^{-1}(B)$ is closed in $X$ for all closed set $B$ of $Y$. Let $V \in \mathcal{T}_Y$. Since $Y - V$ is closed in $Y$, we have $f^{-1}(Y-V)$ is closed in $X$. Then 
+Suppose that $f^{-1}(B)$ is closed in $X$ for all closed set $B$ of $Y$. Let $V \in \mathscr{T}_Y$. Since $Y - V$ is closed in $Y$, we have $f^{-1}(Y-V)$ is closed in $X$. Then 
 
 $$\begin{align*}
 f^{-1}(Y- V) &= f^{-1}(Y) - f^{-1}(V) \\
@@ -106,12 +106,12 @@ Suppose that $f$ is continuous. Let $x \in X$ and let $V$ be a neighborhood of $
 
 **(iv)** $\Longrightarrow$ **(i)**
 
-Suppose that for each $x \in X$ and a neighborhood $V$ of $f(x)$, there exists a neighborhood $U$ of $x$ such that $f(U) \subset V$. Let $V \in \mathcal{T}_Y$. Let $x \in f^{-1}(V)$. Then $f(x) \in V$. Then there exists a neighborhood $U$ of $x$ such that $f(U) \subset V$, which implies that $U \subset f^{-1}(V)$. Thus, $f^{-1}(V) \in \mathcal{T}_X$, so that $f$ is continuous. $\blacksquare$
+Suppose that for each $x \in X$ and a neighborhood $V$ of $f(x)$, there exists a neighborhood $U$ of $x$ such that $f(U) \subset V$. Let $V \in \mathscr{T}_Y$. Let $x \in f^{-1}(V)$. Then $f(x) \in V$. Then there exists a neighborhood $U$ of $x$ such that $f(U) \subset V$, which implies that $U \subset f^{-1}(V)$. Thus, $f^{-1}(V) \in \mathscr{T}_X$, so that $f$ is continuous. $\blacksquare$
 
 ---
 
 ## Theorem 2
-Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $f: X \to Y$ be a injective continuous function. Let $A \subset X$. Then $f(A') \subset f(A)'$. 
+Let $(X, \mathscr{T}_X)$ and $(Y, \mathscr{T}_Y)$ be topological spaces, and let $f: X \to Y$ be a injective continuous function. Let $A \subset X$. Then $f(A') \subset f(A)'$. 
 
 ### Proof
 Let $y \in f(A')$. Then $y = f(x)$ for some $x \in A'$. Let $V$ be a neighborhood of $f(x)$. Then $f(x) \in V$, which means that $x \in f^{-1}(V)$. Since $f$ is continuous, $f^{-1}(V)$ is open in $X$. Then $f^{-1}(V) \cap (A - \\{ x \\}) \neq \emptyset$, which means that $\exists a \in f^{-1}(V) \cap (A - \\{ x \\})$. Then $a \in f^{-1}(V)$ and $a \in A - \\{ x \\}$, which means that $f(a) \in V$ and $f(a) \in f(A - \\{ x \\}) = f(A) - \\{ f(x) \\}$ because $f$ is injective. Thus, $f(a) \in V \cap (f(A) - \\{ f(x) \\})$, which means that $f(x) \in f(A)'$. Hence, $f(A') \subset f(A)'. \blacksquare$
@@ -156,15 +156,15 @@ Let $X, Y, Z$ be topological spaces. Then
 **(vi)** Let $\\{U_\alpha\\}$ be a collection of open sets in $X$. The function $f : X \to Y$ is continuous if $X = \bigcup U_\alpha$ and $f \vert _ {U_\alpha}$ is continuous for each $\alpha$.
 
 ### Proof
-**(i)** Let $V \in \mathcal{T}_Y$. If $y_0 \in V$, then $f^{-1}(V) = X \in \mathcal{T}_X$. If $y_0 \notin V$, then $f^{-1}(V) = \emptyset \in \mathcal{T}_X$. Thus, $f$ is continuous.
+**(i)** Let $V \in \mathscr{T}_Y$. If $y_0 \in V$, then $f^{-1}(V) = X \in \mathscr{T}_X$. If $y_0 \notin V$, then $f^{-1}(V) = \emptyset \in \mathscr{T}_X$. Thus, $f$ is continuous.
 
-**(ii)** Let $V \in \mathcal{T}_Y$. We claim that $i^{-1}(V) = V \cap A$. 
+**(ii)** Let $V \in \mathscr{T}_Y$. We claim that $i^{-1}(V) = V \cap A$. 
 
 $\big[(\because)$ Let $a \in i^{-1}(V)$. Then $a = i(a) \in V$. Since $a \in A$, we have $a \in V \cap A$. If $b \in V \cap A$, then $i(b) = b \in V$, so that $b \in i^{-1}(V)$. Thus, $i^{-1}(V) = V \cap A$. $\big]$ 
 
-Since $i^{-1}(V) = V \cap A \in \mathcal{T}_A$, $i$ is continuous. 
+Since $i^{-1}(V) = V \cap A \in \mathscr{T}_A$, $i$ is continuous. 
 
-**(iii)** Let $W \in \mathcal{T}_Z$. Since $g$ is continuous, $g^{-1}(W) \in \mathcal{T}_Y$. Since $f$ is continuous, $f^{-1}(g^{-1}(W)) \in \mathcal{T}_X$. We claim that $f^{-1}(g^{-1}(W)) = (g \circ f)^{-1}(W)$.
+**(iii)** Let $W \in \mathscr{T}_Z$. Since $g$ is continuous, $g^{-1}(W) \in \mathscr{T}_Y$. Since $f$ is continuous, $f^{-1}(g^{-1}(W)) \in \mathscr{T}_X$. We claim that $f^{-1}(g^{-1}(W)) = (g \circ f)^{-1}(W)$.
 
 $\big[(\because)$ 
 
@@ -175,33 +175,33 @@ x \in f^{-1}(g^{-1}(W)) & \iff f(x) \in g^{-1}(W) \\
 & \iff x \in (g \circ f)^{-1}(W). \big]
 \end{align*}$$
 
-Since $(g \circ f)^{-1}(W) = f^{-1}(g^{-1}(W)) \in \mathcal{T}_X$, $g \circ f$ is continuous.
+Since $(g \circ f)^{-1}(W) = f^{-1}(g^{-1}(W)) \in \mathscr{T}_X$, $g \circ f$ is continuous.
 
 **(iv)** By (ii), the inclusion $i: A \to X$ is continuous. By (iii), $f \vert A = f \circ i: A \to Y$ is continuous. 
 
-Let $V \in \mathcal{T}_Y$. Since $f$ is continuous, $f^{-1}(V) \in \mathcal{T}_X$. Then $f^{-1}(V) \cap A \in \mathcal{T}_A$. We claim that $f^{-1}(V) \cap A = \left( f \vert_A \right)^{-1}(V)$.
+Let $V \in \mathscr{T}_Y$. Since $f$ is continuous, $f^{-1}(V) \in \mathscr{T}_X$. Then $f^{-1}(V) \cap A \in \mathscr{T}_A$. We claim that $f^{-1}(V) \cap A = \left( f \vert_A \right)^{-1}(V)$.
 
 $\big[(\because)$ Let $x \in \left( f \vert_A \right)^{-1}(V)$. Since $\left( f \vert_A \right)^{-1}(V) \subset A$, $x \in A$. Then $f(x) = (f \vert_A)(x) \in V$, so that $x \in f^{-1}(V) \cap A$. 
 
 If $y \in f^{-1}(V) \cap A$, then $y \in A$ and $(f \vert_A)(y) = f(y) \in V$, which means that $y \in \left( f \vert_A \right)^{-1}(V)$. Thus, $f^{-1}(V) \cap A = \left( f \vert_A \right)^{-1}(V)$. $\big]$
 
-Since $\left( f \vert_A \right)^{-1}(V) = f^{-1}(V) \cap A \in \mathcal{T}_A$, $f \vert_A$ is continuous. 
+Since $\left( f \vert_A \right)^{-1}(V) = f^{-1}(V) \cap A \in \mathscr{T}_A$, $f \vert_A$ is continuous. 
 
-**(v-1)** Let $W \in \mathcal{T}_Z$. Since $Z$ is a subspace of $Y$, $W = V \cap Z$ for some $V \in \mathcal{T}_Y$. Note that $f(x) = g(x), \forall x \in X$. Then we have 
+**(v-1)** Let $W \in \mathscr{T}_Z$. Since $Z$ is a subspace of $Y$, $W = V \cap Z$ for some $V \in \mathscr{T}_Y$. Note that $f(x) = g(x), \forall x \in X$. Then we have 
 
 $$\begin{align*}
 g^{-1}(W) &= f^{-1}(W) \\
 &= f^{-1}(V \cap Z) \\
 &= f^{-1}(V) \cap f^{-1}(Z) \\
 &= f^{-1}(V) \cap X \\
-&= f^{-1}(V) \in \mathcal{T}_X,
+&= f^{-1}(V) \in \mathscr{T}_X,
 \end{align*}$$
 
 so that $g$ is continuous.
 
 **(v-2)** By (ii), the inclusion $i: Y \to Z$ is continuous. By (iii), $h = i \circ f: X \to Z$ is continuous. 
 
-**(vi)** Let $\\{ U_\alpha \\}$ be a collection of open sets in $X$ such that $X = \bigcup U _ {\alpha}$. Suppose that each $f \vert U _ {\alpha} : U _ {\alpha} \to Y$ is continuous. Let $V \in \mathcal{T}_Y$. If we consider each $U _ {\alpha}$ as a subspace of $X$, then $\left( f \vert U _ {\alpha} \right)^{-1}(V) \in \mathcal{T} _ {U _ {\alpha}}$ for each $\alpha$. Since each $U _ {\alpha}$ is open in $X$, we have $\left( f \vert U _ {\alpha} \right)^{-1}(V) \in \mathcal{T}_X$. We claim that 
+**(vi)** Let $\\{ U_\alpha \\}$ be a collection of open sets in $X$ such that $X = \bigcup U _ {\alpha}$. Suppose that each $f \vert U _ {\alpha} : U _ {\alpha} \to Y$ is continuous. Let $V \in \mathscr{T}_Y$. If we consider each $U _ {\alpha}$ as a subspace of $X$, then $\left( f \vert U _ {\alpha} \right)^{-1}(V) \in \mathscr{T} _ {U _ {\alpha}}$ for each $\alpha$. Since each $U _ {\alpha}$ is open in $X$, we have $\left( f \vert U _ {\alpha} \right)^{-1}(V) \in \mathscr{T}_X$. We claim that 
 
 $$\bigcup_\alpha \left( f \vert U _ {\alpha} \right)^{-1}(V) = f^{-1}(V).$$
 
@@ -209,7 +209,7 @@ $\big[(\because)$ Let $x \in \bigcup_\alpha \left( f \vert U _ {\alpha} \right)^
 
 If $y \in f^{-1}(V)$, then $f(y) \in V$. Since $f^{-1}(V) \subset X$, $y \in U _ {\alpha}$ for some $\alpha$, so that $\left( f \vert U _ {\alpha} \right)(y) = f(y) \in V$. Thus, $y \in \left( f \vert U _ {\alpha} \right)^{-1}(V)$. Hence, $f^{-1}(V) = \bigcup_\alpha \left( f \vert U _ {\alpha} \right)^{-1}(V)$. $\big]$
 
-Since $f^{-1}(V)= \bigcup_\alpha \left( f \vert U _ {\alpha} \right)^{-1}(V) \in \mathcal{T}_X$, $f$ is continuous. $\blacksquare$
+Since $f^{-1}(V)= \bigcup_\alpha \left( f \vert U _ {\alpha} \right)^{-1}(V) \in \mathscr{T}_X$, $f$ is continuous. $\blacksquare$
 
 ---
 ## Theorem 4

@@ -6,72 +6,72 @@ math: true
 ---
 
 ## Theorem 1
-Let $(X, \mathcal{T})$ be a topological space and let $Y \subset X$. 
+Let $(X, \mathscr{T})$ be a topological space and let $Y \subset X$. 
 
 **(i)** The collection
 
-$$\mathcal{T}_Y = \{ Y \cap U \mid U \in \mathcal{T} \}$$
+$$\mathscr{T}_Y = \{ Y \cap U \mid U \in \mathscr{T} \}$$
 
-is a topology on $Y$. We call $\mathcal{T}_Y$ the ***subspace topology*** on $Y$, and call $(Y, \mathcal{T}_Y)$ a ***subspace*** of $(X, \mathcal{T})$.
+is a topology on $Y$. We call $\mathscr{T}_Y$ the ***subspace topology*** on $Y$, and call $(Y, \mathscr{T}_Y)$ a ***subspace*** of $(X, \mathscr{T})$.
 
-**(ii)** If $\mathcal{B}$ is a basis for $\mathcal{T}$, then
+**(ii)** If $\mathscr{B}$ is a basis for $\mathscr{T}$, then
 
-$$\mathcal{B}_Y = \{ Y \cap B \mid B \in \mathcal{B} \}$$
+$$\mathscr{B}_Y = \{ Y \cap B \mid B \in \mathscr{B} \}$$
 
-is a basis for $\mathcal{T}_Y$.
+is a basis for $\mathscr{T}_Y$.
 
 ### Proof
-**(i)** Since $\emptyset = Y \cap \emptyset \in \mathcal{T}_Y$ and $Y = Y \cap X \in \mathcal{T}_Y$, the first condition is satisfied.
+**(i)** Since $\emptyset = Y \cap \emptyset \in \mathscr{T}_Y$ and $Y = Y \cap X \in \mathscr{T}_Y$, the first condition is satisfied.
 
-Let $\\{ U _ {\alpha} \\} \subset \mathcal{T}_Y$. Since each $U _ {\alpha} \in \mathcal{T}_Y$, we have $U _ {\alpha} = Y \cap V _ {\alpha}$ for some $V _ {\alpha} \in \mathcal{T}$, for each $\alpha$. Then
+Let $\\{ U _ {\alpha} \\} \subset \mathscr{T}_Y$. Since each $U _ {\alpha} \in \mathscr{T}_Y$, we have $U _ {\alpha} = Y \cap V _ {\alpha}$ for some $V _ {\alpha} \in \mathscr{T}$, for each $\alpha$. Then
 
 $$\bigcup U _ {\alpha} = \bigcup (Y \cap V _ {\alpha}) = Y \cap \bigcup V _ {\alpha}.$$
 
-Since $\bigcup V _ {\alpha} \in \mathcal{T}$, we have $\bigcup U _ {\alpha} \in \mathcal{T}_Y$. 
+Since $\bigcup V _ {\alpha} \in \mathscr{T}$, we have $\bigcup U _ {\alpha} \in \mathscr{T}_Y$. 
 
-Let $U_1, ..., U_n \in \mathcal{T}_Y$. Then $U_i = Y \cap V_i$ for some $V_i \in \mathcal{T}$, for each $i = 1, ..., n$. Then
+Let $U_1, ..., U_n \in \mathscr{T}_Y$. Then $U_i = Y \cap V_i$ for some $V_i \in \mathscr{T}$, for each $i = 1, ..., n$. Then
 
 $$\bigcap_{i=1}^n U_i = \bigcap_{i=1}^n (Y \cap V_i) = Y \cap \bigcap_{i=1}^n V_i.$$
 
-Since $\bigcap_{i=1}^n V_i \in \mathcal{T}$, we have $\bigcap_{i=1}^n U_i \in \mathcal{T}_Y$. Thus $\mathcal{T}_Y$ is a topology on $Y$. 
+Since $\bigcap_{i=1}^n V_i \in \mathscr{T}$, we have $\bigcap_{i=1}^n U_i \in \mathscr{T}_Y$. Thus $\mathscr{T}_Y$ is a topology on $Y$. 
 
-**(ii)** Let $U \in \mathcal{T}_Y$. Then $U = Y \cap V$ for some $V \in \mathcal{T}$. Since $\mathcal{B}$ is a basis for $\mathcal{T}$ and $V$ is an open set in $X$, for each $x \in U = Y \cap V$ (so that $x \in V$), $\exists B \in \mathcal{B}$ such that $x \in B \subset V$. Since $x \in Y$, we have $x \in Y \cap B \subset Y \cap V = U$. Since $Y \cap B \in \mathcal{B}_Y$, $\mathcal{B}_Y$ is a basis generating $\mathcal{T}_Y$. $\blacksquare$
+**(ii)** Let $U \in \mathscr{T}_Y$. Then $U = Y \cap V$ for some $V \in \mathscr{T}$. Since $\mathscr{B}$ is a basis for $\mathscr{T}$ and $V$ is an open set in $X$, for each $x \in U = Y \cap V$ (so that $x \in V$), $\exists B \in \mathscr{B}$ such that $x \in B \subset V$. Since $x \in Y$, we have $x \in Y \cap B \subset Y \cap V = U$. Since $Y \cap B \in \mathscr{B}_Y$, $\mathscr{B}_Y$ is a basis generating $\mathscr{T}_Y$. $\blacksquare$
 
 ---
 
 ## Example
-**(i)** Let $\mathcal{T}$ be the standard topology on $\mathbb{R}$, and let $Y = [0, 3] \subset \mathbb{R}$. Then $[0, 1) = Y \cap (-1, 1)$ so is open in $Y$. But $(-1, 1)$ is NOT open in $Y$. 
+**(i)** Let $\mathscr{T}$ be the standard topology on $\mathbb{R}$, and let $Y = [0, 3] \subset \mathbb{R}$. Then $[0, 1) = Y \cap (-1, 1)$ so is open in $Y$. But $(-1, 1)$ is NOT open in $Y$. 
 
-$(\because)$ If $(-1, 1)$ is open in $Y$, then $(-1, 1) = Y \cap (a, b)$ for some $(a, b) \in \mathcal{T}$. Note that $-0.5 \in (-1, 1)$ but $-0.5 \notin [0, 3] = Y$. $\bigotimes$ Thus $(-1, 1)$ is not open in $Y$.
+$(\because)$ If $(-1, 1)$ is open in $Y$, then $(-1, 1) = Y \cap (a, b)$ for some $(a, b) \in \mathscr{T}$. Note that $-0.5 \in (-1, 1)$ but $-0.5 \notin [0, 3] = Y$. $\bigotimes$ Thus $(-1, 1)$ is not open in $Y$.
 
-**(ii)** Let $\mathcal{T}$ be the standard topology on $\mathbb{R}^2$, and let $Y = S^1$. Then each arc without the boundary points is open in $Y$.
+**(ii)** Let $\mathscr{T}$ be the standard topology on $\mathbb{R}^2$, and let $Y = S^1$. Then each arc without the boundary points is open in $Y$.
 
 ---
 
 ## Definition
-Let $(X, \mathcal{T})$ be a topological space, and let $(Y, \mathcal{T}_Y)$ be a subspace of $(X, \mathcal{T})$. We say that $U$ is ***open in $Y$*** if $U \in \mathcal{T}_Y$, that is, $U = Y \cap V$ for some $V \in \mathcal{T}$.
+Let $(X, \mathscr{T})$ be a topological space, and let $(Y, \mathscr{T}_Y)$ be a subspace of $(X, \mathscr{T})$. We say that $U$ is ***open in $Y$*** if $U \in \mathscr{T}_Y$, that is, $U = Y \cap V$ for some $V \in \mathscr{T}$.
 
 ---
 
 ## Note
-- $\mathcal{T}$ and $\mathcal{T}_Y$ are NOT comparable in general. That is, an open set $U \in \mathcal{T}$ is not necessarily open in $Y$, and an open set $V \in \mathcal{T}_Y$ is not necessarily open in $X$.
+- $\mathscr{T}$ and $\mathscr{T}_Y$ are NOT comparable in general. That is, an open set $U \in \mathscr{T}$ is not necessarily open in $Y$, and an open set $V \in \mathscr{T}_Y$ is not necessarily open in $X$.
 
 ---
 
 ## Theorem 2
-Let $(Y, \mathcal{T}_Y)$ be a subspace of $(X, \mathcal{T})$. If $U$ is open in $Y$ and $Y$ is open in $X$, then $U$ is open in $X$. 
+Let $(Y, \mathscr{T}_Y)$ be a subspace of $(X, \mathscr{T})$. If $U$ is open in $Y$ and $Y$ is open in $X$, then $U$ is open in $X$. 
 
 ### Proof
-Since $U$ is open in $Y$, $U = Y \cap V$ for some $V \in \mathcal{T}$. Since $Y$ is open in $X$ and $\mathcal{T}$ is a topology, $U = Y \cap V$ is open in $X$. $\blacksquare$
+Since $U$ is open in $Y$, $U = Y \cap V$ for some $V \in \mathscr{T}$. Since $Y$ is open in $X$ and $\mathscr{T}$ is a topology, $U = Y \cap V$ is open in $X$. $\blacksquare$
 
 ---
 
 ## Theorem 3
-Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $A \subset X$ and $B \subset Y$. Let $(X \times Y, \mathcal{T} _ {X \times Y})$ be the product topological space, and let $(A, \mathcal{T}_A)$ and $(B, \mathcal{T}_B)$ be the subspace topologies on $A$ and $B$, respectively. Then the product topology on $A \times B$ is the same as the subspace topology on $A \times B$.
+Let $(X, \mathscr{T}_X)$ and $(Y, \mathscr{T}_Y)$ be topological spaces, and let $A \subset X$ and $B \subset Y$. Let $(X \times Y, \mathscr{T} _ {X \times Y})$ be the product topological space, and let $(A, \mathscr{T}_A)$ and $(B, \mathscr{T}_B)$ be the subspace topologies on $A$ and $B$, respectively. Then the product topology on $A \times B$ is the same as the subspace topology on $A \times B$.
 
 ### Proof
-Let $\mathcal{T}$ be the product topology on $A \times B$, and let $\mathcal{T}'$ be the subspace topology on $A \times B$. Let $(A \times B) \cap (U \times V)$ be a basis element for $\mathcal{T}'$ where $U \in \mathcal{T}_X$ and $V \in \mathcal{T}_Y$. ($U \times V$ is a basis element of $\mathcal{T} _ {X \times Y}$.) Since 
+Let $\mathscr{T}$ be the product topology on $A \times B$, and let $\mathscr{T}'$ be the subspace topology on $A \times B$. Let $(A \times B) \cap (U \times V)$ be a basis element for $\mathscr{T}'$ where $U \in \mathscr{T}_X$ and $V \in \mathscr{T}_Y$. ($U \times V$ is a basis element of $\mathscr{T} _ {X \times Y}$.) Since 
 
 $$(A \times B) \cap (U \times V) = (A \cap U) \times (B \cap V),$$
 
-and $A \cap U$, $B \cap V$ are basis elements of $\mathcal{T}_A, \mathcal{T}_B$, respectively, $(A \cap U) \times (B \cap V)$ is a basis element for $\mathcal{T}$. Conversely, it is easy to verify that each basis element for $\mathcal{T}$ is also a basis element for $\mathcal{T}'$. Thus the basis for $\mathcal{T}$ and the basis for $\mathcal{T}'$ are the same, which means that $\mathcal{T} = \mathcal{T}'$. $\blacksquare$
+and $A \cap U$, $B \cap V$ are basis elements of $\mathscr{T}_A, \mathscr{T}_B$, respectively, $(A \cap U) \times (B \cap V)$ is a basis element for $\mathscr{T}$. Conversely, it is easy to verify that each basis element for $\mathscr{T}$ is also a basis element for $\mathscr{T}'$. Thus the basis for $\mathscr{T}$ and the basis for $\mathscr{T}'$ are the same, which means that $\mathscr{T} = \mathscr{T}'$. $\blacksquare$

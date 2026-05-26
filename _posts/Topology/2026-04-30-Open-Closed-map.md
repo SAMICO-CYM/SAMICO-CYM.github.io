@@ -7,9 +7,9 @@ math: true
 ---
 
 ## Definition 
-Let $(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ be topological spaces, and let $f: X \to Y$ be a map.
+Let $(X, \mathscr{T}_X)$ and $(Y, \mathscr{T}_Y)$ be topological spaces, and let $f: X \to Y$ be a map.
 
-**(i)** A map $f$ is called an ***open map*** if $f(U) \in \mathcal{T}_Y, \forall U \in \mathcal{T}_X$. 
+**(i)** A map $f$ is called an ***open map*** if $f(U) \in \mathscr{T}_Y, \forall U \in \mathscr{T}_X$. 
 
 **(ii)** A map $f$ is called a ***closed map*** if $f(C)$ is closed in $Y$ for each closed set $C$ in $X$.
 

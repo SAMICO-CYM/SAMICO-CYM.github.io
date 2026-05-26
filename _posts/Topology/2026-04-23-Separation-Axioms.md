@@ -7,25 +7,25 @@ math: true
 ---
 
 ## Definition
-Let $(X, \mathcal{T})$ be a topological space. 
+Let $(X, \mathscr{T})$ be a topological space. 
 
 - Let $x, y \in X$ with $x \neq y$.
 
-**(i)** $X$ is called a ***$T_0$-space*** if $\exists U \in \mathcal{T}$ such that $x \in U$ and $y \notin U$.
+**(i)** $X$ is called a ***$T_0$-space*** if $\exists U \in \mathscr{T}$ such that $x \in U$ and $y \notin U$.
 
-**(ii)** $X$ is called a ***$T_1$-space*** if $\exists U, V \in \mathcal{T}$ such that $x \in U, y \notin U$ and $y \in V, x \notin V$.
+**(ii)** $X$ is called a ***$T_1$-space*** if $\exists U, V \in \mathscr{T}$ such that $x \in U, y \notin U$ and $y \in V, x \notin V$.
 
-**(iii)** $X$ is called a ***$T_2$-space*** or ***Hausdorff space*** if $\exists U, V \in \mathcal{T}$ such that $x \in U, y \in V$ and $U \cap V = \emptyset$.
+**(iii)** $X$ is called a ***$T_2$-space*** or ***Hausdorff space*** if $\exists U, V \in \mathscr{T}$ such that $x \in U, y \in V$ and $U \cap V = \emptyset$.
 
 - Let $C$ be a closed set in $X$, and let $x \notin C$.
 
-**(iv)** $X$ is called a ***regular space*** if $\exists U, V \in \mathcal{T}$ such that $x \in U, C \subset V$ and $U \cap V = \emptyset$.
+**(iv)** $X$ is called a ***regular space*** if $\exists U, V \in \mathscr{T}$ such that $x \in U, C \subset V$ and $U \cap V = \emptyset$.
 
 **(v)** $X$ is called a ***$T_3$-space*** or ***regular Hausdorff*** if $X$ is regular and $T_1$.
 
 - Let $C, D$ be closed sets in $X$ with $C \cap D = \emptyset$.
 
-**(vi)** $X$ is called a ***normal space*** if $\exists U, V \in \mathcal{T}$ such that $C \subset U, D \subset V$ and $U \cap V = \emptyset$.
+**(vi)** $X$ is called a ***normal space*** if $\exists U, V \in \mathscr{T}$ such that $C \subset U, D \subset V$ and $U \cap V = \emptyset$.
 
 **(vii)** $X$ is called a ***$T_4$-space*** or ***normal Hausdorff*** if $X$ is normal and $T_1$.
 
@@ -39,21 +39,21 @@ $$T_4 \implies T_3 \implies T_2 \implies T_1 \implies T_0$$
 ---
 
 ## Theorem 2
-Let $\mathcal{T}$ and $\mathcal{T}'$ be two topological space on a set $X$. Suppose that $\mathcal{T}'$ is finer than $\mathcal{T}$, i.e., $\mathcal{T} \subset \mathcal{T}'$. 
+Let $\mathscr{T}$ and $\mathscr{T}'$ be two topological space on a set $X$. Suppose that $\mathscr{T}'$ is finer than $\mathscr{T}$, i.e., $\mathscr{T} \subset \mathscr{T}'$. 
 
-**(i)** If $\mathcal{T}$ is $T_0$, then $\mathcal{T}'$ is $T_0$.
+**(i)** If $\mathscr{T}$ is $T_0$, then $\mathscr{T}'$ is $T_0$.
 
-**(ii)** If $\mathcal{T}$ is $T_1$, then $\mathcal{T}'$ is $T_1$.
+**(ii)** If $\mathscr{T}$ is $T_1$, then $\mathscr{T}'$ is $T_1$.
 
-**(iii)** If $\mathcal{T}$ is $T_2$, then $\mathcal{T}'$ is $T_2$.
+**(iii)** If $\mathscr{T}$ is $T_2$, then $\mathscr{T}'$ is $T_2$.
 
 ### Proof
 
 ---
 
 ## Example
-**(i)** $(\mathbb{R}^n, \mathcal{T} _ {\text{usual}})$ is a $T_4$-space. 
+**(i)** $(\mathbb{R}^n, \mathscr{T} _ {\text{usual}})$ is a $T_4$-space. 
 
-**(ii)** $(\mathbb{R}, \mathcal{T}_c)$ is a $T_1$-space, but not a $T_2$-space.
+**(ii)** $(\mathbb{R}, \mathscr{T}_c)$ is a $T_1$-space, but not a $T_2$-space.
 
-**(iii)** $(\mathbb{R}, \mathcal{T}_K)$ is a $T_2$-space, but not a $T_3$-space.
+**(iii)** $(\mathbb{R}, \mathscr{T}_K)$ is a $T_2$-space, but not a $T_3$-space.
