@@ -23,9 +23,14 @@ $$C \text{ is closed in } Y \iff p^{-1}(C) \text{ is closed in } X.$$
 
 **(iii)** Every surjective, continuous, open (or closed) map is a quotient map. However, the converse does not hold. In particular, there is a quotient map that is not an open map.
 
-$\big[(\because)$ 
+$\big[(\because)$ We consider $\pi_1: \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ and $A = \\{ (x, y) \in \mathbb{R} \times \mathbb{R} \mid x \ge 0 \text{ or } y = 0 \\}.$ Then $q := \pi_1 \vert_A : A \to \mathbb{R}$ is a quotient map, but not open. 
 
-$\big]$
+To see this, consider 
+
+$$B := A \cap \\{ (x, y) \in \mathbb{R} \times \mathbb{R} \mid x^2 + (y- 2)^2 \le 1 \\}.$$
+
+Then $q(B) = [0, 1)$, which is not open in $\mathbb{R}$.$\big]$
+
 ---
 ## Theorem
 Let $X$ be a topological space and let $A$ be a set. Let $p: X \to A$ be a surjective map. Then the collection 
@@ -71,7 +76,7 @@ Let $X$ be a topological space, and let $\sim$ be an equivalence relation of $X$
 
 비슷한 방법으로 직사각형 모양의 종이를 잘 "주물러서" 토러스 모양으로 만들 수 있다. 아래 사진에서 각 $a$ 선분을 이어붙여서 원통 모양으로 만들고, 원통의 양 끝을 이어붙이면 토러스가 된다. 
 
-![](assets/img/torus.jpg)
+![](assets/img/rectorus.png)
 
 직관적으로 이해는 될텐데, 수식으로 써보라고 하면 막막하다. 이때 강력한 도구가 되는게 바로 quotient space다.
 
@@ -81,4 +86,16 @@ $$\begin{align*}
 &(x_1, y_1) \sim (x_2, y_2), \text{ if } (x_1, y_1) = (x_2, y_2) \text{ or } (x_1, y_1), (x_2, y_2) \in \partial X
 \end{align*}$$
 
-그러니까 경계에 있는 점들은 모두 관계가 있다고 보고, 그 외 다른 점들은 자기 자신과 관계가 있도록 두는 것이다. 이렇게 정의하면 경계점들은 마치 어떤 한 점으로 수축되는 듯한 효과를 주게 된다. 그러면 $X$를 quotient map $p$로 매핑한 이미지를 생각해보면, 자연스럽게(?) $X$는 sphere $S^2 = \\{ (x, y, z) \in \mathbb{R}^2 \mid x^2 + y^2 + z^2 = 1 \\}$로 옮겨진다는 사실을 알 수 있다. 즉 quotient space $X/\sim$은 $S^2$와 homeomorphic하다. 
+그러니까 경계에 있는 점들은 모두 관계가 있다고 보고, 그 외 다른 점들은 자기 자신과 관계가 있도록 두는 것이다. 이렇게 정의하면 경계점들은 마치 어떤 한 점으로 수축되는 듯한 효과를 주게 된다. 그러면 $X$를 quotient map $p$로 매핑한 이미지를 생각해보면, 자연스럽게(?) $X$는 sphere $S^2 = \\{ (x, y, z) \in \mathbb{R}^2 \mid x^2 + y^2 + z^2 = 1 \\}$로 옮겨진다는 사실을 알 수 있다. 정확하게는 quotient space $X/\sim$은 $S^2$와 homeomorphic하다. 
+
+![](assets/img/rectorus1.png)
+
+**(ii)** 두 번째로 직사각형과 토러스를 다뤄보자. $X = [0, 1] \times [0, 1]$로 가져오고, $X$ 위에서의 동치 관계 $\sim$을 다음과 같이 정의하자. 
+
+$$\begin{align*}
+&(x_1, y_1) \sim (x_2, y_2), \text{ if } x_1 - y_1 \in \mathbb{Z} \text{ and } y_1 - y_2 \in \mathbb{Z}
+\end{align*}$$
+
+러프하게 말해서 $x, y \in [0, 1]$에 대해서 $(x, 0) \sim (x, 1)$이고, $(0, y) \sim (1, y)$으로 두고, 그 외 다른 점들은 자기 자신과 관계가 있다고 두는 것이다. 그러면 직관적으로(?) 위아래 선분이 평행하게 딱 들어맞고, 좌우의 선분 또한 딱 들어맞게 바뀌는 효과가 되고, $X$는 $p$에 의해 토러스로 매핑된다. 정확하게는 $X/\sim$은 토러스와 homeomorphic하다. 
+
+![](assets/img/rectorus2.png)
