@@ -38,7 +38,6 @@ Since $\bigcap_{i=1}^n V_i \in \mathscr{T}$, we have $\bigcap_{i=1}^n U_i \in \m
 **(ii)** Let $U \in \mathscr{T}_Y$. Then $U = Y \cap V$ for some $V \in \mathscr{T}$. Since $\mathscr{B}$ is a basis for $\mathscr{T}$ and $V$ is an open set in $X$, for each $x \in U = Y \cap V$ (so that $x \in V$), $\exists B \in \mathscr{B}$ such that $x \in B \subset V$. Since $x \in Y$, we have $x \in Y \cap B \subset Y \cap V = U$. Since $Y \cap B \in \mathscr{B}_Y$, $\mathscr{B}_Y$ is a basis generating $\mathscr{T}_Y$. $\blacksquare$
 
 ---
-
 ## Example
 **(i)** Let $\mathscr{T}$ be the standard topology on $\mathbb{R}$, and let $Y = [0, 3] \subset \mathbb{R}$. Then $[0, 1) = Y \cap (-1, 1)$ so is open in $Y$. But $(-1, 1)$ is NOT open in $Y$. 
 
@@ -54,7 +53,7 @@ Let $(X, \mathscr{T})$ be a topological space, and let $(Y, \mathscr{T}_Y)$ be a
 ---
 
 ## Note
-- $\mathscr{T}$ and $\mathscr{T}_Y$ are NOT comparable in general. That is, an open set $U \in \mathscr{T}$ is not necessarily open in $Y$, and an open set $V \in \mathscr{T}_Y$ is not necessarily open in $X$.
+$\mathscr{T}$ and $\mathscr{T}_Y$ are NOT comparable in general. That is, an open set $U \in \mathscr{T}$ is not necessarily open in $Y$, and an open set $V \in \mathscr{T}_Y$ is not necessarily open in $X$.
 
 ---
 
@@ -75,3 +74,14 @@ Let $\mathscr{T}$ be the product topology on $A \times B$, and let $\mathscr{T}'
 $$(A \times B) \cap (U \times V) = (A \cap U) \times (B \cap V),$$
 
 and $A \cap U$, $B \cap V$ are basis elements of $\mathscr{T}_A, \mathscr{T}_B$, respectively, $(A \cap U) \times (B \cap V)$ is a basis element for $\mathscr{T}$. Conversely, it is easy to verify that each basis element for $\mathscr{T}$ is also a basis element for $\mathscr{T}'$. Thus the basis for $\mathscr{T}$ and the basis for $\mathscr{T}'$ are the same, which means that $\mathscr{T} = \mathscr{T}'$. $\blacksquare$
+
+---
+## Theorem 4
+If $Y$ is a subspace of $X$, and $A$ is a subset of $Y$, then the topology $A$ inherits as a subspace of $Y$ is the same as the topology it inherits as a subspace of $X$.
+
+### Proof
+Let $\mathscr{B}$ and $\mathscr{B}'$ be bases for the topology $A$ inherits as a subspace of $Y$ and the topology it inherits as a subspace of $X$, respectively.
+
+Let $B \in \mathscr{B}$. Then $B = A \cap B_1$ for some basis element $B_1$ of $Y$. Note that $B_1 = Y \cap B_2$ for some basis element $B_2$ of $X$. Then $B = A \cap (Y \cap B_2) = A \cap B_2$, which implies $B \in \mathscr{B}'$. 
+
+Let $B' \in \mathscr{B}'$. Then $B' = A \cap B'_1$ for some basis element $B'_1$ of $X$. Note that $B' \subset A$. Then we have $B' = B' \cap Y = A \cap (Y \cap B'_1)$. Since $Y \cap B'_1$ is a basis element of $Y$, it follows that $B' \in \mathscr{B}.$ Thus, $\mathscr{B} = \mathscr{B}'$. $\blacksquare$

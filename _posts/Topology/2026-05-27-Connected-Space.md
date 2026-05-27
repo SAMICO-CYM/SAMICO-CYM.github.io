@@ -65,3 +65,4 @@ If $Y \cap C$ and $Y \cap D$ are nonempty, then $(C, D)$ is a separation of $Y$.
 The union of a collection of connected subspaces of $X$ that have a point in common is connected.
 
 ### Proof
+Let $\\{ Y_\alpha \\}$ be a collection of connected subspaces $Y_\alpha$ of $X$ that have a point in common. 
