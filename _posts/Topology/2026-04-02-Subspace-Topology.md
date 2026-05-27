@@ -80,8 +80,8 @@ and $A \cap U$, $B \cap V$ are basis elements of $\mathscr{T}_A, \mathscr{T}_B$,
 If $Y$ is a subspace of $X$, and $A$ is a subset of $Y$, then the topology $A$ inherits as a subspace of $Y$ is the same as the topology it inherits as a subspace of $X$.
 
 ### Proof
-Let $\mathscr{B}$ and $\mathscr{B}'$ be bases for the topology $A$ inherits as a subspace of $Y$ and the topology it inherits as a subspace of $X$, respectively.
+Let $\mathscr{T}_1$ and $\mathscr{T}_2$ be topology $A$ inherits as a subspace of $Y$ and the topology it inherits as a subspace of $X$, respectively.
 
-Let $B \in \mathscr{B}$. Then $B = A \cap B_1$ for some basis element $B_1$ of $Y$. Note that $B_1 = Y \cap B_2$ for some basis element $B_2$ of $X$. Then $B = A \cap (Y \cap B_2) = A \cap B_2$, which implies $B \in \mathscr{B}'$. 
+Let $U \in \mathscr{T}_1$. Then $U = A \cap U_1$ for some open subset $U_1$ of $Y$. Note that $U_1 = Y \cap U_2$ for some open subset $U_2$ of $X$. Then $U = A \cap (Y \cap U_2) = A \cap U_2$, which implies that $U \in \mathscr{T}_2$. 
 
-Let $B' \in \mathscr{B}'$. Then $B' = A \cap B'_1$ for some basis element $B'_1$ of $X$. Note that $B' \subset A$. Then we have $B' = B' \cap Y = A \cap (Y \cap B'_1)$. Since $Y \cap B'_1$ is a basis element of $Y$, it follows that $B' \in \mathscr{B}.$ Thus, $\mathscr{B} = \mathscr{B}'$. $\blacksquare$
+Let $V \in \mathscr{T}_2$. Then $V = A \cap V_1$ for some open subset $V_1$ of $X$. Note that $V \subset A \subset Y$. Then we have $V = V \cap Y = A \cap (Y \cap V_1)$. Since $Y \cap V_1$ is a open subset of $Y$, it follows that $V \in \mathscr{T}_1$. Thus, $\mathscr{T}_1 = \mathscr{T}_2$. $\blacksquare$
