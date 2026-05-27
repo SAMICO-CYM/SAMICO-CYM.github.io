@@ -35,8 +35,7 @@
               "title": "2026-04-02-Subspace-Topology"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -195,10 +194,10 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "00ed609688bbd658",
+  "active": "3dde05832970c48a",
   "lastOpenFiles": [
-    "_posts/Topology/2026-05-27-Connected-Space.md",
     "_posts/Topology/2026-04-02-Subspace-Topology.md",
+    "_posts/Topology/2026-05-27-Connected-Space.md",
     "_site/posts/Connected-Space/index.html",
     "_site/posts/Connected-Space",
     "_posts/Fourier Series/2026-05-27-Convergence-Theorem.md",

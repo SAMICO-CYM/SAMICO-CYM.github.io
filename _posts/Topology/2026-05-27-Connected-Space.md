@@ -70,3 +70,57 @@ Let $\\{ Y_\alpha \\}$ be a collection of connected subspaces $Y_\alpha$ of $X$ 
 $$Y:= \bigcup Y_\alpha$$
 
 is not connected. Then $Y$ has a separation $(A, B)$. [Since each $Y_\alpha$ is also a subspace of $Y$,](<{% post_url Topology/2026-04-02-Subspace-Topology %}#theorem-4>) by Lemma 2, each $Y_\alpha$ lies entirely within $A$ or $B$. 
+
+Since $\bigcap Y_\alpha \neq \emptyset$, $\exists p \in \bigcap Y_\alpha$. Then $p$ is in only one of $A$ or $B$. WLOG, we let $p \in A$. Then each $Y_\alpha$ must lie entirely in $A$, because each $Y_\alpha$ contains $p$. It follows that $B = \emptyset$, which is a contradiction. Thus, $Y$ is connected. $\blacksquare$
+
+---
+## Theorem 2
+Let $A$ be a connected subspace of $X$. If $A \subset B \subset \overline{A}$, then $B$ is also connected. 
+
+### Proof
+Suppose that $B$ is not connected. That is, $B$ has a separation $(C, D)$. It is easily verified that $(A \cap C, A \cap D)$ is a pair of disjoint nonempty open subsets of $A$ whose union is $A$, which implies that $A$ is not connected. $\bigotimes$ Thus, $B$ is connected. $\blacksquare$
+
+[Another proof]
+
+By Lemma 2, $A$ lies entirely within $C$ or $D$; suppose that $A \subset C$. Then $\overline{A} \subset \overline{C}$. Since $\overline{C} \cap D = \emptyset$ by Lemma 1, we have 
+
+$$B \cap D \subset \overline{A} \cap D \subset \overline{C} \cap D = \emptyset,$$
+
+so $B \cap D = \emptyset. \bigotimes$ Thus, $B$ is connected. $\blacksquare$ 
+
+---
+## Theorem 3
+The image of a connected space under a continuous map is connected.
+
+한마디로 요약해서, 연속함수는 연결성을 보존한다.
+### Proof
+Let $f: X \to Y$ be a continuous map, and let $A$ be a connected subspace of $X$. Suppose that $f(A)$ is not connected. Then $f(A)$ has a separation $(C, D).$ 
+
+[Let $g: A \to f(A)$ be the function restricting the domain and range of $f$. Then $g$ is continuous.](<{% post_url Topology/2026-04-29-Continuous-Functions %}#theorem-3>) Since $C$ and $D$ are open subsets of $f(A)$, $g^{-1}(C)$ and $g^{-1}(D)$ are open in $A$. Since $g^{-1}(C \cap D) = g^{-1}(C) \cap g^{-1}(D)$ and $C \cap D = \emptyset$, $g^{-1}(C)$ and $g^{-1}(D)$ are disjoint. Since $g^{-1}(C \cup D) = g^{-1}(C) \cup g^{-1}(D)$ and $C \cup D = f(A)$, $g^{-1}(C) \cup g^{-1}(D) = A$. Since $g$ is surjective, $g^{-1}(C)$ and $g^{-1}(D)$ is nonempty. Thus, $(g^{-1}(C), g^{-1}(D))$ is a separation of $A$, which means that $A$ is not connected. $\bigotimes$ Thus, $f(A)$ is connected. $\blacksquare$
+
+---
+## Theorem 4
+A finite cartesian product of connected spaces is connected.
+
+### Proof
+Let $\\{ A_i \\}_{i=1}^n$ be a collection of connected spaces. We use the induction on $n$.
+
+First, we prove the base case $n=2$. Fix $a \in A_1$. Note that $\\{ a \\} \times A_2 \cong A_2$, so that $\\{ a \\} \times A_2$ is connected. Similarly, for each $y \in A_2$, $A_1 \times \\{ y \\} \cong A_2$, so that $A_1 \times \\{ y \\}$ is connected. 
+
+By Theorem 1, $T_y := (\\{ a \\} \times A_2) \cup (A_1 \times \\{ y \\})$ is connected, for each $y \in A_2$. Then
+
+$$\bigcup_{y \in A_2} T_y$$
+
+is connected by Theorem 1. Since 
+
+$$\bigcup_{y \in A_2} T_y = A_1 \times A_2,$$
+
+we conclude that $A_1 \times A_2$ is connected.  
+
+Suppose that $\prod_{i=1}^{k} A_i$ is connected for some $2 < k < n$. Since 
+
+$$\left(\prod_{i=1}^{k} A_i \right) \times A_{k+1} \cong \prod_{i=1}^{k+1}A_i$$
+
+and each $\prod_{i=1}^{k} A_i$ and $A_{k+1}$ is connected, by the base case, $\prod_{i=1}^{k+1}A_i$ is also connected. $\blacksquare$
+
+---

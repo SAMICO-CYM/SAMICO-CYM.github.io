@@ -84,4 +84,4 @@ Let $\mathscr{T}_1$ and $\mathscr{T}_2$ be topology $A$ inherits as a subspace o
 
 Let $U \in \mathscr{T}_1$. Then $U = A \cap U_1$ for some open subset $U_1$ of $Y$. Note that $U_1 = Y \cap U_2$ for some open subset $U_2$ of $X$. Then $U = A \cap (Y \cap U_2) = A \cap U_2$, which implies that $U \in \mathscr{T}_2$. 
 
-Let $V \in \mathscr{T}_2$. Then $V = A \cap V_1$ for some open subset $V_1$ of $X$. Note that $V \subset A \subset Y$. Then we have $V = V \cap Y = A \cap (Y \cap V_1)$. Since $Y \cap V_1$ is a open subset of $Y$, it follows that $V \in \mathscr{T}_1$. Thus, $\mathscr{T}_1 = \mathscr{T}_2$. $\blacksquare$
+Let $V \in \mathscr{T}_2$. Then $V = A \cap V_1$ for some open subset $V_1$ of $X$. Note that $V \subset A \subset Y$. Then we have $V = V \cap Y = A \cap (Y \cap V_1)$. Since $Y \cap V_1$ is an open subset of $Y$, it follows that $V \in \mathscr{T}_1$. Thus, $\mathscr{T}_1 = \mathscr{T}_2$. $\blacksquare$
