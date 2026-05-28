@@ -6,7 +6,7 @@ tags: []
 math: true
 ---
 
-## Morera's Theorem
+## Morera Theorem
 Let $f$ be continuous on a domain $D$. If 
 
 $$\int_C f(z) \, dz = 0$$

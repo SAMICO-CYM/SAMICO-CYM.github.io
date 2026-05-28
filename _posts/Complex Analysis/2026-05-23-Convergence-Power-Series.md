@@ -223,7 +223,7 @@ By Theorem 4, we have
 
 $$\int_C S(z) \, dz = 0.$$
 
-By [Morera's Theorem](<{% post_url Complex Analysis/2026-05-16-Morera-Theorem %}#morera's-theorem>), we conclude that $S$ is analytic throughout the circle of convergence of the series. $\blacksquare$
+By [Morera's Theorem](<{% post_url Complex Analysis/2026-05-16-Morera-Theorem %}#morera-theorem>), we conclude that $S$ is analytic throughout the circle of convergence of the series. $\blacksquare$
 
 ---
 ## Theorem 5
