@@ -32,7 +32,7 @@ $$B := A \cap \\{ (x, y) \in \mathbb{R} \times \mathbb{R} \mid x^2 + (y- 2)^2 \l
 Then $q(B) = [0, 1)$, which is not open in $\mathbb{R}$.$\big]$
 
 ---
-## Theorem
+## Theorem 1
 Let $X$ be a topological space and let $A$ be a set. Let $p: X \to A$ be a surjective map. Then the collection 
 
 $$\mathscr{T}_p = \{  U \subset A \mid p^{-1}(U) \text{ is open in } X \}$$
@@ -65,6 +65,34 @@ Hence $\mathscr{T}_p$ forms a topology on $A$. $\blacksquare$
 ---
 ## Definition 2
 Let $X$ be a topological space, and let $\sim$ be an equivalence relation of $X$. Let $p: X \to X / \sim$ be the canonical projection, that is, $p(x) = [x], \forall x \in X$, where $[x]$ is the equivalence class of $x$. Then the topological space $(X/\sim, \mathscr{T}_p)$ is called a ***quotient space*** of $X$. 
+
+---
+## Theorem 2
+Let $p: X \to Y$ be a quotient map, and let $g: X \to Z$ be a map that is constant on $p^{-1}( \\{ y \\})$ for each $y \in Y$. Then followings hold:
+
+**(i)** There exists a map $f: Y \to Z$ such that $f \circ p = g.$
+
+**(ii)** $f$ is continuous $\iff$ $g$ is continuous.
+
+**(iii)** $f$ is a quotient map $\iff$ $g$ is a quotient map.
+
+위와 같이 주어진 함수 $p$와 $g$를 가지고 $Y$에서 $Z$로 가는 함수 $f$를 자연스럽게 만들 수 있는데, 그러기 위해서는 $g$에 붙은 조건이 반드시 필요하다. 함수를 만들기 위해서는 $Y$의 모든 원소들이 $Z$로 유일하게 매핑되어야 하는데, 우리는 $p$에 의한 $y$의 preimage에 속하는 원소들이 $g$에 의해서 갖는 $Z$에서의 값을 $f$로 주려고 한다. 그런데 일반적으로 $y$의 preimage는 여러 원소를 가질 수 있고, 이 각각의 원소들이 $g$에 의해서 서로 다른 값들로 매핑된다고 하면 $f$의 값으로 뭘 주어야 할지 경우의 수가 생긴다. 다르게 말하면 자연스럽게 $f$를 정의할 수 없다는 뜻이므로, 이를 방지하고자 각 preimage에서는 $g$가 오직 하나의 값만을 가진다고, 즉 상수함수라고 가정하는 것이다. 
+
+### Proof
+**(i)** We define a map $f: Y \to Z$ by $f(y) = g(x)$ for some $x \in p^{-1}(\\{ y\\})$, for each $y \in Y.$ 
+
+To see the well-definedness of $f$, let $y_1, y_2 \in Y.$ Suppose that $y_1 = y_2.$ Since $p$ is a quotient map, we can take some elements $x_1 \in p^{-1}(\\{ y_1 \\})$ and $x_2 \in p^{-1}(\\{ y_2 \\}).$ Since $g$ has constant values on $p^{-1}( \\{ y_1 \\})$ and $p^{-1}( \\{ y_2 \\})$, respectively, we have that $g(x) = g(x_1), \forall x \in p^{-1}( \\{ y_1 \\})$ and $g(x) = g(x_2), \forall x \in p^{-1}( \\{ y_2 \\}).$ Since $y_1 = y_2$, $g(x_1) = g(x_2)$, so $f(y_1) = f(y_2).$ Thus, $f$ is well-defined.
+
+Let $x \in X.$ Then $x \in p^{-1}(\\{y\\})$ for some $y \in Y$, and we have 
+
+$$\begin{align*}
+(f \circ p)(x) &= f(p(x)) \\
+&= f(y) \\
+&= g(x).
+\end{align*}$$
+
+Thus, $f \circ p = g.$ 
+
 
 ---
 ## Example
