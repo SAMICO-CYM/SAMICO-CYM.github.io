@@ -17,11 +17,13 @@ $$U \text{ is open in } Y \iff p^{-1}(U) \text{ is open in } X.$$
 ## Remark
 **(i)** Every quotient map is continuous.
 
-**(ii)** An equivalent condition is to require that 
+**(ii)** Every homeomorphism is a quotient map. However, the converse does not hold. That is, there is a quotient map that is not a homeomorphism.
+
+**(iii)** An equivalent condition is to require that 
 
 $$C \text{ is closed in } Y \iff p^{-1}(C) \text{ is closed in } X.$$
 
-**(iii)** Every surjective, continuous, open (or closed) map is a quotient map. However, the converse does not hold. In particular, there is a quotient map that is not an open map.
+**(iv)** Every surjective, continuous, open (or closed) map is a quotient map. However, the converse does not hold. In particular, there is a quotient map that is not an open map.
 
 $\big[(\because)$ We consider $\pi_1: \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ and $A = \\{ (x, y) \in \mathbb{R} \times \mathbb{R} \mid x \ge 0 \text{ or } y = 0 \\}.$ Then $q := \pi_1 \vert_A : A \to \mathbb{R}$ is a quotient map, but not open. 
 
@@ -127,6 +129,60 @@ Suppose that $g$ is a quotient map.
 To verify that $f$ is a quotient map, let $V$ be an open subset of $Z$. Since $g$ is a quotient map, $g^{-1}(V)$ is open in $X$. Since $g^{-1}(V) = p^{-1}(f^{-1}(V))$ and $p$ is a quotient map, $f^{-1}(V)$ is open in $Y$.
 
 Conversely, for $U \subset Z$, we suppose that $f^{-1}(U)$ is open in $Y.$ Then $g^{-1}(U) = p^{-1}(f^{-1}(U))$ is open in $X$, which means that $U$ is open in $Z$. Thus, $f$ is a quotient map. $\blacksquare$
+
+---
+## Corollary
+Let $g: X \to Z$ be a surjective continuous map. Let 
+
+$$X/\sim := \{ g^{-1}(\{z\}) \mid z \in Z \}.$$
+
+Then $X/\sim$ is a partition of $X$. Let $\sim$ be the equivalence relation on $X$ induced by the partition $X/\sim$, and let $p: X \to X/\sim$ be the canonical projection. We assign $X/\sim$ the quotient topology. Then followings hold:
+
+**(i)** There exists a bijective continuous map $f: X/\sim \to Z$ such that $f \circ p = g.$
+
+**(ii)** $f$ is a homeomorphism $\iff$ $g$ is a quotient map.
+
+**(iii)** If $Z$ is Hausdorff, then $X/\sim$ is also Hausdorff.
+
+### Proof
+First, we will show that $X/\sim$ is a partition of $X$. Since $g$ is surjective, each $g^{-1}(\\{z\\})$ is nonempty. 
+
+Since each $g^{-1}(\\{z\\}) \subset X,$ we have 
+
+$$\bigcup_{z \in Z} g^{-1}(\{z\}) \subset X.$$
+
+Let $x \in X$. Then $x \in g^{-1}(\\{z\\})$ for some $z \in Z$, which implies that 
+
+$$X \subset \bigcup_{z \in Z} g^{-1}(\{z\}).$$
+
+Thus, $X/\sim$ covers $X$. 
+
+Let $g^{-1}(\\{z_1\\}), g^{-1}(\\{z_2\\}) \in X/\sim$ with $g^{-1}(\\{z_1\\}) \neq g^{-1}(\\{z_2\\}).$ If $x \in g^{-1}(\\{z_1\\}) \cap g^{-1}(\\{z_2\\}),$ then $z_1 = g(x) = z_2$, which means that $g^{-1}(\\{z_1\\}) = g^{-1}(\\{z_2\\}).$ Thus, we must obtain $g^{-1}(\\{z_1\\}) \cap g^{-1}(\\{z_2\\}) = \emptyset.$ Hence, $X/\sim$ is a partition of $X.$ 
+
+**(i)** Let $x \in X.$ Then $x \in g^{-1}(\\{ z \\})$ for some $z \in Z.$ Then $p(x) = g^{-1}(\\{z\\})$, so $p^{-1}(\\{ g^{-1}(\\{z\\}) \\}) = g^{-1}(\\{z\\}).$ Thus, $g$ has the constant value $z$ on each set $p^{-1}(\\{ g^{-1}(\\{z\\}) \\}) = g^{-1}(\\{z\\}).$ By Theorem 2 (i), there exists a map $f: X/\sim \to Z$ such that $f \circ p = g.$ Since $g$ is continuous, by Theorem 2 (ii), $f$ is also continuous. 
+
+Suppose that $f(g^{-1}(\\{z_1\\})) = f(g^{-1}(\\{z_2\\}))$ for some $z_1, z_2 \in Z$. Then $p(x_1) = g^{-1}(\\{z_1\\})$ and $p(x_2) = g^{-1}(\\{z_2\\})$ for some $x_1, x_2 \in X,$ which implies that $x_1 \in g^{-1}(\\{z_1\\})$ and $x_2 \in g^{-1}(\\{z_2\\}).$ Then $g(x_1) = z_1$ and $g(x_2) = z_2$. Since $f \circ p = g$, we have that 
+
+$$z_1 = g(x_1) = f(p(x_1)) = f(p(x_2)) = g(x_2) = z_2,$$
+
+which implies that $g^{-1}(\\{z_1\\}) = g^{-1}(\\{z_2\\}).$ Thus, $f$ is injective.
+
+Let $z \in Z.$ Since $g$ is surjective, $z = g(x)$ for some $x \in X$. Then $x \in g^{-1}(\\{z\\}),$ so that $p(x) = g^{-1}(\\{z\\}).$ Then we have $f(p(x)) = g(x) = z$, which means that $f$ is surjective. Hence, $f$ is bijective. 
+
+**(ii)** 
+
+$(\Longrightarrow)$
+
+Suppose that $f$ is a homeomorphism. Since $g$ is surjective and continuous, we need to show that if $g^{-1}(V)$ is open in $X$ for $V \subset Z,$ then $V$ is open in $Z$.
+
+To verify this, for $V \subset Z$, we suppose that $g^{-1}(V)$ is open in $X$. Since $g^{-1}(V) = p^{-1}(f^{-1}(V))$ and $p$ is a quotient map, $f^{-1}(V)$ is open in $X/\sim.$ Since $f$ is a homeomorphism, $V = f(f^{-1}(V))$ is open in $Z.$ Thus, $g$ is a quotient map.
+
+$(\Longleftarrow)$
+
+Suppose that $g$ is a quotient map. By Theorem 2 (iii), $f$ is also a quotient map. We will show that if $U$ is open in $X/\sim$, then $f(U)$ is open in $Z$. If it holds, then the inverse function $f^{-1}: Z \to X/\sim$ of $f$ is continuous, so that $f$ is a homeomorphism.
+
+To see this, let $U$ be an open set of $X/\sim.$ Since $U = f^{-1}(f(U))$ is open in $X/\sim$ and $f$ is a quotient map, $f(U)$ is open in $Z$. It completes the proof. $\blacksquare$
+
 
 ---
 ## Example
