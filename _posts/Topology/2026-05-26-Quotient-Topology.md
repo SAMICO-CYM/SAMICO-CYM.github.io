@@ -144,6 +144,10 @@ Then $X/\sim$ is a partition of $X$. Let $\sim$ be the equivalence relation on $
 
 **(iii)** If $Z$ is Hausdorff, then $X/\sim$ is also Hausdorff.
 
+Theorem 2는 사실상 이 Corollary를 보이기 위한 보조정리에 불과하다고 봐도 무방하다. 
+
+$X$를 우리가 잘 알고 있는 위상 공간(예컨대 사각형 박스 $[0, 1]^2$)으로 가져오고, $Z$는 $X$를 적당히 잘 "주물러서" 만들 수 있는 공간(예컨대 구 $S^2$)이라고 하자. 이때 $X$에서 $Z$로 가는 surjective continuous function $g$를 찾아낼 수만 있다면, $g$를 가지고 $X$에 quotient topology를 줄 수 있고, 이 quotient topology와 $Z$는 위상동형이라는 게 정리의 결론이다. 
+
 ### Proof
 First, we will show that $X/\sim$ is a partition of $X$. Since $g$ is surjective, each $g^{-1}(\\{z\\})$ is nonempty. 
 
