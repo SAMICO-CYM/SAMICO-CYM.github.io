@@ -67,6 +67,17 @@ Hence $\mathscr{T}_p$ forms a topology on $A$. $\blacksquare$
 Let $X$ be a topological space, and let $\sim$ be an equivalence relation of $X$. Let $p: X \to X / \sim$ be the canonical projection, that is, $p(x) = [x], \forall x \in X$, where $[x]$ is the equivalence class of $x$. Then the topological space $(X/\sim, \mathscr{T}_p)$ is called a ***quotient space*** of $X$. 
 
 ---
+## Lemma 
+Let $p: X \to Y$ and $q: Y \to Z$ be quotient maps. Then the composition map $q \circ p : X \to Z$ is also a quotient map.
+
+### Proof
+Since $p$ and $q$ are quotient maps, so are surjective, the composition $q \circ p$ is also surjective.
+
+Let $V$ be an open subset of $Z.$ Then $q^{-1}(V)$ is open in $Y$, and so $p^{-1}(q^{-1}(V))$ is open in $X.$ Since $p^{-1}(q^{-1}(V)) = (q \circ p)^{-1}(V)$ and is open in $X$, the one direction to be a quotient map is satisfied.
+
+For $U \subset Z$, suppose that $(q \circ p)^{-1}(U)$ is open in $X$. Since $(q \circ p)^{-1}(U) = p^{-1}(q^{-1}(U))$ and is open in $X,$ $q^{-1}(U)$ is open in $Y.$ It follows that $U$ is open in $Z$. Thus, the composition $q \circ p$ is a quotient map. $\blacksquare$
+
+---
 ## Theorem 2
 Let $p: X \to Y$ be a quotient map, and let $g: X \to Z$ be a map that is constant on $p^{-1}( \\{ y \\})$ for each $y \in Y$. Then followings hold:
 
@@ -93,6 +104,29 @@ $$\begin{align*}
 
 Thus, $f \circ p = g.$ 
 
+**(ii)** 
+
+$(\Longrightarrow)$
+
+Suppose that $f$ is continuous. Since $p$ is a quotient map, so is continuous and $f \circ p = g$, we conclude that $g$ is also continuous.
+
+$(\Longleftarrow)$
+
+Suppose that $g$ is continuous. Let $V$ be an open subset of $Z$. Since $g$ is continuous, $g^{-1}(V)$ is open in $X$. Note that $g^{-1}(V) = p^{-1}(f^{-1}(V)).$ Since $p$ is a quotient map and $p^{-1}(f^{-1}(V)) = g^{-1}(V)$ is open in $X$, $f^{-1}(V)$ is open in $Y$, which means that $f$ is continuous. 
+
+**(iii)** 
+
+$(\Longrightarrow)$
+
+Suppose that $f$ is a quotient map. By preceeding lemma, $g = f \circ p$ is a quotient map.
+
+$(\Longleftarrow)$
+
+Suppose that $g$ is a quotient map. 
+
+To verify that $f$ is a quotient map, let $V$ be an open subset of $Z$. Since $g$ is a quotient map, $g^{-1}(V)$ is open in $X$. Since $g^{-1}(V) = p^{-1}(f^{-1}(V))$ and $p$ is a quotient map, $f^{-1}(V)$ is open in $Y$.
+
+Conversely, for $U \subset Z$, we suppose that $f^{-1}(U)$ is open in $Y.$ Then $g^{-1}(U) = p^{-1}(f^{-1}(U))$ is open in $X$, which means that $U$ is open in $Z$. Thus, $f$ is a quotient map. $\blacksquare$
 
 ---
 ## Example
