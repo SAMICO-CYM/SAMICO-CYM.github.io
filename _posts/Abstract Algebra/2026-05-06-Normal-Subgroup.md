@@ -103,7 +103,6 @@ $$\phi(gx'g^{-1}) = \phi(g)\phi(x')\phi(g^{-1}) \in N'.$$
 Thus, $x = gx'g^{-1} \in \phi^{-1}(N')$, and therefore $g\phi^{-1}(N')g^{-1} \subset \phi^{-1}(N').$ Hence, $\phi^{-1}(N') \lhd G. \blacksquare$
 
 ---
-
 ## Remark
 A union of normal subgroups of a group need NOT be a normal subgroup.
 
