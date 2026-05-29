@@ -68,6 +68,42 @@ We will show that $gHg^{-1} \subset H, \forall g \in G,$ which is equivalent to 
 Fix $g \in G$, and let $x \in gHg^{-1}$. Then $x = gyg^{-1}$ for some $y \in H$. Since $y \in H_i, \forall i \in I$, $gyg^{-1} \in gH_ig^{-1} \subset H_i, \forall i \in I$ by Theorem 1, which means that $gyg^{-1} \in H$. Thus, we have $x = gyg^{-1} \in H$, and therefore $gHg^{-1} \subset H$. By Theorem 1, $H \lhd G$. $\blacksquare$
 
 ---
+## Theorem 3
+Let $\phi: G \to G'$ be a group homomorphism. 
+
+**(i)** If $N \lhd G$, then $\phi(N) \lhd \phi(G)$. 
+
+**(ii)** If $N' \lhd G'$, then $\phi^{-1}(N') \lhd G.$
+
+### Proof
+**(i)** We will show that $g'\phi(N)g'^{-1} \subset \phi(N), \forall g' \in \phi(G)$. 
+
+Fix $g' \in \phi(G)$. Then $g' = \phi(g)$ for some $g \in G$. 
+
+Let $y \in g'\phi(N)g'^{-1}$. Then $y = g'hg'^{-1}$ for some $h \in \phi(N)$, and $h = \phi(k)$ for some $k \in N$. Since $N \lhd G$, $gNg \subset N$ which implies that $gkg^{-1} \in N$. Then we have 
+
+$$\begin{align*}
+    y &= g'hg'^{-1} \\
+    &= \phi(g) \phi(k) \phi(g)^{-1} \\
+    &= \phi(g)\phi(k) \phi(g^{-1}) \\
+    &= \phi(gkg^{-1}) \\
+    & \subset \phi(N).
+\end{align*}$$
+
+Thus, $y \in \phi(N)$, and therefore $g'\phi(N)g'^{-1} \subset \phi(N)$. Hence, $\phi(N) \lhd \phi(G)$.
+
+**(ii)** We will show that $g\phi^{-1}(N')g^{-1} \subset \phi^{-1}(N'), \forall g \in G.$ 
+
+Fix $g \in G.$ Then $\phi(g), \phi(g^{-1}) \in \phi(G) \subset G'.$ 
+
+Let $x \in g\phi^{-1}(N')g^{-1}$. Then $x = gx'g^{-1}$ for some $x' \in \phi^{-1}(N')$, so that $\phi(x') \in N'$. Since $N' \lhd G'$, $\phi(g) N' \phi(g)^{-1} = \phi(g) N' \phi(g^{-1}) \subset N'$, which implies that 
+
+$$\phi(gx'g^{-1}) = \phi(g)\phi(x')\phi(g^{-1}) \in N'.$$
+
+Thus, $x = gx'g^{-1} \in \phi^{-1}(N')$, and therefore $g\phi^{-1}(N')g^{-1} \subset \phi^{-1}(N').$ Hence, $\phi^{-1}(N') \lhd G. \blacksquare$
+
+---
+
 ## Remark
 A union of normal subgroups of a group need NOT be a normal subgroup.
 
