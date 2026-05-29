@@ -1,5 +1,5 @@
 --- 
-title: Minimum Spanning Tree
+title: Minimum Weighted Spanning Tree
 date: 2026-05-29
 categories: [Mathematics, Graph Theory]
 tags: []
