@@ -20,8 +20,7 @@ Let $G$ be a connected graph, and let $T$ be an "empty" connected subgraph of $G
 For $i = 1, 2, ..., n-1$, 
 
 **(i)** find a vertex $t \in V(T)$ and $v_i \in R$ such that $t \sim v_i$. (There is always some edge from $T$ to $R$ as $G$ is connected.)
-	
+
 **(ii)** Remove $v_i$ from $R$ and add a vertex $v_i$ and an edge $\\{ t, v_i \\}$ to $T$. 
 
 The algorithm must terminate in the finite number of steps, because $R$ is finite. Note that $T$ is always a tree, and when the algorithm is finished, it is spanning.
-
