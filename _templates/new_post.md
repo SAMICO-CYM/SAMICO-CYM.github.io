@@ -1,6 +1,6 @@
 --- 
 title: 
-date: 2026-03-
+date: 2026-06-
 categories: [Mathematics, ]
 tags: []
 math: true

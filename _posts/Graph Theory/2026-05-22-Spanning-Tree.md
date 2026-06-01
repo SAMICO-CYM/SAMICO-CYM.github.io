@@ -23,4 +23,4 @@ For $i = 1, 2, ..., n-1$,
 
 **(ii)** Remove $v_i$ from $R$ and add a vertex $v_i$ and an edge $\\{ t, v_i \\}$ to $T$. 
 
-The algorithm must terminate in the finite number of steps, because $R$ is finite. Note that $T$ is always a tree, and when the algorithm is finished, it is spanning.
+The algorithm must terminate in the finite number of steps, because $R$ is finite. Note that $T$ is always a tree, and when the algorithm is finished, it is spanning. 

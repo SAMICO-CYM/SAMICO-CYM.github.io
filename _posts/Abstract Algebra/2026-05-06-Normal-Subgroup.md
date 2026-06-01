@@ -73,7 +73,7 @@ Let $\phi: G \to G'$ be a group homomorphism.
 
 **(i)** If $N \lhd G$, then $\phi(N) \lhd \phi(G)$. 
 
-**(ii)** If $N' \lhd G'$, then $\phi^{-1}(N') \lhd G.$
+**(ii)** If $N' \lhd \phi(G)$, then $\phi^{-1}(N') \lhd G.$
 
 ### Proof
 **(i)** We will show that $g'\phi(N)g'^{-1} \subset \phi(N), \forall g' \in \phi(G)$. 
@@ -96,7 +96,7 @@ Thus, $y \in \phi(N)$, and therefore $g'\phi(N)g'^{-1} \subset \phi(N)$. Hence, 
 
 Fix $g \in G.$ Then $\phi(g), \phi(g^{-1}) \in \phi(G) \subset G'.$ 
 
-Let $x \in g\phi^{-1}(N')g^{-1}$. Then $x = gx'g^{-1}$ for some $x' \in \phi^{-1}(N')$, so that $\phi(x') \in N'$. Since $N' \lhd G'$, $\phi(g) N' \phi(g)^{-1} = \phi(g) N' \phi(g^{-1}) \subset N'$, which implies that 
+Let $x \in g\phi^{-1}(N')g^{-1}$. Then $x = gx'g^{-1}$ for some $x' \in \phi^{-1}(N')$, so that $\phi(x') \in N'$. Since $N' \lhd \phi(G)$, $\phi(g) N' \phi(g)^{-1} = \phi(g) N' \phi(g^{-1}) \subset N'$, which implies that 
 
 $$\phi(gx'g^{-1}) = \phi(g)\phi(x')\phi(g^{-1}) \in N'.$$
 
@@ -104,6 +104,12 @@ Thus, $x = gx'g^{-1} \in \phi^{-1}(N')$, and therefore $g\phi^{-1}(N')g^{-1} \su
 
 ---
 ## Remark
-A union of normal subgroups of a group need NOT be a normal subgroup.
+**(i)** In the above theorem, $\phi(N)$ need NOT to be normal in $G'$ if $N \lhd G.$
 
-$(\because)$ Consider the Klein-$4$ group $V = \\{e, a, b, c \\}$. Since $V$ is abelian, $\\{ e, a \\}$ and $\\{ e, b \\}$ are normal subgroups of $V$. But $\\{ e, a\\} \cup \\{ e, b \\} = \\{ e, a, b \\}$ is not closed under the operation of $V$ because $ab = c$. Thus, $\\{ e, a\\} \cup \\{ e, b \\} = \\{ e, a, b \\}$ is not a subgroup of $G$, so is not a normal subgroup of $G$.
+$\big[(\because)$ Consider a map $\phi: \mathbb{Z}_2 \to S_3$ given by $\phi(0) = \rho_0$ and $\phi(1) = \mu_1$. Note that $\mathbb{Z}_2 \le \mathbb{Z}_2.$ However, $\phi(\mathbb{Z}_2) = \\{ \rho_0, \mu_1 \\} \ntriangleleft S_3,$ because 
+
+$$\rho_1 \phi(\mathbb{Z}_2) = \{ \rho_1, \mu_3 \} \neq \{ \rho_1, \mu_2 \} = \phi(\mathbb{Z}_2) \rho_1. \big]$$
+
+**(ii)** A union of normal subgroups of a group need NOT be a normal subgroup.
+
+$\big[(\because)$ Consider the Klein-$4$ group $V = \\{e, a, b, c \\}$. Since $V$ is abelian, $\\{ e, a \\}$ and $\\{ e, b \\}$ are normal subgroups of $V$. But $\\{ e, a\\} \cup \\{ e, b \\} = \\{ e, a, b \\}$ is not closed under the operation of $V$ because $ab = c$. Thus, $\\{ e, a\\} \cup \\{ e, b \\} = \\{ e, a, b \\}$ is not a subgroup of $G$, so is not a normal subgroup of $G$. $\big]$
