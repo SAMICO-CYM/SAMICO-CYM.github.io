@@ -101,4 +101,3 @@ Since $\gamma(m) = M, \forall m \in M,$ $\gamma(M) = \\{ M \\}.$ These follow th
 $$\\{ M \\} = \gamma(M) \subsetneq \gamma(N) \subsetneq \gamma(G) = G/M.$$
 
 Since $N \lhd G,$ $\gamma(N) \lhd \gamma(G) = G/M.$ It contradicts to the fact that $G/M$ is simple. Hence, $M$ is a maximal normal subgroup of $G$. $\blacksquare$
-

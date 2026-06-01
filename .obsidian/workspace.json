@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
+                "file": "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-01-Simple-Group"
+              "title": "2026-06-01-Commutator-Subgroup"
             }
           }
         ]
@@ -182,6 +182,9 @@
   },
   "active": "338f8c0a6cfd6051",
   "lastOpenFiles": [
+    "_posts/Abstract Algebra/2026-06-01-Center.md",
+    "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
+    "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
     "_posts/Graph Theory/2026-06-01-Planer-Graph.md",
     "_posts/Graph Theory/2026-06-01-Euler-Formula.md",
     "_site/posts/Euler-Formula/index.html",
@@ -194,7 +197,6 @@
     "assets/img/Pasted image 20260601151910.png",
     "_site/posts/Ku/index.html",
     "_site/posts/Ku",
-    "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
     "assets/img/Pasted image 20260601151544.png",
     "_site/assets/img/Pasted image 20260601151412.png",
     "assets/img/Pasted image 20260601151412.png",
@@ -202,8 +204,6 @@
     "_posts/Graph Theory/2026-04-10-Graph.md",
     "_site/posts/Planer-Graph/index.html",
     "_site/posts/Planer-Graph",
-    "_posts/Abstract Algebra/2026-06-01-Center.md",
-    "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
     "_site/posts/Commutator-Subgroup/index.html",
     "_site/posts/Commutator-Subgroup",
     "_site/posts/Center/index.html",
