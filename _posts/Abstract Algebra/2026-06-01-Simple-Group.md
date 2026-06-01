@@ -65,12 +65,20 @@ A ***maximal normal subgroup*** of a group $G$ is a normal subgroup $M$ of $G$ s
 
 ---
 ## Theorem 3
-$M$ is a maximal normal subgroup of $G$ $\iff$ $G/M$ is simple.
+Let $G$ be a group, and let $M \lhd G.$ Then $M$ is a maximal normal subgroup of $G$ $\iff$ $G/M$ is simple.
 
 ### Proof
 $(\Longrightarrow)$
 
+Suppose that $M$ is a maximal normal subgroup of $G.$ Consider the canonical epimorphism $\gamma: G \to G/M$ defined by $\gamma(g) = gM, \forall g \in G.$ 
 
+Let $N \lhd G/M.$ Since $\gamma$ is an epimorphism, $\gamma^{-1}(N) \lhd G.$ 
+
+Since $M$ is the identity of the factor group $G/M$, $M \in N$. 
+
+Note that $\gamma(m) = M, \forall m \in M,$ which means that $\gamma(M) = \\{ M \\}.$ It follows that $M \subset \\{ \gamma^{-1}(M) \\}.$ 
+
+증명, center, commutator exercise찾아서 정리.
 
 $(\Longleftarrow)$
 
