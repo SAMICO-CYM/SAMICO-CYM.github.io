@@ -70,15 +70,35 @@ Let $G$ be a group, and let $M \lhd G.$ Then $M$ is a maximal normal subgroup of
 ### Proof
 $(\Longrightarrow)$
 
-Suppose that $M$ is a maximal normal subgroup of $G.$ Consider the canonical epimorphism $\gamma: G \to G/M$ defined by $\gamma(g) = gM, \forall g \in G.$ 
+Suppose that $M$ is a maximal normal subgroup of $G.$ Let $\gamma: G \to G/M$ be the canonical epimorphism, that is, $\gamma(g) = gM, \forall g \in G.$ 
 
-Let $N \lhd G/M.$ Since $\gamma$ is an epimorphism, $\gamma^{-1}(N) \lhd G.$ 
+Let $\mathcal{N} \lhd G/M.$ Since $\gamma$ is an epimorphism, $\gamma^{-1}(\mathcal{N}) \lhd G.$ 
 
-Since $M$ is the identity of the factor group $G/M$, $M \in N$. 
+Let $m \in M.$ Then $\gamma(m) = M,$ which means that $m \in \gamma^{-1}(\\{M\\}).$ It follows that $M \subset \gamma^{-1}(\\{M\\}).$ 
 
-Note that $\gamma(m) = M, \forall m \in M,$ which means that $\gamma(M) = \\{ M \\}.$ It follows that $M \subset \\{ \gamma^{-1}(M) \\}.$ 
+Since $M$ is the identity of the factor group $G/M$, $M \in \mathcal{N}$. Then $\\{ M \\} \subset \mathcal{N},$ which implies that $\gamma^{-1}(\\{ M \\}) \subset \gamma^{-1}(\mathcal{N}).$
 
-증명, center, commutator exercise찾아서 정리.
+Then we have 
+
+$$M \subset \gamma^{-1}(\{M\}) \subset \gamma^{-1}(\mathcal{N}) \lhd G.$$
+
+Since $M$ is a maximal normal subgroup of $G$, $\gamma^{-1}(\mathcal{N}) = M$ or $\gamma^{-1}(\mathcal{N}) = G$, and therefore $\mathcal{N} = \gamma(M) = \\{ M \\}$ or $\mathcal{N} = \gamma(G) = G.$ Hence, $G/M$ is simple.
 
 $(\Longleftarrow)$
+
+Suppose that $G/M$ is simple. 
+
+We assume that $M$ is not a maximal normal subgroup of $G$, that is, there exists a normal subgroup $N$ of $G$ such that $M \lneq N \lneq G.$ 
+
+Let $\gamma: G \to G/M$ be the canonical epimorphism, that is, $\gamma(g) = gM, \forall g \in G.$ 
+
+Since $M \lneq N \lneq G,$ it follows that $\gamma(M) \subsetneq \gamma(N) \subsetneq \gamma(G) = G/M.$ 
+
+To verify this, we may suppose that $\gamma(M) = \gamma(N).$ Since $M \lneq N,$ there is some element $n \in N \setminus M.$ Then $\gamma(n) \in \gamma(N) = \gamma(M),$ so $\gamma(n) = \gamma(m)$ for some $m \in M.$ Then we have $nM = mM = M,$ which means that $n \in M. \bigotimes$ Thus, we have the strict inclusion $\gamma(M) \subsetneq \gamma(N)$, and similarly, $\gamma(N) \subsetneq \gamma(G).$ 
+
+Since $\gamma(m) = M, \forall m \in M,$ $\gamma(M) = \\{ M \\}.$ These follow that
+
+$$\\{ M \\} = \gamma(M) \subsetneq \gamma(N) \subsetneq \gamma(G) = G/M.$$
+
+Since $N \lhd G,$ $\gamma(N) \lhd \gamma(G) = G/M.$ It contradicts to the fact that $G/M$ is simple. Hence, $M$ is a maximal normal subgroup of $G$. $\blacksquare$
 
