@@ -213,9 +213,19 @@ Since $f^{-1}(V)= \bigcup_\alpha \left( f \vert U _ {\alpha} \right)^{-1}(V) \in
 
 ---
 ## Theorem 4
-Let $A, X$ and $Y$ be topological spaces. Let $f_1: A \to X$ and $f_2:A \to Y$ be functions. Then the function $f: A \to X \times Y$ defined by $f(a) = (f_1(a), f_2(a))$ is continuous $\iff$ the coordinate functions $f_1$ and $f_2$ of $f$ are continuous.
+Let $A, B, X$ and $Y$ be topological spaces.
+
+**(i)** Let $f_1: A \to X$ and $f_2:A \to Y$ be functions. Then the function $f: A \to X \times Y$ defined by $f(a) = (f_1(a), f_2(a))$ is continuous $\iff$ the coordinate functions $f_1$ and $f_2$ of $f$ are continuous.
+
+**(ii)** Let $f: A \to X$ and $g: B \to Y$ be continuous functions. Then the function $f \times g: A \times B \to X \times Y$ defined by 
+
+$$(f \times g)(a, b) = (f(a), g(b))$$
+
+is continuous.
 
 ### Proof
+**(i)**
+
 $(\Longrightarrow)$
 
 Suppose that $f$ is continuous. Note that the projection maps $\pi_1: X \times Y \to X$ and $\pi_2 : X \times Y \to Y$ are continuous.
@@ -252,22 +262,61 @@ a \in f^{-1}(U \times V) & \iff (f_1(a), f_2(a)) = f(a) \in U \times V \\
 
 Thus, $f^{-1}(U \times V) = f_1^{-1}(U) \cap f_2^{-1}(V)$.$\big]$
 
-Since $f_1$ and $f_2$ are continuous, $f_1^{-1}(U)$ and $f_2^{-1}(V)$ are open in $X$ and $Y$, respectively, which implies that $f^{-1}(U \times V) = f_1^{-1}(U) \cap f_2^{-1}(V)$ is open in $X \times Y$. Thus, $f$ is continuous. $\blacksquare$
+Since $f_1$ and $f_2$ are continuous, $f_1^{-1}(U)$ and $f_2^{-1}(V)$ are open in $X$ and $Y$, respectively, which implies that $f^{-1}(U \times V) = f_1^{-1}(U) \cap f_2^{-1}(V)$ is open in $X \times Y$. Thus, $f$ is continuous.
+
+**(ii)** Let $W$ be an open set of $B \times D$. Let $(x, y) \in (f \times g)^{-1}(W)$. Then $(f(x), g(y)) = (f \times g)(x, y) \in W$, which implies that $(f(x), g(y)) \in U \times V \subset W$ for some open sets $U$ and $V$ of $B$ and $D$, respectively. Then $f(x) \in U$ and $g(y) \in V$, which means that $x \in f^{-1}(U)$ and $y \in g^{-1}(V)$. Then $(x, y) \in f^{-1}(U) \times g^{-1}(V)$. Note that 
+
+$$f^{-1}(U) \times g^{-1}(V) = (f \times g)^{-1}(U \times V)$$
+
+because 
+
+$$\begin{align*}
+    (x, y) \in f^{-1}(U) \times g^{-1}(V) & \iff x \in f^{-1}(U) \wedge y \in g^{-1}(V) \\
+    & \iff f(x) \in U \wedge g(y) \in V \\
+    & \iff (f \times g)(x, y) = (f(x), g(y)) \in U \times V \\
+    & \iff (x, y) \in (f \times g)^{-1}(U \times V).
+\end{align*}$$
+
+Then we have 
+
+$$(x, y) \in f^{-1}(U) \times g^{-1}(V) = (f \times g)^{-1}(U \times V) \subset (f \times g)^{-1}(W).$$
+
+Since $f$ and $g$ are continuous, $f^{-1}(U)$ and $g^{-1}(V)$ are open in $A$ and $C$, respectively. Then $f^{-1}(U) \times g^{-1}(V)$ is a basis element of the product space $A \times C$, which means that $(f \times g)^{-1}(W)$ is open in $A \times C$. Thus, $f \times g$ is continuous. $\blacksquare$
 
 ---
 ## Theorem 5
-Let $f:X \to Y$ be a continuous function. Suppose that $Y$ is a $T_2$ space. Then the ***graph*** $G := \\{ (x, f(x)) \in X \times Y \\}$ of $f$ is closed in $X \times Y.$
+Let $f:X \to Y$ be a continuous function. Suppose that $Y$ is a $T_2$ space. Then the ***graph*** $G_f := \\{ (x, f(x)) \in X \times Y \\}$ of $f$ is closed in $X \times Y.$
 
-### Proof
-We will show that $X \times Y - G$ is open in $X \times Y.$ Let $(x, y) \in X \times Y - G.$ Since $(x, y) \notin G$, $y \neq f(x).$ Since $Y$ is $T_2,$ there exists open sets $U$ and $V$ of $Y$ such that $f(x) \in U, y \in V$ and $U \cap V = \emptyset.$ Then $x \in f^{-1}(U),$ and $f^{-1}(U)$ is open in $X$ because $f$ is continuous. 
+### Proof 1
+We will show that $X \times Y - G_f$ is open in $X \times Y.$ Let $(x, y) \in X \times Y - G_f.$ Since $(x, y) \notin G_f$, $y \neq f(x).$ Since $Y$ is $T_2,$ there exists open sets $U$ and $V$ of $Y$ such that $f(x) \in U, y \in V$ and $U \cap V = \emptyset.$ Then $x \in f^{-1}(U),$ and $f^{-1}(U)$ is open in $X$ because $f$ is continuous. Note that $f^{-1}(U) \times V$ is a basis element of $X \times Y.$ 
 
-We claim that $f^{-1}(U) \times V \subset X \times Y - G.$ To see this, let $(a, b) \in f^{-1}(U) \times V.$ Then $a \in f^{-1}(U),$ so $f(a) \in U$ and $b \in V.$ If $(a, b) \in G,$ then $b = f(a).$ Then $b \in U \cap V,$ which is a contradiction. Thus, $(a, b) \in X \times Y - G,$ and therefore $f^{-1}(U) \times V \subset X \times Y - G.$ 
+We claim that $f^{-1}(U) \times V \subset X \times Y - G_f.$ To see this, let $(a, b) \in f^{-1}(U) \times V.$ Then $a \in f^{-1}(U),$ so $f(a) \in U$ and $b \in V.$ If $(a, b) \in G_f,$ then $b = f(a).$ Then $b \in U \cap V,$ which is a contradiction. Thus, $(a, b) \in X \times Y - G_f,$ and therefore $f^{-1}(U) \times V \subset X \times Y - G_f.$ 
 
 Hence, we obtain 
 
-$$(x, y) \in f^{-1}(U) \times V \subset X \times Y - G,$$
+$$(x, y) \in f^{-1}(U) \times V \subset X \times Y - G_f,$$
 
-which implies that $X \times Y - G$ is open in $X \times Y$, and therefore $G$ is closed in $X \times Y.$ $\blacksquare$
+which implies that $X \times Y - G_f$ is open in $X \times Y$, and therefore $G_f$ is closed in $X \times Y.$ $\blacksquare$
+
+### Proof 2
+Define a map $g : X \times Y \to Y \times Y$ by 
+
+$$g(x, y) = (f(x), y), \forall (x, y) \in X \times Y.$$
+
+That is, $g= f \times \mathrm{id}_Y.$ Since $f$ and $\mathrm{id}_Y$ are continuous, $g$ is also continuous by Theorem 4 (ii). 
+
+Note that the diagonal $\Delta_Y = \\{ (y, y) \mid y \in Y \\}$ is closed in $Y \times Y$ because $Y$ is $T_2.$ Then $g^{-1}(\Delta_Y)$ is closed in $X \times Y$.
+
+Note that 
+
+$$\begin{align*}
+g^{-1}(\Delta_Y) &= \{ (x, y) \in X \times Y \mid (f(x), y) = g(x, y) \in \Delta_Y \} \\
+&= \{ (x, y) \in X \times Y \mid y = f(x) \} \\
+&= G_f.
+\end{align*}$$
+
+Thus, $G_f$ is closed in $X \times Y.$ $\blacksquare$
+
 
 
 <style>
