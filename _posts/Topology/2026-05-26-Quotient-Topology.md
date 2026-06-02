@@ -14,7 +14,7 @@ $$U \text{ is open in } Y \iff p^{-1}(U) \text{ is open in } X.$$
 [연속함수](<{% post_url Topology/2026-04-29-Continuous-Functions %}#definition>)가 $(\Longrightarrow)$ 방향에 대해서만 정의되는 반면, quotient map은 양방향 모두 성립하면서 surjective인 함수로 정의된다. 
 
 ---
-## Remark
+## Remark 1
 **(i)** Every quotient map is continuous.
 
 **(ii)** Every homeomorphism is a quotient map. However, the converse does not hold. That is, there is a quotient map that is not a homeomorphism.
@@ -25,7 +25,9 @@ $$C \text{ is closed in } Y \iff p^{-1}(C) \text{ is closed in } X.$$
 
 **(iv)** Every surjective, continuous, open (or closed) map is a quotient map. However, the converse does not hold. In particular, there is a quotient map that is not an open map.
 
-$\big[(\because)$ We consider $\pi_1: \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ and $A = \\{ (x, y) \in \mathbb{R} \times \mathbb{R} \mid x \ge 0 \text{ or } y = 0 \\}.$ Then $q := \pi_1 \vert_A : A \to \mathbb{R}$ is a quotient map, but not open. 
+$\big[(\because)$ We consider $\pi_1: \mathbb{R} \times \mathbb{R} \to \mathbb{R}$. Since $\pi_1$ is a surjective, continuous, and open map, it is a quotient map. 
+
+Let $A = \\{ (x, y) \in \mathbb{R} \times \mathbb{R} \mid x \ge 0 \text{ or } y = 0 \\}.$ Since $A$ is closed in $\mathbb{R}^2,$ the map $q := \pi_1 \vert_A : A \to \mathbb{R}$ is a quotient map. However, it is not an open map.
 
 To see this, consider 
 
@@ -67,6 +69,34 @@ Hence $\mathscr{T}_p$ forms a topology on $A$. $\blacksquare$
 ---
 ## Definition 2
 Let $X$ be a topological space, and let $\sim$ be an equivalence relation of $X$. Let $p: X \to X / \sim$ be the canonical projection, that is, $p(x) = [x], \forall x \in X$, where $[x]$ is the equivalence class of $x$. Then the topological space $(X/\sim, \mathscr{T}_p)$ is called a ***quotient space*** of $X$. 
+
+---
+## Remark 2
+With a quotient topology, subspaces, products of maps, and $T_2$ condition do not behave well.
+
+(i) If $p : X \to Y$ is a quotient map and $A$ is a subspace of $X$, then the map $q: A \to p(A)$ obtained by restricting $p$ need NOT be a quotient map.
+
+$\big[(\because)$ We consider $\pi_1: \mathbb{R} \times \mathbb{R} \to \mathbb{R}.$ Since $\pi_1$ is a surjective, continuous, and open map, it is a quotient map. 
+
+Let $C = \\{ (x, y) \in \mathbb{R}^2 \mid xy = 1 \\},$ and let $A = C \cup \\{ (0, 0) \\}.$ Then the map $q = \pi_1 \mid_A : A \to \pi_1(A)$ is continuous and surjective, but it is not an open map.
+
+
+
+$\big]$
+
+(ii) The product of two quotient maps need NOT be a quotient map.
+
+$\big[(\because)$
+
+$\big]$
+
+(iii) If $X$ is $T_2$, then $X/\sim$ need NOT be $T_2.$ 
+
+$\big[(\because)$
+
+$\big]$
+
+
 
 ---
 ## Lemma 
