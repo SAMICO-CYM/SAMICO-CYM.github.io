@@ -254,6 +254,21 @@ Thus, $f^{-1}(U \times V) = f_1^{-1}(U) \cap f_2^{-1}(V)$.$\big]$
 
 Since $f_1$ and $f_2$ are continuous, $f_1^{-1}(U)$ and $f_2^{-1}(V)$ are open in $X$ and $Y$, respectively, which implies that $f^{-1}(U \times V) = f_1^{-1}(U) \cap f_2^{-1}(V)$ is open in $X \times Y$. Thus, $f$ is continuous. $\blacksquare$
 
+---
+## Theorem 5
+Let $f:X \to Y$ be a continuous function. Suppose that $Y$ is a $T_2$ space. Then the ***graph*** $G := \\{ (x, f(x)) \in X \times Y \\}$ of $f$ is closed in $X \times Y.$
+
+### Proof
+We will show that $X \times Y - G$ is open in $X \times Y.$ Let $(x, y) \in X \times Y - G.$ Since $(x, y) \notin G$, $y \neq f(x).$ Since $Y$ is $T_2,$ there exists open sets $U$ and $V$ of $Y$ such that $f(x) \in U, y \in V$ and $U \cap V = \emptyset.$ Then $x \in f^{-1}(U),$ and $f^{-1}(U)$ is open in $X$ because $f$ is continuous. 
+
+We claim that $f^{-1}(U) \times V \subset X \times Y - G.$ To see this, let $(a, b) \in f^{-1}(U) \times V.$ Then $a \in f^{-1}(U),$ so $f(a) \in U$ and $b \in V.$ If $(a, b) \in G,$ then $b = f(a).$ Then $b \in U \cap V,$ which is a contradiction. Thus, $(a, b) \in X \times Y - G,$ and therefore $f^{-1}(U) \times V \subset X \times Y - G.$ 
+
+Hence, we obtain 
+
+$$(x, y) \in f^{-1}(U) \times V \subset X \times Y - G,$$
+
+which implies that $X \times Y - G$ is open in $X \times Y$, and therefore $G$ is closed in $X \times Y.$ $\blacksquare$
+
 
 <style>
 /* 아이콘 숨기기 및 아이콘이 있던 왼쪽 빈 여백 줄이기 */
