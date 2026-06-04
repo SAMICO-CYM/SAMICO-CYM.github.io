@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9d1574f8048eeb13",
+        "id": "a2b461caf0309ca2",
         "type": "tabs",
         "children": [
           {
-            "id": "37e3f1e327ebb852",
+            "id": "68a4b626913d3046",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Topology/2026-05-26-Quotient-Topology.md",
+                "file": "_posts/PDE/2026-06-04-Harmonic-Equation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-26-Quotient-Topology"
+              "title": "2026-06-04-Harmonic-Equation"
             }
           }
         ]
@@ -180,8 +180,14 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "37e3f1e327ebb852",
+  "active": "68a4b626913d3046",
   "lastOpenFiles": [
+    "_site/posts/Harmonic-Equation/index.html",
+    "_site/posts/Harmonic-Equation",
+    "_site/page20/index.html",
+    "_site/page20",
+    "_posts/PDE/2026-06-04-Harmonic-Equation.md",
+    "_posts/Topology/2026-05-26-Quotient-Topology.md",
     "_posts/Topology/2026-04-29-Continuous-Functions.md",
     "_site/posts/Planer-Graph/index.html",
     "_site/posts/Planer-Graph",
@@ -190,9 +196,6 @@
     "_site/posts/Simple-Group/index.html",
     "_site/posts/Simple-Group",
     "_site/posts/Commutator-Subgroup/index.html",
-    "_site/posts/Commutator-Subgroup",
-    "_site/posts/Center/index.html",
-    "_site/posts/Center",
     "_site/assets/img/Pasted image 20260601152509.png",
     "_site/assets/img/Pasted image 20260601151915.png",
     "_site/assets/img/Pasted image 20260601151910.png",
@@ -211,7 +214,6 @@
     "_posts/Abstract Algebra/2026-06-01-Center.md",
     "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
     "_posts/Abstract Algebra/2026-05-29-Conjugation.md",
-    "_posts/Topology/2026-05-26-Quotient-Topology.md",
     "_posts/Topology/2026-05-27-Connected-Space.md",
     "_posts/Fourier Series/2026-05-28-L2-Theory.md",
     "_posts/Fourier Series/2026-05-27-Convergence-Theorem.md",
@@ -225,7 +227,6 @@
     "_posts/Topology/2026-03-17-Basis-Of-Topology.md",
     "_posts/Topology/2026-03-10-Order-Relation.md",
     "_posts/Fourier Series/2026-05-13-Periodic-Function.md",
-    "_posts/Topology/2026-05-19-Metric-Topology.md",
-    "_posts/Graph Theory/2026-05-22-Spanning-Tree.md"
+    "_posts/Topology/2026-05-19-Metric-Topology.md"
   ]
 }
