@@ -65,6 +65,6 @@ $$D = [0, 1] \times \{0\} \cup \left\{ \frac{1}{n} \mid n \in \mathbb{N} \right\
 
 우선 문제의 점 $(0, 1)$을 제외하기 위해 $A := D - \\{ (0, 1) \\}$로 잡자. 그러면 위에서 $C$가 경로 연결됨을 보였던 방법처럼 $A$ 또한 경로 연결되어 있음을 보일 수 있고, 따라서 연결되어 있다. 
 
-그리고 $C$에서의 $A$의 closure는 원래 $C$에 있었던, $(0, 0)$과 $(0, 1)$을 잇는 선분을 포함하게 된다. 다시 말해 $\overline{A} = C$가 성립한다. 이때 [$A \subset D \subset \overline{A}$가 성립하고 $A$는 연결되어 있으므로 $D$ 또한 연결되어 있음을 확인할 수 있다.](<{% post_url Topology/2026-05-27-Conncected-Space %}#theorem-2>) 
+그리고 $C$에서의 $A$의 closure는 원래 $C$에 있었던, $(0, 0)$과 $(0, 1)$을 잇는 선분을 포함하게 된다. 다시 말해 $\overline{A} = C$가 성립한다. 이때 [$A \subset D \subset \overline{A}$가 성립하고 $A$는 연결되어 있으므로 $D$ 또한 연결되어 있음을 확인할 수 있다.](<{% post_url Topology/2026-05-27-Connected-Space %}#theorem-2>) 
 
 따라서 $D$는 연결되어 있지만 국소 연결되어 있지는 않은 예시임을 확인할 수 있다.
