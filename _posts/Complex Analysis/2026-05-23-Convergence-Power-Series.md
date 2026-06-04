@@ -11,17 +11,17 @@ Let
 
 $$S(z) = \sum_{n=0}^\infty a_n(z-z_0)^n$$
 
-be a power series, and let 
+be a power series.
+
+**(i)** The ***circle of convergence*** of the series $S(z)$ is the greatest circle centered at $z_0$ such that the above series converges at each point inside it.
+
+**(ii)** Let 
 
 $$S_k(z) = \sum_{n=0}^k a_n(z-z_0)^n$$
 
-be the partial sums of the power series. Let $\rho_k(z) := S(z) - S_k(z)$ for each $k = 0, 1, 2, \cdots.$
-
-**(i)** The series $S(z)$ is said to be ***uniformly convergent*** in some region $E$ if 
+be the partial sums of the power series. Let $\rho_k(z) := S(z) - S_k(z)$ for each $k = 0, 1, 2, \cdots.$ The series $S(z)$ is said to be ***uniformly convergent*** in some region $E$ if 
 
 $$\forall \varepsilon > 0, \exists N \in \mathbb{N} \text{ such that } \vert \rho_k(z) \vert < \varepsilon, \forall k \ge N \text{ whenever } z \in E.$$
-
-**(ii)** The ***circle of convergence*** of the series $S(z)$ is the greatest circle centered at $z_0$ such that the above series converges at each point inside it.
 
 ## Theorem
 Let 
