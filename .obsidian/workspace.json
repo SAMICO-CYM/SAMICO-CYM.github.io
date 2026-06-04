@@ -35,7 +35,8 @@
               "title": "2026-06-04-Comb-Space"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -194,11 +195,11 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "338f8c0a6cfd6051",
+  "active": "ad93002bd3780db3",
   "lastOpenFiles": [
+    "_posts/Topology/2026-06-04-Path-Connected.md",
     "_posts/Topology/2026-05-27-Connected-Space.md",
     "_posts/Topology/2026-06-04-Comb-Space.md",
-    "_posts/Topology/2026-06-04-Path-Connected.md",
     "_posts/Topology/2026-04-29-Continuous-Functions.md",
     "_site/assets/img/combspaceplot11.png",
     "assets/img/combspaceplot11.png",
