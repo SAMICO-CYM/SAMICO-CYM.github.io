@@ -6,17 +6,63 @@ tags: []
 math: true
 ---
 
-## Theorem 1
-If a power series 
+## Definition
+Let 
 
-$$\sum_{n=0}^\infty a_n(z-z_0)^n$$
+$$S(z) = \sum_{n=0}^\infty a_n(z-z_0)^n$$
 
-converges when $z = z_1 (z_1 \neq z_0)$, then it is absolutely convergent at each point $z$ in the open disk $\vert z - z_0 \vert < R_1$ where $R_1 = \vert z_1 - z_0 \vert$. 
+be a power series, and let 
 
-Furthermore, the greatest circle centered at $z_0$ such that the above series converges at each point inside is called the ***circle of convergence*** of the series.
+$$S_k(z) = \sum_{n=0}^k a_n(z-z_0)^n$$
+
+be the partial sums of the power series. Let $\rho_k(z) := S(z) - S_k(z)$ for each $k = 0, 1, 2, \cdots.$
+
+**(i)** The series $S(z)$ is said to be ***uniformly convergent*** in some region $E$ if 
+
+$$\forall \varepsilon > 0, \exists N \in \mathbb{N} \text{ such that } \vert \rho_k(z) \vert < \varepsilon, \forall k \ge N \text{ whenever } z \in E.$$
+
+**(ii)** The ***circle of convergence*** of the series $S(z)$ is the greatest circle centered at $z_0$ such that the above series converges at each point inside it.
+
+## Theorem
+Let 
+
+$$S(z) = \sum_{n=0}^\infty a_n(z-z_0)^n$$
+
+be a power series with the circle of convergence $\vert z - z_0 \vert = R.$
+
+
+**(i)** If $S(z)$ converges when $z = z_1 (z_1 \neq z_0)$, then it is absolutely convergent at each point $z$ in the open disk $\vert z - z_0 \vert < R_1$ where $R_1 = \vert z_1 - z_0 \vert$. 
+
+**(ii)** Let $z_1$ be a point inside the circle of convergence. Then the series $S(z)$ must be uniformly convergent in the closed disk $\vert z- z_0 \vert \le R_1$, where $R_1 = \vert z_1 - z_0 \vert$. 
+
+**(iii)** The series $S(z)$ is a continuous function at each point inside its circle of convergence.
+
+**(iv)** Let $C$ denote any contour interior to the circle of convergence of the series $S(z),$ and let $g$ be a continuous function on $C$. Then 
+
+$$\int_C g(z) S(z) \, dz = \sum_{n=0}^\infty a_n \int_C g(z) (z-z_0)^n \, dz.$$
+
+**(v)** The series $S(z)$ is analytic at each point $z$ interior to the circle of convergence.
+
+**(vi)** The derivative of $S(z)$ is given by
+
+$$S'(z) = \sum_{n=1}^\infty na_n(z-z_0)^{n-1}$$
+
+at each point $z$ inside the circle of convergence of the series. 
+
+**(vii)** If the series $S(z)$ converges to $f(z)$ at all points interior to the circle of convergence, then it is the Taylor series expansion for $f$ in powers $z - z_0$. That is, 
+
+$$a_n = \frac{f^{(n)}(z_0)}{n!}, \forall n = 0, 1, 2, \cdots.$$
+
+**(viii)** If a series 
+
+$$\sum_{n=-\infty}^\infty c_n(z-z_0)^n$$
+
+converges to $f(z)$ at all points in some annular domain about $z_0$, then it is the Laurent series expansion for $f$ in powers of $z-z_0$ for that domain. That is, 
+
+$$c_n = \frac{1}{2\pi i} \int_C \frac{f(z)}{(z-z_0)^{n+1}} \, dz, \forall n \in \mathbb{Z}.$$
 
 ### Proof
-Since the series 
+**(i)** Since the series 
 
 $$\sum_{n=0}^\infty a_n(z_1 - z_0)^n$$
 
@@ -45,36 +91,9 @@ converges. By the comparison test, we conclude that
 
 $$\sum_{n=0}^\infty \vert a_n(z-z_0)^n \vert$$
 
-converges, which means that the given power series converges absolutely. $\blacksquare$
+converges, which means that the given power series converges absolutely.
 
----
-## Definition
-Let 
-
-$$S(z) = \sum_{n=0}^\infty a_n(z-z_0)^n$$
-
-be a power series, and let 
-
-$$S_k(z) = \sum_{n=0}^k a_n(z-z_0)^n$$
-
-be the partial sums of the power series. Let $\rho_k(z) := S(z) - S_k(z)$ for each $k = 0, 1, 2, \cdots.$
-
-The series $S(z)$ is said to be ***uniformly convergent*** in some region $E$ if 
-
-$$\forall \varepsilon > 0, \exists N \in \mathbb{N} \text{ such that } \vert \rho_k(z) \vert < \varepsilon, \forall k \ge N \text{ whenever } z \in E.$$
-
-위 정의에서는 구체적으로 region $E$의 정체를 밝히지 않았다. 실제로 $E$는 아래 정리와 같이 찾을 수 있음을 알 수 있다.
-
----
-## Theorem 2
-Let 
-
-$$\sum_{n=0}^\infty a_n(z-z_0)^n$$
-
-be a power series with the circle of convergence $\vert z - z_0 \vert = R$, and let $z_1$ be a point inside the circle of convergence. Then the series must be uniformly convergent in the closed disk $\vert z- z_0 \vert \le R_1$, where $R_1 = \vert z_1 - z_0 \vert$. 
-
-### Proof
-Since $R_1 < R$, there are points inside the circle of convergence and farther from $z_0$ than $z_1$ for which the series converges. By Theorem 1, there is a open disk containing $z_1$, lying in the circle of convergence. Thus, the series converges absolutely at $z_1$, i.e., 
+**(ii)** Since $R_1 < R$, there are points inside the circle of convergence and farther from $z_0$ than $z_1$ for which the series converges. By Theorem 1, there is a open disk containing $z_1$, lying in the circle of convergence. Thus, the series converges absolutely at $z_1$, i.e., 
 
 $$\sum_{n=0}^\infty \vert a_n(z_1-z_0)^n \vert$$
 
@@ -116,18 +135,9 @@ Thus, we have that
 
 $$\vert \rho_k(z) \vert < \varepsilon, \forall k \ge N, \text{ whenever } \vert z - z_0 \vert \le R_1,$$
 
-which means that the series $\displaystyle \sum_{n=0}^\infty a_n(z-z_0)^n$ converges uniformly in the closed disk $\vert z - z_0 \vert \le R_1$. $\blacksquare$
+which means that the series $\displaystyle \sum_{n=0}^\infty a_n(z-z_0)^n$ converges uniformly in the closed disk $\vert z - z_0 \vert \le R_1$. 
 
----
-## Theorem 3
-A power series 
-
-$$S(z) := \sum_{n=0}^\infty a_n(z-z_0)^n$$
-
-is a continuous function at each point inside its circle of convergence $\vert z - z_0 \vert = R$. 
-
-### Proof
-We let $S_k(z)$ denote the sum of the firsk $k$ terms of series, and write the remainder function 
+**(iii)** We let $S_k(z)$ denote the sum of the firsk $k$ terms of series, and write the remainder function 
 
 $$\rho_k(z) = S(z) - S_k(z)$$
 
@@ -159,24 +169,13 @@ $$\begin{align*}
 &= \varepsilon
 \end{align*}$$
 
-for $\vert z - z_1 \vert < \delta$. Hence, $S(z)$ is continuous at each point $z$ inside $\vert z- z_0 \vert < R$. $\blacksquare$
+for $\vert z - z_1 \vert < \delta$. Hence, $S(z)$ is continuous at each point $z$ inside $\vert z- z_0 \vert < R$. 
 
----
-## Theorem 4
-Let $C$ denote any contour interior to the circle of convergence of the power series 
-
-$$S(z) := \sum_{n=0}^\infty a_n(z-z_0)^n,$$
-
-and let $g$ be a continuous function on $C$. Then 
-
-$$\int_C g(z) S(z) \, dz = \sum_{n=0}^\infty a_n \int_C g(z) (z-z_0)^n \, dz.$$
-
-### Proof
-Let 
+**(iv)** Let 
 
 $$\rho_k(z) = \sum_{n=k}^\infty a_n(z-z_0)^n$$
 
-for each positive integer $k$. By Theorem 3, both $g$ and $S$ are continuous on $C$. Then the integeral over $C$ of 
+for each positive integer $k$. By Theorem (iii), both $g$ and $S$ are continuous on $C$. Then the integeral over $C$ of 
 
 $$g(z) S(z) = \sum_{n=0}^{k-1} a_n \, g(z) (z-z_0)^n + g(z) \rho_k(z)$$
 
@@ -201,19 +200,10 @@ It follows that
 $$\begin{align*}
 \int_C g(z) S(z) \, dz &= \lim_{k \to \infty} \int_C g(z) S(z) \, dz \\
 &= \lim_{k \to \infty} \left[ \sum_{n=0}^{k-1} a_n \int_C g(z) (z-z_0)^n \, dz + \int_C g(z) \rho_k(z) \, dz \right] \\
-&= \sum_{n=0}^\infty a_n \int_C g(z) (z-z_0)^n \, dz. \quad \blacksquare
+&= \sum_{n=0}^\infty a_n \int_C g(z) (z-z_0)^n \, dz.
 \end{align*}$$
 
----
-## Corollary
-The power series 
-
-$$S(z) := \sum_{n=0}^\infty a_n(z-z_0)^n$$
-
-is analytic at each point $z$ interior to the circle of convergence of that series. 
-
-### Proof
-Let $C$ be a closed contour lying in the open disk bounded by the circle of convergence of the series, and let $g(z) = 1$ for each point $z$ in that domain. Since $(z-z_0)^n$ is a polynomial, it is entire for each $n = 0, 1, 2, \cdots.$ Then we have 
+**(v)** Let $C$ be a closed contour lying in the open disk bounded by the circle of convergence of the series, and let $g(z) = 1$ for each point $z$ in that domain. Since $(z-z_0)^n$ is a polynomial, it is entire for each $n = 0, 1, 2, \cdots.$ Then we have 
 
 $$\int_C g(z) (z-z_0)^n \, dz = \int_C (z-z_0)^n \, dz = 0$$
 
@@ -223,18 +213,12 @@ By Theorem 4, we have
 
 $$\int_C S(z) \, dz = 0.$$
 
-By [Morera's Theorem](<{% post_url Complex Analysis/2026-05-16-Morera-Theorem %}#morera-theorem>), we conclude that $S$ is analytic throughout the circle of convergence of the series. $\blacksquare$
+By [Morera's Theorem](<{% post_url Complex Analysis/2026-05-16-Morera-Theorem %}#morera-theorem>), we conclude that $S$ is analytic throughout the circle of convergence of the series.
 
----
-## Theorem 5
-Let
+**(vi)**
 
-$$S(z) := \sum_{n=0}^\infty a_n(z-z_0)^n$$
+**(vii)**
 
-be a power series. Then 
+**(viii)**
 
-$$S'(z) = \sum_{n=1}^\infty na_n(z-z_0)^{n-1}$$
-
-at each point $z$ inside the circle of convergence of the series. 
-
-### Proof
+$\blacksquare$
