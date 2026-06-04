@@ -62,16 +62,28 @@ If $Y \cap C$ and $Y \cap D$ are nonempty, then $(C, D)$ is a separation of $Y$.
 
 ---
 ## Theorem 1
-The union of a collection of connected subspaces of $X$ that have a point in common is connected.
+**(i)** The union of a collection of connected subspaces of $X$ that have a point in common is connected.
+
+**(ii)** Let $\\{ A_n \\}$ be a sequence of connected subspaces of $X$ such that $A_n \cap A_{n+1} \neq \emptyset, \forall n.$ Then the union of $A_n$ is connected.
 
 ### Proof
-Let $\\{ Y_\alpha \\}$ be a collection of connected subspaces $Y_\alpha$ of $X$ that have a point in common. Suppose that 
+**(i)** Let $\\{ Y_\alpha \\}$ be a collection of connected subspaces $Y_\alpha$ of $X$ that have a point in common. Suppose that 
 
 $$Y:= \bigcup Y_\alpha$$
 
 is not connected. Then $Y$ has a separation $(A, B)$. [Since each $Y_\alpha$ is also a subspace of $Y$,](<{% post_url Topology/2026-04-02-Subspace-Topology %}#theorem-4>) by Lemma 2, each $Y_\alpha$ lies entirely within $A$ or $B$. 
 
-Since $\bigcap Y_\alpha \neq \emptyset$, $\exists p \in \bigcap Y_\alpha$. Then $p$ is in only one of $A$ or $B$. WLOG, we let $p \in A$. Then each $Y_\alpha$ must lie entirely in $A$, because each $Y_\alpha$ contains $p$. It follows that $B = \emptyset$, which is a contradiction. Thus, $Y$ is connected. $\blacksquare$
+Since $\bigcap Y_\alpha \neq \emptyset$, $\exists p \in \bigcap Y_\alpha$. Then $p$ is in only one of $A$ or $B$. WLOG, we let $p \in A$. Then each $Y_\alpha$ must lie entirely in $A$, because each $Y_\alpha$ contains $p$. It follows that $B = \emptyset$, which is a contradiction. Thus, $Y$ is connected. 
+
+**(ii)** Suppose that 
+
+$$A := \bigcup_{n=1}^\infty A_n$$
+
+is disconnected. Then there exists a separation $(U, V)$ of $A.$ Since each $A_n$ is a connected subspace of $A$, $A_n$ lies entirely in $U$ or $V$ by Lemma 2.
+
+There must exist an index $n$ such that $A_n \subset U$ and $A_{n+1} \subset V$. (It is possible that $A_n \subset V$ and $A_{n+1} \subset U$, but WLOG, assume the former case.) If not, then for all $n \in \mathbb{N},$ $A_n, A_{n+1} \subset U$ or $A_n, A_{n+1} \subset V$. It follows that every $A_n$ is contained in either $U$ or $B$, so either $U$ or $V$ is empty, which is a contradiction. Thus, such an index $n$ exists. 
+
+Since $A_n \cap A_{n+1} \neq \emptyset,$ $\exists x \in A_n \cap A_{n+1}.$ Since $A_n \subset U$ and $A_{n+1} \subset V$, $x \in U \cap V = \emptyset. \bigotimes$ Hence, $A$ is connected. $\blacksquare$
 
 ---
 ## Theorem 2
