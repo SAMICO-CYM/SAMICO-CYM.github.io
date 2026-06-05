@@ -82,3 +82,13 @@ Then the average degree satisfies
 $$\frac{\sum \deg(v)}{n} \le 6 - \frac{12}{n} < 6.$$
 
 Thus, there must exist a vertex of degree less than or equal $5.$ $\blacksquare$
+
+---
+## Remark
+Handshaking lemma는 모든 vertex의 degree의 합이 정확히 edge의 개수의 두 배와 같다는 정리였다. 이 정리는 vertex와 edge 사이에서 성립할 뿐더러, face와 edge 사이에서도 성립한다. 
+
+정확히는 planer graph $G$가 주어졌을 때 face의 집합을 $F$라고 두면 
+
+$$\sum_{f \in F} \deg(f) = 2m$$
+
+이 성립한다.
