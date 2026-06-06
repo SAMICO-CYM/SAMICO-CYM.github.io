@@ -11,10 +11,14 @@
             "id": "06f12e9bb1c778bd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "_posts/Abstract Algebra/2026-06-01-Center-Of-Group.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "2026-06-01-Center-Of-Group"
             }
           }
         ]
@@ -178,6 +182,7 @@
   },
   "active": "06f12e9bb1c778bd",
   "lastOpenFiles": [
+    "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
     "_posts/Graph Theory/2026-06-01-Planer-Graph.md",
     "_posts/Graph Theory/2026-06-01-Euler-Formula.md",
     "_posts/Graph Theory/2026-06-05-Platonic-Solid.md",
@@ -208,9 +213,8 @@
     "_posts/Topology/2026-05-26-Quotient-Topology.md",
     "_posts/Topology/2026-04-29-Continuous-Functions.md",
     "_posts/Graph Theory/2026-05-29-Minimum-Weighted-Spanning-Tree.md",
-    "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
     "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
-    "_posts/Abstract Algebra/2026-06-01-Center.md",
+    "_posts/Abstract Algebra/2026-06-01-Center-Of-Group.md",
     "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
     "_posts/Abstract Algebra/2026-05-29-Conjugation.md",
     "_posts/Topology/2026-05-27-Connected-Space.md",

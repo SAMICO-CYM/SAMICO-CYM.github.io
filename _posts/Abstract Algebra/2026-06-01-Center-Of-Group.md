@@ -11,6 +11,8 @@ The ***center*** $Z(G)$ of a group is defined by
 
 $$Z(G) = \{ a \in G \mid ga = ag, \forall g \in G \}.$$
 
+If $Z(G) = \\{ e \\},$ then we say that the center of $G$ is ***trivial***.
+
 ---
 ## Theorem
 Let $G$ be a group.
