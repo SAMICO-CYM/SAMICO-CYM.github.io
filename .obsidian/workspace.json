@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -209,12 +209,14 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "624a40d66e922895",
+  "active": "ad93002bd3780db3",
   "lastOpenFiles": [
-    "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
-    "_posts/Abstract Algebra/2026-06-08-Second-Isomorphism-Theorem.md",
     "_posts/Abstract Algebra/2026-03-18-Subgroup.md",
     "_posts/Abstract Algebra/2026-05-13-First-Isomorphism-Theorem.md",
+    "_posts/Abstract Algebra/2026-06-08-Second-Isomorphism-Theorem.md",
+    "_posts/Abstract Algebra/2026-05-06-Kernel.md",
+    "_posts/Abstract Algebra/2026-04-01-Special-Morphisms.md",
+    "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
     "_site/posts/Second-Isomorphism-Theorem/index.html",
     "_site/posts/Second-Isomorphism-Theorem",
     "_posts/Abstract Algebra/2026-05-13-Factor-Group.md",
@@ -254,8 +256,6 @@
     "_posts/Graph Theory/2026-05-22-Spanning-Tree.md",
     "_posts/Graph Theory/2026-05-29-Minimum-Spanning-Tree.md",
     "_posts/Graph Theory/2026-05-29-Minimum-Weighted-Spanning-Tree.md",
-    "_posts/Abstract Algebra/2026-05-29-Conjugation.md",
-    "_posts/Algorithm/2026-05-04-Breadth-First-Search.md",
-    "_posts/Topology/2026-04-30-Open-Closed-map.md"
+    "_posts/Abstract Algebra/2026-05-29-Conjugation.md"
   ]
 }

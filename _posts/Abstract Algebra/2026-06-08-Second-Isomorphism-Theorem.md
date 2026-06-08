@@ -11,6 +11,8 @@ Let $G$ be a group, and let $H, N \le G.$ Then the ***join*** of $H$ and $N$, de
 
 $$H \vee N := \bigcap_{HN \subset K \le G} K.$$
 
+아래 Remark를 보면 알겠지만, 두 개의 서브그룹 $H, N$이 주어졌다고 해서 그 곱 $HN$은 일반적으로 서브그룹이 되지 않는다. 그러면 두 개의 서브그룹으로 다시 서브그룹을 만들기 위한 다른 방법이 필요하고, 그 답 중에 하나로 join을 정의할 수 있다. 
+ 
 ---
 ## Lemma
 Let $G$ be a group, and let $H,N \le G.$ We denote $HN := \\{ hn \mid h \in H, n \in N \\}.$
@@ -22,6 +24,11 @@ Let $G$ be a group, and let $H,N \le G.$ We denote $HN := \\{ hn \mid h \in H, n
 **(iii)** If $N \lhd G,$ then $HN$ is the smallest subgroup of $G$ containing both $H$ and $N.$ That is, $H \vee N = HN = NH.$
 
 **(iv)** If $N, H \lhd G,$ then $HN \lhd G.$
+
+위에서 언급했듯이 $H \vee N$은 서브그룹이 되고, 특별히 $HN$과 $H$ 그리고 $N$을 포함하는 가장 작은 서브그룹임을 알 수 있다.
+
+그러면 자연스럽게 어떤 조건을 더 줘야 곱 $HN$이 서브그룹이 되겠느냐는 질문을 할 수가 있고, 그 답은 둘 중 하나가 normal이면 충분하다로 주어진다. 더욱 특별하게는, 이때 join과 곱은 정확히 일치하게 된다.
+
 ### Proof
 **(i)** It is obtained by definition of the join and [Theorem 2](<{% post_url Abstract Algebra/2026-03-18-Subgroup %}#theorem-2>).
 
@@ -104,11 +111,29 @@ so $\phi$ is well-defined.$\big]$
 
 **Claim 2:** $\phi$ is an epimorphism with $\ker(\phi) = N.$
 
-$\big[(\because)$ Let $h_1n_1, h_2n_2 \in HN.$ Since $HN \le G,$ $(h_1n_1)(h_2n_2) \in HN.$ Let $(h_1n_1)(h_2n_2) = h_3n_3.$
-
-Then 
+$\big[(\because)$ Let $h_1n_1, h_2n_2 \in HN.$ Since $HN \le G,$ $(h_1n_1)(h_2n_2) \in HN.$ Since $N \lhd G,$ we have $n_1h_2 \in Nh_2 = h_2N,$ so $n_1h_2 = h_2n_1'$ for some $n_1' \in N.$ Then $h_1n_1h_2n_2 = h_1h_2n_1'n_2,$ so  
 
 $$\begin{align*}
-\phi((h_1n_1)(h_2n_2)) &= \phi(h_3n_3) \\
-&= h_3(H \cap N)
+\phi((h_1n_1)(h_2n_2)) &= \phi((h_1h_2)(n_1'n_2)) \\
+&= (h_1h_2)(H \cap N) \\
+&= (h_1(H \cap N))(h_2(H \cap N)) \\
+&=\phi(h_1n_1) \phi(h_2n_2).
 \end{align*}$$
+
+Thus, $\phi$ is a homomorphism.
+
+Let $h(H \cap N) \in H/(H \cap N).$ Since $e \in N,$ we have $\phi(he) = h(H \cap N),$ so $\phi$ is an epimorphism. 
+
+Note that 
+
+$$\begin{align*}
+hn \in \ker(\phi) &\iff h(H \cap N) = \phi(hn) = H \cap N \\
+& \iff h \in H \cap N \\
+& \iff hn \in N,
+\end{align*}$$
+
+so $\ker(\phi) = N.\big]$
+
+By the first isomorphism theorem, we conclude 
+
+$$HN/N \cong H/(H \cap N). \quad \blacksquare$$
