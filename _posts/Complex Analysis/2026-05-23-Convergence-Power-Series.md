@@ -253,7 +253,7 @@ Let $g(z)$ be any one of the functions
 
 $$g(z) = \frac{1}{2\pi i} \cdot \frac{1}{(z-z_0)^{n+1}} \quad (n = 0, 1, 2, \cdots)$$
 
-for each $z$ on $C$, which is a circle centered at $z_0$ and interior to the circle of convergence. Then we have 
+for each $z$ on $C$, which is a positively oriented circle centered at $z_0$ and interior to the circle of convergence. Then we have 
 
 $$\int_C g(z) f(z) \, dz = \sum_{m=0}^\infty a_m \int_C g(z)(z-z_0)^m \, dz.$$
 
@@ -278,6 +278,33 @@ $$a_n = \frac{f^{(n)}(z_0)}{n!}$$
 
 for each $n = 0, 1, 2, \cdots,$ and therefore the given series is the Taylor series for $f$ about $z_0.$
 
-**(viii)**
+**(viii)** By assumption, we write 
 
-$\blacksquare$
+$$f(z) = \sum_{n=-\infty}^\infty c_n(z-z_0)^n$$
+
+for each $z$ interior to the some annular domain about $z_0.$ 
+
+Let $g(z)$ be any one of the functions 
+
+$$g(z) = \frac{1}{2\pi i} \cdot \frac{1}{(z-z_0)^{n+1}} \quad (n = 0, \pm 1, \pm 2, \cdots)$$
+
+for each $z$ on $C$, which is a positively oriented circle centered at $z_0$ and interior to the annular domain. Then we have 
+
+$$\int_C g(z) f(z) \, dz = \sum_{m=-\infty}^\infty c_m \int_C g(z)(z-z_0)^m \, dz.$$
+
+Then we have 
+
+$$\begin{align*}
+\int_C g(z) (z-z_0)^m \, dz &= \frac{1}{2\pi i} \int_C \frac{(z-z_0)^m}{(z-z_0)^{n+1}} \, dz \\ 
+&= \frac{1}{2\pi i} \int_C \frac{(z-z_0)^{m-n}}{z-z_0} \, dz \\
+&= \begin{cases}
+0 & \text{if } m \neq n \\
+1 & \text{if } m = n.
+\end{cases}
+\end{align*}$$
+
+Thus, we obtain 
+
+$$c_n = \int_C g(z) f(z) \, dz = \frac{1}{2\pi i} \int_C \frac{f(z)}{(z-z_0)^{n+1}} \, dz$$
+
+for each $n = 0, \pm 1, \pm 2, \cdots,$ and therefore the given series is the Laurent series for $f$ about $z_0.$ $\blacksquare$
