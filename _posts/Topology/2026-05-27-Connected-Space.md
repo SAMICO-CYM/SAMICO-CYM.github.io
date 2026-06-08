@@ -134,5 +134,3 @@ Suppose that $\prod_{i=1}^{k} A_i$ is connected for some $2 < k < n$. Since
 $$\left(\prod_{i=1}^{k} A_i \right) \times A_{k+1} \cong \prod_{i=1}^{k+1}A_i$$
 
 and each $\prod_{i=1}^{k} A_i$ and $A_{k+1}$ is connected, by the base case, $\prod_{i=1}^{k+1}A_i$ is also connected. $\blacksquare$
-
----

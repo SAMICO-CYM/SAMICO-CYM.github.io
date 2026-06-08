@@ -74,7 +74,7 @@ Let $X$ be a topological space, and let $\sim$ be an equivalence relation of $X$
 ## Remark 2
 With a quotient topology, subspaces, products of maps, and $T_2$ condition do not behave well.
 
-(i) If $p : X \to Y$ is a quotient map and $A$ is a subspace of $X$, then the map $q: A \to p(A)$ obtained by restricting $p$ need NOT be a quotient map.
+**(i)** If $p : X \to Y$ is a quotient map and $A$ is a subspace of $X$, then the map $q: A \to p(A)$ obtained by restricting $p$ need NOT be a quotient map.
 
 $\big[(\because)$ We consider $\pi_1: \mathbb{R} \times \mathbb{R} \to \mathbb{R}.$ Since $\pi_1$ is a surjective, continuous, and open map, it is a quotient map. 
 
@@ -84,13 +84,13 @@ Let $C = \\{ (x, y) \in \mathbb{R}^2 \mid xy = 1 \\},$ and let $A = C \cup \\{ (
 
 $\big]$
 
-(ii) The product of two quotient maps need NOT be a quotient map.
+**(ii)** The product of two quotient maps need NOT be a quotient map.
 
 $\big[(\because)$
 
 $\big]$
 
-(iii) If $X$ is $T_2$, then $X/\sim$ need NOT be $T_2.$ 
+**(iii)** If $X$ is $T_2$, then $X/\sim$ need NOT be $T_2.$ 
 
 $\big[(\because)$
 
