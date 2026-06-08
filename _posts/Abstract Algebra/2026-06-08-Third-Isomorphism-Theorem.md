@@ -1,0 +1,68 @@
+--- 
+title: Third Isomorphism Theorem
+date: 2026-06-08
+categories: [Mathematics, Abstract Algebra]
+tags: []
+math: true
+---
+
+## Third Isomorphism Theorem
+Let $H, K \lhd G$ with $K \le H.$ Then 
+
+$$G/H \cong (G/K)/(H/K).$$
+
+### Proof
+**Claim 1:** $K \lhd H$ and $H/K \lhd G/K.$
+
+$\big[(\because)$ Since $K \lhd G$, $gKg^{-1} \subset K, \forall g \in G.$ It follows that $hKh^{-1} \subset K, \forall h \in H,$ so $K \lhd H.$
+
+Let $gK \in G/K,$ and let $hK \in H/K.$ Since $H \lhd G,$ we have $ghg^{-1} \in H.$ Then we have
+
+$$\begin{align*}
+(gK)(hK)(gK)^{-1} &= ((gh)K)(g^{-1}K) \\
+&= (ghg^{-1})K \\
+&\in H/K,
+\end{align*}$$
+
+so $(gK)(H/K)(gK)^{-1} \subset H/K, \forall gK \in G/K.$ Thus, $H/K \lhd G/K.\big]$
+
+We define a map $\phi: G/K \to G/H$ by $\phi(gK) = gH, \forall gK \in G/K.$ 
+
+**Claim 2:** $\phi$ is an epimorphism with $\ker(\phi) = H/K.$
+
+$\big[(\because)$ First, we will show that $\phi$ is well-defined. Let $g_1K, g_2K \in G/K.$ Suppose that $g_1K = g_2K.$ Then $g_1 \in g_2K.$ Since $K \le H,$ we have $g_1 \in g_2K \subset g_2H,$ so $g_1 \in g_2H.$ It follows that $g_1H = g_2H.$ Then we can see that
+
+$$\begin{align*}
+\phi(g_1K) &= g_1H \\
+&= g_2H \\
+&= \phi(g_2K),
+\end{align*}$$
+
+which means that $\phi$ is well-defined.
+
+Next, we check that $\phi$ is a homomorphism. Let $g_1K, g_2K \in G/K.$ Then we have 
+
+$$\begin{align*}
+\phi((g_1K)(g_2K)) &= \phi((g_1g_2)K) \\
+&= (g_1g_2)H \\
+&= (g_1H)(g_2H) \\
+&= \phi(g_1K) \phi(g_2K),
+\end{align*}$$
+
+so $\phi$ is a homomorphism.
+
+Let $gH \in G/H.$ Then $\phi(gK) = gH,$ so $\phi$ is an epimorphism.
+
+Note that 
+
+$$\begin{align*}
+gK \in \ker(\phi) &\iff gH = \phi(gK) = H \\
+&\iff g \in H \\
+&\iff gK \in H/K,
+\end{align*}$$
+
+so $\ker(\phi) = H/K.\big]$
+
+By the first isomorphism theorem, we conclude 
+
+$$(G/K)/(H/K) \cong G/H. \quad \blacksquare$$
