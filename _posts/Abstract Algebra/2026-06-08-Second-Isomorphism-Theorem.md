@@ -85,7 +85,7 @@ $\big[(\because)$ Let $G = S_3$ and let $H = \langle \mu_1 \rangle = \\{ \rho_0,
 
 **(ii)** Although $N \lhd G,$ $HN$ need not to be a normal subgroup of $G.$
 
-$\big[(\because)$ Let $G = S_3$ and let $H = \langle \mu_1 \rangle = \\{ \rho_0, \mu_1 \\}$ and $N = A_3.$ Then 
+$\big[(\because)$ Let $G = S_3$ and let $H = \langle \mu_1 \rangle = \\{ \rho_0, \mu_1 \\} \le G$ and $N = \\{ \rho_0 \\} \lhd G.$ Then $HN = \langle \mu_1 \rangle \not \lhd G.\big]$
 
 ---
 ## Second Isomorphism Theorem
