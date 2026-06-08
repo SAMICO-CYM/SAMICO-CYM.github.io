@@ -67,7 +67,7 @@ A ***maximal normal subgroup*** of a group $G$ is a normal subgroup $M$ of $G$ s
 ## Theorem 3
 Let $G$ be a group, and let $M \lhd G.$ Then $M$ is a maximal normal subgroup of $G$ $\iff$ $G/M$ is simple.
 
-직관적으로도 잘 읽히는 스테이트먼트다. $G$에서 $M$을 factoring해서 얻은 factor group $G/M$이 단순군이 되려면 최대한 $M$을 크게 잘라내야 하지 않을까? 이때 어떤 센스에서 잘라내야 하냐는 기준이 바로 normal subgroup에 있어서 가장 크게 잘라내야 하고, 이 개념이 maximal normal subgroup인 것이다. 
+직관적으로도 잘 읽히는 스테이트먼트다. $G$에서 $M$을 factoring해서 얻은 factor group $G/M$이 단순군이 되려면 최대한 $M$을 크게 잘라내야 하지 않을까? 이때 어떤 센스에서 잘라내야 하냐는 기준이 normal subgroup에 있어서 가장 크게 잘라내야 한다는 것으로 주어지고, 이 개념이 바로 maximal normal subgroup에 대응된다.
 
 ### Proof
 $(\Longrightarrow)$

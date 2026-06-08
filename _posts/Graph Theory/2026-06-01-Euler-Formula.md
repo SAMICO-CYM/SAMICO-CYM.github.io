@@ -28,3 +28,67 @@ Suppose that $m \ge n.$ Then $G$ must have a cycle, so there is some edge $e$ wh
 Let $G' := G \setminus e.$ As $e$ was in a cycle in $G$, it was on the boundary of two faces which were joined in $G'.$ 
 
 Since $n-m+f = 2$ holds for $G'$ and we get this from $G$ by removing one edge and one face, it also holds for $G.$ $\blacksquare$
+
+---
+## Corollary 1
+**(i)** If $G$ is a connected planer graph with $\vert V(G) \vert = n \ge 3$ and $\vert E(G) \vert = m$, then $m \le 3n-6.$
+
+**(ii)** If $G$ is a bipartite planer graph with $\vert V(G) \vert = n \ge 3$ and $\vert E(G) \vert = m$, then $m \le 2n-4.$
+
+### Proof
+**(i)** We count the number $N$ of pairs $(e, f)$ where $f$ is a face and $e$ is an edge in $f$. Since every edge is in at most $2$ faces, we obtain $N \le 2m$. Since every face has at least $3$ edges, we have $3f \le N.$ Then we get $f \le \frac{2m}{3}.$ From Euler's formula, 
+
+$$\begin{align*}
+2 &= n - m + f \\
+&\le n - m + \frac{2m}{3} \\
+&= n - \frac{1}{3}m,
+\end{align*}$$
+
+which gives 
+
+$$m \le 3n - 6.$$
+
+**(ii)** In the same manner, we count the number $N$ of pairs $(e, f)$. Since every edge is in at most $2$ faces, we obtain $N \le 2m$. Since every face has at least, in this case, $4$ edges, we have $4f \le N.$ Then we get $f \le \frac{m}{2}.$ From Euler's formula, 
+
+$$\begin{align*}
+2 &= n - m + f \\
+&\le n - m + \frac{m}{2} \\
+&= n - \frac{1}{2}m,
+\end{align*}$$
+
+which gives 
+
+$$m \le 2n - 4. \quad \blacksquare$$
+
+---
+## $K_5$ and $K_{3, 3}$ are NOT planer
+위 따름정리를 통해 $K_5$와 $K_{3, 3}$이 평면 그래프가 아님이 쉽게 보여진다. 
+
+만약 $K_5$가 평면 그래프라고 가정하면 위 따름정리 (i)을 만족해야 하고, $n = 5, m = 10$이므로 $10 \le 15 - 6 = 9$으로 모순을 얻는다.
+
+마찬가지로 $K_{3, 3}$이 평면 그래프라고 가정하면 (ii)를 만족해야 하고, $n = 6, m = 9$이므로 $9 \le 12 - 4 = 8$으로 모순을 얻는다. 따라서 $K_5$와 $K_{3, 3}$은 평면 그래프가 아니다.
+
+---
+## Corollary 2
+Every connected planer graph has a vertex $v$ with $\deg(v) \le 5.$
+
+### Proof
+Let $G$ be a connected plnaer graph. By corollary (i), $m \le 3n-6$ holds. By handshaking lemma, we have 
+
+$$\sum_{v \in V(G)} \deg(v) = 2m \le 6n - 12.$$
+
+Then the average degree satisfies 
+
+$$\frac{\sum \deg(v)}{n} \le 6 - \frac{12}{n} < 6.$$
+
+Thus, there must exist a vertex of degree less than or equal $5.$ $\blacksquare$
+
+---
+## Remark
+Handshaking lemma는 모든 vertex의 degree의 합이 정확히 edge의 개수의 두 배와 같다는 정리였다. 이 정리는 vertex와 edge 사이에서 성립할 뿐더러, face와 edge 사이에서도 성립한다. 
+
+정확히는 planer graph $G$가 주어졌을 때 face의 집합을 $F$라고 두면 
+
+$$\sum_{f \in F} \deg(f) = 2m$$
+
+이 성립한다.

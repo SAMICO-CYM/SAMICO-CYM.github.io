@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Abstract Algebra/2026-06-01-Center.md",
+                "file": "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-01-Center"
+              "title": "2026-06-01-Commutator-Subgroup"
             }
           }
         ],
@@ -197,6 +197,12 @@
   },
   "active": "ad93002bd3780db3",
   "lastOpenFiles": [
+    "_posts/Abstract Algebra/2026-06-01-Center.md",
+    "assets/img/Pasted image 20260605164916.png",
+    "assets/img/Pasted image 20260605164517.png",
+    "_posts/PDE/2026-06-04-Harmonic-Equation.md",
+    "_posts/Graph Theory/2026-06-05-Platonic-Solid.md",
+    "_posts/Abstract Algebra/2026-06-01-Center-Of-Group.md",
     "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
     "_posts/Topology/2026-06-04-Comb-Space.md",
     "_posts/Topology/2026-06-04-Path-Connected.md",
@@ -215,15 +221,12 @@
     "_site/page20/index.html",
     "_site/page20",
     "_site/assets/img/Pasted image 20260601151544.png",
-    "_posts/Abstract Algebra/2026-06-01-Center.md",
     "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
     "_posts/Graph Theory/2026-06-01-Planer-Graph.md",
     "_posts/Graph Theory/2026-06-01-Euler-Formula.md",
     "_site/posts/Euler-Formula/index.html",
     "_site/posts/Euler-Formula",
     "_site/assets/img/Pasted image 20260601152509.png",
-    "assets/img/Pasted image 20260601152509.png",
-    "_site/assets/img/Pasted image 20260601151915.png",
     "_site/posts/Ku/index.html",
     "_site/posts/Ku",
     "_posts/Graph Theory/2026-04-10-Graph.md",
@@ -238,9 +241,6 @@
     "_posts/Topology/2026-04-30-Open-Closed-map.md",
     "_posts/Topology/2026-04-29-Homeomorphism.md",
     "_posts/Topology/2026-05-26-Quotient-Topology.md",
-    "_posts/Complex Analysis/2026-05-16-Morera-Theorem.md",
-    "_posts/Complex Analysis/2026-05-23-Convergence-Power-Series.md",
-    "_posts/Fourier Series/2026-05-27-Convergence-Theorem.md",
-    "_posts/Fourier Series/2026-05-28-L2-Theory.md"
+    "_posts/Complex Analysis/2026-05-16-Morera-Theorem.md"
   ]
 }
