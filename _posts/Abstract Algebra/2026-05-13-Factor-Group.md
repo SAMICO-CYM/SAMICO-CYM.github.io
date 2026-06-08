@@ -124,3 +124,47 @@ Let $G = \langle a \rangle$ and let $H \lhd G$. We claim that $G/H = \langle a H
 To see this, let $bH \in G/H$. Since $b \in G$, $b = a^n$ for some $n \in \mathbb{Z}$. Then we have $bH = a^nH = (aH)^n \in \langle aH \rangle$, which means that $G/H \subset \langle aH \rangle$.
 
 Since $aH \in G/H$, $\langle aH \rangle \subset G/H$ is clear. Thus, $G/H = \langle a H \rangle$. $\blacksquare$
+
+---
+## Theorem 3
+Let $H$ and $K$ be groups, and let $N_1 \lhd H$ and $N_2 \lhd K$. Then
+
+$$(H \times K) / (N_1 \times N_2) \cong (H/N_1) \times (K / N_2).$$
+
+### Proof
+Note that the factor groups $H/N_1$ and $K/N_2$ are well-defined because $N_1 \lhd H$ and $N_2 \lhd K$ by Theoerm 1.
+
+Define a function $\phi: H \times K \to (H/N_1) \times (K / N_2)$ by 
+
+$$\phi(h, k) = (hN_1, kN_2), \forall (h, k) \in H \times K.$$
+
+Clearly, $\phi$ is well-defined. For each $(hN_1, kN_2) \in (H/N_1) \times (K / N_2)$, we have $\phi(h, k) = (hN_1, kN_2)$, which means that $\phi$ is onto. 
+
+Let $(h_1,k_1), (h_2,k_2) \in H \times K$. Then we have 
+
+$$\begin{align*}
+\phi((h_1,k_1)(h_2,k_2)) &= \phi((h_1h_2,k_1k_2)) \\
+&= ((h_1h_2)N_1,(k_1k_2)N_2) \\
+&= ((h_1N_1)(h_2N_1), (k_1N_2)(k_2N_2)) \\
+&= (h_1N_1,k_1N_2)(h_2N_1,k_2N_2) \\
+&= \phi(h_1,k_1) \phi(h_2,k_2).
+\end{align*}$$
+
+Thus, $\phi$ is an epimorphism. Furthermore, $\ker(\phi) = N_1 \times N_2$ because $N_1$ is the identity element of $H / N_1$ and $hN_1 = N_1 \iff h \in N_1$, and the same holds for $N_2$ and $K/N_2$.
+ 
+By [the first isomorphism theorem](<{% post_url Abstract Algebra/2026-05-13-First-Isomorphism-Theorem %}#first-isomorphism-theorem>), we conclude
+
+$$(H \times K) / (N_1 \times N_2) \cong (H/N_1) \times (K / N_2). \quad \blacksquare$$
+
+---
+## Corollary
+Let $H$ and $K$ be groups. 
+
+**(i)** $(H \times K) / (H \times \\{ e_K \\}) \cong K$.
+
+**(ii)** $(H \times K) / (\\{ e_H \\} \times K) \cong H$.
+
+### Proof
+**(i)** Define a function $\phi: H \times K \to K$ by $\phi(h, k) = k, \forall (h, k) \in H \times K$. Clearly, $\phi$ is an epimorphism with kernel $H \times \\{ e_K \\}$. By the first isomorphism theorem, $(H \times K)/(H \times \\{ e_K \\}) \cong K$. 
+
+**(ii)** Similar to (i). $\blacksquare$

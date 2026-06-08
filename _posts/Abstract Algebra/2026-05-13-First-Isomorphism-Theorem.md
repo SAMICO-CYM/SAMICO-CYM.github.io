@@ -85,50 +85,6 @@ Let $\phi: G \to G'$ be a group epimorphism. Then $G/\ker(\phi) \cong G'$.
 Since $\phi$ is surjective, we have $\mathrm{Im}(\phi) = G'$. By Theorem 1 (i), $G/\ker(\phi) \cong \mathrm{Im}(\phi) = G'$. $\blacksquare$
 
 ---
-## Theorem 3
-Let $H$ and $K$ be groups, and let $N_1 \lhd H$ and $N_2 \lhd K$. Then
-
-$$(H \times K) / (N_1 \times N_2) \cong (H/N_1) \times (K / N_2).$$
-
-### Proof
-Note that the [factor groups $H/N_1$ and $K/N_2$ are well-defined because $N_1 \lhd H$ and $N_2 \lhd K$.](<{% post_url Abstract Algebra/2026-05-13-Factor-Group %}#theorem-1>) 
-
-Define a function $\phi: H \times K \to (H/N_1) \times (K / N_2)$ by 
-
-$$\phi(h, k) = (hN_1, kN_2), \forall (h, k) \in H \times K.$$
-
-Clearly, $\phi$ is well-defined. For each $(hN_1, kN_2) \in (H/N_1) \times (K / N_2)$, we have $\phi(h, k) = (hN_1, kN_2)$, which means that $\phi$ is onto. 
-
-Let $(h_1,k_1), (h_2,k_2) \in H \times K$. Then we have 
-
-$$\begin{align*}
-\phi((h_1,k_1)(h_2,k_2)) &= \phi((h_1h_2,k_1k_2)) \\
-&= ((h_1h_2)N_1,(k_1k_2)N_2) \\
-&= ((h_1N_1)(h_2N_1), (k_1N_2)(k_2N_2)) \\
-&= (h_1N_1,k_1N_2)(h_2N_1,k_2N_2) \\
-&= \phi(h_1,k_1) \phi(h_2,k_2).
-\end{align*}$$
-
-Thus, $\phi$ is an epimorphism. Furthermore, $\ker(\phi) = N_1 \times N_2$ because $N_1$ is the identity element of $H / N_1$ and $hN_1 = N_1 \iff h \in N_1$, and the same holds for $N_2$ and $K/N_2$.
- 
-By the first isomorphism theorem, we conclude
-
-$$(H \times K) / (N_1 \times N_2) \cong (H/N_1) \times (K / N_2). \quad \blacksquare$$
-
----
-## Corollary
-Let $H$ and $K$ be groups. 
-
-**(i)** $(H \times K) / (H \times \\{ e_K \\}) \cong K$.
-
-**(ii)** $(H \times K) / (\\{ e_H \\} \times K) \cong H$.
-
-### Proof
-**(i)** Define a function $\phi: H \times K \to K$ by $\phi(h, k) = k, \forall (h, k) \in H \times K$. Clearly, $\phi$ is an epimorphism with kernel $H \times \\{ e_K \\}$. By the first isomorphism theorem, $(H \times K)/(H \times \\{ e_K \\}) \cong K$. 
-
-**(ii)** Similar to (i). $\blacksquare$
-
----
 ## Remark
 대수학을 잠깐 벗어나서 집합론으로 돌아가 일반적으로 생각해보자. 집합 $X$가 주어지면 각각의 원소는 exactly 구분된다. 정말로 각 원소가 같으면 같고 다르면 다르다는 말이다. 그런데 "같음"을 정의하는 방식을 항상 이렇게 강하게 줄 필요는 없다. 두 도형이 같다는 말을 정확히 길이와 각도가 같은 합동 조건으로 줄 수도 있지만, 닮음 조건으로 줄 수도 있듯이 말이다. 마찬가지로 수학에서 두 대상이 "같다"라는 말을 할 때 주로 사용하는 방법이 동치 조건을 이용한 방법인데, 동치 조건 $\sim$에 대하여 $x \sim y$라면 두 대상 $x, y$는 "사실상 같다"고 말할 수 있다. 그러면 이렇게 "사실상 같은" 대상들 끼리 모아서 집합 $[x]$을 구성하면 그 자체를 우리가 정의한 동치 관계 $\sim$의 관점에서 하나의 원소로 취급할 수 있고, 이들을 모아놓은 집합을 $X / \sim$이라고 쓰고 quotient set이라고 부른다. 
 

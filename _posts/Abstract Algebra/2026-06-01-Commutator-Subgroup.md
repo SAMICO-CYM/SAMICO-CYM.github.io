@@ -102,3 +102,13 @@ $$\begin{align*}
 \end{align*}$$
 
 Hence, $G/N$ is abelian. $\blacksquare$
+
+---
+## Example
+$C(S_3)$를 구체적으로 계산해보자. 우선 $(S_3 : A_3) = 2$이므로 $A_3 \lhd S_3$이고, 자명하게 $S_3/A_3$는 abelian이다. 그러면 위 정리에 의해서 $C(S_3) \le A_3$가 성립한다.
+
+또한 $A_3 = \\{ \rho_0, \rho_1, \rho_2 \\}$의 원소 $\rho_1, \rho_2$에 대해서 
+
+$$\rho_1 = \rho_2 \mu_1 \rho_2^{-1}\mu_1^{-1} \quad \text{and} \quad \rho_2 = \rho_1 \mu_1 \rho_1^{-1}\mu_1^{-1}$$
+
+이 성립한다는 사실을 계산을 통해 알 수 있다. 즉 $A_3 \subset C(S_3)$이다. 따라서 $C(S_3) = A_3$을 얻는다. 
