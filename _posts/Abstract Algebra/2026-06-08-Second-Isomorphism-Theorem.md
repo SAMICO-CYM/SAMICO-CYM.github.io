@@ -88,7 +88,7 @@ Let $G$ be a group, and let $H \le G, N \lhd G.$ Then
 $$(HN)/N \cong H/(H \cap N)$$
 
 ### Proof
-First, we note that $HN \le G,$ so $N \lhd HN,$ and that $H \cap N \lhd H.$
+First, we note that $HN \le G,$ so $N \lhd HN,$ and that $H \cap N \lhd H$ by the preceeding Lemma.
 
 $\big[(\because)$ $N \lhd HN$ is clear. To verify another one, let $h \in H.$ Then for any $x \in H \cap N,$ $hxh^{-1} \in H,$ so $h(H \cap N)h^{-1} \subset H.$ Thus, $H \cap N \lhd H.\big]$
 

@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -209,11 +209,11 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "ad93002bd3780db3",
+  "active": "624a40d66e922895",
   "lastOpenFiles": [
+    "_posts/Abstract Algebra/2026-06-08-Third-Isomorphism-Theorem.md",
     "_posts/Abstract Algebra/2026-06-08-Second-Isomorphism-Theorem.md",
     "_posts/Abstract Algebra/2026-03-18-Subgroup.md",
-    "_posts/Abstract Algebra/2026-06-08-Third-Isomorphism-Theorem.md",
     "_site/posts/Third-Isomorphism-Theorem/index.html",
     "_site/posts/Third-Isomorphism-Theorem",
     "_posts/Abstract Algebra/2026-05-13-First-Isomorphism-Theorem.md",
