@@ -53,6 +53,14 @@ Suppose that $gHg^{-1} = H, \forall g \in G$. Let $g \in G$, and let $h \in H$. 
 Let $h \in H$. Since $g^{-1}Hg = H$, we have $g^{-1}hg = b$ for some $b \in H$, so that $hg = gb \in gH$. Thus $Hg \subset gH$. Hence, $gH = Hg$, which means that $H \lhd G$. $\blacksquare$
 
 ---
+## Corollary
+Let $H \le G,$ and let $N \lhd G.$ Then $N \lhd H.$
+
+즉, 부분군의 normal 구조는 군 안에서 완전히 보존된다고 말할 수 있다. 
+### Proof
+Since $N \lhd G,$ we have $gNg^{-1} \subset N, \forall g \in G$ by Theorem 1. It follows that $hNh^{-1} \subset N, \forall h \in H,$ which means that $N \lhd H.$ $\blacksquare$
+
+---
 ## Theorem 2
 An intersection of normal subgroups of a group $G$ is again a normal subgroup of $G$.
 
