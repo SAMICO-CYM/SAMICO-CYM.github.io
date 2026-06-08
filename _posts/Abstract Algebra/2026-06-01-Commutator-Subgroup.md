@@ -22,3 +22,83 @@ Let $G$ be a group, and let $N \lhd G.$
 **(ii)** $G/N$ is abelian $\iff$ $C(G) \le N.$
 
 ### Proof
+**(i)** Let $g \in G$. We will show that $gC(G)g^{-1} \subset C(G).$ 
+
+To see this, let $x \in gC(G)g^{-1}.$ Then $x = gcg^{-1}$ for some $c \in C(G)$, and we write 
+
+$$c = (a_1b_1a^{-1}_1b^{-1}_1) \cdots (a_nb_na^{-1}_nb^{-1}_n)$$
+
+for some $a_1, b_1, \cdots, a_n, b_n \in G.$ Then we obtain
+
+$$\begin{align*}
+x &= gcg^{-1} \\
+&= g(a_1b_1a^{-1}_1b^{-1}_1) \cdots (a_nb_na^{-1}_nb^{-1}_n)g^{-1} \\
+&= g(a_1b_1a^{-1}_1b^{-1}_1) e \cdots e(a_nb_na^{-1}_nb^{-1}_n) \\
+&= g(a_1b_1a^{-1}_1b^{-1}_1)g^{-1}g \cdots g^{-1}g (a_nb_na^{-1}_nb^{-1}_n)g^{-1} \\
+&= (ga_1b_1a^{-1}_1b^{-1}_1g^{-1}) \cdots (ga_nb_na^{-1}_nb^{-1}_ng^{-1}) \\
+&= (ga_1b_1a^{-1}_1eb^{-1}_1g^{-1}) \cdots (ga_nb_na^{-1}_neb^{-1}_ng^{-1}) \\
+&= (ga_1b_1a^{-1}_1(g^{-1}b^{-1}_1b_1g)b^{-1}_1g^{-1}) \cdots (ga_nb_na^{-1}_n(g^{-1}b^{-1}_nb_ng)b^{-1}_ng^{-1}) \\
+&= ((ga_1)b_1(ga_1)^{-1}b^{-1}_1)(b_1gb^{-1}_1g^{-1}) \cdots ((ga_n)b_n(ga_n)^{-1}b^{-1}_n)(b_ngb^{-1}_ng^{-1}) \\
+&\in C(G),
+\end{align*}$$
+
+which implies that $gC(G)g^{-1} \subset C(G).$ Hence, $C(G) \lhd G.$ 
+
+**(ii)** 
+
+$(\Longrightarrow)$
+
+Suppose that $G/N$ is abelian. First, we will show that $C(G) \subset N.$ 
+
+To see this, it suffices to show that for each $a, b \in C(G),$ the generator $aba^{-1}b^{-1}$ belongs to $N.$
+
+Let $a, b \in C(G).$ Since $G/N$ is abelian, we have 
+
+$$\begin{align*}
+(a^{-1}b^{-1})N &= (a^{-1}N)(b^{-1}N) \\
+&=(b^{-1}N)(a^{-1}N)\\
+&= (b^{-1}a^{-1}N) \\
+&= (ab)^{-1}N.
+\end{align*}$$
+
+Then we obtain 
+
+$$\begin{align*}
+(aba^{-1}b^{-1})N &= [(ab)N][(a^{-1}b^{-1}N)] \\
+&= [(ab)N][(ab)^{-1}N] \\
+&= N,
+\end{align*}$$
+
+so $aba^{-1}b^{-1} \in N.$ Thus, $C(G) \subset N.$
+
+Next, we will prove that $C(G) \le N.$ Let $a, b \in C(G).$ Note that $b^{-1} \in C(G)$ because if 
+
+$$b = (a_1b_1a^{-1}_1b^{-1}_1) \cdots (a_nb_na^{-1}_nb^{-1}_n)$$
+
+for some $a_1,b_1, \cdots, a_n, b_n \in G,$ then 
+
+
+$$\begin{align*}
+b^{-1} &= [(a_1b_1a^{-1}_1b^{-1}_1) \cdots (a_nb_na^{-1}_nb^{-1}_n)]^{-1} \\
+&= (a_nb_na^{-1}_nb^{-1}_n)^{-1} \cdots (a_1b_1a^{-1}_1b^{-1}_1)^{-1} \\
+&= (b_na_nb_n^{-1}a_n^{-1}) \cdots (b_1a_1b_1^{-1}a_1^{-1}) \\
+& \in C(G).
+\end{align*}$$
+
+Thus, clearly $ab^{-1} \in C(G),$ and therefore $C(G) \le N.$ 
+
+$(\Longleftarrow)$
+
+Suppose that $C(G) \le N.$ Let $a, b \in G.$ Then $aba^{-1}b^{-1} \in C(G) \subset N.$ Since $N \lhd G,$ we have 
+
+$$ab \in N(a^{-1}b^{-1})^{-1} = N(ba) = (ba)N,$$
+
+so 
+
+$$\begin{align*}
+(aN)(bN) &= (ab)N \\
+&=(ba)N \\
+&= (bN)(aN). 
+\end{align*}$$
+
+Hence, $G/N$ is abelian. $\blacksquare$

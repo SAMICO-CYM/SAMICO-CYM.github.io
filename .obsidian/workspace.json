@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Topology/2026-06-04-Comb-Space.md",
+                "file": "_posts/Abstract Algebra/2026-06-01-Center.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-04-Comb-Space"
+              "title": "2026-06-01-Center"
             }
           }
         ],
@@ -197,9 +197,10 @@
   },
   "active": "ad93002bd3780db3",
   "lastOpenFiles": [
+    "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
+    "_posts/Topology/2026-06-04-Comb-Space.md",
     "_posts/Topology/2026-06-04-Path-Connected.md",
     "_posts/Topology/2026-05-27-Connected-Space.md",
-    "_posts/Topology/2026-06-04-Comb-Space.md",
     "_posts/Topology/2026-04-29-Continuous-Functions.md",
     "_site/assets/img/combspaceplot11.png",
     "assets/img/combspaceplot11.png",
@@ -213,7 +214,6 @@
     "_site/posts/Path-Connected",
     "_site/page20/index.html",
     "_site/page20",
-    "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
     "_site/assets/img/Pasted image 20260601151544.png",
     "_posts/Abstract Algebra/2026-06-01-Center.md",
     "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
