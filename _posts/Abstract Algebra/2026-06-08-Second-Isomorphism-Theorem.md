@@ -77,9 +77,15 @@ so $g(HN)g^{-1} \subset HN,$ which means that $HN \lhd G.$ $\blacksquare$
 
 ---
 ## Remark
-Let $G$ be a group, and let $H, N \le G.$ Then $HN$ need not to be a subspace of $G.$
+Let $G$ be a group, and let $H, N \le G.$ 
+
+**(i)** $HN$ need not to be a subspace of $G.$
 
 $\big[(\because)$ Let $G = S_3$ and let $H = \langle \mu_1 \rangle = \\{ \rho_0, \mu_1 \\}$ and $N = \langle \mu_3 \rangle = \\{ \rho_0, \mu_3 \\}.$ Then $H, N \le G$ but $HN = \\{ \rho_0, \mu_1, \mu_3, \rho_2 \\} \not \le S_3. \big]$
+
+**(ii)** Although $N \lhd G,$ $HN$ need not to be a normal subgroup of $G.$
+
+$\big[(\because)$ Let $G = S_3$ and let $H = \langle \mu_1 \rangle = \\{ \rho_0, \mu_1 \\}$ and $N = A_3.$ Then 
 
 ---
 ## Second Isomorphism Theorem
@@ -88,13 +94,15 @@ Let $G$ be a group, and let $H \le G, N \lhd G.$ Then
 $$(HN)/N \cong H/(H \cap N)$$
 
 ### Proof
-First, we note that $HN \le G,$ so $N \lhd HN,$ and that $H \cap N \lhd H$ by the preceeding Lemma.
+**Claim 1:** $N \lhd HN$ and $H \cap N \lhd H$.
 
-$\big[(\because)$ $N \lhd HN$ is clear. To verify another one, let $h \in H.$ Then for any $x \in H \cap N,$ $hxh^{-1} \in H,$ so $h(H \cap N)h^{-1} \subset H.$ Thus, $H \cap N \lhd H.\big]$
+$\big[(\because)$ Since $N \subset HN$ and $N \lhd G,$ we have $N \lhd HN.$
+
+To verify another one, let $h \in H$ and let $x \in H \cap N.$ Since $N \lhd G$ and $x \in N,$ we have $hxh^{-1} \in N.$ Furthermore, $hxh^{-1} \in H,$ so $h(H \cap N)h^{-1} \subset H \cap N.$ Thus, $H \cap N \lhd H.\big]$
 
 We define a map $\phi: HN \to H/(H \cap N)$ by $\phi(hn) = h(H \cap N), \forall hn \in HN.$ 
 
-**Claim 1:** $\phi$ is well-defined.
+**Claim 2:** $\phi$ is well-defined.
 
 $\big[(\because)$ Let $h_1n_1, h_2n_2 \in HN.$ Suppose that $h_1n_1 = h_2n_2.$ Then we have $h_1 = h_2n_2n_1^{-1}$ and $h_2^{-1}h_1 = n_2n_1^{-1} \in H \cap N.$ Then we obtain 
 
@@ -109,7 +117,7 @@ $$\begin{align*}
 
 so $\phi$ is well-defined.$\big]$
 
-**Claim 2:** $\phi$ is an epimorphism with $\ker(\phi) = N.$
+**Claim 3:** $\phi$ is an epimorphism with $\ker(\phi) = N.$
 
 $\big[(\because)$ Let $h_1n_1, h_2n_2 \in HN.$ Since $HN \le G,$ $(h_1n_1)(h_2n_2) \in HN.$ Since $N \lhd G,$ we have $n_1h_2 \in Nh_2 = h_2N,$ so $n_1h_2 = h_2n_1'$ for some $n_1' \in N.$ Then $h_1n_1h_2n_2 = h_1h_2n_1'n_2,$ so  
 
