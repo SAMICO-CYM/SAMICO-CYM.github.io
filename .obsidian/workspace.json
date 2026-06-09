@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Topology/2026-05-19-Metric-Topology.md",
+                "file": "_posts/Topology/2026-06-04-Comb-Space.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-19-Metric-Topology"
+              "title": "2026-06-04-Comb-Space"
             }
           }
         ]
@@ -182,6 +182,7 @@
   },
   "active": "338f8c0a6cfd6051",
   "lastOpenFiles": [
+    "_posts/Topology/2026-05-19-Metric-Topology.md",
     "_posts/Topology/2026-05-26-Quotient-Topology.md",
     "_posts/Topology/2026-05-27-Connected-Space.md",
     "_posts/Topology/2026-06-04-Comb-Space.md",
@@ -226,7 +227,6 @@
     "_posts/Graph Theory/2026-04-10-Graph.md",
     "_templates/new_post.md",
     "_posts/Graph Theory/2026-05-15-Tree.md",
-    "_posts/Graph Theory/2026-05-22-Spanning-Tree.md",
-    "_posts/Graph Theory/2026-05-29-Minimum-Spanning-Tree.md"
+    "_posts/Graph Theory/2026-05-22-Spanning-Tree.md"
   ]
 }
