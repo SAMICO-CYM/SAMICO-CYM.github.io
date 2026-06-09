@@ -68,11 +68,11 @@ The Laplace equation is invariant under all rigid motions; translation and rotat
 
 **(i)** $2$-$D:$ In the polar coordinate $(r, \theta),$
 
-$$\Delta_2 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} = \frac{\partial^2}{\partial r^2} + \frac{1}{r} \frac{\partial}{\partial r} + \frac{1}{r^2} \frac{\partial^2}{\partial \theta^2}$$
+$$\Delta_2 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} = \frac{\partial^2}{\partial r^2} + \frac{1}{r} \frac{\partial}{\partial r} + \frac{1}{r^2} \frac{\partial^2}{\partial \theta^2}.$$
 
 **(ii)** $3$-$D:$ In the spherical coordinate $(r, \theta, \phi),$
 
-$$\Delta_3 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} = \frac{\partial^2}{\partial r^2} + \frac{2}{r} \frac{\partial}{\partial r} + \frac{1}{r^2 \sin \theta} \frac{\partial}{\partial \theta} \sin \theta \frac{\partial}{\partial \theta} + \frac{1}{r^2 \sin \theta} \frac{\partial^2}{\partial \phi^2}$$
+$$\Delta_3 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} = \frac{\partial^2}{\partial r^2} + \frac{2}{r} \frac{\partial}{\partial r} + \frac{1}{r^2 \sin \theta} \frac{\partial}{\partial \theta} \sin \theta \frac{\partial}{\partial \theta} + \frac{1}{r^2 \sin \theta} \frac{\partial^2}{\partial \phi^2}.$$
 
 ### Proof
 First, we consider the translation. By the translation, the coordiante is changed as 
@@ -161,5 +161,47 @@ r \sin \theta & \cos \theta
 By the chain rule, we have 
 
 $$\begin{align*}
-
+\frac{\partial}{\partial x} &= \cos \theta \frac{\partial}{\partial r} - \frac{\sin \theta}{r} \frac{\partial}{\partial \theta} \\
+\frac{\partial}{\partial y} &= \sin \theta \frac{\partial}{\partial r} + \frac{\cos \theta}{r} \frac{\partial}{\partial \theta}
 \end{align*}$$
+
+so
+
+$$\begin{align*}
+\frac{\partial^2}{\partial x^2} &= \left[ \cos \theta \frac{\partial}{\partial r} - \frac{\sin \theta}{r} \frac{\partial}{\partial \theta} \right]^2 \\
+&= \cos^2 \theta \frac{\partial^2}{\partial r^2} - 2 \left( \frac{\sin \theta \cos \theta}{r} \right) \frac{\partial^2}{\partial r \partial \theta} + \frac{\sin^2 \theta}{r^2} \frac{\partial^2}{\partial \theta^2} + \frac{2 \sin \theta \cos \theta}{r^2} \frac{\partial}{\partial \theta} + \frac{\sin^2 \theta}{r} \frac{\partial}{\partial r} \\
+\frac{\partial^2}{\partial y^2} &= \left( \sin \theta \frac{\partial}{\partial r} + \frac{\cos \theta}{r} \frac{\partial}{\partial \theta} \right)^2 \\
+&= \sin^2 \theta \frac{\partial^2}{\partial r^2} + 2 \left( \frac{\sin \theta \cos \theta}{r} \right) \frac{\partial^2}{\partial r \partial \theta} + \frac{\cos^2 \theta}{r^2} \frac{\partial^2}{\partial \theta^2} - \frac{2 \sin \theta \cos \theta}{r^2} \frac{\partial}{\partial \theta} + \frac{\cos^2 \theta}{r} \frac{\partial}{\partial r}.
+\end{align*}$$
+
+Thus, we obtain
+
+$$\begin{align*}
+\Delta_2 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} = \frac{\partial^2}{\partial r^2} + \frac{1}{r} \frac{\partial}{\partial r} + \frac{1}{r^2} \frac{\partial^2}{\partial \theta^2}.
+\end{align*}$$
+
+Simlarly, we can obtain the $3$-$D$ version:
+
+$$\Delta_3 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} = \frac{\partial^2}{\partial r^2} + \frac{2}{r} \frac{\partial}{\partial r} + \frac{1}{r^2 \sin \theta} \frac{\partial}{\partial \theta} \sin \theta \frac{\partial}{\partial \theta} + \frac{1}{r^2 \sin \theta} \frac{\partial^2}{\partial \phi^2}. \quad \blacksquare$$
+
+---
+## Corollary
+**(i)** If a $2$-$D$ harmonic function $u$ is rotationally invariant, then 
+
+$$0 = u_{rr} + \frac{1}{r}u_r,$$
+
+so the solution is 
+
+$$u(r, \theta) = C_1 \log r + C_2$$
+
+for some constants $C_1, C_2.$
+
+**(ii)** If a $3$-$D$ harmonic function $u$ is rotationally invariant, then 
+
+$$0 = u_{rr} + \frac{2}{r}u_r,$$
+
+so the solution is 
+
+$$u(r, \theta) = -\frac{C_1}{r} + C_2$$
+
+for some constants $C_1, C_2.$
