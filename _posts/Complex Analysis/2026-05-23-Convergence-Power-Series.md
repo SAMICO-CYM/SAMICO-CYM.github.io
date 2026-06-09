@@ -215,10 +215,96 @@ $$\int_C S(z) \, dz = 0.$$
 
 By [Morera's Theorem](<{% post_url Complex Analysis/2026-05-16-Morera-Theorem %}#morera-theorem>), we conclude that $S$ is analytic throughout the circle of convergence of the series.
 
-**(vi)**
+**(vi)** Let $z$ be a point interior to the circle of convergence of series. Let $C$ be a positively oriented simple closed contour surrounding $z$ and interior to that circle. 
 
-**(vii)**
+Define the function 
 
-**(viii)**
+$$g(s) = \frac{1}{2\pi i} \cdot \frac{1}{(s-z)^2},\forall s \in C.$$
 
-$\blacksquare$
+Since $g$ is continuous on $C$, we have 
+
+$$\int_C g(s) S(s) \, ds = \sum_{n=0}^\infty a_n \int_C g(s) (s-z_0)^n \, ds$$
+
+by **(iv)**. Since the series $S(z)$ is analytic inside and on $C,$ the Cauchy integral formula ensures 
+
+$$\int_C g(s) S(s) \, ds = \frac{1}{2 \pi i} \int_C \frac{S(s)}{(s-z)^2} \, ds = S'(z).$$
+
+Furthermore, 
+
+$$\begin{align*}
+\int_C g(s) (s-z_0)^n \, ds &= \frac{1}{2\pi i} \int_C \frac{(s-z_0)^{n}}{(s-z)^2} \, ds \\
+&= \frac{d}{dz}(z-z_0)^n \\
+&= n(z-z_0)^{n-1}
+\end{align*}$$
+
+for each $n = 1, 2, \cdots.$
+
+Hence, we obtain
+
+$$S'(z) = \sum_{n=1}^\infty n a_n(z-z_0)^{n-1}.$$
+
+**(vii)** By assumption, we write 
+
+$$f(z) = \sum_{n=0}^\infty a_n(z-z_0)^n$$
+
+for each $z$ interior to the circle of convergence. 
+
+Let $g(z)$ be any one of the functions 
+
+$$g(z) = \frac{1}{2\pi i} \cdot \frac{1}{(z-z_0)^{n+1}} \quad (n = 0, 1, 2, \cdots)$$
+
+for each $z$ on $C$, which is a positively oriented circle centered at $z_0$ and interior to the circle of convergence. Then we have 
+
+$$\int_C g(z) f(z) \, dz = \sum_{m=0}^\infty a_m \int_C g(z)(z-z_0)^m \, dz.$$
+
+Since $f(z)$ is analytic inside and on $C$, by the Cauchy integral formula, we have 
+
+$$\int_C g(z) f(z) \, dz = \frac{1}{2\pi i} \int_C \frac{f(z)}{(z-z_0)^{n+1}} \, dz = \frac{f^{(n)}(z_0)}{n!}.$$
+
+Furthermore, we have 
+
+$$\begin{align*}
+\int_C g(z) (z-z_0)^m \, dz &= \frac{1}{2\pi i} \int_C \frac{(z-z_0)^m}{(z-z_0)^{n+1}} \, dz \\ 
+&= \frac{1}{2\pi i} \int_C \frac{(z-z_0)^{m-n}}{z-z_0} \, dz \\
+&= \begin{cases}
+0 & \text{if } m \neq n \\
+1 & \text{if } m = n.
+\end{cases}
+\end{align*}$$
+
+Thus, we obtain 
+
+$$a_n = \frac{f^{(n)}(z_0)}{n!}$$
+
+for each $n = 0, 1, 2, \cdots,$ and therefore the given series is the Taylor series for $f$ about $z_0.$
+
+**(viii)** By assumption, we write 
+
+$$f(z) = \sum_{n=-\infty}^\infty c_n(z-z_0)^n$$
+
+for each $z$ interior to the some annular domain about $z_0.$ 
+
+Let $g(z)$ be any one of the functions 
+
+$$g(z) = \frac{1}{2\pi i} \cdot \frac{1}{(z-z_0)^{n+1}} \quad (n = 0, \pm 1, \pm 2, \cdots)$$
+
+for each $z$ on $C$, which is a positively oriented circle centered at $z_0$ and interior to the annular domain. Then we have 
+
+$$\int_C g(z) f(z) \, dz = \sum_{m=-\infty}^\infty c_m \int_C g(z)(z-z_0)^m \, dz.$$
+
+Then we have 
+
+$$\begin{align*}
+\int_C g(z) (z-z_0)^m \, dz &= \frac{1}{2\pi i} \int_C \frac{(z-z_0)^m}{(z-z_0)^{n+1}} \, dz \\ 
+&= \frac{1}{2\pi i} \int_C \frac{(z-z_0)^{m-n}}{z-z_0} \, dz \\
+&= \begin{cases}
+0 & \text{if } m \neq n \\
+1 & \text{if } m = n.
+\end{cases}
+\end{align*}$$
+
+Thus, we obtain 
+
+$$c_n = \int_C g(z) f(z) \, dz = \frac{1}{2\pi i} \int_C \frac{f(z)}{(z-z_0)^{n+1}} \, dz$$
+
+for each $n = 0, \pm 1, \pm 2, \cdots,$ and therefore the given series is the Laurent series for $f$ about $z_0.$ $\blacksquare$

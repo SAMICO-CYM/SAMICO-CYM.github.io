@@ -4,21 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "a0dd1695599e1de5",
+        "id": "677f6c0cc35c46a1",
         "type": "tabs",
         "children": [
           {
-            "id": "338f8c0a6cfd6051",
+            "id": "389e6e516b0f5c56",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "_posts/Topology/2026-06-04-Comb-Space.md",
+=======
+                "file": "_posts/Complex Analysis/2026-05-23-Convergence-Power-Series.md",
+>>>>>>> 856417f85cb5f7e77471915bc570beed3d64b5b7
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "2026-06-04-Comb-Space"
+=======
+              "title": "2026-05-23-Convergence-Power-Series"
+>>>>>>> 856417f85cb5f7e77471915bc570beed3d64b5b7
             }
           }
         ]
@@ -180,8 +188,9 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "338f8c0a6cfd6051",
+  "active": "389e6e516b0f5c56",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "_posts/Topology/2026-05-19-Metric-Topology.md",
     "_posts/Topology/2026-05-26-Quotient-Topology.md",
     "_posts/Topology/2026-05-27-Connected-Space.md",
@@ -191,42 +200,60 @@
     "_posts/Abstract Algebra/2026-05-13-First-Isomorphism-Theorem.md",
     "_posts/Abstract Algebra/2026-06-08-Third-Isomorphism-Theorem.md",
     "_posts/Abstract Algebra/2026-03-18-Subgroup.md",
+=======
+>>>>>>> 856417f85cb5f7e77471915bc570beed3d64b5b7
     "_site/posts/Third-Isomorphism-Theorem/index.html",
     "_site/posts/Third-Isomorphism-Theorem",
-    "_posts/Abstract Algebra/2026-05-06-Kernel.md",
-    "_posts/Abstract Algebra/2026-04-01-Special-Morphisms.md",
-    "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
     "_site/posts/Second-Isomorphism-Theorem/index.html",
     "_site/posts/Second-Isomorphism-Theorem",
-    "_posts/Abstract Algebra/2026-05-13-Factor-Group.md",
-    "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
-    "_site/posts/Platonic-Solid/index.html",
-    "_site/posts/Platonic-Solid",
-    "_site/posts/Harmonic-Equation/index.html",
-    "_site/posts/Harmonic-Equation",
-    "_site/page20/index.html",
-    "_site/page20",
-    "_site/assets/img/Pasted image 20260605164916.png",
-    "_site/assets/img/Pasted image 20260605164517.png",
-    "_posts/Abstract Algebra/2026-06-01-Center.md",
-    "assets/img/Pasted image 20260605164916.png",
-    "assets/img/Pasted image 20260605164517.png",
-    "_posts/PDE/2026-06-04-Harmonic-Equation.md",
-    "_posts/Graph Theory/2026-06-05-Platonic-Solid.md",
+    "_posts/Abstract Algebra/2026-03-16-The-Order-Of-Group.md",
+    "_posts/Abstract Algebra/2026-06-08-Third-Isomorphism-Theorem.md",
+    "_posts/Abstract Algebra/2026-06-08-Second-Isomorphism-Theorem.md",
     "_posts/Abstract Algebra/2026-06-01-Center-Of-Group.md",
-    "_posts/Topology/2026-04-29-Continuous-Functions.md",
-    "_site/assets/img/combspaceplot11.png",
-    "assets/img/combspaceplot11.png",
-    "_site/assets/img/combspaceplot.png",
-    "assets/img/combspaceplot.png",
-    "_site/assets/img/Figure_1.png",
-    "assets/img/Figure_1.png",
+    "_posts/Abstract Algebra/2026-03-22-Center-Of-Group.md",
     "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
     "_posts/Graph Theory/2026-06-01-Planer-Graph.md",
     "_posts/Graph Theory/2026-06-01-Euler-Formula.md",
+<<<<<<< HEAD
     "_posts/Graph Theory/2026-04-10-Graph.md",
     "_templates/new_post.md",
     "_posts/Graph Theory/2026-05-15-Tree.md",
     "_posts/Graph Theory/2026-05-22-Spanning-Tree.md"
+=======
+    "_posts/Graph Theory/2026-06-05-Platonic-Solid.md",
+    "_site/assets/img/Pasted image 20260605164916.png",
+    "assets/img/Pasted image 20260605164916.png",
+    "_site/assets/img/Pasted image 20260605164517.png",
+    "assets/img/Pasted image 20260605164517.png",
+    "_site/posts/Platonic-Solid/index.html",
+    "_site/posts/Platonic-Solid",
+    "_posts/Complex Analysis/2026-05-23-Convergence-Power-Series.md",
+    "_site/posts/Path-Connected/index.html",
+    "_site/posts/Path-Connected",
+    "_site/posts/Comb-Space/index.html",
+    "_site/posts/Comb-Space",
+    "_site/assets/img/combspaceplot11.png",
+    "_site/assets/img/combspaceplot.png",
+    "_site/assets/img/Figure_1.png",
+    "_posts/PDE/2026-06-04-Harmonic-Equation.md",
+    "assets/img/combspaceplot11.png",
+    "assets/img/combspaceplot.png",
+    "assets/img/Figure_1.png",
+    "_posts/Topology/2026-06-04-Path-Connected.md",
+    "_posts/Topology/2026-06-04-Comb-Space.md",
+    "_site/posts/Harmonic-Equation/index.html",
+    "_posts/Topology/2026-05-26-Quotient-Topology.md",
+    "_posts/Topology/2026-04-29-Continuous-Functions.md",
+    "_posts/Graph Theory/2026-05-29-Minimum-Weighted-Spanning-Tree.md",
+    "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
+    "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
+    "_posts/Abstract Algebra/2026-05-29-Conjugation.md",
+    "_posts/Topology/2026-05-27-Connected-Space.md",
+    "_posts/Fourier Series/2026-05-28-L2-Theory.md",
+    "_posts/Fourier Series/2026-05-27-Convergence-Theorem.md",
+    "_posts/Topology/2026-04-30-Open-Closed-map.md",
+    "_posts/Topology/2026-04-29-Homeomorphism.md",
+    "_posts/Complex Analysis/2026-05-16-Morera-Theorem.md"
+>>>>>>> 856417f85cb5f7e77471915bc570beed3d64b5b7
   ]
 }
