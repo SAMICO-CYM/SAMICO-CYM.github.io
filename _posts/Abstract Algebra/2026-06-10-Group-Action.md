@@ -15,6 +15,8 @@ Let $G$ be a group, and let $X$ be a nonempty set. Then a ***group action*** of 
 
 If there exists a group action of $G$ on $X$, then $X$ is called a ***$G$-set.***
 
+$X$라는 집합은 공집합이 아니기만 하면 딱히 제한이 없고, 군이 될 필요도 없을 뿐더러 연산조차 주어지지 않아도 상관없다. 핵심은 이런 집합 $X$에 군 $G$의 원소를 가하는 action을 취했을 때 $X$의 다른 원소로 매핑되는 관계가 위 조건에 따라 잘 정의되면 그 원소를 가하는 행위를 group action이라고 부른다. Permutation 같은 예를 생각해보면 $X$의 원소를 $X$의 또 다른 원소로 보내는 행위가 무엇인지 자연스럽게 알 수 있겠다.
+
 ---
 ## Example
 **(i)** Let $X$ be any nonemptyset, and let $H \le S_X.$ Then $X$ is a $H$-set.
@@ -74,6 +76,14 @@ $$\begin{align*}
 for all $h_1, h_2 \in H, g \in G.$ 
 
 Hence, $\ast$ is a group action of $H$ on $G.\big]$
+
+**(iv)** Let $G = D_4 = \{\rho_0, \rho_1, \rho_2, \rho_3, \mu_1, \mu_2, \delta_1, \delta_2\}$ and $X = \{1, 2, 3, 4, S_1, S_2, S_3, S_4, m_1, m_2, d_1, d_2, p_1, p_2, p_3, p_4\}$, where
+
+![](assets/img/Pasted%20image%2020260610133944.png)
+
+Then $X$ is a $G$-set in a natural way. 
+
+이 예시에서야 비로소 "action"이라는 말의 진가가 드러난다. 위 사진과 같이 정사각형의 꼭짓점과 중점, 모서리와 중선, 대각선에 라벨링을 한 집합을 $X$라고 두고 그룹 $G$를 dihedral group으로 둔다. 그러면 중심 $C$를 기준으로 돌리거나 뒤집는 연산을 생각해보면 정사각형을 이리저리 돌리고 뒤집는 행위로 대응되고, $X$의 원소들은 또 다른 $X$의 원소들로 대응된다.
 
 ---
 ## Theorem 1

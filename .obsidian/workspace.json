@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Abstract Algebra/2026-06-10-Group-Action.md",
+                "file": "_posts/Abstract Algebra/2026-06-10-Burnside-Lemma.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-10-Group-Action"
+              "title": "2026-06-10-Burnside-Lemma"
             }
           }
         ]
@@ -182,9 +182,17 @@
   },
   "active": "04bb850e285e5ed6",
   "lastOpenFiles": [
+    "_site/posts/Burnside-Lemma/index.html",
+    "_site/posts/Burnside-Lemma",
+    "_posts/Abstract Algebra/2026-06-10-Isotropy-Subgroup.md",
+    "_posts/Abstract Algebra/2026-06-10-Burnside-Lemma.md",
+    "_posts/Abstract Algebra/2026-06-10-Group-Action.md",
+    "_site/assets/img/Pasted image 20260610133944.png",
+    "_site/posts/Isotropy-Subgroup/index.html",
+    "_site/posts/Isotropy-Subgroup",
+    "assets/img/Pasted image 20260610133944.png",
     "_site/posts/Group-Action/index.html",
     "_site/posts/Group-Action",
-    "_posts/Abstract Algebra/2026-06-10-Group-Action.md",
     "_posts/PDE/2026-06-04-Harmonic-Equation.md",
     "_posts/Topology/2026-06-04-Comb-Space.md",
     "_posts/Topology/2026-05-19-Metric-Topology.md",
@@ -205,10 +213,6 @@
     "_posts/Abstract Algebra/2026-05-13-Factor-Group.md",
     "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
     "_site/posts/Platonic-Solid/index.html",
-    "_site/posts/Platonic-Solid",
-    "_site/posts/Harmonic-Equation/index.html",
-    "_site/posts/Harmonic-Equation",
-    "_site/page20/index.html",
     "_site/assets/img/Pasted image 20260605164916.png",
     "_site/assets/img/Pasted image 20260605164517.png",
     "_posts/Abstract Algebra/2026-06-01-Center.md",
@@ -221,12 +225,8 @@
     "assets/img/combspaceplot11.png",
     "_site/assets/img/combspaceplot.png",
     "assets/img/combspaceplot.png",
-    "_site/assets/img/Figure_1.png",
-    "assets/img/Figure_1.png",
     "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
     "_posts/Graph Theory/2026-06-01-Planer-Graph.md",
-    "_posts/Graph Theory/2026-06-01-Euler-Formula.md",
-    "_posts/Graph Theory/2026-04-10-Graph.md",
-    "_templates/new_post.md"
+    "_posts/Graph Theory/2026-06-01-Euler-Formula.md"
   ]
 }
