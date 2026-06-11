@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Complex Analysis/2026-05-23-Convergence-Power-Series.md",
+                "file": "_posts/PDE/2026-06-11-Rectangle-Cube.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-23-Convergence-Power-Series"
+              "title": "2026-06-11-Rectangle-Cube"
             }
           }
         ]
@@ -182,6 +182,15 @@
   },
   "active": "389e6e516b0f5c56",
   "lastOpenFiles": [
+    "_site/assets/img/Pasted image 20260611192542.png",
+    "assets/img/Pasted image 20260611192542.png",
+    "_site/assets/img/Pasted image 20260611192305.png",
+    "assets/img/Pasted image 20260611192305.png",
+    "_site/posts/Rectangle-Cube/index.html",
+    "_site/posts/Rectangle-Cube",
+    "_posts/PDE/2026-06-04-Harmonic-Equation.md",
+    "_posts/PDE/2026-06-11-Rectangle-Cube.md",
+    "_posts/Complex Analysis/2026-05-23-Convergence-Power-Series.md",
     "_site/posts/Isotropy-Subgroup/index.html",
     "_site/posts/Isotropy-Subgroup",
     "_site/posts/Group-Action/index.html",
@@ -195,8 +204,6 @@
     "_posts/Abstract Algebra/2026-06-10-Burnside-Lemma.md",
     "_site/posts/Third-Isomorphism-Theorem/index.html",
     "_site/posts/Third-Isomorphism-Theorem",
-    "_site/posts/Second-Isomorphism-Theorem/index.html",
-    "_site/posts/Second-Isomorphism-Theorem",
     "_posts/Abstract Algebra/2026-03-16-The-Order-Of-Group.md",
     "_posts/Abstract Algebra/2026-06-08-Third-Isomorphism-Theorem.md",
     "_posts/Abstract Algebra/2026-06-08-Second-Isomorphism-Theorem.md",
@@ -210,13 +217,7 @@
     "assets/img/Pasted image 20260605164916.png",
     "_site/assets/img/Pasted image 20260605164517.png",
     "assets/img/Pasted image 20260605164517.png",
-    "_site/posts/Platonic-Solid/index.html",
-    "_posts/Complex Analysis/2026-05-23-Convergence-Power-Series.md",
     "_site/assets/img/combspaceplot11.png",
-    "_site/assets/img/combspaceplot.png",
-    "_site/assets/img/Figure_1.png",
-    "_posts/PDE/2026-06-04-Harmonic-Equation.md",
-    "assets/img/combspaceplot11.png",
     "_posts/Topology/2026-06-04-Path-Connected.md",
     "_posts/Topology/2026-06-04-Comb-Space.md",
     "_posts/Topology/2026-05-26-Quotient-Topology.md",
@@ -226,7 +227,6 @@
     "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
     "_posts/Abstract Algebra/2026-05-29-Conjugation.md",
     "_posts/Topology/2026-05-27-Connected-Space.md",
-    "_posts/Fourier Series/2026-05-28-L2-Theory.md",
-    "_posts/Fourier Series/2026-05-27-Convergence-Theorem.md"
+    "_posts/Fourier Series/2026-05-28-L2-Theory.md"
   ]
 }
