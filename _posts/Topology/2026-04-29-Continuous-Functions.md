@@ -80,14 +80,18 @@ Suppose that $f$ is continuous. Let $y \in f(\overline{A})$. Then $y = f(x)$ for
 
 **(ii)** $\Longrightarrow$ **(iii)**
 
-Suppose that $f(\overline{A}) \subset \overline{f(A)}, \forall A \subset X$. Let $B$ be a closed set of $Y$. Then we have 
+Suppose that $f(\overline{A}) \subset \overline{f(A)}, \forall A \subset X$. Let $C$ be a closed set of $Y$, and let $x \in \overline{f^{-1}(C)}.$ Then we have 
 
-$$\begin{gather*}
-f\left( \overline{f^{-1}(B)} \right) \subset \overline{f\left( f^{-1}(B) \right)} = \overline{B} = B \\
-\implies \overline{f^{-1}(B)} \subset f^{-1}(B).
-\end{gather*}$$
+$$\begin{align*}
+f(x) &\in f(\overline{f^{-1}(C)}) \\
+& \subset \overline{f(f^{-1}(C))} \\
+& \subset \overline{C} \\
+&= C,
+\end{align*}$$
 
-Since clearly $f^{-1}(B) \subset \overline{f^{-1}(B)}$, we have $f^{-1}(B) = \overline{f^{-1}(B)}$, which means that $f^{-1}(B)$ is closed in $X$. 
+so $x \in f^{-1}(C),$ which means that $\overline{f^{-1}(C)} \subset f^{-1}(C).$ 
+
+Since clearly $f^{-1}(C) \subset \overline{f^{-1}(C)}$, we have $f^{-1}(C) = \overline{f^{-1}(C)}$, which means that $f^{-1}(C)$ is closed in $X$. 
 
 **(iii)** $\Longrightarrow$ **(i)**
 
