@@ -103,15 +103,11 @@ Hence, $y \in B_{d'}(x, \varepsilon)$, so that $B_{d''}(x, \delta) \subset B_{d'
 
 **(iii)** $\mathscr{T} _{d''} \subset \mathscr{T} _{d}$
 
-Take $\delta = \frac{\varepsilon}{\sqrt{n}}$. We claim that $B _{d}(x, \delta) \subset B _{d''}(x, \varepsilon)$.
+Take $\delta = \varepsilon$. We claim that $B _{d}(x, \delta) \subset B _{d''}(x, \varepsilon)$.
 
 To verify this, let $y \in B _{d}(x, \delta)$. Then we have
 
-$$\vert x_i - y_i \vert \le \sqrt{\sum_{i=1}^n (x_i - y_i)^2} < \delta = \frac{\varepsilon}{\sqrt{n}}$$
-
-for all $i = 1, 2, \cdots, n$, which implies that 
-
-$$d''(x, y) = \max_{1 \le i \le n} \vert x_i - y_i \vert < \sqrt{\sum_{i=1}^n (x_i - y_i)^2} < \delta = \frac{\varepsilon}{\sqrt{n}} < \varepsilon$$
+$$d''(x, y) = \max_{1 \le i \le n} \vert x_i - y_i \vert < \sqrt{\sum_{i=1}^n (x_i - y_i)^2} < \delta = \varepsilon$$
 
 Hence, $y \in B_{d''}(x, \varepsilon)$, so that $B_{d}(x, \delta) \subset B_{d''}(x, \varepsilon)$. Therefore, $\mathscr{T} _{d''} \subset \mathscr{T} _{d}$ by Theoerm 2. 
 

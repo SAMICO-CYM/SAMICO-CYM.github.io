@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Topology/2026-05-14-Product-Topology.md",
+                "file": "_posts/Topology/2026-05-19-Metric-Topology.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-14-Product-Topology"
+              "title": "2026-05-19-Metric-Topology"
             }
           }
         ]
@@ -182,6 +182,7 @@
   },
   "active": "389e6e516b0f5c56",
   "lastOpenFiles": [
+    "_posts/Topology/2026-05-14-Product-Topology.md",
     "_posts/Topology/2026-04-29-Continuous-Functions.md",
     "_posts/Topology/2026-04-23-T_1-Space.md",
     "_posts/PDE/2026-06-11-Rectangle-Cube.md",
@@ -226,7 +227,6 @@
     "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
     "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
     "_posts/Abstract Algebra/2026-05-29-Conjugation.md",
-    "_posts/Topology/2026-05-27-Connected-Space.md",
-    "_posts/Fourier Series/2026-05-28-L2-Theory.md"
+    "_posts/Topology/2026-05-27-Connected-Space.md"
   ]
 }
