@@ -27,13 +27,27 @@ $$C \text{ is closed in } Y \iff p^{-1}(C) \text{ is closed in } X.$$
 
 $\big[(\because)$ We consider $\pi_1: \mathbb{R} \times \mathbb{R} \to \mathbb{R}$. Since $\pi_1$ is a surjective, continuous, and open map, it is a quotient map. 
 
-Let $A = \\{ (x, y) \in \mathbb{R} \times \mathbb{R} \mid x \ge 0 \text{ or } y = 0 \\}.$ Since $A$ is closed in $\mathbb{R}^2,$ the map $q := \pi_1 \vert_A : A \to \mathbb{R}$ is a quotient map. However, it is not an open map.
+Let $A = \\{ (x, y) \in \mathbb{R} \times \mathbb{R} \mid x \ge 0 \text{ or } y = 0 \\}.$ Note that 
 
-To see this, consider 
+$$A = ([0, \infty) \times \mathbb{R}) \cup (\mathbb{R} \times \{ 0 \}).$$
 
-$$B := A \cap \\{ (x, y) \in \mathbb{R} \times \mathbb{R} \mid x^2 + (y- 2)^2 \le 1 \\}.$$
+Since $[0, \infty), \\{ 0 \\}$ and $\mathbb{R}$ are closed in $\mathbb{R},$ $A$ is closed in $\mathbb{R} \times \mathbb{R}.$
 
-Then $q(B) = [0, 1)$, which is not open in $\mathbb{R}$.$\big]$
+Clearly, the map $q := \pi_1 \vert_A : A \to \mathbb{R}$ is surjective and continuous. To show that $q$ is a quotient map, we only need to verify that if $C \subset \mathbb{R}$ and $q^{-1}(C)$ is closed in $A$, then $C$ is closed in $\mathbb{R}.$
+
+Note that $q^{-1}(C) = \pi_1^{-1}(C)$ is closed in $\mathbb{R} \times \mathbb{R}$ because $A$ is closed in $\mathbb{R} \times \mathbb{R}.$ Since $\pi_1$ is a quotient map, $C$ is closed in $\mathbb{R},$ so $q$ is a quotient map.
+
+However, it is not an open map. To see this, consider 
+
+$$B := A \cap \{ (x, y) \in \mathbb{R} \times \mathbb{R} \mid x^2 + (y- 2)^2 < 1 \}.$$
+
+Note that $B$ is open in $A,$ but $q(B) = [0, 1)$, which is not open in $\mathbb{R}$. Thus, $q$ is not an open map.
+
+Furthermore, it is also not a closed map. Consider 
+
+$$D := A \cap \{ (x, y) \in \mathbb{R} \times \mathbb{R} \mid xy = 1. \}$$
+
+Note that $D$ is closed in $A,$ but $q(D) = (0, \infty),$ which is not closed in $\mathbb{R}.$ Thus, $q$ is not a closed map.$\big]$
 
 ---
 ## Theorem 1
