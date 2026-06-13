@@ -33,9 +33,17 @@ $$A = ([0, \infty) \times \mathbb{R}) \cup (\mathbb{R} \times \{ 0 \}).$$
 
 Since $[0, \infty), \\{ 0 \\}$ and $\mathbb{R}$ are closed in $\mathbb{R},$ $A$ is closed in $\mathbb{R} \times \mathbb{R}.$
 
-Clearly, the map $q := \pi_1 \vert_A : A \to \mathbb{R}$ is surjective and continuous. To show that $q$ is a quotient map, we only need to verify that if $C \subset \mathbb{R}$ and $q^{-1}(C)$ is closed in $A$, then $C$ is closed in $\mathbb{R}.$
+Clearly, the map $q := \pi_1 \vert_A : A \to \mathbb{R}$ is surjective and continuous. Let $f: \mathbb{R} \to A$ be a map defined by $f(x) = (x, 0), \forall x \in \mathbb{R}.$ Then $f$ is well-defined and continuous.
 
-Note that $q^{-1}(C) = \pi_1^{-1}(C)$ is closed in $\mathbb{R} \times \mathbb{R}$ because $A$ is closed in $\mathbb{R} \times \mathbb{R}.$ Since $\pi_1$ is a quotient map, $C$ is closed in $\mathbb{R},$ so $q$ is a quotient map.
+Note that 
+
+$$\begin{align*}
+    (q \circ f)(x) &= q(f(x)) \\
+    &= q(x, 0) \\
+    &= x,
+\end{align*}$$ 
+
+for all $x \in \mathbb{R},$ which means that the map $q \circ f = \mathrm{id}_{\mathbb{R}}.$ By Exercise 22.2 (a), $p$ is a quotient map.
 
 However, it is not an open map. To see this, consider 
 
