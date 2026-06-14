@@ -47,11 +47,18 @@ $$B^n = \{ (x_1, \cdots, x_n) \in \mathbb{R}^n \mid \sqrt{x_1^2 + \cdots x_n^2} 
 
 is path connected.
 
-**(ii)** The ***unit sphere*** 
+$\big[(\because)$ Let $x, y \in B^n$ with $x \neq y,$ and let define the map $p: [0, 1] \to B^n$ such that $p(t) = tx + (1-t)y, \forall t \in [0, 1].$ Since $B^n$ is convex, the image $p([0, 1]) \subset B^n,$ so $p$ is well-defined. Clearly, $p$ is continuous, so $p$ is a path. Hence, $B^n$ is path connected.$\big]$
 
-$$S^n = \{ (x_1, \cdots, x_n) \in \mathbb{R}^n \mid \sqrt{x_1^2 + \cdots x_n^2} = 1 \}$$
+**(ii)** The ***punctured Euclidean space*** $\mathbb{R}^n - \\{ \mathbf{0} \\}$ is path connected. $(n \ge 2)$
+
+$\big[(\because)$ Let $x, y \in \mathbb{R}^n - \\{ \mathbf{0} \\}$ with $x \neq y.$ If $\\{ x, y \\}$ is linearly independent, which means that $x$ and $y$ do not lie in a same straight line in $\mathbb{R}^n,$ then the map $p:[0, 1] \to \mathbb{R}^n - \\{ \mathbf{0} \\}$ defined by $p(t) = tx + (1-t)y, \forall t \in [0, 1]$ is a path.
+
+If $\\{ x, y \\}$ is linearly dependent, which means that $y = cx$ for some scalar $c \in \mathbb{R},$ then we can choose another point $z \in \mathbb{R}^n - \\{ \mathbf{0} \\},$ so $\\{ x, z \\}$ and $\\{ y, z \\}$ are linearly independent. Then there are paths $p_1$ and $p_2$ from $x$ to $z$ and from $z$ to $y$, respectively, so $p_2 \circ p_1$ is a path from $x$ to $y$. Hence, $\mathbb{R}^n - \\{ \mathbf{0} \\}$ is path connected.$\big]$
+
+**(iii)** The ***unit sphere*** 
+
+$$S^{n-1} = \{ (x_1, \cdots, x_n) \in \mathbb{R}^n \mid \sqrt{x_1^2 + \cdots x_n^2} = 1 \}$$
 
 is path connected.
 
-**(iii)** The ***punctured Euclidean space*** $\mathbb{R}^n - \\{ \mathbf{0} \\}$ is path connected.
-
+$\big[(\because)$ Define a map $g: \mathbb{R}^n - \\{ \mathbf{0} \\} \to S^{n-1}$ by $g(x) = \frac{x}{\| x \|}, \forall x \in \mathbb{R}^n - \\{ \mathbf{0} \\}.$ Then clearly $g$ is continuous and surjective. Since $\mathbb{R}^n - \\{ \mathbf{0} \\}$ is path connected, $g(\mathbb{R}^n - \\{ \mathbf{0} \\}) = S^{n-1}$ is path connected.$\big]$
