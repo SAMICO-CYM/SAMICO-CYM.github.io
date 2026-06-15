@@ -98,27 +98,36 @@ With a quotient topology, subspaces, products of maps, and $T_2$ condition do no
 
 **(i)** If $p : X \to Y$ is a quotient map and $A$ is a subspace of $X$, then the map $q: A \to p(A)$ obtained by restricting $p$ need NOT be a quotient map.
 
-$\big[(\because)$ We consider $\pi_1: \mathbb{R} \times \mathbb{R} \to \mathbb{R}.$ Since $\pi_1$ is a surjective, continuous, and open map, it is a quotient map. 
+$\big[(\because)$ Let $X = [0, 1]$ and $Y = S^1.$ Let $p: X \to Y$ be a map defined by $p(t) = (\cos 2\pi t, \sin 2\pi t), \forall t \in [0, 1].$ 
 
-Let $C = \\{ (x, y) \in \mathbb{R}^2 \mid xy = 1 \\},$ and let $A = C \cup \\{ (0, 0) \\}.$ Then the map $q = \pi_1 \mid_A : A \to \pi_1(A)$ is continuous and surjective, but it is not an open map.
+Let $A = [0, 1),$ and let $q:A \to p(A) = S^1$ be the restriction of $p$ onto $A.$ Let 
 
+$$U = \{ (\cos 2\pi t, \sin 2 \pi t) \in \mathbb{R}^2 \mid 0 \le t < \frac{1}{2} \} \subset S^1.$$
 
-
-$\big]$
-
+Then $q^{-1}(U) = [0, \frac{1}{2})$ is open in $A.$ However, $U$ is not open in $S^1$ because $(1, 0) \in U$ but any open set containing $(1, 0)$ is not contained in $U.$$\big]$
+	
 **(ii)** The product of two quotient maps need NOT be a quotient map.
 
-$\big[(\because)$
+$\big[(\because)$ 
 
 $\big]$
 
 **(iii)** If $X$ is $T_2$, then $X/\sim$ need NOT be $T_2.$ 
 
-$\big[(\because)$
+$\big[(\because)$ Let $X = [0, 1] \times \\{ 0, 1 \\},$ and let define the relation $\sim$ on $X$ by 
 
-$\big]$
+$$(x_1, y_1) \sim (x_2, y_2) \iff \begin{cases}
+(x_1, y_1) = (x_2, y_2) \\
+x_1 = x_2 > 0, \vert y_1 - y_2 \vert = 1.
+\end{cases}$$
 
+Then $\sim$ is an equivalence relation on $X.$ Let $p: X \to X/\sim$ be the canonical surjection. We give $X/\sim$ the quotient topology, so $p$ is a quotient map.
 
+Note that $X$ is clearly $T_2.$ Let $\\{ (0, 0) \\}, \\{ (0, 1) \\} \in X/\sim.$ Suppose that $X/\sim$ is $T_2.$ Then there exists open sets $U, V$ in $X/\sim$ such that $\\{ (0, 0) \\} \in U, \\{ (0, 1) \\} \in V$ and $U \cap V = \emptyset.$ 
+
+Since $p^{-1}(U)$ and $p^{-1}(V)$ are open in $X,$ there must exist $\varepsilon_1, \varepsilon_2 > 0$ such that $[0, \varepsilon_1) \times \\{ 0 \\} \subset p^{-1}(U)$ and $[0, \varepsilon_2) \times \\{ 1 \\} \subset p^{-1}(V).$ Take $\varepsilon = \min \\{ \varepsilon_1, \varepsilon_2 \\}.$ Then we must obtain that $(x, 0) \in p^{-1}(U)$ and $(x, 1) \in p^{-1}(V)$ for some $0 < x < \varepsilon.$ Then $p(x, 0) \in U$ and $p(x, 1) \in V.$ Since $p(x, 0) = p(x, 1),$ $U \cap V \neq \emptyset. \bigotimes.$
+
+Thus, $X/\sim$ is not $T_2.$$\big]$
 
 ---
 ## Lemma 
