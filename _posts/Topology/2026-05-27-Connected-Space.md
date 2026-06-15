@@ -89,6 +89,8 @@ Since $A_n \cap A_{n+1} \neq \emptyset,$ $\exists x \in A_n \cap A_{n+1}.$ Since
 ## Theorem 2
 Let $A$ be a connected subspace of $X$. If $A \subset B \subset \overline{A}$, then $B$ is also connected. 
 
+특별히 $B = \overline{A}$를 대입하면 연결공간의 closure도 연결공간이라는 결론을 얻는다.
+
 ### Proof
 Suppose that $B$ is not connected. That is, $B$ has a separation $(C, D)$. It is easily verified that $(A \cap C, A \cap D)$ is a pair of disjoint nonempty open subsets of $A$ whose union is $A$, which implies that $A$ is not connected. $\bigotimes$ Thus, $B$ is connected. $\blacksquare$
 
