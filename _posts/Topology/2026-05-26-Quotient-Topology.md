@@ -104,8 +104,8 @@ Let $A = [0, 1),$ and let $q:A \to p(A) = S^1$ be the restriction of $p$ onto $A
 
 $$U = \{ (\cos 2\pi t, \sin 2 \pi t) \in \mathbb{R}^2 \mid 0 \le t < \frac{1}{2} \} \subset S^1.$$
 
-Then $q^{-1}(U) = [0, \frac{1}{2})$ is open in $A.$ However, $U$ is not open in $S^1$ because $(1, 0) \in U$ but any open set containing $(1, 0)$ is not contained in $U.$$\big]$
-	
+Then $q^{-1}(U) = [0, \frac{1}{2})$ is open in $A.$ However, $U$ is not open in $S^1$ because $(1, 0) \in U$ but any open set containing $(1, 0)$ is not contained in $U.$ Thus, $q$ is not a quotient map.$\big]$
+
 **(ii)** The product of two quotient maps need NOT be a quotient map.
 
 $\big[(\because)$ 
