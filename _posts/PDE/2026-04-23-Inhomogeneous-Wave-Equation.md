@@ -17,7 +17,7 @@ u(x, 0) = \phi(x), \quad u_t(x, 0) = \psi(x)
 for $-\infty < x < \infty, t >0$, where $f, \phi$ and $\psi$ are given functions, is given by
 
 $$
-u(x, t) = \frac{1}{2} [\phi(x-ct) + \phi(x+ct)] + \frac{1}{2c} \int_{x-ct}^{x+ct} \psi(s) \, ds + \frac{1}{2c} \iint_{\Delta} f,
+u(x, t) = \frac{1}{2} [\phi(x+ct) + \phi(x-ct)] + \frac{1}{2c} \int_{x-ct}^{x+ct} \psi(s) \, ds + \frac{1}{2c} \iint_{\Delta} f,
 $$ 
 
 where $\Delta$ is the characteristic triangle, that is,
