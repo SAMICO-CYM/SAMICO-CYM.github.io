@@ -18,7 +18,7 @@ for $-\infty < x < \infty, t >0$, where $f, \phi$ and $\psi$ are given functions
 
 $$
 u(x, t) = \frac{1}{2} [\phi(x+ct) + \phi(x-ct)] + \frac{1}{2c} \int_{x-ct}^{x+ct} \psi(s) \, ds + \frac{1}{2c} \iint_{\Delta} f,
-$$ 
+$$
 
 where $\Delta$ is the characteristic triangle, that is,
 
