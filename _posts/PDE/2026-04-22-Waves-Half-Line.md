@@ -72,6 +72,7 @@ $$\begin{cases}
 \end{cases}$$
 
 Thus, in this case, we have
+
 $$\begin{align*}
 v(x, t) &= \frac{1}{2} [\phi(ct + x) - \phi(ct - x)] + \frac{1}{2c} \left[ \int_{0}^{x + ct} \psi(s) \, ds - \int_{x-ct}^0 \psi(-s) \, ds \right] \\
 &= \frac{1}{2} [\phi(ct + x) - \phi(ct - x)] + \frac{1}{2c} \left[ \int_{0}^{ct + x} \psi(s) \, ds + \int_{ct - x}^0 \psi(s) \, ds \right] \\ 
