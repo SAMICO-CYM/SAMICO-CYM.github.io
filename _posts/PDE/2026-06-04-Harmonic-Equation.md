@@ -33,7 +33,7 @@ The Dirichlect Problem
 
 $$\begin{cases}
 \Delta u = f & \text{in } D \\
-u = h & \text{on } D
+u = h & \text{on } \partial D
 \end{cases}$$
 
 has the unique solution.
@@ -43,17 +43,17 @@ Let $u, v$ be the two solutions of the given problem, that is,
 
 $$\begin{cases}
 \Delta u = f & \text{in } D \\
-u = h & \text{on } D
+u = h & \text{on } \partial D
 \end{cases} \quad  \text{and} \quad \begin{cases}
 \Delta v = f & \text{in } D \\
-v = h & \text{on } D.
+v = h & \text{on } \partial D.
 \end{cases}$$
 
 Let $w := u - v.$ Then $w$ satisfies
 
 $$\begin{cases}
 \Delta w = 0 & \text{in } D \\
-w = 0 & \text{on } D.
+w = 0 & \text{on } \partial D.
 \end{cases}$$
 
 By the maximum principle, we have 

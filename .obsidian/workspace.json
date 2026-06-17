@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Fourier Series/2026-05-28-L2-Theory.md",
+                "file": "_posts/PDE/2026-06-04-Harmonic-Equation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-28-L2-Theory"
+              "title": "2026-06-04-Harmonic-Equation"
             }
           }
         ]
@@ -182,6 +182,7 @@
   },
   "active": "27af4b02e38d0617",
   "lastOpenFiles": [
+    "_posts/Fourier Series/2026-05-28-L2-Theory.md",
     "_posts/PDE/2026-05-05-Newmann-Condition.md",
     "_posts/PDE/2026-04-23-Inhomogeneous-Wave-Equation.md",
     "_posts/PDE/2026-04-22-Waves-Half-Line.md",
@@ -223,7 +224,6 @@
     "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
     "_posts/Graph Theory/2026-06-01-Planer-Graph.md",
     "_posts/Graph Theory/2026-06-01-Euler-Formula.md",
-    "_posts/Graph Theory/2026-06-05-Platonic-Solid.md",
     "_site/assets/img/Pasted image 20260605164916.png",
     "assets/img/Pasted image 20260605164916.png",
     "_site/assets/img/Pasted image 20260605164517.png",
