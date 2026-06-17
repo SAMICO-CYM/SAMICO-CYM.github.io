@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/PDE/2026-04-23-Inhomogeneous-Wave-Equation.md",
+                "file": "_posts/Fourier Series/2026-05-28-L2-Theory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-23-Inhomogeneous-Wave-Equation"
+              "title": "2026-05-28-L2-Theory"
             }
           }
         ]
@@ -182,6 +182,8 @@
   },
   "active": "27af4b02e38d0617",
   "lastOpenFiles": [
+    "_posts/PDE/2026-05-05-Newmann-Condition.md",
+    "_posts/PDE/2026-04-23-Inhomogeneous-Wave-Equation.md",
     "_posts/PDE/2026-04-22-Waves-Half-Line.md",
     "_posts/Topology/2026-05-27-Connected-Space.md",
     "_posts/Topology/2026-06-04-Comb-Space.md",
@@ -225,8 +227,6 @@
     "_site/assets/img/Pasted image 20260605164916.png",
     "assets/img/Pasted image 20260605164916.png",
     "_site/assets/img/Pasted image 20260605164517.png",
-    "assets/img/Pasted image 20260605164517.png",
-    "_posts/Graph Theory/2026-05-29-Minimum-Weighted-Spanning-Tree.md",
-    "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md"
+    "assets/img/Pasted image 20260605164517.png"
   ]
 }
