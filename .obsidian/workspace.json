@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Abstract Algebra/2026-04-27-Coset.md",
+                "file": "_posts/Abstract Algebra/2026-04-27-Lagrange-Theorem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-27-Coset"
+              "title": "2026-04-27-Lagrange-Theorem"
             }
           }
         ]
@@ -182,6 +182,9 @@
   },
   "active": "b923726337847e8e",
   "lastOpenFiles": [
+    "_posts/Abstract Algebra/2026-06-10-Group-Action.md",
+    "_posts/Abstract Algebra/2026-06-10-Isotropy-Subgroup.md",
+    "_posts/Abstract Algebra/2026-04-27-Coset.md",
     "_posts/PDE/2026-06-04-Harmonic-Equation.md",
     "_posts/Fourier Series/2026-05-28-L2-Theory.md",
     "_posts/PDE/2026-05-05-Newmann-Condition.md",
@@ -211,8 +214,6 @@
     "_site/posts/Burnside-Lemma",
     "_site/assets/img/Pasted image 20260610133944.png",
     "assets/img/Pasted image 20260610133944.png",
-    "_posts/Abstract Algebra/2026-06-10-Isotropy-Subgroup.md",
-    "_posts/Abstract Algebra/2026-06-10-Group-Action.md",
     "_posts/Abstract Algebra/2026-06-10-Burnside-Lemma.md",
     "_site/posts/Third-Isomorphism-Theorem/index.html",
     "_site/posts/Third-Isomorphism-Theorem",
@@ -223,7 +224,6 @@
     "_posts/Abstract Algebra/2026-03-22-Center-Of-Group.md",
     "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
     "_posts/Graph Theory/2026-06-01-Planer-Graph.md",
-    "_posts/Graph Theory/2026-06-01-Euler-Formula.md",
     "_site/assets/img/Pasted image 20260605164916.png",
     "assets/img/Pasted image 20260605164916.png",
     "_site/assets/img/Pasted image 20260605164517.png",

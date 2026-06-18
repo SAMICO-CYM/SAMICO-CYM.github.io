@@ -31,7 +31,7 @@ $$\begin{align*}
 \ast(\sigma_1 \sigma_2, x) &= \sigma_1 \sigma_2(x) \\
 &= \sigma_1(\sigma_2(x)) \\
 &= \ast(\sigma_1, \sigma_2(x)) \\
-&= \ast(\sigma_1, \phi(\sigma_2, x))
+&= \ast(\sigma_1, \ast(\sigma_2, x))
 \end{align*}$$
 
 for all $\sigma_1, \sigma_2 \in H,x \in X.$ Thus, $(\sigma_1 \sigma_2)(x) = \sigma_1(\sigma_2(x)).$

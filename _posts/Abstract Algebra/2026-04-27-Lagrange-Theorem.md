@@ -7,7 +7,7 @@ math: true
 ---
 
 ## Lemma
-Let $G$ be a group and let $H \le G$. Let $a \in G$. Then $\vert aH \vert = \vert H \vert = \vert Ha \vert $.
+Let $G$ be a group and let $H \le G$. Let $a \in G$. Then $\vert aH \vert = \vert H \vert = \vert Ha \vert$.
 
 즉 어떤 부분군 $H$와, $H$에 대해서 정의된 coset $aH, Ha$의 크기는 모두 같다. 이때 coset들은 동치관계가 주어짐으로 결정된 동치류들이었고, 이 동치류들은 부분군 $H$의 partition을 이룬다. 즉 동치류들은 서로 disjoint하게 $G$를 구성하므로, 집합의 크기를 고려했을 때 부분군 $H$의 크기는 $G$의 크기를 항상 나눈다. 
 
@@ -47,6 +47,10 @@ Let $G$ be a finite group.
 **(i)** If $a \in G$, then $\vert \langle a \rangle \vert$ divides $\vert G \vert$.
 
 **(ii)** If the order of $G$ is prime, then $G$ is cyclic.
+
+(ii)의 내용을 좀 더 확장해서 생각해 본다면 다음과 같은 흐름이 성립한다.
+
+$$\vert G \vert = p \implies G = \langle a \rangle \implies G \cong \mathbb{Z}_p \implies G \text{ is simple abelian}$$
 
 ### Proof
 **(i)** Note that $\langle a \rangle \le G$. By Lagrange's theorem, $\vert \langle a \rangle \vert$ divides $\vert G \vert$. 
