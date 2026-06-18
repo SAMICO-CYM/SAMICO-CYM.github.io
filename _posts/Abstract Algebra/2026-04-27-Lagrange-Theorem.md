@@ -50,7 +50,7 @@ Let $G$ be a finite group.
 
 (ii)의 내용을 좀 더 확장해서 생각해 본다면 다음과 같은 흐름이 성립한다.
 
-$$\vert G \vert = p \implies G = \langle a \rangle \implies G \cong \mathbb{Z}_p \implies G \text{ is simple abelian}$$
+$$\vert G \vert = p \implies G = \langle a \rangle \implies G \cong \mathbb{Z}_p \iff G \text{ is simple abelian}$$
 
 ### Proof
 **(i)** Note that $\langle a \rangle \le G$. By Lagrange's theorem, $\vert \langle a \rangle \vert$ divides $\vert G \vert$. 
