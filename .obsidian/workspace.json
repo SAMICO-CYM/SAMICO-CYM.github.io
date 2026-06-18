@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Abstract Algebra/2026-04-27-Lagrange-Theorem.md",
+                "file": "_posts/Abstract Algebra/2026-04-27-Coset.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-27-Lagrange-Theorem"
+              "title": "2026-04-27-Coset"
             }
           }
         ]
@@ -182,6 +182,7 @@
   },
   "active": "b923726337847e8e",
   "lastOpenFiles": [
+    "_posts/Abstract Algebra/2026-04-27-Lagrange-Theorem.md",
     "_posts/Abstract Algebra/2026-06-10-Group-Action.md",
     "_posts/Abstract Algebra/2026-06-10-Isotropy-Subgroup.md",
     "_posts/Abstract Algebra/2026-04-27-Coset.md",
@@ -223,7 +224,6 @@
     "_posts/Abstract Algebra/2026-06-01-Center-Of-Group.md",
     "_posts/Abstract Algebra/2026-03-22-Center-Of-Group.md",
     "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
-    "_posts/Graph Theory/2026-06-01-Planer-Graph.md",
     "_site/assets/img/Pasted image 20260605164916.png",
     "assets/img/Pasted image 20260605164916.png",
     "_site/assets/img/Pasted image 20260605164517.png",
