@@ -90,6 +90,7 @@ We consider $G$ to be the ***internal direct product*** of these subgroups $\ove
 ## Theorem 2
 $\mathbb{Z}_m \times \mathbb{Z}_n$ is cyclic $\iff$ $\gcd(m, n) = 1$. In this case, $\mathbb{Z}_m \times \mathbb{Z}_n \cong \mathbb{Z} _ {mn}$.
 
+특별히 cyclic인 경우에 generator 중 하나로 $(1, 1)$이 있음음을 아래 증명을 통해 알 수 있다.
 ### Proof
 
 $(\Longrightarrow)$
@@ -119,6 +120,7 @@ Note that $mn(1, 1) = (mn, mn) = (0, 0)$. Thus, $\vert (1, 1) \vert = mn$, which
 ## Corollary
 $\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i}$ is cyclic $\iff \gcd(m_i, m_j) = 1$ for all $i \neq j$. In this case, $\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i} \cong \mathbb{Z} _ {m_1 m_2 \cdots m_n}$.
 
+마찬가지로, generator 중 하나로 $(1, 1, \cdots, 1)$이 있음을 알 수 있다.
 ### Proof
 We use the induction on $n$. The case when $n=2$ was shown in Theorem 11.5
 
@@ -145,7 +147,6 @@ $$\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i} \cong \mathbb{Z} _ {m_1 m_2 \cd
 **(ii)** $\mathbb{Z} _ {72} = \mathbb{Z}_8 \times \mathbb{Z}_9$.  
 
 ---
-
 ## Theorem 3
 Let $(a_1, \cdots, a_n) \in \displaystyle \prod_{i=1}^n G_i$. If $\vert \langle a_i \rangle \vert = r_i$ in $G_i$, then $\vert \langle (a_1, \cdots, a_n) \rangle \vert = \mathrm{lcm}(r_1, \cdots, r_n)$ in $\displaystyle \prod_{i=1}^n G_i$.
 
