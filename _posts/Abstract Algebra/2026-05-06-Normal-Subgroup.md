@@ -68,7 +68,7 @@ Let $h \in H$. Since $g^{-1}Hg = H$, we have $g^{-1}hg = b$ for some $b \in H$, 
 ## Corollary
 Let $H \le G,$ and let $N \lhd G.$ If $N \le H,$ then $N \lhd H.$
 
-즉, 부분군 $N$의 normal 구조는 전체 군을 $G$에서 $H$로 축소시킨다고 하더라도 완전히 보존된다고 말할 수 있다. [제 3 동형 정리](<{% post_url Abstract Algebra/2026-06-08-Third-Isomophism-Theorem %}#third-isomophism-theorem>)에서 이 내용이 사용됨을 확인할 수 있다.
+즉, 부분군 $N$의 normal 구조는 전체 군을 $G$에서 $H$로 축소시킨다고 하더라도 완전히 보존된다고 말할 수 있다. [제 3 동형 정리](<{% post_url Abstract Algebra/2026-06-08-Third-Isomorphism-Theorem %}#third-isomorphism-theorem>)에서 이 내용이 사용됨을 확인할 수 있다.
 
 그러나 반대로는 일반적으로 성립하지 않는다. 그러니까, $N$이 어떤 부분군 $H$에서 normal이라고 하더라도 전체 군 $G$로 확장시켜서 봤을 때 여전히 normal이라는 보장은 없다. 
 ### Proof
