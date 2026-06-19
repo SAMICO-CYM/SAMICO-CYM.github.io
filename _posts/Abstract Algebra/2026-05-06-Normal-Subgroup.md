@@ -10,7 +10,6 @@ math: true
 Let $H$ be a subgroup of a group $G$. Then $H$ is called a ***normal subgroup*** of $G$ if $aH = Ha$ for all $a \in G$. If $H$ is normal in $G$, then we denoted by $H \lhd G$. 
 
 ---
-
 ## Remark
 **(i)** Let $\phi: G \to G'$ be a group homomorphism. Then $\ker(\phi) \lhd G$.
 
@@ -23,6 +22,11 @@ $(\because)$ Let $G$ be an abelian group and $H \le G$. Let $a \in G$. Then $ah 
 $(\because)$ Let $a \in G$. Then $ae = ea = a$, so $a\{e\} = \{a\} = \{e\}a$. Thus $\\{e\\} \lhd G$. 
 
 Let $a \in G$. Then for each $g \in G$, $a = a(a^{-1}g) \in aG$ and $a = (ga^{-1})a \in Ga$. Thus $aG = Ga$, which means that $G \lhd G$. 
+
+
+---
+## Example
+(i) 
 
 ---
 
