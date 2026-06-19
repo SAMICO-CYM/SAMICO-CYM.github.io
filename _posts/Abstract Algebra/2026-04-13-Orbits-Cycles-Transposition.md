@@ -25,7 +25,6 @@ Then $\sim$ is an equivalence relation on $A$.
 Therefore, $\sim$ is an equivalence relation on $A$.
 
 ---
-
 ## Definition 1
 Let $\sigma$ be a permutation of a set $A$. 
 
@@ -38,7 +37,6 @@ Let $\sigma$ be a permutation of a set $A$.
 **(iv)** A cycle of length 2 is a ***transposition***.
 
 --- 
-
 ## Example
 
 예컨대 $\sigma \in S_8$이 다음과 같이 주어져 있다.
@@ -92,7 +90,6 @@ $$(1, 2)(1, 3)(4, 5)(1) = (1, 2)(1, 3)(1) = (1, 2)(3) = 3$$
 위 내용들을 모두 종합하면, 모든 순열은 disjoint cycle들의 곱으로 항상 표현될 수 있고, 순서를 고려하지 않는다면 이러한 표현은 유일하다는 사실을 알 수 있다.
 
 ---
-
 ## Theorem 1
 Every permutation of a finite set is a product of disjoint cycles, and the expression is unique up to the order of factors.
 
@@ -151,7 +148,6 @@ Note that $\tau_j^n(a) = \sigma^n(a)$ and $\mu_i^n(a) = \sigma^n(a)$ for any int
 If $b \in [a]_j$, then $\tau_j^n(a) = b$ for some $n \in \mathbb{Z}$. Since $\mu_i^n(a) = \tau_j^n(a)$ for any integer $n$, we have $\mu_i^n(a) = b$, which means that $b \in [a]_i$. If $b \in [a]_i$, then $\mu_i^n(a) = b$ for some $n \in \mathbb{Z}$. Similarly, we have $\tau_j^n(a) = b$, so that $b \in [a]_j$. Thus, $[a]_i = [a]_j$, so that $B_i = [a]_j$ because $B_i = [a]_i$. Thus, we have $\tau_j = \mu_i$, and therefore, the expression of $\sigma$ is unique up to the order of the factors. $\blacksquare$ $\Big]$
 
 ---
-
 ## Remark
 **(i)** A product of disjoint cycles is commutative.
 
@@ -162,7 +158,6 @@ $$(a_1, a_2, ..., a_n) = (a_1, a_n)(a_1, a_{n-1})...(a_1, a_2).$$
 **(iii)** In $S_n(n \ge 2)$, the identity permutation is $(i, j)(i, j), \forall i \ge j$. It implies that $(i, j)^{-1} = (i, j)$.
 
 ---
-
 ## Corollary 1
 Let $A$ be a finite set with $\vert A \vert \ge 2$. Then any permutation of $A$ is a product of transpositions. 
 
@@ -170,7 +165,6 @@ Let $A$ be a finite set with $\vert A \vert \ge 2$. Then any permutation of $A$ 
 By Theorem 1, a permutation of $A$ is a product of disjoint cycles, and by the previous remark, each cycle is a product of transpositions. Thus, any permutation of $A$ is a product of transpositions. $\blacksquare$
 
 ---
-
 ## Theorem 2
 No permutation in $S_n$ can be expressed by both as a product of an even number of transpositions and as a product of an odd number of transpositions.
 
@@ -243,11 +237,11 @@ We have shown that the number of orbits of a permutation $\sigma$ is different f
 Note that the identity permutation $id = (1)(2) \cdots (n) \in S_n$ has $n$ orbits. Also, the number of orbits of $\sigma$ is fixed. By Corollary 1, $\sigma$ can be expressed as the product of transpositions. Since we can go from $id$ to $\sigma$ by multiplying these transpositions, there are no ways to go from $id$ to $\sigma$ by multiplying both an even number of transpositions and an odd number of transpositions. Thus, $\sigma$ cannot be both even and odd. $\blacksquare$
 
 ---
-
 ## Definition 2
-A permutation $\sigma \in S_n$ is said to be ***even*** (***odd***) if it can be expreesed as a product of an even (odd) number of transpositions.
+**(i)** A permutation $\sigma \in S_n$ is said to be ***even*** (***odd***) if it can be expreesed as a product of an even (odd) number of transpositions.
+
+**(ii)** The ***sign*** of an even permutation is $+1$ and the sign of an odd permutation is $-1.$ 
 
 ---
-
 ## Remark
 Let $\sigma = c_1 \cdots c_k \in S_n$ where each $c_i$ is a disjoint cycle whose length is $\ell_i$. Then $\vert \langle \sigma \rangle \vert = \mathrm{lcm}(\ell_1, ..., \ell_k)$.
