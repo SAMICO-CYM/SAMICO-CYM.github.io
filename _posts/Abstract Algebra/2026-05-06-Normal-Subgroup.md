@@ -25,11 +25,13 @@ Let $a \in G$. Then for each $g \in G$, $a = a(a^{-1}g) \in aG$ and $a = (ga^{-1
 
 ---
 ## Example
-**(i)** The map $\mathrm{sgn}_n: S_n \to \\{ 1, -1 \\}$ defined by 
+**(i)** For $n \ge 3,$ the map $\mathrm{sgn}_n: S_n \to \\{ 1, -1 \\}$ defined by 
 
 $$\mathrm{sgn}_n(\sigma) = \text{sign of } \sigma$$
 
-is a group epimorphism. (We consider $\\{ 1, -1 \\}$ as the multiplicative group.) Then $\ker(\mathrm{sgn}_n) = A_n,$ which is a normal subgroup of $S_n.$ This is an example of the nontrivial proper normal subgroup.
+is a group epimorphism. (We consider $\\{ 1, -1 \\}$ as the multiplicative group.) Then $\ker(\mathrm{sgn}_n) = A_n,$ which is a normal subgroup of $S_n.$ This is an example of a nontrivial proper normal subgroup.
+
+**(ii)** $V \cong \mathbb{Z}_2 \times \mathbb{Z}_2$ is nontrivial proper normal subgroup of $S_4.$
 
 ---
 
