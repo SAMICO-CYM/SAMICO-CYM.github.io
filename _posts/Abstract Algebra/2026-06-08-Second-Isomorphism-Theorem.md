@@ -32,7 +32,9 @@ Let $G$ be a group, and let $H,N \le G.$ We denote $HN := \\{ hn \mid h \in H, n
 ### Proof
 **(i)** It is obtained by definition of the join and [Theorem 2](<{% post_url Abstract Algebra/2026-03-18-Subgroup %}#theorem-2>).
 
-**(ii)** Let $K$ be a subgroup of $G$ containing both $H$ and $N.$ Then $HN \subset K.$ By definition of the join $H \vee N,$ we have $H \vee N \subset K.$ Thus, $H \vee N$ is the smallest subgroup of $G$ containing both $H$ and $N.$ 
+**(ii)** We have already shown that $H \vee N$ is the subgroup of $G.$ Note that $H, N \subset HN,$ so $H \vee N$ contains $H$ and $N.$ 
+
+Let $K$ be a subgroup of $G$ containing both $H$ and $N.$ Then $HN \subset K.$ By definition of the join $H \vee N,$ we have $H \vee N \subset K.$ Thus, $H \vee N$ is the smallest subgroup of $G$ containing both $H$ and $N.$ 
 
 **(iii)** **Claim 1:** $HN \le G.$ 
 
@@ -58,13 +60,9 @@ because $h_1h_2^{-1} \in H.$ Thus, $xy^{-1} \in HN,$ so $HN \le G.$ Note that cl
 
 **Claim 2:** $HN$ is the smallest subgroup containing both $H$ and $N.$ 
 
-$\big[(\because)$ Take a subgroup $K \le G$ containing both $H$ and $N.$ Let $a \in HN.$ Then $a = hn$ for some $h \in H$ and $n \in N.$ Since $K$ contains $H$ and $N,$ $h \in K$ and $n \in K.$ Since $K$ is a group, $a = hn \in K$. Thus, $HN \subset K,$ which means that $HN$ is the smallest subgroup containing both $H$ and $N.$ Similarly, we can show that $NH$ is the smallest subgroup containing both $H$ and $N.$ Therefore, $HN = NH.$$\big]$
+$\big[(\because)$ Take a subgroup $K \le G$ containing both $H$ and $N.$ Let $a \in HN.$ Then $a = hn$ for some $h \in H$ and $n \in N.$ Since $K$ contains $H$ and $N,$ $h \in K$ and $n \in K.$ Since $K$ is a group, $a = hn \in K$. Thus, $HN \subset K,$ which means that $HN$ is the smallest subgroup containing both $H$ and $N.$ Similarly, we can show that $NH$ is the smallest subgroup containing both $H$ and $N.$ Therefore, $HN = NH.$
 
-**Claim 3:** $H \vee N = HN = NH.$ 
- 
-$\big[(\because)$ Note that $H \vee N$ is the smallest subgroup of $G$ containing $HN.$ Since $H, N \subset HN,$ $H \vee N$ is a subgroup of $G$ containing both $H$ and $N$. By (i), $HN$ is the smallest subgroup of $G$ containing both $H$ and $N$, so we obtain $HN \subset H \vee N.$ 
-
-On the other hand, since $HN \le G,$ we obtain $H \vee N \subset HN.$ Thus, $H \vee N = HN = NH.$$\big]$
+By (ii), $H \vee N$ is the smallest subgroup of $G$ containing both $H$ and $N.$ Thus, $H \vee N = HN = NH. \blacksquare$$\big]$
 
 **(iv)** Let $g \in G,$ and let $hn \in HN.$ Then we have 
 

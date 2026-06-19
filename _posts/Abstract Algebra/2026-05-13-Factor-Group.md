@@ -132,7 +132,7 @@ Let $H$ and $K$ be groups, and let $N_1 \lhd H$ and $N_2 \lhd K$. Then
 $$(H \times K) / (N_1 \times N_2) \cong (H/N_1) \times (K / N_2).$$
 
 ### Proof
-Note that the factor groups $H/N_1$ and $K/N_2$ are well-defined because $N_1 \lhd H$ and $N_2 \lhd K$ by Theoerm 1.
+Note that the factor groups $(H \times K)/(N_1 \times N_2),$ $H/N_1$ and $K/N_2$ are well-defined because $N_1 \lhd H$ and $N_2 \lhd K$ by Theoerm 1 and $N_1 \times N_2 \lhd H \times K.$
 
 Define a function $\phi: H \times K \to (H/N_1) \times (K / N_2)$ by 
 
