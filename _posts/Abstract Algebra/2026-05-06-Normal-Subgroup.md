@@ -15,18 +15,21 @@ Let $H$ be a subgroup of a group $G$. Then $H$ is called a ***normal subgroup***
 
 **(ii)** Every subgroup of an abelian group is normal.
 
-$(\because)$ Let $G$ be an abelian group and $H \le G$. Let $a \in G$. Then $ah = ha, \forall h \in H$, which means that $aH = Ha$. Thus $H \lhd G$.
+$\big[(\because)$ Let $G$ be an abelian group and $H \le G$. Let $a \in G$. Then $ah = ha, \forall h \in H$, which means that $aH = Ha$. Thus $H \lhd G.\big]$
 
 **(iii)** Every group has trivial normal subgroups $\\{ e\\}$ and $G$.
 
-$(\because)$ Let $a \in G$. Then $ae = ea = a$, so $a\{e\} = \{a\} = \{e\}a$. Thus $\\{e\\} \lhd G$. 
+$\big[(\because)$ Let $a \in G$. Then $ae = ea = a$, so $a\{e\} = \{a\} = \{e\}a$. Thus $\\{e\\} \lhd G$. 
 
-Let $a \in G$. Then for each $g \in G$, $a = a(a^{-1}g) \in aG$ and $a = (ga^{-1})a \in Ga$. Thus $aG = Ga$, which means that $G \lhd G$. 
-
+Let $a \in G$. Then for each $g \in G$, $a = a(a^{-1}g) \in aG$ and $a = (ga^{-1})a \in Ga$. Thus $aG = Ga$, which means that $G \lhd G.\big]$
 
 ---
 ## Example
-(i) 
+**(i)** The map $\mathrm{sgn}_n: S_n \to \\{ 1, -1 \\}$ defined by 
+
+$$\mathrm{sgn}_n(\sigma) = \text{sign of } \sigma$$
+
+is a group epimorphism. (We consider $\\{ 1, -1 \\}$ as the multiplicative group.) Then $\ker(\mathrm{sgn}_n) = A_n,$ which is a normal subgroup of $S_n.$ This is an example of the nontrivial proper normal subgroup.
 
 ---
 
