@@ -58,7 +58,7 @@ Let $h \in H$. Since $g^{-1}Hg = H$, we have $g^{-1}hg = b$ for some $b \in H$, 
 
 ---
 ## Corollary
-Let $H \le G,$ and let $N \lhd G.$ Then $N \lhd H.$
+Let $H \le G,$ and let $N \lhd G.$ If $N \le H,$ then $N \lhd H.$
 
 즉, 부분군의 normal 구조는 군 안에서 완전히 보존된다고 말할 수 있다. 
 ### Proof
