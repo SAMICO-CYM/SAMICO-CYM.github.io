@@ -62,7 +62,7 @@ because $h_1h_2^{-1} \in H.$ Thus, $xy^{-1} \in HN,$ so $HN \le G.$ Note that cl
 
 $\big[(\because)$ Take a subgroup $K \le G$ containing both $H$ and $N.$ Let $a \in HN.$ Then $a = hn$ for some $h \in H$ and $n \in N.$ Since $K$ contains $H$ and $N,$ $h \in K$ and $n \in K.$ Since $K$ is a group, $a = hn \in K$. Thus, $HN \subset K,$ which means that $HN$ is the smallest subgroup containing both $H$ and $N.$ Similarly, we can show that $NH$ is the smallest subgroup containing both $H$ and $N.$ Therefore, $HN = NH.$
 
-By (ii), $H \vee N$ is the smallest subgroup of $G$ containing both $H$ and $N.$ Thus, $H \vee N = HN = NH. \blacksquare$$\big]$
+By (ii), $H \vee N$ is the smallest subgroup of $G$ containing both $H$ and $N.$ Thus, $H \vee N = HN = NH.\big]$
 
 **(iv)** Let $g \in G,$ and let $hn \in HN.$ Then we have 
 
