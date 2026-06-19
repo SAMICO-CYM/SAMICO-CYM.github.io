@@ -86,8 +86,23 @@ Then we have that for each $i = 1, \cdots, n$,
 We consider $G$ to be the ***internal direct product*** of these subgroups $\overline{G_i}$'s. 
 
 ---
-
 ## Theorem 2
+Let $G := \displaystyle \prod_{i=1}^n G_i,$ and let $H_i \le G_i$ for each $i = 1, 2, \cdots, n.$ Then $H := \displaystyle \prod_{i=1}^n H_i \le G.$
+
+### Proof
+Since each $H_i$ is nonempty, so is $H.$ Let $x = (x_1, \cdots, x_n), y = (y_1, \cdots, y_n) \in H.$ Then
+
+$$\begin{align*}
+xy^{-1} &= (x_1, \cdots, x_n)(y_1, \cdots, y_n)^{-1} \\
+&= (x_1, \cdots, x_n)(y^{-1}_1, \cdots, y^{-1}_n) \\
+&= (x_1y^{-1}_1, \cdots, x_ny^{-1}_n) \\
+& \in \prod_{i=1}^n H_i = H,
+\end{align*}$$
+
+so $H \le G. \blacksquare$
+
+---
+## Theorem 3
 $\mathbb{Z}_m \times \mathbb{Z}_n$ is cyclic $\iff$ $\gcd(m, n) = 1$. In this case, $\mathbb{Z}_m \times \mathbb{Z}_n \cong \mathbb{Z} _ {mn}$.
 
 특별히 cyclic인 경우에 generator 중 하나로 $(1, 1)$이 있음음을 아래 증명을 통해 알 수 있다.
@@ -122,7 +137,7 @@ $\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i}$ is cyclic $\iff \gcd(m_i, m_j) 
 
 마찬가지로, generator 중 하나로 $(1, 1, \cdots, 1)$이 있음을 알 수 있다.
 ### Proof
-We use the induction on $n$. The case when $n=2$ was shown in Theorem 11.5
+We use the induction on $n$. The case when $n=2$ was shown in Theorem 3.
 
 Suppose that there exists $t \ge 2$ such that 
 
@@ -132,7 +147,7 @@ Note that
 
 $$\prod_{i=1}^{t+1} \mathbb{Z} _ {m_i} \cong \left( \prod_{i=1}^t \mathbb{Z} _ {m_i} \right) \times \mathbb{Z} _ {m_{t+1}}.$$
 
-By the induction hypothesis and Theorem 2, we have 
+By the induction hypothesis and Theorem 3, we have 
 
 $$\prod_{i=1}^{t+1} \mathbb{Z} _ {m_i} \cong \mathbb{Z} _ {m_1 \cdots m_{t+1}} \iff \gcd(m_1 \cdots m_t, m_{t+1}) = 1 \iff \gcd(m_i, m_{t+1}) = 1, \forall 1 \le i \le t.$$
 
@@ -147,7 +162,7 @@ $$\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i} \cong \mathbb{Z} _ {m_1 m_2 \cd
 **(ii)** $\mathbb{Z} _ {72} = \mathbb{Z}_8 \times \mathbb{Z}_9$.  
 
 ---
-## Theorem 3
+## Theorem 4
 Let $(a_1, \cdots, a_n) \in \displaystyle \prod_{i=1}^n G_i$. If $\vert \langle a_i \rangle \vert = r_i$ in $G_i$, then $\vert \langle (a_1, \cdots, a_n) \rangle \vert = \mathrm{lcm}(r_1, \cdots, r_n)$ in $\displaystyle \prod_{i=1}^n G_i$.
 
 ### Proof
@@ -176,7 +191,7 @@ Since $\vert \langle (a_1, \cdots, a_n) \rangle \vert = m$, we have $m \vert t$.
 (ii)와 (ii)의 경우,  finite가 아니거나 서로소라는 보장이 없으면 cyclic으로 나타낼 수 없지만 finitely generated set은 항상 된다는 사실을 보여준다. 반면 (iv)는 finite하면서 모두 서로소이므로 one-generated set, 즉 cyclic group이 된다.
 
 ---
-## Theorem 4 (Fundamental Theorem of Finitely Generated Abelian Groups)
+## Theorem 5 (Fundamental Theorem of Finitely Generated Abelian Groups)
 **(i)** Every finitely generated abelian group $G$ is isomorphic to a direct product of cyclic groups in the form 
 
 $$\mathbb{Z}_{p_1^{r_1}} \times \cdots \times \mathbb{Z}_{p_k^{r_k}} \times \mathbb{Z} \times \cdots \times \mathbb{Z}$$
