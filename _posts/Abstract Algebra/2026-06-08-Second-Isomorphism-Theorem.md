@@ -87,6 +87,13 @@ $\big[(\because)$ Let $G = S_3$ and let $H = \langle \mu_1 \rangle = \\{ \rho_0,
 
 $\big[(\because)$ Let $G = S_3$ and let $H = \langle \mu_1 \rangle = \\{ \rho_0, \mu_1 \\} \le G$ and $N = \\{ \rho_0 \\} \lhd G.$ Then $HN = \langle \mu_1 \rangle \not \lhd G.\big]$
 
+**(iii)** $HN \le G \iff HN = NH.$
+
+$\big[(\because)$ 
+
+\big]$
+
+
 ---
 ## Second Isomorphism Theorem
 Let $G$ be a group, and let $H \le G, N \lhd G.$ Then 

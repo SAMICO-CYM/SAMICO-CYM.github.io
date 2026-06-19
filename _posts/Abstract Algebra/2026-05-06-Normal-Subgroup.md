@@ -72,7 +72,16 @@ Let $H \le G,$ and let $N \lhd G.$ If $N \le H,$ then $N \lhd H.$
 
 그러나 반대로는 일반적으로 성립하지 않는다. 그러니까, $N$이 어떤 부분군 $H$에서 normal이라고 하더라도 전체 군 $G$로 확장시켜서 봤을 때 여전히 normal이라는 보장은 없다. (자명한 예시로, $N = H$로 두고 $H$를 $G$에서 normal이 아닌 subgroup으로 가져오면 $N \lhd H$이지만 $N = H \not \lhd G$가 성립한다.)
 
-그러면 $H \lhd G$로 가져오면 $N \lhd G$가 될까? 이는 다른 말로 표현하면 normality는 transitive한가? 라는 질문으로 바꿀 수 있다. 그리고 ***그렇지 않다***라는 게 답이다. 
+그러면 $H \lhd G$로 가져오면 $N \lhd G$가 될까? 이는 다른 말로 표현하면 normality는 transitive한가? 라는 질문으로 바꿀 수 있다. 그리고 ***그렇지 않다***라는 게 답이다. 구체적인 예시는 다음과 같다.
+
+$\big[(\because)$ Let $G = D_4,$ and let $H = \\{ \rho_0, \rho_2, \mu_1, \mu_2 \\}, N = \\{ \rho_0, \mu_1 \\}.$ Actually, $H = \langle \mu_1 \rangle \langle \mu_2 \rangle.$ Since $\mu$
+
+
+We can easily verify that $N \lhd H$ and $H \lhd G.$ However, $N \not \lhd G.$ Note that $\rho_1 \mu_1 = \delta_2 \neq \delta_1 = \mu_1 \rho_1.$ 
+
+Note that $H$ consists of elements of order $2,$ so clearly $H \le G.$ 
+
+We can easily verify that $N \lhd H$ and $H \lhd G.$  $\big]$
 
 ### Proof
 Since $N \lhd G,$ we have $gNg^{-1} \subset N, \forall g \in G$ by Theorem 1. It follows that $hNh^{-1} \subset N, \forall h \in H,$ which means that $N \lhd H.$ $\blacksquare$
