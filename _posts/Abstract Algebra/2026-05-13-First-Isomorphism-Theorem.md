@@ -140,9 +140,9 @@ $$(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (0, 2) \rangle \cong \mathbb{Z}_4
 
 **(iv)** 이번엔 $(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (2, 3) \rangle$을 다뤄보자. 비슷해 보이지만 다르다. 
 
-우선 $\vert (\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (2, 3) \rangle \vert = 24/2 = 12$이므로 가능한 후보군은 $\mathbb{Z}_{12}, \mathbb{Z}_4 \times \mathbb{Z}_3, \mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_3$이다. factor group의 원소 $(1, 0) + \langle (2, 3) \rangle$의 order는 계산해보면 $4$이고 자명하게도 order $12$인 원소는 존재하지 않으므로 $(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (2, 3) \rangle \cong \mathbb{Z}_4 \times \mathbb{Z}_3$이다. 
+우선 $\vert (\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (2, 3) \rangle \vert = 24/2 = 12$이므로 가능한 후보군은 $\mathbb{Z}_4 \times \mathbb{Z}_3, \mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_3$이다. factor group의 원소 $(1, 1) + \langle (2, 3) \rangle$의 order는 계산해보면 $12$이고 $\mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_3$는 가능한 최대 order는 $6$이므로 $(\mathbb{Z}_4 \times \mathbb{Z}_6) / \langle (2, 3) \rangle \cong \mathbb{Z}_4 \times \mathbb{Z}_3$이다. 
 
-함수로 계산할 수도 있는데, 이 경우 함수가 그리 직관적으로 정의되지는 않는다. 함수 $\phi: \mathbb{Z}_4 \times \mathbb{Z}_6 \to \mathbb{Z}_4 \times \mathbb{Z}_6$를 
+함수로 계산할 수도 있는데, 이 경우 함수가 그리 직관적으로 정의되지는 않는다. 함수 $\phi: \mathbb{Z}_4 \times \mathbb{Z}_6 \to \mathbb{Z}_4 \times \mathbb{Z}_3$를 
 
 $$\phi(a, b) = (a+2b, 2b), \forall (a, b) \in \mathbb{Z}_4 \times \mathbb{Z}_6$$
 
