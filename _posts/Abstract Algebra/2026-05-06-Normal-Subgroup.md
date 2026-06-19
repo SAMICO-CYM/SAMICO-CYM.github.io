@@ -34,7 +34,6 @@ is a group epimorphism. (We consider $\\{ 1, -1 \\}$ as the multiplicative group
 **(ii)** $V \cong \mathbb{Z}_2 \times \mathbb{Z}_2$ is nontrivial proper normal subgroup of $S_4.$
 
 ---
-
 ## Theorem 1
 Let $H \le G$. TFAE.
 
@@ -53,7 +52,11 @@ Suppose that $H \lhd G$. Let $g \in G$ and $h \in H$. Since $gH = Hg$, we have $
 
 **(ii)** $\Longrightarrow$ **(iii)**
 
-Suppose that $gHg^{-1} \subset H, \forall g \in G$. Let $h \in H$. Since $g^{-1} \in G$, we have $g^{-1}Hg \subset H$. Then we have $g^{-1}hg = a$ for some $a \in H$. Thus, we have $h = gag^{-1} \in gHg^{-1}$, so that $H \subset gHg^{-1}$. Hence, $gHg^{-1} = H, \forall g \in G$.
+Suppose that $gHg^{-1} \subset H, \forall g \in G$.  We need to show that $H \subset gHg^{-1}, \forall g \in G.$ Let $h \in H$, and note that 
+
+$$h = ehe = (gg^{-1})h(gg^{-1}) = g(g^{-1}hg)g^{-1}.$$
+
+Since $g^{-1}hg \in g^{-1}Hg \subset H,$ $h = g(g^{-1}hg)g^{-1} \in gHg^{-1}.$ Hence, $gHg^{-1} = H, \forall g \in G$.
 
 **(iii)** $\Longrightarrow$ **(i)**
 
@@ -65,7 +68,7 @@ Let $h \in H$. Since $g^{-1}Hg = H$, we have $g^{-1}hg = b$ for some $b \in H$, 
 ## Corollary
 Let $H \le G,$ and let $N \lhd G.$ If $N \le H,$ then $N \lhd H.$
 
-즉, 부분군의 normal 구조는 군 안에서 완전히 보존된다고 말할 수 있다. 
+즉, 부분군 $N$의 normal 구조는 전체 군을 $G$에서 $H$로 축소시킨다고 하더라도 완전히 보존된다고 말할 수 있다. [제 3 동형 정리](<{% post_url Abstract Algebra/2026-06-19-Third-Isomophism-Theorem %}#third-isomophism-theorem>)에서 이 내용이 사용됨을 확인할 수 있다.
 ### Proof
 Since $N \lhd G,$ we have $gNg^{-1} \subset N, \forall g \in G$ by Theorem 1. It follows that $hNh^{-1} \subset N, \forall h \in H,$ which means that $N \lhd H.$ $\blacksquare$
 
