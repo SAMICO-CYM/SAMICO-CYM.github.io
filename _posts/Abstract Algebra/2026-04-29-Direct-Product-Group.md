@@ -96,10 +96,10 @@ $$\begin{align*}
 xy^{-1} &= (x_1, \cdots, x_n)(y_1, \cdots, y_n)^{-1} \\
 &= (x_1, \cdots, x_n)(y^{-1}_1, \cdots, y^{-1}_n) \\
 &= (x_1y^{-1}_1, \cdots, x_ny^{-1}_n) \\
-& \in \prod_{i=1}^n H_i = H,
+& \in \prod_{i=1}^n H_i = H
 \end{align*}$$
 
-so $H \le G. \blacksquare$
+because each $H_i \le G_i,$ so each $x_iy_i^{-1} \in H_i.$ Hence, $H \le G. \blacksquare$
 
 ---
 ## Theorem 3
