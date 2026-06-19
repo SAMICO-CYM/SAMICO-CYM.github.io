@@ -87,10 +87,14 @@ We consider $G$ to be the ***internal direct product*** of these subgroups $\ove
 
 ---
 ## Theorem 2
-Let $G := \displaystyle \prod_{i=1}^n G_i,$ and let $H_i \le G_i$ for each $i = 1, 2, \cdots, n.$ Then $H := \displaystyle \prod_{i=1}^n H_i \le G.$
+Let $G := \displaystyle \prod_{i=1}^n G_i.$
+
+**(i)** If $H_i \le G_i$ for each $i = 1, 2, \cdots, n,$ then $H := \displaystyle \prod_{i=1}^n H_i \le G.$
+
+**(ii)** If $N_i \lhd G_i$ for each $i = 1, 2, \cdots, n,$ then $N := \displaystyle \prod_{i=1}^n N_i \lhd G.$
 
 ### Proof
-Since each $H_i$ is nonempty, so is $H.$ Let $x = (x_1, \cdots, x_n), y = (y_1, \cdots, y_n) \in H.$ Then
+**(i)** Since each $H_i$ is nonempty, so is $H.$ Let $x = (x_1, \cdots, x_n), y = (y_1, \cdots, y_n) \in H.$ Then
 
 $$\begin{align*}
 xy^{-1} &= (x_1, \cdots, x_n)(y_1, \cdots, y_n)^{-1} \\
@@ -99,7 +103,18 @@ xy^{-1} &= (x_1, \cdots, x_n)(y_1, \cdots, y_n)^{-1} \\
 & \in \prod_{i=1}^n H_i = H
 \end{align*}$$
 
-because each $H_i \le G_i,$ so each $x_iy_i^{-1} \in H_i.$ Hence, $H \le G. \blacksquare$
+because each $H_i \le G_i,$ so each $x_iy_i^{-1} \in H_i.$ Hence, $H \le G.$
+
+**(ii)** By (i), $N \lhd G.$ Let $g = (g_1, \cdots, g_n) \in G,$ and let $x = (x_1, \cdots, x_n) \in gNg^{-1}.$ Then $x = gag^{-1}$ for some $a = (a_1, \cdots, a_n) \in N$ where each $g_i \in G_i, a_i \in N_i.$
+
+$$\begin{align*}
+x &= gag^{-1} \\
+&= (g_1, \cdots, g_n)(a_1, \cdots, a_n)(g_1, \cdots, g_n)^{-1} \\
+&= (g_1a_1g^{-1}_1, \cdots, g_na_ng^{-1}_n) \\
+&\in N
+\end{align*}$$
+
+because each $g_ia_ig^{-1}_i \in N_i.$ Hence $N \lhd G. \blacksquare$
 
 ---
 ## Theorem 3
