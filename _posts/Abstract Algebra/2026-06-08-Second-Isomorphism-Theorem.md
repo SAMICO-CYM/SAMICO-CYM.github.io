@@ -77,7 +77,7 @@ so $g(HN)g^{-1} \subset HN,$ which means that $HN \lhd G.$ $\blacksquare$
 ## Remark
 Let $G$ be a group, and let $H, N \le G.$ 
 
-**(i)** $HN$ need not to be a subspace of $G.$
+**(i)** $HN$ need not to be a subgroup of $G.$
 
 $\big[(\because)$ Let $G = S_3$ and let $H = \langle \mu_1 \rangle = \\{ \rho_0, \mu_1 \\}$ and $N = \langle \mu_3 \rangle = \\{ \rho_0, \mu_3 \\}.$ Then $H, N \le G$ but $HN = \\{ \rho_0, \mu_1, \mu_3, \rho_2 \\} \not \le S_3. \big]$
 

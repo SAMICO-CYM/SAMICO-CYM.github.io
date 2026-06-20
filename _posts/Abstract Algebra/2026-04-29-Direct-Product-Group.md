@@ -71,7 +71,7 @@ Let $G := \displaystyle \prod_{i=1}^n G_i$.
 
 **(iii)** If $G$ is cyclic, then each $G_i$ is cyclic. But the converse does not hold.
 
-$\big[$$(\because)$ Note that $\mathbb{Z}_2 \times \mathbb{Z}_2 \cong V$, $\mathbb{Z}_3 \times \mathbb{Z}_3 \not \cong \mathbb{Z}_9$ and $\mathbb{Z}_2 \times \mathbb{Z}_3 \cong \mathbb{Z}_6$. $\big]$
+$\big[$$(\because)$ Note that $\mathbb{Z}_2 \times \mathbb{Z}_2 \cong V$, $\mathbb{Z}_3 \times \mathbb{Z}_3 \not \cong \mathbb{Z}_9$ and $\mathbb{Z}_2 \times \mathbb{Z}_3 \cong \mathbb{Z}_6$.$\big]$
 
 **(iv)** Define
 
@@ -146,7 +146,6 @@ $\big[(\because)$ Suppose that $r(1, 1) = s(1, 1)$ for some $0 \le r < s < mn$. 
 Note that $mn(1, 1) = (mn, mn) = (0, 0)$. Thus, $\vert (1, 1) \vert = mn$, which means that $\mathbb{Z}_m \times \mathbb{Z}_n = \langle (1, 1) \rangle. \blacksquare$
 
 ---
-
 ## Corollary
 $\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i}$ is cyclic $\iff \gcd(m_i, m_j) = 1$ for all $i \neq j$. In this case, $\displaystyle \prod_{i=1}^n \mathbb{Z} _ {m_i} \cong \mathbb{Z} _ {m_1 m_2 \cdots m_n}$.
 
