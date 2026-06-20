@@ -69,23 +69,7 @@ $$\begin{align*}
 &= N,
 \end{align*}$$
 
-so $aba^{-1}b^{-1} \in N.$ Thus, $C(G) \subset N.$
-
-Next, we will prove that $C(G) \le N.$ Let $a, b \in C(G).$ Note that $b^{-1} \in C(G)$ because if 
-
-$$b = (a_1b_1a^{-1}_1b^{-1}_1) \cdots (a_nb_na^{-1}_nb^{-1}_n)$$
-
-for some $a_1,b_1, \cdots, a_n, b_n \in G,$ then 
-
-
-$$\begin{align*}
-b^{-1} &= [(a_1b_1a^{-1}_1b^{-1}_1) \cdots (a_nb_na^{-1}_nb^{-1}_n)]^{-1} \\
-&= (a_nb_na^{-1}_nb^{-1}_n)^{-1} \cdots (a_1b_1a^{-1}_1b^{-1}_1)^{-1} \\
-&= (b_na_nb_n^{-1}a_n^{-1}) \cdots (b_1a_1b_1^{-1}a_1^{-1}) \\
-& \in C(G).
-\end{align*}$$
-
-Thus, clearly $ab^{-1} \in C(G),$ and therefore $C(G) \le N.$ 
+so $aba^{-1}b^{-1} \in N.$ Thus, $C(G) \subset N,$ so $C(G) \le N.$
 
 $(\Longleftarrow)$
 
