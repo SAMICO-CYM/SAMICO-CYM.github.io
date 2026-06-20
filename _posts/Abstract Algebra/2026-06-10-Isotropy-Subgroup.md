@@ -23,7 +23,7 @@ Let $X$ be a $G$-set. For $x_1, x_2 \in X,$ define a relation $\sim$ on $X$ by
 
 $$x_1 \sim x_2 \iff gx_1 = x_2 \text{ for some } g \in G.$$
 
-Then $\sim$ is an equivalence relation on $X.$ Then an equivalence class under $\sim$ is called an ***orbit in $X$ under $G,$*** and the orbit containing $x$ is called the ***orbit of $x$***, denoted by $Gx.$ That is, $Gx = \{ gx \mid g \in G. \}$
+Then $\sim$ is an equivalence relation on $X.$ Then an equivalence class under $\sim$ is called an ***orbit in $X$ under $G,$*** and the orbit containing $x$ is called the ***orbit of $x$***, denoted by $Gx.$ That is, $Gx = \\{ gx \mid g \in G \\}.$
 
 즉 연산을 취했을 때 같은 결과를 주는 $X$의 원소들을 모두 같은 것으로 보겠다는 뜻이고, 그 같은 원소들을 모아놓은 동치류를 orbit이라고 부른다. 
 

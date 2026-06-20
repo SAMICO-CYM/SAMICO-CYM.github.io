@@ -77,7 +77,7 @@ for all $h_1, h_2 \in H, g \in G.$
 
 Hence, $\ast$ is a group action of $H$ on $G.\big]$
 
-**(iv)** Let $G = D_4 = \{\rho_0, \rho_1, \rho_2, \rho_3, \mu_1, \mu_2, \delta_1, \delta_2\}$ and $X = \{1, 2, 3, 4, S_1, S_2, S_3, S_4, m_1, m_2, d_1, d_2, p_1, p_2, p_3, p_4\}$, where
+**(iv)** Let $G = D_4 = \{\rho_0, \rho_1, \rho_2, \rho_3, \mu_1, \mu_2, \delta_1, \delta_2\}$ and $X = \{1, 2, 3, 4, S_1, S_2, S_3, S_4, m_1, m_2, d_1, d_2, p_1, p_2, p_3, p_4, C\}$, where
 
 ![](assets/img/Pasted%20image%2020260610133944.png)
 
