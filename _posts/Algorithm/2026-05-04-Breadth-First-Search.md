@@ -12,7 +12,9 @@ math: true
 ***Input:*** A graph $G$ and a vertex $v \in V(G)$
 
 ***Steps:*** 
+
 **1.** Set $L_0 := \\{ v \\}, U = V(G) - L_0$, and $i = 0$.
+
 **2.** Until $U = \emptyset$ or does not decrease, do:
 
 **(a)** Increase $i$. ($i := i+1$)
