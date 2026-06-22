@@ -14,8 +14,11 @@ math: true
 ***Steps:*** 
 **1.** Set $L_0 := \\{ v \\}, U = V(G) - L_0$, and $i = 0$.
 **2.** Until $U = \emptyset$ or does not decrease, do:
+
 (a) Increase $i$. ($i := i+1$)
+
 (b) Let $L_i$ be the set of vertices in $U$ adjacenty to some vertex in $L_{i-1}$.
+
 (c) Set $U := U - L_i$.
 
 ***Output:*** A partition $P = \\{ L_0, L_1, \cdots, L_\ell \\}$ of the component of $G$ containing $v$ into parts $L_i$ whose members have distance $i$ from $v$. 
