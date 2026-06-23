@@ -89,6 +89,12 @@ $\big[(\because)$ Let $G = S_3$ and let $H = \langle \mu_1 \rangle = \\{ \rho_0,
 
 $\big[(\because)$ 
 
+$(\Longrightarrow)$
+
+Suppose that $HN \le G.$ By definition of the join, we have $HN = H \vee N.$ 
+
+Let $K \le G$ with $HN \subset K.$ Let $nh \in NH.$ 
+
 \big]$
 
 
