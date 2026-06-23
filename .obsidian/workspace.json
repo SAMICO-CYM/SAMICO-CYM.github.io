@@ -4,20 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "744c0ef37071d0c7",
+        "id": "96fdb2130333e179",
         "type": "tabs",
         "children": [
           {
-            "id": "b923726337847e8e",
+            "id": "602ac0c31c28bdfa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "_posts/Abstract Algebra/2026-03-11-Monoid.md",
+=======
+                "file": "_posts/Algorithm/2026-05-04-Breadth-First-Search.md",
+>>>>>>> 98c3df9ec87f0ab3438c8f66e06be5ccd358c37e
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "2026-03-11-Monoid"
             }
           },
@@ -33,6 +38,9 @@
               },
               "icon": "lucide-file",
               "title": "2026-06-08-Second-Isomorphism-Theorem"
+=======
+              "title": "2026-05-04-Breadth-First-Search"
+>>>>>>> 98c3df9ec87f0ab3438c8f66e06be5ccd358c37e
             }
           }
         ]
@@ -194,8 +202,9 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "b923726337847e8e",
+  "active": "602ac0c31c28bdfa",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "_posts/Abstract Algebra/2026-06-08-Second-Isomorphism-Theorem.md",
     "_posts/Abstract Algebra/2026-05-06-Kernel.md",
     "_posts/Abstract Algebra/2026-04-29-Direct-Product-Group.md",
@@ -213,34 +222,53 @@
     "_posts/Abstract Algebra/2026-05-29-Conjugation.md",
     "_posts/Abstract Algebra/2026-06-08-Third-Isomorphism-Theorem.md",
     "_posts/Abstract Algebra/2026-04-06-Permutation.md",
+=======
+>>>>>>> 98c3df9ec87f0ab3438c8f66e06be5ccd358c37e
     "_posts/Abstract Algebra/2026-04-27-Coset.md",
-    "_posts/Abstract Algebra/2026-04-27-Lagrange-Theorem.md",
-    "_posts/PDE/2026-06-04-Harmonic-Equation.md",
-    "_posts/Fourier Series/2026-05-28-L2-Theory.md",
-    "_posts/PDE/2026-05-05-Newmann-Condition.md",
-    "_posts/PDE/2026-04-23-Inhomogeneous-Wave-Equation.md",
-    "_posts/PDE/2026-04-22-Waves-Half-Line.md",
-    "_posts/Topology/2026-05-27-Connected-Space.md",
-    "_posts/Topology/2026-06-04-Comb-Space.md",
-    "_site/assets/img/Pasted image 20260611192542.png",
-    "assets/img/Pasted image 20260611192542.png",
-    "_site/assets/img/Pasted image 20260611192305.png",
-    "assets/img/Pasted image 20260611192305.png",
+    "_posts/Abstract Algebra/2026-06-10-Burnside-Lemma.md",
     "_site/posts/Rectangle-Cube/index.html",
     "_site/posts/Rectangle-Cube",
-    "_site/posts/Isotropy-Subgroup/index.html",
-    "_site/posts/Isotropy-Subgroup",
-    "_site/posts/Group-Action/index.html",
-    "_site/posts/Group-Action",
+    "_site/assets/img/Pasted image 20260611192542.png",
+    "_site/assets/img/Pasted image 20260611192305.png",
+    "assets/img/Pasted image 20260611192542.png",
+    "assets/img/Pasted image 20260611192305.png",
+    "_posts/PDE/2026-06-11-Rectangle-Cube.md",
     "_site/posts/Burnside-Lemma/index.html",
     "_site/posts/Burnside-Lemma",
+    "_posts/Abstract Algebra/2026-06-10-Isotropy-Subgroup.md",
+    "_posts/Abstract Algebra/2026-06-10-Group-Action.md",
     "_site/assets/img/Pasted image 20260610133944.png",
+    "_site/posts/Isotropy-Subgroup/index.html",
+    "_site/posts/Isotropy-Subgroup",
     "assets/img/Pasted image 20260610133944.png",
+    "_site/posts/Group-Action/index.html",
+    "_site/posts/Group-Action",
+    "_posts/PDE/2026-06-04-Harmonic-Equation.md",
+    "_posts/Topology/2026-06-04-Comb-Space.md",
+    "_posts/Topology/2026-05-19-Metric-Topology.md",
+    "_posts/Topology/2026-05-26-Quotient-Topology.md",
+    "_posts/Topology/2026-05-27-Connected-Space.md",
+    "_posts/Topology/2026-06-04-Path-Connected.md",
+    "_posts/Abstract Algebra/2026-06-08-Second-Isomorphism-Theorem.md",
+    "_posts/Abstract Algebra/2026-05-13-First-Isomorphism-Theorem.md",
+    "_posts/Abstract Algebra/2026-06-08-Third-Isomorphism-Theorem.md",
+    "_posts/Abstract Algebra/2026-03-18-Subgroup.md",
     "_site/posts/Third-Isomorphism-Theorem/index.html",
     "_site/posts/Third-Isomorphism-Theorem",
+    "_posts/Abstract Algebra/2026-05-06-Kernel.md",
+    "_posts/Abstract Algebra/2026-04-01-Special-Morphisms.md",
+    "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
+    "_posts/Abstract Algebra/2026-05-13-Factor-Group.md",
+    "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
     "_site/assets/img/Pasted image 20260605164916.png",
-    "assets/img/Pasted image 20260605164916.png",
     "_site/assets/img/Pasted image 20260605164517.png",
-    "assets/img/Pasted image 20260605164517.png"
+    "_posts/Abstract Algebra/2026-06-01-Center.md",
+    "assets/img/Pasted image 20260605164916.png",
+    "assets/img/Pasted image 20260605164517.png",
+    "_posts/Graph Theory/2026-06-05-Platonic-Solid.md",
+    "_posts/Abstract Algebra/2026-06-01-Center-Of-Group.md",
+    "_posts/Topology/2026-04-29-Continuous-Functions.md",
+    "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
+    "_posts/Graph Theory/2026-06-01-Planer-Graph.md"
   ]
 }
