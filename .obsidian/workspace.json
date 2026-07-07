@@ -1,46 +1,24 @@
 {
   "main": {
-    "id": "ba67d2b357665343",
+    "id": "31ab27eb0c1a013e",
     "type": "split",
     "children": [
       {
-        "id": "96fdb2130333e179",
+        "id": "0eb6a1971e776d40",
         "type": "tabs",
         "children": [
           {
-            "id": "602ac0c31c28bdfa",
+            "id": "359717e6d746be3d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< HEAD
-                "file": "_posts/Abstract Algebra/2026-03-11-Monoid.md",
-=======
-                "file": "_posts/Algorithm/2026-05-04-Breadth-First-Search.md",
->>>>>>> 98c3df9ec87f0ab3438c8f66e06be5ccd358c37e
+                "file": "_posts/Vector Calculus/2026-03-06-Integration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-<<<<<<< HEAD
-              "title": "2026-03-11-Monoid"
-            }
-          },
-          {
-            "id": "672a43bf6aace2d1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/Abstract Algebra/2026-06-08-Second-Isomorphism-Theorem.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-06-08-Second-Isomorphism-Theorem"
-=======
-              "title": "2026-05-04-Breadth-First-Search"
->>>>>>> 98c3df9ec87f0ab3438c8f66e06be5ccd358c37e
+              "title": "2026-03-06-Integration"
             }
           }
         ]
@@ -49,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "883cf61c9c96a9d1",
+    "id": "07979938b8428f86",
     "type": "split",
     "children": [
       {
-        "id": "1a32888189e84d13",
+        "id": "98376630e2846382",
         "type": "tabs",
         "children": [
           {
-            "id": "7de54e063efb4f46",
+            "id": "e2317032c704f41c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -70,12 +48,12 @@
             }
           },
           {
-            "id": "dac5260fb85e9250",
+            "id": "136fba85f901e5af",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "Product Topology",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,35 +65,36 @@
             }
           },
           {
-            "id": "6921406f666add0a",
+            "id": "d8592f07d3881ffe",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "북마크"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 329.5
+    "width": 300
   },
   "right": {
-    "id": "9aef2bb0ca4df331",
+    "id": "9bf8fef4f94a3a97",
     "type": "split",
     "children": [
       {
-        "id": "e1d92558596e4d25",
+        "id": "66ea8c6683a174a1",
         "type": "tabs",
         "children": [
           {
-            "id": "d72f3e354a8ec9ca",
+            "id": "e5b77b2716191031",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_posts/Abstract Algebra/2026-03-16-Finite-Groups.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,24 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "2026-03-16-Finite-Groups 의 백링크"
             }
           },
           {
-            "id": "5d0d557df56f6496",
+            "id": "a5250f190b8cbce3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_posts/Abstract Algebra/2026-03-16-Finite-Groups.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "2026-03-16-Finite-Groups 의 나가는 링크"
             }
           },
           {
-            "id": "d292b784ed426255",
+            "id": "510bfb26d8cb1160",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -153,11 +133,11 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "태그"
             }
           },
           {
-            "id": "2c93f6150b496bba",
+            "id": "5623abb8ea2f975b",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -167,21 +147,22 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "All properties"
+              "title": "모든 속성"
             }
           },
           {
-            "id": "d2e03ae1738846bc",
+            "id": "4ba678c59c283b05",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "_posts/Abstract Algebra/2026-03-16-Finite-Groups.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "2026-03-16-Finite-Groups 의 개요"
             }
           }
         ]
@@ -202,73 +183,21 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "602ac0c31c28bdfa",
+  "active": "359717e6d746be3d",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "_posts/Abstract Algebra/2026-06-08-Second-Isomorphism-Theorem.md",
-    "_posts/Abstract Algebra/2026-05-06-Kernel.md",
-    "_posts/Abstract Algebra/2026-04-29-Direct-Product-Group.md",
-    "_posts/Abstract Algebra/2026-06-10-Isotropy-Subgroup.md",
-    "_posts/Abstract Algebra/2026-06-10-Group-Action.md",
-    "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
-    "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
-    "_posts/Abstract Algebra/2026-05-13-First-Isomorphism-Theorem.md",
-    "_posts/Abstract Algebra/2026-05-13-Factor-Group.md",
-    "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
-    "_posts/Abstract Algebra/2026-04-06-Dihedral-Group.md",
-    "_posts/Abstract Algebra/2026-04-13-Orbits-Cycles-Transposition.md",
-    "_posts/Abstract Algebra/2026-04-15-Alternating-Group.md",
+    "_posts/Vector Calculus/2026-03-05-Mean-Value-Theorem.md",
+    "_posts/Vector Calculus/2026-03-05-Class-C1-Functions.md",
+    "_posts/Vector Calculus/2026-05-08-Green-Theorem.md",
+    "_posts/Abstract Algebra/2026-03-16-Finite-Groups.md",
     "_posts/Abstract Algebra/2026-03-18-Subgroup.md",
-    "_posts/Abstract Algebra/2026-05-29-Conjugation.md",
-    "_posts/Abstract Algebra/2026-06-08-Third-Isomorphism-Theorem.md",
-    "_posts/Abstract Algebra/2026-04-06-Permutation.md",
-=======
->>>>>>> 98c3df9ec87f0ab3438c8f66e06be5ccd358c37e
-    "_posts/Abstract Algebra/2026-04-27-Coset.md",
-    "_posts/Abstract Algebra/2026-06-10-Burnside-Lemma.md",
-    "_site/posts/Rectangle-Cube/index.html",
-    "_site/posts/Rectangle-Cube",
-    "_site/assets/img/Pasted image 20260611192542.png",
-    "_site/assets/img/Pasted image 20260611192305.png",
-    "assets/img/Pasted image 20260611192542.png",
-    "assets/img/Pasted image 20260611192305.png",
-    "_posts/PDE/2026-06-11-Rectangle-Cube.md",
-    "_site/posts/Burnside-Lemma/index.html",
-    "_site/posts/Burnside-Lemma",
-    "_posts/Abstract Algebra/2026-06-10-Isotropy-Subgroup.md",
-    "_posts/Abstract Algebra/2026-06-10-Group-Action.md",
-    "_site/assets/img/Pasted image 20260610133944.png",
-    "_site/posts/Isotropy-Subgroup/index.html",
-    "_site/posts/Isotropy-Subgroup",
-    "assets/img/Pasted image 20260610133944.png",
-    "_site/posts/Group-Action/index.html",
-    "_site/posts/Group-Action",
-    "_posts/PDE/2026-06-04-Harmonic-Equation.md",
-    "_posts/Topology/2026-06-04-Comb-Space.md",
-    "_posts/Topology/2026-05-19-Metric-Topology.md",
-    "_posts/Topology/2026-05-26-Quotient-Topology.md",
-    "_posts/Topology/2026-05-27-Connected-Space.md",
-    "_posts/Topology/2026-06-04-Path-Connected.md",
-    "_posts/Abstract Algebra/2026-06-08-Second-Isomorphism-Theorem.md",
-    "_posts/Abstract Algebra/2026-05-13-First-Isomorphism-Theorem.md",
-    "_posts/Abstract Algebra/2026-06-08-Third-Isomorphism-Theorem.md",
-    "_posts/Abstract Algebra/2026-03-18-Subgroup.md",
-    "_site/posts/Third-Isomorphism-Theorem/index.html",
-    "_site/posts/Third-Isomorphism-Theorem",
-    "_posts/Abstract Algebra/2026-05-06-Kernel.md",
     "_posts/Abstract Algebra/2026-04-01-Special-Morphisms.md",
-    "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
-    "_posts/Abstract Algebra/2026-05-13-Factor-Group.md",
-    "_posts/Abstract Algebra/2026-06-01-Commutator-Subgroup.md",
-    "_site/assets/img/Pasted image 20260605164916.png",
-    "_site/assets/img/Pasted image 20260605164517.png",
-    "_posts/Abstract Algebra/2026-06-01-Center.md",
-    "assets/img/Pasted image 20260605164916.png",
-    "assets/img/Pasted image 20260605164517.png",
-    "_posts/Graph Theory/2026-06-05-Platonic-Solid.md",
-    "_posts/Abstract Algebra/2026-06-01-Center-Of-Group.md",
-    "_posts/Topology/2026-04-29-Continuous-Functions.md",
-    "_posts/Abstract Algebra/2026-06-01-Simple-Group.md",
-    "_posts/Graph Theory/2026-06-01-Planer-Graph.md"
+    "_posts/Abstract Algebra/2026-03-09-Isomorphism.md",
+    "_posts/Abstract Algebra/2026-03-11-Special-Linear-Group.md",
+    "_posts/Abstract Algebra/2026-03-11-General-Linear-Group.md",
+    "_posts/Abstract Algebra/2026-03-11-Monoid.md",
+    "_posts/Abstract Algebra/2026-03-11-Group.md",
+    "_posts/Abstract Algebra/2026-03-11-Abelian.md",
+    "_posts/Abstract Algebra/2026-03-09-Semi-Gruop.md",
+    "_posts/Abstract Algebra/2026-03-09-Binary-Operation.md"
   ]
 }
