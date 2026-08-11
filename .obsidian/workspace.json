@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "96fdb2130333e179",
+        "id": "3f2afe1974c78501",
         "type": "tabs",
         "children": [
           {
-            "id": "602ac0c31c28bdfa",
+            "id": "01c61acd5b79715c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Graph Theory/2026-05-11-Directed-Graph.md",
+                "file": "_posts/Algorithm/2026-05-04-Breadth-First-Search.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-11-Directed-Graph"
+              "title": "2026-05-04-Breadth-First-Search"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "파일 탐색기"
@@ -180,18 +182,34 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "602ac0c31c28bdfa",
+  "active": "01c61acd5b79715c",
   "lastOpenFiles": [
+    "_posts/Graph Theory/2026-04-21-Connected-Graph.md",
+    "_posts/Graph Theory/2026-04-10-Graph.md",
+    "_posts/Graph Theory/2026-05-08-Eulerian-Graph.md",
+    "_posts/Graph Theory/2026-06-01-Euler-Formula.md",
+    "_posts/Graph Theory/2026-04-21-Path-Walk-Cycle.md",
+    "_posts/Abstract Algebra/2026-04-01-Special-Morphisms.md",
+    "_posts/Abstract Algebra/2026-03-09-Isomorphism.md",
+    "_posts/Abstract Algebra/2026-03-09-Semi-Gruop.md",
+    "_posts/Abstract Algebra/2026-03-16-The-Order-Of-Group.md",
+    "_posts/Abstract Algebra/2026-03-16-Finite-Groups.md",
+    "_posts/Abstract Algebra/2026-03-11-General-Linear-Group.md",
+    "_posts/Abstract Algebra/2026-03-11-Monoid.md",
+    "_posts/Abstract Algebra/2026-03-11-Group.md",
+    "_posts/Abstract Algebra/2026-03-11-Special-Linear-Group.md",
+    "_posts/Abstract Algebra/2026-03-11-Abelian.md",
+    "_posts/Abstract Algebra/2026-03-09-Binary-Operation.md",
+    "_posts/Quantum Mechanics/2026-03-24-Infinite-Square-Well.md",
+    "_posts/Quantum Mechanics/2026-03-10-Dirac-Notation.md",
+    "_posts/Graph Theory/2026-05-11-Directed-Graph.md",
     "_posts/Matrix Algebra/2026-02-21-Jordan-Canonical-Form.md",
     "_posts/Matrix Algebra/2026-02-21-Generalized-Eigenvectors.md",
     "_posts/Graph Theory/2026-04-27-Adjacency-Matrix.md",
-    "_posts/Graph Theory/2026-05-11-Directed-Graph.md",
     "_posts/Graph Theory/2026-05-29-Minimum-Weighted-Spanning-Tree.md",
-    "_posts/Graph Theory/2026-04-10-Graph.md",
     "_posts/PDE/2026-06-11-Rectangle-Cube.md",
     "_posts/Algorithm/2026-05-04-Breadth-First-Search.md",
     "_posts/Abstract Algebra/2026-04-27-Coset.md",
-    "_posts/Abstract Algebra/2026-06-10-Burnside-Lemma.md",
     "_site/posts/Rectangle-Cube/index.html",
     "_site/posts/Rectangle-Cube",
     "_site/assets/img/Pasted image 20260611192542.png",
@@ -200,30 +218,14 @@
     "assets/img/Pasted image 20260611192305.png",
     "_site/posts/Burnside-Lemma/index.html",
     "_site/posts/Burnside-Lemma",
-    "_posts/Abstract Algebra/2026-06-10-Isotropy-Subgroup.md",
-    "_posts/Abstract Algebra/2026-06-10-Group-Action.md",
     "_site/assets/img/Pasted image 20260610133944.png",
     "_site/posts/Isotropy-Subgroup/index.html",
     "_site/posts/Isotropy-Subgroup",
     "assets/img/Pasted image 20260610133944.png",
     "_site/posts/Group-Action/index.html",
     "_site/posts/Group-Action",
-    "_posts/PDE/2026-06-04-Harmonic-Equation.md",
-    "_posts/Topology/2026-06-04-Comb-Space.md",
-    "_posts/Topology/2026-05-19-Metric-Topology.md",
-    "_posts/Topology/2026-05-26-Quotient-Topology.md",
-    "_posts/Topology/2026-05-27-Connected-Space.md",
-    "_posts/Topology/2026-06-04-Path-Connected.md",
-    "_posts/Abstract Algebra/2026-06-08-Second-Isomorphism-Theorem.md",
-    "_posts/Abstract Algebra/2026-05-13-First-Isomorphism-Theorem.md",
-    "_posts/Abstract Algebra/2026-06-08-Third-Isomorphism-Theorem.md",
-    "_posts/Abstract Algebra/2026-03-18-Subgroup.md",
     "_site/posts/Third-Isomorphism-Theorem/index.html",
     "_site/posts/Third-Isomorphism-Theorem",
-    "_posts/Abstract Algebra/2026-05-06-Kernel.md",
-    "_posts/Abstract Algebra/2026-04-01-Special-Morphisms.md",
-    "_posts/Abstract Algebra/2026-05-06-Normal-Subgroup.md",
-    "_posts/Abstract Algebra/2026-05-13-Factor-Group.md",
     "_site/assets/img/Pasted image 20260605164916.png",
     "_site/assets/img/Pasted image 20260605164517.png",
     "assets/img/Pasted image 20260605164916.png",
